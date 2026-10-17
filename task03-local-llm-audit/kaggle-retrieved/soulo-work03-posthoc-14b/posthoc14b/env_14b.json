@@ -1,0 +1,82 @@
+{
+  "started_utc": "2026-10-17T05:52:51Z",
+  "model_id": "Qwen/Qwen3-14B",
+  "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+  "weights": "4-bit nf4 via frozen load(adapter=False); no adapter",
+  "frozen_model": {
+    "model_id": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "hf_home": "/tmp/hf",
+  "disk": {
+    "/": {
+      "total_gb": 8758.4,
+      "free_gb": 1148.5
+    },
+    "/tmp": {
+      "total_gb": 8758.4,
+      "free_gb": 1148.5
+    },
+    "/root": {
+      "total_gb": 8758.4,
+      "free_gb": 1148.5
+    },
+    "/kaggle/working": {
+      "total_gb": 21.0,
+      "free_gb": 20.9
+    }
+  },
+  "lock_sha256": "8ab9b7ae24fe5907965e6dc7b7e226bdcd7f74a845ccc2bfee995f2fc627d0cf",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "peft": "0.20.0",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.14.0",
+    "huggingface_hub": "0.36.2"
+  },
+  "gpus": [
+    "Tesla T4"
+  ],
+  "seconds_download": 125.7,
+  "disk_after_download": {
+    "/tmp": {
+      "total_gb": 8758.4,
+      "free_gb": 1118.9
+    }
+  },
+  "chat_template_same_as_8b": true,
+  "train_prompt_tokens_same_as_8b": true,
+  "seconds_load": 146.6,
+  "parameters": 14768307200,
+  "footprint_bytes": 9718528256,
+  "devices": [
+    "0"
+  ],
+  "quantization_config": {
+    "quant_method": "bitsandbytes",
+    "_load_in_8bit": false,
+    "_load_in_4bit": true,
+    "llm_int8_threshold": 6.0,
+    "llm_int8_skip_modules": null,
+    "llm_int8_enable_fp32_cpu_offload": false,
+    "llm_int8_has_fp16_weight": false,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "float16",
+    "bnb_4bit_quant_storage": "uint8",
+    "load_in_4bit": true,
+    "load_in_8bit": false
+  },
+  "gpu0_allocated_after_load": 9928859136,
+  "logits_check": {
+    "train_id": "20",
+    "input_tokens": 1895,
+    "finite": true,
+    "top_token": "{\n"
+  },
+  "holdout_sha256": "818b491f19541c7703cc311afd498fe1169c223a1c03fb4902e275b46b7a9106",
+  "seconds_generation": 416.4,
+  "finished_utc": "2026-10-17T06:04:49Z",
+  "note": "peak_gpu_bytes inside each record is per generate() call on device 0"
+}

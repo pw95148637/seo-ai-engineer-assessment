@@ -3,7 +3,7 @@
 在 Kaggle 的單張 T4 上以 4-bit 載入 Qwen3-8B，讓模型模擬「Google 官方 SEO 品質審核員」（角色模擬，不代表 Google）審核中文 SEO 文章片段，輸出含分數、扣分原因與具體建議的 JSON，再整理成 HTML 報表與 pandas DataFrame。公司提供的 20 筆文章以固定亂數切成 12 筆訓練資料與 8 筆測試資料；模型、prompt 與程式凍結之後，評估 Notebook 才讀測試資料。
 
 - 報告：完整報告（逐筆審核與技術反思，給一般讀者的版本）、簡報
-- Kaggle：[訓練 Notebook](https://www.kaggle.com/code/pw95148637/soulo-work03-v3b-train)、[評估 Notebook](https://www.kaggle.com/code/pw95148637/soulo-work03-v3-eval)、[事後分析 Notebook](https://www.kaggle.com/code/pw95148637/soulo-work03-posthoc-fp16)
+- Kaggle：[訓練 Notebook](https://www.kaggle.com/code/pw95148637/soulo-work03-v3b-train)、[評估 Notebook](https://www.kaggle.com/code/pw95148637/soulo-work03-v3-eval)、事後分析 Notebook：[16 位元對照與微調前後的誤差](https://www.kaggle.com/code/pw95148637/soulo-work03-posthoc-fp16)、[Qwen3-14B 對照](https://www.kaggle.com/code/pw95148637/soulo-work03-posthoc-14b)
 
 ## 結果
 
@@ -55,10 +55,11 @@ python scripts/compare_holdout.py
 
 主要輸入是 `kaggle-retrieved/soulo-work03-v3-eval/` 中從 Kaggle 下載的實際輸出、`evaluation/holdout8-reference.jsonl`（參考判斷）與 `evaluation/holdout8-review.csv`（逐筆判定）；彙整訓練歷程時另外讀各次訓練的下載輸出、`outputs/experiments/initial/`、`data/` 與 `knowledge.json`。它重新寫出 `evaluation/holdout8-comparison.json`、`report/holdout8-audit.csv` 與 `report/holdout8-audit.html`。輸出與 repo 內的檔案逐位元組相同，執行後 `git status` 不會出現變更。開頭兩行印出兩組的摘要，例如 `adapter verdicts {'準確': 3, '部分準確': 2, '偏差': 3}`。
 
-另外三個選用命令：
+另外四個選用命令：
 
 - `python scripts/regate.py kaggle-retrieved/soulo-work03-v3b-train/work03`：用現行的自動檢查重判凍結版本的訓練輸出，應為 `"status": "FAIL"`、`"hard_total_excl_contract": 4`，這是凍結決定的依據。
 - `python scripts/posthoc_analysis.py`：依 `evaluation/posthoc-plan.md` 重算凍結後的事後分析（16 位元對照與微調前後的誤差），讀 `kaggle-retrieved/soulo-work03-posthoc-fp16/` 的下載輸出，寫出 `evaluation/posthoc-results.json`。
+- `python scripts/posthoc14b_analysis.py`：依 `evaluation/posthoc14b-plan.md` 重算凍結後的 Qwen3-14B 對照（同一個凍結 prompt 換成較大的模型），讀 `kaggle-retrieved/soulo-work03-posthoc-14b/` 的下載輸出，寫出 `evaluation/posthoc14b-results.json`。
 - `python scripts/make_deliverable_figures.py`：從上一步的比對結果與下載的輸出重畫報告與簡報的圖到 `deliverable/img/`，需要 Pillow 與 Noto Sans TC 字型（`NotoSansTC-VF.ttf`）。
 
 `report/holdout8-audit.html` 下載後用瀏覽器開啟，可排序、篩選；表格也可用 `pandas.read_csv('report/holdout8-audit.csv', encoding='utf-8-sig')` 讀成 DataFrame。

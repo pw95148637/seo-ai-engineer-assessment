@@ -50,15 +50,15 @@ Notes: 微調到底有沒有用？評估時我用同一個 prompt、不載入微
 - 下一步：程式先抽訊號，模型只判被標出的句子
 - 事後對照：16 位元不量化仍標 3/6，量化不是主因
 ![三篇被誤判的原文、模型判斷與參考判斷，以及下一步與 16 位元事後對照](img/slide-ymyl.png)
-Notes: 最弱的地方是 YMYL 標太多。ID 17 正確的反詐提醒被讀成否認風險；ID 8 只列申請文件，因為沒寫貸款風險被扣到 50 分；ID 3 重複 5 次關鍵字，模型只看到賭博主題。理由常直接寫「文章提及娛樂城，屬於高風險活動」，正是 prompt 已排除的情況，所以下一步改分工：程式先抽訊號，模型只判被標出的句子，再套嚴重度上限，效果需要驗證。事後我用 16 位元不量化再跑一次，不該標的 6 篇仍標了 3 篇，所以量化不是主因。
+Notes: 最弱的地方是 YMYL 標太多。ID 17 正確的反詐提醒被讀成否認風險；ID 8 只列申請文件，因為沒寫貸款風險被扣到 50 分；ID 3 重複 5 次關鍵字，模型只看到賭博主題。理由常直接寫「文章提及娛樂城，屬於高風險活動」，正是 prompt 已排除的情況，所以下一步改分工：程式先抽訊號，模型只判被標出的句子，再套嚴重度上限，效果需要驗證。事後我用 16 位元不量化再跑一次，不該標的 6 篇仍標了 3 篇，所以量化不是主因。再換成較大的 Qwen3-14B、同一個 prompt，嚴重度和分數大多回到參考範圍，關鍵字堆疊也抓到了；YMYL 多標從 4 篇降到 2 篇，依事前規則算方向不明確：推薦娛樂城仍被當成引導參與，反詐提醒仍被當成否認風險。所以嚴重度偏重和 8B 的能力有關，YMYL 換大模型也沒有解決，定義要一起改。
 
 ---
 ## 附錄：連結與參考資料
 - 完整報告（Google 文件）：8 篇逐筆說明、技術反思、參考資料，附錄有 system prompt 全文
 - [Kaggle 評估 Notebook](https://www.kaggle.com/code/pw95148637/soulo-work03-v3-eval)：凍結後實際跑出的 8 篇審核與報表；說明格是執行當下的筆記，以報告為準
 - [Kaggle 訓練 Notebook](https://www.kaggle.com/code/pw95148637/soulo-work03-v3b-train)：部署、微調、一致性測試與凍結鎖
-- [Kaggle 事後分析 Notebook](https://www.kaggle.com/code/pw95148637/soulo-work03-posthoc-fp16)：凍結後的 16 位元對照與微調前後的誤差，計畫先存檔再執行
+- [Kaggle 事後分析 Notebook](https://www.kaggle.com/code/pw95148637/soulo-work03-posthoc-fp16)：凍結後的 16 位元對照與微調前後的誤差，計畫先存檔再執行；Qwen3-14B 對照的連結在完整報告
 - [GitHub](https://github.com/pw95148637/seo-ai-engineer-assessment/tree/main/task03-local-llm-audit)：程式與評估資料；不需 GPU 即可從原始輸出重算評估指標
 - AI 對話紀錄：我與 Claude Code 的開發與驗證過程
 - [參考資料](https://developers.google.com/search/blog/2009/09/google-does-not-use-keywords-meta-tag)：Google 官方：不使用 meta keywords 排名；其餘官方來源與法條在報告末
-Notes: 由上到下是建議的查看順序。完整報告是本題的 Google 文件，含逐筆說明、技術反思和 system prompt 全文；評估 Notebook 是凍結後實際跑出 8 篇審核的版本，裡面的說明格是執行當下的工程筆記，為了保留凍結的輸出沒有修改，說明以報告為準；訓練 Notebook 有部署、微調、一致性測試和凍結鎖；事後分析 Notebook 是凍結後的 16 位元對照與微調前後的誤差。GitHub 上有全部程式和評估資料，不需要 GPU 就能從 Kaggle 的原始輸出重算全部評估指標。AI 對話紀錄保留了我和 Claude Code 開發與驗證的過程。
+Notes: 由上到下是建議的查看順序。完整報告是本題的 Google 文件，含逐筆說明、技術反思和 system prompt 全文；評估 Notebook 是凍結後實際跑出 8 篇審核的版本，裡面的說明格是執行當下的工程筆記，為了保留凍結的輸出沒有修改，說明以報告為準；訓練 Notebook 有部署、微調、一致性測試和凍結鎖；事後分析 Notebook 是凍結後的 16 位元對照與微調前後的誤差，換成 Qwen3-14B 的對照在另一個 Notebook，連結在完整報告。GitHub 上有全部程式和評估資料，不需要 GPU 就能從 Kaggle 的原始輸出重算全部評估指標。AI 對話紀錄保留了我和 Claude Code 開發與驗證的過程。

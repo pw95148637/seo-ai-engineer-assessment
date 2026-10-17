@@ -1,0 +1,19 @@
+Post-hoc 14B kernel: push and retrieval record (copied from the terminal output of this session)
+
+2026-10-17T05:49:15Z  evaluation/posthoc14b-plan.md saved (sha256 90e52e6443cabe7503fd7420624a09109bb6bb64f2351bb511ad0382deb4fd69)
+2026-10-17T05:52:04Z  python kaggle/posthoc-14b/build_notebook.py  -> "plan sha256 90e52e6443cabe7503fd7420624a09109bb6bb64f2351bb511ad0382deb4fd69"
+
+$env:PYTHONUTF8='1'; python -P -m kaggle kernels push -p kaggle/posthoc-14b   (Kaggle CLI 2.2.4, run from tasks/task03-local-llm)
+Kernel version 1 successfully pushed.  Please check progress at https://www.kaggle.com/code/pw95148637/soulo-work03-posthoc-14b
+2026-10-17T05:52:14Z  (UTC clock right after the push returned)
+
+Status polling with python -P -m kaggle kernels status pw95148637/soulo-work03-posthoc-14b, every 60 s:
+05:52:22  KernelWorkerStatus.RUNNING
+06:04:50  KernelWorkerStatus.RUNNING
+06:05:52  KernelWorkerStatus.COMPLETE
+
+python -P -m kaggle kernels output pw95148637/soulo-work03-posthoc-14b -p kaggle-retrieved/soulo-work03-posthoc-14b   (new empty folder)
+Downloaded: posthoc14b.py, posthoc14b/env_14b.json, posthoc14b/holdout_14b-raw.jsonl, posthoc14b/holdout_14b.jsonl,
+posthoc14b/plan_sha256.txt, soulo-work03-posthoc-14b.log
+
+Only this kernel was pushed. soulo-work03-v3b-train, soulo-work03-v3-eval and soulo-work03-posthoc-fp16 were not pushed or edited.

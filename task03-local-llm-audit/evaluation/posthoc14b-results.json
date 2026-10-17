@@ -1,0 +1,802 @@
+{
+  "scope": "Post-hoc analysis after the freeze, run as pre-registered in evaluation/posthoc14b-plan.md. n=8 test items, one greedy run: direction only. Nothing in the frozen system or its reported results changes.",
+  "plan_sha256": "90e52e6443cabe7503fd7420624a09109bb6bb64f2351bb511ad0382deb4fd69",
+  "env_14b": {
+    "started_utc": "2026-10-17T05:52:51Z",
+    "model_id": "Qwen/Qwen3-14B",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "weights": "4-bit nf4 via frozen load(adapter=False); no adapter",
+    "frozen_model": {
+      "model_id": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+    },
+    "hf_home": "/tmp/hf",
+    "disk": {
+      "/": {
+        "total_gb": 8758.4,
+        "free_gb": 1148.5
+      },
+      "/tmp": {
+        "total_gb": 8758.4,
+        "free_gb": 1148.5
+      },
+      "/root": {
+        "total_gb": 8758.4,
+        "free_gb": 1148.5
+      },
+      "/kaggle/working": {
+        "total_gb": 21.0,
+        "free_gb": 20.9
+      }
+    },
+    "lock_sha256": "8ab9b7ae24fe5907965e6dc7b7e226bdcd7f74a845ccc2bfee995f2fc627d0cf",
+    "versions": {
+      "torch": "2.11.0+cu128",
+      "transformers": "4.57.6",
+      "peft": "0.20.0",
+      "bitsandbytes": "0.50.2",
+      "accelerate": "1.14.0",
+      "huggingface_hub": "0.36.2"
+    },
+    "gpus": [
+      "Tesla T4"
+    ],
+    "seconds_download": 125.7,
+    "disk_after_download": {
+      "/tmp": {
+        "total_gb": 8758.4,
+        "free_gb": 1118.9
+      }
+    },
+    "chat_template_same_as_8b": true,
+    "train_prompt_tokens_same_as_8b": true,
+    "seconds_load": 146.6,
+    "parameters": 14768307200,
+    "footprint_bytes": 9718528256,
+    "devices": [
+      "0"
+    ],
+    "quantization_config": {
+      "quant_method": "bitsandbytes",
+      "_load_in_8bit": false,
+      "_load_in_4bit": true,
+      "llm_int8_threshold": 6.0,
+      "llm_int8_skip_modules": null,
+      "llm_int8_enable_fp32_cpu_offload": false,
+      "llm_int8_has_fp16_weight": false,
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_use_double_quant": true,
+      "bnb_4bit_compute_dtype": "float16",
+      "bnb_4bit_quant_storage": "uint8",
+      "load_in_4bit": true,
+      "load_in_8bit": false
+    },
+    "gpu0_allocated_after_load": 9928859136,
+    "logits_check": {
+      "train_id": "20",
+      "input_tokens": 1895,
+      "finite": true,
+      "top_token": "{\n"
+    },
+    "holdout_sha256": "818b491f19541c7703cc311afd498fe1169c223a1c03fb4902e275b46b7a9106",
+    "seconds_generation": 416.4,
+    "finished_utc": "2026-10-17T06:04:49Z",
+    "note": "peak_gpu_bytes inside each record is per generate() call on device 0"
+  },
+  "run_14b": {
+    "attempts": 11,
+    "repaired_ids": [
+      "12",
+      "17",
+      "8"
+    ],
+    "runtime_errors": [],
+    "generation_seconds_sum": 416.3,
+    "peak_gpu_bytes_max": 12300173312,
+    "output_tokens_mean": 233.9,
+    "eos_reached_all": true
+  },
+  "systems": {
+    "qwen3_14b_4bit_no_adapter": {
+      "json_first_pass": 5,
+      "json_final": 8,
+      "invalid_ids": [],
+      "code_set_exact_main": 2,
+      "required_codes_all_hit": 6,
+      "items_with_required_codes": 6,
+      "ymyl_flagged_total": 4,
+      "ymyl_flagged_without_ymyl_in_main": [
+        "17",
+        "3"
+      ],
+      "items_without_ymyl_in_main": [
+        "12",
+        "3",
+        "17",
+        "8",
+        "9",
+        "4"
+      ],
+      "severity_match_main": 6,
+      "severity_higher_than_main": 2,
+      "score_in_main_range": 5,
+      "score_in_main_or_alt_range": 7,
+      "score_mae_vs_typical": 7.0,
+      "seo_false_on_4_9": {
+        "4": true,
+        "9": true
+      },
+      "stuffing_on_3": true,
+      "experience_on_12": true,
+      "items": [
+        {
+          "ID": "2",
+          "codes": [
+            "YMYL_RISK",
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 0
+        },
+        {
+          "ID": "12",
+          "codes": [
+            "EXPERIENCE_UNVERIFIED"
+          ],
+          "severity": "minor",
+          "score": 84
+        },
+        {
+          "ID": "3",
+          "codes": [
+            "STUFFING",
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 30
+        },
+        {
+          "ID": "17",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "minor",
+          "score": 84
+        },
+        {
+          "ID": "8",
+          "codes": [
+            "UNSUPPORTED_CLAIM"
+          ],
+          "severity": "minor",
+          "score": 80
+        },
+        {
+          "ID": "9",
+          "codes": [
+            "SEO_FALSE",
+            "STUFFING"
+          ],
+          "severity": "major",
+          "score": 30
+        },
+        {
+          "ID": "1",
+          "codes": [
+            "YMYL_RISK",
+            "UNSUPPORTED_CLAIM"
+          ],
+          "severity": "major",
+          "score": 59
+        },
+        {
+          "ID": "4",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "major",
+          "score": 30
+        }
+      ]
+    },
+    "qwen3_8b_4bit_no_adapter": {
+      "json_first_pass": 8,
+      "json_final": 8,
+      "invalid_ids": [],
+      "code_set_exact_main": 2,
+      "required_codes_all_hit": 5,
+      "items_with_required_codes": 6,
+      "ymyl_flagged_total": 6,
+      "ymyl_flagged_without_ymyl_in_main": [
+        "12",
+        "17",
+        "3",
+        "8"
+      ],
+      "items_without_ymyl_in_main": [
+        "12",
+        "3",
+        "17",
+        "8",
+        "9",
+        "4"
+      ],
+      "severity_match_main": 2,
+      "severity_higher_than_main": 6,
+      "score_in_main_range": 1,
+      "score_in_main_or_alt_range": 4,
+      "score_mae_vs_typical": 21.25,
+      "seo_false_on_4_9": {
+        "4": true,
+        "9": true
+      },
+      "stuffing_on_3": false,
+      "experience_on_12": true,
+      "items": [
+        {
+          "ID": "2",
+          "codes": [
+            "YMYL_RISK",
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        },
+        {
+          "ID": "12",
+          "codes": [
+            "YMYL_RISK",
+            "EXPERIENCE_UNVERIFIED"
+          ],
+          "severity": "major",
+          "score": 50
+        },
+        {
+          "ID": "3",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "critical",
+          "score": 0
+        },
+        {
+          "ID": "17",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 50
+        },
+        {
+          "ID": "8",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 55
+        },
+        {
+          "ID": "9",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        },
+        {
+          "ID": "1",
+          "codes": [
+            "YMYL_RISK",
+            "UNSUPPORTED_CLAIM"
+          ],
+          "severity": "major",
+          "score": 45
+        },
+        {
+          "ID": "4",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        }
+      ]
+    },
+    "qwen3_8b_fp16_no_adapter": {
+      "json_first_pass": 7,
+      "json_final": 8,
+      "invalid_ids": [],
+      "code_set_exact_main": 2,
+      "required_codes_all_hit": 4,
+      "items_with_required_codes": 6,
+      "ymyl_flagged_total": 5,
+      "ymyl_flagged_without_ymyl_in_main": [
+        "12",
+        "17",
+        "3"
+      ],
+      "items_without_ymyl_in_main": [
+        "12",
+        "3",
+        "17",
+        "8",
+        "9",
+        "4"
+      ],
+      "severity_match_main": 3,
+      "severity_higher_than_main": 5,
+      "score_in_main_range": 2,
+      "score_in_main_or_alt_range": 3,
+      "score_mae_vs_typical": 19.0,
+      "seo_false_on_4_9": {
+        "4": true,
+        "9": true
+      },
+      "stuffing_on_3": false,
+      "experience_on_12": false,
+      "items": [
+        {
+          "ID": "2",
+          "codes": [
+            "YMYL_RISK",
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        },
+        {
+          "ID": "12",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 59
+        },
+        {
+          "ID": "3",
+          "codes": [
+            "SEO_FALSE",
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 30
+        },
+        {
+          "ID": "17",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 59
+        },
+        {
+          "ID": "8",
+          "codes": [
+            "UNSUPPORTED_CLAIM"
+          ],
+          "severity": "minor",
+          "score": 75
+        },
+        {
+          "ID": "9",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 0
+        },
+        {
+          "ID": "1",
+          "codes": [
+            "YMYL_RISK",
+            "UNSUPPORTED_CLAIM"
+          ],
+          "severity": "major",
+          "score": 55
+        },
+        {
+          "ID": "4",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 0
+        }
+      ]
+    },
+    "qwen3_8b_4bit_adapter_frozen": {
+      "json_first_pass": 8,
+      "json_final": 8,
+      "invalid_ids": [],
+      "code_set_exact_main": 4,
+      "required_codes_all_hit": 5,
+      "items_with_required_codes": 6,
+      "ymyl_flagged_total": 6,
+      "ymyl_flagged_without_ymyl_in_main": [
+        "12",
+        "17",
+        "3",
+        "8"
+      ],
+      "items_without_ymyl_in_main": [
+        "12",
+        "3",
+        "17",
+        "8",
+        "9",
+        "4"
+      ],
+      "severity_match_main": 1,
+      "severity_higher_than_main": 7,
+      "score_in_main_range": 1,
+      "score_in_main_or_alt_range": 4,
+      "score_mae_vs_typical": 27.0,
+      "seo_false_on_4_9": {
+        "4": true,
+        "9": true
+      },
+      "stuffing_on_3": false,
+      "experience_on_12": true,
+      "items": [
+        {
+          "ID": "2",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "critical",
+          "score": 0
+        },
+        {
+          "ID": "12",
+          "codes": [
+            "YMYL_RISK",
+            "EXPERIENCE_UNVERIFIED"
+          ],
+          "severity": "major",
+          "score": 45
+        },
+        {
+          "ID": "3",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "critical",
+          "score": 0
+        },
+        {
+          "ID": "17",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 50
+        },
+        {
+          "ID": "8",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 50
+        },
+        {
+          "ID": "9",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        },
+        {
+          "ID": "1",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "critical",
+          "score": 0
+        },
+        {
+          "ID": "4",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        }
+      ]
+    }
+  },
+  "primary": {
+    "flagged_without_ymyl_in_main": [
+      "17",
+      "3"
+    ],
+    "count": 2,
+    "of": 6,
+    "baseline_8b_4bit_no_adapter": [
+      "12",
+      "17",
+      "3",
+      "8"
+    ]
+  },
+  "guard": {
+    "id2_ymyl": true,
+    "id1_main_or_alt_code": true
+  },
+  "reading": "direction_unclear",
+  "reading_text": "方向不明確。",
+  "flagged_split": {
+    "clean_flagged": [
+      "17"
+    ],
+    "gambling_other_flagged": [
+      "3"
+    ],
+    "others_flagged": []
+  },
+  "checkpoints": {
+    "3": {
+      "stuffing": true,
+      "ymyl": true
+    },
+    "17": {
+      "ymyl": true,
+      "max_severity": "minor",
+      "minor_or_less": true
+    },
+    "8": {
+      "ymyl": false,
+      "max_severity": "minor",
+      "minor_or_less": true
+    }
+  },
+  "qwen3_14b_vs_8b_4bit_no_adapter": {
+    "compared": 8,
+    "same_code_set": 4,
+    "same_max_severity": 2,
+    "same_input_tokens": 8,
+    "differing": [
+      {
+        "ID": "12",
+        "qwen3_14b": [
+          84,
+          "minor",
+          [
+            "EXPERIENCE_UNVERIFIED"
+          ]
+        ],
+        "qwen3_8b_4bit": [
+          50,
+          "major",
+          [
+            "YMYL_RISK",
+            "EXPERIENCE_UNVERIFIED"
+          ]
+        ]
+      },
+      {
+        "ID": "3",
+        "qwen3_14b": [
+          30,
+          "major",
+          [
+            "STUFFING",
+            "YMYL_RISK"
+          ]
+        ],
+        "qwen3_8b_4bit": [
+          0,
+          "critical",
+          [
+            "YMYL_RISK"
+          ]
+        ]
+      },
+      {
+        "ID": "17",
+        "qwen3_14b": [
+          84,
+          "minor",
+          [
+            "YMYL_RISK"
+          ]
+        ],
+        "qwen3_8b_4bit": [
+          50,
+          "major",
+          [
+            "YMYL_RISK"
+          ]
+        ]
+      },
+      {
+        "ID": "8",
+        "qwen3_14b": [
+          80,
+          "minor",
+          [
+            "UNSUPPORTED_CLAIM"
+          ]
+        ],
+        "qwen3_8b_4bit": [
+          55,
+          "major",
+          [
+            "YMYL_RISK"
+          ]
+        ]
+      },
+      {
+        "ID": "9",
+        "qwen3_14b": [
+          30,
+          "major",
+          [
+            "SEO_FALSE",
+            "STUFFING"
+          ]
+        ],
+        "qwen3_8b_4bit": [
+          25,
+          "critical",
+          [
+            "SEO_FALSE"
+          ]
+        ]
+      },
+      {
+        "ID": "4",
+        "qwen3_14b": [
+          30,
+          "major",
+          [
+            "SEO_FALSE"
+          ]
+        ],
+        "qwen3_8b_4bit": [
+          25,
+          "critical",
+          [
+            "SEO_FALSE"
+          ]
+        ]
+      }
+    ]
+  },
+  "excerpts": {
+    "3": {
+      "qwen3_14b": {
+        "valid": true,
+        "Score": 30,
+        "Reasons": [
+          {
+            "code": "STUFFING",
+            "severity": "major",
+            "quote": "娛樂城推薦娛樂城推薦。想要最好的娛樂城推薦嗎？我們有最棒的娛樂城推薦服務，娛樂城推薦就在這裡。",
+            "explanation": "文章中重複使用「娛樂城推薦」關鍵字，且未自然融入內容，屬於不自然的關鍵字重複行為，可能被視為SEO操縱。",
+            "source_ids": [
+              "G_SPAM"
+            ]
+          },
+          {
+            "code": "YMYL_RISK",
+            "severity": "major",
+            "quote": "我們有最棒的娛樂城推薦服務",
+            "explanation": "文章主動推薦娛樂城服務，但未提及與網路賭博相關的法律風險，可能引導讀者參與違法活動卻未交代風險。",
+            "source_ids": [
+              "TW_266"
+            ]
+          }
+        ],
+        "advice": [
+          "避免重複使用「娛樂城推薦」關鍵字，改以自然方式融入內容，並提供更具價值的資訊。",
+          "補充與娛樂城服務相關的法律風險說明，例如提醒讀者使用網路賭博可能觸犯刑法266條。"
+        ],
+        "first_pass_valid": true
+      },
+      "qwen3_8b_4bit_no_adapter": {
+        "valid": true,
+        "Score": 0,
+        "Reasons": [
+          {
+            "code": "YMYL_RISK",
+            "severity": "critical",
+            "quote": "娛樂城推薦娛樂城推薦。想要最好的娛樂城推薦嗎？我們有最棒的娛樂城推薦服務，娛樂城推薦就在這裡。",
+            "explanation": "文章內容涉及「娛樂城推薦」，根據知識卡TW_266，刑法第266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章可能引導讀者參與可能違法的活動，卻未交代法律風險。",
+            "source_ids": [
+              "TW_266"
+            ]
+          }
+        ],
+        "advice": [
+          "避免直接推薦或強調「娛樂城」等可能涉及賭博的平台，除非有明確的合法認證與風險說明。建議改為提供合法的娛樂資訊或活動，並清楚標示法律風險。"
+        ],
+        "first_pass_valid": true
+      }
+    },
+    "17": {
+      "qwen3_14b": {
+        "valid": true,
+        "Score": 84,
+        "Reasons": [
+          {
+            "code": "YMYL_RISK",
+            "severity": "minor",
+            "quote": "請記住，正規平台客服絕不會詢問您的驗證碼。",
+            "explanation": "原文主動給出可能讓讀者在安全上受損的說法，否認了正規平台客服在特定情境下可能詢問驗證碼的可能性，可能導致讀者忽略其他合法或合理的情況，進而誤判風險。",
+            "source_ids": [
+              "TW_266"
+            ]
+          }
+        ],
+        "advice": [
+          "建議補充說明：雖然正規平台客服通常不會主動詢問驗證碼，但某些特殊情境（如帳號異動、安全驗證等）可能需要用戶主動提供驗證碼，請讀者務必確認來電或來信的來源是否為官方渠道，以避免受騙。"
+        ],
+        "first_pass_valid": false
+      },
+      "qwen3_8b_4bit_no_adapter": {
+        "valid": true,
+        "Score": 50,
+        "Reasons": [
+          {
+            "code": "YMYL_RISK",
+            "severity": "major",
+            "quote": "請記住，正規平台客服絕不會詢問您的驗證碼。",
+            "explanation": "該句話否定了詐騙行為的風險，並暗示所有正規平台客服都不會詢問驗證碼，可能導致讀者低估詐騙風險，未充分說明可能的例外或風險。",
+            "source_ids": [
+              "TW_266"
+            ]
+          }
+        ],
+        "advice": [
+          "建議補充說明「正規平台客服在特定情況下可能需要驗證碼，例如帳號安全或交易確認，但絕不會隨意索取」，以避免誤導讀者低估詐騙風險。"
+        ],
+        "first_pass_valid": true
+      }
+    },
+    "8": {
+      "qwen3_14b": {
+        "valid": true,
+        "Score": 80,
+        "Reasons": [
+          {
+            "code": "UNSUPPORTED_CLAIM",
+            "severity": "minor",
+            "quote": "申請房屋二胎需要準備身分證影本、土地建物所有權狀以及最近半年的房貸繳款紀錄，以利金融機構評估額度。",
+            "explanation": "原文主張申請房屋二胎所需文件，但未提供具體日期、產品、條件或案例支持，屬於缺乏證據的主張。",
+            "source_ids": [
+              "M_PIP",
+              "F_APR"
+            ]
+          }
+        ],
+        "advice": [
+          "建議補充說明文件需求可能因金融機構而異，並可引用相關法規或機構規定作為依據，以提高可信度。"
+        ],
+        "first_pass_valid": false
+      },
+      "qwen3_8b_4bit_no_adapter": {
+        "valid": true,
+        "Score": 55,
+        "Reasons": [
+          {
+            "code": "YMYL_RISK",
+            "severity": "major",
+            "quote": "申請房屋二胎需要準備身分證影本、土地建物所有權狀以及最近半年的房貸繳款紀錄，以利金融機構評估額度。",
+            "explanation": "雖然文章未直接提供貸款建議或保證獲利，但涉及房屋二胎貸款，屬於高風險金融活動，且未提及任何法律風險或貸款條件，可能導致讀者誤以為此為安全或無風險的金融行為，未充分警示潛在風險。",
+            "source_ids": [
+              "TW_873",
+              "TW_874",
+              "F_APR"
+            ]
+          }
+        ],
+        "advice": [
+          "建議補充貸款風險說明，例如利率變動、違約後的法律後果，以及抵押物可能被法拍的風險，以符合YMYL內容的警示要求。"
+        ],
+        "first_pass_valid": true
+      }
+    }
+  }
+}
