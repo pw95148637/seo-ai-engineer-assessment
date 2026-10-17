@@ -1,0 +1,68 @@
+{
+  "reviewer": "R3",
+  "reports": {
+    "r55kz": {
+      "summary": "讀了 4 個站內頁（首頁、/wordcup/、3A、泛詞頁）和 3 個站外頁，每條已知都和快照相符。另列一條反證：泛詞頁有提醒洗碼量與提領限制。未知與限制寫得清楚。短處是站內只抽 3A 和泛詞兩頁，沒寫出 CTA 的 rel，沒看其他品牌頁或長尾頁。站外只有陰性結果，其中 nJAV 頁價值很低。",
+      "defects": [
+        {"where": "On-page 已知第 5 條", "type": "other", "detail": "只寫 CTA 連到 don0911.3a1788.bet/?st=wg2030，沒寫 rel。快照中這些連結都是 rel=\"nofollow noopener\"，每頁 4 個（5fc7bac056434ef2ab5cc735328f9e29、3eea9e4a78814f57bef6d6f460065bbe）。連結屬性正是 SEO 上該記錄的細節。"},
+        {"where": "On-page 推論", "type": "other", "detail": "「共同CTA目的地」只靠 3A 頁與泛詞頁兩頁支撐，沒去看其他品牌頁（例如富遊）或 3A 長尾頁。因此沒發現跨品牌都導向 3A，也沒發現 3A 各頁出金時間互相矛盾。措辭有保留，算不上錯，但證據面比同組其他報告窄。"},
+        {"where": "Off-page 已知第 2 條", "type": "other", "detail": "nJAV 法文搜尋頁（8798bf75a80042f9aa08fca9a9a2fd38）的 2030玩運彩瘋世足 只出現在 title、og、twitter 這類搜尋回顯欄位。報告的解讀正確，但這是低價值樣本，佔掉了本可用來查相關站的預算。"},
+        {"where": "其他未知第 2 條（FAQ／schema）", "type": "other", "detail": "報告寫「未做schema」，但手上的 3A 頁與泛詞頁快照已含 FAQPage 與 Article JSON-LD。3A 頁 Article 的 dateModified 是 2026-09-29，頁面卻顯示「2026年09月24日 更新」（5fc7bac056434ef2ab5cc735328f9e29）。證據已在手卻沒讀出。"},
+        {"where": "On-page 整體", "type": "other", "detail": "漏了第二條商業導流：各頁 header 都有 WG娛樂城橫幅，連到 bc5730m.wg1888.com/index/Register/?st=2030WG（nofollow）。首頁腳本另有連到 wg1888 ?st=live 的「免費看直播」註冊彈窗（05ecd02290d840b1b4e722ef5f7bb8a0）。漏掉這條，體育入口的變現方式就描述不完整。"}
+      ]
+    },
+    "r9npr": {
+      "summary": "讀了 6 個站內頁，含富遊品牌頁和一個 MLB 賽事頁作為反例；站外讀了兩個相關站，並附搜尋快照。數字、URL、nofollow 數量、Tank01 來源、meta description 只是圖例、15.8k Subscribers 等細節全部核對屬實。行動有分級、附成本與量測。短處是沒讀 3A 長尾頁，漏掉 3A 各頁出金時間互相矛盾。",
+      "defects": [
+        {"where": "On-page 整體抽樣", "type": "other", "detail": "沒讀 3A 長尾頁（例如 3a娛樂城出金速度）。因此沒發現 3A 品牌頁寫「半小時至一小時」、長尾頁寫「15到30分鐘」的跨頁矛盾，也沒發現 FAQ 把整個關鍵字套進問句的模板痕跡。這些正是和「3A娛樂城」最直接相關的弱點。"},
+        {"where": "行動第 2 條理由", "type": "epistemic", "detail": "「抽樣評測偏正向敘事」是評價性判斷，沒有放進已知或推論、也沒附證據編號就直接拿來當行動理由。方向和快照一致（04492eb13d0741f8805816bd43ee363f、3da9a66e98414bd89484c0b30da3ca84 都是正面口吻），但應先列為推論。"},
+        {"where": "其他／未知（結構化資料）", "type": "other", "detail": "把結構化資料有效性列為未知可以接受，但沒指出快照中已有 FAQPage 與 Article JSON-LD（例如 04492eb13d0741f8805816bd43ee363f），漏掉了已在手的 on-page 證據。"},
+        {"where": "On-page 推論（集中商業導流）", "type": "other", "detail": "沒提到各頁 header 的 WG娛樂城橫幅（bc5730m.wg1888.com ?st=2030WG，nofollow），也沒提到首頁的 wg1888 ?st=live 直播註冊彈窗（7ff2c0f2c55f4c2e8b53d8f5695abbcb）。對導流的描述只涵蓋 3A 一條。"}
+      ]
+    },
+    "rt9z8": {
+      "summary": "On-page 陳述準確，含 4 個 nofollow 連結、五類 FAQ、文字並非完全相同等細節；行動有成本與 4–8 週觀察窗。但只讀了 4 個站內頁，off-page 只讀一個 Yahoo 股票同名頁，對競爭者的站外做法沒有提供任何資訊，整體偏薄。",
+      "defects": [
+        {"where": "Off-page 已知／推論", "type": "scope", "detail": "唯一直接讀取的站外頁是 Yahoo 彰源 2030.TW 股票頁（0cbf6949495b4aa7a7e74e8965558c53），屬同名誤匹配。沒有任何相關候選站（娛樂城評測站、3A 品牌站）被檢查，off-page 部分等於空白。"},
+        {"where": "Off-page 已知", "type": "unsupported", "detail": "寫「直接讀取搜尋候選Yahoo彰源股票頁」，但 sources 裡沒有對應的搜尋快照，候選從哪個查詢來無法追溯。"},
+        {"where": "On-page 推論", "type": "overclaim", "detail": "「集中導流至3A」漏了同頁 header 的 WG娛樂城橫幅，連到 bc5730m.wg1888.com/index/Register/?st=2030WG（nofollow），3A 頁與泛詞頁（b3543e98c3d5425b813ba2b4832c5b00、d148a4f4306f462987c058c8d36e0c0b）、首頁（2a2c74500d104db49277b1b05193e163）都有。全站導流不只 3A 一個目的地。"},
+        {"where": "On-page 已知第 3 條／其他未知第 4 條", "type": "other", "detail": "說可見 FAQ 不等於已驗證 FAQ 結構化資料，並列「未測試結構化資料」。但 3A 頁與泛詞頁快照已含 FAQPage 與 Article JSON-LD，證據已在手卻沒讀出。"},
+        {"where": "On-page 抽樣", "type": "other", "detail": "只讀首頁、hub 和兩個核心頁，沒看其他品牌頁或長尾頁，無法支持推論中「品牌長尾頁覆蓋需求」的部分，也漏掉跨頁出金矛盾。"}
+      ]
+    },
+    "rgxe5": {
+      "summary": "讀了 6 個站內頁，含富遊頁與 3A 出金速度長尾頁。找出跨頁出金矛盾、富遊頁導向 3A 註冊、FAQ 套詞、供應商描述差異，全部和快照相符。站外直接讀了兩個由搜尋列出的 3A 相關站，並用搜尋快照說明股票代碼雜訊。行動緊扣發現，附成本與 28 天觀察窗。小缺點是行動 6 的優先序標示含糊，「集中3A」漏了 WG 橫幅。",
+      "defects": [
+        {"where": "On-page 推論第 1 條", "type": "overclaim", "detail": "「集中3A註冊承接」沒計入各頁 header 的 WG娛樂城橫幅（bc5730m.wg1888.com ?st=2030WG，nofollow），也沒計入首頁的 wg1888 ?st=live 直播註冊彈窗（a6cbb43aa2db47feb8982d3ce6867506）。站方實際有兩個導流目的地。"},
+        {"where": "行動第 6 條", "type": "other", "detail": "優先序標成「P0/P2」，讀者不知道它該排在第幾。內容是量測基線，和行動 1 的 P0 盤點有重疊。"},
+        {"where": "其他未知第 4 條", "type": "other", "detail": "列「未量測完整結構化資料」，但 3A、娛樂城、3A 出金速度頁快照已含 FAQPage 與 Article JSON-LD（2fe1686831ac4cd98588815fc1cfa9d8、d4bee9a871564196a6b644ef796738a2）。3A 頁 dateModified 2026-09-29 與頁面顯示的更新日不同，這些都沒有讀出。"}
+      ]
+    },
+    "rccad": {
+      "summary": "On-page 是六份裡最細的：讀了 8 頁，找出分類篩選頁 canonical 回 /wordcup/、長尾頁把關鍵字當成平台名、gofun 問句頁 FAQ 套詞、跨頁出金矛盾、SSL/KYC 不等於合法，全部核實屬實。但 off-page 只讀一個 Yahoo 股票誤匹配頁，還在搜尋額度未用完時就停止外部發現。行動多是條件式，對怎麼競爭給的具體建置較少。",
+      "defects": [
+        {"where": "Off-page 已知／其他未知第 1 條", "type": "scope", "detail": "只讀 Yahoo 彰源股票頁（853dd8ca823a47e980a3d1c5ced3d44b），而且自承「兩次外部發現搜尋未帶來可用品牌候選後停止該分支，未耗盡五次上限」。原題明確要求 off-page，卻沒有檢查任何相關站外候選，也沒寫 off-page 推論。"},
+        {"where": "Off-page 已知", "type": "unsupported", "detail": "寫「直接讀取搜尋列出的Yahoo股市彰源頁」，但 sources 裡沒有搜尋快照，候選來源無法追溯。"},
+        {"where": "行動第 2 條", "type": "scope", "detail": "「先選我方既有泛詞與3A核心頁小規模測試」預設我方已有這兩類頁面。報告自己也說我方網站未提供、P0 盤點尚未完成，前後不一致。"},
+        {"where": "行動第 3 條", "type": "other", "detail": "行動主要是「若我方盤點發現同類問題」才去修，把競爭者的缺陷轉成我方的自查項目。對於為兩個目標詞建什麼頁、怎麼差異化，給得比同組報告少。"},
+        {"where": "On-page 已知第 4 條", "type": "other", "detail": "「部署署名」是錯字，應為「編輯部署名」，不影響判讀。"},
+        {"where": "其他未知第 4 條", "type": "other", "detail": "列「未驗證結構化資料有效性」。手上的 3A 與長尾頁快照（4536e4dd38144e3ead26ed7ce7e8207c、3df4809ebfc0424cb80f889ebf4bf3ef）已含 FAQPage 與 Article JSON-LD，報告卻沒讀出來，也沒寫出 header 的 WG娛樂城橫幅（wg1888 ?st=2030WG）這第二條導流。"}
+      ]
+    },
+    "rudyu": {
+      "summary": "讀了 6 個站內頁，on-page 準確：跨頁出金矛盾、FAQ 套詞、三頁都用 2030編輯部署名卻寫第一人稱體驗、CTA 帶 nofollow。行動最具體：一個 3A 查核頁、一個娛樂城比較主頁、可引用資產、上線前後驗證，以及暫不做的清單，每項都連回發現。短處是 off-page 只讀一個 Yahoo 股票同名頁。",
+      "defects": [
+        {"where": "Off-page 已知／其他未知第 2 條", "type": "scope", "detail": "唯一直接讀取的站外頁是 Yahoo 彰源股票頁（212b161b8fa64c29a2e32cd8ffb60cfd），屬同名假陽性。報告自己也承認這點，但沒有檢查任何相關站外候選，off-page 實質內容很少。"},
+        {"where": "On-page 推論第 1 條", "type": "other", "detail": "描述「註冊導流」時只看到 3A 的 don0911.3a1788.bet。漏了各頁 header 的 WG娛樂城橫幅（bc5730m.wg1888.com ?st=2030WG，nofollow），也漏了首頁的 wg1888 ?st=live 直播註冊彈窗（865f78253c9043cbb5af432e340cf9b8）。"},
+        {"where": "On-page 已知第 3 條／其他未知第 5 條", "type": "other", "detail": "說不證明 FAQ 富結果資格，並列結構化資料未驗證。但 3A 頁、泛詞頁快照（4fef17e18567472dbeeafdb05adb3fe4、2f717ec8c0fc4f73af7c328fd3123cbb）已含 FAQPage 與 Article JSON-LD，證據已在手卻沒讀出。"}
+      ]
+    }
+  },
+  "pairs": {
+    "P1": {"preferred": "B", "strength": "slight", "reasons": "兩份都沒有和快照不符的錯誤，分別在證據覆蓋面與具體度。r9npr 多讀了富遊頁（3da9a66e98414bd89484c0b30da3ca84），證明不同品牌頁的 CTA 都指向同一個 don0911.3a1788.bet/?st=wg2030，而且各有 4 個 nofollow，讓「集中商業導流」推論有跨品牌依據。r55kz 只看 3A 與泛詞兩頁，也沒寫 rel。r9npr 另以 MLB 頁（a49c492db8d548af97b4178155a99b15）當反例：頁上有 Tank01 MLB API 數據表，meta description 只是顏色圖例，經核對屬實，具體說明了體育入口的實際內容。站外兩份都只有陰性結果：r9npr 讀了 casinobase 與 3aaa.com.tw 並附搜尋快照；r55kz 讀了 CasinoBase、icasino，以及價值低的 nJAV 回顯頁。r55kz 的反證條（泛詞頁提醒洗碼量，3eea9e4a78814f57bef6d6f460065bbe）是加分。行動兩份都分級並連回發現，r9npr 每項附成本，量測也較完整。差距不大。"},
+    "P2": {"preferred": "A", "strength": "slight", "reasons": "兩份讀的站內頁相同（首頁、/wordcup/、3A、泛詞頁），on-page 陳述都和快照相符。rt9z8 多寫了 4 個 nofollow 連結，r55kz 多了一條反證（泛詞頁提醒洗碼量與提領限制）。主要差在 off-page：rt9z8 只讀 Yahoo 彰源股票頁（0cbf6949495b4aa7a7e74e8965558c53），是同名誤匹配，對競爭者站外做法沒有資訊，sources 也沒有搜尋快照可追溯候選來源。r55kz 至少直接檢查了兩個相關的娛樂城評測站（56d5c2522bbe4a6fad53b4b76abe3b5b、d1f9ae3ec4304c0ba2289daa105e7fb5），並正確解讀 nJAV 是搜尋回顯。rt9z8 的「集中導流至3A」也漏了同頁 header 的 WG娛樂城橫幅。行動部分，rt9z8 有成本與 4–8 週觀察窗，r55kz 有固定地區與裝置的 SERP 基線和停損，兩者相當。"},
+    "P3": {"preferred": "A", "strength": "slight", "reasons": "兩份都沒有實質錯誤，站外都直接讀了兩個相關站（陰性）並附搜尋快照，差在 on-page 與目標詞的貼近程度。rgxe5 多讀了 3A 出金速度長尾頁（d4bee9a871564196a6b644ef796738a2），從中找出三點，都經快照核實，而且直接扣住「3A娛樂城」這個詞：3A 品牌頁寫「半小時至一小時」、長尾頁寫「15至30分鐘」的跨頁矛盾；FAQ 套詞「3a娛樂城出金速度有手機版可以玩嗎」；供應商描述不同（沙龍、歐博 vs DG、歐博、SA）。它的行動 2（附來源與查核日期的出金條件頁）正是從這個發現推出。r9npr 的 MLB 反例有價值，但離兩個目標詞較遠。rgxe5 的小缺點是行動 6 標「P0/P2」含糊，「集中3A」漏了 WG 橫幅。整體 rgxe5 略勝。"},
+    "P4": {"preferred": "B", "strength": "slight", "reasons": "rccad 的 on-page 較深：分類篩選頁 canonical 回 /wordcup/（6a7786604d4144458e4b71b91565536d）、長尾頁把「3a娛樂城出金速度」稱為一間平台（3df4809ebfc0424cb80f889ebf4bf3ef）、gofun 問句頁 FAQ 套詞（55c84e70fff24c0ca7e09408b01f84e9）、跨頁出金矛盾，全部核實屬實。但它的 off-page 只讀 Yahoo 股票誤匹配頁（853dd8ca823a47e980a3d1c5ced3d44b），還自承在搜尋額度未用完時就停止外部發現，站外部分幾乎空白。行動以「先盤點我方，有同類問題再修」為主，第 2 項還預設我方已有泛詞與 3A 核心頁，對怎麼競爭給的具體建置較少。r9npr 的 on-page 稍淺，但涵蓋跨品牌導流（富遊頁同樣導向 3A）與體育入口的反例；站外直接檢查兩個相關站；行動明確提出比較／風險主頁、3A 查核頁、作者方法揭露、可引用資產與 Search Console 量測，並附成本。r9npr 對 on-page、off-page、行動三部分的回答較均衡。"},
+    "P5": {"preferred": "A", "strength": "slight", "reasons": "兩份 off-page 一樣弱，都只讀 Yahoo 彰源同名頁（212b161b8fa64c29a2e32cd8ffb60cfd、853dd8ca823a47e980a3d1c5ced3d44b）。on-page 兩份都正確抓到 3A 跨頁出金矛盾與 FAQ 套詞；rccad 另有分類頁 canonical、gofun 頁與 SSL/KYC 推論，細節較多。差在行動：rudyu 直接提出試作一個 3A 品牌查核頁，把出金時間分成平台宣稱、第三方陳述與實際證據三欄，再做一個娛樂城比較與風險主頁連到品牌頁，接著是可引用資產、上線前後的 200／canonical／索引驗證與觀察窗，最後是「暫不做」清單，每項都扣回報告的發現（例如 4fef17e18567472dbeeafdb05adb3fe4 和 d54f2ec71fb3488abfe12988bee97af9 的出金口徑差異）。rccad 的行動多為條件式，第 2 項預設我方已有核心頁。rccad 多出的 on-page 細節屬增量，抵不過行動實用性的落差，所以 rudyu 些微較好。"}
+  }
+}

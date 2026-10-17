@@ -1,0 +1,8 @@
+# 012.tw
+# 註：後台／管理路徑刻意不列在這裡（此檔公開，寫上去等於對外公告）；改用伺服器端 X-Robots-Tag: noindex。
+
+User-agent: *
+Disallow: /index.php?
+
+Sitemap: https://012.tw/sitemap.xml
+Sitemap: https://012.tw/sitemap-tra.xml

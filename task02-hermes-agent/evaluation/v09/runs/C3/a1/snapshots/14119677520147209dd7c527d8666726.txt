@@ -1,0 +1,19 @@
+User-agent: Googlebot
+Disallow: /app
+Disallow: /ajax/
+Disallow: /bin/
+Disallow: /bll/
+Disallow: /common/
+Disallow: /controls/
+Disallow: /dal/
+Disallow: /logs/
+Disallow: /mobile/
+Disallow: /modules/
+Disallow: /templates/
+Disallow: /uploadfile/
+Disallow: /webParts/
+
+User-agent: Googlebot-image
+
+sitemap: https://xn--kprw3gq6bj71aiqh.com/sitemap.html
+sitemap: https://xn--kprw3gq6bj71aiqh.com/sitemap.xml

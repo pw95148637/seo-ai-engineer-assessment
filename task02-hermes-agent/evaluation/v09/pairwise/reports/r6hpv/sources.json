@@ -1,0 +1,68 @@
+{
+  "cb5396def79544cb98173d81dc0370ef": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/cb5396def79544cb98173d81dc0370ef.txt"
+  },
+  "c301feecdce542f780b08de6ee2b185f": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/c301feecdce542f780b08de6ee2b185f.txt"
+  },
+  "97f8a8480d174245867d739c1cf18e0c": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/97f8a8480d174245867d739c1cf18e0c.txt"
+  },
+  "8015e9841c454feeb9dba7e2f996865e": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/8015e9841c454feeb9dba7e2f996865e.txt"
+  },
+  "f47b182120194e0fb3c158451be65e16": {
+    "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/f47b182120194e0fb3c158451be65e16.txt"
+  },
+  "4d674733826d4ffb8e305e4a3f665abf": {
+    "url": "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/4d674733826d4ffb8e305e4a3f665abf.txt"
+  },
+  "7520bcfb7d2c4cb1a135e898e998d72d": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/7520bcfb7d2c4cb1a135e898e998d72d.txt"
+  },
+  "370a3f109d7f41f7bf74e14b65fa9206": {
+    "url": "search:ddgs",
+    "status": 503,
+    "method": "search_index",
+    "snapshot": "snapshots/370a3f109d7f41f7bf74e14b65fa9206.txt"
+  },
+  "6a83757295344a159793a08d736a9b1a": {
+    "url": "search:ddgs",
+    "status": 503,
+    "method": "search_index",
+    "snapshot": "snapshots/6a83757295344a159793a08d736a9b1a.txt"
+  },
+  "55acaa4898d54df7a4e5698ea852c38f": {
+    "url": "search:ddgs",
+    "status": 503,
+    "method": "search_index",
+    "snapshot": "snapshots/55acaa4898d54df7a4e5698ea852c38f.txt"
+  },
+  "d36bc22c62f649d49b3b1d149e5b4689": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/d36bc22c62f649d49b3b1d149e5b4689.txt"
+  }
+}

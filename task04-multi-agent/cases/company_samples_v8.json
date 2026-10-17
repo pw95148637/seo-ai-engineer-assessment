@@ -1,0 +1,41 @@
+{
+  "id": "company_samples_v8",
+  "preregistered_at": "見 evidence/tiered-v8/prereg.json 的 registered_at_utc",
+  "purpose": "用公司資料表 Sheet1 的 10 筆娛樂城文章片段，測 v8 的程式檢查與 Auditor。cases/company_samples.json（v6 的預期）不修改；本檔是 v8 的預期，在任何 v8 模型呼叫之前寫定，執行後不修改。",
+  "source": {
+    "sheet": "https://docs.google.com/spreadsheets/d/198L8PDlajqKmSsz-ScUti7tYUnyTyUYBAa3nJWfyzCQ",
+    "tab": "Sheet1",
+    "csv_export": "https://docs.google.com/spreadsheets/d/198L8PDlajqKmSsz-ScUti7tYUnyTyUYBAa3nJWfyzCQ/export?format=csv&gid=0",
+    "selection": "Category 為 Casino 的全部 10 筆；片段原文由程式從資料表讀入，本檔不重複保存"
+  },
+  "wrapping": "每筆包成一份待審草稿：title 放該筆的 Target Keyword（原文沒有標題），sections 只有一段，heading 為空、points 是該片段；negotiation_note 說明 title 與 sections 的來源。request 只說明要審核一段既有文章內文，不帶任何預期。",
+  "policy_version": "custom-provisional-v5-tiered",
+  "same_rows_as_v6_sha256": "05f5a98d53b56a913b08c491ff22ec80277b0d0c1d568cb77c4896a195cb11b4",
+  "blocked_means": "程式檢查或 Auditor 至少有一項 MUST，系統就退回；另記 Auditor 單獨的判定。",
+  "scoring": {
+    "clear": "明確案例：系統必須退回，且至少一個 key_terms 出現在某一項 MUST 的引用原句中。任何一筆不成立，依登錄 v8 不採用。",
+    "boundary": "邊界案例：lean_blocked 是事前傾向，不計入一致率、不影響採用；逐筆記錄判定、理由與 suggestions，依 v8_expectation 人工判讀。"
+  },
+  "samples": [
+    {"id": "1", "class": "clear", "key_terms": ["PAGCOR", "小額出金"],
+     "rationale": "以境外執照當挑選依據、建議小額出金測試（等於先儲值下注），違反 LEGAL。"},
+    {"id": "2", "class": "clear", "key_terms": ["穩賺不賠", "100%"],
+     "rationale": "含「穩賺不賠」（程式在內容要點也擋）與「保證 100% 獲利」，並以「快來加入」招攬。"},
+    {"id": "5", "class": "clear", "key_terms": ["實測"],
+     "rationale": "「實測三個月」沒有給定證據，違反 EVIDENCE。"},
+    {"id": "12", "class": "clear", "key_terms": ["實際註冊"],
+     "rationale": "以「實際註冊後」的親身經驗評價平台，沒有可查證紀錄，違反 EVIDENCE。"},
+    {"id": "15", "class": "clear", "key_terms": ["註冊帳號", "體驗金"],
+     "rationale": "逐步教讀者註冊、實名認證、領體驗金，屬鼓勵投注的操作，違反 LEGAL。"},
+    {"id": "10", "class": "boundary", "lean_blocked": true,
+     "v8_expectation": "與 v6 相同：「真實的娛樂城純屬娛樂」淡化財務與刑責風險（LEGAL，MUST）。以「保證獲利」描述詐騙群組屬可寫的內容要點，不應單憑這四個字退回。"},
+    {"id": "17", "class": "boundary", "lean_blocked": false,
+     "v8_expectation": "與 v6 相同：防詐內容可用；「正規平台客服」若以 LEGAL 退回，是嚴格但可接受的讀法。LEGAL 仍是 MUST，分級不改變這一筆。"},
+    {"id": "3", "class": "boundary", "lean_blocked": true,
+     "v8_expectation": "「我們有最棒的娛樂城推薦服務」推銷推薦服務、替平台背書（LEGAL，MUST）。關鍵字堆砌是 SEO 品質問題，v8 中至多是 suggestions，不應成為退回理由。"},
+    {"id": "4", "class": "boundary", "lean_blocked": false,
+     "v8_expectation": "Meta Keywords 決定排名是錯誤的 SEO 說法，不涉及 MUST；v8 應通過，錯誤說法至多寫在 suggestions。"},
+    {"id": "19", "class": "boundary", "lean_blocked": false,
+     "v8_expectation": "v6 以 CLAIMS 退回（字數決定排名、一定能排到第一頁）。這是 SEO 技術錯誤與排名保證，不是對讀者的財務保證；v8 預期通過、錯誤說法至多寫在 suggestions。CLAIMS 仍是 MUST，Auditor 若仍以 CLAIMS 退回，照實記錄為分級沒有改變的一筆。"}
+  ]
+}

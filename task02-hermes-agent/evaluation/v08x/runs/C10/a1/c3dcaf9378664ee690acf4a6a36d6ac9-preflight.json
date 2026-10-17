@@ -1,0 +1,27 @@
+{
+  "provider": "openai-codex",
+  "logged_in": true,
+  "rate_limited": false,
+  "expected_tools": [
+    "research_evidence",
+    "research_fetch",
+    "research_finish",
+    "research_offpage",
+    "research_search",
+    "research_status"
+  ],
+  "actual_tools": [
+    "research_evidence",
+    "research_fetch",
+    "research_finish",
+    "research_offpage",
+    "research_search",
+    "research_status"
+  ],
+  "model_called": false,
+  "ready": true,
+  "blocker": "",
+  "hermes_learning": "off",
+  "hermes_home": "/home/user/soulo/task02-hermes/.runtime/user/profiles/v08x-c10-a1",
+  "stores_in_home": true
+}

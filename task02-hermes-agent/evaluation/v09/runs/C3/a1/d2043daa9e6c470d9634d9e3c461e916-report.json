@@ -1,0 +1,185 @@
+{
+  "claims": [
+    {
+      "text": "首頁title/H1以2030玩運彩瘋世足、MLB/NBA與世界盃為主，透過『線上娛樂城推薦』內鏈導向/wordcup/；不是首頁直接以3A娛樂城為主題。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "79b42d48e702426496146201bbd34d65"
+      ],
+      "topic": "architecture"
+    },
+    {
+      "text": "/wordcup/有娛樂城推薦title、品牌與評價/優惠/玩法/安全出金分類，頁面自稱2502篇並列出3a娛樂城與娛樂城專頁；2502是站方顯示數字，不是本輪驗證的獨立有效頁或索引量。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "5fd292f2953c4595b84481ee386fb68e"
+      ],
+      "topic": "keyword_mapping"
+    },
+    {
+      "text": "3A與娛樂城專頁均回應200、具有對應關鍵詞title/H1、自指canonical與index,follow；兩頁均有平台特色、遊戲、出金安全、註冊、優惠、客服、五題FAQ與註冊CTA。這是可見優化部署，不證明Google索引或排名。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "f8bd18faea174d058156ee92ba386f9d",
+        "3a6d1de3dd1d4405905b39f79565015a"
+      ],
+      "topic": "target_pages"
+    },
+    {
+      "text": "抽查富遊與3A、泛詞頁可見相同章節/FAQ問題類型，且均導向don0911.3a1788.bet/?st=wg2030，rel含nofollow；富遊頁也連到3A出金速度、提款教學長尾頁。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "ba60a46723fc46c0bf1a2312abe6bb6a",
+        "f8bd18faea174d058156ee92ba386f9d",
+        "3a6d1de3dd1d4405905b39f79565015a"
+      ],
+      "topic": "conversion_links"
+    },
+    {
+      "text": "可見架構符合體育內容入口、娛樂城目錄、品牌/長尾專頁、集中註冊導流的內容漏斗；相同CTA與追蹤參數支持導流意圖，但不證明聯盟合約、佣金、轉換效果或站點共同所有權。",
+      "kind": "inference",
+      "section": "on_page",
+      "evidence_ids": [
+        "79b42d48e702426496146201bbd34d65",
+        "5fd292f2953c4595b84481ee386fb68e",
+        "ba60a46723fc46c0bf1a2312abe6bb6a"
+      ],
+      "topic": "strategy"
+    },
+    {
+      "text": "3A頁聲稱親測、半小時到一小時出金、最低1000元及安全性，但本輪讀取內容未附可核查的交易紀錄、測試樣本或條款來源；這些是站方主張，不是研究確認的服務事實。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "f8bd18faea174d058156ee92ba386f9d"
+      ],
+      "topic": "trust"
+    },
+    {
+      "text": "3A不出金頁有談延遲/KYC/流水疑慮，不能說完全沒有風險內容；但同時將『3a娛樂城不出金』稱為平台、套用遊戲與註冊FAQ並引導註冊，未附爭議案例來源。傳票dcard全文更直接把整個查詢稱作平台名稱，內容主體是優惠與遊戲評測而非傳票處理。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "e05bf109ac694bde9c538868eaca8f03",
+        "b563ec2bfd7445cf9389a897af4df1ab"
+      ],
+      "topic": "intent_mismatch"
+    },
+    {
+      "text": "抽樣顯示長尾套詞有語意錯配，形成我方以可驗證、真正回答出金疑慮與法律風險的內容差異化機會；不能由此認定全站AI生成、doorway處罰或排名下降。",
+      "kind": "inference",
+      "section": "on_page",
+      "evidence_ids": [
+        "e05bf109ac694bde9c538868eaca8f03",
+        "b563ec2bfd7445cf9389a897af4df1ab",
+        "ba60a46723fc46c0bf1a2312abe6bb6a"
+      ],
+      "topic": "competitive_gap"
+    },
+    {
+      "text": "目錄與3A/娛樂城等頁含不相關2026/07/12費城人對老虎虎賽果NewsArticle/WebPage標記，WebPage URL指向另一MLB頁；同時品牌頁另有相符Article與FAQPage。這是標記混雜，不是完全無schema，也不能據此聲稱已被處罰。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "5fd292f2953c4595b84481ee386fb68e",
+        "f8bd18faea174d058156ee92ba386f9d",
+        "3a6d1de3dd1d4405905b39f79565015a"
+      ],
+      "topic": "structured_data"
+    },
+    {
+      "text": "安全出金分類實際呈現不同文章集合，頁面自稱154篇，但title/H1與總目錄一致、canonical回/wordcup/；存在分類獨立搜尋意圖與合併canonical的取捨，無Google所選canonical證據。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "8c5630d003e244ec9e943768827cbc30",
+        "5fd292f2953c4595b84481ee386fb68e"
+      ],
+      "topic": "canonical"
+    },
+    {
+      "text": "MLB抽樣頁有隊伍數據、先發投手/打線、Tank01 MLB API來源標示與更新日期，反駁全站只有空洞導流的過度推論；數據本身未交叉驗證，打線也可見『#6 打者』佔位內容。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "48cd0e6a22f94286acac9039c41084d3"
+      ],
+      "topic": "counterevidence"
+    },
+    {
+      "text": "站外已知：直接核查台灣娛樂城資訊網首頁及icasino.tw/comparison/，兩頁均未檢出指向2030.tw的連結或網域提及；前者亦未檢出3A娛樂城字串，後者未檢出2030玩運彩字串。因此沒有可報告的目標入站錨文字或上下文。",
+      "kind": "observation",
+      "section": "off_page",
+      "evidence_ids": [
+        "61c55cde3b0d4ebca6b8d0a4e58d605f",
+        "ded905acc5b54a6e97320809a177182b"
+      ],
+      "topic": "verified_offsite_sample"
+    },
+    {
+      "text": "站外推論：網域搜尋混入Yahoo股票代碼結果，直接核查的相關娛樂城搜尋候選也不含目標連結；公開搜尋相關性不能當作2030.tw的背書或外鏈。這只限制本輪搜尋樣本的可用性，不代表競爭者外鏈弱。",
+      "kind": "inference",
+      "section": "off_page",
+      "evidence_ids": [
+        "d946d8804bb34bd5a3159caa7db16efd",
+        "d67052be9c464dda81d7d1146b16e490",
+        "61c55cde3b0d4ebca6b8d0a4e58d605f",
+        "ded905acc5b54a6e97320809a177182b"
+      ],
+      "topic": "search_disambiguation"
+    },
+    {
+      "text": "站外未知：未確認有效入站連結、入站錨文分布、referring domains、來源權威性、付費連結或PBN；公開索引及兩頁站外抽樣不是完整backlink index。本站到WG/3A與社群分享的出站連結不計為入站。",
+      "kind": "unknown",
+      "section": "off_page",
+      "evidence_ids": [],
+      "topic": "backlink_coverage"
+    },
+    {
+      "text": "缺少競爭者私有資料與可靠排名時間序列，未知其Google收錄、排名、流量、CTR、轉換、營收及策略成效；亦未審查我方網站，建議為待評估行動而非我方已存在的缺陷。",
+      "kind": "unknown",
+      "section": "other",
+      "evidence_ids": [],
+      "topic": "measurement_limits"
+    }
+  ],
+  "actions": [
+    {
+      "action": "P0｜我方先建立娛樂城泛詞比較頁與3A獨立查證頁，各自對應搜尋意圖；先查我方既有URL避免重複建頁。以公開條款/來源日期、可驗證平台識別、優惠限制與風險作核心，不假冒官方、不虛構親測或保證安全。成本中，預期品質價值高；上線驗收每個數字/服務主張可追溯，未驗證項明列未知。",
+      "reason": "競爭者已有明確泛詞及品牌落點，缺口在可核實資料與品牌獨有內容，不是單純再增加文章數。"
+    },
+    {
+      "action": "P0｜我方優先製作提領延遲/爭議處理與傳票風險的實用內容：證據保存、條款查核與專業求助；涉及法律的部分由合格專業人士審閱並引用適用地區官方來源。3A具名爭議沒有證據不作事實指控。成本中至高，品質價值高。",
+      "reason": "全文核查確認相關競爭頁把風險查詢套成平台評測，意圖錯配比首頁主攻品牌的原假設更具體。"
+    },
+    {
+      "action": "P1｜我方做小型意圖群集與上下文內鏈：比較總覽→品牌查證→條款/出金疑問；同意圖先整合，只有實質獨有答案才拆頁，不複製2502篇數量策略。成本低至中；驗收關鍵頁可由導覽到達、錨文描述實際目的頁。",
+      "reason": "競爭者目錄與相關推薦具覆蓋/發現功能，但抽樣模板重複不能視為品質或成效證明。"
+    },
+    {
+      "action": "P1｜我方檢查title/H1/description、canonical、可索引狀態與JSON-LD；依頁面角色明確決定分類是否獨立索引，移除跨頁殘留schema，FAQ只標實際可見答案，不以FAQ標記承諾搜尋展示。CTA目的地與品牌要一致，商業關係清楚揭露並適當標記連結。成本低至中。",
+      "reason": "競爭者有基礎關鍵詞配置與自指canonical，但同時混入不相關MLB schema及不同品牌共用註冊落點；我方應避免相同混淆。"
+    },
+    {
+      "action": "P1｜我方off-page先產出可被引用的原始條款比較/風險查核資產，再向相關編輯或專業來源做透明合作；逐頁記錄來源URL、目標URL、錨文、rel、上下文、日期及關係，不買大量精準詞連結、不把論壇灌水或分享按鈕當權威。成本中至高；品質以真實相關引用評估，非URL數。",
+      "reason": "本輪未建立競爭者有效入站證據，不適合推論其外鏈打法或複製未驗證來源；我方仍可用可核查引用建立長期資產。"
+    },
+    {
+      "action": "P0｜用我方可合法取得的Search Console/分析建立基線與上線後4–8週追蹤：查詢群的曝光、點擊、CTR、落地頁及有效互動；排名比較另固定台灣/裝置/日期，與公開競爭頁變更分開記錄。先衡量少量高品質頁，再決定擴寫或外聯預算。成本低至中。",
+      "reason": "沒有競爭者流量或排名證據，也沒我方現況；任何成效承諾或ROI數字都無依據。"
+    }
+  ],
+  "unknowns": [
+    "2030.tw在Google對娛樂城、3A娛樂城與相關長尾的實際排名、收錄與趨勢。",
+    "競爭者有效referring domains、入站錨文、自然或商業來源比例；本輪兩個站外樣本均未確認連結。",
+    "2502篇目錄數字對應多少獨立、有實質內容、可索引且被收錄的URL。",
+    "3A頁自稱出金、入金門檻、優惠、客服與親測經驗的真實性；不出金頁的爭議也沒有已核實案例。",
+    "Google是否採用分類canonical與如何處理混雜schema；無處罰證據。",
+    "WG/3A目的地的實際商業合約、最終營運者、轉換率與收入。",
+    "我方既有網站、內容、法遵條件、Search Console與可投入資源，尚未提供。"
+  ]
+}

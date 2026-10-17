@@ -1,0 +1,18 @@
+{"step": "C6", "attempt": 1, "run_id": "a17517b7eaaf40ecb9243440ee8550bb", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+{"step": "L6", "attempt": 1, "run_id": "daf9f1eb4e1e4d2da6c9f15a21696556", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+{"step": "N6", "attempt": 1, "run_id": "112b264bf329424f95249299f108ce59", "state": "research_complete", "settled": true, "learned": true, "isolation": []}
+{"step": "L7", "attempt": 1, "run_id": "6500259ba1cc444fad33c574e2163725", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+{"step": "N7", "attempt": 1, "run_id": "4d9f10151b9346f5abc167a7acc76677", "state": "research_complete", "settled": true, "learned": true, "isolation": []}
+{"step": "C7", "attempt": 1, "run_id": "fcd2e410c6b54073bfdb3ee8f63386b0", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+{"step": "N8", "attempt": 1, "run_id": "c4b41783797a41ebbff60973507863db", "state": "research_complete", "settled": true, "learned": true, "isolation": []}
+{"step": "C8", "attempt": 1, "run_id": "1a6bd2bb84444f6082d2b3334a0dc12d", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+{"step": "L8", "attempt": 1, "run_id": "502cec7df1fa4716a79845d0c32670be", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+{"step": "N9", "attempt": 1, "run_id": "95a33250175a461da12e48e5926f304f", "state": "research_complete", "settled": true, "learned": true, "isolation": []}
+{"step": "L9", "attempt": 1, "run_id": "7b42acdec4a14f8589d639c1234d6a90", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+{"step": "C9", "attempt": 1, "run_id": "536b6b981b8d448d8dd622b11e995741", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+{"step": "C10", "attempt": 1, "run_id": "c3dcaf9378664ee690acf4a6a36d6ac9", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+{"step": "L10", "attempt": 1, "run_id": "14ba9fdcf4f94bcdb3c0c6a6c159bee8", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+{"step": "N10", "attempt": 1, "run_id": "1181c5e20b0840cbbddbe2b5760f78d5", "state": "model_failed_or_partial", "settled": false, "learned": false, "isolation": []}
+{"step": "N10", "attempt": 2, "run_id": "387030bf70b64265888f5318b457fd22", "state": "research_complete", "settled": true, "learned": true, "isolation": []}
+{"ran": ["C6", "L6", "N6", "L7", "N7", "C7", "N8", "C8", "L8", "N9", "L9", "C9", "C10", "L10", "N10"]}
+exit 0

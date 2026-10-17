@@ -1,0 +1,61 @@
+{
+  "reviewer": "R2",
+  "reports": {
+    "rt9z7": {
+      "summary": "On-page 核對後全部成立：3A 主頁和兩篇長尾頁的出金時間互相矛盾（30–60 分鐘對 15–30 分鐘）、長尾 FAQ 是機械套詞、分類參數頁 canonical 指回 /wordcup/，這些都有具體證據。弱點在 off-page：只讀了一個股票報價頁，搜尋次數的說法也追不到證據；網站沿用舊科技站網址這條線索沒有看到。",
+      "defects": [
+        {"where": "其他未知第 1 條", "type": "unsupported", "detail": "寫「五次公開搜尋額度耗盡」，但 sources.json 只有一筆 search_index 快照（f7754c93），其餘四次搜尋無證據可追。"},
+        {"where": "Off-page 已知／推論", "type": "other", "detail": "站外證據只有一組只回傳股票結果的搜尋（f7754c93）和 Yahoo Finance 報價頁（481fc476），沒有讀任何與博弈或競爭者相關的站外頁，所以 off-page 實質上沒有發現。另外，自己讀的首頁與 3A 頁導覽（476f82db、bb592b13）把 /article/responsible-ai-008-audrey-tang/、/article/space-tech-002-jong-shinn-wu/、/5g_taiwan/、/iftomm2015cd/ 等科技語意舊路徑當作世足、MLB 選單，這是網域沿革與舊外鏈的線索，報告連列為未知都沒有。"},
+        {"where": "On-page 已知第 1 條", "type": "epistemic", "detail": "「不能把首頁視為3A主落地頁」是對搜尋承接頁的判斷；排名與承接 URL 在報告中屬未知，這句是推論，卻放在已知。"},
+        {"where": "On-page 已知第 7 條", "type": "epistemic", "detail": "「這反駁『分類完全無作用』」反駁的是報告中從未出現的主張，又把「需先決定分類是否應獨立承接意圖」這類判斷混進觀察。事實本身（afd489f3 顯示 154 篇、canonical 指回 /wordcup/、title 與主目錄相同）正確。"},
+        {"where": "行動第 1、2 條", "type": "other", "detail": "兩條都要建娛樂城比較／樞紐頁和 3A 查核／證據頁，內容重疊，P0 與 P1 的先後分工不清。"}
+      ]
+    },
+    "r8zfa": {
+      "summary": "抽樣最有層次：除了核心頁，還有富有頁、58888 優惠頁（不同模板、三節三題 FAQ、追蹤碼 st=go99950）和 3A 缺點頁的反證，並謹慎指出科技語意路徑承載世足內容。具體主張和快照逐條相符。Off-page 讀的兩頁都是與博弈無關的年份主題頁，資訊量低。",
+      "defects": [
+        {"where": "Off-page 已知", "type": "other", "detail": "直接讀取的工研院（d1e3a078）和 paulkuo（9c85b513）是「2030」年份主題頁，與博弈和競爭者都無關。當作負對照幾乎不能告訴讀者 2030.tw 的站外情況；報告有承認限制，但 off-page 仍沒有實質發現。"},
+        {"where": "On-page 已知第 8 條／其他未知第 2 條／行動", "type": "other", "detail": "已指出 /article/responsible-ai-008-audrey-tang/ 承載世足內容（ab613db8），但沒有把它連到 off-page 問題（可能是沿用舊網域的權重或舊外鏈），行動也沒有安排查證（例如歷史快照或舊網址外鏈查核）。首頁導覽（8d318988）另有 space-tech-002-jong-shinn-wu、the-twin-green-digital-transition-itri-nzsso 等同類路徑，可以加強這項觀察，報告沒有用到。"}
+      ]
+    },
+    "r6hpv": {
+      "summary": "寫到的內容都準確，MLB 頁的 Tank01 資料來源與「#6 打者」占位這個反例細緻，行動也具體。但只抽查三個娛樂城頁，沒有任何 3A 長尾頁；off-page 沒有讀任何站外頁，幾乎都靠失敗的搜尋。",
+      "defects": [
+        {"where": "Off-page 已知第 1、2 條", "type": "unsupported", "detail": "寫出各次查詢的內容（「帶引號的2030.tw」「品牌名、網域加娛樂城及完整網址排除股票」「site查詢」），但搜尋快照（7520bcfb、370a3f10、6a837572、55acaa48、d36bc22c）只有結果或錯誤訊息，沒有記錄查詢字串，哪個查詢對應哪個結果無法核對。"},
+        {"where": "Off-page 整節", "type": "other", "detail": "沒有直接讀取任何站外頁：一組搜尋結果只有世界盃維基與股票，三次 503，一次空結果。off-page 覆蓋是六份報告中最薄的。"},
+        {"where": "On-page 抽樣範圍", "type": "other", "detail": "只讀 3A、娛樂城、富遊三個內頁，沒有任何 3A 長尾頁（出金速度、提款教學、優惠、缺點等），所以沒有檢視競爭者在「3A娛樂城」上的長尾擴張與說法前後是否一致，而這是該詞最關鍵的 on-page 做法。"},
+        {"where": "On-page 已知第 1 條", "type": "epistemic", "detail": "「因此不能把首頁當成娛樂城或3A主關鍵字落地頁」是推論（承接 URL 與排名未知），卻放在已知。"},
+        {"where": "整體", "type": "other", "detail": "首頁導覽（cb5396de）的科技語意舊路徑（/article/space-tech-002-jong-shinn-wu/、/article/responsible-ai-008-audrey-tang/ 等）可指向網域沿革與舊外鏈，報告沒有提及，也沒有列為未知。"}
+      ]
+    },
+    "rts4n": {
+      "summary": "On-page 證據最紮實：3A 主頁與兩篇長尾的出金時間矛盾、套詞 FAQ、提款教學的步驟其實是註冊，以及內鏈串接（富遊頁連到兩篇 3A 長尾，提款教學以「3a娛樂城」錨文字回連主頁）、列表 CTA 參數 wg2030idx、MLB 反例，全部核對成立。Off-page 只讀了一個導航站。",
+      "defects": [
+        {"where": "行動第 4 條", "type": "unsupported", "detail": "理由提到「WG圖片alt連到3A命名網域的混雜現象」，但這個細節沒有出現在任何已知條目，也沒有附 evidence。快照 8de86f26 確實有 alt=WG娛樂城 連到 don0911.3a1788.bet，只是報告本身沒有建立這項發現。"},
+        {"where": "Off-page 已知", "type": "other", "detail": "只直接讀取 012.tw 導航站（f46cde10），與博弈或競爭者無關，負對照的資訊量很低；off-page 實質上沒有發現。"},
+        {"where": "整體", "type": "other", "detail": "首頁（e5e834d3）與內頁導覽中的科技語意舊路徑（如 /article/responsible-ai-008-audrey-tang/、/article/the-twin-green-digital-transition-itri-nzsso/）是網域沿革與舊外鏈的線索，報告沒有提及，也沒有列為未知。"}
+      ]
+    },
+    "r5nwf": {
+      "summary": "On-page 準確：3A 主頁與長尾的出金時間不一致，並指出「娛樂城推薦」頁自稱嚴選卻沒有具名名單、與泛詞頁意圖重疊，切中「娛樂城」一詞的競爭。Off-page 讀的是娛樂城排行與 3A 主題站，比較相關，但其中一頁的來源追不到搜尋證據。",
+      "defects": [
+        {"where": "Off-page 已知／推論", "type": "unsupported", "detail": "稱 3aaa.com.tw 是「相關搜尋列出的」娛樂城頁，但引用的搜尋快照（84c0ced7、cc685840）都沒有列出 3aaa.com.tw（cc685840 列的是 havespring、betboy.tw、regexland 等），這個候選的來源無法追溯。"},
+        {"where": "On-page 已知第 2 條", "type": "other", "detail": "「首頁目錄首屏可連至3a娛樂城、娛樂城與其他品牌頁」只引用 /wordcup/（4869ef82）。首頁（0f271f31）本身並不直接連到這些品牌頁，用詞容易被讀成首頁。"},
+        {"where": "整體", "type": "other", "detail": "首頁導覽中的科技語意舊路徑（如 /article/responsible-ai-008-audrey-tang/、/article/space-tech-002-jong-shinn-wu/）與網域沿革、舊外鏈有關，報告沒有提及，也沒有列為未知。"}
+      ]
+    },
+    "r73pe": {
+      "summary": "與 r8zfa 同一套抽樣思路：客萊柏頁、58888 頁的模板差異、缺點頁的反證、科技語意路徑。具體主張和快照逐條相符，已知與未知分得清楚。Off-page 讀的是股票報價和維基政策頁，與競爭者無關。",
+      "defects": [
+        {"where": "Off-page 已知", "type": "other", "detail": "直接讀取的 Yahoo 彰源報價頁（9912480a）和 Wikipedia 2030 Bilingual Nation（b79ae4fc）一看就與 2030.tw 無關，當負對照幾乎沒有資訊量，off-page 實質上沒有發現。"},
+        {"where": "On-page 已知第 8 條／行動", "type": "other", "detail": "科技語意路徑（ee2d88cd）只列為現況與未知，沒有連到 off-page 的可能做法（舊網域權重或舊外鏈），行動也沒有安排查證；首頁導覽（45608668）的其他同類路徑也沒有用來加強觀察。"}
+      ]
+    }
+  },
+  "pairs": {
+    "P1": {"preferred": "B", "strength": "slight", "reasons": "兩份的具體主張我都逐條對過快照，沒發現事實錯誤，只差在角度。rt9z7（A）的長處是 3A 關鍵字群：主頁寫 30–60 分鐘，長尾頁 65554fa4、8c9aaf91 寫 15–30 分鐘；長尾 FAQ 機械套詞；分類參數頁 afd489f3 的 canonical 合併。r8zfa（B）抽樣更有層次：58888 頁（3833efba）是不同模板（三節三題 FAQ）、追蹤碼 st=go99950，也沒交代優惠條款；缺點頁（2022feb1）的反證避免把站方說成毫無風險揭露；並謹慎指出科技語意路徑（ab613db8）承載世足內容，這是 off-page 網域沿革最有價值的線索，rt9z7 的快照導覽裡也有，卻沒看到。Off-page 兩份都沒有正向發現，B 讀了兩頁，A 讀一頁股票頁。行動方面，B 先合規與基線再試點，58888 優惠頁的條件式做法具體；A 的行動 1、2 重疊，另有「五次搜尋」的說法追不到證據。整體 B 略好。"},
+    "P2": {"preferred": "B", "strength": "clear", "reasons": "r6hpv（A）寫到的都準確，MLB 反例（4d674733 的 Tank01 來源與「#6 打者」占位）細緻，但覆蓋明顯較窄：只讀三個娛樂城內頁，沒有任何 3A 長尾頁，所以沒有談到競爭者在「3A娛樂城」上的長尾擴張；off-page 沒有讀任何站外頁，只有一組股票／世界盃結果加上三次 503（370a3f10 等），查詢內容也無法從快照核對。r8zfa（B）同樣沒有事實錯誤，多了 3A 長尾頁（58888、缺點）、模板差異、不同追蹤碼、優惠條款缺口、反證和科技語意路徑，off-page 也實際讀了兩頁做負對照。兩份行動品質相近，B 的發現更多也更貼近兩個目標詞，差距明顯。"},
+    "P3": {"preferred": "A", "strength": "slight", "reasons": "兩份讀的核心頁相同（3A、娛樂城、富遊、出金速度、提款教學），都正確指出出金時間矛盾、套詞 FAQ、MLB schema 錯置與日期不一致。rts4n（A）多了幾項經我核對成立、且直接說明 on-page 做法的細節：富遊頁相關推薦連到兩篇 3A 長尾，提款教學頁以「3a娛樂城」錨文字回連主頁（6f43ede7、d8be5bff），也就是品牌與長尾的串接；列表 CTA 用 st=wg2030idx（0cdfea86）；首頁與賽事頁有 WG 註冊廣告；MLB 頁的 Tank01 反例（fb890c6d）。它的行動 2「每個金額、時效附來源與查證日期」和行動 3「提款指南試點」直接對應發現。rt9z7（B）獨有分類參數頁的 canonical 分析，同樣扎實。缺點方面，A 的行動 4 用了沒在已知建立的 WG alt 細節，B 有追不到證據的「五次搜尋」說法，都屬小瑕疵。Off-page 兩份都只讀到無關頁。整體 A 略好。"},
+    "P4": {"preferred": "B", "strength": "slight", "reasons": "r5nwf（A）的強項是對準「娛樂城」一詞：娛樂城推薦頁（b71122eb）自稱「嚴選幾家」卻沒有具名名單，與泛詞頁共用段落、意圖重疊；也指出 3A 主頁與出金速度頁的出金時間不一致。off-page 讀的是娛樂城排行與 3A 主題站，比 B 讀的股票、維基頁相關。但 A 稱 3aaa.com.tw 為搜尋列出，引用的搜尋快照查不到；「首頁目錄首屏」的用詞也與證據不符。r73pe（B）沒有發現事實錯誤，提供了模板差異（58888 頁 b9f00412 三節三題 FAQ、st=go99950）、優惠條款缺口、缺點頁的反證（5ba4f343），以及客萊柏頁與泛詞頁的流水和提領限制提醒（571697fd、7b654d07），並謹慎標出科技語意路徑（ee2d88cd）這條網域沿革線索。B 的 on-page 範圍與已知、推論、未知的區分略勝；A 的 off-page 較相關，縮小了差距。B 略好。"}
+  }
+}

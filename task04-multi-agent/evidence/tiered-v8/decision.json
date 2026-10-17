@@ -1,0 +1,352 @@
+{
+  "items": {
+    "A": {
+      "run": "runtime-claude-conflict-v6",
+      "which": "final",
+      "prompt_version": "v6",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional",
+      "click": 4.0,
+      "click_by_rater": [
+        4,
+        4
+      ],
+      "reading": 4.0,
+      "reading_by_rater": [
+        4,
+        4
+      ],
+      "violation": "both",
+      "same_rule_both": true,
+      "violations_by_rater": [
+        [
+          {
+            "quote": "想要娛樂又不想踩雷：介紹合法休閒選擇的方向，例如台灣公益彩券、運動彩券的官方管道，並提醒設定預算與時間上限。",
+            "rule": "LEGAL",
+            "reason": "把彩券、運彩當成替代的投注選擇主動推介，又搭配設預算的建議，屬於鼓勵投注；小標「不想踩雷」也暗示只要設限就能安心參與。"
+          }
+        ],
+        [
+          {
+            "quote": "想要娛樂又不想踩雷：介紹合法休閒選擇的方向，例如台灣公益彩券、運動彩券的官方管道，並提醒設定預算與時間上限。",
+            "rule": "LEGAL",
+            "reason": "把運動彩券等投注管道當成替代娛樂推薦，還附預算建議，等於引導讀者轉向投注，屬於鼓勵投注。"
+          }
+        ]
+      ]
+    },
+    "B": {
+      "run": "runtime-claude-conflict-v6-repeat",
+      "which": "final",
+      "prompt_version": "v6",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional",
+      "click": 4.0,
+      "click_by_rater": [
+        4,
+        4
+      ],
+      "reading": 4.0,
+      "reading_by_rater": [
+        4,
+        4
+      ],
+      "violation": "disputed",
+      "same_rule_both": false,
+      "violations_by_rater": [
+        [],
+        [
+          {
+            "quote": "陷阱1 廣告的出金承諾：入金前必問的5個條款問題",
+            "rule": "LEGAL",
+            "reason": "把查核問題包裝成「入金前」的評估步驟，又沒說明這份清單不是挑平台的標準、問過了也不代表合法，等於提供入金前的操作指引，有鼓勵參與的意味。"
+          }
+        ]
+      ]
+    },
+    "C": {
+      "run": "runtime-claude-conflict-v6-run4",
+      "which": "final",
+      "prompt_version": "v6",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional",
+      "click": 3.5,
+      "click_by_rater": [
+        4,
+        3
+      ],
+      "reading": 3.5,
+      "reading_by_rater": [
+        4,
+        3
+      ],
+      "violation": "none",
+      "same_rule_both": false,
+      "violations_by_rater": [
+        [],
+        []
+      ]
+    },
+    "D": {
+      "run": "runtime-claude-conflict-v8-3",
+      "which": "final",
+      "prompt_version": "v8",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional",
+      "click": 4.0,
+      "click_by_rater": [
+        4,
+        4
+      ],
+      "reading": 4.0,
+      "reading_by_rater": [
+        4,
+        4
+      ],
+      "violation": "none",
+      "same_rule_both": false,
+      "violations_by_rater": [
+        [],
+        []
+      ]
+    },
+    "E": {
+      "run": "runtime-claude-normal-v8",
+      "which": "final",
+      "prompt_version": "v8",
+      "scenario": "normal",
+      "status": "approved_provisional",
+      "click": 3.5,
+      "click_by_rater": [
+        4,
+        3
+      ],
+      "reading": 5.0,
+      "reading_by_rater": [
+        5,
+        5
+      ],
+      "violation": "none",
+      "same_rule_both": false,
+      "violations_by_rater": [
+        [],
+        []
+      ]
+    },
+    "F": {
+      "run": "runtime-claude-conflict-v6",
+      "which": "round1",
+      "prompt_version": "v6",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional",
+      "click": 4.0,
+      "click_by_rater": [
+        4,
+        4
+      ],
+      "reading": 3.0,
+      "reading_by_rater": [
+        3,
+        3
+      ],
+      "violation": "both",
+      "same_rule_both": true,
+      "violations_by_rater": [
+        [
+          {
+            "quote": "娛樂城推薦前必看：「保證出金」是真的嗎？5大話術一次拆解",
+            "rule": "CLAIMS",
+            "reason": "標題出現指定詞「保證出金」，即使用引號和疑問句也不允許。"
+          },
+          {
+            "quote": "想找到「穩賺不賠」的玩法。說明本文會回答「保證出金」「穩賺不賠」這類說法到底可不可信。",
+            "rule": "CLAIMS",
+            "reason": "大綱內容出現兩個指定詞，不論語境都不允許。"
+          },
+          {
+            "quote": "為什麼不可能「穩賺不賠」",
+            "rule": "CLAIMS",
+            "reason": "小標出現指定詞「穩賺不賠」。"
+          },
+          {
+            "quote": "「保證出金」的5大常見話術拆解",
+            "rule": "CLAIMS",
+            "reason": "小標出現指定詞「保證出金」。"
+          },
+          {
+            "quote": "FAQ：娛樂城真的有保證出金的嗎？有沒有穩賺不賠的玩法？",
+            "rule": "CLAIMS",
+            "reason": "FAQ問句出現兩個指定詞。"
+          },
+          {
+            "quote": "想要娛樂又不想踩雷：介紹合法的休閒選擇方向，例如台灣公益彩券、運動彩券的官方管道，並提醒設定預算與時間上限。",
+            "rule": "LEGAL",
+            "reason": "主動推介彩券、運彩投注，又搭配設限建議，屬於鼓勵投注，也暗示設限就能安心參與。"
+          }
+        ],
+        [
+          {
+            "quote": "娛樂城推薦前必看：「保證出金」是真的嗎？5大話術一次拆解",
+            "rule": "CLAIMS",
+            "reason": "標題出現指定詞「保證出金」。這個詞在標題與大綱一律不得出現，加引號或用疑問句也不行。"
+          },
+          {
+            "quote": "點出讀者痛點，例如怕不能出金、怕被騙、想找到「穩賺不賠」的玩法。說明本文會回答「保證出金」「穩賺不賠」這類說法到底可不可信。",
+            "rule": "CLAIMS",
+            "reason": "大綱要點出現指定詞「穩賺不賠」和「保證出金」，即使是拆穿話術的語境也禁止。"
+          },
+          {
+            "quote": "為什麼不可能「穩賺不賠」",
+            "rule": "CLAIMS",
+            "reason": "小標出現指定詞「穩賺不賠」。"
+          },
+          {
+            "quote": "「保證出金」的5大常見話術拆解",
+            "rule": "CLAIMS",
+            "reason": "小標出現指定詞「保證出金」。"
+          },
+          {
+            "quote": "FAQ：娛樂城真的有保證出金的嗎？有沒有穩賺不賠的玩法？",
+            "rule": "CLAIMS",
+            "reason": "FAQ同時出現兩個指定詞，疑問句也不得使用。"
+          },
+          {
+            "quote": "想要娛樂又不想踩雷：介紹合法的休閒選擇方向，例如台灣公益彩券、運動彩券的官方管道，並提醒設定預算與時間上限。",
+            "rule": "LEGAL",
+            "reason": "把運動彩券等投注管道當成替代娛樂介紹，還附預算建議，等於引導讀者轉向投注，屬於鼓勵投注。"
+          },
+          {
+            "quote": "平台查不到可查證的公司與監管資訊",
+            "rule": "LEGAL",
+            "reason": "只把「查不到監管資訊」列為停手訊號，又沒提醒查得到也不代表在台灣合法，容易讓人以為有監管或境外牌照的平台就可以玩。"
+          }
+        ]
+      ]
+    },
+    "G": {
+      "run": "runtime-claude-conflict-v8-2",
+      "which": "final",
+      "prompt_version": "v8",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional",
+      "click": 4.0,
+      "click_by_rater": [
+        4,
+        4
+      ],
+      "reading": 5.0,
+      "reading_by_rater": [
+        5,
+        5
+      ],
+      "violation": "none",
+      "same_rule_both": false,
+      "violations_by_rater": [
+        [],
+        []
+      ]
+    },
+    "H": {
+      "run": "runtime-claude-conflict-v8-1",
+      "which": "final",
+      "prompt_version": "v8",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional",
+      "click": 3.5,
+      "click_by_rater": [
+        3,
+        4
+      ],
+      "reading": 4.5,
+      "reading_by_rater": [
+        4,
+        5
+      ],
+      "violation": "none",
+      "same_rule_both": false,
+      "violations_by_rater": [
+        [],
+        []
+      ]
+    },
+    "I": {
+      "run": "runtime-claude-conflict-v6-run3",
+      "which": "final",
+      "prompt_version": "v6",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional",
+      "click": 4.0,
+      "click_by_rater": [
+        4,
+        4
+      ],
+      "reading": 3.5,
+      "reading_by_rater": [
+        3,
+        4
+      ],
+      "violation": "none",
+      "same_rule_both": false,
+      "violations_by_rater": [
+        [],
+        []
+      ]
+    }
+  },
+  "medians": {
+    "click_v6": 4.0,
+    "click_v8": 4.0,
+    "reading_v6": 4.0,
+    "reading_v8": 4.5,
+    "m1_v6": 0.3611,
+    "m1_v8": 0.263,
+    "click_by_rater_v6": [
+      4,
+      4
+    ],
+    "click_by_rater_v8": [
+      4,
+      4
+    ]
+  },
+  "incomplete": [],
+  "conditions": {
+    "1_v8_finals_compliant": true,
+    "2_no_must_probe_let_through": true,
+    "3_converged_at_least_2_of_3": true,
+    "4_normal_v8_passes": true,
+    "5_no_round_for_should_only": true,
+    "6_no_block_probes_not_blocked": true,
+    "7_click_not_lower": true,
+    "8_reading_not_lower": true,
+    "9_m1_not_higher": true
+  },
+  "adopt_v8": true,
+  "balance_claim_allowed": false,
+  "v6_same_raters": {
+    "finals_both_violating": 1,
+    "drift_run": {
+      "run": "runtime-claude-conflict-v6-run4",
+      "which": "final",
+      "prompt_version": "v6",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional",
+      "click": 3.5,
+      "click_by_rater": [
+        4,
+        3
+      ],
+      "reading": 3.5,
+      "reading_by_rater": [
+        4,
+        3
+      ],
+      "violation": "none",
+      "same_rule_both": false,
+      "violations_by_rater": [
+        [],
+        []
+      ]
+    }
+  }
+}

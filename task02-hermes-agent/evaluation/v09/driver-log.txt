@@ -1,0 +1,25 @@
+{"step": "C1", "attempt": 1, "run_id": "286d18e38e0942d394e8ec54b500800f", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "L1", "attempt": 1, "run_id": "9cd17879c258438abff76b3af1dec297", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "L2", "attempt": 1, "run_id": "4e9634aacd454bc6b42c2a6d14bf7854", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "C2", "attempt": 1, "run_id": "5d8d90ad5f6649a8bb5887a1c65d44ad", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "C3", "attempt": 1, "run_id": "d2043daa9e6c470d9634d9e3c461e916", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "L3", "attempt": 1, "run_id": "9aace71c882245f9b92f70a855df2376", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "L4", "attempt": 1, "run_id": "206aae28d0a94cc69de5d06b5c600c5b", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "C4", "attempt": 1, "run_id": "08b9eb72aa8c468aa01ee8f966716d04", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "L5", "attempt": 1, "run_id": "7418259858614fa087bf4f705e29b293", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "C5", "attempt": 1, "run_id": "e8548a150ff646e58daf16844076556e", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "C6", "attempt": 1, "run_id": "e3a7f55152984fbd9867113885e9d596", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "L6", "attempt": 1, "run_id": "233805091bdb4cd1b86b0a3365940ac6", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "L7", "attempt": 1, "run_id": "117c59e812c24dcc9f3617a7fea57040", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "C7", "attempt": 1, "run_id": "ad5dfa89475a4b40a1f6a00c3593f034", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "C8", "attempt": 1, "run_id": "a1a581d6c3154f96a5457c6bc46b8b2b", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "L8", "attempt": 1, "run_id": "1c73dd53a9274c9ab4639e62e60d01a8", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "L9", "attempt": 1, "run_id": "d8b95c0e079941da8d2e72bd00d82831", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "C9", "attempt": 1, "run_id": "ed6246aef554492facc3a26a342fb9b5", "state": "research_complete", "settled": true, "isolation": []}
+ChatGPT usage is Session 92.0% / Weekly 45.0%; no attempt starts at or above 90%. Wait for the reset; never use banked resets or credits.
+exit 1
+resume 2026-10-17T11:13:28Z
+{"step": "C10", "attempt": 1, "run_id": "e2bde1e1175e4d809bb96ea419238a0d", "state": "research_complete", "settled": true, "isolation": []}
+{"step": "L10", "attempt": 1, "run_id": "2f7174e7c3f04f35bd74b4c1d2c29af4", "state": "research_complete", "settled": true, "isolation": []}
+{"ran": ["C10", "L10"]}
+exit 0

@@ -1,0 +1,56 @@
+{
+  "1a35b17121b44c188d89db0f499fc000": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/1a35b17121b44c188d89db0f499fc000.txt"
+  },
+  "c4fa134283dd46aab453ae79f9ab43dd": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/c4fa134283dd46aab453ae79f9ab43dd.txt"
+  },
+  "6a7786604d4144458e4b71b91565536d": {
+    "url": "https://2030.tw/wordcup/?cat=%E7%86%B1%E9%96%80%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%93%81%E7%89%8C",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/6a7786604d4144458e4b71b91565536d.txt"
+  },
+  "4536e4dd38144e3ead26ed7ce7e8207c": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/4536e4dd38144e3ead26ed7ce7e8207c.txt"
+  },
+  "eedce88d9f4246028232c755021cec15": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/eedce88d9f4246028232c755021cec15.txt"
+  },
+  "cebac65209b040cb99de58cf89279ab0": {
+    "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/cebac65209b040cb99de58cf89279ab0.txt"
+  },
+  "3df4809ebfc0424cb80f889ebf4bf3ef": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/3df4809ebfc0424cb80f889ebf4bf3ef.txt"
+  },
+  "55c84e70fff24c0ca7e09408b01f84e9": {
+    "url": "https://2030.tw/wordcup/gofun%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%AE%89%E5%85%A8%E5%97%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/55c84e70fff24c0ca7e09408b01f84e9.txt"
+  },
+  "853dd8ca823a47e980a3d1c5ced3d44b": {
+    "url": "https://tw.stock.yahoo.com/quote/2030.TW",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/853dd8ca823a47e980a3d1c5ced3d44b.txt"
+  }
+}

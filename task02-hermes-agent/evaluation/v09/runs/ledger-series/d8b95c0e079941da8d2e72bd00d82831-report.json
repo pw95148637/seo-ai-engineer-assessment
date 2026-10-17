@@ -1,0 +1,172 @@
+{
+  "claims": [
+    {
+      "text": "首頁以MLB/NBA、世界盃與運彩定位，導覽含線上娛樂城推薦；/wordcup/列品牌、評價、優惠、玩法、安全出金分類及3A、娛樂城頁。2502篇與53頁只是站方顯示值，不是核實索引量。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "456086686fe4498aa5ede48edee77281",
+        "d2d7806f896441b4b4d4dfa21beab8ee"
+      ],
+      "topic": "architecture"
+    },
+    {
+      "text": "娛樂城與3A核心頁有各自URL、含目標詞title/H1、自指canonical、index/follow、Article及五題FAQPage；這些公開設定不證明實際索引、排名或FAQ搜尋呈現。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "bcb071e5f04c4dfbaa2802445966cc51",
+        "7b654d07263249bcbfceb36bc3fef2de"
+      ],
+      "topic": "metadata"
+    },
+    {
+      "text": "新抽查客萊柏頁與兩個核心頁均採平台特色、遊戲、出金、註冊、優惠、客服六節框架及五題FAQ；58888頁則是手機、體育、百家樂三節與三題FAQ。支持樣本模板化而非全站逐字相同或只有單一模板。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "571697fd8c204dafa7778d38edea0e8d",
+        "bcb071e5f04c4dfbaa2802445966cc51",
+        "7b654d07263249bcbfceb36bc3fef2de",
+        "b9f0041269644153812f720bb4ce0f32"
+      ],
+      "topic": "content_patterns"
+    },
+    {
+      "text": "泛詞正文未給具名平台比較表；58888頁將整串長尾當平台名稱，未回答58888資格、流水、期限、提領上限或附對應活動條款來源。3A核心頁自述實玩數月、半小時至一小時出金與最低入金1000元，但所讀正文沒有對應實測紀錄或條款來源。署名2030編輯部及Article站名作者不能視為已核實具名專家背書。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "7b654d07263249bcbfceb36bc3fef2de",
+        "b9f0041269644153812f720bb4ce0f32",
+        "bcb071e5f04c4dfbaa2802445966cc51"
+      ],
+      "topic": "intent_and_verifiability"
+    },
+    {
+      "text": "反證：3A缺點頁實際談手機卡頓、APP更新、KYC一至兩天、高流水與客服轉交等待，泛詞及新抽查客萊柏頁也提醒流水與提領限制。因此不能稱完全沒有風險提醒；上述仍是站方敘述，非本研究核實的平台狀況。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "5ba4f343e9d249038369fbaa5531285f",
+        "7b654d07263249bcbfceb36bc3fef2de",
+        "571697fd8c204dafa7778d38edea0e8d"
+      ],
+      "topic": "counterevidence"
+    },
+    {
+      "text": "核心頁及新抽查客萊柏頁結構化資料混有相同MLB NewsArticle與指向MLB URL的WebPage；3A可見更新2026-09-24而Article dateModified為2026-09-29。可確認語意與日期一致性問題，不能認定已造成排名損失。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "bcb071e5f04c4dfbaa2802445966cc51",
+        "7b654d07263249bcbfceb36bc3fef2de",
+        "571697fd8c204dafa7778d38edea0e8d"
+      ],
+      "topic": "structured_data"
+    },
+    {
+      "text": "3A、泛詞及客萊柏頁主要註冊CTA均指向https://don0911.3a1788.bet/?st=wg2030，工具回傳nofollow、圖片alt為WG娛樂城；58888頁為同主機/?st=go99950。這是出站導流，不是入站證據；不證明最終落地品牌或分潤契約。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "bcb071e5f04c4dfbaa2802445966cc51",
+        "7b654d07263249bcbfceb36bc3fef2de",
+        "571697fd8c204dafa7778d38edea0e8d",
+        "b9f0041269644153812f720bb4ce0f32"
+      ],
+      "topic": "outbound_conversion"
+    },
+    {
+      "text": "所讀樣本支持以體育入口連接泛詞、品牌及問題/優惠長尾，透過分類與相關推薦內鏈、重複CTA集中導流的策略推論；沒有成效證據。競爭切點更適合評估意圖精準度與可查證資料，而非照抄頁量。",
+      "kind": "inference",
+      "section": "on_page",
+      "evidence_ids": [
+        "456086686fe4498aa5ede48edee77281",
+        "d2d7806f896441b4b4d4dfa21beab8ee",
+        "bcb071e5f04c4dfbaa2802445966cc51",
+        "b9f0041269644153812f720bb4ce0f32",
+        "571697fd8c204dafa7778d38edea0e8d"
+      ],
+      "topic": "strategy"
+    },
+    {
+      "text": "新讀/article/responsible-ai-008-audrey-tang/以科技語意路徑提供世足資格賽內容，HTTP200且canonical保留該路徑；只確認當前路徑與內容語意不一致，未確認曾有何內容、網域易主、舊連結繼承或歷史權重。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "ee2d88cdd85c4b84b1872ea356c72c33"
+      ],
+      "topic": "url_semantics"
+    },
+    {
+      "text": "站外已知：直接讀取搜尋列出的Yahoo彰源報價頁與Wikipedia雙語政策頁，兩者均未連到2030.tw，也未提及2030玩運彩。Yahoo的2030.TW字樣在股票代碼上下文，沒有目標連結錨文字或rel可記錄；不能算品牌提及。",
+      "kind": "observation",
+      "section": "off_page",
+      "evidence_ids": [
+        "9912480a1123433ea6a8200bdd27beb8",
+        "b79ae4fc621a4627b2a07c304c75c40a"
+      ],
+      "topic": "verified_negative_controls"
+    },
+    {
+      "text": "站外推論：本次網域搜尋存在股票代碼及年份/政策歧義；搜尋結果數量不能當有效提及或外鏈量，需逐頁驗證。負對照頁面支持雜訊判定，但不代表其他頁面沒有連結。",
+      "kind": "inference",
+      "section": "off_page",
+      "evidence_ids": [
+        "112f68e56bd44830b8421e64ad502c47",
+        "62c353e5408e4c478d4d2e1a34220aab",
+        "9912480a1123433ea6a8200bdd27beb8",
+        "b79ae4fc621a4627b2a07c304c75c40a"
+      ],
+      "topic": "disambiguation"
+    },
+    {
+      "text": "站外未知：未確認正向品牌提及或有效入站來源；無法推定完整backlinks、錨文字與rel分布、取得方式、付費/PBN關係、歷史權重或排名貢獻。公開搜尋及兩個負對照頁不是完整外鏈索引。",
+      "kind": "unknown",
+      "section": "off_page",
+      "evidence_ids": [],
+      "topic": "backlink_limits"
+    },
+    {
+      "text": "沒有競爭者私有Search Console或分析資料，流量、CTR、轉換、完整索引、排名成效、CWV與全站重複比例未驗證；平台合法性、安全、優惠及CTA最終落地未核實。我方網址、合規條件與資源未提供，以下僅為我方條件式評估建議，未對任何網站實施修改。",
+      "kind": "unknown",
+      "section": "other",
+      "evidence_ids": [],
+      "topic": "scope"
+    }
+  ],
+  "actions": [
+    {
+      "action": "P0｜我方先確認營運地區、內容及廣告/聯盟連結合規性，盤點自有URL與Search Console/分析基線；規劃一個娛樂城比較入口與一個獨立3A查核頁，僅在合法且可提供獨特證據時發布。成本低至中，效益待測。",
+      "reason": "競爭者公開頁面設定不是我方的成效基線。先建立查詢到落地頁對應，避免品牌詞、泛詞與優惠問題混寫或無依據安全承諾。"
+    },
+    {
+      "action": "P1｜我方優先完成娛樂城比較方法與3A來源查核：具名可追溯來源、查核日期、活動資格/流水計算基礎/期限/提領上限、爭議與未知欄；沒有證據就寫未確認。對58888等數字優惠，不確定有效就不以領取承諾作標題。成本中，證據品質優先於篇數。",
+      "reason": "已讀泛詞缺具名比較，58888頁未解釋活動條件，3A體驗主張缺對應紀錄；這是可驗證的內容差異化機會，而非已證明能超越排名。"
+    },
+    {
+      "action": "P1｜我方設置編採方法、可查證作者/審稿責任、利益揭露、風險及更正機制；檢查CTA文案、目的品牌與最終落地一致，商業連結明確標示並採適當sponsored/nofollow。成本低至中。",
+      "reason": "競爭者樣本以編輯部署名及主觀體驗主張為主，多品牌CTA集中同一註冊URL；我方可提高透明度，但不得推定競爭者契約或冒充品牌官方。"
+    },
+    {
+      "action": "P1｜我方技術QA與內鏈先小規模驗證：一意圖一主要URL、相關主題內鏈、canonical與可索引設定、結構化資料只描述當頁、可見日期與dateModified有實際更新依據；不照抄FAQ或異題NewsArticle。成本低至中，屬基礎品質而非排名保證。",
+      "reason": "競爭者已有含詞metadata與可爬設定，單做這些不形成獨特優勢；所讀schema混入MLB與日期不一致可作我方避免事項。"
+    },
+    {
+      "action": "P2｜我方off-page先做可被引用的條款變更紀錄、風險查核清單或有方法的比較資料，再向合法且主題相關媒體/社群提供資料；不照抄未證實的外鏈來源，不買大量精準詞連結、不做洗版或PBN。成本中至高，獲取連結不保證。",
+      "reason": "本輪沒有確認競爭者正向入站來源，不能提出複製其外鏈名單。品質應看來源關聯、編輯自主、真實引用上下文，而非搜尋結果或連結數。"
+    },
+    {
+      "action": "P2｜我方以固定地區/裝置的公開SERP抽樣及自有Search Console追蹤非品牌/3A查詢群、落地頁曝光點擊CTR、索引狀態；分析工具追蹤合法且事先定義的使用者行為。先建立基線，4至8週作首輪觀察，資料不足則延長，不承諾排名或ROI。",
+      "reason": "內容與外鏈成效需要我方實際資料才能判定；成本、交付品質與SEO效果分開記錄。競爭者僅保留公開變更監測，不推算流量。"
+    }
+  ],
+  "unknowns": [
+    "未確認競爭者正向站外品牌提及或有效入站來源；完整backlinks、錨文字/rel分布、取得方式及排名貢獻未知。",
+    "科技語意URL的歷史內容、所有權變化、舊入站連結與權重承接未驗證，不能由當前路徑推定。",
+    "競爭者流量、排名成效、CTR、轉換、完整索引、CWV與全站模板重複比例未知。",
+    "平台合法性、安全性、出金、優惠有效性、CTA最終落地與契約未知。",
+    "我方網址、合規條件、基線、預算及人力未知；優先順序與成本為條件式規劃。"
+  ]
+}

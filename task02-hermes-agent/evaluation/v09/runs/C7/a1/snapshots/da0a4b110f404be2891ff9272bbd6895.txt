@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taiwan-bilingual.org/sitemap.xml

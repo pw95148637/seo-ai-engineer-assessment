@@ -1,0 +1,94 @@
+{
+  "run_id": "112b264bf329424f95249299f108ce59",
+  "host": "2030.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": {
+      "call": 9,
+      "evidence_id": "6121c14c6629416492c149252b32943f",
+      "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    },
+    "3A娛樂城": {
+      "call": 8,
+      "evidence_id": "a7ec84f6c7094a0cb4c8d673810e8209",
+      "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    }
+  },
+  "both_target_pages_read": true,
+  "tool_calls": 14,
+  "calls_before_first_hit": 7,
+  "calls_until_both_hit": 9,
+  "searches": 4,
+  "failed_searches": 4,
+  "failed_search_kinds": {
+    "no_results": 4,
+    "error": 0
+  },
+  "failed_search_queries": [
+    "site:2030.tw \"3A娛樂城\"",
+    "\"2030.tw\" -site:2030.tw",
+    "\"2030玩運彩\"",
+    "site:2030.tw 娛樂城"
+  ],
+  "http_requests": 9,
+  "http_requests_controller": 0,
+  "sitemap_reads": 0,
+  "refetched_verified_pages": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 2
+  },
+  "lessons_presented": 0,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 261194,
+    "prompt": 254514,
+    "completion": 6680,
+    "api_calls": 8,
+    "cache_read": 180736,
+    "cache_write": 0,
+    "uncached_prompt": 73778,
+    "cost": 80458
+  },
+  "hermes_tools": {
+    "research_status": 1,
+    "skill_view": 1,
+    "research_fetch": 8,
+    "research_search": 4,
+    "research_finish": 1
+  },
+  "claims": 16,
+  "actions": 6,
+  "sections": {
+    "on_page": 12,
+    "off_page": 3,
+    "other": 1
+  },
+  "offpage": {
+    "claims": 3,
+    "observation": 1,
+    "inference": 0,
+    "unknown": 2,
+    "three_columns": false,
+    "known": 0,
+    "known_external": 0,
+    "known_link_verified": 0,
+    "pages_fetched": 0,
+    "pages_linking_to_target": 0
+  },
+  "offpage_policy_violations": [],
+  "state": "research_complete",
+  "transcript_calls": 8,
+  "review_cost": 6865,
+  "learned": true
+}

@@ -1,0 +1,44 @@
+{
+  "5fc7bac056434ef2ab5cc735328f9e29": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/5fc7bac056434ef2ab5cc735328f9e29.txt"
+  },
+  "3eea9e4a78814f57bef6d6f460065bbe": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/3eea9e4a78814f57bef6d6f460065bbe.txt"
+  },
+  "05ecd02290d840b1b4e722ef5f7bb8a0": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/05ecd02290d840b1b4e722ef5f7bb8a0.txt"
+  },
+  "286f5d8cd82f44fb9e37d8f3247f262e": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/286f5d8cd82f44fb9e37d8f3247f262e.txt"
+  },
+  "56d5c2522bbe4a6fad53b4b76abe3b5b": {
+    "url": "https://casinobase.tw/reviews/",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/56d5c2522bbe4a6fad53b4b76abe3b5b.txt"
+  },
+  "d1f9ae3ec4304c0ba2289daa105e7fb5": {
+    "url": "https://icasino.tw/comparison/",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/d1f9ae3ec4304c0ba2289daa105e7fb5.txt"
+  },
+  "8798bf75a80042f9aa08fca9a9a2fd38": {
+    "url": "https://njavtv.com/fr/search/2030%E7%8E%A9%E9%81%8B%E5%BD%A9%E7%98%8B%E4%B8%96%E8%B6%B3",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/8798bf75a80042f9aa08fca9a9a2fd38.txt"
+  }
+}

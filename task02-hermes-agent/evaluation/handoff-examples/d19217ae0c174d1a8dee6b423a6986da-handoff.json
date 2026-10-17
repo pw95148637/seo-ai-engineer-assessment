@@ -1,0 +1,405 @@
+{
+  "schema": "handoff-queue/1",
+  "source": {
+    "db": "evidence/live-agent-evaluation/baseline",
+    "run": "d19217ae0c174d1a8dee6b423a6986da",
+    "sha256": "44baee888eecca3b5c8e049f719883fc9e205e5e4982707e9652140a186a5588"
+  },
+  "run": {
+    "id": "d19217ae0c174d1a8dee6b423a6986da",
+    "host": "2030.tw",
+    "created": "2026-10-15T18:19:00.690031+00:00",
+    "started": true,
+    "mode": "baseline",
+    "learning": false,
+    "keywords": [],
+    "status": "finished",
+    "outcome": "research_complete",
+    "hermes_learning": null,
+    "report_accepted": true,
+    "report_rejections": 1,
+    "preflight": {
+      "ready": true,
+      "blocker": "",
+      "logged_in": true,
+      "rate_limited": false,
+      "tools": 5,
+      "tools_match": true
+    },
+    "human_reviews": []
+  },
+  "usage": {
+    "requests": {
+      "used": 14,
+      "limit": 30,
+      "by": {
+        "model": 14,
+        "offpage": 0,
+        "controller": 0
+      }
+    },
+    "calls": {
+      "used": 24,
+      "limit": 40
+    },
+    "searches": {
+      "used": 5,
+      "limit": 5
+    },
+    "offpage": {
+      "used": 0,
+      "limit": null
+    },
+    "seconds": {
+      "used": null,
+      "limit": 900
+    }
+  },
+  "summary": {
+    "by_priority": {
+      "decide": 1,
+      "review": 6,
+      "info": 2
+    },
+    "by_category": {
+      "preflight": {
+        "items": 0,
+        "decide": 0
+      },
+      "lesson_change": {
+        "items": 0,
+        "decide": 0
+      },
+      "lessons_in_use": {
+        "items": 0,
+        "decide": 0
+      },
+      "limit": {
+        "items": 3,
+        "decide": 0
+      },
+      "report_rejection": {
+        "items": 1,
+        "decide": 0
+      },
+      "unknown": {
+        "items": 1,
+        "decide": 0
+      },
+      "action": {
+        "items": 4,
+        "decide": 1
+      }
+    },
+    "handled": 0
+  },
+  "command_root": "runs/v05-baseline-copy",
+  "items": [
+    {
+      "category": "action",
+      "priority": "decide",
+      "title": "第 1 項（需要法務或決策者）：P0｜先盤點我方URL、定位、合法服務範圍、既有內容及可用的我方Search Console，建立娛…",
+      "decision": "交法務或決策者確認後，再決定是否執行。",
+      "why_human": "Agent 沒有修改網站或對外發布的工具，建議只能由人執行。Agent 把它排為 P0（最優先），優先順序牽涉我方資源，要人核可。內容涉及法規或合規（觸發詞：合法），要法務或決策者確認。",
+      "evidence": [
+        "action:1：P0｜先盤點我方URL、定位、合法服務範圍、既有內容及可用的我方Search Console，建立娛樂城／3A及相關長尾查詢基準；成本低至中。",
+        "理由：我方網站與權限未提供，不應先宣稱我方缺頁、排名落後或可存取競爭者私有資料。固定地區與裝置追蹤公開SERP才有比較基準。"
+      ],
+      "if_no_action": "不會執行。",
+      "options": [
+        {
+          "choice": "採納：由人排入工作並執行",
+          "command": null
+        },
+        {
+          "choice": "不採納並標註理由（成為之後研究的審查標準）",
+          "command": "python scripts/feedback.py --root runs/v05-baseline-copy label --run d19217ae0c174d1a8dee6b423a6986da --target action:1 --label scope_error --reason \"<理由>\" --reviewer \"<審查者>\""
+        }
+      ],
+      "refs": {
+        "target": "action:1",
+        "tag": "P0",
+        "legal_terms": [
+          "合法"
+        ]
+      },
+      "id": "H1"
+    },
+    {
+      "category": "limit",
+      "priority": "review",
+      "title": "預算用完：搜尋 5/5",
+      "decision": "決定下次是否放寬這項預算，或接受目前的覆蓋範圍。",
+      "why_human": "預算是操作者為時間、請求與成本設的上限；Agent 只能在上限內取捨，不能自己加。",
+      "evidence": [
+        "用量 5/5（上限固定在 `Research.search`）"
+      ],
+      "if_no_action": "下次研究用同樣的預算。",
+      "options": [
+        {
+          "choice": "維持",
+          "command": null
+        },
+        {
+          "choice": "放寬：改 `src/research_core.py` 的 `Limits`（搜尋上限在 `Research.search`）。這是程式變更，正式評估前要先登錄新計畫",
+          "command": null
+        }
+      ],
+      "refs": {
+        "budget": "searches"
+      },
+      "id": "H2"
+    },
+    {
+      "category": "report_rejection",
+      "priority": "review",
+      "title": "報告被退回 1 次，最後已接受",
+      "decision": "檢查最後接受的版本是否只是為了通過檢查而改寫，例如刪掉引用或把主張改成未知。",
+      "why_human": "控制器只檢查格式、引用存在與雜湊，不檢查語意；修正是否合理要人看。",
+      "evidence": [
+        "event 305：error_is_not_page_content（引用非 200 來源（失敗頁或失敗搜尋）只能放在 topic=access 的主張）",
+        "最後接受的報告：event 307，d19217ae0c174d1a8dee6b423a6986da-report.md"
+      ],
+      "if_no_action": "報告照目前版本保留。",
+      "options": [
+        {
+          "choice": "沒有問題",
+          "command": "python scripts/feedback.py --root runs/v05-baseline-copy ok --run d19217ae0c174d1a8dee6b423a6986da --reviewer \"<審查者>\""
+        },
+        {
+          "choice": "標註有問題的主張（N 是報告中的順序）",
+          "command": "python scripts/feedback.py --root runs/v05-baseline-copy label --run d19217ae0c174d1a8dee6b423a6986da --target claim:N --label unsupported --reason \"<理由>\" --reviewer \"<審查者>\""
+        }
+      ],
+      "refs": {},
+      "id": "H3"
+    },
+    {
+      "category": "unknown",
+      "priority": "review",
+      "title": "未知項 10 項，需要的資料分成 6 類",
+      "decision": "逐類決定要授權什麼資料，或接受為未知。",
+      "why_human": "補齊未知項通常需要帳號、付費資料、我方網站資料或法務判斷，都要人授權；各類的原因寫在依據的分類標題。",
+      "evidence": [
+        "【完整反向連結】公開索引看不到完整反向連結；新資料源有費用或處理成本，要人授權。",
+        "claim:12：競爭者目標詞排名、流量、曝光、CTR、轉換與完整入站連結輪廓未知。搜尋逾時或空白不等於未收錄；站內出站轉介與社群分享網址不能當作完整backlinks。（也涉及：競爭者的排名、流量與轉換）",
+        "unknowns[2]：完整backlinks、referring domains、錨文字、連結品質與取得方式；off-page證據不足。",
+        "【競爭者的排名、流量與轉換】這些是競爭者的私有資料，Agent 沒有合法取得途徑；第三方工具要付費，而且只是估算。",
+        "unknowns[1]：2030.tw對兩目標詞與長尾的Google台灣排名、索引、流量、曝光、CTR、轉換與歷史趨勢。",
+        "unknowns[4]：2502篇的實際有效唯一URL數、全量品質與收錄量。",
+        "unknowns[9]：五次搜尋額度已用完，其中兩次逾時、一次空白；未取得可用的競爭者精確索引證明。",
+        "【我方網站資料】我方資料要我方帳號授權，Agent 沒有登入能力。",
+        "unknowns[8]：我方網站、資源、定位與法律適用地；所有行動僅供我方評估，未執行網站變更。（也涉及：法律、金流與契約）",
+        "【法律、金流與契約】牌照、法律實體、契約與出入金說法的查證涉及法規與實際金流，Agent 不能也不應代為查證。",
+        "unknowns[3]：站外轉介最終跳轉、營運者、授權及佣金合約；未抓取站外host，未註冊或交易。",
+        "unknowns[5]：評測作者、出金實測紀錄、優惠及客服資訊、平台安全與合法性。（也涉及：需要額外量測）",
+        "【需要額外量測】要多花請求預算或使用外部服務，屬於成本取捨。",
+        "unknowns[6]：結構化資料、行動渲染、Core Web Vitals、完整redirect鏈及搜尋引擎選用canonical。",
+        "【其他】沒有對應的現成資料源，要人判斷價值與成本。",
+        "unknowns[7]：網域歷史、URL形成原因、舊權重或搜尋處罰。",
+        "分類依關鍵詞判斷，可能分錯；原文在報告的 unknowns 與 kind=unknown 的主張"
+      ],
+      "if_no_action": "下次研究仍是未知。",
+      "options": [
+        {
+          "choice": "完整反向連結：接受只用公開索引，或授權付費反向連結索引、Common Crawl 的網站連結圖。",
+          "command": null
+        },
+        {
+          "choice": "競爭者的排名、流量與轉換：接受為未知，或授權付費的第三方估算工具。",
+          "command": null
+        },
+        {
+          "choice": "我方網站資料：提供我方網域、Search Console 與內容清單，或維持只研究競爭者。",
+          "command": null
+        },
+        {
+          "choice": "法律、金流與契約：交給法務判斷是否需要查證、怎麼查。",
+          "command": null
+        },
+        {
+          "choice": "需要額外量測：決定是否放寬預算，或另用量測工具（例如 PageSpeed、結構化資料測試）。",
+          "command": null
+        },
+        {
+          "choice": "其他：決定是否值得追查、用什麼資料。",
+          "command": null
+        },
+        {
+          "choice": "接受全部為未知",
+          "command": null
+        }
+      ],
+      "refs": {},
+      "id": "H4"
+    },
+    {
+      "category": "action",
+      "priority": "review",
+      "title": "第 2 項（需要法務或決策者）：P1｜若符合我方定位與法規，優先改善或試作3A查證型總覽：列作者、日期、來源、利益關係、限制及未知；…",
+      "decision": "交法務或決策者確認後，再決定是否執行。",
+      "why_human": "Agent 沒有修改網站或對外發布的工具，建議只能由人執行。內容涉及法規或合規（觸發詞：法規、合法、KYC），要法務或決策者確認。",
+      "evidence": [
+        "action:2：P1｜若符合我方定位與法規，優先改善或試作3A查證型總覽：列作者、日期、來源、利益關係、限制及未知；出金與優惠僅引可核對條款或合法取得且去識別的紀錄。成本中。",
+        "理由：抽樣競爭頁覆蓋廣，但實測佐證不足且出金敘述缺共同條件。可稽核性比堆詞更值得測試；HTTPS或KYC不等於資金安全保證。"
+      ],
+      "if_no_action": "不會執行。",
+      "options": [
+        {
+          "choice": "採納：由人排入工作並執行",
+          "command": null
+        },
+        {
+          "choice": "不採納並標註理由（成為之後研究的審查標準）",
+          "command": "python scripts/feedback.py --root runs/v05-baseline-copy label --run d19217ae0c174d1a8dee6b423a6986da --target action:2 --label scope_error --reason \"<理由>\" --reviewer \"<審查者>\""
+        }
+      ],
+      "refs": {
+        "target": "action:2",
+        "tag": "P1",
+        "legal_terms": [
+          "法規",
+          "合法",
+          "KYC"
+        ]
+      },
+      "id": "H5"
+    },
+    {
+      "category": "action",
+      "priority": "review",
+      "title": "第 6 項（需要法務或決策者）：P2｜暫緩大量體育日更、批量品牌頁及購買連結；小規模上線後約4至8週追蹤我方收錄、目標查詢曝光、點擊…",
+      "decision": "交法務或決策者確認後，再決定是否執行。",
+      "why_human": "Agent 沒有修改網站或對外發布的工具，建議只能由人執行。內容涉及法規或合規（觸發詞：合規），要法務或決策者確認。",
+      "evidence": [
+        "action:6：P2｜暫緩大量體育日更、批量品牌頁及購買連結；小規模上線後約4至8週追蹤我方收錄、目標查詢曝光、點擊、落地頁及合規轉換品質，另記資料維護成本。以公開或授權來源補查off-page後再決定投入。",
+        "理由：體育資料頁有內容，但未證實帶來娛樂城轉換；backlinks及ROI未知。成本和內容品質分開驗收，不能以URL數或產量當成效。"
+      ],
+      "if_no_action": "不會執行。",
+      "options": [
+        {
+          "choice": "採納：由人排入工作並執行",
+          "command": null
+        },
+        {
+          "choice": "不採納並標註理由（成為之後研究的審查標準）",
+          "command": "python scripts/feedback.py --root runs/v05-baseline-copy label --run d19217ae0c174d1a8dee6b423a6986da --target action:6 --label scope_error --reason \"<理由>\" --reviewer \"<審查者>\""
+        }
+      ],
+      "refs": {
+        "target": "action:6",
+        "tag": "P2",
+        "legal_terms": [
+          "合規"
+        ]
+      },
+      "id": "H6"
+    },
+    {
+      "category": "action",
+      "priority": "review",
+      "title": "其他行動建議 3 項",
+      "decision": "逐項決定是否採納並排入工作。",
+      "why_human": "Agent 沒有修改網站或對外發布的工具，建議只能由人執行；是否值得做是我方的資源取捨。",
+      "evidence": [
+        "action:3：P1｜娛樂城主詞頁以比較方法、納入及排除條件、風險與來源為核心，再導向品牌查證頁；清楚揭露站外目的地與商業關係，不冒稱官方，不把其他品牌CTA暗換為3A。成本中至高。",
+        "　理由：競爭者跨品牌抽樣使用同一3A目的地。透明比較與目的地一致性是候選差異，不代表必定提升排名。",
+        "action:4：P1｜先整合3A出金、提款與優惠問題；有獨立需求和實質資料才拆頁。提款資訊應回答流程、限制、失敗情境與申訴方式，以語意明確內鏈串接。成本低至中。",
+        "　理由：長尾頁仍重複品牌總覽，意圖分工不足；是否互搶須以我方查詢與落地頁資料驗證，不先複製大量頁。",
+        "action:5：P2｜檢查我方狀態碼、canonical、索引規則、sitemap、lastmod、參數頁及內鏈；只納有價值頁，不照搬不符主題的科技slug。成本低至中。",
+        "　理由：競爭者有基礎SEO標記，也有URL語意與更新訊號不一致；這是我方稽核清單，不是已證實的競爭者排名弱點。"
+      ],
+      "if_no_action": "不會執行。",
+      "options": [
+        {
+          "choice": "採納：由人排入工作並執行",
+          "command": null
+        },
+        {
+          "choice": "不採納並標註理由（N 換成項次）",
+          "command": "python scripts/feedback.py --root runs/v05-baseline-copy label --run d19217ae0c174d1a8dee6b423a6986da --target action:N --label scope_error --reason \"<理由>\" --reviewer \"<審查者>\""
+        }
+      ],
+      "refs": {
+        "targets": [
+          "action:3",
+          "action:4",
+          "action:5"
+        ]
+      },
+      "id": "H7"
+    },
+    {
+      "category": "limit",
+      "priority": "info",
+      "title": "搜尋沒有結果或失敗：2/5 次",
+      "decision": "接受免金鑰搜尋的覆蓋限制，或授權付費搜尋、反向連結資料源。",
+      "why_human": "Agent 只能用現有的免金鑰索引；新的資料源可能有費用與使用條款，要人授權。",
+      "evidence": [
+        "event 216：搜尋「site:2030.tw \"娛樂城\" \"3A\"」→ error（HTTP 503：DuckDuckGo search timed out after 30s — DuckDuckGo may be rate-limiting or slow. Try again later or ，evidence 45858f6b4b3f46af9337c1da35d4793d）",
+        "event 228：搜尋「site:2030.tw 娛樂城」→ error（HTTP 503：DuckDuckGo search timed out after 30s — DuckDuckGo may be rate-limiting or slow. Try again later or ，evidence a88246ffb6f64b978e69d2eb5185cd3e）"
+      ],
+      "if_no_action": "下次仍用同一個免金鑰索引。",
+      "options": [
+        {
+          "choice": "接受",
+          "command": null
+        },
+        {
+          "choice": "授權新資料源：改控制器程式，正式評估前要先登錄新計畫",
+          "command": null
+        }
+      ],
+      "refs": {},
+      "id": "H8"
+    },
+    {
+      "category": "limit",
+      "priority": "info",
+      "title": "DNS 經代理解析",
+      "decision": "不需要決定。",
+      "why_human": "本機 DNS 解析失敗，允許網域改由設定的 HTTPS 代理解析；這是執行環境的限制，代理不是網路沙箱。",
+      "evidence": [
+        "event 206：2030.tw"
+      ],
+      "if_no_action": "照常執行。",
+      "options": [
+        {
+          "choice": "不處理",
+          "command": null
+        }
+      ],
+      "refs": {
+        "event": 206
+      },
+      "id": "H9"
+    }
+  ],
+  "fixed_rules": [
+    {
+      "matter": "登入與用量額度",
+      "how": "使用者自己在瀏覽器完成裝置登入。runner 開跑前檢查登入、限流與工具清單，未就緒就以 exit 2 停止、不呼叫模型。Agent 沒有登入或查用量的工具。",
+      "where": "scripts/login_hermes.sh、scripts/run_research.py、src/runner_support.py 的 readiness"
+    },
+    {
+      "matter": "付費",
+      "how": "Agent 沒有付費 API 金鑰或付費工具；搜尋用 Hermes 內建的免金鑰 DDGS。加入付費資料源要改控制器程式，由人授權費用。",
+      "where": "plugin/__init__.py、src/research_core.py"
+    },
+    {
+      "matter": "對外發布或修改網站",
+      "how": "平常的研究只有六個唯讀研究工具：HTTP 只送不帶內容的 GET，research_finish 只把報告寫進研究目錄；沒有 shell、檔案或瀏覽器工具。比較 Hermes 原生學習時另加 Hermes 的 memory 與 skills 工具，只寫 Hermes 自己的儲存。實際工具清單與預期不同時 runner 拒絕開跑。",
+      "where": "src/research_core.py 的 HTTP、src/runner_support.py 的 HERMES_MODES、scripts/run_research.py 的 build_agent"
+    },
+    {
+      "matter": "否決經驗與人工審查",
+      "how": "lesson 只由控制器量測與人工審查產生，模型沒有寫入帳本的工具。人工標註與否決用 feedback.py，要寫審查者與理由；否決後不再自動恢復。",
+      "where": "src/lessons.py 的 Ledger.add_feedback、Ledger.veto，scripts/feedback.py"
+    },
+    {
+      "matter": "研究對象與預算",
+      "how": "操作者開跑時指定網站、關鍵字與 research_fetch 的允許網域；research_offpage 只讀這次搜尋列出的站外網址，每次最多 4 頁。預算寫在控制器，每次工具呼叫都檢查。Agent 沒有修改它們的工具。",
+      "where": "scripts/run_research.py 的 --target、--keyword、--allow-host，src/research_core.py 的 Limits 與 Research.search"
+    }
+  ]
+}

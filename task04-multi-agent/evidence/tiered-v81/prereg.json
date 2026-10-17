@@ -1,0 +1,74 @@
+{
+  "registered_at_utc": "2026-10-17T13:22:28+00:00",
+  "registered_at_taipei": "2026-10-17T21:22:28+08:00",
+  "model_calls_before_registration": 0,
+  "reviewed_before_registration": "one uninvolved agent reviewed the draft; points and how each was handled are in PREREGISTRATION.md",
+  "file_sha256": {
+    "evidence/tiered-v81/PREREGISTRATION.md": "35ca4c69a7004c434e841b9e0f91c36507f4ea7b6d8f500f44670123a932a816",
+    "roles_v81.py": "69481cebc93d4d7f871da91594cacc32a0be7949a98f3e4ad316d4de099c1fe6",
+    "roles_v8.py": "a25c7101824a07c1162187445cbb91aae4d7be9d4b2f4110d4d07fb6c753c165",
+    "policy_v8.json": "9a31bed4311abdc4c1df359771db7ee8bdc331ee58819f3167c90f0ffc386798",
+    "workflow_v8.py": "87d134cd1431b84b0532232eb7cb6bf3aa362623d689ab943f80e6d86f029ea4",
+    "workflow.py": "f9dd8b22ff767aebc42113967391151a16deb6bfc95538b5bd7368e9c7d8b187",
+    "claude_subscription.py": "6556ac9ade1a27a07e23d6a675ce0011f7e8b91e7d3c75efd4e22f8af1c56981",
+    "run_claude.py": "dccd11b516d77ee56fdae2f5ac9c3cd85675685b7d0f4db16b52b744920b7745",
+    "verify_run.py": "5d9df91b3962854ce0c5d4d13a10f16f71d7be3281f35958e4d9aef08d3a9d57",
+    "eval_v8.py": "c7e097172b3dc876e7bd952c2a01420e815adbf1f71a0dfc9b57de8a24d1154a",
+    "eval_v81.py": "bd76dc45c58fea0ce9ff3108dc9b9bb6478c8eafdddbebab51113e444364456b",
+    "judge_declines.py": "9ba2606a478479a02467cdaa2ee8d503e31c3861b347e01032a64afede9149c6",
+    "analyze_balance.py": "0c56bd837c6c0431e2daa026499d138deb0196b62686f3eee8a61fa975a92da0",
+    "blind_rate.py": "8c73e5805701df82864796d7ab509b169710fecd152aa43e2844f4400b171101",
+    "case_input.py": "b5432a1a07bc914042525cb08d6cfd1be02b6379e6ecbf4483ca5c50ce73faa0",
+    "cases/forced_conflict.json": "822cebdaee324bee35b49a8b3ddd094a6bef99d771294b91ffe63aa109af254f",
+    "cases/normal.json": "e52eb899cdb956c13e62fdc4f46d11d956f96514ef57d9e20bffc586f879b5c8",
+    "test_tiered_v81.py": "488784c96eb0783e2954101a2614b507656f680535273f76901f236fac8180cf",
+    "test_tiered_v8.py": "027cdacb86c01c79b0867b2c202a8412ab88c3350135f0bf1129cb7c1337f00b"
+  },
+  "policy_v8_sha256": "7b043dc06e0f95ef39a03b4b4adae5a85b980007d92ab76e4049a93e0063d2f6",
+  "system_prompt_sha256": {
+    "v81_planner_forced_conflict_round1": "3f74dd1407838eacf00485f87ba7468f4d4dec1c3b8638668dfaff737ea6a9cd",
+    "v81_auditor_forced_conflict_round1": "3189eb0e895db46b2d8e7c42f37c57137afb6c8183776667c30e0f61b3d5d071",
+    "v81_planner_forced_conflict_round2plus": "ba752a1e2434f2cafbb63417a9c2668ed45feb9dfc7c97347fdba5a73b8db554",
+    "v81_auditor_forced_conflict_round2plus": "3189eb0e895db46b2d8e7c42f37c57137afb6c8183776667c30e0f61b3d5d071",
+    "v81_planner_normal_round1": "462e94b14d16f2f6d50d9b8f7afda564a39f64878f8306f2ebc2c0c115555b18",
+    "v81_auditor_normal_round1": "3189eb0e895db46b2d8e7c42f37c57137afb6c8183776667c30e0f61b3d5d071",
+    "v81_planner_normal_round2plus": "2b8a4e4166686b7a4b270cbb2e164c6401874264e60c36c7a37638e18570f09d",
+    "v81_auditor_normal_round2plus": "3189eb0e895db46b2d8e7c42f37c57137afb6c8183776667c30e0f61b3d5d071"
+  },
+  "auditor_prompt_identical_to_v8": true,
+  "fixed": {
+    "model": "claude-opus-5-5",
+    "effort": "high",
+    "cli_version": "2.1.302 (Claude Code)",
+    "max_iterations": 3,
+    "blind_seed": 20261019,
+    "judge_seed": 20261019,
+    "balance_margin": 0.15,
+    "rating_margin": 0.5,
+    "v8_auditor_chars_median": 314,
+    "v6_auditor_chars_median": 269,
+    "v6_m1_median": 0.3611,
+    "v8_m1_median": 0.263
+  },
+  "registered": {
+    "v6_baseline": [
+      "runtime-claude-conflict-v6",
+      "runtime-claude-conflict-v6-repeat",
+      "runtime-claude-conflict-v6-run3"
+    ],
+    "v8_conflict": [
+      "runtime-claude-conflict-v8-1",
+      "runtime-claude-conflict-v8-2",
+      "runtime-claude-conflict-v8-3"
+    ],
+    "v8_normal": "runtime-claude-normal-v8",
+    "v8_control": "runtime-claude-conflict-v8-4",
+    "v81_conflict": [
+      "runtime-claude-conflict-v81-1",
+      "runtime-claude-conflict-v81-2",
+      "runtime-claude-conflict-v81-3"
+    ],
+    "v81_normal": "runtime-claude-normal-v81"
+  },
+  "offline_tests": "離線測試 83 項通過"
+}

@@ -1,0 +1,1544 @@
+{
+  "lessons": [
+    {
+      "id": "08856145cf1e",
+      "kind": "discovery_path",
+      "key": "discovery|2030.tw|3a娛樂城",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "active",
+      "statement": "2030.tw 的「3A娛樂城」目標頁：https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E（讀到時 HTTP 200，title/H1 符合）。",
+      "data": {
+        "keyword": "3A娛樂城",
+        "target_url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+        "evidence_id": "97f8a8480d174245867d739c1cf18e0c",
+        "title": "3a娛樂城｜遊戲種類、優惠、出金全攻略 - 2030玩運彩瘋世足",
+        "h1": "2030玩運彩瘋世足 3a娛樂城 - 完整評測與玩家指南",
+        "source_url": "https://2030.tw/wordcup/",
+        "source_kind": "html",
+        "anchor": "3a娛樂城 老實說，現在市面上娛樂城品牌真的超多，每次滑臉書或IG，都會看到一堆廣告跳出來。相信大家跟我… 詳細 ›",
+        "sitemaps_checked": 0,
+        "sitemaps_listing_target": 0,
+        "epoch": 0
+      },
+      "updated": "2026-10-17T08:39:59.807062+00:00",
+      "expires": "2026-10-24T08:39:59.807024+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.389522+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "target page read"
+        },
+        {
+          "time": "2026-10-17T08:30:46.389565+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "run 9cd17879c258438abff76b3af1dec297 read 3A娛樂城 page: HTTP 200 and title/H1 match"
+        }
+      ]
+    },
+    {
+      "id": "d94869ffa2dc",
+      "kind": "discovery_path",
+      "key": "discovery|2030.tw|娛樂城",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "active",
+      "statement": "2030.tw 的「娛樂城」目標頁：https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E（讀到時 HTTP 200，title/H1 符合）。",
+      "data": {
+        "keyword": "娛樂城",
+        "target_url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+        "evidence_id": "8015e9841c454feeb9dba7e2f996865e",
+        "title": "娛樂城評價｜台灣玩家首選平台 - 2030玩運彩瘋世足",
+        "h1": "2030玩運彩瘋世足 娛樂城 - 完整評測與玩家指南",
+        "source_url": "https://2030.tw/wordcup/",
+        "source_kind": "html",
+        "anchor": "娛樂城 其實啊，最近真的不少玩家私訊小編問說，「哎，現在市面上一堆娛樂城，到底哪一家比較穩啊？」、「… 詳細 ›",
+        "sitemaps_checked": 0,
+        "sitemaps_listing_target": 0,
+        "epoch": 0
+      },
+      "updated": "2026-10-17T08:40:00.830485+00:00",
+      "expires": "2026-10-24T08:40:00.830450+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.388825+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "target page read"
+        },
+        {
+          "time": "2026-10-17T08:30:46.388951+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "run 9cd17879c258438abff76b3af1dec297 read 娛樂城 page: HTTP 200 and title/H1 match"
+        }
+      ]
+    },
+    {
+      "id": "91597b6a9458",
+      "kind": "failure_pattern",
+      "key": "failure|research_search|plain",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "revoked",
+      "statement": "",
+      "data": {
+        "tool": "research_search",
+        "feature": "plain",
+        "fails": 10,
+        "alternative": [
+          0,
+          0
+        ],
+        "epoch": 3
+      },
+      "updated": "2026-10-17T08:42:51.064887+00:00",
+      "expires": null,
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.335166+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "first measured failure"
+        },
+        {
+          "time": "2026-10-17T08:30:46.335585+00:00",
+          "old": "candidate",
+          "new": "revoked",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "counterexample: 1 successful call(s) with feature plain in run 9cd17879c258438abff76b3af1dec297"
+        }
+      ]
+    },
+    {
+      "id": "85f93322df1c",
+      "kind": "failure_pattern",
+      "key": "failure|research_search|site_operator",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "candidate",
+      "statement": "research_search 不要用 site:，改用不含 site: 的查詢（1 個 run 共 1 次沒有結果；同批不含 site: 的查詢 1/4 次有結果）。觀察站點：2030.tw。",
+      "data": {
+        "tool": "research_search",
+        "feature": "site_operator",
+        "fails": 1,
+        "alternative": [
+          1,
+          4
+        ],
+        "runs": [
+          "9cd17879c258438abff76b3af1dec297"
+        ],
+        "hosts": [
+          "2030.tw"
+        ]
+      },
+      "updated": "2026-10-17T08:30:46.335875+00:00",
+      "expires": "2026-10-24T08:30:46.335865+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.335667+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "first measured failure"
+        }
+      ]
+    },
+    {
+      "id": "5bc69b10b5d9",
+      "kind": "finding",
+      "key": "finding|2030.tw|4e9634aacd454bc6b42c2a6d14bf7854|claim:1",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "首頁title/H1主打2030玩運彩瘋世足與體育內容；娛樂城目錄/wordcup/的title主打線上娛樂城推薦，列出品牌、評價、優惠、玩法、安全與出金分類，並列出3a娛樂城及娛樂城內頁。目錄自稱2502篇、53頁，並非本輪核實的有效文章或索引數。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "architecture",
+        "claim": 1,
+        "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+        "support": [
+          {
+            "evidence_id": "291ea928164c497580aeb0ba28300596",
+            "url": "https://2030.tw/",
+            "sha256": "63eef6045318ca42304443735bcb006805f3adcba12ea024fdaef7227d45298d"
+          },
+          {
+            "evidence_id": "edbe204406d948dd82d155b4422eee38",
+            "url": "https://2030.tw/wordcup/",
+            "sha256": "78123e000542102429c1e62b58f7273a7b2caed166b19e619b9410373cb5ea6c"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:42:51.157221+00:00",
+      "expires": "2026-10-24T08:40:11.007232+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:33:20.637520+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:40:11.007356+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:42:51.157276+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "newer accepted report in run 9aace71c882245f9b92f70a855df2376"
+        }
+      ]
+    },
+    {
+      "id": "3b1d4ed24a45",
+      "kind": "finding",
+      "key": "finding|2030.tw|4e9634aacd454bc6b42c2a6d14bf7854|claim:2",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "娛樂城與3A各有獨立落地頁，title分別為娛樂城評價｜台灣玩家首選平台、3a娛樂城｜遊戲種類、優惠、出金全攻略；有關鍵字H1、自指canonical、index/follow、Article及五題FAQPage。這些實作不證明已索引、FAQ搜尋呈現或排名。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "keyword_targeting",
+        "claim": 2,
+        "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+        "support": [
+          {
+            "evidence_id": "dbd28ae4b88e4b268489cc4281375b8e",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "67dacc835800404f83a46e7e3397254e",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:42:51.157299+00:00",
+      "expires": "2026-10-24T08:40:11.043760+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:33:20.637565+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:40:11.043882+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:42:51.157313+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "newer accepted report in run 9aace71c882245f9b92f70a855df2376"
+        }
+      ]
+    },
+    {
+      "id": "433329c8e822",
+      "kind": "finding",
+      "key": "finding|2030.tw|4e9634aacd454bc6b42c2a6d14bf7854|claim:3",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "娛樂城、3A、玖富、威樂老虎機優惠與賺錢問題五個樣本共用特色、遊戲、出金安全、註冊、優惠、客服、FAQ的架構，主要註冊CTA皆連至https://don0911.3a1788.bet/?st=wg2030且帶nofollow。此為出站導向，不是入站連結；未驗證最終重導、品牌歸屬或分潤。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "conversion",
+        "claim": 3,
+        "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+        "support": [
+          {
+            "evidence_id": "dbd28ae4b88e4b268489cc4281375b8e",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "67dacc835800404f83a46e7e3397254e",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          },
+          {
+            "evidence_id": "28c7a714cb664a65902e397e26df012a",
+            "url": "https://2030.tw/wordcup/%E7%8E%96%E5%AF%8C%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "ed157f025d8c0c0bf771f59987b2f691a7550c81caa163b4eb25c429f0bd3f9c"
+          },
+          {
+            "evidence_id": "e3ebf453299c45d8bf9c7e5d94026623",
+            "url": "https://2030.tw/wordcup/%E5%A8%81%E6%A8%82%E5%A8%9B%E6%A8%82%E5%9F%8E%E8%80%81%E8%99%8E%E6%A9%9F%E5%84%AA%E6%83%A0",
+            "sha256": "72d1ba16b225f72677f62a5b9e0445ef728f7a0e57e3d9700cec248b1224d657"
+          },
+          {
+            "evidence_id": "d520295e284e4511ac88264baca9b963",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E%E7%9C%9F%E7%9A%84%E8%83%BD%E8%B3%BA%E9%8C%A2%E5%97%8E",
+            "sha256": "1ccaa7de38bb4b91127d4ecc5686747c9bfd9b7c6ef6e56825d20cec2c50c2fe"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:42:51.157318+00:00",
+      "expires": "2026-10-24T08:40:11.079341+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:33:20.637597+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:40:11.079518+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:42:51.157331+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "newer accepted report in run 9aace71c882245f9b92f70a855df2376"
+        }
+      ]
+    },
+    {
+      "id": "96c87ae03494",
+      "kind": "finding",
+      "key": "finding|2030.tw|4e9634aacd454bc6b42c2a6d14bf7854|claim:4",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "綜合首頁、目錄、品牌與長尾頁，樣本符合體育入口加娛樂城關鍵字群及註冊導向的架構；不能由此推定導流成功、流量、聯盟收入或SEO排名優勢。",
+      "data": {
+        "kind": "inference",
+        "section": "on_page",
+        "topic": "strategy",
+        "claim": 4,
+        "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+        "support": [
+          {
+            "evidence_id": "291ea928164c497580aeb0ba28300596",
+            "url": "https://2030.tw/",
+            "sha256": "63eef6045318ca42304443735bcb006805f3adcba12ea024fdaef7227d45298d"
+          },
+          {
+            "evidence_id": "edbe204406d948dd82d155b4422eee38",
+            "url": "https://2030.tw/wordcup/",
+            "sha256": "78123e000542102429c1e62b58f7273a7b2caed166b19e619b9410373cb5ea6c"
+          },
+          {
+            "evidence_id": "dbd28ae4b88e4b268489cc4281375b8e",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "e3ebf453299c45d8bf9c7e5d94026623",
+            "url": "https://2030.tw/wordcup/%E5%A8%81%E6%A8%82%E5%A8%9B%E6%A8%82%E5%9F%8E%E8%80%81%E8%99%8E%E6%A9%9F%E5%84%AA%E6%83%A0",
+            "sha256": "72d1ba16b225f72677f62a5b9e0445ef728f7a0e57e3d9700cec248b1224d657"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:42:51.157334+00:00",
+      "expires": "2026-10-24T08:40:11.112132+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:33:20.637628+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:40:11.112279+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:42:51.157347+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "newer accepted report in run 9aace71c882245f9b92f70a855df2376"
+        }
+      ]
+    },
+    {
+      "id": "ebc995843889",
+      "kind": "finding",
+      "key": "finding|2030.tw|4e9634aacd454bc6b42c2a6d14bf7854|claim:5",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "威樂老虎機優惠頁將完整長尾詞當作平台名稱，優惠段未列具體優惠比例、有效日期或流水倍數；賺錢問題頁FAQ仍詢問手機版、最低入金及客服，正文未見機率、期望值或長期損失的量化分析。這兩個樣本呈現意圖回答不足，不能外推全部長尾頁。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "intent_gap",
+        "claim": 5,
+        "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+        "support": [
+          {
+            "evidence_id": "e3ebf453299c45d8bf9c7e5d94026623",
+            "url": "https://2030.tw/wordcup/%E5%A8%81%E6%A8%82%E5%A8%9B%E6%A8%82%E5%9F%8E%E8%80%81%E8%99%8E%E6%A9%9F%E5%84%AA%E6%83%A0",
+            "sha256": "72d1ba16b225f72677f62a5b9e0445ef728f7a0e57e3d9700cec248b1224d657"
+          },
+          {
+            "evidence_id": "d520295e284e4511ac88264baca9b963",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E%E7%9C%9F%E7%9A%84%E8%83%BD%E8%B3%BA%E9%8C%A2%E5%97%8E",
+            "sha256": "1ccaa7de38bb4b91127d4ecc5686747c9bfd9b7c6ef6e56825d20cec2c50c2fe"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:42:51.157353+00:00",
+      "expires": "2026-10-24T08:40:11.141017+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:33:20.637652+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:40:11.141140+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:42:51.157362+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "newer accepted report in run 9aace71c882245f9b92f70a855df2376"
+        }
+      ]
+    },
+    {
+      "id": "c9dd219af10b",
+      "kind": "finding",
+      "key": "finding|2030.tw|4e9634aacd454bc6b42c2a6d14bf7854|claim:6",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "3A頁自述玩了數月、出金半小時至一小時、最低入金1000元及24小時客服；可讀正文及來源連結未見對應測試紀錄、條款來源或出金憑證。其署名為2030編輯部及站方Article author，不是已核實的具名專家背書；娛樂城泛詞頁未提供具名平台比較表。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "traceability",
+        "claim": 6,
+        "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+        "support": [
+          {
+            "evidence_id": "dbd28ae4b88e4b268489cc4281375b8e",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "67dacc835800404f83a46e7e3397254e",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:42:51.157365+00:00",
+      "expires": "2026-10-24T08:40:11.158543+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:33:20.637675+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:40:11.158660+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:42:51.157372+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "newer accepted report in run 9aace71c882245f9b92f70a855df2376"
+        }
+      ]
+    },
+    {
+      "id": "07d8965796d0",
+      "kind": "finding",
+      "key": "finding|2030.tw|4e9634aacd454bc6b42c2a6d14bf7854|claim:7",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "反證與修正：不能說各頁文字或數字完全相同。玖富正文自稱阿豪體驗官，出金自述20至40分鐘，與3A不同，但未核實其身份或經歷；娛樂城泛詞頁確實提醒洗碼量與提領限制，3A亦有手機、客服及入金FAQ。因此缺口是可追溯證據與意圖精準度，而不是完全沒有實用內容或風險提醒。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "counterevidence",
+        "claim": 7,
+        "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+        "support": [
+          {
+            "evidence_id": "28c7a714cb664a65902e397e26df012a",
+            "url": "https://2030.tw/wordcup/%E7%8E%96%E5%AF%8C%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "ed157f025d8c0c0bf771f59987b2f691a7550c81caa163b4eb25c429f0bd3f9c"
+          },
+          {
+            "evidence_id": "dbd28ae4b88e4b268489cc4281375b8e",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "67dacc835800404f83a46e7e3397254e",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:42:51.157376+00:00",
+      "expires": "2026-10-24T08:40:11.177407+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:33:20.637696+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:40:11.177526+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:42:51.157385+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "newer accepted report in run 9aace71c882245f9b92f70a855df2376"
+        }
+      ]
+    },
+    {
+      "id": "9db0d0d40086",
+      "kind": "finding",
+      "key": "finding|2030.tw|4e9634aacd454bc6b42c2a6d14bf7854|claim:8",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "目錄、娛樂城、3A及新增長尾樣本的結構化資料含不相關MLB賽果NewsArticle與指向另一MLB URL的WebPage；3A可見更新2026-09-24而Article dateModified為2026-09-29。這是頁面語意及日期一致性缺口，未證明處罰或排名損失。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "structured_data",
+        "claim": 8,
+        "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+        "support": [
+          {
+            "evidence_id": "edbe204406d948dd82d155b4422eee38",
+            "url": "https://2030.tw/wordcup/",
+            "sha256": "78123e000542102429c1e62b58f7273a7b2caed166b19e619b9410373cb5ea6c"
+          },
+          {
+            "evidence_id": "dbd28ae4b88e4b268489cc4281375b8e",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "67dacc835800404f83a46e7e3397254e",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          },
+          {
+            "evidence_id": "e3ebf453299c45d8bf9c7e5d94026623",
+            "url": "https://2030.tw/wordcup/%E5%A8%81%E6%A8%82%E5%A8%9B%E6%A8%82%E5%9F%8E%E8%80%81%E8%99%8E%E6%A9%9F%E5%84%AA%E6%83%A0",
+            "sha256": "72d1ba16b225f72677f62a5b9e0445ef728f7a0e57e3d9700cec248b1224d657"
+          },
+          {
+            "evidence_id": "d520295e284e4511ac88264baca9b963",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E%E7%9C%9F%E7%9A%84%E8%83%BD%E8%B3%BA%E9%8C%A2%E5%97%8E",
+            "sha256": "1ccaa7de38bb4b91127d4ecc5686747c9bfd9b7c6ef6e56825d20cec2c50c2fe"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:42:51.157388+00:00",
+      "expires": "2026-10-24T08:40:11.206197+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:33:20.637747+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:40:11.206345+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:42:51.157398+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "newer accepted report in run 9aace71c882245f9b92f70a855df2376"
+        }
+      ]
+    },
+    {
+      "id": "a93aed77ac16",
+      "kind": "finding",
+      "key": "finding|2030.tw|9aace71c882245f9b92f70a855df2376|claim:1",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "candidate",
+      "statement": "首頁主打MLB/NBA、世界盃與運彩，導覽含線上娛樂城推薦；/wordcup/為娛樂城目錄，列品牌、評價、優惠、玩法、安全出金分類，並直接列出3A與娛樂城頁。目錄自稱2502篇、53頁，不是已核實的有效文章數或索引量。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "architecture",
+        "claim": 1,
+        "run": "9aace71c882245f9b92f70a855df2376",
+        "support": [
+          {
+            "evidence_id": "5b5ab84b2b3f4b8896149a1ff8e253c9",
+            "url": "https://2030.tw/",
+            "sha256": "63eef6045318ca42304443735bcb006805f3adcba12ea024fdaef7227d45298d"
+          },
+          {
+            "evidence_id": "8cac7ba3111445d1a0828ffb85fe3b3d",
+            "url": "https://2030.tw/wordcup/",
+            "sha256": "78123e000542102429c1e62b58f7273a7b2caed166b19e619b9410373cb5ea6c"
+          }
+        ]
+      },
+      "updated": "2026-10-17T08:42:51.157432+00:00",
+      "expires": "2026-10-24T08:42:51.157411+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:42:51.157451+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        }
+      ]
+    },
+    {
+      "id": "17e32ef54e5c",
+      "kind": "finding",
+      "key": "finding|2030.tw|9aace71c882245f9b92f70a855df2376|claim:2",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "candidate",
+      "statement": "娛樂城與3A各有獨立URL、含詞title/H1、自指canonical、index/follow、Article及五題FAQPage。泛詞頁title為娛樂城評價｜台灣玩家首選平台，3A為3a娛樂城｜遊戲種類、優惠、出金全攻略。這些設定不證明已索引、排名或FAQ搜尋呈現。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "keyword_targeting",
+        "claim": 2,
+        "run": "9aace71c882245f9b92f70a855df2376",
+        "support": [
+          {
+            "evidence_id": "edc4ae148fe9448abc21e6fa76dac10b",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "76eb675d85aa4708bf2b9aaa98414e02",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          }
+        ]
+      },
+      "updated": "2026-10-17T08:42:51.157486+00:00",
+      "expires": "2026-10-24T08:42:51.157476+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:42:51.157495+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        }
+      ]
+    },
+    {
+      "id": "b4e65d7a7b2d",
+      "kind": "finding",
+      "key": "finding|2030.tw|9aace71c882245f9b92f70a855df2376|claim:3",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "candidate",
+      "statement": "首頁、目錄、泛詞、品牌與子題頁的樣本符合體育入口、娛樂城關鍵字擴張及註冊導向的內容架構；這是對公開實作的策略推論，不是流量、轉換或SEO成功的判定。",
+      "data": {
+        "kind": "inference",
+        "section": "on_page",
+        "topic": "strategy",
+        "claim": 3,
+        "run": "9aace71c882245f9b92f70a855df2376",
+        "support": [
+          {
+            "evidence_id": "5b5ab84b2b3f4b8896149a1ff8e253c9",
+            "url": "https://2030.tw/",
+            "sha256": "63eef6045318ca42304443735bcb006805f3adcba12ea024fdaef7227d45298d"
+          },
+          {
+            "evidence_id": "8cac7ba3111445d1a0828ffb85fe3b3d",
+            "url": "https://2030.tw/wordcup/",
+            "sha256": "78123e000542102429c1e62b58f7273a7b2caed166b19e619b9410373cb5ea6c"
+          },
+          {
+            "evidence_id": "edc4ae148fe9448abc21e6fa76dac10b",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "4c163c4cea1a42828c7a91c81ec09c6c",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8Evip%E5%84%AA%E6%83%A0%E6%B4%BB%E5%8B%95",
+            "sha256": "9a8e8ee1ced8cf5e261e5c91b3384ef30cd180cf89ea71020e539241285d5f89"
+          }
+        ]
+      },
+      "updated": "2026-10-17T08:42:51.157521+00:00",
+      "expires": "2026-10-24T08:42:51.157512+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:42:51.157526+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        }
+      ]
+    },
+    {
+      "id": "408b899ac956",
+      "kind": "finding",
+      "key": "finding|2030.tw|9aace71c882245f9b92f70a855df2376|claim:4",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "candidate",
+      "statement": "3A主頁、娛樂城、論壇、回歸、3A缺點與VIP六個內容樣本共用特色、遊戲、出金安全、註冊、優惠、客服、FAQ框架；主要註冊CTA同指https://don0911.3a1788.bet/?st=wg2030，工具回傳rel含nofollow。這是出站連結，不是入站；未驗證最終重導、品牌歸屬或分潤。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "conversion_pattern",
+        "claim": 4,
+        "run": "9aace71c882245f9b92f70a855df2376",
+        "support": [
+          {
+            "evidence_id": "edc4ae148fe9448abc21e6fa76dac10b",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "76eb675d85aa4708bf2b9aaa98414e02",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          },
+          {
+            "evidence_id": "4b86106ba7d94a8abcb41ac9b2871be1",
+            "url": "https://2030.tw/wordcup/%E4%B9%9D%E5%B7%9E%E5%A8%9B%E6%A8%82%E5%9F%8E+%E8%AB%96%E5%A3%87",
+            "sha256": "3b829604ae72d20b5e8ca931dae55a215dc6f78363e2a25fae1c3af3aedd8f45"
+          },
+          {
+            "evidence_id": "08f423e46e31450f86ca27aa14581b9d",
+            "url": "https://2030.tw/wordcup/%E4%B9%9D%E5%B7%9E%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%9B%9E%E6%AD%B8",
+            "sha256": "372f592ac64281197304db4a66373867de2cb7647d38be8ddc677650aa4199cd"
+          },
+          {
+            "evidence_id": "a1f15584c1c245c28fc4830f896c2eab",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E7%BC%BA%E9%BB%9E",
+            "sha256": "dc53ee9ef75b94a7ff4dd1acdd9f98bcc9826944189b25ced3e423842e7117cf"
+          },
+          {
+            "evidence_id": "4c163c4cea1a42828c7a91c81ec09c6c",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8Evip%E5%84%AA%E6%83%A0%E6%B4%BB%E5%8B%95",
+            "sha256": "9a8e8ee1ced8cf5e261e5c91b3384ef30cd180cf89ea71020e539241285d5f89"
+          }
+        ]
+      },
+      "updated": "2026-10-17T08:42:51.157548+00:00",
+      "expires": "2026-10-24T08:42:51.157540+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:42:51.157552+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        }
+      ]
+    },
+    {
+      "id": "c70d737bd1fa",
+      "kind": "finding",
+      "key": "finding|2030.tw|9aace71c882245f9b92f70a855df2376|claim:5",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "candidate",
+      "statement": "論壇頁把九州娛樂城 論壇當平台名稱，正文與抽取來源連結未見實際討論串引述；回歸頁提到沉寂後重返，但未給可核對的回歸日期、事件時間線或公告來源。3A VIP頁有VIP返水與專屬活動描述，但未列等級門檻、具體返水比例、活動有效期或條款來源。這些是樣本的意圖回答缺口，不能外推全站。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "intent_gaps",
+        "claim": 5,
+        "run": "9aace71c882245f9b92f70a855df2376",
+        "support": [
+          {
+            "evidence_id": "4b86106ba7d94a8abcb41ac9b2871be1",
+            "url": "https://2030.tw/wordcup/%E4%B9%9D%E5%B7%9E%E5%A8%9B%E6%A8%82%E5%9F%8E+%E8%AB%96%E5%A3%87",
+            "sha256": "3b829604ae72d20b5e8ca931dae55a215dc6f78363e2a25fae1c3af3aedd8f45"
+          },
+          {
+            "evidence_id": "08f423e46e31450f86ca27aa14581b9d",
+            "url": "https://2030.tw/wordcup/%E4%B9%9D%E5%B7%9E%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%9B%9E%E6%AD%B8",
+            "sha256": "372f592ac64281197304db4a66373867de2cb7647d38be8ddc677650aa4199cd"
+          },
+          {
+            "evidence_id": "4c163c4cea1a42828c7a91c81ec09c6c",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8Evip%E5%84%AA%E6%83%A0%E6%B4%BB%E5%8B%95",
+            "sha256": "9a8e8ee1ced8cf5e261e5c91b3384ef30cd180cf89ea71020e539241285d5f89"
+          }
+        ]
+      },
+      "updated": "2026-10-17T08:42:51.157573+00:00",
+      "expires": "2026-10-24T08:42:51.157566+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:42:51.157577+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        }
+      ]
+    },
+    {
+      "id": "e31c450a28b8",
+      "kind": "finding",
+      "key": "finding|2030.tw|9aace71c882245f9b92f70a855df2376|claim:6",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "candidate",
+      "statement": "反證與修正：3A缺點頁確實談手機卡頓、APP更新、KYC一至兩天、高流水與客服轉交等待，不能稱全站只有正向推薦或長尾完全不回答意圖。但該頁未提供相應測試紀錄或論壇原文來源，FAQ仍用3a娛樂城缺點有手機版可以玩嗎等套詞。其後續出金說法為半小時至兩小時，與主頁半小時至一小時不同；條件可能不同，不能直接判為造假或已證實矛盾。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "counterevidence",
+        "claim": 6,
+        "run": "9aace71c882245f9b92f70a855df2376",
+        "support": [
+          {
+            "evidence_id": "a1f15584c1c245c28fc4830f896c2eab",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E7%BC%BA%E9%BB%9E",
+            "sha256": "dc53ee9ef75b94a7ff4dd1acdd9f98bcc9826944189b25ced3e423842e7117cf"
+          },
+          {
+            "evidence_id": "edc4ae148fe9448abc21e6fa76dac10b",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          }
+        ]
+      },
+      "updated": "2026-10-17T08:42:51.157595+00:00",
+      "expires": "2026-10-24T08:42:51.157589+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:42:51.157598+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        }
+      ]
+    },
+    {
+      "id": "bf463bf2a0f2",
+      "kind": "finding",
+      "key": "finding|2030.tw|9aace71c882245f9b92f70a855df2376|claim:7",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "candidate",
+      "statement": "3A主頁自述玩數月、出金半小時至一小時、最低入金1000元與24小時客服，未見對應公開測試紀錄、出金憑證或條款引用；署名2030編輯部及站方Article author，不是已核實的具名專家背書。娛樂城泛詞頁確有洗碼量、提領限制及量力而為提醒，但未提供具名平台比較表。不能說完全沒有實用內容或風險提醒。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "evidence_quality",
+        "claim": 7,
+        "run": "9aace71c882245f9b92f70a855df2376",
+        "support": [
+          {
+            "evidence_id": "edc4ae148fe9448abc21e6fa76dac10b",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "76eb675d85aa4708bf2b9aaa98414e02",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          }
+        ]
+      },
+      "updated": "2026-10-17T08:42:51.157614+00:00",
+      "expires": "2026-10-24T08:42:51.157609+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:42:51.157617+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        }
+      ]
+    },
+    {
+      "id": "bfa372d43bc1",
+      "kind": "finding",
+      "key": "finding|2030.tw|9aace71c882245f9b92f70a855df2376|claim:8",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "candidate",
+      "statement": "娛樂城、3A、論壇、回歸、缺點及VIP樣本的結構化資料混入不相關MLB NewsArticle與指向MLB URL的WebPage。3A可見更新2026-09-24、Article dateModified為2026-09-29。這支持語意與日期一致性缺口，不支持宣稱搜尋處罰或排名損失。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "structured_data",
+        "claim": 8,
+        "run": "9aace71c882245f9b92f70a855df2376",
+        "support": [
+          {
+            "evidence_id": "edc4ae148fe9448abc21e6fa76dac10b",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "76eb675d85aa4708bf2b9aaa98414e02",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          },
+          {
+            "evidence_id": "4b86106ba7d94a8abcb41ac9b2871be1",
+            "url": "https://2030.tw/wordcup/%E4%B9%9D%E5%B7%9E%E5%A8%9B%E6%A8%82%E5%9F%8E+%E8%AB%96%E5%A3%87",
+            "sha256": "3b829604ae72d20b5e8ca931dae55a215dc6f78363e2a25fae1c3af3aedd8f45"
+          },
+          {
+            "evidence_id": "08f423e46e31450f86ca27aa14581b9d",
+            "url": "https://2030.tw/wordcup/%E4%B9%9D%E5%B7%9E%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%9B%9E%E6%AD%B8",
+            "sha256": "372f592ac64281197304db4a66373867de2cb7647d38be8ddc677650aa4199cd"
+          },
+          {
+            "evidence_id": "a1f15584c1c245c28fc4830f896c2eab",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E7%BC%BA%E9%BB%9E",
+            "sha256": "dc53ee9ef75b94a7ff4dd1acdd9f98bcc9826944189b25ced3e423842e7117cf"
+          },
+          {
+            "evidence_id": "4c163c4cea1a42828c7a91c81ec09c6c",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8Evip%E5%84%AA%E6%83%A0%E6%B4%BB%E5%8B%95",
+            "sha256": "9a8e8ee1ced8cf5e261e5c91b3384ef30cd180cf89ea71020e539241285d5f89"
+          }
+        ]
+      },
+      "updated": "2026-10-17T08:42:51.157636+00:00",
+      "expires": "2026-10-24T08:42:51.157629+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:42:51.157640+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9aace71c882245f9b92f70a855df2376",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        }
+      ]
+    },
+    {
+      "id": "d120e90477cf",
+      "kind": "finding",
+      "key": "finding|2030.tw|9cd17879c258438abff76b3af1dec297|claim:1",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "首頁title與H1主打2030玩運彩瘋世足、MLB/NBA及世界盃，導覽以「線上娛樂城推薦」連到/wordcup/；因此不能把首頁當成娛樂城或3A主關鍵字落地頁。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "architecture",
+        "claim": 1,
+        "run": "9cd17879c258438abff76b3af1dec297",
+        "support": [
+          {
+            "evidence_id": "cb5396def79544cb98173d81dc0370ef",
+            "url": "https://2030.tw/",
+            "sha256": "63eef6045318ca42304443735bcb006805f3adcba12ea024fdaef7227d45298d"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:33:20.637288+00:00",
+      "expires": "2026-10-24T08:31:10.598643+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.447321+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:31:10.598757+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:33:20.637347+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "newer accepted report in run 4e9634aacd454bc6b42c2a6d14bf7854"
+        }
+      ]
+    },
+    {
+      "id": "882690a66b82",
+      "kind": "finding",
+      "key": "finding|2030.tw|9cd17879c258438abff76b3af1dec297|claim:2",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "娛樂城目錄的title、H1、description針對線上娛樂城推薦，提供品牌、評價、優惠、玩法、安全與出金分類，首屏列出3a娛樂城與娛樂城內頁。頁面自稱2502篇評測、53頁，這是頁面宣告而非本輪核實的獨立優質文章或索引數。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "keyword_cluster",
+        "claim": 2,
+        "run": "9cd17879c258438abff76b3af1dec297",
+        "support": [
+          {
+            "evidence_id": "c301feecdce542f780b08de6ee2b185f",
+            "url": "https://2030.tw/wordcup/",
+            "sha256": "78123e000542102429c1e62b58f7273a7b2caed166b19e619b9410373cb5ea6c"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:33:20.637369+00:00",
+      "expires": "2026-10-24T08:31:10.613001+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.447387+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:31:10.613092+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:33:20.637383+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "newer accepted report in run 4e9634aacd454bc6b42c2a6d14bf7854"
+        }
+      ]
+    },
+    {
+      "id": "bd017c7f1610",
+      "kind": "finding",
+      "key": "finding|2030.tw|9cd17879c258438abff76b3af1dec297|claim:3",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "3A頁title為「3a娛樂城｜遊戲種類、優惠、出金全攻略」，娛樂城頁title為「娛樂城評價｜台灣玩家首選平台」；兩者有自指canonical、index/follow、可見FAQ與五題FAQPage，並有Article標記。這些是實作證據，不證明Google已索引、給予FAQ呈現或排名。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "metadata",
+        "claim": 3,
+        "run": "9cd17879c258438abff76b3af1dec297",
+        "support": [
+          {
+            "evidence_id": "97f8a8480d174245867d739c1cf18e0c",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "8015e9841c454feeb9dba7e2f996865e",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:33:20.637387+00:00",
+      "expires": "2026-10-24T08:31:10.628285+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.447421+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:31:10.628369+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:33:20.637401+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "newer accepted report in run 4e9634aacd454bc6b42c2a6d14bf7854"
+        }
+      ]
+    },
+    {
+      "id": "837e2ad3e4d7",
+      "kind": "finding",
+      "key": "finding|2030.tw|9cd17879c258438abff76b3af1dec297|claim:4",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "娛樂城、3A及富遊三個樣本均依平台特色、遊戲種類、出金安全、註冊、優惠、客服、FAQ排列；三者主要註冊CTA均指向https://don0911.3a1788.bet/?st=wg2030並帶nofollow。富遊頁未呈現品牌專屬的不同註冊目的地；此觀察不能外推所有目錄文章或最終重導落地品牌。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "conversion",
+        "claim": 4,
+        "run": "9cd17879c258438abff76b3af1dec297",
+        "support": [
+          {
+            "evidence_id": "97f8a8480d174245867d739c1cf18e0c",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "8015e9841c454feeb9dba7e2f996865e",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          },
+          {
+            "evidence_id": "f47b182120194e0fb3c158451be65e16",
+            "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "7b49d45d4b936aeb09e36d92f8d2726d0d19d7951a493ca1287b00eca36aabee"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:33:20.637406+00:00",
+      "expires": "2026-10-24T08:31:10.647748+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.447448+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:31:10.647875+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:33:20.637415+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "newer accepted report in run 4e9634aacd454bc6b42c2a6d14bf7854"
+        }
+      ]
+    },
+    {
+      "id": "23cbd8d25285",
+      "kind": "finding",
+      "key": "finding|2030.tw|9cd17879c258438abff76b3af1dec297|claim:5",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "目錄與抽查的三個娛樂城內頁都含不相干的MLB賽果NewsArticle及指向另一篇MLB URL的WebPage資料；3A可見更新日期為2026-09-24，Article dateModified為2026-09-29。這些是結構化資料與頁面主體／日期的一致性缺口，未量測搜尋影響或處罰。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "structured_data",
+        "claim": 5,
+        "run": "9cd17879c258438abff76b3af1dec297",
+        "support": [
+          {
+            "evidence_id": "c301feecdce542f780b08de6ee2b185f",
+            "url": "https://2030.tw/wordcup/",
+            "sha256": "78123e000542102429c1e62b58f7273a7b2caed166b19e619b9410373cb5ea6c"
+          },
+          {
+            "evidence_id": "97f8a8480d174245867d739c1cf18e0c",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "8015e9841c454feeb9dba7e2f996865e",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          },
+          {
+            "evidence_id": "f47b182120194e0fb3c158451be65e16",
+            "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "7b49d45d4b936aeb09e36d92f8d2726d0d19d7951a493ca1287b00eca36aabee"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:33:20.637419+00:00",
+      "expires": "2026-10-24T08:31:10.670621+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.447476+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:31:10.670761+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:33:20.637427+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "newer accepted report in run 4e9634aacd454bc6b42c2a6d14bf7854"
+        }
+      ]
+    },
+    {
+      "id": "b4aff6312300",
+      "kind": "finding",
+      "key": "finding|2030.tw|9cd17879c258438abff76b3af1dec297|claim:6",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "3A文章自述玩了數月、出金半小時至一小時、最低入金1000元及24小時客服，但本輪可讀正文與連結未見對應測試紀錄、條款來源、牌照查核或出金憑證。娛樂城泛詞頁也未提供具名平台比較表。這代表樣本的可追溯證據不足，不代表其主張必定為假。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "editorial_evidence",
+        "claim": 6,
+        "run": "9cd17879c258438abff76b3af1dec297",
+        "support": [
+          {
+            "evidence_id": "97f8a8480d174245867d739c1cf18e0c",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "8015e9841c454feeb9dba7e2f996865e",
+            "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:33:20.637431+00:00",
+      "expires": "2026-10-24T08:31:10.686838+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.447500+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:31:10.686924+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:33:20.637441+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "newer accepted report in run 4e9634aacd454bc6b42c2a6d14bf7854"
+        }
+      ]
+    },
+    {
+      "id": "528ffc1d7561",
+      "kind": "finding",
+      "key": "finding|2030.tw|9cd17879c258438abff76b3af1dec297|claim:7",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "體育頁是反例：抽查MLB文章提供團隊、先發與打線數據，標示Tank01 MLB API及更新時間；但亦出現「#6 打者」占位。不能把全站概括成沒有實質資訊，也不能將其來源標示當成數據已獨立查真。",
+      "data": {
+        "kind": "observation",
+        "section": "on_page",
+        "topic": "counterevidence",
+        "claim": 7,
+        "run": "9cd17879c258438abff76b3af1dec297",
+        "support": [
+          {
+            "evidence_id": "4d674733826d4ffb8e305e4a3f665abf",
+            "url": "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle/",
+            "sha256": "8baea9d4e0a2340fe2da98887246774cb22e63dc38451885e315068a8e9081f1"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:33:20.637444+00:00",
+      "expires": "2026-10-24T08:31:10.702401+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.447522+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:31:10.702566+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:33:20.637450+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "newer accepted report in run 4e9634aacd454bc6b42c2a6d14bf7854"
+        }
+      ]
+    },
+    {
+      "id": "6a379f4a5462",
+      "kind": "finding",
+      "key": "finding|2030.tw|9cd17879c258438abff76b3af1dec297|claim:8",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "superseded",
+      "statement": "綜合首頁體育內容、娛樂城主題目錄、關鍵字與品牌內頁及共用追蹤CTA，樣本較符合「體育入口加娛樂城關鍵字群、註冊導向」的內容架構；聯盟分潤關係、導流規模、收益及SEO成功均未獲證實。",
+      "data": {
+        "kind": "inference",
+        "section": "on_page",
+        "topic": "strategy",
+        "claim": 8,
+        "run": "9cd17879c258438abff76b3af1dec297",
+        "support": [
+          {
+            "evidence_id": "cb5396def79544cb98173d81dc0370ef",
+            "url": "https://2030.tw/",
+            "sha256": "63eef6045318ca42304443735bcb006805f3adcba12ea024fdaef7227d45298d"
+          },
+          {
+            "evidence_id": "c301feecdce542f780b08de6ee2b185f",
+            "url": "https://2030.tw/wordcup/",
+            "sha256": "78123e000542102429c1e62b58f7273a7b2caed166b19e619b9410373cb5ea6c"
+          },
+          {
+            "evidence_id": "97f8a8480d174245867d739c1cf18e0c",
+            "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db"
+          },
+          {
+            "evidence_id": "f47b182120194e0fb3c158451be65e16",
+            "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+            "sha256": "7b49d45d4b936aeb09e36d92f8d2726d0d19d7951a493ca1287b00eca36aabee"
+          }
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-17T08:33:20.637453+00:00",
+      "expires": "2026-10-24T08:31:10.732219+00:00",
+      "history": [
+        {
+          "time": "2026-10-17T08:30:46.447589+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "9cd17879c258438abff76b3af1dec297",
+          "reason": "observation or inference of an accepted report; every citation an on-site page"
+        },
+        {
+          "time": "2026-10-17T08:31:10.732381+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": null,
+          "reason": "pages re-verified unchanged"
+        },
+        {
+          "time": "2026-10-17T08:33:20.637463+00:00",
+          "old": "active",
+          "new": "superseded",
+          "actor": "controller",
+          "run": "4e9634aacd454bc6b42c2a6d14bf7854",
+          "reason": "newer accepted report in run 4e9634aacd454bc6b42c2a6d14bf7854"
+        }
+      ]
+    },
+    {
+      "id": "38b7cba20063",
+      "kind": "human_feedback",
+      "key": "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1",
+      "host": "2030.tw",
+      "scope": "general",
+      "status": "active",
+      "statement": "人工審查（總控Claude（使用者授權代審））把 run 8cad8d54 的 claim:8 標為「證據不支持」：頁面只有2030編輯部團隊署名，不是具名作者，不能當作者資訊或專業背書。該項原文：「反證：3A頁有具體出金時段、最低入金、手機版與客服FAQ、作者及更新標示；娛樂城主詞頁提醒洗碼量和提領限制。因此不能稱其完全沒有實用資訊或風險提醒；有數字也不等於數字已驗證。」",
+      "data": {
+        "target": "claim:8",
+        "label": "unsupported",
+        "run": "8cad8d54a03c4f94a716e7653b5b3112"
+      },
+      "updated": "2026-10-17T08:30:48.383214+00:00",
+      "expires": null,
+      "history": [
+        {
+          "time": "2026-10-17T08:30:48.383214+00:00",
+          "old": null,
+          "new": "active",
+          "actor": "human:總控Claude（使用者授權代審）",
+          "run": null,
+          "reason": "v0.6 human review added unchanged"
+        }
+      ]
+    }
+  ],
+  "feedback": [
+    {
+      "id": 1,
+      "time": "2026-10-17T08:30:48.383214+00:00",
+      "run": "8cad8d54a03c4f94a716e7653b5b3112",
+      "target": "claim:8",
+      "label": "unsupported",
+      "reason": "頁面只有2030編輯部團隊署名，不是具名作者，不能當作者資訊或專業背書",
+      "scope": "general",
+      "reviewer": "總控Claude（使用者授權代審）",
+      "lesson": "38b7cba20063"
+    }
+  ]
+}

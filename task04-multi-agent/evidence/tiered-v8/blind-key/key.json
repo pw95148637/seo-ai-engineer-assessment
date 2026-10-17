@@ -1,0 +1,90 @@
+{
+  "seed": 20261018,
+  "items": [
+    "evidence/runtime-claude-conflict-v6:round1",
+    "evidence/runtime-claude-conflict-v6:final",
+    "evidence/runtime-claude-conflict-v6-repeat:final",
+    "evidence/runtime-claude-conflict-v6-run3:final",
+    "evidence/runtime-claude-conflict-v6-run4:final",
+    "evidence/runtime-claude-conflict-v8-1:final",
+    "evidence/runtime-claude-conflict-v8-2:final",
+    "evidence/runtime-claude-conflict-v8-3:final",
+    "evidence/runtime-claude-normal-v8:final"
+  ],
+  "labels": {
+    "A": {
+      "run": "runtime-claude-conflict-v6",
+      "which": "final",
+      "prompt_version": "v6",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional"
+    },
+    "B": {
+      "run": "runtime-claude-conflict-v6-repeat",
+      "which": "final",
+      "prompt_version": "v6",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional"
+    },
+    "C": {
+      "run": "runtime-claude-conflict-v6-run4",
+      "which": "final",
+      "prompt_version": "v6",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional"
+    },
+    "D": {
+      "run": "runtime-claude-conflict-v8-3",
+      "which": "final",
+      "prompt_version": "v8",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional"
+    },
+    "E": {
+      "run": "runtime-claude-normal-v8",
+      "which": "final",
+      "prompt_version": "v8",
+      "scenario": "normal",
+      "status": "approved_provisional"
+    },
+    "F": {
+      "run": "runtime-claude-conflict-v6",
+      "which": "round1",
+      "prompt_version": "v6",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional"
+    },
+    "G": {
+      "run": "runtime-claude-conflict-v8-2",
+      "which": "final",
+      "prompt_version": "v8",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional"
+    },
+    "H": {
+      "run": "runtime-claude-conflict-v8-1",
+      "which": "final",
+      "prompt_version": "v8",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional"
+    },
+    "I": {
+      "run": "runtime-claude-conflict-v6-run3",
+      "which": "final",
+      "prompt_version": "v6",
+      "scenario": "forced_conflict",
+      "status": "approved_provisional"
+    }
+  },
+  "reversed_order": [
+    "I",
+    "H",
+    "G",
+    "F",
+    "E",
+    "D",
+    "C",
+    "B",
+    "A"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "reviewer": "R2",
+  "reports": {
+    "r55kz": {
+      "summary": "首頁→/wordcup/→兩目標頁的路徑、metadata、3A頁出金與入金數字缺佐證、泛詞頁提醒洗碼量等反證，都與快照相符；站外實讀casinobase、icasino兩個相關站，也正確把nJAV判為搜尋回顯。短處：只讀兩個目標頁，沒看長尾頁與跨頁矛盾，沒記CTA的nofollow，行動的驗證缺觀察窗。",
+      "defects": [
+        {"where": "其他未知第2條", "type": "other", "detail": "寫「FAQ可見不代表有FAQ結構化資料…未做schema」，但本輪快照5fc7bac056434ef2ab5cc735328f9e29與3eea9e4a78814f57bef6d6f460065bbe的JSON-LD已有FAQPage（5題）與Article（datePublished 2026-09-24、dateModified 2026-09-29）。手上快照就能觀察的事被列成未知。"},
+        {"where": "On-page 已知第5條與推論", "type": "other", "detail": "只記錄連到don0911.3a1788.bet的CTA，沒指出兩件事：同頁側欄連到同一網址的banner，alt是「WG娛樂城」、圖檔名是「2030玩運彩瘋世足xWG娛樂城」；各頁（含首頁05ecd02290d840b1b4e722ef5f7bb8a0）另有連到bc5730m.wg1888.com/?st=2030WG的廣告。導流對象的實際品牌與第二個導流目的地都沒分析。"},
+        {"where": "On-page 抽樣範圍", "type": "other", "detail": "2030.tw只讀首頁、hub與兩個目標頁，沒讀任何長尾頁（例如3a娛樂城出金速度），所以看不到模板套詞與跨頁出金時間不一致，策略推論的根據較薄。"},
+        {"where": "行動第6條（衡量與停損）", "type": "other", "detail": "沒有觀察窗、停損門檻或判定標準，驗證方式空泛。"}
+      ]
+    },
+    "rt9z8": {
+      "summary": "On-page事實正確：兩頁各有4個nofollow CTA、六段落與五類FAQ、3A出金數字缺佐證；行動有4–8週觀察窗。短處：站外只讀了一個同名股票頁，等於沒有實質站外查核；推論把CTA目的地寫成「集中導流至3A」，沒有依據。",
+      "defects": [
+        {"where": "On-page 推論", "type": "unsupported", "detail": "「集中導流至3A」只靠主機名3a1788判斷。同一快照b3543e98c3d5425b813ba2b4832c5b00的側欄banner連到同一網址don0911.3a1788.bet/?st=wg2030，alt卻是「WG娛樂城」，參數也是wg2030，目的地屬哪個品牌並未確認。"},
+        {"where": "Off-page 已知與推論", "type": "scope", "detail": "唯一直接讀取的站外頁是Yahoo彰源股票頁（0cbf6949495b4aa7a7e74e8965558c53），屬同名誤匹配。沒查任何主題相關的候選站，2030.tw的off-page做法幾乎沒有實質觀察。"},
+        {"where": "其他未知第1條", "type": "other", "detail": "寫「五次公開索引搜尋已用完；部分無結果，一組僅回空白項」，但sources.json沒有任何search_index證據，這段說法無法追溯。"},
+        {"where": "On-page 已知第3條", "type": "other", "detail": "寫「可見FAQ不等於已驗證FAQ結構化資料」，但b3543e98c3d5425b813ba2b4832c5b00與d148a4f4306f462987c058c8d36e0c0b的JSON-LD已有FAQPage，可直接觀察的事實沒記錄。"},
+        {"where": "On-page 抽樣範圍", "type": "other", "detail": "只讀四個2030.tw頁面，沒有長尾頁，看不到模板套詞與跨頁數字矛盾。"}
+      ]
+    },
+    "r9npr": {
+      "summary": "抽樣最廣：含富遊頁，以及MLB賽事頁這個反例（7個資料表、標示Tank01 MLB API、meta description只有顏色圖例）。CTA目的地、nofollow、3A數字宣稱都核對無誤；站外實讀casinobase與3aaa兩個候選並引用搜尋結果；行動完整且連到發現。短處：沒看長尾頁，沒發現3A跨頁出金時間矛盾與模板套詞，站外仍無正向證據。",
+      "defects": [
+        {"where": "On-page 已知第5條與推論", "type": "other", "detail": "「集中商業導流」沒辨識導流對象，有兩點未指出：共同CTA網址在側欄banner標為「WG娛樂城」；已引用的MLB頁a49c492db8d548af97b4178155a99b15另有4個連到bc5730m.wg1888.com的廣告連結（st=2030ADS/2030WG）。第二個導流目的地未分析。"},
+        {"where": "Off-page 已知", "type": "other", "detail": "兩個候選本來就不太可能連向2030.tw：3aaa.com.tw是3A品牌推廣站，casinobase是同業評測站（94eeb45bc2c645f79fb345b85676bd21、4c3ba3b9d204453d8c0d9725404aba24），陰性結果的資訊量有限。報告有限定範圍，屬輕微。"},
+        {"where": "On-page 抽樣範圍", "type": "other", "detail": "沒讀3A長尾頁，因此沒發現核心頁「半小時至一小時」與長尾頁「15到30分鐘」不一致，也沒看到把查詢詞當品牌的FAQ套詞，差異化切口少了一項直接證據。"}
+      ]
+    },
+    "rccad": {
+      "summary": "On-page最深入，且都與快照相符：cat篩選頁canonical回hub；長尾頁把「3a娛樂城出金速度」「gofun娛樂城安全嗎」當品牌套進正文與FAQ；3A核心頁與長尾頁的出金時間不一致；SSL不等於合法也講清楚。短處：站外只讀一個同名股票頁；行動偏條件式，部分預設我方已有頁面。",
+      "defects": [
+        {"where": "Off-page 已知", "type": "scope", "detail": "唯一站外頁是Yahoo彰源股票誤匹配（853dd8ca823a47e980a3d1c5ced3d44b），報告也自述兩次發現搜尋後停止，沒讀任何主題相關候選，off-page觀察幾乎空白。"},
+        {"where": "行動第2條", "type": "scope", "detail": "「先選我方既有泛詞與3A核心頁小規模測試」預設我方已有這兩類頁，與報告自承我方網站未提供、P0尚未盤點不一致。"},
+        {"where": "On-page 已知第1條", "type": "epistemic", "detail": "「反駁首頁直接以娛樂城為核心的初始假設」引用了報告沒交代的假設，讀者無法判斷這個假設從何而來。"},
+        {"where": "On-page 已知第7條與推論第3條", "type": "other", "detail": "沒指出共同CTA網址don0911.3a1788.bet/?st=wg2030在側欄banner標為「WG娛樂城」，也沒提各頁連到bc5730m.wg1888.com的廣告，導流對象沒辨識。"},
+        {"where": "On-page 已知第4條", "type": "other", "detail": "「部署署名」應為「編輯部署名」，筆誤。"}
+      ]
+    },
+    "rgxe5": {
+      "summary": "On-page涵蓋目標頁與3A出金速度長尾頁，指出跨頁出金時間不一致、FAQ套詞、富遊頁沒有自己的註冊目的地，數字與連結屬性都正確；站外實讀兩個3A相關站，並用搜尋結果說明網域搜尋被股票同名污染；行動與發現對應最緊（3A出金條件頁、CTA目的地一致、28天窗口）。主要缺陷是把共同CTA目的地認定為「3A註冊」。",
+      "defects": [
+        {"where": "On-page 推論第1條與行動第3條", "type": "unsupported", "detail": "「集中3A註冊承接」與「競爭者富遊頁也導向3A註冊」只靠主機名don0911.3a1788.bet。同一快照2fe1686831ac4cd98588815fc1cfa9d8的側欄連到同一網址，banner alt是「WG娛樂城」、圖檔是「2030玩運彩瘋世足xWG娛樂城」、參數是st=wg2030；品牌歸屬沒驗證，卻寫得像事實。各頁另有連到bc5730m.wg1888.com的廣告，也沒記錄。"},
+        {"where": "Off-page 已知", "type": "other", "detail": "3aarena.com.tw與gamebet.com.tw的標題就是「3A娛樂城｜…」，屬3A品牌推廣站，本來就不太可能連向2030.tw，作為入站候選的資訊量低（d3ad7de2212e42f8a6e69cb80ba01a46、6a333e000a0f4fc78d6b46e955b8ba1f）。報告已限定範圍，屬輕微。"},
+        {"where": "行動第6條", "type": "other", "detail": "優先級標成「P0/P2」，排序不明確。"}
+      ]
+    },
+    "rudyu": {
+      "summary": "On-page與rgxe5相近：讀了目標頁、富遊頁、出金速度長尾頁，指出跨頁出金時間不一致、FAQ套詞、nofollow CTA，陳述準確，對CTA目的地保持中性；行動具體（3A查核頁、娛樂城比較主頁、成本與品質分開）。短處：站外只讀一個同名股票頁，觀察窗沒定。",
+      "defects": [
+        {"where": "Off-page 已知與推論", "type": "scope", "detail": "唯一直接讀取的站外頁是Yahoo彰源股票同名頁（212b161b8fa64c29a2e32cd8ffb60cfd），沒有查核任何主題相關候選，off-page做法沒有實質觀察。"},
+        {"where": "行動第5條", "type": "other", "detail": "「固定觀察窗」沒說明長度或判定門檻，驗證方式不具體。"},
+        {"where": "On-page 已知第6條", "type": "other", "detail": "沒指出共同CTA網址在側欄banner標為「WG娛樂城」，也沒提各頁連到bc5730m.wg1888.com的廣告，導流對象沒辨識。"}
+      ]
+    }
+  },
+  "pairs": {
+    "P1": {"preferred": "A", "strength": "slight", "reasons": "兩份讀的是同一組頁面（首頁、hub、兩目標頁），on-page核心觀察都正確。r55kz多了三點：泛詞頁提醒洗碼量與提領限制的反證、泛詞頁不是逐品牌比較的判斷、3A頁「實際玩了幾個月」的第一人稱宣稱。rt9z8多記了nofollow與4個CTA。分差主要在站外：r55kz實讀casinobase /reviews/、icasino /comparison/兩個相關站，並正確把nJAV判為搜尋回顯（56d5c2522bbe4a6fad53b4b76abe3b5b、d1f9ae3ec4304c0ba2289daa105e7fb5、8798bf75a80042f9aa08fca9a9a2fd38）；rt9z8只讀了Yahoo股票同名頁（0cbf6949495b4aa7a7e74e8965558c53）。rt9z8推論「集中導流至3A」，與快照中同網址banner標「WG娛樂城」不合。行動品質相近，rt9z8有4–8週觀察窗略好，但抵銷不了站外與推論的差距。"},
+    "P2": {"preferred": "B", "strength": "slight", "reasons": "兩份用的是同一組快照。r9npr多讀兩頁：富遊頁（3da9a66e98414bd89484c0b30da3ca84）同樣有4個連到3a1788的CTA，顯示多品牌共用導流；MLB賽事頁（a49c492db8d548af97b4178155a99b15）有7個表格、標示Tank01 MLB API、meta description只有顏色圖例。這讓「體育長尾入口＋娛樂城內容群」的推論更有根據，也附了反例；nofollow記錄正確，行動4直接連到「多品牌共用導流URL」這個發現。站外雙方都是兩個相關站的陰性結果。r55kz沒有明顯錯誤，差距在廣度與推論的根據，所以只是slight。"},
+    "P3": {"preferred": "A", "strength": "slight", "reasons": "rccad的on-page發現最有競爭判斷價值，且都能在快照核實：cat篩選頁canonical回/wordcup/、title沿用hub（6a7786604d4144458e4b71b91565536d）；長尾頁把「3a娛樂城出金速度」稱為一間平台，FAQ出現「3a娛樂城出金速度有手機版可以玩嗎」，gofun頁同樣套詞（3df4809ebfc0424cb80f889ebf4bf3ef、55c84e70fff24c0ca7e09408b01f84e9）；核心頁「半小時至一小時」與長尾頁「15到30分鐘」不一致。這些揭示對方程式化長尾頁的模板缺陷，直接支撐差異化行動。r9npr廣度好（MLB反例），站外讀了兩個相關候選，比rccad只讀股票同名頁好；行動也較少預設我方已有頁面。但雙方站外都沒有正向證據，這項差距對結論影響小；on-page深度差距較大，所以偏rccad，只是slight。"},
+    "P4": {"preferred": "A", "strength": "slight", "reasons": "rgxe5多讀3A出金速度長尾頁（d4bee9a871564196a6b644ef796738a2），指出跨頁出金時間不一致與FAQ套詞，並明說富遊頁沒有自己的註冊目的地。站外讀了兩個候選，並用搜尋快照（9072e6a510b24075af315732e4f2a8c6）說明網域搜尋被彰源股票污染。行動與發現對應最緊：3A出金條件頁、CTA目的地與品牌一致、28天窗口。扣分是把3a1788目的地寫成「3A註冊」（快照中同網址banner標WG娛樂城）；r9npr對目的地保持中性，還有MLB反例。整體rgxe5對決策較有用，但有一處推論過頭，故slight。"},
+    "P5": {"preferred": "B", "strength": "slight", "reasons": "兩份重點高度重疊：長尾套詞、跨頁出金時間不一致、nofollow CTA，站外都只讀Yahoo股票同名頁。rccad多出三項on-page證據：cat篩選頁canonical的處理（6a7786604d4144458e4b71b91565536d）、gofun問句頁的同類套詞（55c84e70fff24c0ca7e09408b01f84e9）、SSL/KYC不等於合法的推論。rudyu的行動較具體（先做3A查核頁再做比較主頁、成本與品質分開）；rccad行動偏條件式，第2條還預設我方已有頁面。on-page證據的差距大於行動清晰度的差距，略偏rccad。"}
+  }
+}

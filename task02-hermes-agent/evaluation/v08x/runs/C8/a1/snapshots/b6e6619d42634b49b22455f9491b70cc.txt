@@ -1,0 +1,1 @@
+{"success": false, "error": "DuckDuckGo search failed: DDGSException: No results found."}

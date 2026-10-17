@@ -1,0 +1,364 @@
+# paulkuo.tw robots.txt
+# 整合版 2026-05-15
+# 來源：桌機助手 handoff P0 任務 1 + Chat session 補強
+
+# ── 預設規則 ─────────────────────────────
+User-agent: *
+Allow: /
+
+# 系統端點（後端 API / WebSocket / Auth）
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+
+# Admin 後台
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+# Query 模式（敏感 token / 重複內容）
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /*?lang=
+
+# 非網頁資料檔
+Disallow: /data/
+
+# 互動視覺化頁
+Disallow: /*/tags-graph
+Disallow: /tags-graph
+
+# ── AI Crawlers ─────────────────────────────
+# 注意：robots.txt 規範下，具體 user-agent 區塊不繼承 * 區塊的 Disallow，
+# 因此這裡必須重複寫一遍系統端點限制，避免 admin / API 被收進訓練資料。
+# 刻意不同步的規則（2026-10-08 GEO 拍板）：/data/、/*?lang=、tags-graph
+# 對 AI 爬蟲開放：那些是可讀的公開資料與頁面，擋搜尋重複收錄即可，
+# 不必擋 AI 理解。別當成漏網補上。
+
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+
+# ── AI 搜尋／引用爬蟲（AEO 關鍵，補列 2026-05-22）─────────────
+# 這幾隻決定會不會被 ChatGPT / Claude / Perplexity 搜尋引用，
+# 與訓練爬蟲獨立控制，全部放行但仍擋系統端點。
+
+# OpenAI 搜尋索引（ChatGPT 引用的關鍵爬蟲）
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+# Anthropic 搜尋索引 + 使用者擷取（與 ClaudeBot 訓練爬蟲獨立）
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+
+# Perplexity 即時擷取（與 PerplexityBot 索引爬蟲獨立）
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/
+Disallow: /auth/
+Disallow: /ws/
+Disallow: /stt
+Disallow: /summarize
+Disallow: /translate-stream
+Disallow: /log-cost
+Disallow: /costs
+Disallow: /validate-code
+Disallow: /adopt-entry
+Disallow: /*?code=
+Disallow: /*?redirect=
+Disallow: /tools/tqef/admin/
+# GSC 爬到但無對應頁面的後端路由 (2026-05-24)
+Disallow: /usage
+Disallow: /polish-transcript
+Disallow: /archive
+Disallow: /entries
+
+# Formosa ESG 內部文件目錄
+Disallow: /projects/formosa-esg-2026/CLAUDE/
+Disallow: /projects/formosa-esg-2026/feedback/log/
+# LLM-friendly content files
+# llms.txt — concise site index for AI models
+# llms-full.txt — full article content for deep ingestion
+
+# Sitemap
+Sitemap: https://paulkuo.tw/sitemap-index.xml

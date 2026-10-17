@@ -1,0 +1,10 @@
+{
+  "run_id": "95a33250175a461da12e48e5926f304f",
+  "state": "research_complete",
+  "exit_code": 0,
+  "model_attempted": true,
+  "successful_api_calls": 8,
+  "report_submitted": true,
+  "hermes_learning": "learn",
+  "review_completed": true
+}

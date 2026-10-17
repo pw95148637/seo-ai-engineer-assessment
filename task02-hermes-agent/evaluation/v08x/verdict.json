@@ -1,0 +1,2129 @@
+{
+  "plan_sha256": "18923ac4b24d05de83de04027f15a980245348edc83d8fe3ef387a006f677537",
+  "v08_plan_sha256": "e2b95aabbaa5cbd1a5464d8a0518551a8f6a96227a0e045895fd2624b8c3607b",
+  "judgment": {
+    "control_band": {
+      "pages": [
+        2,
+        2
+      ],
+      "calls": [
+        7,
+        9
+      ],
+      "cost": [
+        45653,
+        65730
+      ],
+      "tool_calls": [
+        13,
+        16
+      ],
+      "seconds": [
+        123,
+        181
+      ],
+      "offsite_pages": [
+        1,
+        2
+      ],
+      "claims": [
+        11,
+        12
+      ],
+      "total": [
+        125841,
+        256825
+      ]
+    },
+    "control_half_bands": {
+      "C1-C5": {
+        "pages": [
+          2,
+          2
+        ],
+        "calls": [
+          8,
+          9
+        ],
+        "cost": [
+          50956,
+          63792
+        ]
+      },
+      "C6-C10": {
+        "pages": [
+          2,
+          2
+        ],
+        "calls": [
+          7,
+          9
+        ],
+        "cost": [
+          45653,
+          65730
+        ]
+      }
+    },
+    "control_cost_median": 58044.5,
+    "fail_cost": 75457.85,
+    "control_drift": {
+      "C1": {
+        "pages": 2,
+        "calls": 9,
+        "cost": 63792
+      },
+      "C10": {
+        "pages": 2,
+        "calls": 9,
+        "cost": 60985
+      },
+      "pairwise": "C1"
+    },
+    "ledger": {
+      "maintained": {
+        "verdict": "maintained",
+        "missing": [],
+        "calls": {
+          "L6": 1,
+          "L7": 1,
+          "L8": 1,
+          "L9": 1,
+          "L10": 1
+        },
+        "below": 7
+      },
+      "cost_within_control": {
+        "verdict": "above",
+        "above_max": [
+          "L10"
+        ],
+        "run10_over_fail_cost": true,
+        "cost": {
+          "L6": 53548,
+          "L7": 51797,
+          "L8": 52684,
+          "L9": 63781,
+          "L10": 90001
+        }
+      },
+      "verdict": "regression",
+      "failure": {
+        "F1": false,
+        "F2": true,
+        "F4": false,
+        "F5": false,
+        "F6": false
+      },
+      "dimensions": {
+        "self": {
+          "pages": "equal",
+          "calls": "better",
+          "cost": "equal",
+          "quality": "better"
+        },
+        "control": {
+          "pages": "equal",
+          "calls": "better",
+          "cost": "worse",
+          "quality": "worse"
+        }
+      },
+      "product": "better_than_first_not_control"
+    },
+    "native": {
+      "maintained": {
+        "verdict": "not_maintained",
+        "missing": [
+          "N6",
+          "N7",
+          "N8",
+          "N9"
+        ],
+        "calls": {
+          "N6": 8,
+          "N7": 7,
+          "N8": 8,
+          "N9": 7,
+          "N10": 6
+        },
+        "below": 7
+      },
+      "cost_within_control": {
+        "verdict": "above",
+        "above_max": [
+          "N6",
+          "N7",
+          "N8",
+          "N9",
+          "N10"
+        ],
+        "run10_over_fail_cost": true,
+        "cost": {
+          "N6": 80458,
+          "N7": 82104,
+          "N8": 81998,
+          "N9": 81338,
+          "N10": 81443
+        }
+      },
+      "verdict": "regression",
+      "failure": {
+        "F1": false,
+        "F2": true,
+        "F4": false,
+        "F5": false,
+        "F6": false
+      },
+      "dimensions": {
+        "self": {
+          "pages": "equal",
+          "calls": "equal",
+          "cost": "worse",
+          "quality": "better"
+        },
+        "control": {
+          "pages": "equal",
+          "calls": "better",
+          "cost": "worse",
+          "quality": "better"
+        }
+      },
+      "product": "better"
+    }
+  },
+  "pairwise": {
+    "votes": {
+      "L1-L10": [
+        "L10",
+        "L10",
+        "L10"
+      ],
+      "N1-N10": [
+        "N10",
+        "N10",
+        "N1"
+      ],
+      "C1-C10": [
+        "C1",
+        "C1",
+        "C1"
+      ],
+      "L10-C10": [
+        "C10",
+        "C10",
+        "C10"
+      ],
+      "N10-C10": [
+        "N10",
+        "N10",
+        "C10"
+      ]
+    },
+    "majority": {
+      "L1-L10": "L10",
+      "N1-N10": "N10",
+      "C1-C10": "C1",
+      "L10-C10": "C10",
+      "N10-C10": "N10"
+    },
+    "reviewers": {
+      "R1": {
+        "pairs": {
+          "C1-C10": {
+            "preferred": "C1",
+            "strength": "slight",
+            "reasons": "兩份核心頁觀察都正確、分寸相近，站外都是兩頁陰性。r9npr 獨有的是 MLB 賽事頁反例（a49c492d：數據表、Tank01 來源、meta description 只有顏色圖例），以及 casinobase、3aaa 兩個較相關的站外候選。rgxe5 獨有的是 3A 出金速度長尾頁（d4bee9a8）：品牌頁 2fe16868 寫「半小時至一小時」、長尾頁寫「15至30分鐘」，且 FAQ 套成「3a娛樂城出金速度有手機版可以玩嗎」；它還指出富遊頁 CTA 也導向同一個 3a1788 目的地（39c9bfe5）。這些直接扣住「3A娛樂城」關鍵字，行動 2 據此設計 3A 查核頁，並附 28 天觀察窗。rgxe5 的小缺點（P0/P2 混標、把 3a1788 推定為 3A）不足以抵消，因此些微偏好 B。",
+            "shown_as": {
+              "A": "C10",
+              "B": "C1"
+            }
+          },
+          "L1-L10": {
+            "preferred": "L10",
+            "strength": "slight",
+            "reasons": "兩份讀的 2030 頁相同，觀察都正確。r55kz 較具體：寫出 3A 頁的署名、更新日、第一人稱數月體驗；有反證（3eea9e4a 泛詞頁提醒洗碼量、活動條款與提領限制）；指出泛詞頁並非逐品牌比較表，並轉成行動 2；P0 是固定地區、裝置、日期的 SERP 基線。站外讀了 casinobase、icasino 兩個主題頁（陰性）。rt9z8 的站外只有股票同名誤配頁 0cbf6949，對 off-page 沒有資訊；它的行動有成本與 4–8 週觀察窗，比 r55kz 完整。r55kz 有 nJAV 低價值樣本、行動缺成本等缺點，所以只是些微偏好 A。",
+            "shown_as": {
+              "A": "L10",
+              "B": "L1"
+            }
+          },
+          "L10-C10": {
+            "preferred": "C10",
+            "strength": "slight",
+            "reasons": "共同頁面用的是同一批快照，兩份對 3A、娛樂城、樞紐、首頁的描述都正確。r9npr 多抽了富遊頁（3da9a66e），證明不同品牌頁共用同一個 don0911.3a1788.bet/?st=wg2030 目的地，並寫進行動 4；也多抽了 MLB 頁反例（a49c492d），呈現體育內容那一側。站外兩個候選都和主題相關，行動有逐項成本。r55kz 的長處是反證與「泛詞頁非比較表」的洞察，以及 SERP 基線，但樣本只有兩個目標頁，站外有一頁是 nJAV 成人站搜尋回顯，行動沒有成本。整體 r9npr 略勝。",
+            "shown_as": {
+              "A": "C10",
+              "B": "L10"
+            }
+          },
+          "N10-C10": {
+            "preferred": "N10",
+            "strength": "slight",
+            "reasons": "rccad 的 on-page 更具體，也更扣住 3A 關鍵字，且都經快照核實：熱門品牌篩選頁顯示 1182 篇、canonical 回 /wordcup/（6a778660）；3A 出金長尾與 Gofun 問句頁把查詢詞當平台名、套進 FAQ（3df4809e、55c84e70）；品牌頁和長尾頁出金時間不一致；SSL/KYC 不等於營運合法或出金保證。行動 3 據此提出修正查詢詞當品牌的問題，並設 4–8 週檢視點。r9npr 的優勢是站外讀了兩個主題相關候選（rccad 只有股票誤配頁，且提早停止搜尋），還有 MLB 反例與富遊共用 CTA。rccad 有「端點含糊」的小誤述、預設我方既有頁，但 on-page 深度的差距較大，因此些微偏好 B。",
+            "shown_as": {
+              "A": "C10",
+              "B": "N10"
+            }
+          },
+          "N1-N10": {
+            "preferred": "N10",
+            "strength": "slight",
+            "reasons": "兩份共有的核心發現（3A 品牌頁與出金長尾頁時間不一致、長尾 FAQ 套詞、共用模板、CTA 共用 don0911 目的地）都正確，站外也都只有 Yahoo 股票誤配頁。rccad 另有三項經核實的 on-page 發現：分類篩選頁 canonical 回樞紐（6a778660）、Gofun 問句頁同樣套詞（55c84e70）、SSL 不等於安全的推論，對手的模板化與技術做法講得更完整。rudyu 的行動在交付物層次更具體（3A 查核頁欄位、比較主頁、暫不做清單），但觀察窗沒定長度。rccad 有預設我方既有頁、「端點含糊」等小問題。整體證據面的增量讓 rccad 些微勝出。",
+            "shown_as": {
+              "A": "N1",
+              "B": "N10"
+            }
+          }
+        },
+        "reports": {
+          "C10": {
+            "summary": "長處：抽樣面廣（首頁、/wordcup/、3A、娛樂城、富遊、MLB 賽事頁），每條已知都和快照相符；MLB 頁反例（數據表、Tank01 來源、meta description 只有顏色圖例）和兩個主題相關站外候選的陰性核對都有價值；行動有優先序、成本和理由。短處：3A 關鍵字只看品牌頁，沒抽查同站的 3A 長尾頁，因此缺少跨頁出金數字不一致、查詢詞套入模板這類更直接的切口；快照裡的結構化資料等技術細節沒有查。",
+            "defects": [
+              {
+                "where": "On-page 推論（體育長尾入口＋娛樂城內容群＋集中商業導流）",
+                "type": "other",
+                "detail": "首頁、/wordcup/、3A、娛樂城、富遊頁都另有指向 bc5730m.wg1888.com/index/Register/?st=2030WG 或 ?st=wg2030 的 nofollow 廣告連結（7ff2c0f2 有 2 個，2f27c9e0、04492eb1、0038ad81、3da9a66e 各 1 個）。報告完全沒提，「集中商業導流」只看到 don0911.3a1788.bet 一個目的地，描述不完整。"
+              },
+              {
+                "where": "其他／未知（結構化資料有效性列為未知）",
+                "type": "other",
+                "detail": "3A 頁快照 04492eb1 內就有 FAQPage JSON-LD，也有一段 NewsArticle schema，其 headline 是「【MLB今日戰績】2026/07/12 費城費城人 4-2 底特律老虎」、作者「小編妮妮」，article:published_time 為 2026-07-12，oEmbed alternate 指向 /mlb/mlb-scores-20260712-phi-vs-det/，和頁面可見的「2030編輯部、2026年09月24日更新」不一致。這是快照裡現成可查的 on-page 技術發現，報告只列為未知。"
+              },
+              {
+                "where": "On-page 抽樣範圍",
+                "type": "other",
+                "detail": "針對「3A娛樂城」只讀品牌頁 04492eb1，沒抽查同站 3A 長尾頁（例如 3a娛樂城出金速度），因此沒發現品牌頁「半小時到一小時」和長尾頁「15到30分鐘」的不一致，也沒發現查詢詞被當品牌名套進模板；行動 3 的可信度切口因此只建立在單頁上。"
+              }
+            ]
+          },
+          "C1": {
+            "summary": "長處：除了核心頁，還加抽 3A 出金速度長尾頁，指出跨頁出金時間不一致（2fe16868「半小時至一小時」對 d4bee9a8「15至30分鐘」）、查詢詞套入 FAQ 模板，並指出富遊頁 CTA 也導向同一個 3a1788 目的地；引用全部核對無誤，行動附 28 天觀察窗。短處：站外候選取自 3A 品牌查詢，和 2030.tw 關聯弱；「集中3A註冊承接」沒考慮 wg1888 廣告連結，也把主機名推定為 3A 註冊站；行動 6 的優先級寫成 P0/P2。",
+            "defects": [
+              {
+                "where": "On-page 推論第 1 條「集中3A註冊承接」、行動 3 理由「競爭者富遊頁也導向3A註冊」",
+                "type": "epistemic",
+                "detail": "don0911.3a1788.bet 是 3A 營運方的註冊頁，只是從主機名推得，報告自己在其他未知中也承認未驗證；行動 3 卻寫成既定事實。此外首頁、目錄與所有抽樣內頁還有 bc5730m.wg1888.com 的 nofollow 廣告連結（a6cbb43a 2 個；d763e22f、2fe16868、d79230fa、39c9bfe5、d4bee9a8 各 1 個），「集中」一說忽略了第二個商業目的地。"
+              },
+              {
+                "where": "Off-page 已知（3aarena.com.tw、gamebet.com.tw）",
+                "type": "other",
+                "detail": "兩個候選來自「3A娛樂城」品牌查詢（ac5b84d1），本來就和 2030.tw 沒有關聯線索；陰性結果對了解 2030.tw 的站外做法幾乎沒有資訊量。報告有寫「僅限這兩頁」，但候選怎麼挑的沒有交代。"
+              },
+              {
+                "where": "行動第 6 條",
+                "type": "other",
+                "detail": "優先級標成「P0/P2」，和「依提交順序」的排序衝突，讀者無法判斷是先做還是後做。"
+              },
+              {
+                "where": "其他未知（未量測完整結構化資料）",
+                "type": "other",
+                "detail": "2fe16868、d4bee9a8 等快照內有 FAQPage JSON-LD，也有 headline 為 2026/07/12 MLB 比分文章的 NewsArticle schema，和可見的更新日、署名不一致。這是現成可查的技術發現，報告沒有利用。"
+              }
+            ]
+          },
+          "L10": {
+            "summary": "長處：核心頁設定、首頁→樞紐→落地頁路徑、3A 第一人稱宣稱，以及反證（泛詞頁提醒洗碼量與提領限制、並非逐品牌比較表）都正確，分寸恰當；P0 是固定地區、裝置、日期的 SERP 基線，很具體。短處：只看兩個目標頁，沒有其他品牌或長尾樣本；站外三頁中有一頁是成人影片站的搜尋結果頁，資訊價值低；行動沒有逐項成本，第 6 條也沒有優先級。",
+            "defects": [
+              {
+                "where": "Off-page 已知第 2 條（nJAV 法文搜尋頁）",
+                "type": "other",
+                "detail": "8798bf75 是成人影片站把查詢詞回顯在搜尋結果頁的 title 與 H1，和 2030.tw 的站外策略無關。報告判讀正確，但把有限的站外讀取額度用在這種頁面，排擠了較相關的候選。"
+              },
+              {
+                "where": "On-page 推論（共同註冊漏斗）",
+                "type": "other",
+                "detail": "推論只依據兩個目標頁和樞紐的 CTA（5fc7bac0、3eea9e4a、286f5d8c），沒有抽其他品牌頁確認多品牌是否共用同一目的地；也沒提到各頁另有 bc5730m.wg1888.com 的 nofollow 廣告連結（05ecd022、286f5d8c、5fc7bac0、3eea9e4a）。"
+              },
+              {
+                "where": "行動清單",
+                "type": "other",
+                "detail": "第 1 到 5 條沒有成本估計，第 6 條只標「衡量與停損」、沒有優先級；驗證只寫記錄指標，沒有觀察窗長度。"
+              },
+              {
+                "where": "其他未知（FAQ 結構化資料未做 schema）",
+                "type": "other",
+                "detail": "5fc7bac0 快照內有 FAQPage JSON-LD，也有 headline 為 2026/07/12 MLB 比分文章、datePublished 2026-07-12 的 NewsArticle schema，和報告引用的「2026年09月24日更新」不一致。報告把這些列為未做，但資料就在快照裡。"
+              }
+            ]
+          },
+          "L1": {
+            "summary": "長處：四個 2030 頁的觀察全部正確，限定詞謹慎；行動有成本，並給 4–8 週觀察窗。短處：on-page 只看兩個核心頁，沒有反證或長尾樣本，具體度不如同組對手；off-page 唯一直接讀的是股票代碼誤配頁，幾乎沒有站外資訊；「集中導流至3A」沒考慮 wg1888 廣告連結。",
+            "defects": [
+              {
+                "where": "Off-page 已知與推論（Yahoo 彰源股票頁）",
+                "type": "other",
+                "detail": "站外唯一讀取的是 0cbf6949（2030.TW 股票頁），本來就是同名誤配，報告沒有讀任何主題相關的候選。站外部分只說明了「此頁不是外鏈」，對 2030.tw 的 off-page 做法沒有任何觀察。"
+              },
+              {
+                "where": "On-page 推論（集中導流至3A）",
+                "type": "overclaim",
+                "detail": "四個頁面都另有 bc5730m.wg1888.com 的 nofollow 廣告連結（2a2c7450 有 2 個，d94e4d0b、b3543e98、d148a4f4 各 1 個），報告沒提，「集中導流至3A」略為說滿。報告也是依主機名把 3a1788.bet 當成 3A。"
+              },
+              {
+                "where": "已知第 3 條、其他未知（結構化資料未測）",
+                "type": "other",
+                "detail": "b3543e98 快照內就有 FAQPage JSON-LD，也有 headline 為 2026/07/12 MLB 比分文章的 NewsArticle schema。報告只寫「可見FAQ不等於已驗證FAQ結構化資料」，沒有查快照裡現成的標記。"
+              }
+            ]
+          },
+          "N10": {
+            "summary": "長處：on-page 最具體。分類篩選頁 canonical 回樞紐（6a778660）、3A 出金長尾與 Gofun 問句頁把查詢詞當品牌套進模板（3df4809e、55c84e70）、兩頁出金時間不一致、SSL 不等於營運合法或出金保證，核對都相符，也都限定了範圍。短處：off-page 只有股票誤配頁，且自承兩次搜尋後就停止、沒用完預算；部分行動預設我方已有既有頁；對長尾頁出金數字「端點表述較含糊」的描述不精確。",
+            "defects": [
+              {
+                "where": "Off-page 已知、其他未知",
+                "type": "other",
+                "detail": "站外只讀了 853dd8ca（Yahoo 彰源股票頁）這個同名誤配，報告也承認兩次搜尋沒找到候選就停止、未用完五次額度。off-page 實際上沒有調查，這部分明顯弱於 on-page。"
+              },
+              {
+                "where": "On-page 已知第 6 條「長尾頁稱15–30分鐘…但端點表述較含糊」",
+                "type": "unsupported",
+                "detail": "3df4809e 正文寫「大概落在「15到30分鐘」左右」，FAQ 與總結寫「15到30分鐘內」，區間很明確，看不出「端點含糊」。這個描述沒有快照支持（不影響兩頁數字不一致的主結論）。"
+              },
+              {
+                "where": "行動第 2 條「先選我方既有泛詞與3A核心頁小規模測試」",
+                "type": "scope",
+                "detail": "報告多處說明我方網站未提供，這裡卻預設我方已有泛詞頁與 3A 核心頁。雖然行動 1 先做盤點，這條仍應寫成條件式（若無則新建）。"
+              },
+              {
+                "where": "On-page 推論第 3 條（集中商業導流路徑）",
+                "type": "other",
+                "detail": "抽樣頁另有 bc5730m.wg1888.com 的 nofollow 廣告連結（1a35b171 有 2 個，c4fa1342、4536e4dd、eedce88d、cebac652 各 1 個），報告沒提，導流路徑的描述不完整。"
+              },
+              {
+                "where": "其他未知（結構化資料有效性未驗證）",
+                "type": "other",
+                "detail": "4536e4dd、3df4809e、55c84e70 等快照有 FAQPage JSON-LD，也有 headline 為 2026/07/12 MLB 比分文章的 NewsArticle schema，可直接佐證報告觀察到的模板化與更新日問題，但報告沒有利用。"
+              }
+            ]
+          },
+          "N1": {
+            "summary": "長處：觀察和 rgxe5 相近且全部正確，包括 3A 品牌頁與出金長尾頁的時間不一致、FAQ 套詞、三頁共用模板與第一人稱宣稱、CTA 共用目的地；行動具體（3A 查核頁欄位、比較主頁、暫不做清單），也和發現連得上。短處：off-page 只有股票誤配頁；觀察窗沒有定長度；快照裡的結構化資料沒查。",
+            "defects": [
+              {
+                "where": "Off-page 已知與推論（Yahoo 彰源股票頁）",
+                "type": "other",
+                "detail": "站外唯一直接讀取的是 212b161b，也就是搜尋結果 e73bace4 裡的股票同名頁，沒有讀任何主題相關的候選。報告雖然誠實標為假陽性，但對 2030.tw 的 off-page 做法沒有提供觀察。"
+              },
+              {
+                "where": "行動第 5 條「以固定觀察窗追蹤」",
+                "type": "other",
+                "detail": "沒有給觀察窗長度或首次檢視點，驗證方式不如同組 rccad 的 4–8 週具體。"
+              },
+              {
+                "where": "其他未知（結構化資料未驗證）",
+                "type": "other",
+                "detail": "4fef17e1、d54f2ec7 等快照內有 FAQPage JSON-LD，也有 headline 為 2026/07/12 MLB 比分文章的 NewsArticle schema，和可見的 2030編輯部署名與更新日不一致。這是可直接查到的技術發現，報告列為未驗證。"
+              }
+            ]
+          }
+        }
+      },
+      "R2": {
+        "pairs": {
+          "L1-L10": {
+            "preferred": "L10",
+            "strength": "slight",
+            "reasons": "兩份讀的是同一組頁面（首頁、hub、兩目標頁），on-page核心觀察都正確。r55kz多了三點：泛詞頁提醒洗碼量與提領限制的反證、泛詞頁不是逐品牌比較的判斷、3A頁「實際玩了幾個月」的第一人稱宣稱。rt9z8多記了nofollow與4個CTA。分差主要在站外：r55kz實讀casinobase /reviews/、icasino /comparison/兩個相關站，並正確把nJAV判為搜尋回顯（56d5c2522bbe4a6fad53b4b76abe3b5b、d1f9ae3ec4304c0ba2289daa105e7fb5、8798bf75a80042f9aa08fca9a9a2fd38）；rt9z8只讀了Yahoo股票同名頁（0cbf6949495b4aa7a7e74e8965558c53）。rt9z8推論「集中導流至3A」，與快照中同網址banner標「WG娛樂城」不合。行動品質相近，rt9z8有4–8週觀察窗略好，但抵銷不了站外與推論的差距。",
+            "shown_as": {
+              "A": "L10",
+              "B": "L1"
+            }
+          },
+          "L10-C10": {
+            "preferred": "C10",
+            "strength": "slight",
+            "reasons": "兩份用的是同一組快照。r9npr多讀兩頁：富遊頁（3da9a66e98414bd89484c0b30da3ca84）同樣有4個連到3a1788的CTA，顯示多品牌共用導流；MLB賽事頁（a49c492db8d548af97b4178155a99b15）有7個表格、標示Tank01 MLB API、meta description只有顏色圖例。這讓「體育長尾入口＋娛樂城內容群」的推論更有根據，也附了反例；nofollow記錄正確，行動4直接連到「多品牌共用導流URL」這個發現。站外雙方都是兩個相關站的陰性結果。r55kz沒有明顯錯誤，差距在廣度與推論的根據，所以只是slight。",
+            "shown_as": {
+              "A": "L10",
+              "B": "C10"
+            }
+          },
+          "N10-C10": {
+            "preferred": "N10",
+            "strength": "slight",
+            "reasons": "rccad的on-page發現最有競爭判斷價值，且都能在快照核實：cat篩選頁canonical回/wordcup/、title沿用hub（6a7786604d4144458e4b71b91565536d）；長尾頁把「3a娛樂城出金速度」稱為一間平台，FAQ出現「3a娛樂城出金速度有手機版可以玩嗎」，gofun頁同樣套詞（3df4809ebfc0424cb80f889ebf4bf3ef、55c84e70fff24c0ca7e09408b01f84e9）；核心頁「半小時至一小時」與長尾頁「15到30分鐘」不一致。這些揭示對方程式化長尾頁的模板缺陷，直接支撐差異化行動。r9npr廣度好（MLB反例），站外讀了兩個相關候選，比rccad只讀股票同名頁好；行動也較少預設我方已有頁面。但雙方站外都沒有正向證據，這項差距對結論影響小；on-page深度差距較大，所以偏rccad，只是slight。",
+            "shown_as": {
+              "A": "N10",
+              "B": "C10"
+            }
+          },
+          "C1-C10": {
+            "preferred": "C1",
+            "strength": "slight",
+            "reasons": "rgxe5多讀3A出金速度長尾頁（d4bee9a871564196a6b644ef796738a2），指出跨頁出金時間不一致與FAQ套詞，並明說富遊頁沒有自己的註冊目的地。站外讀了兩個候選，並用搜尋快照（9072e6a510b24075af315732e4f2a8c6）說明網域搜尋被彰源股票污染。行動與發現對應最緊：3A出金條件頁、CTA目的地與品牌一致、28天窗口。扣分是把3a1788目的地寫成「3A註冊」（快照中同網址banner標WG娛樂城）；r9npr對目的地保持中性，還有MLB反例。整體rgxe5對決策較有用，但有一處推論過頭，故slight。",
+            "shown_as": {
+              "A": "C1",
+              "B": "C10"
+            }
+          },
+          "N1-N10": {
+            "preferred": "N10",
+            "strength": "slight",
+            "reasons": "兩份重點高度重疊：長尾套詞、跨頁出金時間不一致、nofollow CTA，站外都只讀Yahoo股票同名頁。rccad多出三項on-page證據：cat篩選頁canonical的處理（6a7786604d4144458e4b71b91565536d）、gofun問句頁的同類套詞（55c84e70fff24c0ca7e09408b01f84e9）、SSL/KYC不等於合法的推論。rudyu的行動較具體（先做3A查核頁再做比較主頁、成本與品質分開）；rccad行動偏條件式，第2條還預設我方已有頁面。on-page證據的差距大於行動清晰度的差距，略偏rccad。",
+            "shown_as": {
+              "A": "N1",
+              "B": "N10"
+            }
+          }
+        },
+        "reports": {
+          "L10": {
+            "summary": "首頁→/wordcup/→兩目標頁的路徑、metadata、3A頁出金與入金數字缺佐證、泛詞頁提醒洗碼量等反證，都與快照相符；站外實讀casinobase、icasino兩個相關站，也正確把nJAV判為搜尋回顯。短處：只讀兩個目標頁，沒看長尾頁與跨頁矛盾，沒記CTA的nofollow，行動的驗證缺觀察窗。",
+            "defects": [
+              {
+                "where": "其他未知第2條",
+                "type": "other",
+                "detail": "寫「FAQ可見不代表有FAQ結構化資料…未做schema」，但本輪快照5fc7bac056434ef2ab5cc735328f9e29與3eea9e4a78814f57bef6d6f460065bbe的JSON-LD已有FAQPage（5題）與Article（datePublished 2026-09-24、dateModified 2026-09-29）。手上快照就能觀察的事被列成未知。"
+              },
+              {
+                "where": "On-page 已知第5條與推論",
+                "type": "other",
+                "detail": "只記錄連到don0911.3a1788.bet的CTA，沒指出兩件事：同頁側欄連到同一網址的banner，alt是「WG娛樂城」、圖檔名是「2030玩運彩瘋世足xWG娛樂城」；各頁（含首頁05ecd02290d840b1b4e722ef5f7bb8a0）另有連到bc5730m.wg1888.com/?st=2030WG的廣告。導流對象的實際品牌與第二個導流目的地都沒分析。"
+              },
+              {
+                "where": "On-page 抽樣範圍",
+                "type": "other",
+                "detail": "2030.tw只讀首頁、hub與兩個目標頁，沒讀任何長尾頁（例如3a娛樂城出金速度），所以看不到模板套詞與跨頁出金時間不一致，策略推論的根據較薄。"
+              },
+              {
+                "where": "行動第6條（衡量與停損）",
+                "type": "other",
+                "detail": "沒有觀察窗、停損門檻或判定標準，驗證方式空泛。"
+              }
+            ]
+          },
+          "L1": {
+            "summary": "On-page事實正確：兩頁各有4個nofollow CTA、六段落與五類FAQ、3A出金數字缺佐證；行動有4–8週觀察窗。短處：站外只讀了一個同名股票頁，等於沒有實質站外查核；推論把CTA目的地寫成「集中導流至3A」，沒有依據。",
+            "defects": [
+              {
+                "where": "On-page 推論",
+                "type": "unsupported",
+                "detail": "「集中導流至3A」只靠主機名3a1788判斷。同一快照b3543e98c3d5425b813ba2b4832c5b00的側欄banner連到同一網址don0911.3a1788.bet/?st=wg2030，alt卻是「WG娛樂城」，參數也是wg2030，目的地屬哪個品牌並未確認。"
+              },
+              {
+                "where": "Off-page 已知與推論",
+                "type": "scope",
+                "detail": "唯一直接讀取的站外頁是Yahoo彰源股票頁（0cbf6949495b4aa7a7e74e8965558c53），屬同名誤匹配。沒查任何主題相關的候選站，2030.tw的off-page做法幾乎沒有實質觀察。"
+              },
+              {
+                "where": "其他未知第1條",
+                "type": "other",
+                "detail": "寫「五次公開索引搜尋已用完；部分無結果，一組僅回空白項」，但sources.json沒有任何search_index證據，這段說法無法追溯。"
+              },
+              {
+                "where": "On-page 已知第3條",
+                "type": "other",
+                "detail": "寫「可見FAQ不等於已驗證FAQ結構化資料」，但b3543e98c3d5425b813ba2b4832c5b00與d148a4f4306f462987c058c8d36e0c0b的JSON-LD已有FAQPage，可直接觀察的事實沒記錄。"
+              },
+              {
+                "where": "On-page 抽樣範圍",
+                "type": "other",
+                "detail": "只讀四個2030.tw頁面，沒有長尾頁，看不到模板套詞與跨頁數字矛盾。"
+              }
+            ]
+          },
+          "C10": {
+            "summary": "抽樣最廣：含富遊頁，以及MLB賽事頁這個反例（7個資料表、標示Tank01 MLB API、meta description只有顏色圖例）。CTA目的地、nofollow、3A數字宣稱都核對無誤；站外實讀casinobase與3aaa兩個候選並引用搜尋結果；行動完整且連到發現。短處：沒看長尾頁，沒發現3A跨頁出金時間矛盾與模板套詞，站外仍無正向證據。",
+            "defects": [
+              {
+                "where": "On-page 已知第5條與推論",
+                "type": "other",
+                "detail": "「集中商業導流」沒辨識導流對象，有兩點未指出：共同CTA網址在側欄banner標為「WG娛樂城」；已引用的MLB頁a49c492db8d548af97b4178155a99b15另有4個連到bc5730m.wg1888.com的廣告連結（st=2030ADS/2030WG）。第二個導流目的地未分析。"
+              },
+              {
+                "where": "Off-page 已知",
+                "type": "other",
+                "detail": "兩個候選本來就不太可能連向2030.tw：3aaa.com.tw是3A品牌推廣站，casinobase是同業評測站（94eeb45bc2c645f79fb345b85676bd21、4c3ba3b9d204453d8c0d9725404aba24），陰性結果的資訊量有限。報告有限定範圍，屬輕微。"
+              },
+              {
+                "where": "On-page 抽樣範圍",
+                "type": "other",
+                "detail": "沒讀3A長尾頁，因此沒發現核心頁「半小時至一小時」與長尾頁「15到30分鐘」不一致，也沒看到把查詢詞當品牌的FAQ套詞，差異化切口少了一項直接證據。"
+              }
+            ]
+          },
+          "N10": {
+            "summary": "On-page最深入，且都與快照相符：cat篩選頁canonical回hub；長尾頁把「3a娛樂城出金速度」「gofun娛樂城安全嗎」當品牌套進正文與FAQ；3A核心頁與長尾頁的出金時間不一致；SSL不等於合法也講清楚。短處：站外只讀一個同名股票頁；行動偏條件式，部分預設我方已有頁面。",
+            "defects": [
+              {
+                "where": "Off-page 已知",
+                "type": "scope",
+                "detail": "唯一站外頁是Yahoo彰源股票誤匹配（853dd8ca823a47e980a3d1c5ced3d44b），報告也自述兩次發現搜尋後停止，沒讀任何主題相關候選，off-page觀察幾乎空白。"
+              },
+              {
+                "where": "行動第2條",
+                "type": "scope",
+                "detail": "「先選我方既有泛詞與3A核心頁小規模測試」預設我方已有這兩類頁，與報告自承我方網站未提供、P0尚未盤點不一致。"
+              },
+              {
+                "where": "On-page 已知第1條",
+                "type": "epistemic",
+                "detail": "「反駁首頁直接以娛樂城為核心的初始假設」引用了報告沒交代的假設，讀者無法判斷這個假設從何而來。"
+              },
+              {
+                "where": "On-page 已知第7條與推論第3條",
+                "type": "other",
+                "detail": "沒指出共同CTA網址don0911.3a1788.bet/?st=wg2030在側欄banner標為「WG娛樂城」，也沒提各頁連到bc5730m.wg1888.com的廣告，導流對象沒辨識。"
+              },
+              {
+                "where": "On-page 已知第4條",
+                "type": "other",
+                "detail": "「部署署名」應為「編輯部署名」，筆誤。"
+              }
+            ]
+          },
+          "C1": {
+            "summary": "On-page涵蓋目標頁與3A出金速度長尾頁，指出跨頁出金時間不一致、FAQ套詞、富遊頁沒有自己的註冊目的地，數字與連結屬性都正確；站外實讀兩個3A相關站，並用搜尋結果說明網域搜尋被股票同名污染；行動與發現對應最緊（3A出金條件頁、CTA目的地一致、28天窗口）。主要缺陷是把共同CTA目的地認定為「3A註冊」。",
+            "defects": [
+              {
+                "where": "On-page 推論第1條與行動第3條",
+                "type": "unsupported",
+                "detail": "「集中3A註冊承接」與「競爭者富遊頁也導向3A註冊」只靠主機名don0911.3a1788.bet。同一快照2fe1686831ac4cd98588815fc1cfa9d8的側欄連到同一網址，banner alt是「WG娛樂城」、圖檔是「2030玩運彩瘋世足xWG娛樂城」、參數是st=wg2030；品牌歸屬沒驗證，卻寫得像事實。各頁另有連到bc5730m.wg1888.com的廣告，也沒記錄。"
+              },
+              {
+                "where": "Off-page 已知",
+                "type": "other",
+                "detail": "3aarena.com.tw與gamebet.com.tw的標題就是「3A娛樂城｜…」，屬3A品牌推廣站，本來就不太可能連向2030.tw，作為入站候選的資訊量低（d3ad7de2212e42f8a6e69cb80ba01a46、6a333e000a0f4fc78d6b46e955b8ba1f）。報告已限定範圍，屬輕微。"
+              },
+              {
+                "where": "行動第6條",
+                "type": "other",
+                "detail": "優先級標成「P0/P2」，排序不明確。"
+              }
+            ]
+          },
+          "N1": {
+            "summary": "On-page與rgxe5相近：讀了目標頁、富遊頁、出金速度長尾頁，指出跨頁出金時間不一致、FAQ套詞、nofollow CTA，陳述準確，對CTA目的地保持中性；行動具體（3A查核頁、娛樂城比較主頁、成本與品質分開）。短處：站外只讀一個同名股票頁，觀察窗沒定。",
+            "defects": [
+              {
+                "where": "Off-page 已知與推論",
+                "type": "scope",
+                "detail": "唯一直接讀取的站外頁是Yahoo彰源股票同名頁（212b161b8fa64c29a2e32cd8ffb60cfd），沒有查核任何主題相關候選，off-page做法沒有實質觀察。"
+              },
+              {
+                "where": "行動第5條",
+                "type": "other",
+                "detail": "「固定觀察窗」沒說明長度或判定門檻，驗證方式不具體。"
+              },
+              {
+                "where": "On-page 已知第6條",
+                "type": "other",
+                "detail": "沒指出共同CTA網址在側欄banner標為「WG娛樂城」，也沒提各頁連到bc5730m.wg1888.com的廣告，導流對象沒辨識。"
+              }
+            ]
+          }
+        }
+      },
+      "R3": {
+        "pairs": {
+          "L10-C10": {
+            "preferred": "C10",
+            "strength": "slight",
+            "reasons": "兩份都沒有和快照不符的錯誤，分別在證據覆蓋面與具體度。r9npr 多讀了富遊頁（3da9a66e98414bd89484c0b30da3ca84），證明不同品牌頁的 CTA 都指向同一個 don0911.3a1788.bet/?st=wg2030，而且各有 4 個 nofollow，讓「集中商業導流」推論有跨品牌依據。r55kz 只看 3A 與泛詞兩頁，也沒寫 rel。r9npr 另以 MLB 頁（a49c492db8d548af97b4178155a99b15）當反例：頁上有 Tank01 MLB API 數據表，meta description 只是顏色圖例，經核對屬實，具體說明了體育入口的實際內容。站外兩份都只有陰性結果：r9npr 讀了 casinobase 與 3aaa.com.tw 並附搜尋快照；r55kz 讀了 CasinoBase、icasino，以及價值低的 nJAV 回顯頁。r55kz 的反證條（泛詞頁提醒洗碼量，3eea9e4a78814f57bef6d6f460065bbe）是加分。行動兩份都分級並連回發現，r9npr 每項附成本，量測也較完整。差距不大。",
+            "shown_as": {
+              "A": "L10",
+              "B": "C10"
+            }
+          },
+          "L1-L10": {
+            "preferred": "L10",
+            "strength": "slight",
+            "reasons": "兩份讀的站內頁相同（首頁、/wordcup/、3A、泛詞頁），on-page 陳述都和快照相符。rt9z8 多寫了 4 個 nofollow 連結，r55kz 多了一條反證（泛詞頁提醒洗碼量與提領限制）。主要差在 off-page：rt9z8 只讀 Yahoo 彰源股票頁（0cbf6949495b4aa7a7e74e8965558c53），是同名誤匹配，對競爭者站外做法沒有資訊，sources 也沒有搜尋快照可追溯候選來源。r55kz 至少直接檢查了兩個相關的娛樂城評測站（56d5c2522bbe4a6fad53b4b76abe3b5b、d1f9ae3ec4304c0ba2289daa105e7fb5），並正確解讀 nJAV 是搜尋回顯。rt9z8 的「集中導流至3A」也漏了同頁 header 的 WG娛樂城橫幅。行動部分，rt9z8 有成本與 4–8 週觀察窗，r55kz 有固定地區與裝置的 SERP 基線和停損，兩者相當。",
+            "shown_as": {
+              "A": "L10",
+              "B": "L1"
+            }
+          },
+          "C1-C10": {
+            "preferred": "C1",
+            "strength": "slight",
+            "reasons": "兩份都沒有實質錯誤，站外都直接讀了兩個相關站（陰性）並附搜尋快照，差在 on-page 與目標詞的貼近程度。rgxe5 多讀了 3A 出金速度長尾頁（d4bee9a871564196a6b644ef796738a2），從中找出三點，都經快照核實，而且直接扣住「3A娛樂城」這個詞：3A 品牌頁寫「半小時至一小時」、長尾頁寫「15至30分鐘」的跨頁矛盾；FAQ 套詞「3a娛樂城出金速度有手機版可以玩嗎」；供應商描述不同（沙龍、歐博 vs DG、歐博、SA）。它的行動 2（附來源與查核日期的出金條件頁）正是從這個發現推出。r9npr 的 MLB 反例有價值，但離兩個目標詞較遠。rgxe5 的小缺點是行動 6 標「P0/P2」含糊，「集中3A」漏了 WG 橫幅。整體 rgxe5 略勝。",
+            "shown_as": {
+              "A": "C1",
+              "B": "C10"
+            }
+          },
+          "N10-C10": {
+            "preferred": "C10",
+            "strength": "slight",
+            "reasons": "rccad 的 on-page 較深：分類篩選頁 canonical 回 /wordcup/（6a7786604d4144458e4b71b91565536d）、長尾頁把「3a娛樂城出金速度」稱為一間平台（3df4809ebfc0424cb80f889ebf4bf3ef）、gofun 問句頁 FAQ 套詞（55c84e70fff24c0ca7e09408b01f84e9）、跨頁出金矛盾，全部核實屬實。但它的 off-page 只讀 Yahoo 股票誤匹配頁（853dd8ca823a47e980a3d1c5ced3d44b），還自承在搜尋額度未用完時就停止外部發現，站外部分幾乎空白。行動以「先盤點我方，有同類問題再修」為主，第 2 項還預設我方已有泛詞與 3A 核心頁，對怎麼競爭給的具體建置較少。r9npr 的 on-page 稍淺，但涵蓋跨品牌導流（富遊頁同樣導向 3A）與體育入口的反例；站外直接檢查兩個相關站；行動明確提出比較／風險主頁、3A 查核頁、作者方法揭露、可引用資產與 Search Console 量測，並附成本。r9npr 對 on-page、off-page、行動三部分的回答較均衡。",
+            "shown_as": {
+              "A": "N10",
+              "B": "C10"
+            }
+          },
+          "N1-N10": {
+            "preferred": "N1",
+            "strength": "slight",
+            "reasons": "兩份 off-page 一樣弱，都只讀 Yahoo 彰源同名頁（212b161b8fa64c29a2e32cd8ffb60cfd、853dd8ca823a47e980a3d1c5ced3d44b）。on-page 兩份都正確抓到 3A 跨頁出金矛盾與 FAQ 套詞；rccad 另有分類頁 canonical、gofun 頁與 SSL/KYC 推論，細節較多。差在行動：rudyu 直接提出試作一個 3A 品牌查核頁，把出金時間分成平台宣稱、第三方陳述與實際證據三欄，再做一個娛樂城比較與風險主頁連到品牌頁，接著是可引用資產、上線前後的 200／canonical／索引驗證與觀察窗，最後是「暫不做」清單，每項都扣回報告的發現（例如 4fef17e18567472dbeeafdb05adb3fe4 和 d54f2ec71fb3488abfe12988bee97af9 的出金口徑差異）。rccad 的行動多為條件式，第 2 項預設我方已有核心頁。rccad 多出的 on-page 細節屬增量，抵不過行動實用性的落差，所以 rudyu 些微較好。",
+            "shown_as": {
+              "A": "N1",
+              "B": "N10"
+            }
+          }
+        },
+        "reports": {
+          "L10": {
+            "summary": "讀了 4 個站內頁（首頁、/wordcup/、3A、泛詞頁）和 3 個站外頁，每條已知都和快照相符。另列一條反證：泛詞頁有提醒洗碼量與提領限制。未知與限制寫得清楚。短處是站內只抽 3A 和泛詞兩頁，沒寫出 CTA 的 rel，沒看其他品牌頁或長尾頁。站外只有陰性結果，其中 nJAV 頁價值很低。",
+            "defects": [
+              {
+                "where": "On-page 已知第 5 條",
+                "type": "other",
+                "detail": "只寫 CTA 連到 don0911.3a1788.bet/?st=wg2030，沒寫 rel。快照中這些連結都是 rel=\"nofollow noopener\"，每頁 4 個（5fc7bac056434ef2ab5cc735328f9e29、3eea9e4a78814f57bef6d6f460065bbe）。連結屬性正是 SEO 上該記錄的細節。"
+              },
+              {
+                "where": "On-page 推論",
+                "type": "other",
+                "detail": "「共同CTA目的地」只靠 3A 頁與泛詞頁兩頁支撐，沒去看其他品牌頁（例如富遊）或 3A 長尾頁。因此沒發現跨品牌都導向 3A，也沒發現 3A 各頁出金時間互相矛盾。措辭有保留，算不上錯，但證據面比同組其他報告窄。"
+              },
+              {
+                "where": "Off-page 已知第 2 條",
+                "type": "other",
+                "detail": "nJAV 法文搜尋頁（8798bf75a80042f9aa08fca9a9a2fd38）的 2030玩運彩瘋世足 只出現在 title、og、twitter 這類搜尋回顯欄位。報告的解讀正確，但這是低價值樣本，佔掉了本可用來查相關站的預算。"
+              },
+              {
+                "where": "其他未知第 2 條（FAQ／schema）",
+                "type": "other",
+                "detail": "報告寫「未做schema」，但手上的 3A 頁與泛詞頁快照已含 FAQPage 與 Article JSON-LD。3A 頁 Article 的 dateModified 是 2026-09-29，頁面卻顯示「2026年09月24日 更新」（5fc7bac056434ef2ab5cc735328f9e29）。證據已在手卻沒讀出。"
+              },
+              {
+                "where": "On-page 整體",
+                "type": "other",
+                "detail": "漏了第二條商業導流：各頁 header 都有 WG娛樂城橫幅，連到 bc5730m.wg1888.com/index/Register/?st=2030WG（nofollow）。首頁腳本另有連到 wg1888 ?st=live 的「免費看直播」註冊彈窗（05ecd02290d840b1b4e722ef5f7bb8a0）。漏掉這條，體育入口的變現方式就描述不完整。"
+              }
+            ]
+          },
+          "C10": {
+            "summary": "讀了 6 個站內頁，含富遊品牌頁和一個 MLB 賽事頁作為反例；站外讀了兩個相關站，並附搜尋快照。數字、URL、nofollow 數量、Tank01 來源、meta description 只是圖例、15.8k Subscribers 等細節全部核對屬實。行動有分級、附成本與量測。短處是沒讀 3A 長尾頁，漏掉 3A 各頁出金時間互相矛盾。",
+            "defects": [
+              {
+                "where": "On-page 整體抽樣",
+                "type": "other",
+                "detail": "沒讀 3A 長尾頁（例如 3a娛樂城出金速度）。因此沒發現 3A 品牌頁寫「半小時至一小時」、長尾頁寫「15到30分鐘」的跨頁矛盾，也沒發現 FAQ 把整個關鍵字套進問句的模板痕跡。這些正是和「3A娛樂城」最直接相關的弱點。"
+              },
+              {
+                "where": "行動第 2 條理由",
+                "type": "epistemic",
+                "detail": "「抽樣評測偏正向敘事」是評價性判斷，沒有放進已知或推論、也沒附證據編號就直接拿來當行動理由。方向和快照一致（04492eb13d0741f8805816bd43ee363f、3da9a66e98414bd89484c0b30da3ca84 都是正面口吻），但應先列為推論。"
+              },
+              {
+                "where": "其他／未知（結構化資料）",
+                "type": "other",
+                "detail": "把結構化資料有效性列為未知可以接受，但沒指出快照中已有 FAQPage 與 Article JSON-LD（例如 04492eb13d0741f8805816bd43ee363f），漏掉了已在手的 on-page 證據。"
+              },
+              {
+                "where": "On-page 推論（集中商業導流）",
+                "type": "other",
+                "detail": "沒提到各頁 header 的 WG娛樂城橫幅（bc5730m.wg1888.com ?st=2030WG，nofollow），也沒提到首頁的 wg1888 ?st=live 直播註冊彈窗（7ff2c0f2c55f4c2e8b53d8f5695abbcb）。對導流的描述只涵蓋 3A 一條。"
+              }
+            ]
+          },
+          "L1": {
+            "summary": "On-page 陳述準確，含 4 個 nofollow 連結、五類 FAQ、文字並非完全相同等細節；行動有成本與 4–8 週觀察窗。但只讀了 4 個站內頁，off-page 只讀一個 Yahoo 股票同名頁，對競爭者的站外做法沒有提供任何資訊，整體偏薄。",
+            "defects": [
+              {
+                "where": "Off-page 已知／推論",
+                "type": "scope",
+                "detail": "唯一直接讀取的站外頁是 Yahoo 彰源 2030.TW 股票頁（0cbf6949495b4aa7a7e74e8965558c53），屬同名誤匹配。沒有任何相關候選站（娛樂城評測站、3A 品牌站）被檢查，off-page 部分等於空白。"
+              },
+              {
+                "where": "Off-page 已知",
+                "type": "unsupported",
+                "detail": "寫「直接讀取搜尋候選Yahoo彰源股票頁」，但 sources 裡沒有對應的搜尋快照，候選從哪個查詢來無法追溯。"
+              },
+              {
+                "where": "On-page 推論",
+                "type": "overclaim",
+                "detail": "「集中導流至3A」漏了同頁 header 的 WG娛樂城橫幅，連到 bc5730m.wg1888.com/index/Register/?st=2030WG（nofollow），3A 頁與泛詞頁（b3543e98c3d5425b813ba2b4832c5b00、d148a4f4306f462987c058c8d36e0c0b）、首頁（2a2c74500d104db49277b1b05193e163）都有。全站導流不只 3A 一個目的地。"
+              },
+              {
+                "where": "On-page 已知第 3 條／其他未知第 4 條",
+                "type": "other",
+                "detail": "說可見 FAQ 不等於已驗證 FAQ 結構化資料，並列「未測試結構化資料」。但 3A 頁與泛詞頁快照已含 FAQPage 與 Article JSON-LD，證據已在手卻沒讀出。"
+              },
+              {
+                "where": "On-page 抽樣",
+                "type": "other",
+                "detail": "只讀首頁、hub 和兩個核心頁，沒看其他品牌頁或長尾頁，無法支持推論中「品牌長尾頁覆蓋需求」的部分，也漏掉跨頁出金矛盾。"
+              }
+            ]
+          },
+          "C1": {
+            "summary": "讀了 6 個站內頁，含富遊頁與 3A 出金速度長尾頁。找出跨頁出金矛盾、富遊頁導向 3A 註冊、FAQ 套詞、供應商描述差異，全部和快照相符。站外直接讀了兩個由搜尋列出的 3A 相關站，並用搜尋快照說明股票代碼雜訊。行動緊扣發現，附成本與 28 天觀察窗。小缺點是行動 6 的優先序標示含糊，「集中3A」漏了 WG 橫幅。",
+            "defects": [
+              {
+                "where": "On-page 推論第 1 條",
+                "type": "overclaim",
+                "detail": "「集中3A註冊承接」沒計入各頁 header 的 WG娛樂城橫幅（bc5730m.wg1888.com ?st=2030WG，nofollow），也沒計入首頁的 wg1888 ?st=live 直播註冊彈窗（a6cbb43aa2db47feb8982d3ce6867506）。站方實際有兩個導流目的地。"
+              },
+              {
+                "where": "行動第 6 條",
+                "type": "other",
+                "detail": "優先序標成「P0/P2」，讀者不知道它該排在第幾。內容是量測基線，和行動 1 的 P0 盤點有重疊。"
+              },
+              {
+                "where": "其他未知第 4 條",
+                "type": "other",
+                "detail": "列「未量測完整結構化資料」，但 3A、娛樂城、3A 出金速度頁快照已含 FAQPage 與 Article JSON-LD（2fe1686831ac4cd98588815fc1cfa9d8、d4bee9a871564196a6b644ef796738a2）。3A 頁 dateModified 2026-09-29 與頁面顯示的更新日不同，這些都沒有讀出。"
+              }
+            ]
+          },
+          "N10": {
+            "summary": "On-page 是六份裡最細的：讀了 8 頁，找出分類篩選頁 canonical 回 /wordcup/、長尾頁把關鍵字當成平台名、gofun 問句頁 FAQ 套詞、跨頁出金矛盾、SSL/KYC 不等於合法，全部核實屬實。但 off-page 只讀一個 Yahoo 股票誤匹配頁，還在搜尋額度未用完時就停止外部發現。行動多是條件式，對怎麼競爭給的具體建置較少。",
+            "defects": [
+              {
+                "where": "Off-page 已知／其他未知第 1 條",
+                "type": "scope",
+                "detail": "只讀 Yahoo 彰源股票頁（853dd8ca823a47e980a3d1c5ced3d44b），而且自承「兩次外部發現搜尋未帶來可用品牌候選後停止該分支，未耗盡五次上限」。原題明確要求 off-page，卻沒有檢查任何相關站外候選，也沒寫 off-page 推論。"
+              },
+              {
+                "where": "Off-page 已知",
+                "type": "unsupported",
+                "detail": "寫「直接讀取搜尋列出的Yahoo股市彰源頁」，但 sources 裡沒有搜尋快照，候選來源無法追溯。"
+              },
+              {
+                "where": "行動第 2 條",
+                "type": "scope",
+                "detail": "「先選我方既有泛詞與3A核心頁小規模測試」預設我方已有這兩類頁面。報告自己也說我方網站未提供、P0 盤點尚未完成，前後不一致。"
+              },
+              {
+                "where": "行動第 3 條",
+                "type": "other",
+                "detail": "行動主要是「若我方盤點發現同類問題」才去修，把競爭者的缺陷轉成我方的自查項目。對於為兩個目標詞建什麼頁、怎麼差異化，給得比同組報告少。"
+              },
+              {
+                "where": "On-page 已知第 4 條",
+                "type": "other",
+                "detail": "「部署署名」是錯字，應為「編輯部署名」，不影響判讀。"
+              },
+              {
+                "where": "其他未知第 4 條",
+                "type": "other",
+                "detail": "列「未驗證結構化資料有效性」。手上的 3A 與長尾頁快照（4536e4dd38144e3ead26ed7ce7e8207c、3df4809ebfc0424cb80f889ebf4bf3ef）已含 FAQPage 與 Article JSON-LD，報告卻沒讀出來，也沒寫出 header 的 WG娛樂城橫幅（wg1888 ?st=2030WG）這第二條導流。"
+              }
+            ]
+          },
+          "N1": {
+            "summary": "讀了 6 個站內頁，on-page 準確：跨頁出金矛盾、FAQ 套詞、三頁都用 2030編輯部署名卻寫第一人稱體驗、CTA 帶 nofollow。行動最具體：一個 3A 查核頁、一個娛樂城比較主頁、可引用資產、上線前後驗證，以及暫不做的清單，每項都連回發現。短處是 off-page 只讀一個 Yahoo 股票同名頁。",
+            "defects": [
+              {
+                "where": "Off-page 已知／其他未知第 2 條",
+                "type": "scope",
+                "detail": "唯一直接讀取的站外頁是 Yahoo 彰源股票頁（212b161b8fa64c29a2e32cd8ffb60cfd），屬同名假陽性。報告自己也承認這點，但沒有檢查任何相關站外候選，off-page 實質內容很少。"
+              },
+              {
+                "where": "On-page 推論第 1 條",
+                "type": "other",
+                "detail": "描述「註冊導流」時只看到 3A 的 don0911.3a1788.bet。漏了各頁 header 的 WG娛樂城橫幅（bc5730m.wg1888.com ?st=2030WG，nofollow），也漏了首頁的 wg1888 ?st=live 直播註冊彈窗（865f78253c9043cbb5af432e340cf9b8）。"
+              },
+              {
+                "where": "On-page 已知第 3 條／其他未知第 5 條",
+                "type": "other",
+                "detail": "說不證明 FAQ 富結果資格，並列結構化資料未驗證。但 3A 頁、泛詞頁快照（4fef17e18567472dbeeafdb05adb3fe4、2f717ec8c0fc4f73af7c328fd3123cbb）已含 FAQPage 與 Article JSON-LD，證據已在手卻沒讀出。"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rows": {
+    "C1": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 11,
+          "evidence_id": "d79230fa4b8d442e8035bca004adc44d",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 10,
+          "evidence_id": "2fe1686831ac4cd98588815fc1cfa9d8",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 9,
+      "cost": 63792,
+      "total": 204208,
+      "cost_learning": 63792,
+      "review_cost": 0,
+      "tool_calls": 16,
+      "fetches": 6,
+      "evidence_reads": 1,
+      "searches": 5,
+      "offsite_pages": 2,
+      "claims": 12,
+      "actions": 6,
+      "seconds": 172,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "59a2dd9f1102455f85ce8da52bb23afa"
+    },
+    "C2": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 11,
+          "evidence_id": "369b12b2383e4706ac4d31fb91ba7537",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 10,
+          "evidence_id": "e3d25a5dc5184682ae81a97d929c4b92",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 9,
+      "cost": 55721,
+      "total": 224681,
+      "cost_learning": 55721,
+      "review_cost": 0,
+      "tool_calls": 14,
+      "fetches": 5,
+      "evidence_reads": 1,
+      "searches": 5,
+      "offsite_pages": 1,
+      "claims": 12,
+      "actions": 6,
+      "seconds": 123,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "39dc5f0eeec740c3bce617641343c041"
+    },
+    "C3": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "3901c5afc7c742a194eb5b64b8262c55",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "57d6abb95d2f49eb9aa4c0aa7269b702",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 50956,
+      "total": 179724,
+      "cost_learning": 50956,
+      "review_cost": 0,
+      "tool_calls": 13,
+      "fetches": 5,
+      "evidence_reads": 0,
+      "searches": 5,
+      "offsite_pages": 1,
+      "claims": 12,
+      "actions": 5,
+      "seconds": 165,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "ab5fafed8b764a29a6861aa61022ef2c"
+    },
+    "C4": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "fad1700ef65f4e87827008a314385c8d",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "07895d98177a4d368e996c0511b3a241",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 60368,
+      "total": 192208,
+      "cost_learning": 60368,
+      "review_cost": 0,
+      "tool_calls": 15,
+      "fetches": 5,
+      "evidence_reads": 2,
+      "searches": 5,
+      "offsite_pages": 1,
+      "claims": 11,
+      "actions": 6,
+      "seconds": 175,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "b482709bbaca4f65b0b20465f42d1af8"
+    },
+    "C5": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "62598b3bc9fd401b87a6b901970b3940",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "ac40b44e28da44579f7bcd498bbb3ed5",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 50960,
+      "total": 139408,
+      "cost_learning": 50960,
+      "review_cost": 0,
+      "tool_calls": 13,
+      "fetches": 5,
+      "evidence_reads": 0,
+      "searches": 5,
+      "offsite_pages": 1,
+      "claims": 12,
+      "actions": 6,
+      "seconds": 149,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "1a5155a085c248e7aa9e2378d490c80d"
+    },
+    "C6": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 9,
+          "evidence_id": "41bc6b181ac14e5789ddd1ca907b3c13",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 8,
+          "evidence_id": "a6db5203423e47ec8c9ae8211c6d92d8",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 7,
+      "cost": 45653,
+      "total": 158037,
+      "cost_learning": 45653,
+      "review_cost": 0,
+      "tool_calls": 13,
+      "fetches": 4,
+      "evidence_reads": 0,
+      "searches": 5,
+      "offsite_pages": 2,
+      "claims": 12,
+      "actions": 7,
+      "seconds": 141,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "a17517b7eaaf40ecb9243440ee8550bb"
+    },
+    "C7": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "c74ac4199a8c4d709dc491fc035b1aa5",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "79664ca0d92d44c6b306aaf3c28aa3a6",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 46353,
+      "total": 125841,
+      "cost_learning": 46353,
+      "review_cost": 0,
+      "tool_calls": 13,
+      "fetches": 4,
+      "evidence_reads": 0,
+      "searches": 5,
+      "offsite_pages": 2,
+      "claims": 11,
+      "actions": 5,
+      "seconds": 132,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "fcd2e410c6b54073bfdb3ee8f63386b0"
+    },
+    "C8": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "ab2fa737861b4825938137855b453e79",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "40dc8aa28f0b42b0be09df909fa98272",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 61756,
+      "total": 198844,
+      "cost_learning": 61756,
+      "review_cost": 0,
+      "tool_calls": 16,
+      "fetches": 6,
+      "evidence_reads": 0,
+      "searches": 5,
+      "offsite_pages": 2,
+      "claims": 11,
+      "actions": 5,
+      "seconds": 163,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "1a6bd2bb84444f6082d2b3334a0dc12d"
+    },
+    "C9": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "caed1fd146f84028b136465f4b0da718",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "dc4662ac43cc48029385a115af532428",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 65730,
+      "total": 187842,
+      "cost_learning": 65730,
+      "review_cost": 0,
+      "tool_calls": 14,
+      "fetches": 5,
+      "evidence_reads": 0,
+      "searches": 5,
+      "offsite_pages": 1,
+      "claims": 12,
+      "actions": 5,
+      "seconds": 178,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "536b6b981b8d448d8dd622b11e995741"
+    },
+    "C10": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 11,
+          "evidence_id": "0038ad81d3db4ae793b75de28618825c",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 10,
+          "evidence_id": "04492eb13d0741f8805816bd43ee363f",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 9,
+      "cost": 60985,
+      "total": 256825,
+      "cost_learning": 60985,
+      "review_cost": 0,
+      "tool_calls": 16,
+      "fetches": 6,
+      "evidence_reads": 1,
+      "searches": 5,
+      "offsite_pages": 2,
+      "claims": 11,
+      "actions": 6,
+      "seconds": 181,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "c3dcaf9378664ee690acf4a6a36d6ac9"
+    },
+    "L1": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "d148a4f4306f462987c058c8d36e0c0b",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "b3543e98c3d5425b813ba2b4832c5b00",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 59227,
+      "total": 164315,
+      "cost_learning": 59227,
+      "review_cost": 0,
+      "tool_calls": 13,
+      "fetches": 4,
+      "evidence_reads": 1,
+      "searches": 5,
+      "offsite_pages": 1,
+      "claims": 10,
+      "actions": 5,
+      "seconds": 156,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "4eab193d244d46e7ad35dc4e17a52689"
+    },
+    "L2": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "1ae5682b4734477d9f8522a086e28f1a",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "0c115ae575c3460394dfba061452a7dd",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 54424,
+      "total": 252440,
+      "cost_learning": 54424,
+      "review_cost": 0,
+      "tool_calls": 18,
+      "fetches": 2,
+      "evidence_reads": 5,
+      "searches": 5,
+      "offsite_pages": 4,
+      "claims": 11,
+      "actions": 6,
+      "seconds": 174,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "841f72b2768a4a97aeac0d63e3c90f28"
+    },
+    "L3": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "1a8c02b322ce408e881ade04b23fc64f",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "640fdf3235514b4e9cbc5b62fe70c949",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 47150,
+      "total": 149294,
+      "cost_learning": 47150,
+      "review_cost": 0,
+      "tool_calls": 16,
+      "fetches": 2,
+      "evidence_reads": 5,
+      "searches": 5,
+      "offsite_pages": 2,
+      "claims": 13,
+      "actions": 5,
+      "seconds": 155,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "dd2b2f8aa60346e89f56a75ddeb24267"
+    },
+    "L4": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "95037454f0c240ad9c8efb842a03f34b",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "15f34d9734e94cb6af3658c34fa5559a",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 44081,
+      "total": 209329,
+      "cost_learning": 44081,
+      "review_cost": 0,
+      "tool_calls": 17,
+      "fetches": 3,
+      "evidence_reads": 5,
+      "searches": 5,
+      "offsite_pages": 2,
+      "claims": 13,
+      "actions": 5,
+      "seconds": 190,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "08f13ba170fb4f7cb18c362153a6e994"
+    },
+    "L5": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "db55111bf3bc4f99a48f9b59e8a0ca7a",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "ad974c9841f4424ca0ab148f69e6c5e9",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 54368,
+      "total": 178528,
+      "cost_learning": 54368,
+      "review_cost": 0,
+      "tool_calls": 16,
+      "fetches": 2,
+      "evidence_reads": 5,
+      "searches": 5,
+      "offsite_pages": 2,
+      "claims": 12,
+      "actions": 5,
+      "seconds": 159,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "d8594fca7f904132a15b9f868b38353a"
+    },
+    "L6": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "f58f7f68cc7841afad6635edd9fdf0ac",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "b6656e5dcf894a34b171dab7c10059eb",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 53548,
+      "total": 176812,
+      "cost_learning": 53548,
+      "review_cost": 0,
+      "tool_calls": 17,
+      "fetches": 2,
+      "evidence_reads": 6,
+      "searches": 5,
+      "offsite_pages": 2,
+      "claims": 12,
+      "actions": 5,
+      "seconds": 137,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "daf9f1eb4e1e4d2da6c9f15a21696556"
+    },
+    "L7": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "804f4abe6098470394a1ea5c612b0a52",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "c6c99162894a465488bb918c62243864",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 51797,
+      "total": 186581,
+      "cost_learning": 51797,
+      "review_cost": 0,
+      "tool_calls": 16,
+      "fetches": 2,
+      "evidence_reads": 5,
+      "searches": 5,
+      "offsite_pages": 0,
+      "claims": 11,
+      "actions": 5,
+      "seconds": 129,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "6500259ba1cc444fad33c574e2163725"
+    },
+    "L8": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "b712c7861449440a9f71184ab7e21125",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "76f7f93ee51c45b0b5face8a067375c6",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 52684,
+      "total": 186444,
+      "cost_learning": 52684,
+      "review_cost": 0,
+      "tool_calls": 17,
+      "fetches": 2,
+      "evidence_reads": 6,
+      "searches": 5,
+      "offsite_pages": 2,
+      "claims": 12,
+      "actions": 5,
+      "seconds": 146,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "502cec7df1fa4716a79845d0c32670be"
+    },
+    "L9": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "21599c0ec7de498f8bcfec7426b1475c",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "659079a9ecff421f9c71106bde0f9fc3",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 63781,
+      "total": 207653,
+      "cost_learning": 63781,
+      "review_cost": 0,
+      "tool_calls": 19,
+      "fetches": 4,
+      "evidence_reads": 6,
+      "searches": 5,
+      "offsite_pages": 1,
+      "claims": 12,
+      "actions": 5,
+      "seconds": 146,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "7b42acdec4a14f8589d639c1234d6a90"
+    },
+    "L10": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "3eea9e4a78814f57bef6d6f460065bbe",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "5fc7bac056434ef2ab5cc735328f9e29",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 90001,
+      "total": 170513,
+      "cost_learning": 90001,
+      "review_cost": 0,
+      "tool_calls": 17,
+      "fetches": 2,
+      "evidence_reads": 5,
+      "searches": 5,
+      "offsite_pages": 3,
+      "claims": 13,
+      "actions": 6,
+      "seconds": 158,
+      "learned": null,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "14ba9fdcf4f94bcdb3c0c6a6c159bee8"
+    },
+    "N1": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 9,
+          "evidence_id": "2f717ec8c0fc4f73af7c328fd3123cbb",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 8,
+          "evidence_id": "4fef17e18567472dbeeafdb05adb3fe4",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 7,
+      "cost": 63285,
+      "total": 244021,
+      "cost_learning": 71991,
+      "review_cost": 8706,
+      "tool_calls": 14,
+      "fetches": 6,
+      "evidence_reads": 0,
+      "searches": 5,
+      "offsite_pages": 1,
+      "claims": 12,
+      "actions": 6,
+      "seconds": 236,
+      "learned": true,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "e428adfa7f1546ec91be27781dd2a2ea"
+    },
+    "N2": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "e47a5e9c6e944857adb8c2e24f63fb70",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "5e3872b20baa4348aa4b4045390a03f0",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 9,
+      "cost": 80770,
+      "total": 239874,
+      "cost_learning": 87933,
+      "review_cost": 7163,
+      "tool_calls": 16,
+      "fetches": 7,
+      "evidence_reads": 0,
+      "searches": 5,
+      "offsite_pages": 1,
+      "claims": 13,
+      "actions": 6,
+      "seconds": 211,
+      "learned": true,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "1d20255abf0f4796af2f0defcd9212ed"
+    },
+    "N3": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 9,
+          "evidence_id": "69b7c45fb48241fa89c5e7c53e89782b",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 8,
+          "evidence_id": "d50fd1ee369041118d6090ac16ff2be4",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 73416,
+      "total": 242888,
+      "cost_learning": 80173,
+      "review_cost": 6757,
+      "tool_calls": 17,
+      "fetches": 7,
+      "evidence_reads": 0,
+      "searches": 5,
+      "offsite_pages": 2,
+      "claims": 15,
+      "actions": 6,
+      "seconds": 195,
+      "learned": true,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "b7fc7061cbc349c3b557f50e08635401"
+    },
+    "N4": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "42c448140f6f41f2bcd38120c2c5ac97",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "4d6e692b9400424d9f977f0ae2318695",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 9,
+      "cost": 82225,
+      "total": 266545,
+      "cost_learning": 89268,
+      "review_cost": 7043,
+      "tool_calls": 17,
+      "fetches": 8,
+      "evidence_reads": 0,
+      "searches": 5,
+      "offsite_pages": 1,
+      "claims": 14,
+      "actions": 7,
+      "seconds": 208,
+      "learned": true,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "59aa370311b44917a5c484e41dae1c91"
+    },
+    "N5": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "5cdda89b6fd64a1c9e1ac9dd6f822e5f",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "944fe0adbe744cb3ad4f6ce0ad811f71",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 9,
+      "cost": 82543,
+      "total": 267375,
+      "cost_learning": 89513,
+      "review_cost": 6970,
+      "tool_calls": 17,
+      "fetches": 8,
+      "evidence_reads": 0,
+      "searches": 5,
+      "offsite_pages": 1,
+      "claims": 15,
+      "actions": 6,
+      "seconds": 205,
+      "learned": true,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "8a348cc55915449388cd34e977bf51f4"
+    },
+    "N6": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 9,
+          "evidence_id": "6121c14c6629416492c149252b32943f",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 8,
+          "evidence_id": "a7ec84f6c7094a0cb4c8d673810e8209",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 80458,
+      "total": 261194,
+      "cost_learning": 87323,
+      "review_cost": 6865,
+      "tool_calls": 15,
+      "fetches": 8,
+      "evidence_reads": 0,
+      "searches": 4,
+      "offsite_pages": 0,
+      "claims": 16,
+      "actions": 6,
+      "seconds": 173,
+      "learned": true,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "112b264bf329424f95249299f108ce59"
+    },
+    "N7": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 8,
+          "evidence_id": "f4faf211ccd74cfaa728e7f814d3500a",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 7,
+          "evidence_id": "d9fc3a75c5e2492dbc8aee74a9b39176",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 7,
+      "cost": 82104,
+      "total": 266680,
+      "cost_learning": 89136,
+      "review_cost": 7032,
+      "tool_calls": 15,
+      "fetches": 8,
+      "evidence_reads": 0,
+      "searches": 3,
+      "offsite_pages": 1,
+      "claims": 14,
+      "actions": 6,
+      "seconds": 168,
+      "learned": true,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "4d9f10151b9346f5abc167a7acc76677"
+    },
+    "N8": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 9,
+          "evidence_id": "a00a30ca75994eaca36ccc98a7dff3ea",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 8,
+          "evidence_id": "b80647dbf6354f14bd1203ded7b77f74",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 81998,
+      "total": 246350,
+      "cost_learning": 89309,
+      "review_cost": 7311,
+      "tool_calls": 15,
+      "fetches": 7,
+      "evidence_reads": 0,
+      "searches": 4,
+      "offsite_pages": 1,
+      "claims": 13,
+      "actions": 7,
+      "seconds": 430,
+      "learned": true,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "c4b41783797a41ebbff60973507863db"
+    },
+    "N9": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 8,
+          "evidence_id": "17b13ff1110448948af22157591ba1f2",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 7,
+          "evidence_id": "5b4a61b3462447debf9f058ef314a515",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 7,
+      "cost": 81338,
+      "total": 265786,
+      "cost_learning": 88685,
+      "review_cost": 7347,
+      "tool_calls": 15,
+      "fetches": 8,
+      "evidence_reads": 0,
+      "searches": 3,
+      "offsite_pages": 1,
+      "claims": 14,
+      "actions": 6,
+      "seconds": 181,
+      "learned": true,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "95a33250175a461da12e48e5926f304f"
+    },
+    "N10": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 7,
+          "evidence_id": "eedce88d9f4246028232c755021cec15",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 6,
+          "evidence_id": "4536e4dd38144e3ead26ed7ce7e8207c",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 6,
+      "cost": 81443,
+      "total": 266787,
+      "cost_learning": 88120,
+      "review_cost": 6677,
+      "tool_calls": 14,
+      "fetches": 8,
+      "evidence_reads": 0,
+      "searches": 2,
+      "offsite_pages": 1,
+      "claims": 14,
+      "actions": 5,
+      "seconds": 153,
+      "learned": true,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "run_id": "387030bf70b64265888f5318b457fd22"
+    }
+  },
+  "stores": {
+    "native": [
+      {
+        "step": "N1",
+        "learned": true,
+        "digest": "79c6cb7013108032cd20b51fac01ef1ce6246112e2afa2c9d23280b32a6cbd02",
+        "files": 2,
+        "skill_bytes": {
+          "skills/public-evidence-seo-research/SKILL.md": 4472
+        },
+        "memory_entries": 0,
+        "review_result": "skill",
+        "review_actions": [
+          "💾 Self-improvement review: Skill 'public-evidence-seo-research' created"
+        ]
+      },
+      {
+        "step": "N2",
+        "learned": true,
+        "digest": "130f9361718fc271d0f0923ec54ccde2c1757747d2143133dc5c479bde613dab",
+        "files": 2,
+        "skill_bytes": {
+          "skills/public-evidence-seo-research/SKILL.md": 5953
+        },
+        "memory_entries": 0,
+        "review_result": "skill",
+        "review_actions": [
+          "💾 Self-improvement review: Skill 'public-evidence-seo-research' patched"
+        ]
+      },
+      {
+        "step": "N3",
+        "learned": true,
+        "digest": "3810c8967cd5e50f524d25d472657249eac4965f9b15dc8e6b0b46adc36e146c",
+        "files": 2,
+        "skill_bytes": {
+          "skills/public-evidence-seo-research/SKILL.md": 6468
+        },
+        "memory_entries": 0,
+        "review_result": "skill",
+        "review_actions": [
+          "💾 Self-improvement review: Skill 'public-evidence-seo-research' patched"
+        ]
+      },
+      {
+        "step": "N4",
+        "learned": true,
+        "digest": "21eeaae15852d180a7b31dcc245e70c777703f80415a0e277eddb95c2a7b8cf2",
+        "files": 2,
+        "skill_bytes": {
+          "skills/public-evidence-seo-research/SKILL.md": 7132
+        },
+        "memory_entries": 0,
+        "review_result": "skill",
+        "review_actions": [
+          "💾 Self-improvement review: Skill 'public-evidence-seo-research' patched"
+        ]
+      },
+      {
+        "step": "N5",
+        "learned": true,
+        "digest": "96243e87181c0bb70300fdcd3e4844a5ac2c14a3e89bb59bbe3d45ef46a09f7a",
+        "files": 2,
+        "skill_bytes": {
+          "skills/public-evidence-seo-research/SKILL.md": 7759
+        },
+        "memory_entries": 0,
+        "review_result": "skill",
+        "review_actions": [
+          "💾 Self-improvement review: Skill 'public-evidence-seo-research' patched"
+        ]
+      },
+      {
+        "step": "N6",
+        "learned": true,
+        "digest": "05437b83aec7e5a1fc902931b84658756ff9553c11c9951faabd66ef6e5a5fd7",
+        "files": 2,
+        "skill_bytes": {
+          "skills/public-evidence-seo-research/SKILL.md": 8343
+        },
+        "memory_entries": 0,
+        "review_result": "skill",
+        "review_actions": [
+          "💾 Self-improvement review: Skill 'public-evidence-seo-research' patched"
+        ]
+      },
+      {
+        "step": "N7",
+        "learned": true,
+        "digest": "1cb649a013d746b7a59d1034548c2e16b9d5b2dd516b02da3173cba360e7bbca",
+        "files": 2,
+        "skill_bytes": {
+          "skills/public-evidence-seo-research/SKILL.md": 8809
+        },
+        "memory_entries": 0,
+        "review_result": "skill",
+        "review_actions": [
+          "💾 Self-improvement review: Skill 'public-evidence-seo-research' patched"
+        ]
+      },
+      {
+        "step": "N8",
+        "learned": true,
+        "digest": "e3ac3a51aed7fa16c57f2a2bce90b023be64d4b4dd3b56b155c369672162ae93",
+        "files": 2,
+        "skill_bytes": {
+          "skills/public-evidence-seo-research/SKILL.md": 9416
+        },
+        "memory_entries": 0,
+        "review_result": "skill",
+        "review_actions": [
+          "💾 Self-improvement review: Skill 'public-evidence-seo-research' patched"
+        ]
+      },
+      {
+        "step": "N9",
+        "learned": true,
+        "digest": "ad43972321eab1cb439195abdfdfb751142102729975d63a7949c0573da92be4",
+        "files": 2,
+        "skill_bytes": {
+          "skills/public-evidence-seo-research/SKILL.md": 9878
+        },
+        "memory_entries": 0,
+        "review_result": "skill",
+        "review_actions": [
+          "💾 Self-improvement review: Skill 'public-evidence-seo-research' patched"
+        ]
+      },
+      {
+        "step": "N10",
+        "learned": true,
+        "digest": "72e89d85aeb130ba82eede9a762f18675f725d0a97ae685f7264c535a1e02f23",
+        "files": 2,
+        "skill_bytes": {
+          "skills/public-evidence-seo-research/SKILL.md": 10282
+        },
+        "memory_entries": 0,
+        "review_result": "skill",
+        "review_actions": [
+          "💾 Self-improvement review: Skill 'public-evidence-seo-research' patched"
+        ]
+      }
+    ],
+    "ledger": [
+      {
+        "step": "L1",
+        "active": [
+          "discovery|2030.tw|3a娛樂城",
+          "discovery|2030.tw|娛樂城"
+        ]
+      },
+      {
+        "step": "L2",
+        "active": [
+          "discovery|2030.tw|3a娛樂城",
+          "discovery|2030.tw|娛樂城",
+          "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1"
+        ]
+      },
+      {
+        "step": "L3",
+        "active": [
+          "discovery|2030.tw|3a娛樂城",
+          "discovery|2030.tw|娛樂城",
+          "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1"
+        ]
+      },
+      {
+        "step": "L4",
+        "active": [
+          "discovery|2030.tw|3a娛樂城",
+          "discovery|2030.tw|娛樂城",
+          "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1"
+        ]
+      },
+      {
+        "step": "L5",
+        "active": [
+          "discovery|2030.tw|3a娛樂城",
+          "discovery|2030.tw|娛樂城",
+          "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1"
+        ]
+      },
+      {
+        "step": "L6",
+        "active": [
+          "discovery|2030.tw|3a娛樂城",
+          "discovery|2030.tw|娛樂城",
+          "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1"
+        ]
+      },
+      {
+        "step": "L7",
+        "active": [
+          "discovery|2030.tw|3a娛樂城",
+          "discovery|2030.tw|娛樂城",
+          "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1"
+        ]
+      },
+      {
+        "step": "L8",
+        "active": [
+          "discovery|2030.tw|3a娛樂城",
+          "discovery|2030.tw|娛樂城",
+          "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1"
+        ]
+      },
+      {
+        "step": "L9",
+        "active": [
+          "discovery|2030.tw|3a娛樂城",
+          "discovery|2030.tw|娛樂城",
+          "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1"
+        ]
+      },
+      {
+        "step": "L10",
+        "active": [
+          "discovery|2030.tw|3a娛樂城",
+          "discovery|2030.tw|娛樂城",
+          "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1"
+        ]
+      }
+    ]
+  },
+  "invalid_arms": [],
+  "abandoned": [],
+  "not_run": [],
+  "failed_attempts": [
+    "N10#1:model_failed_or_partial"
+  ],
+  "encoding_errors": 0,
+  "time": "2026-10-17T07:30:56.576962+00:00"
+}

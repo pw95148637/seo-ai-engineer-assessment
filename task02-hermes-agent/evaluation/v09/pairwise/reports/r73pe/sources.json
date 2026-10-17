@@ -1,0 +1,74 @@
+{
+  "456086686fe4498aa5ede48edee77281": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/456086686fe4498aa5ede48edee77281.txt"
+  },
+  "d2d7806f896441b4b4d4dfa21beab8ee": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/d2d7806f896441b4b4d4dfa21beab8ee.txt"
+  },
+  "bcb071e5f04c4dfbaa2802445966cc51": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/bcb071e5f04c4dfbaa2802445966cc51.txt"
+  },
+  "7b654d07263249bcbfceb36bc3fef2de": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/7b654d07263249bcbfceb36bc3fef2de.txt"
+  },
+  "571697fd8c204dafa7778d38edea0e8d": {
+    "url": "https://2030.tw/wordcup/%E5%AE%A2%E8%90%8A%E6%9F%8F%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/571697fd8c204dafa7778d38edea0e8d.txt"
+  },
+  "b9f0041269644153812f720bb4ce0f32": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E8%80%81%E8%99%8E%E6%A9%9F%E9%80%8158888",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/b9f0041269644153812f720bb4ce0f32.txt"
+  },
+  "5ba4f343e9d249038369fbaa5531285f": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E7%BC%BA%E9%BB%9E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/5ba4f343e9d249038369fbaa5531285f.txt"
+  },
+  "ee2d88cdd85c4b84b1872ea356c72c33": {
+    "url": "https://2030.tw/article/responsible-ai-008-audrey-tang/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/ee2d88cdd85c4b84b1872ea356c72c33.txt"
+  },
+  "9912480a1123433ea6a8200bdd27beb8": {
+    "url": "https://tw.stock.yahoo.com/quote/2030.TW",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/9912480a1123433ea6a8200bdd27beb8.txt"
+  },
+  "b79ae4fc621a4627b2a07c304c75c40a": {
+    "url": "https://en.wikipedia.org/wiki/2030_Bilingual_Nation",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/b79ae4fc621a4627b2a07c304c75c40a.txt"
+  },
+  "112f68e56bd44830b8421e64ad502c47": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/112f68e56bd44830b8421e64ad502c47.txt"
+  },
+  "62c353e5408e4c478d4d2e1a34220aab": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/62c353e5408e4c478d4d2e1a34220aab.txt"
+  }
+}

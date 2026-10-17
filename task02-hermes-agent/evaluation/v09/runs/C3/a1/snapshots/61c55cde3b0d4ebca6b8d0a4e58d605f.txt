@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Robots" content="index,follow"/>
+<!--favor icon-->
+<link rel="shortcut icon" href="https://xn--kprw3gq6bj71aiqh.com/favicon.ico" />
+<link rel="canonical" href="https://xn--kprw3gq6bj71aiqh.com" />
+<title>台灣娛樂城-線上遊藝場資訊網</title>
+<meta name="keywords" content="台灣娛樂城" />
+<meta name="description" content="台灣線上娛樂城 遊藝場集合，全台灣各大娛樂城的資訊，讓網友一鍵就可以加入。 遊藝場地圖、柏青哥地址、釣蝦埸ktv優惠、電子遊藝場訊息一覽無遺">
+<!--og-->
+<meta property="og:title" content="台灣娛樂城-線上遊藝場資訊網" />
+<meta property="og:description" content="台灣線上娛樂城 遊藝場集合，全台灣各大娛樂城的資訊，讓網友一鍵就可以加入。 遊藝場地圖、柏青哥地址、釣蝦埸ktv優惠、電子遊藝場訊息一覽無遺" />
+<meta property="og:url" content="https://xn--kprw3gq6bj71aiqh.com" />
+<meta property="og:image" content="https://xn--kprw3gq6bj71aiqh.com/userfiles/images/20221031021221996.jpg"/>
+<meta property="og:site_name" content="台灣娛樂城" />
+<meta property="og:type" content="website" />
+<link href="/css/00/main.css" rel="stylesheet">
+<script src="/jquery/jquery-1.10.js"></script>
+<script>
+	if('' != ''){
+		alert('');
+		if('N' == 'Y') history.back();
+	}
+	if('' != '') location.href = '';
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJLPKKFZ18"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-HJLPKKFZ18");
+</script>
+</head>
+<body>
+<a class="tu-line-float" href="https://line.qxwfs.com" target="_blank" rel="noopener nofollow">
+  <span class="tu-line-pulse"></span>
+  <img src="https://za88.net/img/footer-icon/tu_service.svg" alt="加入 LINE 客服">
+  <span class="tu-line-text">LINE客服</span>
+</a>
+
+<style>
+@media (min-width: 769px) {
+	.tu-line-float { display: none; }
+}
+.tu-line-float { position: fixed; right: 14px; bottom: 96px; z-index: 9999; width: 87px; height: 87px; border-radius: 50%; background: linear-gradient(145deg, #21d85b, #06a83f); box-shadow: 0 0 0 4px rgba(255, 255, 255, .95), 0 0 0 7px rgba(191, 145, 45, .75), 0 10px 24px rgba(0, 0, 0, .25), 0 0 22px rgba(37, 211, 102, .8); display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; animation: tuLineFloat 1.8s ease-in-out infinite; }
+.tu-line-float img { width: 50px; height: 50px; display: block; margin-top: -10px; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .18)); }
+.tu-line-text { color: #fff; font-size: 13px; line-height: 1.05; font-weight: 900; letter-spacing: .5px; text-shadow: 0 2px 3px rgba(0, 0, 0, .25); }
+.tu-line-pulse { position: absolute; inset: -8px; border-radius: 50%; border: 2px solid rgba(37, 211, 102, .65); animation: tuLinePulse 1.5s ease-out infinite; }
+.tu-line-float::before { content: ""; position: absolute; inset: -5px; border-radius: 50%; background: conic-gradient( from 0deg, transparent 0deg, rgba(255, 225, 120, .95) 70deg, transparent 130deg, transparent 360deg ); animation: tuLineSpin 2.6s linear infinite; z-index: -1; }
+.tu-line-float::after { content: "詢問"; position: absolute; right: 63px; top: 12px; white-space: nowrap; background: #111; color: #ffd978; font-size: 13px; font-weight: 900; padding: 5px 9px; border-radius: 999px; box-shadow: 0 6px 16px rgba(0, 0, 0, .18); animation: tuLineTag 1.8s ease-in-out infinite; }
+@keyframes tuLineFloat { 0%,100% { transform: translateY(0) scale(1); } 45% { transform: translateY(-6px) scale(1.04); } }
+@keyframes tuLinePulse { 0% { transform: scale(.9); opacity: .8; } 100% { transform: scale(1.35); opacity: 0; } }
+@keyframes tuLineSpin { to { transform: rotate(360deg); } }
+@keyframes tuLineTag { 0%,100% { transform: translateX(0); opacity: 1; } 50% { transform: translateX(-5px); opacity: .85; } }
+@media (max-width:768px) {
+	.tu-line-float { right: 10px; bottom: 87px; width: 62px; height: 62px; box-shadow: 0 0 0 3px rgba(255, 255, 255, .95), 0 0 0 5px rgba(191, 145, 45, .75), 0 8px 18px rgba(0, 0, 0, .25), 0 0 16px rgba(37, 211, 102, .7); animation: tuLineFloat 1.2s ease-in-out infinite; }
+	.tu-line-float img { width: 36px; height: 36px; margin-top: -6px; }
+	.tu-line-text { font-size: 10px; line-height: 1; }
+	.tu-line-pulse { inset: -5px; }
+	.tu-line-float::before { inset: -3px; }
+	.tu-line-float::after { content: "詢問"; right: 46px; top: 6px; font-size: 10px; padding: 3px 7px; }
+}
+
+/* 選單last-child */
+.wc-nav-link { position: relative; display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px !important; border-radius: 999px; font-weight: 800; color: #fff !important; background: linear-gradient(135deg, #0a4fd4, #1e88ff, #36c8ff); box-shadow: 0 6px 18px rgba(0, 90, 255, .28), inset 0 1px 0 rgba(255, 255, 255, .25); overflow: hidden; transition: .25s; animation: wcGlow 1.8s infinite; }
+.wc-nav-link:hover { transform: translateY(-2px) scale(1.05); box-shadow: 0 10px 24px rgba(0, 90, 255, .45), 0 0 20px rgba(0, 180, 255, .6); }
+.wc-nav-link::before { content: ""; position: absolute; top: 0; left: -120%; width: 70%; height: 100%; background: linear-gradient( 90deg, transparent, rgba(255, 255, 255, .75), transparent ); transform: skewX(-25deg); animation: wcShine 2.8s infinite; }
+
+/* NEW */
+.wc-nav-link::after { content: "HOT"; position: absolute; top: -6px; right: -8px; background: #ff2d2d; color: #fff; font-size: 10px; font-weight: 900; line-height: 1; padding: 4px 6px; border-radius: 20px; animation: wcBadge .9s infinite alternate; }
+@keyframes wcGlow { 0%,100% { box-shadow: 0 6px 18px rgba(0, 90, 255, .25), 0 0 0 rgba(0, 180, 255, 0); } 50% { box-shadow: 0 8px 24px rgba(0, 120, 255, .5), 0 0 18px rgba(0, 200, 255, .7); } }
+@keyframes wcShine { 0% { left: -120%; } 40% { left: 140%; } 100% { left: 140%; } }
+@keyframes wcBadge { from { transform: scale(1); } to { transform: scale(1.15); } }
+</style>
+<div class="webBox" style="margin: 0; padding: 0; border: 0; width: 100%;">
+
+
+<h1 class="pageh1">全台娛樂城推薦｜線上遊藝場、釣蝦KTV與柏青哥資訊總整理</h1>
+<div class="wrapper workframe">
+    <!--[if lt IE 9]>
+<link rel="stylesheet" href="/css/noie.css">
+<div id="no-ie"><div><p>很抱歉，目前本站瀏覽不支援IE9以下的瀏覽器，若看見版面跑掉，純屬正常狀況。建議您改用 <a href="https://www.google.com.tw/chrome/browser/desktop/index.html" target="_blank">Google Chrome</a>或<a href="https://www.mozilla.org/zh-TW/firefox/new/" target="_blank">Firefox</a> 以取得最佳、最快的瀏覽效果！</p></div></div>
+<![endif]-->
+<header>
+	<a id="side_btn" href="javascript:void(0);" data-type="1" title="Menu"><span class="icon"></span></a>
+	<div id="cis"><a class="d_inblock" href="/" title="台灣娛樂城"><img class="img_contain" src="/userfiles/images/20221031021118735.png" alt="台灣娛樂城" /></a></div>
+	<div class="top_btns">
+		<a id="openform" href="javascript:void(0);" title="搜尋"><svg><use xlink:href="/svg/00/icons.svg#search"></use></svg></a>
+	</div>
+	<form data-type="1" id="hSearch" name="hSearch" method="get" action="/searchItem.php">
+		<input type="hidden" id="pageid" name="p" date-action="pagedown" value="1" />
+		<input type="text" name="kw" value="" placeholder="請輸入關鍵字" />
+		<a class="btn btn_blue" id="go_search" href="javascript:void(0);">搜尋</a>
+	</form>
+</header>
+<script src="/scripts/tw_cn.js"></script>
+	<div id="warp">
+		<div id="banner">
+  <div class="img">
+    <a href="/bonus.html" target="_blank" rel="nofollow noopener noreferrer" title="台灣娛樂城體驗金免費領取｜TU娛樂城限時活動">
+      <img src="/userfiles/images/20240108011235291.jpeg" alt="TU台灣娛樂城體驗金活動">
+    </a>
+  </div>
+</div>
+
+		<div class="main_container">
+			<div id="search_area">
+				<div class="apply_box"><a href="/casinoapply/" title="娛樂城新增申請"><img src="/images/00/img_apply.png" alt="娛樂城新增申請" /></a></div>
+				<div class="mt_5 list">
+					<h4 class="mb_3">各縣市</h4>
+					<ul>
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/" title="全部"><font>全部</font><b class="btn badge_lighten badge_soft_dark_gray">592</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/台北市/" title="台北市"><font>台北市</font><b class="btn badge_lighten badge_soft_dark_gray">5</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/基隆市/" title="基隆市"><font>基隆市</font><b class="btn badge_lighten badge_soft_dark_gray">9</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/新北市/" title="新北市"><font>新北市</font><b class="btn badge_lighten badge_soft_dark_gray">13</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/宜蘭縣/" title="宜蘭縣"><font>宜蘭縣</font><b class="btn badge_lighten badge_soft_dark_gray">4</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/新竹市/" title="新竹市"><font>新竹市</font><b class="btn badge_lighten badge_soft_dark_gray">30</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/新竹縣/" title="新竹縣"><font>新竹縣</font><b class="btn badge_lighten badge_soft_dark_gray">4</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/桃園市/" title="桃園市"><font>桃園市</font><b class="btn badge_lighten badge_soft_dark_gray">16</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/苗栗縣/" title="苗栗縣"><font>苗栗縣</font><b class="btn badge_lighten badge_soft_dark_gray">28</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/台中市/" title="台中市"><font>台中市</font><b class="btn badge_lighten badge_soft_dark_gray">139</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/彰化縣/" title="彰化縣"><font>彰化縣</font><b class="btn badge_lighten badge_soft_dark_gray">28</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/南投縣/" title="南投縣"><font>南投縣</font><b class="btn badge_lighten badge_soft_dark_gray">15</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/嘉義市/" title="嘉義市"><font>嘉義市</font><b class="btn badge_lighten badge_soft_dark_gray">28</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/嘉義縣/" title="嘉義縣"><font>嘉義縣</font><b class="btn badge_lighten badge_soft_dark_gray">1</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/雲林縣/" title="雲林縣"><font>雲林縣</font><b class="btn badge_lighten badge_soft_dark_gray">46</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/台南市/" title="台南市"><font>台南市</font><b class="btn badge_lighten badge_soft_dark_gray">108</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/高雄市/" title="高雄市"><font>高雄市</font><b class="btn badge_lighten badge_soft_dark_gray">70</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/屏東縣/" title="屏東縣"><font>屏東縣</font><b class="btn badge_lighten badge_soft_dark_gray">42</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/台東縣/" title="台東縣"><font>台東縣</font><b class="btn badge_lighten badge_soft_dark_gray">3</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/花蓮縣/" title="花蓮縣"><font>花蓮縣</font><b class="btn badge_lighten badge_soft_dark_gray">2</b></a></li>
+						
+						<li><a class="d_flex f_justify_space_b f_aitems_center" href="/casino/city/澎湖縣/" title="澎湖縣"><font>澎湖縣</font><b class="btn badge_lighten badge_soft_dark_gray">1</b></a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div id="casino_area">
+				<h2 class="mb_5">顯示 12 間娛樂城</h2>
+                <ul class="d_grid">
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20221027034815402.jpg" alt="永旺電子遊戲場" /></div>
+						<h3 class="mb_3 txt_clamp">永旺電子遊戲場</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/新竹市東區民生路158號1樓" title="新竹市東區民生路158號1樓" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">新竹市東區民生路158號1樓</font></a></p>
+						<p class="pos_rel phone"><a href="tel:035350221" title="035350221"><svg><use xlink:href="/svg/00/icons.svg#phone"></use></svg><font class="txt_clamp">035350221</font></a></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/新竹市/東區/永旺電子遊戲場/" title="永旺電子遊戲場"></a>
+                    </li>
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20221027032854626.jpg" alt="寶萊納電子遊藝場" /></div>
+						<h3 class="mb_3 txt_clamp">寶萊納電子遊藝場</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/新竹市北區西大路536號" title="新竹市北區西大路536號" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">新竹市北區西大路536號</font></a></p>
+						<p class="pos_rel phone"><a href="tel:035261469" title="035261469"><svg><use xlink:href="/svg/00/icons.svg#phone"></use></svg><font class="txt_clamp">035261469</font></a></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/新竹市/北區/寶萊納電子遊藝場/" title="寶萊納電子遊藝場"></a>
+                    </li>
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20250606075009891.png" alt="樂勝娛樂城" /></div>
+						<h3 class="mb_3 txt_clamp">樂勝娛樂城</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/台南市中西區保安路173號" title="台南市中西區保安路173號" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">台南市中西區保安路173號</font></a></p>
+						<p class="pos_rel phone"></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/台南市/中西區/樂勝娛樂城/" title="樂勝娛樂城"></a>
+                    </li>
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20231120142017781.jpg" alt="皮卡丘遊樂場" /></div>
+						<h3 class="mb_3 txt_clamp">皮卡丘遊樂場</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/桃園市中壢市中正路43號" title="桃園市中壢市中正路43號" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">桃園市中壢市中正路43號</font></a></p>
+						<p class="pos_rel phone"></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/桃園市/中壢市/皮卡丘遊樂場/" title="皮卡丘遊樂場"></a>
+                    </li>
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20221031012031833.jpg" alt="龍興娛樂廣場" /></div>
+						<h3 class="mb_3 txt_clamp">龍興娛樂廣場</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/屏東縣屏東市忠孝路302巷2號" title="屏東縣屏東市忠孝路302巷2號" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">屏東縣屏東市忠孝路302巷2號</font></a></p>
+						<p class="pos_rel phone"><a href="tel:087333300" title="087333300"><svg><use xlink:href="/svg/00/icons.svg#phone"></use></svg><font class="txt_clamp">087333300</font></a></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/屏東縣/屏東市/龍興娛樂廣場/" title="龍興娛樂廣場"></a>
+                    </li>
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20231025090022336.jpg" alt="傳奇chuanqi電子遊戲場" /></div>
+						<h3 class="mb_3 txt_clamp">傳奇chuanqi電子遊戲場</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/台南市永康區永大二路5號" title="台南市永康區永大二路5號" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">台南市永康區永大二路5號</font></a></p>
+						<p class="pos_rel phone"><a href="tel:0958140104" title="0958140104"><svg><use xlink:href="/svg/00/icons.svg#phone"></use></svg><font class="txt_clamp">0958140104</font></a></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/台南市/永康區/傳奇chuanqi電子遊戲場/" title="傳奇chuanqi電子遊戲場"></a>
+                    </li>
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20231023074555893.jpg" alt="紅豆遊戲場" /></div>
+						<h3 class="mb_3 txt_clamp">紅豆遊戲場</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/雲林縣水林鄉水林路377號" title="雲林縣水林鄉水林路377號" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">雲林縣水林鄉水林路377號</font></a></p>
+						<p class="pos_rel phone"></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/雲林縣/水林鄉/紅豆遊戲場/" title="紅豆遊戲場"></a>
+                    </li>
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20221219062209656.png" alt="北海室內釣蝦場" /></div>
+						<h3 class="mb_3 txt_clamp">北海室內釣蝦場</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/台南市北區大興街325巷33號" title="台南市北區大興街325巷33號" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">台南市北區大興街325巷33號</font></a></p>
+						<p class="pos_rel phone"><a href="tel:062582222" title="062582222"><svg><use xlink:href="/svg/00/icons.svg#phone"></use></svg><font class="txt_clamp">062582222</font></a></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/台南市/北區/北海室內釣蝦場/" title="北海室內釣蝦場"></a>
+                    </li>
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20230928072402887.jpg" alt="豐稔釣蝦場行" /></div>
+						<h3 class="mb_3 txt_clamp">豐稔釣蝦場行</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/基隆市中正區豐稔街121號" title="基隆市中正區豐稔街121號" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">基隆市中正區豐稔街121號</font></a></p>
+						<p class="pos_rel phone"><a href="tel:0224625635" title="0224625635"><svg><use xlink:href="/svg/00/icons.svg#phone"></use></svg><font class="txt_clamp">0224625635</font></a></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/基隆市/中正區/豐稔釣蝦場行/" title="豐稔釣蝦場行"></a>
+                    </li>
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20221229010144904.png" alt="和緯娛樂城" /></div>
+						<h3 class="mb_3 txt_clamp">和緯娛樂城</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/台南市北區中華北路一段20號" title="台南市北區中華北路一段20號" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">台南市北區中華北路一段20號</font></a></p>
+						<p class="pos_rel phone"><a href="tel:062592111" title="062592111"><svg><use xlink:href="/svg/00/icons.svg#phone"></use></svg><font class="txt_clamp">062592111</font></a></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/台南市/北區/和緯娛樂城/" title="和緯娛樂城"></a>
+                    </li>
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20221026081125415.jpg" alt="富寶娛樂城" /></div>
+						<h3 class="mb_3 txt_clamp">富寶娛樂城</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/台南市永康區忠義街64號" title="台南市永康區忠義街64號" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">台南市永康區忠義街64號</font></a></p>
+						<p class="pos_rel phone"><a href="tel:0913862311" title="0913862311"><svg><use xlink:href="/svg/00/icons.svg#phone"></use></svg><font class="txt_clamp">0913862311</font></a></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/台南市/永康區/富寶娛樂城/" title="富寶娛樂城"></a>
+                    </li>
+                    
+                    <li class="pos_rel info_box">
+						<div class="over_hid mb_3 icon_box"><img src="/userfiles/images/product/20231120141224506.jpg" alt="米可熊娛樂城" /></div>
+						<h3 class="mb_3 txt_clamp">米可熊娛樂城</h3>
+						<p class="pos_rel map"><a href="https://www.google.com.tw/maps/place/桃園市中壢市興建街8號" title="桃園市中壢市興建街8號" target="_blank"><svg><use xlink:href="/svg/00/icons.svg#map"></use></svg><font class="txt_clamp">桃園市中壢市興建街8號</font></a></p>
+						<p class="pos_rel phone"></p>
+						<span class="btn btn_blue">查看</span>
+						<a class="pos_abs atag_item" href="/casino/桃園市/中壢市/米可熊娛樂城/" title="米可熊娛樂城"></a>
+                    </li>
+                    
+                </ul>
+			</div>
+		</div>
+	</div>
+    <footer>
+	<p>2022© Copyright All Rights Reserved</p>
+</footer>
+<style>
+    .freegame-button {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 360px; 
+    max-width: 360px;
+    aspect-ratio: 560 / 127;
+        background-image: url(/images/fgbutton.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 16px;
+        animation: pulse-glow 2s infinite alternate, bounce 1.5s infinite ease-in-out;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        padding: 0 auto;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .freegame-button:hover {
+        background-image: url(/images/fgbutton-hoover.webp);
+        transform: translateX(-50%) scale(1.05);
+        filter: brightness(1.1);
+    }
+
+    .freegame-button .cta-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff3a0;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;        
+        line-height: 1;
+        transform: translateY(-7px);
+    }
+    
+    
+
+    @keyframes pulse-glow {
+        0% {
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 165, 0, 0.4);
+        }
+        100% {
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.9), 0 0 30px rgba(255, 165, 0, 0.6);
+        }
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateX(-50%) translateY(0);
+        }
+        50% {
+            transform: translateX(-50%) translateY(-8px);
+        }
+    }
+
+    @media (max-width: 767px) {
+        .freegame-button {
+            width: 200px;
+            height: 48px;
+        }
+
+        .freegame-button .cta-title {
+            font-size: 14px;
+            transform: translateY(-2px); 
+            color: transparent;
+            position: relative;
+            }
+
+            .freegame-button .cta-title::after {
+            content: "免費送娛樂城體驗金";
+            color: #fff3a0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+            }
+
+    }
+</style>
+
+<a href="/bonus.html" class="freegame-button" target="_blank" rel="nofollow noopener">
+    <span class="cta-title">限時熱推｜娛樂城體驗金</span>
+</a>
+</div>
+</div>
+</body>
+</html>
+<script src="/jquery/00/jquery-templates.js"></script>
+<script src="/scripts/tw_cn2.js"></script>
+<script>
+	document.body.oncopy = event => {
+		event.preventDefault();
+		let textFont,
+		copyFont = window.getSelection(0).toString();
+		textFont = (copyFont.length > 10) ?copyFont + '\n\n' + '原文網址: 台灣娛樂城-線上遊藝場資訊網 https://xn--kprw3gq6bj71aiqh.com/\n' + '著作權歸作者所有。商業轉載請聯絡作者獲得授權，非商業轉載請註明出處。':copyFont;
+		return (event.clipboardData) ?event.clipboardData.setData('text', textFont):window.clipboardData.setData('text', textFont);// 相容IE
+	};
+</script>

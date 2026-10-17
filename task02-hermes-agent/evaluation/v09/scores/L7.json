@@ -1,0 +1,156 @@
+{
+  "run_id": "117c59e812c24dcc9f3617a7fea57040",
+  "host": "2030.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": {
+      "call": 3,
+      "evidence_id": "445dde7f68274fc68a652d2a96496d61",
+      "via": "research_evidence"
+    },
+    "3A娛樂城": {
+      "call": 2,
+      "evidence_id": "0b6417ec9b994e259694a600a2c1ff8b",
+      "via": "research_evidence"
+    }
+  },
+  "both_target_pages_read": true,
+  "tool_calls": 15,
+  "calls_before_first_hit": 1,
+  "calls_until_both_hit": 3,
+  "searches": 5,
+  "failed_searches": 2,
+  "failed_search_kinds": {
+    "no_results": 2,
+    "error": 0
+  },
+  "failed_search_queries": [
+    "\"2030玩運彩瘋世足\" -site:2030.tw",
+    "\"2030玩運彩\""
+  ],
+  "http_requests": 11,
+  "http_requests_controller": 8,
+  "sitemap_reads": 0,
+  "refetched_verified_pages": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 0
+  },
+  "lessons_presented": 3,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 243581,
+    "prompt": 237836,
+    "completion": 5745,
+    "api_calls": 7,
+    "cache_read": 179072,
+    "cache_write": 0,
+    "uncached_prompt": 58764,
+    "cost": 64509
+  },
+  "hermes_tools": {
+    "research_status": 1,
+    "research_evidence": 6,
+    "research_search": 5,
+    "research_fetch": 1,
+    "research_offpage": 1,
+    "research_finish": 1
+  },
+  "claims": 12,
+  "actions": 5,
+  "sections": {
+    "on_page": 8,
+    "off_page": 3,
+    "other": 1
+  },
+  "offpage": {
+    "claims": 3,
+    "observation": 1,
+    "inference": 1,
+    "unknown": 1,
+    "three_columns": true,
+    "known": 1,
+    "known_external": 1,
+    "known_link_verified": 0,
+    "pages_fetched": 1,
+    "pages_linking_to_target": 0
+  },
+  "offpage_policy_violations": [],
+  "state": "research_complete",
+  "transcript_calls": 1,
+  "v09": {
+    "onsite_read": [
+      "https://2030.tw",
+      "https://2030.tw/wordcup",
+      "https://2030.tw/wordcup/3a娛樂城",
+      "https://2030.tw/wordcup/3a娛樂城缺點",
+      "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+      "https://2030.tw/wordcup/at99娛樂城",
+      "https://2030.tw/wordcup/娛樂城"
+    ],
+    "cited_claims": 10,
+    "claim_pages": [
+      [
+        "https://2030.tw",
+        "https://2030.tw/wordcup"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城缺點",
+        "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+        "https://2030.tw/wordcup/at99娛樂城"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城缺點",
+        "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/at99娛樂城",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/at99娛樂城",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/at99娛樂城",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      [],
+      []
+    ],
+    "memory": {
+      "findings": 9,
+      "recheck": 0,
+      "revoked": 0,
+      "candidates": 12,
+      "unknowns": 7,
+      "controller_requests": 8
+    },
+    "resolved_unknowns": [],
+    "candidates_read": 1,
+    "controller_requests": 8
+  }
+}

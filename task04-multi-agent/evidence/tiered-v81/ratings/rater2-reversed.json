@@ -1,0 +1,154 @@
+[
+  {
+    "label": "M",
+    "click_appeal": 4,
+    "click_reason": "標題直接回應讀者最在意的贏錢與出金疑問，加上「5個陷阱」，具體又好奇。",
+    "reading_value": 5,
+    "reading_reason": "出金陷阱、165的正確用法、法條、止損步驟和FAQ都很具體，馬上可以照做。",
+    "violations": []
+  },
+  {
+    "label": "L",
+    "click_appeal": 4,
+    "click_reason": "「可信嗎」加「7個詐騙紅旗」切中出金卡關的痛點。",
+    "reading_value": 5,
+    "reading_reason": "卡關情境配停手判斷題、優惠條款的示意換算、法律例外說明和報案時的自身風險提醒，內容深入實用。",
+    "violations": []
+  },
+  {
+    "label": "K",
+    "click_appeal": 4,
+    "click_reason": "「出不了金怎麼辦」加上查核清單，對怕被坑的讀者有吸引力。",
+    "reading_value": 4,
+    "reading_reason": "話術拆解和條款關鍵字清單實用，但法律段較簡略，條文寫成待核實。",
+    "violations": [
+      {
+        "quote": "介紹合法休閒選擇的方向，例如台灣公益彩券、運動彩券的官方管道，並提醒設定預算與時間上限",
+        "rule": "LEGAL",
+        "reason": "把搜尋賭博的讀者導向其他投注產品，還搭配設定預算的建議，等於鼓勵投注、暗示理性參與。"
+      }
+    ]
+  },
+  {
+    "label": "J",
+    "click_appeal": 4,
+    "click_reason": "出金被卡加7個查核重點，標題清楚，但新意普通。",
+    "reading_value": 3,
+    "reading_reason": "各重點只列方向，缺具體步驟與細節，結論提到的三張查核清單內容也沒展開。",
+    "violations": []
+  },
+  {
+    "label": "I",
+    "click_appeal": 4,
+    "click_reason": "出金、資安、法律三面向一次查核，對想知道推薦文能不能信的讀者很有用。",
+    "reading_value": 5,
+    "reading_reason": "牌照查詢、條款、金流、資安、法律例外說明都很具體，還有快篩表和FAQ。",
+    "violations": []
+  },
+  {
+    "label": "H",
+    "click_appeal": 4,
+    "click_reason": "「獲利承諾能信嗎」加5個警訊，直擊被廣告吸引的讀者。",
+    "reading_value": 4,
+    "reading_reason": "警訊、示意的流水算式、自問清單和止損步驟具體，法律段稍簡略。",
+    "violations": []
+  },
+  {
+    "label": "G",
+    "click_appeal": 4,
+    "click_reason": "出金卡關和優惠綁約兩大痛點加查核清單，吸引力不錯。",
+    "reading_value": 3,
+    "reading_reason": "涵蓋面廣但各段偏概述，法律段的出處還待補。",
+    "violations": [
+      {
+        "quote": "入金前必問的5個條款問題（提款上限、審核天數、身分驗證、帳戶凍結條件、爭議處理）",
+        "rule": "LEGAL",
+        "reason": "把條款查核寫成入金前的步驟，又沒說明查核合格也不代表在台合法，等於暗示查過條款就能理性參與。"
+      }
+    ]
+  },
+  {
+    "label": "F",
+    "click_appeal": 5,
+    "click_reason": "「推薦文沒說的5件事」很能引發好奇，加上解凍費這個具體痛點。",
+    "reading_value": 5,
+    "reading_reason": "用輪盤規則算出期望值，法條刑度、金流個資風險、沉迷自檢和查核問題都非常具體。",
+    "violations": []
+  },
+  {
+    "label": "E",
+    "click_appeal": 5,
+    "click_reason": "標題直接用讀者會搜的保證字眼提問，點擊誘因強。",
+    "reading_value": 3,
+    "reading_reason": "結構完整但各段偏概述，法律與話術說明不夠深入。",
+    "violations": [
+      {
+        "quote": "娛樂城推薦前必看：「保證出金」是真的嗎？5大話術一次拆解",
+        "rule": "CLAIMS",
+        "reason": "標題出現指定詞「保證出金」，即使是疑問句也不允許。"
+      },
+      {
+        "quote": "想找到「穩賺不賠」的玩法",
+        "rule": "CLAIMS",
+        "reason": "大綱內容出現指定詞「穩賺不賠」。"
+      },
+      {
+        "quote": "說明本文會回答「保證出金」「穩賺不賠」這類說法到底可不可信。",
+        "rule": "CLAIMS",
+        "reason": "同時出現兩個指定詞，引號或拆穿話術的語境也不允許。"
+      },
+      {
+        "quote": "為什麼不可能「穩賺不賠」",
+        "rule": "CLAIMS",
+        "reason": "小標出現指定詞「穩賺不賠」。"
+      },
+      {
+        "quote": "「保證出金」的5大常見話術拆解",
+        "rule": "CLAIMS",
+        "reason": "小標出現指定詞「保證出金」。"
+      },
+      {
+        "quote": "娛樂城真的有保證出金的嗎？有沒有穩賺不賠的玩法？",
+        "rule": "CLAIMS",
+        "reason": "FAQ問題出現兩個指定詞。"
+      },
+      {
+        "quote": "介紹合法的休閒選擇方向，例如台灣公益彩券、運動彩券的官方管道，並提醒設定預算與時間上限",
+        "rule": "LEGAL",
+        "reason": "把讀者導向其他投注產品，還搭配設定預算的建議，等於鼓勵投注、暗示理性參與。"
+      }
+    ]
+  },
+  {
+    "label": "D",
+    "click_appeal": 4,
+    "click_reason": "「推薦文能信嗎」加「7個真相」有懸念，吸引力不錯。",
+    "reading_value": 4,
+    "reading_reason": "話術、利益關係辨識清單、法律說明和求助管道具體，莊家優勢段用的例子較簡略。",
+    "violations": []
+  },
+  {
+    "label": "C",
+    "click_appeal": 4,
+    "click_reason": "標題簡潔，直指出金被卡和詐騙警訊。",
+    "reading_value": 4,
+    "reading_reason": "警訊清單、止損步驟和FAQ實用，還說明了罰金屬於刑罰，但整體篇幅較精簡。",
+    "violations": []
+  },
+  {
+    "label": "B",
+    "click_appeal": 4,
+    "click_reason": "5大查核涵蓋出金、個資、法律，對謹慎的讀者有吸引力。",
+    "reading_value": 5,
+    "reading_reason": "條款、資安、金流、165查詢方法和法律責任都非常具體，可以直接照做。",
+    "violations": []
+  },
+  {
+    "label": "A",
+    "click_appeal": 4,
+    "click_reason": "直接質疑推薦名單，加上出金陷阱和法律風險，資訊量感強。",
+    "reading_value": 5,
+    "reading_reason": "莊家優勢與RTP概念、法條連結、帳戶出借風險、具體的戒斷做法和FAQ都很完整。",
+    "violations": []
+  }
+]

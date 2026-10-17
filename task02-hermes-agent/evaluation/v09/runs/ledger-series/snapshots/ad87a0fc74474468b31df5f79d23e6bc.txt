@@ -1,0 +1,1 @@
+{"success": false, "error": "DuckDuckGo search failed: DDGSException: ConnectError: ConnectError('error sending request for url (https://grokipedia.com/api/typeahead?query=%222030%E7%8E%A9%E9%81%8B%E5%BD%A9%22+-site%3A2030.tw&limit=1) > Network is unreachable (os error 101)')"}

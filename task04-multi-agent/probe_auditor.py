@@ -57,7 +57,13 @@ def control_case():
 
 async def main():
     p = argparse.ArgumentParser(); p.add_argument("--out", default="evidence/runtime-claude-auditor-probe")
-    out = Path(p.parse_args().out); out.mkdir(parents=True, exist_ok=False)
+    p.add_argument("--prompts", choices=("v6", "v8"), default="v6")
+    p.add_argument("--cases", choices=("v6", "v8"), default=None,
+                   help="v8 = the drafts in cases/auditor_probe_v8.json (default for --prompts v8)")
+    args = p.parse_args(); out = Path(args.out)
+    if args.prompts == "v8" or args.cases == "v8":
+        return await main_cases(out, args.prompts)
+    out.mkdir(parents=True, exist_ok=False)
     policy = json.loads((HERE / "policy.json").read_text(encoding="utf-8"))
     request = json.loads((HERE / "cases/normal.json").read_text(encoding="utf-8"))
     agent = ClaudeDualRoleAgent(policy, JsonlLog(out / "provider.jsonl"))
@@ -85,5 +91,105 @@ async def main():
         print(json.dumps({k: r.get(k) for k in ("id", "as_expected", "planted_missed", "rules_cited", "error")},
                          ensure_ascii=False))
 
+# ---- v8: tiered policy, program checks before the Auditor; cases and expectations in cases/auditor_probe_v8.json.
+# The same drafts can also go to the v6 Auditor (--prompts v6 --cases ...), for comparison only.
+EXPECT_V8 = HERE / "cases/auditor_probe_v8.json"
+
+def draft_v8(case):
+    from workflow_v8 import split_v6_section
+    if "draft" in case:
+        return case["draft"]
+    final = json.loads((HERE / case["from_final"] / "state.json").read_text(encoding="utf-8"))["final"]
+    # Registered: loaded finals carry no note; the probe Auditor never saw the rounds the note answers.
+    return {"title": final["title"], "sections": [split_v6_section(x) for x in final["sections"]], "negotiation_note": ""}
+
+def judge_v8(case, review, verdict):
+    """must: every planted phrase quoted by some MUST item, and every planted phrase that holds no term the
+    program matched quoted by the Auditor's own findings (a program hit on a line is not the Auditor reading it)."""
+    must_quotes = " ".join(m["quote"] for m in review["must"])
+    auditor_quotes = " ".join(f["quote"] for f in verdict["findings"])
+    program_terms = [m["term"] for m in review["must"] if m["source"] == "program"]
+    caught = [t for t in case["planted"] if t in must_quotes]
+    needs_auditor = [t for t in case["planted"] if not any(term in t for term in program_terms)]
+    auditor_missed = [t for t in needs_auditor if t not in auditor_quotes]
+    blocked = review["blocked"]
+    expected = {"must": blocked and len(caught) == len(case["planted"]) and not auditor_missed,
+                "no_block": not blocked}.get(case["expect"])
+    return {"system_blocked": blocked, "auditor_blocked": bool(verdict["findings"]),
+            "program_hits": len(program_terms), "as_expected": expected,
+            "planted_quoted": caught, "planted_missed": [t for t in case["planted"] if t not in caught],
+            "needs_auditor": needs_auditor, "auditor_missed": auditor_missed,
+            "rules_cited": sorted({m["rule"] for m in review["must"]}), "suggestions": review["should"]}
+
+def judge_v6(case, verdict):
+    quotes = " ".join(f["quote"] for f in verdict["findings"])
+    caught = [t for t in case["planted"] if t in quotes]
+    blocked = not verdict["passed"]
+    expected = {"must": blocked and len(caught) == len(case["planted"]), "no_block": not blocked}.get(case["expect"])
+    return {"system_blocked": blocked, "auditor_blocked": blocked, "as_expected": expected, "planted_quoted": caught,
+            "planted_missed": [t for t in case["planted"] if t not in caught],
+            "rules_cited": sorted({f["rule"] for f in verdict["findings"]})}
+
+async def main_cases(out, prompts):
+    import hashlib, roles, roles_v8
+    from verify_run import ISOLATION_TOKEN_CEILING, request_context_tokens
+    from workflow_v8 import TieredState, derive_review, flatten, program_findings
+    expect_bytes = EXPECT_V8.read_bytes()
+    plan = json.loads(expect_bytes.decode("utf-8"))
+    v8 = prompts == "v8"
+    policy = json.loads((HERE / (plan["policy_file"] if v8 else "policy.json")).read_text(encoding="utf-8"))
+    request = json.loads((HERE / "cases/normal.json").read_text(encoding="utf-8"))
+    out.mkdir(parents=True, exist_ok=False)
+    agent = ClaudeDualRoleAgent(policy, JsonlLog(out / "provider.jsonl"), roles=roles_v8 if v8 else roles,
+                                max_calls=len(plan["cases"]))
+    results = []
+    for case in plan["cases"]:
+        draft = draft_v8(case)
+        if not v8:   # registered v6 rendering: "heading：points" strings
+            draft = {**draft, "sections": [flatten(s) for s in draft["sections"]]}
+        s = (TieredState if v8 else State)(request=request["request"], initial_instruction=request["initial_instruction"],
+                                           scenario="normal", mode="llm_runtime", policy_version=policy["version"],
+                                           iteration=1)
+        s.draft = draft
+        if v8:
+            s.program_findings = program_findings(s.draft, policy)
+        item = {k: v for k, v in case.items() if k != "draft"} | {"run_id": s.run_id, "draft": s.draft}
+        try:
+            verdict = await asyncio.wait_for(agent("auditor", snapshot(s)), 240)
+        except (ProviderError, TimeoutError) as e:
+            results.append({**item, "error": str(e)}); continue
+        if v8:
+            review = derive_review(1, s.program_findings, verdict, policy)
+            results.append({**item, "verdict": verdict, "review": review, **judge_v8(case, review, verdict)})
+        else:
+            results.append({**item, "verdict": verdict, **judge_v6(case, verdict)})
+    raw = out / "provider.jsonl"
+    records = [json.loads(x) for x in raw.read_text(encoding="utf-8").splitlines()] if raw.exists() else []
+    tokens = [request_context_tokens(json.loads(r["response_text"])) for r in records
+              if r.get("returncode") == 0 and not r.get("error")]
+    count = lambda kind: (f"{sum(bool(r.get('as_expected')) for r in results if r['expect'] == kind)}"
+                          f"/{sum(r['expect'] == kind for r in results)}")
+    module = "roles_v8.py" if v8 else "roles.py"
+    summary = {"note": "drafts are hand-written or earlier finals; verdicts are real Auditor replies (provider.jsonl)",
+               "prompt_version": prompts, "cli_version": cli_version(), "model": DEFAULT_MODEL, "effort": DEFAULT_EFFORT,
+               "expectations_file": "cases/auditor_probe_v8.json",
+               "expectations_sha256": hashlib.sha256(expect_bytes).hexdigest(),
+               "roles_module": module, "roles_module_sha256": hashlib.sha256((HERE / module).read_bytes()).hexdigest(),
+               "controller_module_sha256": hashlib.sha256((HERE / "workflow_v8.py").read_bytes()).hexdigest(),
+               "policy_version": policy["version"],
+               "claude_cli_context_isolated": bool(tokens) and all(t < ISOLATION_TOKEN_CEILING for t in tokens),
+               "max_request_context_tokens_per_call": tokens,
+               "must_cases_as_expected": count("must"), "no_block_cases_as_expected": count("no_block"),
+               "errors": [r["id"] for r in results if "error" in r], "results": results}
+    (out / "probe_results.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n")
+    for r in results:
+        print(json.dumps({k: r.get(k) for k in ("id", "expect", "as_expected", "system_blocked", "auditor_blocked",
+                                                "planted_missed", "auditor_missed", "rules_cited", "error")}, ensure_ascii=False))
+    print(json.dumps({k: summary[k] for k in ("must_cases_as_expected", "no_block_cases_as_expected",
+                                              "claude_cli_context_isolated", "errors")}))
+    return 0 if summary["claude_cli_context_isolated"] and not summary["errors"] else 2
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    import sys
+    sys.stdout.reconfigure(errors="backslashreplace")
+    raise SystemExit(asyncio.run(main()) or 0)

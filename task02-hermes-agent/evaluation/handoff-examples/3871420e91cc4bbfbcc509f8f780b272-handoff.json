@@ -1,0 +1,154 @@
+{
+  "schema": "handoff-queue/1",
+  "source": {
+    "db": "evidence/auth-preflight",
+    "run": "3871420e91cc4bbfbcc509f8f780b272",
+    "sha256": null
+  },
+  "run": {
+    "id": "3871420e91cc4bbfbcc509f8f780b272",
+    "host": null,
+    "created": "2026-10-16T01:42:34.734953+00:00",
+    "started": false,
+    "mode": null,
+    "learning": null,
+    "keywords": [],
+    "status": "not_started",
+    "outcome": "oauth_required",
+    "hermes_learning": null,
+    "report_accepted": false,
+    "report_rejections": 0,
+    "preflight": {
+      "ready": false,
+      "blocker": "oauth_required",
+      "logged_in": false,
+      "rate_limited": false,
+      "tools": 5,
+      "tools_match": true
+    },
+    "human_reviews": []
+  },
+  "usage": {
+    "requests": {
+      "used": 0,
+      "limit": null,
+      "by": {
+        "model": 0,
+        "offpage": 0,
+        "controller": 0
+      }
+    },
+    "calls": {
+      "used": 0,
+      "limit": null
+    },
+    "searches": {
+      "used": 0,
+      "limit": 5
+    },
+    "offpage": {
+      "used": 0,
+      "limit": null
+    },
+    "seconds": {
+      "used": null,
+      "limit": null
+    }
+  },
+  "summary": {
+    "by_priority": {
+      "decide": 1,
+      "review": 0,
+      "info": 0
+    },
+    "by_category": {
+      "preflight": {
+        "items": 1,
+        "decide": 1
+      },
+      "lesson_change": {
+        "items": 0,
+        "decide": 0
+      },
+      "lessons_in_use": {
+        "items": 0,
+        "decide": 0
+      },
+      "limit": {
+        "items": 0,
+        "decide": 0
+      },
+      "report_rejection": {
+        "items": 0,
+        "decide": 0
+      },
+      "unknown": {
+        "items": 0,
+        "decide": 0
+      },
+      "action": {
+        "items": 0,
+        "decide": 0
+      }
+    },
+    "handled": 0
+  },
+  "command_root": "evidence/auth-preflight",
+  "items": [
+    {
+      "category": "preflight",
+      "priority": "decide",
+      "title": "開跑前檢查未通過：oauth_required",
+      "decision": "處理登入、額度或工具清單後再開跑。",
+      "why_human": "登入與額度只能由人處理，Agent 沒有相關工具；工具清單不符代表執行環境和檢查過的不同。",
+      "evidence": [
+        "3871420e91cc4bbfbcc509f8f780b272-preflight.json：logged_in=False、rate_limited=False、實際工具 5 個、預期 5 個",
+        "3871420e91cc4bbfbcc509f8f780b272-outcome.json：state=oauth_required、exit_code=2"
+      ],
+      "if_no_action": "不會呼叫模型。",
+      "options": [
+        {
+          "choice": "重新登入：`bash scripts/login_hermes.sh --new`",
+          "command": null
+        },
+        {
+          "choice": "等額度重置後再跑",
+          "command": null
+        },
+        {
+          "choice": "工具清單不符：先查 plugin 與 Hermes 版本",
+          "command": null
+        }
+      ],
+      "refs": {},
+      "id": "H1"
+    }
+  ],
+  "fixed_rules": [
+    {
+      "matter": "登入與用量額度",
+      "how": "使用者自己在瀏覽器完成裝置登入。runner 開跑前檢查登入、限流與工具清單，未就緒就以 exit 2 停止、不呼叫模型。Agent 沒有登入或查用量的工具。",
+      "where": "scripts/login_hermes.sh、scripts/run_research.py、src/runner_support.py 的 readiness"
+    },
+    {
+      "matter": "付費",
+      "how": "Agent 沒有付費 API 金鑰或付費工具；搜尋用 Hermes 內建的免金鑰 DDGS。加入付費資料源要改控制器程式，由人授權費用。",
+      "where": "plugin/__init__.py、src/research_core.py"
+    },
+    {
+      "matter": "對外發布或修改網站",
+      "how": "平常的研究只有六個唯讀研究工具：HTTP 只送不帶內容的 GET，research_finish 只把報告寫進研究目錄；沒有 shell、檔案或瀏覽器工具。比較 Hermes 原生學習時另加 Hermes 的 memory 與 skills 工具，只寫 Hermes 自己的儲存。實際工具清單與預期不同時 runner 拒絕開跑。",
+      "where": "src/research_core.py 的 HTTP、src/runner_support.py 的 HERMES_MODES、scripts/run_research.py 的 build_agent"
+    },
+    {
+      "matter": "否決經驗與人工審查",
+      "how": "lesson 只由控制器量測與人工審查產生，模型沒有寫入帳本的工具。人工標註與否決用 feedback.py，要寫審查者與理由；否決後不再自動恢復。",
+      "where": "src/lessons.py 的 Ledger.add_feedback、Ledger.veto，scripts/feedback.py"
+    },
+    {
+      "matter": "研究對象與預算",
+      "how": "操作者開跑時指定網站、關鍵字與 research_fetch 的允許網域；research_offpage 只讀這次搜尋列出的站外網址，每次最多 4 頁。預算寫在控制器，每次工具呼叫都檢查。Agent 沒有修改它們的工具。",
+      "where": "scripts/run_research.py 的 --target、--keyword、--allow-host，src/research_core.py 的 Limits 與 Research.search"
+    }
+  ]
+}

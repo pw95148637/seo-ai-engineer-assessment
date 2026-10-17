@@ -2,19 +2,19 @@
 flowchart TD
  S(["Start：建立 State<br/>iteration = 0<br/>max_iterations = 3"]) --> P
 
- P["Planning<br/>SEO Content Planner<br/>讀 draft、audit、history<br/>產出 title、sections<br/>與 negotiation_note"]
- P -->|"格式驗證通過"| A
+ P["Planning<br/>SEO Content Planner<br/>讀 review、draft、history<br/>產出 title、sections（小標＋要點）、<br/>negotiation_note、<br/>對每則建議 adopt 或 decline"]
+ P -->|"格式驗證通過"| C
 
- A["Audit<br/>YMYL Compliance Auditor<br/>依 policy.json 審核<br/>產出 passed、findings<br/>與 note<br/>每項 finding 含原句、<br/>讀者風險、修訂建議、規則"]
- A -->|"格式驗證通過"| G
+ C["程式檢查（MUST）<br/>兩個指定詞：任何位置<br/>零風險、包贏、只賺不賠、秒出金：<br/>標題與小標<br/>命中寫進 program_findings"]
+ C --> A
 
- G["字面防線（程式）<br/>Auditor 判通過，但標題<br/>或章節仍含兩個指定詞<br/>時改判退回"]
- G --> D
+ A["Audit<br/>YMYL Compliance Auditor<br/>依 CLAIMS、EVIDENCE、LEGAL 審核<br/>findings：每項引用一條 MUST 規則<br/>suggestions：選填建議，最多 2 則<br/>note"]
+ A -->|"格式驗證通過<br/>規則代號必須是 MUST 規則"| D
 
- D{"Decision<br/>條件判定"}
- D -->|"通過"| O(["approved_provisional<br/>輸出最終大綱"])
- D -->|"退回且未達 3 輪<br/>iteration + 1<br/>findings 存於<br/>State.audit 與 history"| P
- D -->|"退回且已達 3 輪"| H(["human_review<br/>停止，不輸出大綱"])
+ D{"Decision（程式）<br/>review.must =<br/>程式命中 ＋ Auditor findings<br/>review.should = suggestions"}
+ D -->|"MUST = 0<br/>（只剩建議也當輪結束）"| O(["approved_provisional<br/>輸出最終大綱<br/>附上未採納、未回覆<br/>與最後一輪的建議"])
+ D -->|"MUST > 0 且未達 3 輪<br/>iteration + 1<br/>review.must 與 review.should<br/>存於 State"| P
+ D -->|"MUST > 0 且已達 3 輪"| H(["human_review<br/>停止，不輸出大綱"])
  D -.->|"僅 immutable 測試案例"| U(["unsatisfiable<br/>兩個硬限制不可兼容<br/>停止，不輸出大綱"])
 
  P -.->|"錯誤"| X(["error<br/>停止，不輸出大綱"])
@@ -29,5 +29,5 @@ flowchart TD
  class O ok
  class H,U,X stop
  class P,A role
- class G,D code
+ class C,D code
  class E note

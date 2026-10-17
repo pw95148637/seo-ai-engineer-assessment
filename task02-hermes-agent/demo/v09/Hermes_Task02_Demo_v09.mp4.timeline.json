@@ -1,0 +1,300 @@
+{
+  "capture": "demo\\v09\\capture",
+  "fps": 12,
+  "chapters": [
+    {
+      "label": "準備",
+      "video_start": 10.0,
+      "real_start": 0.0,
+      "video_end": 11.08,
+      "real_end": 1.08
+    },
+    {
+      "label": "① Memory / Learning：開始前的經驗",
+      "marker": "[1/5]",
+      "video_start": 16.08,
+      "real_start": 1.01,
+      "video_end": 38.17,
+      "real_end": 29.65
+    },
+    {
+      "label": "② Agent 自主研究 ＋ Tool Use",
+      "marker": "[2/5]",
+      "video_start": 43.17,
+      "real_start": 29.57,
+      "video_end": 61.17,
+      "real_end": 47.65
+    },
+    {
+      "label": "② Agent 自主研究 ＋ Tool Use",
+      "marker": "把研究記憶交給模型",
+      "video_start": 61.17,
+      "real_start": 47.58,
+      "video_end": 67.83,
+      "real_end": 58.86
+    },
+    {
+      "label": "② Agent 自主研究 ＋ Tool Use",
+      "marker": "#2 research_evidence",
+      "video_start": 67.83,
+      "real_start": 58.86,
+      "video_end": 73.17,
+      "real_end": 64.19
+    },
+    {
+      "label": "② Agent 自主研究 ＋ Tool Use",
+      "marker": "#5 research_fetch",
+      "video_start": 73.17,
+      "real_start": 64.11,
+      "video_end": 90.42,
+      "real_end": 81.44
+    },
+    {
+      "label": "② Agent 自主研究 ＋ Tool Use",
+      "marker": "#8 research_evidence",
+      "video_start": 90.42,
+      "real_start": 81.37,
+      "video_end": 107.0,
+      "real_end": 105.78
+    },
+    {
+      "label": "② Agent 自主研究 ＋ Tool Use",
+      "marker": "#15 research_offpage",
+      "video_start": 107.0,
+      "real_start": 105.7,
+      "video_end": 118.75,
+      "real_end": 120.72
+    },
+    {
+      "label": "② Agent 自主研究 ＋ Tool Use",
+      "marker": "#17 research_offpage",
+      "video_start": 118.75,
+      "real_start": 120.72,
+      "video_end": 136.83,
+      "real_end": 180.8
+    },
+    {
+      "label": "③ Evidence-based Decision",
+      "marker": "[3/5]",
+      "video_start": 141.83,
+      "real_start": 180.8,
+      "video_end": 170.33,
+      "real_end": 226.7
+    },
+    {
+      "label": "③ Evidence-based Decision",
+      "marker": "模型在研究途中寫下的假設",
+      "video_start": 170.33,
+      "real_start": 226.62,
+      "video_end": 179.33,
+      "real_end": 235.7
+    },
+    {
+      "label": "③ Evidence-based Decision",
+      "marker": "修正判斷（續 2/2）",
+      "video_start": 179.33,
+      "real_start": 235.63,
+      "video_end": 188.33,
+      "real_end": 244.7
+    },
+    {
+      "label": "④ 最終競爭分析與行動建議",
+      "marker": "[4/5]",
+      "video_start": 193.33,
+      "real_start": 244.64,
+      "video_end": 202.33,
+      "real_end": 253.7
+    },
+    {
+      "label": "④ 最終競爭分析與行動建議",
+      "marker": "我們還不知道什麼（續 2/3）",
+      "video_start": 202.33,
+      "real_start": 253.66,
+      "video_end": 211.33,
+      "real_end": 262.7
+    },
+    {
+      "label": "④ 最終競爭分析與行動建議",
+      "marker": "我們還不知道什麼（續 3/3）",
+      "video_start": 211.33,
+      "real_start": 262.67,
+      "video_end": 220.33,
+      "real_end": 271.7
+    },
+    {
+      "label": "④ 最終競爭分析與行動建議",
+      "marker": "[4/5] 行動建議",
+      "video_start": 220.33,
+      "real_start": 271.67,
+      "video_end": 229.42,
+      "real_end": 280.78
+    },
+    {
+      "label": "④ 最終競爭分析與行動建議",
+      "marker": "值得優先採取的競爭行動（續 2/2）",
+      "video_start": 229.42,
+      "real_start": 280.7,
+      "video_end": 238.67,
+      "real_end": 290.03
+    },
+    {
+      "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "marker": "[5/5]",
+      "video_start": 243.67,
+      "real_start": 289.96,
+      "video_end": 252.67,
+      "real_end": 299.03
+    },
+    {
+      "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "marker": "這次表現如何（score_run）（續 2/2）",
+      "video_start": 252.67,
+      "real_start": 298.97,
+      "video_end": 261.67,
+      "real_end": 308.03
+    },
+    {
+      "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "marker": "新發現",
+      "video_start": 261.67,
+      "real_start": 307.98,
+      "video_end": 270.67,
+      "real_end": 317.03
+    },
+    {
+      "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "marker": "run 後帳本變化（續 2/2）",
+      "video_start": 270.67,
+      "real_start": 317.01,
+      "video_end": 279.67,
+      "real_end": 326.03
+    },
+    {
+      "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "marker": "交還人類：研究後要人決定的事",
+      "video_start": 279.67,
+      "real_start": 326.02,
+      "video_end": 288.67,
+      "real_end": 335.03
+    },
+    {
+      "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "marker": "研究後要人決定的事（scripts/handoff_queue.py）（續 2/2）",
+      "video_start": 288.67,
+      "real_start": 335.02,
+      "video_end": 297.92,
+      "real_end": 350.07
+    }
+  ],
+  "speed_intervals": [
+    {
+      "speed": 3,
+      "video_start": 30.08,
+      "real_start": 15.08,
+      "video_end": 33.33,
+      "real_end": 24.81
+    },
+    {
+      "speed": 2,
+      "video_start": 62.67,
+      "real_start": 49.15,
+      "video_end": 67.33,
+      "real_end": 58.36
+    },
+    {
+      "speed": 2,
+      "video_start": 91.92,
+      "real_start": 82.94,
+      "video_end": 95.67,
+      "real_end": 90.4
+    },
+    {
+      "speed": 2,
+      "video_start": 97.25,
+      "real_start": 91.99,
+      "video_end": 99.67,
+      "real_end": 96.69
+    },
+    {
+      "speed": 2,
+      "video_start": 104.75,
+      "real_start": 101.77,
+      "video_end": 106.67,
+      "real_end": 105.45
+    },
+    {
+      "speed": 2,
+      "video_start": 115.5,
+      "real_start": 114.28,
+      "video_end": 118.75,
+      "real_end": 120.72
+    },
+    {
+      "speed": 5,
+      "video_start": 126.33,
+      "real_start": 128.3,
+      "video_end": 136.83,
+      "real_end": 180.8
+    },
+    {
+      "speed": 4,
+      "video_start": 158.42,
+      "real_start": 197.39,
+      "video_end": 164.25,
+      "real_end": 220.61
+    },
+    {
+      "speed": 2,
+      "video_start": 290.17,
+      "real_start": 336.53,
+      "video_end": 294.0,
+      "real_end": 344.04
+    },
+    {
+      "speed": 2,
+      "video_start": 295.58,
+      "real_start": 345.63,
+      "video_end": 297.92,
+      "real_end": 350.07
+    }
+  ],
+  "cards": [
+    {
+      "label": "title",
+      "video_start": 0.0,
+      "video_end": 10.0
+    },
+    {
+      "label": "① Memory / Learning：開始前的經驗",
+      "video_start": 11.08,
+      "video_end": 16.08
+    },
+    {
+      "label": "② Agent 自主研究 ＋ Tool Use",
+      "video_start": 38.17,
+      "video_end": 43.17
+    },
+    {
+      "label": "③ Evidence-based Decision",
+      "video_start": 136.83,
+      "video_end": 141.83
+    },
+    {
+      "label": "④ 最終競爭分析與行動建議",
+      "video_start": 188.33,
+      "video_end": 193.33
+    },
+    {
+      "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "video_start": 238.67,
+      "video_end": 243.67
+    },
+    {
+      "label": "outro",
+      "video_start": 300.92,
+      "video_end": 314.92
+    }
+  ],
+  "video_seconds": 314.92,
+  "real_seconds": 350.07
+}

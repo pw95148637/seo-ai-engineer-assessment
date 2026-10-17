@@ -1,0 +1,392 @@
+[
+  {
+    "id": 446,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "start",
+    "data": "{\"mode\": \"memory\", \"target\": \"https://2030.tw\", \"keywords\": [\"娛樂城\", \"3A娛樂城\"], \"limits\": {\"requests\": 30, \"calls\": 40, \"bytes\": 2000000, \"seconds\": 900, \"timeout\": 20, \"interval\": 2, \"redirects\": 3, \"offpage\": 4, \"controller_requests\": 10}, \"learning\": true, \"required_sections\": [\"on_page\", \"off_page\"]}"
+  },
+  {
+    "id": 447,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_status\", \"args\": {}}"
+  },
+  {
+    "id": 448,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/robots.txt\", \"number\": 1, \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 449,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"8677f4808d4c403d915d61f70db8ab77\", \"url\": \"https://2030.tw/robots.txt\", \"status\": 200, \"sha256\": \"c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a\", \"actor\": \"controller\", \"method\": \"direct_http\", \"time\": \"2026-10-17T09:07:47.508017+00:00\", \"headers\": {\"content-type\": \"text/plain; charset=utf-8\", \"last-modified\": \"Sat, 17 Oct 2026 08:28:19 GMT\"}}"
+  },
+  {
+    "id": 450,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"number\": 2, \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 451,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"efa940bbfbe04b1db98c20638383d472\", \"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"status\": 200, \"sha256\": \"d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db\", \"actor\": \"controller\", \"method\": \"direct_http\", \"time\": \"2026-10-17T09:07:49.618682+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Fri, 16 Oct 2026 19:22:08 GMT\"}}"
+  },
+  {
+    "id": 452,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"efa940bbfbe04b1db98c20638383d472\", \"kind\": \"html\", \"links_count\": 67, \"purpose\": \"controller re-verification of a stored discovery lesson\", \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 453,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"number\": 3, \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 454,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"19fa4ab8c892460da2bde0467a902962\", \"url\": \"https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"status\": 200, \"sha256\": \"dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea\", \"actor\": \"controller\", \"method\": \"direct_http\", \"time\": \"2026-10-17T09:07:51.952140+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 06:24:40 GMT\"}}"
+  },
+  {
+    "id": 455,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"19fa4ab8c892460da2bde0467a902962\", \"kind\": \"html\", \"links_count\": 68, \"purpose\": \"controller re-verification of a stored discovery lesson\", \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 456,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "lessons_presented",
+    "data": "{\"time\": \"2026-10-17T09:07:52.065969+00:00\", \"lessons\": [{\"id\": \"08856145cf1e\", \"key\": \"discovery|2030.tw|3a娛樂城\", \"applies\": \"this_host\", \"expires\": \"2026-10-24T08:59:41.587038+00:00\", \"verification\": {\"result\": \"ok\", \"reason\": \"HTTP 200 and title/H1 match; read it with research_evidence before citing\", \"evidence_id\": \"efa940bbfbe04b1db98c20638383d472\"}}, {\"id\": \"d94869ffa2dc\", \"key\": \"discovery|2030.tw|娛樂城\", \"applies\": \"this_host\", \"expires\": \"2026-10-24T08:59:43.421898+00:00\", \"verification\": {\"result\": \"ok\", \"reason\": \"HTTP 200 and title/H1 match; read it with research_evidence before citing\", \"evidence_id\": \"19fa4ab8c892460da2bde0467a902962\"}}, {\"id\": \"38b7cba20063\", \"key\": \"feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1\", \"applies\": \"general\", \"expires\": null, \"verification\": null}]}"
+  },
+  {
+    "id": 457,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/at99%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"number\": 4, \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 458,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"68c1c2e0ed4f41188aaf9f5e766b3c6d\", \"url\": \"https://2030.tw/wordcup/at99%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"status\": 200, \"sha256\": \"9e74d83c6a1270c9c032915765d6764cb865043e9f3729b3a958c080e4f61ada\", \"actor\": \"controller\", \"method\": \"direct_http\", \"time\": \"2026-10-17T09:07:53.621648+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 09:00:05 GMT\"}}"
+  },
+  {
+    "id": 459,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"68c1c2e0ed4f41188aaf9f5e766b3c6d\", \"kind\": \"html\", \"links_count\": 68, \"purpose\": \"controller re-verification of stored research memory\", \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 460,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/\", \"number\": 5, \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 461,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"269a5e1b1f26487d99ac1ebc1c68870b\", \"url\": \"https://2030.tw/\", \"status\": 200, \"sha256\": \"63eef6045318ca42304443735bcb006805f3adcba12ea024fdaef7227d45298d\", \"actor\": \"controller\", \"method\": \"direct_http\", \"time\": \"2026-10-17T09:07:55.863545+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 07:10:36 GMT\"}}"
+  },
+  {
+    "id": 462,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"269a5e1b1f26487d99ac1ebc1c68870b\", \"kind\": \"html\", \"links_count\": 136, \"purpose\": \"controller re-verification of stored research memory\", \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 463,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/\", \"number\": 6, \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 464,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"e28b2450dc5a4b2199cd8ee4e4b35ca6\", \"url\": \"https://2030.tw/wordcup/\", \"status\": 200, \"sha256\": \"78123e000542102429c1e62b58f7273a7b2caed166b19e619b9410373cb5ea6c\", \"actor\": \"controller\", \"method\": \"direct_http\", \"time\": \"2026-10-17T09:07:57.624149+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 06:16:15 GMT\"}}"
+  },
+  {
+    "id": 465,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"e28b2450dc5a4b2199cd8ee4e4b35ca6\", \"kind\": \"html\", \"links_count\": 110, \"purpose\": \"controller re-verification of stored research memory\", \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 466,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E7%BC%BA%E9%BB%9E\", \"number\": 7, \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 467,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"059628c2cc6542259214be19592fd6fb\", \"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E7%BC%BA%E9%BB%9E\", \"status\": 200, \"sha256\": \"dc53ee9ef75b94a7ff4dd1acdd9f98bcc9826944189b25ced3e423842e7117cf\", \"actor\": \"controller\", \"method\": \"direct_http\", \"time\": \"2026-10-17T09:07:59.648450+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 09:07:59 GMT\"}}"
+  },
+  {
+    "id": 468,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"059628c2cc6542259214be19592fd6fb\", \"kind\": \"html\", \"links_count\": 68, \"purpose\": \"controller re-verification of stored research memory\", \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 469,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E9%9B%BB%E5%AD%90%E9%81%8A%E6%88%B2%E6%9C%89%E5%93%AA%E4%BA%9B\", \"number\": 8, \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 470,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"5be89f953dc1499d832bce3be39988cc\", \"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E9%9B%BB%E5%AD%90%E9%81%8A%E6%88%B2%E6%9C%89%E5%93%AA%E4%BA%9B\", \"status\": 200, \"sha256\": \"cfe1d6a57295e77df6d497b2657298d75339a223389afbb89214142d78f651d9\", \"actor\": \"controller\", \"method\": \"direct_http\", \"time\": \"2026-10-17T09:08:01.600176+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 08:57:56 GMT\"}}"
+  },
+  {
+    "id": 471,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"5be89f953dc1499d832bce3be39988cc\", \"kind\": \"html\", \"links_count\": 68, \"purpose\": \"controller re-verification of stored research memory\", \"actor\": \"controller\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 472,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "memory_presented",
+    "data": "{\"time\": \"2026-10-17T09:08:01.874052+00:00\", \"findings\": [{\"id\": \"53bd99935243\", \"evidence_ids\": [\"269a5e1b1f26487d99ac1ebc1c68870b\", \"e28b2450dc5a4b2199cd8ee4e4b35ca6\"]}, {\"id\": \"9ba0aa1d2c15\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\"]}, {\"id\": \"e35ab0e0d7c1\", \"evidence_ids\": [\"68c1c2e0ed4f41188aaf9f5e766b3c6d\", \"efa940bbfbe04b1db98c20638383d472\", \"059628c2cc6542259214be19592fd6fb\", \"5be89f953dc1499d832bce3be39988cc\"]}, {\"id\": \"f205f28316aa\", \"evidence_ids\": [\"19fa4ab8c892460da2bde0467a902962\", \"efa940bbfbe04b1db98c20638383d472\"]}, {\"id\": \"9475e30a7d85\", \"evidence_ids\": [\"059628c2cc6542259214be19592fd6fb\", \"19fa4ab8c892460da2bde0467a902962\", \"5be89f953dc1499d832bce3be39988cc\"]}, {\"id\": \"ec1c85563a41\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\", \"68c1c2e0ed4f41188aaf9f5e766b3c6d\"]}, {\"id\": \"8928baeafb18\", \"evidence_ids\": [\"19fa4ab8c892460da2bde0467a902962\", \"efa940bbfbe04b1db98c20638383d472\", \"68c1c2e0ed4f41188aaf9f5e766b3c6d\"]}, {\"id\": \"171c8ac46328\", \"evidence_ids\": [\"269a5e1b1f26487d99ac1ebc1c68870b\", \"e28b2450dc5a4b2199cd8ee4e4b35ca6\", \"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\", \"68c1c2e0ed4f41188aaf9f5e766b3c6d\"]}], \"recheck\": [], \"revoked\": [], \"candidates\": [\"https://2030.tw/wordcup/%E5%A4%A7%E8%80%81%E7%88%BA%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"https://2030.tw/wordcup/%E5%AE%A2%E8%90%8A%E6%9F%8F%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"https://2030.tw/wordcup/%E5%AF%8C%E6%9C%89%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"https://2030.tw/wordcup/%E6%90%96%E9%8C%A2%E6%A8%B9%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"https://2030.tw/wordcup/%E6%98%9F%E8%80%80%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"https://2030.tw/wordcup/%E8%80%81%E8%99%8E%E5%9F%8E%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"https://2030.tw/wordcup/%E8%87%B3%E5%B0%8A%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"https://2030.tw/wordcup/avbet%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"https://2030.tw/wordcup/cclive%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"https://2030.tw/wordcup/gz%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"https://2030.tw/wordcup/ls%E9%9A%86%E7%9B%9B%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"https://2030.tw/wordcup/tu%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%84%B2%E5%80%BC\"], \"unknowns\": [\"u1\", \"u2\", \"u3\", \"u4\", \"u5\", \"u6\", \"u7\"], \"checked_pages\": 7, \"controller_requests\": 8}"
+  },
+  {
+    "id": 473,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_evidence\", \"args\": {\"evidence_id\": \"efa940bbfbe04b1db98c20638383d472\"}}"
+  },
+  {
+    "id": 474,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_evidence\", \"args\": {\"evidence_id\": \"19fa4ab8c892460da2bde0467a902962\"}}"
+  },
+  {
+    "id": 475,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"2030.tw\\\" -site:2030.tw\"}}"
+  },
+  {
+    "id": 476,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"2030.tw\\\" -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 1}"
+  },
+  {
+    "id": 477,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"546bf71e401046aeb2b5c6c61a8a3e48\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-17T09:08:14.815553+00:00\", \"query\": \"\\\"2030.tw\\\" -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 5, \"outcome\": \"ok\"}"
+  },
+  {
+    "id": 478,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://2030.tw/wordcup/%E6%90%96%E9%8C%A2%E6%A8%B9%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"purpose\": \"抽查先前未讀品牌頁，查證是否沿用3A框架與相同CTA，並尋找獨有資料、來源或風險揭露以反駁全為同質內容的假設。\"}}"
+  },
+  {
+    "id": 479,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/%E6%90%96%E9%8C%A2%E6%A8%B9%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"number\": 1, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 480,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"b461f2b2033c4343b04301c1a9066117\", \"url\": \"https://2030.tw/wordcup/%E6%90%96%E9%8C%A2%E6%A8%B9%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"status\": 200, \"sha256\": \"af71325a505eff87cd6fab84e78e483bf054ad565f836818ddd5e4e44094292c\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-17T09:08:15.295679+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 09:08:15 GMT\"}}"
+  },
+  {
+    "id": 481,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"b461f2b2033c4343b04301c1a9066117\", \"kind\": \"html\", \"links_count\": 68, \"purpose\": \"抽查先前未讀品牌頁，查證是否沿用3A框架與相同CTA，並尋找獨有資料、來源或風險揭露以反駁全為同質內容的假設。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 482,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"2030.tw\\\" \\\"娛樂城\\\" -site:2030.tw\"}}"
+  },
+  {
+    "id": 483,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"2030.tw\\\" \\\"娛樂城\\\" -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 2}"
+  },
+  {
+    "id": 484,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"3fa553e205e846a58d8e5f64810ba0bb\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-17T09:08:26.825761+00:00\", \"query\": \"\\\"2030.tw\\\" \\\"娛樂城\\\" -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 0, \"outcome\": \"no_results\"}"
+  },
+  {
+    "id": 485,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"2030玩運彩\\\" -site:2030.tw\"}}"
+  },
+  {
+    "id": 486,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"2030玩運彩\\\" -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 3}"
+  },
+  {
+    "id": 487,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"0f060074a48944359d1fc78ec17b2d16\", \"status\": 503, \"method\": \"search_index\", \"time\": \"2026-10-17T09:08:32.570191+00:00\", \"query\": \"\\\"2030玩運彩\\\" -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 0, \"outcome\": \"no_results\"}"
+  },
+  {
+    "id": 488,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_evidence\", \"args\": {\"evidence_id\": \"269a5e1b1f26487d99ac1ebc1c68870b\"}}"
+  },
+  {
+    "id": 489,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_evidence\", \"args\": {\"evidence_id\": \"e28b2450dc5a4b2199cd8ee4e4b35ca6\"}}"
+  },
+  {
+    "id": 490,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E8%80%81%E8%99%8E%E6%A9%9F%E9%80%8158888\", \"purpose\": \"沿新品牌頁發現的3A優惠長尾，檢查是否實際回答58888獎金、流水及提領條款，或僅重用品牌評測；找可核對來源作反例。\"}}"
+  },
+  {
+    "id": 491,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E8%80%81%E8%99%8E%E6%A9%9F%E9%80%8158888\", \"number\": 2, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 492,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"80c2caf0ab674ed184c1444cc573902a\", \"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E8%80%81%E8%99%8E%E6%A9%9F%E9%80%8158888\", \"status\": 200, \"sha256\": \"03b426f4076c28681de5d5ac25bf3b8f1c07e3832c7d2aaa8c02420f1143b5d2\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-17T09:08:32.922034+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 09:08:32 GMT\"}}"
+  },
+  {
+    "id": 493,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"80c2caf0ab674ed184c1444cc573902a\", \"kind\": \"html\", \"links_count\": 68, \"purpose\": \"沿新品牌頁發現的3A優惠長尾，檢查是否實際回答58888獎金、流水及提領條款，或僅重用品牌評測；找可核對來源作反例。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 494,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"https://2030.tw/\\\" -股票 -彰源 -site:2030.tw\"}}"
+  },
+  {
+    "id": 495,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"https://2030.tw/\\\" -股票 -彰源 -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 4}"
+  },
+  {
+    "id": 496,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"6672c472815f49b78e135d4e36a5e342\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-17T09:08:45.634997+00:00\", \"query\": \"\\\"https://2030.tw/\\\" -股票 -彰源 -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 5, \"outcome\": \"ok\"}"
+  },
+  {
+    "id": 497,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"2030\\\" \\\"玩運彩瘋世足\\\" -site:2030.tw\"}}"
+  },
+  {
+    "id": 498,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"2030\\\" \\\"玩運彩瘋世足\\\" -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 5}"
+  },
+  {
+    "id": 499,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"debe831a2e3d4d98a201809d00984136\", \"status\": 503, \"method\": \"search_index\", \"time\": \"2026-10-17T09:08:52.070960+00:00\", \"query\": \"\\\"2030\\\" \\\"玩運彩瘋世足\\\" -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 0, \"outcome\": \"no_results\"}"
+  },
+  {
+    "id": 500,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_evidence\", \"args\": {\"evidence_id\": \"059628c2cc6542259214be19592fd6fb\"}}"
+  },
+  {
+    "id": 501,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_offpage\", \"args\": {\"url\": \"https://esg.gvm.com.tw/article/20155\", \"purpose\": \"查核網域消歧搜尋命中的中文2030政策頁是否真的連到2030.tw或提及現品牌；若只是年份同名，排除為入站來源，不由摘要推定外鏈。\", \"mention\": \"2030玩運彩\"}}"
+  },
+  {
+    "id": 502,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://esg.gvm.com.tw/robots.txt\", \"number\": 3, \"actor\": \"model\", \"channel\": \"offpage\"}"
+  },
+  {
+    "id": 503,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"dab41013fb0641748e4d31c333943079\", \"url\": \"https://esg.gvm.com.tw/robots.txt\", \"status\": 200, \"sha256\": \"9311bab30d8b5d05f5fa5563a251b8c96b8470873bb77c62d3d17c146d7acab7\", \"actor\": \"model\", \"method\": \"offpage_http\", \"time\": \"2026-10-17T09:08:57.584062+00:00\", \"headers\": {\"content-type\": \"text/plain; charset=utf-8\"}}"
+  },
+  {
+    "id": 504,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "request",
+    "data": "{\"url\": \"https://esg.gvm.com.tw/article/20155\", \"number\": 4, \"actor\": \"model\", \"channel\": \"offpage\"}"
+  },
+  {
+    "id": 505,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"58233fb195e24e8bb729762b72647784\", \"url\": \"https://esg.gvm.com.tw/article/20155\", \"status\": 200, \"sha256\": \"ade7afa3653cbf141b30a34f5e0250c300fa3488fbabf7a8d5fabbcefa8d8b2a\", \"actor\": \"model\", \"method\": \"offpage_http\", \"time\": \"2026-10-17T09:08:59.581400+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\"}}"
+  },
+  {
+    "id": 506,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"58233fb195e24e8bb729762b72647784\", \"kind\": \"html\", \"links_count\": 74, \"purpose\": \"查核網域消歧搜尋命中的中文2030政策頁是否真的連到2030.tw或提及現品牌；若只是年份同名，排除為入站來源，不由摘要推定外鏈。\", \"actor\": \"model\", \"channel\": \"offpage\"}"
+  },
+  {
+    "id": 507,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "offpage",
+    "data": "{\"evidence_id\": \"58233fb195e24e8bb729762b72647784\", \"url\": \"https://esg.gvm.com.tw/article/20155\", \"links_to_target\": 0, \"host_mentions\": 0}"
+  },
+  {
+    "id": 508,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_finish\", \"args\": {\"report\": {\"claims\": [{\"text\": \"首頁以MLB/NBA、世界盃與運彩定位，導覽有線上娛樂城推薦；/wordcup/目錄列出3A、娛樂城與各品牌，分類品牌、評價、優惠、玩法、安全出金。2502篇及53頁是站方顯示值，非本研究核實索引量。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"269a5e1b1f26487d99ac1ebc1c68870b\", \"e28b2450dc5a4b2199cd8ee4e4b35ca6\"], \"topic\": \"architecture\"}, {\"text\": \"娛樂城與3A核心頁各有獨立URL、含詞title/H1、自指canonical、index/follow、Article與五題FAQPage。這些設定不證明索引、排名或FAQ搜尋呈現。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\"], \"topic\": \"metadata\"}, {\"text\": \"娛樂城、3A與新抽查搖錢樹頁共用平台特色、遊戲、出金、註冊、優惠、客服框架；58888長尾改用手機、體育、百家樂三節與三題FAQ。因此有模板化特徵，但不能說全部逐字相同或全站只有一種模板。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\", \"b461f2b2033c4343b04301c1a9066117\", \"80c2caf0ab674ed184c1444cc573902a\"], \"topic\": \"content_templates\"}, {\"text\": \"58888頁將整串搜尋詞當平台名稱，正文未解釋58888領取資格、流水、期限或提領上限，也未附對應活動條款來源；娛樂城泛詞正文未提供具名平台比較表。這是已讀頁面的意圖滿足缺口，不等於所有頁面皆無用。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"80c2caf0ab674ed184c1444cc573902a\", \"19fa4ab8c892460da2bde0467a902962\"], \"topic\": \"intent_gap\"}, {\"text\": \"3A核心頁自述實玩數月、半小時至一小時出金、最低入金1000元，但可見正文未附對應實測紀錄或條款來源。核心頁可見署名2030編輯部，Article作者為站名，不能當成已核實具名專家背書。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\"], \"topic\": \"evidence_quality\"}, {\"text\": \"反證：3A缺點頁確有手機卡頓、APP更新不足、KYC一至兩天、高流水與客服轉交等待的敘述；泛詞頁提醒活動洗碼量和提領限制，不能稱完全沒有風險揭露。這些仍是競爭者敘述，不是平台狀況經本研究驗證。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"059628c2cc6542259214be19592fd6fb\", \"19fa4ab8c892460da2bde0467a902962\"], \"topic\": \"counterevidence\"}, {\"text\": \"核心頁、搖錢樹與58888頁的結構化資料混入相同MLB NewsArticle及指向MLB URL的WebPage。3A可見更新2026-09-24，而Article dateModified為2026-09-29。可指出語意與日期一致性缺口，不能宣稱造成排名損失。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\", \"b461f2b2033c4343b04301c1a9066117\", \"80c2caf0ab674ed184c1444cc573902a\"], \"topic\": \"structured_data\"}, {\"text\": \"娛樂城、3A及搖錢樹主要註冊CTA指向https://don0911.3a1788.bet/?st=wg2030，58888頁則為同主機/?st=go99950，工具回傳nofollow，圖片alt為WG娛樂城；另有wg1888.com橫幅出站。這些是出站，不是入站；最終落地、品牌歸屬與分潤契約未知。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\", \"b461f2b2033c4343b04301c1a9066117\", \"80c2caf0ab674ed184c1444cc573902a\"], \"topic\": \"outbound_conversion\"}, {\"text\": \"樣本支持體育入口、泛詞/品牌/問題與優惠長尾覆蓋、相關推薦內鏈、集中註冊主機導流的策略推論；不證明其成功。比起仿造頁數，我方更可評估精準意圖與可查證資料的差異化。\", \"kind\": \"inference\", \"section\": \"on_page\", \"evidence_ids\": [\"269a5e1b1f26487d99ac1ebc1c68870b\", \"e28b2450dc5a4b2199cd8ee4e4b35ca6\", \"efa940bbfbe04b1db98c20638383d472\", \"80c2caf0ab674ed184c1444cc573902a\"], \"topic\": \"strategy\"}, {\"text\": \"已知站外：直接讀取搜尋命中的ESG遠見2030減碳頁，未發現指向2030.tw的連結、網域文字或2030玩運彩提及。因此該頁不是本輪確認的入站來源，無可記錄的目標錨文字、rel或品牌上下文。\", \"kind\": \"observation\", \"section\": \"off_page\", \"evidence_ids\": [\"58233fb195e24e8bb729762b72647784\"], \"topic\": \"verified_candidate\"}, {\"text\": \"站外推論：網域搜尋出現彰源2030.TW股票與2030政策雜訊，實讀政策候選亦未連到本站；此批結果不足以支持競爭者有外鏈建設、媒體背書或特定錨文字策略。不能把同名命中當成品牌聲量，也不能由單頁反推全網沒有外鏈。\", \"kind\": \"inference\", \"section\": \"off_page\", \"evidence_ids\": [\"546bf71e401046aeb2b5c6c61a8a3e48\", \"6672c472815f49b78e135d4e36a5e342\", \"58233fb195e24e8bb729762b72647784\"], \"topic\": \"disambiguation\"}, {\"text\": \"站外未知：本輪未確認正向品牌站外提及或有效入站來源；完整backlinks、錨文字與rel分布、取得方式、付費或PBN關係、歷史權重及排名貢獻均未知。搜尋索引不是完整外鏈索引。\", \"kind\": \"unknown\", \"section\": \"off_page\", \"evidence_ids\": [], \"topic\": \"backlink_limits\"}, {\"text\": \"沒有競爭者私有Search Console或分析資料，未驗證其排名、流量、CTR、轉換、完整索引、CWV或全站重複比例；我方URL、基線、合規條件與資源亦未提供。\", \"kind\": \"unknown\", \"section\": \"other\", \"evidence_ids\": [], \"topic\": \"measurement_limits\"}], \"actions\": [{\"action\": \"P0：我方先建立基線與合規門檻。確認可服務地區、年齡/責任博彩、商業揭露；若有我方授權帳號，用自己的GSC與分析建立泛詞/3A/問題詞分組及轉換事件，固定地區裝置追蹤公開SERP。成本低至中，品質價值高。\", \"reason\": \"競爭者沒有可用私有成效資料，我方也尚未受檢；先建立衡量方式，避免以競爭者頁數或主觀推測替代成效。\"}, {\"action\": \"P1：我方先做一個娛樂城選擇與風險比較主頁及一個3A證據型品牌頁；每項數值附來源、採樣日期、條件與未知標籤，區分平台自述和獨立驗證，公開編輯責任、方法與利益關係。成本中，品質價值高。\", \"reason\": \"泛詞樣本欠缺具名比較，3A實測敘述缺乏對應紀錄；可查證性比口語化經驗宣稱更值得優先評估。不得把HTTPS/KYC當作合法、一定出金或營運安全保證。\"}, {\"action\": \"P1：我方以58888、出金與缺點等少量意圖做試點；58888只在可核對活動存在時列資格、期限、流水計算基礎、提領上限與條款URL，無法確認就明示，沒有獨立意圖的近義頁合併。成本中，品質價值高。\", \"reason\": \"58888樣本直接暴露問題詞與正文脫節，但缺點頁又確實有回答風險；機會在補足證據與答案，不是機械式批量擴頁。\"}, {\"action\": \"P1：稽核我方title/H1、canonical、內鏈、CTA品牌對應與JSON-LD；只保留符合當頁的實體、URL與日期，FAQ以可見問答為準，商業連結按實際關係標示。驗收用公開頁與解析器，不承諾富摘要。成本低至中。\", \"reason\": \"競爭者樣本混入MLB資料、日期不一致與多品牌集中CTA，適合轉成我方檢查清單，並非診斷我方也有同樣缺陷。\"}, {\"action\": \"P2：我方先產出有方法及來源的優惠條款風險資料或可引用研究，再向主題相關媒體與消費者教育作者精準提案；不買排名連結、不做PBN或假論壇口碑。每個取得連結讀回來源頁，記URL、錨文字、rel、上下文與轉介品質。成本中至高，品質看來源相關性與編輯獨立性。\", \"reason\": \"本輪沒有可複製的競爭者入站名單，不能宣稱其靠買鏈成功；站外資源應以可驗證引用與合規為條件，而非外鏈總數。\"}, {\"action\": \"P2：我方試點以4–8週作觀察窗而非成效承諾，檢查自有GSC索引/查詢群曝光點擊、互相競爭頁與合規轉換；有基線改善才擴大，外鏈研究下輪換用其他公開索引或合法可得的第三方外鏈資料逐頁驗證。\", \"reason\": \"將品質、成本與實際成效分開衡量；本輪五次搜尋額度已用完，繼續在同一批雜訊中擴抓沒有明確價值。\"}], \"unknowns\": [\"未確認競爭者有效入站來源與正向站外品牌提及；完整外鏈圖與排名貢獻不可由本輪推定。\", \"競爭者流量、排名、CTR、轉換、完整索引、CWV與全站內容重複比例未知。\", \"平台安全、合法性、出金、優惠條件及CTA最終落地與契約未驗證。\", \"我方網址、合規條件、基線、預算與人力未提供，行動與成本屬條件式建議。\"]}}}"
+  },
+  {
+    "id": 509,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "report",
+    "data": "{\"claims\": [{\"text\": \"首頁以MLB/NBA、世界盃與運彩定位，導覽有線上娛樂城推薦；/wordcup/目錄列出3A、娛樂城與各品牌，分類品牌、評價、優惠、玩法、安全出金。2502篇及53頁是站方顯示值，非本研究核實索引量。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"269a5e1b1f26487d99ac1ebc1c68870b\", \"e28b2450dc5a4b2199cd8ee4e4b35ca6\"], \"topic\": \"architecture\"}, {\"text\": \"娛樂城與3A核心頁各有獨立URL、含詞title/H1、自指canonical、index/follow、Article與五題FAQPage。這些設定不證明索引、排名或FAQ搜尋呈現。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\"], \"topic\": \"metadata\"}, {\"text\": \"娛樂城、3A與新抽查搖錢樹頁共用平台特色、遊戲、出金、註冊、優惠、客服框架；58888長尾改用手機、體育、百家樂三節與三題FAQ。因此有模板化特徵，但不能說全部逐字相同或全站只有一種模板。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\", \"b461f2b2033c4343b04301c1a9066117\", \"80c2caf0ab674ed184c1444cc573902a\"], \"topic\": \"content_templates\"}, {\"text\": \"58888頁將整串搜尋詞當平台名稱，正文未解釋58888領取資格、流水、期限或提領上限，也未附對應活動條款來源；娛樂城泛詞正文未提供具名平台比較表。這是已讀頁面的意圖滿足缺口，不等於所有頁面皆無用。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"80c2caf0ab674ed184c1444cc573902a\", \"19fa4ab8c892460da2bde0467a902962\"], \"topic\": \"intent_gap\"}, {\"text\": \"3A核心頁自述實玩數月、半小時至一小時出金、最低入金1000元，但可見正文未附對應實測紀錄或條款來源。核心頁可見署名2030編輯部，Article作者為站名，不能當成已核實具名專家背書。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\"], \"topic\": \"evidence_quality\"}, {\"text\": \"反證：3A缺點頁確有手機卡頓、APP更新不足、KYC一至兩天、高流水與客服轉交等待的敘述；泛詞頁提醒活動洗碼量和提領限制，不能稱完全沒有風險揭露。這些仍是競爭者敘述，不是平台狀況經本研究驗證。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"059628c2cc6542259214be19592fd6fb\", \"19fa4ab8c892460da2bde0467a902962\"], \"topic\": \"counterevidence\"}, {\"text\": \"核心頁、搖錢樹與58888頁的結構化資料混入相同MLB NewsArticle及指向MLB URL的WebPage。3A可見更新2026-09-24，而Article dateModified為2026-09-29。可指出語意與日期一致性缺口，不能宣稱造成排名損失。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\", \"b461f2b2033c4343b04301c1a9066117\", \"80c2caf0ab674ed184c1444cc573902a\"], \"topic\": \"structured_data\"}, {\"text\": \"娛樂城、3A及搖錢樹主要註冊CTA指向https://don0911.3a1788.bet/?st=wg2030，58888頁則為同主機/?st=go99950，工具回傳nofollow，圖片alt為WG娛樂城；另有wg1888.com橫幅出站。這些是出站，不是入站；最終落地、品牌歸屬與分潤契約未知。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"efa940bbfbe04b1db98c20638383d472\", \"19fa4ab8c892460da2bde0467a902962\", \"b461f2b2033c4343b04301c1a9066117\", \"80c2caf0ab674ed184c1444cc573902a\"], \"topic\": \"outbound_conversion\"}, {\"text\": \"樣本支持體育入口、泛詞/品牌/問題與優惠長尾覆蓋、相關推薦內鏈、集中註冊主機導流的策略推論；不證明其成功。比起仿造頁數，我方更可評估精準意圖與可查證資料的差異化。\", \"kind\": \"inference\", \"section\": \"on_page\", \"evidence_ids\": [\"269a5e1b1f26487d99ac1ebc1c68870b\", \"e28b2450dc5a4b2199cd8ee4e4b35ca6\", \"efa940bbfbe04b1db98c20638383d472\", \"80c2caf0ab674ed184c1444cc573902a\"], \"topic\": \"strategy\"}, {\"text\": \"已知站外：直接讀取搜尋命中的ESG遠見2030減碳頁，未發現指向2030.tw的連結、網域文字或2030玩運彩提及。因此該頁不是本輪確認的入站來源，無可記錄的目標錨文字、rel或品牌上下文。\", \"kind\": \"observation\", \"section\": \"off_page\", \"evidence_ids\": [\"58233fb195e24e8bb729762b72647784\"], \"topic\": \"verified_candidate\"}, {\"text\": \"站外推論：網域搜尋出現彰源2030.TW股票與2030政策雜訊，實讀政策候選亦未連到本站；此批結果不足以支持競爭者有外鏈建設、媒體背書或特定錨文字策略。不能把同名命中當成品牌聲量，也不能由單頁反推全網沒有外鏈。\", \"kind\": \"inference\", \"section\": \"off_page\", \"evidence_ids\": [\"546bf71e401046aeb2b5c6c61a8a3e48\", \"6672c472815f49b78e135d4e36a5e342\", \"58233fb195e24e8bb729762b72647784\"], \"topic\": \"disambiguation\"}, {\"text\": \"站外未知：本輪未確認正向品牌站外提及或有效入站來源；完整backlinks、錨文字與rel分布、取得方式、付費或PBN關係、歷史權重及排名貢獻均未知。搜尋索引不是完整外鏈索引。\", \"kind\": \"unknown\", \"section\": \"off_page\", \"evidence_ids\": [], \"topic\": \"backlink_limits\"}, {\"text\": \"沒有競爭者私有Search Console或分析資料，未驗證其排名、流量、CTR、轉換、完整索引、CWV或全站重複比例；我方URL、基線、合規條件與資源亦未提供。\", \"kind\": \"unknown\", \"section\": \"other\", \"evidence_ids\": [], \"topic\": \"measurement_limits\"}], \"actions\": [{\"action\": \"P0：我方先建立基線與合規門檻。確認可服務地區、年齡/責任博彩、商業揭露；若有我方授權帳號，用自己的GSC與分析建立泛詞/3A/問題詞分組及轉換事件，固定地區裝置追蹤公開SERP。成本低至中，品質價值高。\", \"reason\": \"競爭者沒有可用私有成效資料，我方也尚未受檢；先建立衡量方式，避免以競爭者頁數或主觀推測替代成效。\"}, {\"action\": \"P1：我方先做一個娛樂城選擇與風險比較主頁及一個3A證據型品牌頁；每項數值附來源、採樣日期、條件與未知標籤，區分平台自述和獨立驗證，公開編輯責任、方法與利益關係。成本中，品質價值高。\", \"reason\": \"泛詞樣本欠缺具名比較，3A實測敘述缺乏對應紀錄；可查證性比口語化經驗宣稱更值得優先評估。不得把HTTPS/KYC當作合法、一定出金或營運安全保證。\"}, {\"action\": \"P1：我方以58888、出金與缺點等少量意圖做試點；58888只在可核對活動存在時列資格、期限、流水計算基礎、提領上限與條款URL，無法確認就明示，沒有獨立意圖的近義頁合併。成本中，品質價值高。\", \"reason\": \"58888樣本直接暴露問題詞與正文脫節，但缺點頁又確實有回答風險；機會在補足證據與答案，不是機械式批量擴頁。\"}, {\"action\": \"P1：稽核我方title/H1、canonical、內鏈、CTA品牌對應與JSON-LD；只保留符合當頁的實體、URL與日期，FAQ以可見問答為準，商業連結按實際關係標示。驗收用公開頁與解析器，不承諾富摘要。成本低至中。\", \"reason\": \"競爭者樣本混入MLB資料、日期不一致與多品牌集中CTA，適合轉成我方檢查清單，並非診斷我方也有同樣缺陷。\"}, {\"action\": \"P2：我方先產出有方法及來源的優惠條款風險資料或可引用研究，再向主題相關媒體與消費者教育作者精準提案；不買排名連結、不做PBN或假論壇口碑。每個取得連結讀回來源頁，記URL、錨文字、rel、上下文與轉介品質。成本中至高，品質看來源相關性與編輯獨立性。\", \"reason\": \"本輪沒有可複製的競爭者入站名單，不能宣稱其靠買鏈成功；站外資源應以可驗證引用與合規為條件，而非外鏈總數。\"}, {\"action\": \"P2：我方試點以4–8週作觀察窗而非成效承諾，檢查自有GSC索引/查詢群曝光點擊、互相競爭頁與合規轉換；有基線改善才擴大，外鏈研究下輪換用其他公開索引或合法可得的第三方外鏈資料逐頁驗證。\", \"reason\": \"將品質、成本與實際成效分開衡量；本輪五次搜尋額度已用完，繼續在同一批雜訊中擴抓沒有明確價值。\"}], \"unknowns\": [\"未確認競爭者有效入站來源與正向站外品牌提及；完整外鏈圖與排名貢獻不可由本輪推定。\", \"競爭者流量、排名、CTR、轉換、完整索引、CWV與全站內容重複比例未知。\", \"平台安全、合法性、出金、優惠條件及CTA最終落地與契約未驗證。\", \"我方網址、合規條件、基線、預算與人力未提供，行動與成本屬條件式建議。\"]}"
+  },
+  {
+    "id": 510,
+    "run": "1c73dd53a9274c9ab4639e62e60d01a8",
+    "kind": "learning",
+    "data": "{\"changes\": [{\"lesson\": \"91597b6a9458\", \"key\": \"failure|research_search|plain\", \"status\": \"revoked\", \"reason\": \"counterexample: 2 successful call(s) with feature plain in run 1c73dd53a9274c9ab4639e62e60d01a8\"}, {\"pages\": 9}, {\"findings\": 9, \"unknowns\": 6}]}"
+  }
+]

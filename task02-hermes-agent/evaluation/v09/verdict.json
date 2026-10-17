@@ -1,0 +1,2587 @@
+{
+  "plan_sha256": "4737155614153611f92d28bb32490ed97292ee537c965ae1edff22b693c90fb0",
+  "judgment": {
+    "control_band": {
+      "calls": [
+        7,
+        9
+      ],
+      "cost": [
+        74990,
+        95903
+      ],
+      "onsite_count": [
+        7,
+        9
+      ],
+      "cited_claims": [
+        9,
+        13
+      ],
+      "tool_calls": [
+        14,
+        18
+      ],
+      "seconds": [
+        157,
+        202
+      ]
+    },
+    "control_cost_median": 85572.0,
+    "fail_cost": 111243.6,
+    "exploration": {
+      "verdict": "broader",
+      "cumulative_onsite": {
+        "C": 13,
+        "L": 24
+      },
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "novelty": {
+      "ledger": 5.33,
+      "control": 0.89,
+      "ledger_share": 0.49,
+      "control_share": 0.08
+    },
+    "unknowns": {
+      "resolved": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "candidates_read": [
+      0,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "product": "better",
+    "first_vs_tenth_without_learning": "C1",
+    "failure": {
+      "F1": false,
+      "F2": false,
+      "F4": false,
+      "F5": false,
+      "F6": false
+    },
+    "late_cost_median": 70843,
+    "verdict": "improved",
+    "blinding_risk": null,
+    "shown_runs": {
+      "C1": "C1",
+      "L1": "L1",
+      "C9": "C9",
+      "L9": "L9",
+      "C10": "C10",
+      "L10": "L10"
+    }
+  },
+  "pairwise": {
+    "votes": {
+      "L1-L10": [
+        "L10",
+        "L10",
+        "L10"
+      ],
+      "L10-C10": [
+        "L10",
+        "L10",
+        "L10"
+      ],
+      "L9-C9": [
+        "L9",
+        "L9",
+        "L9"
+      ],
+      "C1-C10": [
+        "C1",
+        "C1",
+        "C1"
+      ]
+    },
+    "majority": {
+      "L1-L10": "L10",
+      "L10-C10": "L10",
+      "L9-C9": "L9",
+      "C1-C10": "C1"
+    },
+    "reviewers": {
+      "R1": {
+        "pairs": {
+          "L9-C9": {
+            "preferred": "L9",
+            "strength": "slight",
+            "reasons": "兩份核對下來幾乎都正確。r73pe 的 on-page 證據較廣：58888 長尾頁（b9f00412）顯示另一套三節三題 FAQ 模板與不同追蹤參數 st=go99950；3A缺點頁（5ba4f343）提供風險揭露的反證，避免說太滿；科技語意舊網址（ee2d88cd）謹慎記為未知；行動有成本與 4–8 週驗證窗。r5nwf 有出金時間矛盾（5adde0b5 vs 157602fb）和娛樂城推薦頁意圖重疊（b71122eb）兩個好觀察，off-page 選主題相關頁也較合理，但 3aaa.com.tw 不在引用的搜尋快照裡（來源無法追溯），也缺少模板變體與反證。r73pe 的 off-page 只讀雜訊頁是明顯弱點，但整體略勝。",
+            "shown_as": {
+              "A": "L9",
+              "B": "C9"
+            }
+          },
+          "L10-C10": {
+            "preferred": "L10",
+            "strength": "slight",
+            "reasons": "兩份都沒查到錯誤。r8zfa 涵蓋的策略面較廣：富有品牌頁、58888 優惠長尾的不同模板與 st=go99950（3833efba）、3A缺點頁反證（2022feb1）、科技語意舊網址（ab613db8），泛詞頁沒有具名比較也明確點出；行動裡還有一條針對 58888 優惠條款的具體作法。rt9z7 的獨到處是分類參數頁 canonical（afd489f3）、提款教學頁其實在講註冊、跨頁出金時間矛盾（bb592b13／65554fa4／8c9aaf91），都很有價值。兩份 off-page 都只讀雜訊頁、搜尋次數都和快照數不符。r8zfa 的策略涵蓋與反證平衡略勝。",
+            "shown_as": {
+              "A": "C10",
+              "B": "L10"
+            }
+          },
+          "C1-C10": {
+            "preferred": "C1",
+            "strength": "slight",
+            "reasons": "兩份抽到的頁面高度重疊，核對都正確。rts4n 把內鏈策略講得更具體：富遊頁的相關推薦連到 3A 出金速度與提款教學（6f43ede7），提款教學頁用錨文字「3a娛樂城」回連主頁（d8be5bff）。它也補上列表 CTA st=wg2030idx、首頁與賽事頁的 WG 出站廣告，並用 MLB 頁 Tank01 反例（fb890c6d）避免以偏概全；off-page 讀的導航站候選也比 rt9z7 的 Yahoo 股價頁稍合理；行動有 4–8 週驗證。rt9z7 有分類參數頁 canonical 的獨到發現，也有麵包屑細節，但站外只有雜訊頁，「五次搜尋額度耗盡」也無法追溯。整體 rts4n 略勝。",
+            "shown_as": {
+              "A": "C10",
+              "B": "C1"
+            }
+          },
+          "L1-L10": {
+            "preferred": "L10",
+            "strength": "clear",
+            "reasons": "兩份主張都和快照相符，差在涵蓋深度。r8zfa 除了 3A、泛詞、品牌頁之外，還檢查了 58888 優惠長尾（不同模板、不同追蹤參數、沒有回答優惠條件）、3A缺點問題型長尾（反證）與舊網址，對「3A娛樂城」長尾覆蓋策略有實證；站外也實際讀了兩個候選頁做負對照。r6hpv 沒抽任何長尾，長尾策略只能從目錄推測；站外一頁都沒讀，查詢多數失敗。r6hpv 的 MLB 占位反例很細，但不足以彌補涵蓋差距。",
+            "shown_as": {
+              "A": "L1",
+              "B": "L10"
+            }
+          }
+        },
+        "reports": {
+          "L9": {
+            "summary": "On-page 抽樣最廣且逐條可對回快照：3A／泛詞核心頁、客萊柏品牌頁、58888 優惠長尾（三節三題 FAQ、st=go99950 不同追蹤參數）、3A缺點頁反證、科技語意舊網址，schema 錯置與日期不一致、CTA 去向都核對無誤，已知／推論／未知分得清楚，行動有優先序、成本與 4–8 週驗證。短處是 off-page 只讀了兩個明顯無關的雜訊頁，等於沒有站外分析；也沒抽 3A 出金／提款長尾，所以沒抓到跨頁出金時間互相矛盾。",
+            "defects": [
+              {
+                "where": "Off-page 已知與推論",
+                "type": "other",
+                "detail": "直接讀取的兩頁是 Yahoo 彰源股價頁（9912480a）與 Wikipedia 雙語政策頁（b79ae4fc），都是搜尋結果裡一看就無關的同名雜訊。讀了只能證明雜訊，沒有檢驗任何主題相關、可能連到 2030.tw 的候選，off-page 實質上沒有內容。"
+              },
+              {
+                "where": "On-page 已知第 3、7、8 條",
+                "type": "other",
+                "detail": "用「新抽查」「新讀」等字眼，暗示前幾輪有研究脈絡，但報告沒交代，單獨閱讀的人不知道比較基準是什麼。"
+              },
+              {
+                "where": "On-page 已知第 3 條",
+                "type": "epistemic",
+                "detail": "「支持樣本模板化而非全站逐字相同或只有單一模板」是由 571697fd、bcb071e5、7b654d07、b9f00412 歸納出的判斷，放在已知裡，輕微混入推論（措辭有節制）。"
+              }
+            ]
+          },
+          "C9": {
+            "summary": "核心頁與長尾頁核對正確，有兩個獨到觀察：3A 主頁「半小時至一小時」和出金速度頁「15至30分鐘」互相矛盾；娛樂城推薦頁宣稱嚴選卻沒有具名名單，又和泛詞頁意圖重疊。off-page 選的是主題相關的娛樂城頁，方向較合理。短處是其中一個站外頁的來源在引用的搜尋快照裡找不到，沒抽品牌以外的長尾變體，也沒有反證頁。",
+            "defects": [
+              {
+                "where": "Off-page 推論",
+                "type": "unsupported",
+                "detail": "說「相關搜尋列出的兩個娛樂城頁」，但引用的搜尋快照 84c0ced7、cc685840 只列出 havespring.com/casino-ranking/，3aaa.com.tw 不在任何一筆引用的搜尋結果裡，這個來源描述無法追溯。"
+              },
+              {
+                "where": "On-page 已知第 2 條",
+                "type": "other",
+                "detail": "寫「首頁目錄首屏可連至3a娛樂城、娛樂城」，但引用的只有 /wordcup/（4869ef82）。實際指的是目錄第一屏而不是網站首頁，用語容易讓人誤讀。"
+              },
+              {
+                "where": "行動第 6 條",
+                "type": "other",
+                "detail": "標成「P0及持續」，卻排在 P1、P2 之後，和「依提交順序」的標題不一致。"
+              }
+            ]
+          },
+          "C10": {
+            "summary": "On-page 核對全部正確，還有兩個獨到發現：分類參數頁（afd489f3）確實篩出 154 篇卻 canonical 回 /wordcup/；提款教學頁的步驟其實是註冊流程，3A 主頁和兩篇長尾的出金時間也互相矛盾；可見麵包屑等細節也正確。短處是 off-page 只讀了一個 Yahoo Finance 股價頁，搜尋次數的說法在快照裡找不到。",
+            "defects": [
+              {
+                "where": "Off-page 已知",
+                "type": "other",
+                "detail": "唯一直接讀取的站外頁是 Yahoo Finance Froch 股價頁（481fc476），屬於同名雜訊，沒有檢驗任何主題相關的候選，off-page 實質上沒有內容。"
+              },
+              {
+                "where": "其他未知第 1 條",
+                "type": "unsupported",
+                "detail": "寫「五次公開搜尋額度耗盡」，但 sources 只有一筆搜尋快照（f7754c93），其他搜尋沒有紀錄，無法追溯。"
+              },
+              {
+                "where": "行動第 5 條",
+                "type": "other",
+                "detail": "「P0啟動量測」排在 P1、P2 之後，和「依提交順序」不一致。"
+              }
+            ]
+          },
+          "L10": {
+            "summary": "和 r73pe 幾乎同一架構，逐條核對都正確：富有品牌頁、58888 優惠長尾的不同模板與 st=go99950、3A缺點頁反證、科技語意舊網址、schema 錯置、CTA 去向都有快照支持，已知／推論／未知清楚，行動裡還有一條專門處理 58888 這類優惠頁條款的作法。短處是 off-page 讀的兩頁（工研院、paulkuo）都是年份主題雜訊，搜尋次數也和快照數不符。",
+            "defects": [
+              {
+                "where": "Off-page 已知與推論",
+                "type": "other",
+                "detail": "讀的 itritech（d1e3a078）與 paulkuo（9c85b513）是「2030年」主題的明顯雜訊，沒有檢驗任何可能連到 2030.tw 的主題相關候選，off-page 只剩雜訊判定。"
+              },
+              {
+                "where": "其他未知第 1 條",
+                "type": "unsupported",
+                "detail": "寫「五次公開搜尋」，但 sources 只記錄兩筆搜尋快照（53d51e0b、c31d0148），次數無法追溯。"
+              },
+              {
+                "where": "On-page 已知第 2、3 條",
+                "type": "other",
+                "detail": "「本輪新抽查富有頁」暗示有前輪脈絡但報告沒交代；第 3 條「因此支持樣本模板化」是放在已知裡的歸納判斷（輕微）。"
+              }
+            ]
+          },
+          "C1": {
+            "summary": "On-page 核對全部正確，內鏈證據最具體：富遊頁的相關推薦連到 3A 出金速度與提款教學，提款教學頁再用錨文字「3a娛樂城」回連主頁。也抓到列表 CTA 用 st=wg2030idx、首頁與賽事頁的 WG 出站廣告、出金時間矛盾、提款教學頁其實在講註冊，並用 MLB 頁 Tank01 作反例避免以偏概全。off-page 只讀了一個導航站。行動具體，有 4–8 週驗證。",
+            "defects": [
+              {
+                "where": "Off-page 已知",
+                "type": "other",
+                "detail": "只直接讀了 012.tw 導航首頁（f46cde10），沒有任何主題相關的站外候選，off-page 證據很薄（報告自己有限定範圍）。"
+              },
+              {
+                "where": "行動第 6 條",
+                "type": "other",
+                "detail": "P0 基線排在三個 P1 之後，和「依提交順序」不一致。"
+              }
+            ]
+          },
+          "L1": {
+            "summary": "所有主張都對得上快照，還有細緻的反例：MLB 頁標示 Tank01 來源，但出現「#6 打者」占位。短處是沒抽任何 3A 長尾或優惠頁，長尾策略只能從目錄推測；off-page 一個站外頁都沒讀，後續查詢三次失敗、一次空結果，站外部分基本空白。",
+            "defects": [
+              {
+                "where": "Off-page 全節",
+                "type": "scope",
+                "detail": "沒有直接讀取任何站外頁。7520bcfb 之外的查詢（370a3f10、6a837572、55acaa48 是 503／無結果，d36bc22c 是空結果）都沒拿到資料，站外結論只靠一頁搜尋清單；報告有誠實揭露，但涵蓋不足。"
+              },
+              {
+                "where": "On-page 推論",
+                "type": "other",
+                "detail": "推論「娛樂城關鍵字群」覆蓋，但只抽了 3A、泛詞、富遊三個品牌／泛詞頁（97f8a848、8015e984、f47b1821），沒抽長尾、問題或優惠頁，長尾模板與品質沒有實際檢查，支持這條推論的樣本偏窄。"
+              }
+            ]
+          }
+        }
+      },
+      "R2": {
+        "pairs": {
+          "L10-C10": {
+            "preferred": "L10",
+            "strength": "slight",
+            "reasons": "兩份的具體主張我都逐條對過快照，沒發現事實錯誤，只差在角度。rt9z7（A）的長處是 3A 關鍵字群：主頁寫 30–60 分鐘，長尾頁 65554fa4、8c9aaf91 寫 15–30 分鐘；長尾 FAQ 機械套詞；分類參數頁 afd489f3 的 canonical 合併。r8zfa（B）抽樣更有層次：58888 頁（3833efba）是不同模板（三節三題 FAQ）、追蹤碼 st=go99950，也沒交代優惠條款；缺點頁（2022feb1）的反證避免把站方說成毫無風險揭露；並謹慎指出科技語意路徑（ab613db8）承載世足內容，這是 off-page 網域沿革最有價值的線索，rt9z7 的快照導覽裡也有，卻沒看到。Off-page 兩份都沒有正向發現，B 讀了兩頁，A 讀一頁股票頁。行動方面，B 先合規與基線再試點，58888 優惠頁的條件式做法具體；A 的行動 1、2 重疊，另有「五次搜尋」的說法追不到證據。整體 B 略好。",
+            "shown_as": {
+              "A": "C10",
+              "B": "L10"
+            }
+          },
+          "L1-L10": {
+            "preferred": "L10",
+            "strength": "clear",
+            "reasons": "r6hpv（A）寫到的都準確，MLB 反例（4d674733 的 Tank01 來源與「#6 打者」占位）細緻，但覆蓋明顯較窄：只讀三個娛樂城內頁，沒有任何 3A 長尾頁，所以沒有談到競爭者在「3A娛樂城」上的長尾擴張；off-page 沒有讀任何站外頁，只有一組股票／世界盃結果加上三次 503（370a3f10 等），查詢內容也無法從快照核對。r8zfa（B）同樣沒有事實錯誤，多了 3A 長尾頁（58888、缺點）、模板差異、不同追蹤碼、優惠條款缺口、反證和科技語意路徑，off-page 也實際讀了兩頁做負對照。兩份行動品質相近，B 的發現更多也更貼近兩個目標詞，差距明顯。",
+            "shown_as": {
+              "A": "L1",
+              "B": "L10"
+            }
+          },
+          "C1-C10": {
+            "preferred": "C1",
+            "strength": "slight",
+            "reasons": "兩份讀的核心頁相同（3A、娛樂城、富遊、出金速度、提款教學），都正確指出出金時間矛盾、套詞 FAQ、MLB schema 錯置與日期不一致。rts4n（A）多了幾項經我核對成立、且直接說明 on-page 做法的細節：富遊頁相關推薦連到兩篇 3A 長尾，提款教學頁以「3a娛樂城」錨文字回連主頁（6f43ede7、d8be5bff），也就是品牌與長尾的串接；列表 CTA 用 st=wg2030idx（0cdfea86）；首頁與賽事頁有 WG 註冊廣告；MLB 頁的 Tank01 反例（fb890c6d）。它的行動 2「每個金額、時效附來源與查證日期」和行動 3「提款指南試點」直接對應發現。rt9z7（B）獨有分類參數頁的 canonical 分析，同樣扎實。缺點方面，A 的行動 4 用了沒在已知建立的 WG alt 細節，B 有追不到證據的「五次搜尋」說法，都屬小瑕疵。Off-page 兩份都只讀到無關頁。整體 A 略好。",
+            "shown_as": {
+              "A": "C1",
+              "B": "C10"
+            }
+          },
+          "L9-C9": {
+            "preferred": "L9",
+            "strength": "slight",
+            "reasons": "r5nwf（A）的強項是對準「娛樂城」一詞：娛樂城推薦頁（b71122eb）自稱「嚴選幾家」卻沒有具名名單，與泛詞頁共用段落、意圖重疊；也指出 3A 主頁與出金速度頁的出金時間不一致。off-page 讀的是娛樂城排行與 3A 主題站，比 B 讀的股票、維基頁相關。但 A 稱 3aaa.com.tw 為搜尋列出，引用的搜尋快照查不到；「首頁目錄首屏」的用詞也與證據不符。r73pe（B）沒有發現事實錯誤，提供了模板差異（58888 頁 b9f00412 三節三題 FAQ、st=go99950）、優惠條款缺口、缺點頁的反證（5ba4f343），以及客萊柏頁與泛詞頁的流水和提領限制提醒（571697fd、7b654d07），並謹慎標出科技語意路徑（ee2d88cd）這條網域沿革線索。B 的 on-page 範圍與已知、推論、未知的區分略勝；A 的 off-page 較相關，縮小了差距。B 略好。",
+            "shown_as": {
+              "A": "C9",
+              "B": "L9"
+            }
+          }
+        },
+        "reports": {
+          "C10": {
+            "summary": "On-page 核對後全部成立：3A 主頁和兩篇長尾頁的出金時間互相矛盾（30–60 分鐘對 15–30 分鐘）、長尾 FAQ 是機械套詞、分類參數頁 canonical 指回 /wordcup/，這些都有具體證據。弱點在 off-page：只讀了一個股票報價頁，搜尋次數的說法也追不到證據；網站沿用舊科技站網址這條線索沒有看到。",
+            "defects": [
+              {
+                "where": "其他未知第 1 條",
+                "type": "unsupported",
+                "detail": "寫「五次公開搜尋額度耗盡」，但 sources.json 只有一筆 search_index 快照（f7754c93），其餘四次搜尋無證據可追。"
+              },
+              {
+                "where": "Off-page 已知／推論",
+                "type": "other",
+                "detail": "站外證據只有一組只回傳股票結果的搜尋（f7754c93）和 Yahoo Finance 報價頁（481fc476），沒有讀任何與博弈或競爭者相關的站外頁，所以 off-page 實質上沒有發現。另外，自己讀的首頁與 3A 頁導覽（476f82db、bb592b13）把 /article/responsible-ai-008-audrey-tang/、/article/space-tech-002-jong-shinn-wu/、/5g_taiwan/、/iftomm2015cd/ 等科技語意舊路徑當作世足、MLB 選單，這是網域沿革與舊外鏈的線索，報告連列為未知都沒有。"
+              },
+              {
+                "where": "On-page 已知第 1 條",
+                "type": "epistemic",
+                "detail": "「不能把首頁視為3A主落地頁」是對搜尋承接頁的判斷；排名與承接 URL 在報告中屬未知，這句是推論，卻放在已知。"
+              },
+              {
+                "where": "On-page 已知第 7 條",
+                "type": "epistemic",
+                "detail": "「這反駁『分類完全無作用』」反駁的是報告中從未出現的主張，又把「需先決定分類是否應獨立承接意圖」這類判斷混進觀察。事實本身（afd489f3 顯示 154 篇、canonical 指回 /wordcup/、title 與主目錄相同）正確。"
+              },
+              {
+                "where": "行動第 1、2 條",
+                "type": "other",
+                "detail": "兩條都要建娛樂城比較／樞紐頁和 3A 查核／證據頁，內容重疊，P0 與 P1 的先後分工不清。"
+              }
+            ]
+          },
+          "L10": {
+            "summary": "抽樣最有層次：除了核心頁，還有富有頁、58888 優惠頁（不同模板、三節三題 FAQ、追蹤碼 st=go99950）和 3A 缺點頁的反證，並謹慎指出科技語意路徑承載世足內容。具體主張和快照逐條相符。Off-page 讀的兩頁都是與博弈無關的年份主題頁，資訊量低。",
+            "defects": [
+              {
+                "where": "Off-page 已知",
+                "type": "other",
+                "detail": "直接讀取的工研院（d1e3a078）和 paulkuo（9c85b513）是「2030」年份主題頁，與博弈和競爭者都無關。當作負對照幾乎不能告訴讀者 2030.tw 的站外情況；報告有承認限制，但 off-page 仍沒有實質發現。"
+              },
+              {
+                "where": "On-page 已知第 8 條／其他未知第 2 條／行動",
+                "type": "other",
+                "detail": "已指出 /article/responsible-ai-008-audrey-tang/ 承載世足內容（ab613db8），但沒有把它連到 off-page 問題（可能是沿用舊網域的權重或舊外鏈），行動也沒有安排查證（例如歷史快照或舊網址外鏈查核）。首頁導覽（8d318988）另有 space-tech-002-jong-shinn-wu、the-twin-green-digital-transition-itri-nzsso 等同類路徑，可以加強這項觀察，報告沒有用到。"
+              }
+            ]
+          },
+          "L1": {
+            "summary": "寫到的內容都準確，MLB 頁的 Tank01 資料來源與「#6 打者」占位這個反例細緻，行動也具體。但只抽查三個娛樂城頁，沒有任何 3A 長尾頁；off-page 沒有讀任何站外頁，幾乎都靠失敗的搜尋。",
+            "defects": [
+              {
+                "where": "Off-page 已知第 1、2 條",
+                "type": "unsupported",
+                "detail": "寫出各次查詢的內容（「帶引號的2030.tw」「品牌名、網域加娛樂城及完整網址排除股票」「site查詢」），但搜尋快照（7520bcfb、370a3f10、6a837572、55acaa48、d36bc22c）只有結果或錯誤訊息，沒有記錄查詢字串，哪個查詢對應哪個結果無法核對。"
+              },
+              {
+                "where": "Off-page 整節",
+                "type": "other",
+                "detail": "沒有直接讀取任何站外頁：一組搜尋結果只有世界盃維基與股票，三次 503，一次空結果。off-page 覆蓋是六份報告中最薄的。"
+              },
+              {
+                "where": "On-page 抽樣範圍",
+                "type": "other",
+                "detail": "只讀 3A、娛樂城、富遊三個內頁，沒有任何 3A 長尾頁（出金速度、提款教學、優惠、缺點等），所以沒有檢視競爭者在「3A娛樂城」上的長尾擴張與說法前後是否一致，而這是該詞最關鍵的 on-page 做法。"
+              },
+              {
+                "where": "On-page 已知第 1 條",
+                "type": "epistemic",
+                "detail": "「因此不能把首頁當成娛樂城或3A主關鍵字落地頁」是推論（承接 URL 與排名未知），卻放在已知。"
+              },
+              {
+                "where": "整體",
+                "type": "other",
+                "detail": "首頁導覽（cb5396de）的科技語意舊路徑（/article/space-tech-002-jong-shinn-wu/、/article/responsible-ai-008-audrey-tang/ 等）可指向網域沿革與舊外鏈，報告沒有提及，也沒有列為未知。"
+              }
+            ]
+          },
+          "C1": {
+            "summary": "On-page 證據最紮實：3A 主頁與兩篇長尾的出金時間矛盾、套詞 FAQ、提款教學的步驟其實是註冊，以及內鏈串接（富遊頁連到兩篇 3A 長尾，提款教學以「3a娛樂城」錨文字回連主頁）、列表 CTA 參數 wg2030idx、MLB 反例，全部核對成立。Off-page 只讀了一個導航站。",
+            "defects": [
+              {
+                "where": "行動第 4 條",
+                "type": "unsupported",
+                "detail": "理由提到「WG圖片alt連到3A命名網域的混雜現象」，但這個細節沒有出現在任何已知條目，也沒有附 evidence。快照 8de86f26 確實有 alt=WG娛樂城 連到 don0911.3a1788.bet，只是報告本身沒有建立這項發現。"
+              },
+              {
+                "where": "Off-page 已知",
+                "type": "other",
+                "detail": "只直接讀取 012.tw 導航站（f46cde10），與博弈或競爭者無關，負對照的資訊量很低；off-page 實質上沒有發現。"
+              },
+              {
+                "where": "整體",
+                "type": "other",
+                "detail": "首頁（e5e834d3）與內頁導覽中的科技語意舊路徑（如 /article/responsible-ai-008-audrey-tang/、/article/the-twin-green-digital-transition-itri-nzsso/）是網域沿革與舊外鏈的線索，報告沒有提及，也沒有列為未知。"
+              }
+            ]
+          },
+          "C9": {
+            "summary": "On-page 準確：3A 主頁與長尾的出金時間不一致，並指出「娛樂城推薦」頁自稱嚴選卻沒有具名名單、與泛詞頁意圖重疊，切中「娛樂城」一詞的競爭。Off-page 讀的是娛樂城排行與 3A 主題站，比較相關，但其中一頁的來源追不到搜尋證據。",
+            "defects": [
+              {
+                "where": "Off-page 已知／推論",
+                "type": "unsupported",
+                "detail": "稱 3aaa.com.tw 是「相關搜尋列出的」娛樂城頁，但引用的搜尋快照（84c0ced7、cc685840）都沒有列出 3aaa.com.tw（cc685840 列的是 havespring、betboy.tw、regexland 等），這個候選的來源無法追溯。"
+              },
+              {
+                "where": "On-page 已知第 2 條",
+                "type": "other",
+                "detail": "「首頁目錄首屏可連至3a娛樂城、娛樂城與其他品牌頁」只引用 /wordcup/（4869ef82）。首頁（0f271f31）本身並不直接連到這些品牌頁，用詞容易被讀成首頁。"
+              },
+              {
+                "where": "整體",
+                "type": "other",
+                "detail": "首頁導覽中的科技語意舊路徑（如 /article/responsible-ai-008-audrey-tang/、/article/space-tech-002-jong-shinn-wu/）與網域沿革、舊外鏈有關，報告沒有提及，也沒有列為未知。"
+              }
+            ]
+          },
+          "L9": {
+            "summary": "與 r8zfa 同一套抽樣思路：客萊柏頁、58888 頁的模板差異、缺點頁的反證、科技語意路徑。具體主張和快照逐條相符，已知與未知分得清楚。Off-page 讀的是股票報價和維基政策頁，與競爭者無關。",
+            "defects": [
+              {
+                "where": "Off-page 已知",
+                "type": "other",
+                "detail": "直接讀取的 Yahoo 彰源報價頁（9912480a）和 Wikipedia 2030 Bilingual Nation（b79ae4fc）一看就與 2030.tw 無關，當負對照幾乎沒有資訊量，off-page 實質上沒有發現。"
+              },
+              {
+                "where": "On-page 已知第 8 條／行動",
+                "type": "other",
+                "detail": "科技語意路徑（ee2d88cd）只列為現況與未知，沒有連到 off-page 的可能做法（舊網域權重或舊外鏈），行動也沒有安排查證；首頁導覽（45608668）的其他同類路徑也沒有用來加強觀察。"
+              }
+            ]
+          }
+        }
+      },
+      "R3": {
+        "pairs": {
+          "L9-C9": {
+            "preferred": "L9",
+            "strength": "slight",
+            "reasons": "兩份逐條核對都幾乎沒有事實錯誤。r73pe 勝在三點。第一，主動找反證：讀了缺點頁 5ba4f343e9d249038369fbaa5531285f，避免把站方寫成毫無風險提醒；也指出 58888 頁 b9f0041269644153812f720bb4ce0f32 是三節三題的不同模板，把「模板化」限定在樣本範圍。第二，指出 58888 優惠長尾沒有說明資格、流水、期限與提領上限，3A 的實玩自述沒有紀錄，署名只是編輯部，並據此提出具體行動（行動2、3）。第三，在 ee2d88cdd85c4b84b1872ea356c72c33 發現科技語意路徑承載世足內容，這是和 off-page 歷史權重有關的線索，且保留得當。r5nwf 的長處是長尾出金時間不一致（5adde0b56e8d4174b83829b5beb68939 vs 157602fb122f442b96dfb97a3da05c9a）、娛樂城推薦與泛詞頁的意圖重疊（b71122ebb22e4cbe9d2fc151e9b35274），站外也讀了同主題的娛樂城頁；但 3aaa.com.tw 的來源在引用的搜尋快照裡找不到，又把 3a1788.bet 寫成 3A 網域。r73pe 的 off-page 只用股票頁和 Wikipedia 當負對照，是主要扣分，所以只是些微勝出。",
+            "shown_as": {
+              "A": "C9",
+              "B": "L9"
+            }
+          },
+          "C1-C10": {
+            "preferred": "C1",
+            "strength": "slight",
+            "reasons": "兩份讀的頁面高度重疊（3A、泛詞、富遊、出金速度、提款教學），事實都正確，也都指出長尾頁出金時間 30–60 分與 15–30 分不一致。rts4n 多了幾項有用的發現：內鏈實際串接（6f43ede748a14fd8abce300af13de2d1 相關推薦連到 3A 出金速度與提款教學，d8be5bff0e3d4d20b4e3e05e7f86ea2f 以「3a娛樂城」回連主頁），列表 CTA 用 st=wg2030idx，首頁與賽事頁有 WG 出站廣告，以及 MLB 頁 fb890c6dcee64f6893c4d73e382f0b90 的「Tank01」反例；出站目的地也寫成「3A命名網域、未驗證身份」，比較謹慎。off-page 讀了一個導航站加兩次搜尋，雖然單薄，仍比 rt9z7 只讀一個 Froch 股票頁（481fc476424048a38979b52fa335fa1a）好。rt9z7 獨有的 ?cat= 參數頁 canonical 發現（afd489f37f8049909a309b3d489228d5）有價值，但把 3a1788.bet 稱為 3A 網域、「五次搜尋」無法對照等小缺點，抵銷了部分優勢。行動兩份品質接近，rts4n 多了 4–8 週試點的驗證設計，整體些微勝出。",
+            "shown_as": {
+              "A": "C1",
+              "B": "C10"
+            }
+          },
+          "L1-L10": {
+            "preferred": "L10",
+            "strength": "clear",
+            "reasons": "兩份引用都和快照相符，差別在實質內容。r6hpv 只讀 3A、泛詞、富遊三個內頁，沒有任何 3A 長尾頁，對「3A娛樂城」關鍵字群的做法幾乎沒有證據；off-page 一頁站外原文都沒讀，「已知」只記錄搜尋失敗（370a3f109d7f41f7bf74e14b65fa9206 等）。r8zfa 加讀了富有頁、58888 優惠長尾（3833efba90eb4510aa2b1131b38437e0）、缺點頁（2022feb10ee74490bba263201aa7c4c3）與科技語意路徑（ab613db8dd964d1398f06652182cdfb0），能說明模板有變體、站方確有風險敘述這類反證、優惠頁缺核心條件，以及網址語意和內容不一致這條 off-page 線索，而且都保留得當。行動方面，r8zfa 為 58888 類優惠頁單獨列出可驗證的做法（資格、有效期、流水、適用遊戲、提領限制），和發現的連結更緊。r6hpv 的 MLB「#6 打者」占位是小亮點，但不足以彌補範圍差距。",
+            "shown_as": {
+              "A": "L1",
+              "B": "L10"
+            }
+          },
+          "L10-C10": {
+            "preferred": "L10",
+            "strength": "slight",
+            "reasons": "兩份事實都正確。rt9z7 的長處是 3A 長尾群（65554fa435524c09b2d120d07371b735、8c9aaf9140f64990ac4fb27b71b1ab7b）的出金時間矛盾，以及分類參數頁 canonical 指回目錄（afd489f37f8049909a309b3d489228d5）。r8zfa 則提供了反證（缺點頁的 KYC 一至兩天、高流水、客服轉交）、模板變體（58888 三節三題）、署名只是編輯部的 E-E-A-T 判斷、優惠長尾缺核心條件，以及科技語意路徑的歷史線索，對「做法是什麼、可信度如何、哪裡可以超越」回答得更完整，也據此提出更具體的行動（行動3）。兩份的 off-page 都只有無關的負對照：rt9z7 一頁股票頁，r8zfa 兩頁年份主題文章，都沒有實質發現；rt9z7 另把 3a1788.bet 寫成 3A 網域。r8zfa 的扣分是漏看缺點頁與主頁的自相矛盾、行動6沒有具體觀察期。整體 r8zfa 些微勝出。",
+            "shown_as": {
+              "A": "C10",
+              "B": "L10"
+            }
+          }
+        },
+        "reports": {
+          "C9": {
+            "summary": "On-page 引用逐條核對皆與快照相符，獨有的發現是 3A 主頁與出金速度長尾頁的出金時間自述不一致（30–60 分 vs 15–30 分），以及「娛樂城推薦」與泛詞「娛樂城」頁的意圖重疊；off-page 讀的是兩個同主題娛樂城頁，比讀股票頁有意義。短處是其中一個站外頁的來源在引用的搜尋快照裡找不到，也沒有抽查反證頁、模板變體或網址異常。",
+            "defects": [
+              {
+                "where": "Off-page 推論第1條",
+                "type": "unsupported",
+                "detail": "寫「相關搜尋列出的兩個娛樂城頁經直接讀取並未連到目標站」，但引用的搜尋快照 84c0ced795774c69ac9cbd9571398d90 與 cc685840a464474e97a6be9acfcffaee 只列出 havespring.com/casino-ranking/，沒有 3aaa.com.tw；3aaa.com.tw（94716629e7e94399a62d57c5492d8f5d）的候選來源無法追溯。"
+              },
+              {
+                "where": "On-page 已知第6條",
+                "type": "overclaim",
+                "detail": "「部分標示WG的圖片連至3A網域」：快照 5adde0b56e8d4174b83829b5beb68939 只顯示目的主機為 don0911.3a1788.bet，網域名稱含 3a 不等於屬於 3A 品牌；同條其他敘述有保留，這裡卻直接把網域歸屬寫成事實。"
+              },
+              {
+                "where": "On-page 整體（遺漏）",
+                "type": "other",
+                "detail": "3A 頁快照 5adde0b56e8d4174b83829b5beb68939 的導覽列，把「2026世足資格賽全攻略」等體育錨文字連到 /article/responsible-ai-008-audrey-tang/、/iftomm2015cd/ 等科技語意路徑，這是可能承接舊網域的線索，對 off-page 很關鍵，報告沒有分析；也沒有抽查缺點頁、優惠長尾等反證或模板變體，「共用骨架」只建立在 4 頁同模板上。"
+              }
+            ]
+          },
+          "L9": {
+            "summary": "樣本最有層次：核心頁、客萊柏、58888 優惠長尾、3A 缺點頁與科技語意路徑；細節與快照一致，主動找反證（缺點頁的 KYC 一至兩天、流水限制），也指出模板有變體、署名不等於專家背書，行動和發現的連結也最具體。弱點是 off-page 只用股票頁和 Wikipedia 政策頁當負對照，資訊量低；另外漏看缺點頁與 3A 主頁之間的自相矛盾。",
+            "defects": [
+              {
+                "where": "Off-page 已知第1條",
+                "type": "other",
+                "detail": "讀取的兩個站外頁 9912480a1123433ea6a8200bdd27beb8（Yahoo 彰源報價）與 b79ae4fc621a4627b2a07c304c75c40a（2030 Bilingual Nation）本來就不可能和娛樂城 SEO 有關，只能證明搜尋結果是雜訊，沒有檢查任何同主題的候選來源，off-page 幾乎沒有實質證據。"
+              },
+              {
+                "where": "On-page 已知第5條（反證）",
+                "type": "other",
+                "detail": "缺點頁 5ba4f343e9d249038369fbaa5531285f 寫有專屬 APP、通過 KYC 後半小時到兩小時到帳，3A 主頁 bcb071e5f04c4dfbaa2802445966cc51 的 FAQ 則寫不用下載 App、半小時到一小時。報告兩頁都讀了，卻沒指出這個站內自相矛盾，而它正好能支撐報告自己「可查證資料不足」的論點。"
+              },
+              {
+                "where": "Off-page 未知／其他未知",
+                "type": "other",
+                "detail": "多處寫「新抽查」「新讀」，暗示有前一輪的結果，但報告和證據裡都沒有前一輪的內容，讀者無法追溯比較基準（影響輕微）。"
+              }
+            ]
+          },
+          "C1": {
+            "summary": "8 個站內頁加 1 個站外頁，細節都和快照一致；獨有的發現是內鏈串接（富遊頁→3A 出金速度／提款教學→3A 主頁）、列表 CTA 用 st=wg2030idx、首頁與賽事頁的 WG 廣告，以及 MLB 頁「Tank01 MLB API」這類反例；出站目的地的歸屬寫得謹慎。off-page 只讀了一個導航站，仍然單薄。",
+            "defects": [
+              {
+                "where": "Off-page 已知第1條",
+                "type": "other",
+                "detail": "只讀了 012.tw 一個導航站（f46cde1064744f85b1bdf0e8767fd145），off-page 的證據非常有限；報告有說明限制，但對 off-page 策略幾乎沒有實質發現。"
+              },
+              {
+                "where": "Off-page 推論第1條",
+                "type": "other",
+                "detail": "「網域精確搜尋」「放寬查詢」的查詢字串沒有記錄在搜尋快照 d8ec9cd076fe4d91a82293bf986281d9、165809e633f24db48622e1e6a7fc5ce5 裡，查詢條件無法核對（影響輕微）。"
+              }
+            ]
+          },
+          "C10": {
+            "summary": "On-page 細節正確，獨有的發現是分類參數頁 ?cat= 確實篩出 154 篇但 canonical 指回 /wordcup/，也比對了 3A 長尾群的出金時間不一致；推論保留得當。off-page 只讀一個 Yahoo Finance 股票頁，是六份裡最弱的；另有網域歸屬寫太滿、搜尋次數無法核對等小問題。",
+            "defects": [
+              {
+                "where": "On-page 已知第8條",
+                "type": "overclaim",
+                "detail": "「3A頁圖片alt為WG娛樂城但圖片連往3A網域」：快照 bb592b13324747d898733ac55a05005a 只顯示主機為 don0911.3a1788.bet，不能據此認定是 3A 品牌的網域。"
+              },
+              {
+                "where": "Off-page 已知第1條、其他未知第1條",
+                "type": "unsupported",
+                "detail": "站外只讀了一頁 481fc476424048a38979b52fa335fa1a（Froch 股票頁），和娛樂城 SEO 無關；「五次公開搜尋額度耗盡」只有一筆搜尋快照 f7754c934b64487789d49522e023e707 可對照，其他搜尋沒有留下證據。"
+              },
+              {
+                "where": "On-page 已知第7條",
+                "type": "other",
+                "detail": "「這反駁『分類完全無作用』」在反駁一個報告本身沒提過的主張，讀者不知道比較對象是什麼（影響輕微）；事實部分與 afd489f37f8049909a309b3d489228d5 相符。"
+              }
+            ]
+          },
+          "L1": {
+            "summary": "站內 6 頁的細節都正確，也注意到 MLB 頁的「#6 打者」占位；但樣本最窄，沒有讀任何 3A 長尾頁，所以對 3A 關鍵字群的做法著墨很少。off-page 完全沒有讀站外頁，「已知」只記錄了搜尋失敗。",
+            "defects": [
+              {
+                "where": "Off-page 已知第1、2條",
+                "type": "epistemic",
+                "detail": "列在「已知」的兩條都是檢索過程的結果：7520bcfb7d2c4cb1a135e898e998d72d 是股票／世界盃結果；370a3f109d7f41f7bf74e14b65fa9206、6a83757295344a159793a08d736a9b1a、55acaa4898d54df7a4e5698ea852c38f 是錯誤回應；d36bc22c62f649d49b3b1d149e5b4689 是空結果。沒有任何一條是關於 2030.tw 站外狀況的觀察。另外，「帶引號的2030.tw查詢」「排除股票」等查詢條件在快照裡看不到，無法核對。"
+              },
+              {
+                "where": "On-page 整體（樣本範圍）",
+                "type": "other",
+                "detail": "只讀 3A、娛樂城、富遊三個內頁，沒有任何「3a娛樂城＋修飾詞」長尾頁，3A 長尾群的覆蓋、模板變體、出金時間互相矛盾等都無從評估；推論「娛樂城關鍵字群」主要只靠目錄頁 c301feecdce542f780b08de6ee2b185f 的列表。"
+              }
+            ]
+          },
+          "L10": {
+            "summary": "結構和品質都和 r73pe 相當：核心頁、富有、58888、3A 缺點頁與科技語意路徑；細節與快照一致，有反證、模板變體與署名分析，另把 58888 類優惠頁獨立成一個具體行動。弱點是 off-page 負對照選了工研院與 paulkuo 的年份主題頁，資訊量低；也漏看缺點頁與主頁的自相矛盾。",
+            "defects": [
+              {
+                "where": "Off-page 已知第1條",
+                "type": "other",
+                "detail": "兩個負對照 d1e3a078082343e690c62b6a102312f3（工研院 2030）與 9c85b513cfb042b18e6614c65b665c02（paulkuo 2030 世界展望）是年份主題文章，本來就不可能連到娛樂城站，只能證明檢索有雜訊，off-page 沒有實質發現。"
+              },
+              {
+                "where": "On-page 已知第5條（反證）",
+                "type": "other",
+                "detail": "缺點頁 2022feb10ee74490bba263201aa7c4c3 寫有專屬 APP、驗證後半小時到兩小時，3A 主頁 05426b25670647919e70845418e3e0fe 的 FAQ 則寫不用下載 App、半小時到一小時。兩頁都讀了卻沒指出站內自相矛盾。"
+              },
+              {
+                "where": "其他未知第1條／行動6",
+                "type": "other",
+                "detail": "「五次公開搜尋」只有兩筆搜尋快照（53d51e0ba5084b619a040196cf5ba622、c31d014826cd4c39983dfec5d4f3bdab）可對照；行動6只寫「設定可比較的觀察窗」，沒有具體期間（影響輕微）。"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rows": {
+    "C1": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "1257a382ecb542268025fc8b9ebce385",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "8de86f2694844b01a9dc77f072b156e5",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 86687,
+      "total": 323487,
+      "tool_calls": 16,
+      "fetches": 8,
+      "seconds": 202,
+      "offsite_pages": 1,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/3a娛樂城提款教學",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle"
+        ],
+        [
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle"
+        ],
+        [],
+        []
+      ],
+      "memory": null,
+      "resolved_unknowns": [],
+      "candidates_read": 0,
+      "controller_requests": 0,
+      "requests_total": 11,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 8,
+      "new_page_claims": 9,
+      "new_page_share": 0.818,
+      "cumulative_onsite": 8
+    },
+    "L1": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "8015e9841c454feeb9dba7e2f996865e",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "97f8a8480d174245867d739c1cf18e0c",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 66439,
+      "total": 227335,
+      "tool_calls": 13,
+      "fetches": 6,
+      "seconds": 162,
+      "offsite_pages": 0,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw"
+        ],
+        [
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [],
+        [],
+        []
+      ],
+      "memory": {
+        "findings": 0,
+        "recheck": 0,
+        "revoked": 0,
+        "candidates": 0,
+        "unknowns": 0,
+        "controller_requests": 0
+      },
+      "resolved_unknowns": [],
+      "candidates_read": 0,
+      "controller_requests": 0,
+      "requests_total": 7,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 6,
+      "new_page_claims": 8,
+      "new_page_share": 0.727,
+      "cumulative_onsite": 6
+    },
+    "L2": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "67dacc835800404f83a46e7e3397254e",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "dbd28ae4b88e4b268489cc4281375b8e",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 69355,
+      "total": 216555,
+      "tool_calls": 14,
+      "fetches": 3,
+      "seconds": 151,
+      "offsite_pages": 0,
+      "claims": 12,
+      "cited_claims": 10,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/威樂娛樂城老虎機優惠",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/娛樂城真的能賺錢嗎",
+        "https://2030.tw/wordcup/玖富娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/威樂娛樂城老虎機優惠",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/娛樂城真的能賺錢嗎",
+          "https://2030.tw/wordcup/玖富娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/威樂娛樂城老虎機優惠"
+        ],
+        [
+          "https://2030.tw/wordcup/威樂娛樂城老虎機優惠",
+          "https://2030.tw/wordcup/娛樂城真的能賺錢嗎"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/玖富娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/威樂娛樂城老虎機優惠",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/娛樂城真的能賺錢嗎"
+        ],
+        [],
+        []
+      ],
+      "memory": {
+        "findings": 8,
+        "recheck": 0,
+        "revoked": 0,
+        "candidates": 12,
+        "unknowns": 8,
+        "controller_requests": 7
+      },
+      "resolved_unknowns": [],
+      "candidates_read": 2,
+      "controller_requests": 7,
+      "requests_total": 10,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 7,
+      "new_page_claims": 5,
+      "new_page_share": 0.5,
+      "cumulative_onsite": 9
+    },
+    "C2": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 11,
+          "evidence_id": "3f3e38c67e2b438d82613e6be71458ed",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 10,
+          "evidence_id": "7fc64424638e40c7aa756c63682c18e5",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 9,
+      "cost": 85465,
+      "total": 272729,
+      "tool_calls": 15,
+      "fetches": 8,
+      "seconds": 173,
+      "offsite_pages": 0,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/?cat=娛樂城安全與出金",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw"
+        ],
+        [
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/?cat=娛樂城安全與出金"
+        ],
+        [
+          "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle"
+        ],
+        [],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup/3a娛樂城"
+        ],
+        []
+      ],
+      "memory": null,
+      "resolved_unknowns": [],
+      "candidates_read": 0,
+      "controller_requests": 0,
+      "requests_total": 9,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 8,
+      "new_page_claims": 1,
+      "new_page_share": 0.091,
+      "cumulative_onsite": 9
+    },
+    "C3": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "3a6d1de3dd1d4405905b39f79565015a",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "f8bd18faea174d058156ee92ba386f9d",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 95903,
+      "total": 353311,
+      "tool_calls": 18,
+      "fetches": 9,
+      "seconds": 190,
+      "offsite_pages": 2,
+      "claims": 15,
+      "cited_claims": 13,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城不出金",
+        "https://2030.tw/wordcup/?cat=娛樂城安全與出金",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/富遊娛樂城",
+        "https://2030.tw/wordcup/玩娛樂城收到傳票dcard"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw"
+        ],
+        [
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城不出金",
+          "https://2030.tw/wordcup/玩娛樂城收到傳票dcard"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城不出金",
+          "https://2030.tw/wordcup/富遊娛樂城",
+          "https://2030.tw/wordcup/玩娛樂城收到傳票dcard"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/?cat=娛樂城安全與出金"
+        ],
+        [
+          "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle"
+        ],
+        [],
+        []
+      ],
+      "memory": null,
+      "resolved_unknowns": [],
+      "candidates_read": 0,
+      "controller_requests": 0,
+      "requests_total": 14,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 9,
+      "new_page_claims": 2,
+      "new_page_share": 0.154,
+      "cumulative_onsite": 11
+    },
+    "L3": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "76eb675d85aa4708bf2b9aaa98414e02",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "edc4ae148fe9448abc21e6fa76dac10b",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 106332,
+      "total": 240732,
+      "tool_calls": 15,
+      "fetches": 4,
+      "seconds": 200,
+      "offsite_pages": 0,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城vip優惠活動",
+        "https://2030.tw/wordcup/3a娛樂城缺點",
+        "https://2030.tw/wordcup/九州娛樂城+論壇",
+        "https://2030.tw/wordcup/九州娛樂城回歸",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城vip優惠活動"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城vip優惠活動",
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/九州娛樂城+論壇",
+          "https://2030.tw/wordcup/九州娛樂城回歸",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城vip優惠活動",
+          "https://2030.tw/wordcup/九州娛樂城+論壇",
+          "https://2030.tw/wordcup/九州娛樂城回歸"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城缺點"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城vip優惠活動",
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/九州娛樂城+論壇",
+          "https://2030.tw/wordcup/九州娛樂城回歸",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [],
+        [
+          "https://2030.tw/wordcup/3a娛樂城"
+        ],
+        []
+      ],
+      "memory": {
+        "findings": 8,
+        "recheck": 0,
+        "revoked": 0,
+        "candidates": 12,
+        "unknowns": 8,
+        "controller_requests": 8
+      },
+      "resolved_unknowns": [],
+      "candidates_read": 2,
+      "controller_requests": 8,
+      "requests_total": 12,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 8,
+      "new_page_claims": 5,
+      "new_page_share": 0.455,
+      "cumulative_onsite": 13
+    },
+    "L4": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "c4c50a208fdf44e2bd1a9f0a592fb8db",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "3926eaa62f684f6cadba6a4330dd57a7",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 65165,
+      "total": 258317,
+      "tool_calls": 16,
+      "fetches": 2,
+      "seconds": 163,
+      "offsite_pages": 2,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城app下載教學",
+        "https://2030.tw/wordcup/3a娛樂城缺點",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/隆亨娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城app下載教學",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/隆亨娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城app下載教學",
+          "https://2030.tw/wordcup/3a娛樂城缺點"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城app下載教學"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城app下載教學",
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/隆亨娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城app下載教學",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/隆亨娛樂城"
+        ],
+        [],
+        [],
+        []
+      ],
+      "memory": {
+        "findings": 8,
+        "recheck": 0,
+        "revoked": 0,
+        "candidates": 12,
+        "unknowns": 7,
+        "controller_requests": 9
+      },
+      "resolved_unknowns": [],
+      "candidates_read": 1,
+      "controller_requests": 9,
+      "requests_total": 15,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 7,
+      "new_page_claims": 5,
+      "new_page_share": 0.455,
+      "cumulative_onsite": 15
+    },
+    "C4": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 9,
+          "evidence_id": "ad42404e6b3d4280add5fca4fde19e7f",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 8,
+          "evidence_id": "407bd9b5397847ca8869f66d4e099640",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 7,
+      "cost": 85679,
+      "total": 305071,
+      "tool_calls": 15,
+      "fetches": 8,
+      "seconds": 157,
+      "offsite_pages": 0,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城不出金",
+        "https://2030.tw/wordcup/3a娛樂城合法嗎",
+        "https://2030.tw/wordcup/?cat=娛樂城安全與出金",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/娛樂城推薦"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw"
+        ],
+        [
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/娛樂城推薦"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/娛樂城推薦"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城合法嗎"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城不出金",
+          "https://2030.tw/wordcup/3a娛樂城合法嗎"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/?cat=娛樂城安全與出金"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/娛樂城推薦"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        []
+      ],
+      "memory": null,
+      "resolved_unknowns": [],
+      "candidates_read": 0,
+      "controller_requests": 0,
+      "requests_total": 9,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 8,
+      "new_page_claims": 5,
+      "new_page_share": 0.455,
+      "cumulative_onsite": 13
+    },
+    "L5": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "9f3d4551545e4c4e99a6a7e347ade8b2",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "afa2e855e8414296b68a63d5b23e529a",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 59866,
+      "total": 186842,
+      "tool_calls": 15,
+      "fetches": 1,
+      "seconds": 152,
+      "offsite_pages": 2,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城缺點",
+        "https://2030.tw/wordcup/可以儲值500的娛樂城",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/可以儲值500的娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/可以儲值500的娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/可以儲值500的娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/可以儲值500的娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/可以儲值500的娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/可以儲值500的娛樂城"
+        ],
+        [],
+        []
+      ],
+      "memory": {
+        "findings": 8,
+        "recheck": 0,
+        "revoked": 0,
+        "candidates": 12,
+        "unknowns": 7,
+        "controller_requests": 8
+      },
+      "resolved_unknowns": [],
+      "candidates_read": 1,
+      "controller_requests": 8,
+      "requests_total": 13,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 6,
+      "new_page_claims": 6,
+      "new_page_share": 0.545,
+      "cumulative_onsite": 16
+    },
+    "C5": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 11,
+          "evidence_id": "a20e13e79bb44057832ed9628bcf8d5a",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 10,
+          "evidence_id": "4bece9b9352542d8b62b1b42c3b3feb9",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 9,
+      "cost": 84113,
+      "total": 271249,
+      "tool_calls": 16,
+      "fetches": 8,
+      "seconds": 178,
+      "offsite_pages": 1,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/娛樂城推薦",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle"
+        ],
+        [
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/娛樂城推薦",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle"
+        ],
+        [],
+        []
+      ],
+      "memory": null,
+      "resolved_unknowns": [],
+      "candidates_read": 0,
+      "controller_requests": 0,
+      "requests_total": 11,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 8,
+      "new_page_claims": 0,
+      "new_page_share": 0.0,
+      "cumulative_onsite": 13
+    },
+    "C6": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "b5ac64abae604fc6b775b59cb260f064",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "2013a3faf43b497b95b2f7fb3b7507cb",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 86012,
+      "total": 271868,
+      "tool_calls": 16,
+      "fetches": 8,
+      "seconds": 173,
+      "offsite_pages": 1,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/3a娛樂城提款教學",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw"
+        ],
+        [
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle"
+        ],
+        [],
+        []
+      ],
+      "memory": null,
+      "resolved_unknowns": [],
+      "candidates_read": 0,
+      "controller_requests": 0,
+      "requests_total": 11,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 8,
+      "new_page_claims": 0,
+      "new_page_share": 0.0,
+      "cumulative_onsite": 13
+    },
+    "L6": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "e774ddf18b2a4cf685cf0adf67fe1b4d",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "f3d2a4f404554547917def0b4132c0f5",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 69697,
+      "total": 264769,
+      "tool_calls": 16,
+      "fetches": 2,
+      "seconds": 157,
+      "offsite_pages": 2,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城缺點",
+        "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+        "https://2030.tw/wordcup/威樂娛樂城",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+          "https://2030.tw/wordcup/威樂娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+          "https://2030.tw/wordcup/威樂娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+          "https://2030.tw/wordcup/威樂娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [],
+        []
+      ],
+      "memory": {
+        "findings": 9,
+        "recheck": 0,
+        "revoked": 0,
+        "candidates": 12,
+        "unknowns": 7,
+        "controller_requests": 7
+      },
+      "resolved_unknowns": [],
+      "candidates_read": 1,
+      "controller_requests": 7,
+      "requests_total": 13,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 7,
+      "new_page_claims": 6,
+      "new_page_share": 0.545,
+      "cumulative_onsite": 18
+    },
+    "L7": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "445dde7f68274fc68a652d2a96496d61",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "0b6417ec9b994e259694a600a2c1ff8b",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 64509,
+      "total": 243581,
+      "tool_calls": 15,
+      "fetches": 1,
+      "seconds": 146,
+      "offsite_pages": 1,
+      "claims": 12,
+      "cited_claims": 10,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城缺點",
+        "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+        "https://2030.tw/wordcup/at99娛樂城",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+          "https://2030.tw/wordcup/at99娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/3a娛樂城電子遊戲有哪些",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/at99娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/at99娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/at99娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [],
+        []
+      ],
+      "memory": {
+        "findings": 9,
+        "recheck": 0,
+        "revoked": 0,
+        "candidates": 12,
+        "unknowns": 7,
+        "controller_requests": 8
+      },
+      "resolved_unknowns": [],
+      "candidates_read": 1,
+      "controller_requests": 8,
+      "requests_total": 11,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 7,
+      "new_page_claims": 4,
+      "new_page_share": 0.4,
+      "cumulative_onsite": 19
+    },
+    "C7": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "5e5dd7f47da04958b74fed6c03439cbd",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "dfba138ade0b41768520fe1dbacc27d4",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 76238,
+      "total": 238926,
+      "tool_calls": 15,
+      "fetches": 7,
+      "seconds": 161,
+      "offsite_pages": 1,
+      "claims": 11,
+      "cited_claims": 9,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/3a娛樂城提款教學",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [],
+        []
+      ],
+      "memory": null,
+      "resolved_unknowns": [],
+      "candidates_read": 0,
+      "controller_requests": 0,
+      "requests_total": 10,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 7,
+      "new_page_claims": 0,
+      "new_page_share": 0.0,
+      "cumulative_onsite": 13
+    },
+    "C8": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "8cd6759fa6074b45a25d2baec7674920",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "3d34786f1b2c45d783376547fa5e07ce",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 74990,
+      "total": 234222,
+      "tool_calls": 14,
+      "fetches": 7,
+      "seconds": 172,
+      "offsite_pages": 0,
+      "claims": 13,
+      "cited_claims": 12,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/娛樂城推薦",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw"
+        ],
+        [
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度"
+        ],
+        [
+          "https://2030.tw/wordcup/娛樂城推薦"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/娛樂城推薦",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/娛樂城推薦"
+        ],
+        [],
+        [
+          "https://2030.tw/wordcup/3a娛樂城"
+        ],
+        []
+      ],
+      "memory": null,
+      "resolved_unknowns": [],
+      "candidates_read": 0,
+      "controller_requests": 0,
+      "requests_total": 8,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 7,
+      "new_page_claims": 0,
+      "new_page_share": 0.0,
+      "cumulative_onsite": 13
+    },
+    "L8": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "19fa4ab8c892460da2bde0467a902962",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "efa940bbfbe04b1db98c20638383d472",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 64801,
+      "total": 261793,
+      "tool_calls": 15,
+      "fetches": 2,
+      "seconds": 166,
+      "offsite_pages": 1,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城缺點",
+        "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/搖錢樹娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/搖錢樹娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/搖錢樹娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/搖錢樹娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888"
+        ],
+        [],
+        []
+      ],
+      "memory": {
+        "findings": 8,
+        "recheck": 0,
+        "revoked": 0,
+        "candidates": 12,
+        "unknowns": 7,
+        "controller_requests": 8
+      },
+      "resolved_unknowns": [],
+      "candidates_read": 1,
+      "controller_requests": 8,
+      "requests_total": 12,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 7,
+      "new_page_claims": 5,
+      "new_page_share": 0.455,
+      "cumulative_onsite": 21
+    },
+    "L9": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "7b654d07263249bcbfceb36bc3fef2de",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "bcb071e5f04c4dfbaa2802445966cc51",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 73318,
+      "total": 292710,
+      "tool_calls": 17,
+      "fetches": 2,
+      "seconds": 158,
+      "offsite_pages": 2,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/article/responsible-ai-008-audrey-tang",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城缺點",
+        "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/客萊柏娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/客萊柏娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/客萊柏娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/客萊柏娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/客萊柏娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/客萊柏娛樂城"
+        ],
+        [
+          "https://2030.tw/article/responsible-ai-008-audrey-tang"
+        ],
+        [],
+        []
+      ],
+      "memory": {
+        "findings": 9,
+        "recheck": 0,
+        "revoked": 0,
+        "candidates": 12,
+        "unknowns": 6,
+        "controller_requests": 8
+      },
+      "resolved_unknowns": [],
+      "candidates_read": 1,
+      "controller_requests": 8,
+      "requests_total": 14,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 8,
+      "new_page_claims": 6,
+      "new_page_share": 0.545,
+      "cumulative_onsite": 23
+    },
+    "C9": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "cf003701841941e8b526c3bb14f04ca9",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "5adde0b56e8d4174b83829b5beb68939",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 76226,
+      "total": 240578,
+      "tool_calls": 16,
+      "fetches": 7,
+      "seconds": 162,
+      "offsite_pages": 2,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/娛樂城推薦",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw"
+        ],
+        [
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城出金速度"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度"
+        ],
+        [
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/娛樂城推薦"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [],
+        []
+      ],
+      "memory": null,
+      "resolved_unknowns": [],
+      "candidates_read": 0,
+      "controller_requests": 0,
+      "requests_total": 12,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 7,
+      "new_page_claims": 0,
+      "new_page_share": 0.0,
+      "cumulative_onsite": 13
+    },
+    "C10": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "44d5ba6a80e84ee092b0bd79550a900a",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "bb592b13324747d898733ac55a05005a",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "calls": 8,
+      "cost": 86688,
+      "total": 257696,
+      "tool_calls": 16,
+      "fetches": 8,
+      "seconds": 170,
+      "offsite_pages": 1,
+      "claims": 14,
+      "cited_claims": 12,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/3a娛樂城提款教學",
+        "https://2030.tw/wordcup/?cat=娛樂城安全與出金",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw"
+        ],
+        [
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城出金速度",
+          "https://2030.tw/wordcup/3a娛樂城提款教學"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/?cat=娛樂城安全與出金"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/富遊娛樂城"
+        ],
+        [],
+        []
+      ],
+      "memory": null,
+      "resolved_unknowns": [],
+      "candidates_read": 0,
+      "controller_requests": 0,
+      "requests_total": 11,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 8,
+      "new_page_claims": 0,
+      "new_page_share": 0.0,
+      "cumulative_onsite": 13
+    },
+    "L10": {
+      "report": true,
+      "pages": 2,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "e9b41939d6e149d4a2d220ce1c5b33c6",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "05426b25670647919e70845418e3e0fe",
+          "via": "research_evidence"
+        }
+      },
+      "calls": 1,
+      "cost": 70843,
+      "total": 267963,
+      "tool_calls": 17,
+      "fetches": 1,
+      "seconds": 157,
+      "offsite_pages": 2,
+      "claims": 13,
+      "cited_claims": 11,
+      "onsite_read": [
+        "https://2030.tw",
+        "https://2030.tw/article/responsible-ai-008-audrey-tang",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城缺點",
+        "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/富有娛樂城"
+      ],
+      "claim_pages": [
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富有娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富有娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城缺點",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富有娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富有娛樂城"
+        ],
+        [
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/娛樂城",
+          "https://2030.tw/wordcup/富有娛樂城"
+        ],
+        [
+          "https://2030.tw",
+          "https://2030.tw/wordcup",
+          "https://2030.tw/wordcup/3a娛樂城",
+          "https://2030.tw/wordcup/3a娛樂城老虎機送58888",
+          "https://2030.tw/wordcup/富有娛樂城"
+        ],
+        [
+          "https://2030.tw/article/responsible-ai-008-audrey-tang"
+        ],
+        [],
+        []
+      ],
+      "memory": {
+        "findings": 9,
+        "recheck": 0,
+        "revoked": 0,
+        "candidates": 12,
+        "unknowns": 7,
+        "controller_requests": 9
+      },
+      "resolved_unknowns": [],
+      "candidates_read": 1,
+      "controller_requests": 9,
+      "requests_total": 14,
+      "isolation": [],
+      "stale": 0,
+      "violations": [],
+      "onsite_count": 8,
+      "new_page_claims": 6,
+      "new_page_share": 0.545,
+      "cumulative_onsite": 24
+    }
+  },
+  "invalid_arms": [],
+  "abandoned": [],
+  "failed_attempts": [],
+  "encoding_errors": 0,
+  "time": "2026-10-17T13:20:03.800361+00:00"
+}

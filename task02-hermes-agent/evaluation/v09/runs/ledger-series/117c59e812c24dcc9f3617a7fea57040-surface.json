@@ -1,0 +1,17 @@
+{
+  "hermes_home": "/home/user/soulo/task02-hermes/.runtime/user/profiles/v09-l7-a1",
+  "hermes_learning": "off",
+  "valid_tool_names": [
+    "research_evidence",
+    "research_fetch",
+    "research_finish",
+    "research_offpage",
+    "research_search",
+    "research_status"
+  ],
+  "memory_loaded": false,
+  "system_prompt_sha256": "2a5a86b60b21054fd89fed8b75af71fea147eee8a7b53696b76630f0b6740407",
+  "memory_block": false,
+  "user_block": false,
+  "skills_index": false
+}

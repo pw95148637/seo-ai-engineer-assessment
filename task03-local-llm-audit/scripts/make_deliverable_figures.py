@@ -1,9 +1,10 @@
 """Draw the report and slide figures in deliverable/img/ from recorded data (no model, no GPU).
 
 python scripts/make_deliverable_figures.py   (Windows: set PYTHONUTF8=1; needs Pillow and the Noto Sans TC font)
-Reads evaluation/holdout8-comparison.json (run scripts/compare_holdout.py first), the eval kernel's holdout-raw.jsonl,
-the split manifest, the frozen lock and the training log. Counts are computed from those files and every quoted model
-or article sentence is checked to be a verbatim substring of them; only layout text is fixed here.
+Reads evaluation/holdout8-comparison.json (run scripts/compare_holdout.py first), the post-freeze results
+(evaluation/posthoc-results.json, evaluation/posthoc14b-results.json), the eval and 14B kernels' outputs, the split
+manifest, the frozen lock, prompt and supervised answers. Counts are computed from those files and every quoted model,
+prompt or article sentence is checked to be a verbatim substring of them; only layout text is fixed here.
 Sizes follow docs/DELIVERABLE_FORMAT.md: slide-architecture.png and holdout-scores-v2.png are shared with the report
 (1600 px wide, text 30 px or larger); the other slide-*.png are 1920 px wide with text of 28 px or more."""
 import json
@@ -19,8 +20,12 @@ TASK = Path(__file__).resolve().parents[1]
 OUT = TASK / 'deliverable' / 'img'
 COMPARISON = TASK / 'evaluation' / 'holdout8-comparison.json'
 POSTHOC = TASK / 'evaluation' / 'posthoc-results.json'  # post-freeze analysis (scripts/posthoc_analysis.py)
+POSTHOC14B = TASK / 'evaluation' / 'posthoc14b-results.json'  # post-freeze 14B comparison (scripts/posthoc14b_analysis.py)
 EVAL_OUT = TASK / 'kaggle-retrieved' / 'soulo-work03-v3-eval' / 'work03' / 'outputs'
 TRAIN_OUT = TASK / 'kaggle-retrieved' / 'soulo-work03-v3b-train' / 'work03' / 'outputs'
+KAGGLE_14B = TASK / 'kaggle-retrieved' / 'soulo-work03-posthoc-14b' / 'posthoc14b'
+KAGGLE_FP16 = TASK / 'kaggle-retrieved' / 'soulo-work03-posthoc-fp16' / 'posthoc'
+REFERENCE = TASK / 'evaluation' / 'holdout8-reference.jsonl'
 SPLIT = TASK / 'data' / 'split-manifest.json'
 ROOT_FROZEN = TRAIN_OUT.parent  # frozen bundle (prompt, knowledge) as retrieved from the train kernel
 
@@ -72,8 +77,10 @@ def verbatim(source, part):
 
 
 class Canvas:
-    def __init__(self, w, h):
-        self.w, self.h = w, h
+    def __init__(self, w, h, min_size=28):
+        """min_size: smallest text allowed, per docs/DELIVERABLE_FORMAT.md (30 px for figures shared with the
+        report, 28 px for full-width slide figures); smaller text stops the run."""
+        self.w, self.h, self.min_size = w, h, min_size
         self.im = Image.new('RGB', (w * S, h * S), BG)
         self.d = ImageDraw.Draw(self.im)
 
@@ -81,6 +88,23 @@ class Canvas:
     def rect(self, x, y, w, h, fill=None, outline=None, width=2, radius=14):
         self.d.rounded_rectangle([x * S, y * S, (x + w) * S, (y + h) * S], radius=radius * S, fill=fill,
                                  outline=outline, width=width * S if outline else 0)
+
+    def dashed_rect(self, x, y, w, h, color, width=3, radius=14, dash=16, gap=10):
+        r = radius
+        for (x0, y0, x1, y1) in ((x + r, y, x + w - r, y), (x + r, y + h, x + w - r, y + h),
+                                 (x, y + r, x, y + h - r), (x + w, y + r, x + w, y + h - r)):
+            length = abs(x1 - x0) + abs(y1 - y0)
+            pos = 0
+            while pos < length:
+                end = min(pos + dash, length)
+                t0, t1 = pos / length, end / length
+                self.line([(x0 + (x1 - x0) * t0, y0 + (y1 - y0) * t0), (x0 + (x1 - x0) * t1, y0 + (y1 - y0) * t1)],
+                          color, width)
+                pos += dash + gap
+        for (cx, cy, a0) in ((x + r, y + r, 180), (x + w - r, y + r, 270), (x + w - r, y + h - r, 0),
+                             (x + r, y + h - r, 90)):
+            self.d.arc([(cx - r) * S, (cy - r) * S, (cx + r) * S, (cy + r) * S], a0, a0 + 90, fill=color,
+                       width=width * S)
 
     def line(self, pts, color=MUTED, width=4):
         self.d.line([(x * S, y * S) for x, y in pts], fill=color, width=width * S, joint='curve')
@@ -169,6 +193,9 @@ class Canvas:
              cont_indent=0, draw=True):
         """Lay out rich text in a box of the given width; returns the height used. runs: str or [(text, style)]."""
         runs = [runs] if isinstance(runs, str) else runs
+        smallest = min([size] + [r[1]['size'] for r in runs if not isinstance(r, str) and 'size' in r[1]])
+        if smallest < self.min_size:
+            raise SystemExit(f'text below {self.min_size} px: {runs!r}')
         lines = self._layout(runs, width, size, weight, color, indent, cont_indent)
         line_h = size * gap
         if draw:
@@ -219,8 +246,7 @@ def load():
             raw[r['ID']] = r['result']['raw']
     split = read_json(SPLIT)
     lock = read_json(TRAIN_OUT / 'frozen.json')
-    training = read_json(TRAIN_OUT / 'training.json')
-    return comp, items, raw, split, lock, training
+    return comp, items, raw, split, lock
 
 
 # ---------------------------------------------------------------- figures
@@ -236,7 +262,7 @@ def fig_problem(split, lock):
     c = Canvas(1920, 740)
     cols = [('原題要的', '本地模型像資深編輯審文章，\n用 JSON 給分數、原因、建議'),
             ('難處', f'只有 {n_train + n_test} 篇、沒有標準答案；\n{n_train} 篇資料，微調能學的很少'),
-            ('我的做法', '規則寫進 prompt、事實寫成知識卡，\n格式交給程式；微調另做對照')]
+            ('我的做法', '規則寫進 prompt、事實寫成知識卡，\n格式交給程式；另跑不載微調的對照')]
     cw, gx = 586, 56
     x0 = (1920 - 3 * cw - 2 * gx) / 2
     for k, (head, body) in enumerate(cols):
@@ -274,11 +300,13 @@ def fig_problem(split, lock):
 
 def fig_architecture(split, lock):
     """Shared by the report and slide 3 (1600 px wide, text 30 px or larger).
-    Every element answers one of: how data flows and who judges; what code guards; why the test set stays clean."""
+    The main line runs left to right: train, freeze, test inference, report. Green is the model's judgement, black
+    outlines are program checks, grey boxes are data. Scoring sits in its own dashed block outside the notebooks; its
+    arrows lead only into the comparison, so the reference never reaches the model."""
     n_train, n_test = len(split['train_ids']), len(split['holdout_ids'])
     n_locked = len(lock['hashes'])
-    W, H = 1600, 770
-    c = Canvas(W, H)
+    W, H = 1600, 788
+    c = Canvas(W, H, min_size=30)
     JUDGE, GUARD = ACCENT, INK
 
     def tag(x, y, text, fill):
@@ -290,62 +318,64 @@ def fig_architecture(split, lock):
         c.rect(x, y, w, h, fill=fill, outline=outline, width=width)
         th = c.text(0, 0, w - 36, [(title, {'weight': 'Bold'})], size=34, draw=False)
         sh = c.text(0, 0, w - 36, sub, size=30, draw=False) if sub else 0
+        if (top or 0) + th + sh > h:
+            raise SystemExit(f'box {title!r} overflows')
         ty = y + (h - th - sh) / 2 if top is None else y + top
         c.text(x + 18, ty, w - 36, [(title, {'weight': 'Bold'})], size=34, align='center')
         if sub:
             c.text(x + 18, ty + th, w - 36, sub, size=30, align='center', color=INK)
 
-    # lanes
-    c.rect(8, 8, W - 16, 204, fill='#F7F9F8', radius=18)
-    band2_bottom = 650
-    c.rect(8, 236, W - 16, band2_bottom - 236, fill='#F7F9F8', radius=18)
-    c.text(1150, 48, 430, [('訓練 Notebook', {'weight': 'Bold', 'color': MUTED})], size=32)
-    c.text(1150, 96, 430, f'只看 {n_train} 篇', size=30, color=MUTED)
-    c.text(26, 546, 330, [('評估 Notebook', {'weight': 'Bold', 'color': MUTED})], size=32)
-    c.text(26, 592, 330, '不呼叫雲端 API', size=30, color=MUTED)
+    def guarded(x, y, w, h, title, sub, outline, label):
+        box(x, y, w, h, title, sub, fill=TINT if outline == JUDGE else '#FFFFFF', outline=outline, width=3, top=66)
+        tag(x + (w - 150) / 2, y + 14, label, outline)
 
-    # training lane
-    box(26, 26, 400, 166, f'{n_train} 篇訓練文章', '調 prompt、知識卡、微調')
-    cx, cy, cw_, ch = 520, 26, 560, 166
-    box(cx, cy, cw_, ch, f'凍結 {n_locked} 個檔案', 'prompt、知識卡、權重記下雜湊', fill='#FFFFFF', outline=GUARD,
-        width=3, top=64)
-    tag(cx + (cw_ - 150) / 2, cy + 12, '程式把關', GUARD)
-    c.arrow(426 + 8, 106, cx - 8, 106, width=4, size=20)
+    # the two notebooks, side by side
+    nb_bottom = 540
+    c.rect(8, 8, 580, nb_bottom - 8, fill='#F7F9F8', radius=18)
+    c.rect(604, 8, W - 612, nb_bottom - 8, fill='#F7F9F8', radius=18)
+    c.text(30, 30, 540, [('訓練 Notebook', {'weight': 'Bold', 'color': MUTED})], size=32)
+    c.text(30, 78, 540, '不掛載測試資料', size=30, color=MUTED)
+    c.text(1000, 30, 570, [('評估 Notebook', {'weight': 'Bold', 'color': MUTED})], size=32)
+    c.text(1000, 78, 570, '載入凍結的系統，不呼叫雲端 API', size=30, color=MUTED)
 
-    # evaluation lane
-    dx, dy, dw, dh = 26, 330, 260, 150
-    box(dx, dy, dw, dh, f'{n_test} 篇測試文章')
-    ex, ey, ew, eh = 370, 290, 380, 230
-    box(ex, ey, ew, eh, 'Qwen3-8B', '找缺失、定嚴重度，\n先寫理由再給分', fill=TINT, outline=JUDGE, width=3, top=66)
-    tag(ex + (ew - 150) / 2, ey + 14, '模型判斷', JUDGE)
-    fx, fy, fw, fh = 834, 290, 380, 230
-    box(fx, fy, fw, fh, '程式檢查', '格式、引句、\n知識卡、分數區間', fill='#FFFFFF', outline=GUARD, width=3, top=66)
-    tag(fx + (fw - 150) / 2, fy + 14, '程式把關', GUARD)
-    gx_, gy, gw, gh = 1296, 330, 280, 150
-    box(gx_, gy, gw, gh, '審核報告', '有、無微調各一份')
-    # the comparison with the reference happens outside the notebook, below the evaluation lane
-    hx, hy, hw, hh = 1060, 674, 516, 84
-    box(hx, hy, hw, hh, '參考判斷（看到輸出前寫好）', fill='#FFFFFF', outline=LINE)
-    c.text(700, hy + (hh - 45) / 2, 340, [('Notebook 外', {'color': MUTED, 'weight': 'Bold'})], size=30,
-           align='right')
-
-    # flows
-    c.arrow(cx + 70, cy + ch + 6, dx + dw / 2, dy - 8, color=GUARD, width=4, size=20)
-    c.lock(440, 252, 30, GUARD)
-    c.text(462, 228, 330, [('雜湊相符才讀', {'weight': 'Medium'})], size=30)
-    c.arrow(cx + 300, cy + ch + 6, ex + ew - 60, ey - 8, color=MUTED, width=4, size=20)
-    c.text(cx + 300 + 18, 222, 400, '載入凍結的規則與權重', size=30, color=MUTED)
-    c.arrow(dx + dw + 8, dy + dh / 2, ex - 8, dy + dh / 2, width=4, size=20)
-    c.arrow(ex + ew + 8, ey + eh / 2, fx - 8, fy + eh / 2, width=4, size=20)
-    c.arrow(fx + fw + 8, gy + gh / 2, gx_ - 8, gy + gh / 2, color=ACCENT, width=4, size=20)
-    c.text(fx + fw + 6, gy + gh / 2 - 50, 90, [('通過', {'color': ACCENT, 'weight': 'Medium'})], size=30,
+    # main line: train -> freeze -> test inference (model, then program check) -> report
+    top, h = 200, 210
+    mid = top + h / 2
+    box(26, top, 264, h, f'{n_train} 篇訓練文章', '調整 prompt、\n知識卡與微調')
+    guarded(350, top, 216, h, '凍結', f'{n_locked} 個檔案\n記下雜湊', GUARD, '程式把關')
+    ex, ew = 640, 320
+    guarded(ex, top, ew, h, 'Qwen3-8B', '找缺失、定嚴重度，\n先寫理由再給分', JUDGE, '模型判斷')
+    fx, fw = 1020, 250
+    guarded(fx, top, fw, h, '程式檢查', '格式、引句、\n分數區間', GUARD, '程式把關')
+    gx_, gw = 1340, 232
+    box(gx_, top, gw, h, '審核報告', 'HTML 與\nDataFrame')
+    c.arrow(290 + 8, mid, 350 - 8, mid, width=4, size=20)
+    c.arrow(566 + 8, mid, ex - 8, mid, width=4, size=20)
+    c.arrow(ex + ew + 8, mid, fx - 8, mid, width=4, size=20)
+    c.arrow(fx + fw + 8, mid, gx_ - 8, mid, color=ACCENT, width=4, size=20)
+    c.text(fx + fw, mid - 52, gx_ - fx - fw, [('通過', {'color': ACCENT, 'weight': 'Medium'})], size=30,
            align='center')
-    c.curve_arrow((fx + 90, fy + fh + 4), (fx + 40, 590), (ex + ew - 40, 590), (ex + ew - 90, ey + eh + 8),
+    c.curve_arrow((fx + 90, top + h + 4), (fx + 40, 490), (ex + ew - 40, 490), (ex + ew - 90, top + h + 8),
                   color=WARN, width=4)
-    c.text(ex + 120, 590, fx + fw - ex - 240, [('不符：退回重寫一次', {'color': WARN, 'weight': 'Medium'})], size=30,
+    c.text(ex + 120, 478, fx + fw - ex - 240, [('不符：退回重寫一次', {'color': WARN, 'weight': 'Medium'})], size=30,
            align='center')
-    c.arrow(gx_ + gw / 2, hy - 8, gx_ + gw / 2, gy + gh + 8, color=MUTED, width=4, size=20)
-    c.text(gx_ + gw / 2 + 14, gy + gh + 60, 120, '比對', size=30, color=MUTED)
+
+    # test data enters the evaluation notebook only after the hashes match
+    box(ex, 24, ew, 100, f'{n_test} 篇測試文章')
+    c.arrow(ex + ew / 2, 124 + 8, ex + ew / 2, top - 8, color=GUARD, width=4, size=20)
+    c.lock(ex + ew / 2 + 34, 162, 30, GUARD)
+    c.text(ex + ew / 2 + 56, 140, 200, [('雜湊相符才讀', {'weight': 'Medium'})], size=30)
+
+    # scoring: outside the notebooks, after the report exists; nothing flows back
+    sy, sh_ = 562, 218
+    c.dashed_rect(8, sy, W - 16, sh_, color=MUTED, radius=18)
+    c.text(30, sy + 26, 580, [('Notebook 外的評分', {'weight': 'Bold', 'color': MUTED})], size=32)
+    c.text(30, sy + 74, 580, '結果不回饋模型與 prompt', size=30, color=MUTED)
+    by, bh = sy + 44, 152
+    box(ex, by, 440, bh, '參考判斷', '另一個 AI 在看到輸出前寫好', fill='#FFFFFF')
+    box(1160, by, 412, bh, '事後比對', 'AI 判定準確、部分準確、\n偏差，我逐筆覆核', fill='#FFFFFF')
+    c.arrow(ex + 440 + 8, by + bh / 2, 1160 - 8, by + bh / 2, width=4, size=20)
+    c.arrow(gx_ + gw / 2, top + h + 8, gx_ + gw / 2, by - 4, width=4, size=20)
     c.save('slide-architecture.png')
 
 
@@ -426,83 +456,6 @@ def fig_output(items, raw, comp):
     c.save('slide-output.png')
 
 
-def fig_finetune(comp, training, split, items_, post):
-    order_ = ['準確', '部分準確', '偏差']
-    v = comp['verdicts']
-    levels = [('準確', ACCENT, '#FFFFFF'), ('部分準確', PARTIAL, INK), ('偏差', WARN, '#FFFFFF')]
-    counts = {s: [len(v[s][lv]) for lv, _, _ in levels] for s in ('adapter', 'base')}
-    diff = sorted(set(v['adapter']['準確']) ^ set(v['base']['準確']))
-    assert len(diff) == 1, diff
-    avb = comp['adapter_vs_base']
-    mae_a = one_decimal(comp['summary']['adapter']['score_mae_vs_typical'])
-    mae_b = one_decimal(comp['summary']['base']['score_mae_vs_typical'])
-    n = comp['summary']['adapter']['n']
-    c = Canvas(1920, 846)
-    # left: the one comparison, verdict counts per arm
-    c.text(30, 16, 1100, [(f'{n} 篇測試的逐筆判定', {'weight': 'Bold'})], size=36)
-    bx, bwid, bh = 330, 800, 104
-    unit = bwid / n
-    rows = [('adapter', '有微調', None, 104), ('base', '無微調', '同一個 prompt', 300)]
-    for key, label, sub, y in rows:
-        c.text(30, y + (bh - 54) / 2 - (20 if sub else 0), 280, [(label, {'weight': 'Bold'})], size=38)
-        if sub:
-            c.text(30, y + 64, 290, sub, size=28, color=MUTED)
-        x = bx
-        for (lv, fill, fg), cnt in zip(levels, counts[key]):
-            w = cnt * unit
-            c.rect(x + 3, y, w - 6, bh, fill=fill, radius=10)
-            c.text(x, y + (bh - 48) / 2, w, [(f'{lv} {cnt}', {'weight': 'Bold', 'color': fg})], size=34,
-                   align='center')
-            x += w
-    # connector from one boundary to the other: the single article that moved
-    x_lo = bx + counts['base'][0] * unit
-    x_hi = bx + counts['adapter'][0] * unit
-    mid = (104 + bh + 300) / 2
-    c.line([(x_hi, 104 + bh + 6), (x_hi, mid), (x_lo, mid), (x_lo, 300 - 6)], color=INK, width=4)
-    c.text(x_hi + 20, mid - 24, 760, [(f'只差 1 篇：ID {diff[0]}', {'weight': 'Bold'}),
-                                      ('　無微調多標一個錯代碼', {'color': MUTED})], size=30)
-    legend = [('準確', ACCENT, '該標的都標到、沒有多標，嚴重度也合理'),
-              ('部分準確', PARTIAL, '抓到缺失，但多標、理由偏主題或判得太重'),
-              ('偏差', WARN, '漏掉缺失，或沒問題的文章被扣到 major 以上')]
-    ly = 488
-    for lv, fill, desc in legend:
-        c.rect(30, ly + 10, 30, 30, fill=fill, radius=6)
-        c.text(80, ly, 1060, [(lv + '：', {'weight': 'Bold'}), desc], size=32)
-        ly += 64
-    # what the prompt iterations taught (train articles only), in place of a repeated disclaimer
-    c.rect(20, ly + 12, 1130, 846 - ly - 24, fill=CARD, radius=14)
-    c.text(46, ly + 28, 1080, [('prompt 的心得：', {'weight': 'Bold'}),
-                               '先寫理由再給分，否認法拍風險的文章由 55 改判 0 分，\n'
-                               '但嚴重度普遍膨脹；YMYL 的定義改了兩版，過度標記仍在。'], size=30, gap=1.4)
-    # right: three supporting numbers
-    px = 1240
-    c.rect(px - 44, 20, 4, 806, fill=LINE, radius=2)
-    # same prompt with and without the adapter on the 12 training articles (frozen train output)
-    train_cmp = {it['ID']: it for it in read_json(TRAIN_OUT / 'baseline_comparison.json')['items']}
-    t10 = train_cmp['10']
-    assert t10['target_score'] == 74 and t10['adapter_score'] == 0
-    better = {'adapter': [], 'base': []}
-    for it in avb['differing_items']:
-        va, vb = items_[it['ID']]['adapter'], items_[it['ID']]['base']
-        ra = order_.index(va['verdict']), abs(va['score_distance_main'])
-        rb = order_.index(vb['verdict']), abs(vb['score_distance_main'])
-        better['adapter' if ra < rb else 'base'].append(it['ID'])
-    assert len(avb['differing_items']) == n - avb['same_code_set'] and all(len(v) == 1 for v in better.values())
-    stats = [(f"{avb['same_code_set']} / {n} 篇", '有、無微調兩版的問題代碼相同',
-              f"另 2 篇方向相反：\nID {better['adapter'][0]} 有微調較好，ID {better['base'][0]} 無微調較好"),
-             (f'{mae_a} 對 {mae_b} 分', '分數與參考的平均差距', f'有微調 {mae_a}、無微調 {mae_b}，越小越好'),
-             (f"ID 10：{t10['target_score']} → {t10['adapter_score']} 分", f"訓練過的 {len(split['train_ids'])} 篇也沒學會",
-              f"答案 {t10['target_score']} 分，微調版給 {t10['adapter_score']} 分；\n"
-              f"答案部分的誤差只從 {post['train_target_loss']['ce_base']:.2f} 降到 {post['train_target_loss']['ce_adapter']:.2f}")]
-    sy = 34
-    for k, (big, label, sub) in enumerate(stats):
-        c.text(px, sy, 660, [(big, {'weight': 'Bold', 'color': WARN if k == 2 else INK})], size=58)
-        c.text(px, sy + 92, 660, [(label, {'weight': 'Bold'})], size=34)
-        c.text(px, sy + 144, 660, sub, size=30, color=MUTED)
-        sy += 272
-    c.save('slide-finetune.png')
-
-
 def fig_doc_scores(comp, items):
     """Report figure (1600 px wide, text 30 px or larger): each test article's score against the reference ranges."""
     order = [('2', '保證獲利'), ('9', '白字隱藏關鍵字'), ('4', 'Meta Keywords'), ('12', '自述註冊經驗'),
@@ -515,7 +468,7 @@ def fig_doc_scores(comp, items):
     W, row_h = 1600, 84
     top = 176
     H = top + row_h * len(order) + 130
-    c = Canvas(W, H)
+    c = Canvas(W, H, min_size=30)
     c.text(20, 10, W - 40, [(f'有微調的分數 {len(order)} 筆中 {below} 筆低於參考主判讀區間，'
                              f'{"沒有一筆" if above == 0 else f"{above} 筆"}高於', {'weight': 'Bold'})], size=34)
     # legend
@@ -564,120 +517,439 @@ def fig_doc_scores(comp, items):
     c.save('holdout-scores-v2.png')
 
 
-def fig_scorecard(comp, items):
-    """Original-task check items, frozen fine-tuned system next to the same prompt without fine-tuning."""
-    def arm(s):
-        t = comp['targeted_checks'][s]
-        seo = t['seo_false_detected']
-        exp = t['fake_experience_id12']
-        need_ymyl = [i for i, it in items.items() if 'YMYL_RISK' in it['adapter']['ref_codes']]
-        hit_ymyl = [i for i in need_ymyl if 'YMYL_RISK' in items[i][s]['codes']]
-        clean = t['items_without_ymyl_in_reference']
-        first, total = comp['contract_validity']['holdout'][s]['first_pass'].split('/')
-        return [(sum(seo.values()), len(seo)),
-                (int(exp['experience_unverified'] and not exp['called_fake']), 1),
-                (len(hit_ymyl), len(need_ymyl)),
-                (len(t['ymyl_on_items_without_ymyl_in_reference']), len(clean)),
-                (int(t['stuffing_id3']), 1),
-                (int(first), int(total))]
+def width(text, size, weight='Regular'):
+    return font(size, weight).getlength(text) / S
 
-    a, b = arm('adapter'), arm('base')
+
+def chip(c, x, y, text, fill, fg='#FFFFFF', size=28, h=46, pad=20):
+    """Pill label sized to its text; returns its width."""
+    w = width(text, size, 'Bold') + 2 * pad
+    c.rect(x, y, w, h, fill=fill, radius=h / 2)
+    c.text(x, y + (h - size * 1.42) / 2, w, [(text, {'weight': 'Bold', 'color': fg})], size=size, align='center')
+    return w
+
+
+def slide_tag(c, x, y, text, fill):
+    """Square-cornered tag that says whether a slide shows the formal result or a post-freeze comparison; its shape
+    keeps it apart from the round status chips. Returns its width."""
+    w, h = width(text, 30, 'Bold') + 36, 48
+    c.rect(x, y, w, h, fill=fill, radius=6)
+    c.text(x, y + (h - 30 * 1.42) / 2, w, [(text, {'weight': 'Bold', 'color': '#FFFFFF'})], size=30, align='center')
+    return w
+
+
+def mean_seconds(path):
+    """Mean generation seconds per article, repairs included, from a holdout jsonl."""
+    rows = [json.loads(line) for line in Path(path).read_text(encoding='utf-8').splitlines() if line.strip()]
+    return sum(a['seconds'] for r in rows for a in r['attempts']) / len(rows)
+
+
+def heavier_than_both(path):
+    """Items whose highest severity is above both the main and the alternative reference reading."""
+    rank = {'none': 0, 'minor': 1, 'major': 2, 'critical': 3}
+    ref = {r['ID']: r for r in map(json.loads, REFERENCE.read_text(encoding='utf-8').splitlines()) if r}
+    out = []
+    for r in map(json.loads, Path(path).read_text(encoding='utf-8').splitlines()):
+        sev = max((rank[x['severity']] for x in r['parsed']['Reasons']), default=0)
+        main = rank[ref[r['ID']]['max_severity'] or 'none']
+        alt = ref[r['ID']].get('alternative_reading')
+        if sev > main and (not alt or sev > rank[alt.get('max_severity') or 'none']):
+            out.append(r['ID'])
+    return out
+
+
+def fig_scorecard(comp, items):
+    """Slide: the original task's check items, scored on the frozen system only (its own result on the 8 test items)."""
+    s = comp['summary']['adapter']
+    t = comp['targeted_checks']['adapter']
+    seo, exp = t['seo_false_detected'], t['fake_experience_id12']
+    need = [i for i, it in items.items() if 'YMYL_RISK' in it['adapter']['ref_codes']]
+    hit = [i for i in need if 'YMYL_RISK' in items[i]['adapter']['codes']]
+    first, total = comp['contract_validity']['holdout']['adapter']['first_pass'].split('/')
+    cons = comp['training_rounds']['v3b_adapter']
+    assert set(cons['consistency_id14_scores']) == {0} and set(cons['consistency_code_jaccard']) == {1.0}
+    assert s['severity_lower_than_main'] == 0
     occurrences = comp['facts']['id3_keyword_occurrences']
-    rows = [('植入的錯誤 SEO 理論被指出', '都判為錯誤；ID 4 寫出 Google 的做法', True),
-            ('自述經驗只說無法查證', 'EEAT：沒把缺少證據當成造假', True),
-            ('該標 YMYL 的文章有標到', '保證獲利的賭博廣告判最重等級', True),
-            ('不該標 YMYL 卻標了', '越少越好；只談到賭博、貸款也被標', False),
-            ('關鍵字堆疊被指出', f'重複 {occurrences} 次，只看到賭博主題', False),
-            ('JSON 第一次就符合格式', '引句、知識卡、分數區間由程式檢查', True)]
+    status = {'做到': ACCENT, '有限': MUTED, '不足': WARN}
+    rows = [('做到', '植入的錯誤 SEO 理論被指出', f'{sum(seo.values())} / {len(seo)}', '都判為錯誤；ID 4 寫出 Google 的做法'),
+            ('做到', '自述經驗只說無法查證', f"{int(exp['experience_unverified'] and not exp['called_fake'])} / 1",
+             'EEAT：沒把缺少證據當成造假'),
+            ('做到', '該標 YMYL 的文章有標到', f'{len(hit)} / {len(need)}', '保證獲利的賭博廣告判最重等級'),
+            ('做到', 'JSON 第一次就符合格式', f'{first} / {total}', '引句、知識卡、分數區間由程式檢查'),
+            ('有限', '三種 temperature 代碼與分數相同', f"{len(cons['consistency_id14_scores'])} 次相同",
+             '只測 1 篇、三次都 0 分；建議方向一致'),
+            ('不足', '不該標 YMYL 卻標了',
+             f"{len(t['ymyl_on_items_without_ymyl_in_reference'])} / {len(t['items_without_ymyl_in_reference'])}",
+             '正確的二胎申請說明、反詐提醒也被標'),
+            ('不足', '嚴重度比參考主判讀重', f"{s['severity_higher_than_main']} / {s['n']}",
+             f"連替代判讀也算，仍有 {s['n'] - s['severity_match_main_or_alt']} 篇偏重"),
+            ('不足', '關鍵字堆疊被指出', f"{int(t['stuffing_id3'])} / 1", f'重複 {occurrences} 次，只看到賭博主題')]
     c = Canvas(1920, 846)
-    cx = [30, 200, 840, 1040, 1250]
-    for x, head in zip(cx[1:], ['原題檢核項', '有微調', '無微調', '這代表什麼']):
-        c.text(x, 8, 600, [(head, {'weight': 'Bold', 'color': MUTED})], size=30)
-    y, rh = 62, 110
-    for k, ((label, meaning, good), va, vb) in enumerate(zip(rows, a, b)):
+    # the same top-left label marks the formal result here and the post-freeze comparisons on the next slides
+    v = comp['verdicts']['adapter']
+    pw = slide_tag(c, 30, 4, '正式結果', KEY)
+    c.text(30 + pw + 22, 4 + (48 - 34 * 1.42) / 2, 1500,
+           [(f"凍結的系統在 {s['n']} 篇測試上：準確 {len(v['準確'])}、部分準確 {len(v['部分準確'])}、"
+             f"偏差 {len(v['偏差'])}", {'weight': 'Bold'})], size=34)
+    cx = [30, 190, 950, 1220]
+    for x, head in zip(cx[1:], ['原題檢核項', '結果', '這代表什麼']):
+        c.text(x, 68, 640, [(head, {'weight': 'Bold', 'color': MUTED})], size=30)
+    assert s['severity_lower_than_main'] == 0  # so every severity that matches neither reading is heavier
+    assert '8' in t['ymyl_on_items_without_ymyl_in_reference'] and '17' in t['ymyl_on_items_without_ymyl_in_reference']
+    y, rh = 114, 78
+    for k, (st, label, value, meaning) in enumerate(rows):
         if k % 2 == 0:
             c.rect(20, y, 1880, rh, fill=CARD, radius=12)
-        col = ACCENT if good else WARN
-        c.rect(cx[0] + 16, y + (rh - 54) / 2, 120, 54, fill=col, radius=27)
-        c.text(cx[0] + 16, y + (rh - 54) / 2 + 3, 120, [('做到' if good else '不足', {'weight': 'Bold', 'color': '#FFFFFF'})],
-               size=30, align='center')
-        c.text(cx[1], y + (rh - 51) / 2, 620, [(label, {'weight': 'Medium'})], size=36)
-        for x, (num, den) in ((cx[2], va), (cx[3], vb)):
-            c.text(x, y + (rh - 65) / 2, 200, [(f'{num} / {den}', {'weight': 'Bold', 'color': col})], size=46)
-        c.text(cx[4], y + (rh - 46) / 2, 640, meaning, size=32)
+        col = status[st]
+        c.rect(cx[0] + 16, y + (rh - 52) / 2, 120, 52, fill=col, radius=26)
+        c.text(cx[0] + 16, y + (rh - 52) / 2 + 3, 120, [(st, {'weight': 'Bold', 'color': '#FFFFFF'})], size=30,
+               align='center')
+        c.text(cx[1], y + (rh - 51) / 2, 740, [(label, {'weight': 'Medium'})], size=36)
+        c.text(cx[2], y + (rh - 62) / 2, 260, [(value, {'weight': 'Bold', 'color': col})], size=44)
+        c.text(cx[3], y + (rh - 45) / 2, 680, meaning, size=32)
         y += rh + 6
-    cons = comp['training_rounds']['v3b_adapter']
-    assert len(set(cons['consistency_id14_scores'])) == 1 and set(cons['consistency_code_jaccard']) == {1.0}
-    c.text(30, y + 22, 1860, [('一致性：', {'weight': 'Bold'}),
-                              '只用 1 篇訓練文章，三種 temperature（隨機程度）各審一次，代碼與分數相同；三次都是 0 分，已到下限'],
-           size=30, color=MUTED)
+    if y + 4 + 30 * 1.42 > 846:
+        raise SystemExit('scorecard overflows')
+    c.text(30, y + 4, 1860, '參考判斷由另一個 AI 在看到輸出前寫好；逐筆判定由 AI 撰寫、我覆核', size=30, color=MUTED)
     c.save('slide-scorecard.png')
 
 
-def fig_ymyl(items, facts, post):
-    def expl(i, part):
-        return verbatim(' '.join(r['explanation'] for r in items[i]['adapter']['reasons']), part)
+def fig_sources(comp, items, post, post14, prompt, targets, train_cmp):
+    """Slide: where the bias comes from. One baseline (8B, 4-bit, no adapter) and three runs that each change one
+    condition, on three bias measures where fewer is better; below, the reasons, written as inferences with evidence."""
+    sysm = post14['systems']
+    base, fp = sysm['qwen3_8b_4bit_no_adapter'], sysm['qwen3_8b_fp16_no_adapter']
+    ad, q14 = sysm['qwen3_8b_4bit_adapter_frozen'], sysm['qwen3_14b_4bit_no_adapter']
+    # The 14B results file restates the earlier runs; they must agree with the files that first reported them.
+    keys = ('severity_higher_than_main', 'score_mae_vs_typical')
+    for m, ref in ((ad, comp['summary']['adapter']), (base, comp['summary']['base'])):
+        assert all(m[k] == ref[k] for k in keys), (m, ref)
+    p_fp = post['systems']['fp16_no_adapter']
+    assert all(fp[k] == p_fp[k] for k in keys + ('ymyl_flagged_without_ymyl_in_main',))
+    assert post14['reading'] == 'direction_unclear' and q14['stuffing_on_3'] and not base['stuffing_on_3']
+    n_diff = sum(items[i]['adapter']['verdict'] != items[i]['base']['verdict'] for i in items)
+    n = comp['summary']['adapter']['n']
+    n_clean = len(base['items_without_ymyl_in_main'])
+    left = q14['ymyl_flagged_without_ymyl_in_main']
+    runs = (EVAL_OUT / 'holdout_base.jsonl', KAGGLE_FP16 / 'holdout_fp16.jsonl', EVAL_OUT / 'holdout.jsonl',
+            KAGGLE_14B / 'holdout_14b.jsonl')
+    both = [len(heavier_than_both(r)) for r in runs]  # row order below: base, 16-bit, fine-tuned, 14B
+    for k, arm in ((0, 'base'), (2, 'adapter')):  # agrees with compare_holdout.py where it reports the same thing
+        ss = comp['summary'][arm]
+        assert ss['severity_lower_than_main'] == 0 and both[k] == n - ss['severity_match_main_or_alt'], (arm, both)
+    rows = [('基準', '8B、4-bit、不載微調', None, base),
+            ('量化', '改成 16 位元（不量化）', None, fp),
+            ('微調', '載入微調＝凍結的系統', f'逐筆判定只差 {n_diff} 篇', ad),
+            ('模型', '換成 Qwen3-14B', 'ID 3 抓到堆疊', q14)]
+    metrics = [('嚴重度比參考主判讀重', f'共 {n} 篇；括號內連替代判讀也算', lambda m: m['severity_higher_than_main'], n, str),
+               ('分數與參考的平均差距', '單位：分', lambda m: m['score_mae_vs_typical'], 30, one_decimal),
+               ('不該標 YMYL 卻標了', f'{n_clean} 篇中的篇數', lambda m: len(m['ymyl_flagged_without_ymyl_in_main']),
+                n_clean, str)]
+    BASE_C, TRACK = '#9AA3A0', '#E6EBE9'
+    W, H = 1920, 846
+    c = Canvas(W, H)
+    lx, mx0, mw, mg, track = 30, 600, 400, 25, 240
+    slide_tag(c, lx, 4, '凍結後對照', MUTED)  # same spot as the formal-result label on the scorecard
+    c.text(lx, 55, 560, '只改一個條件；直線是基準，越少越好', size=28, color=MUTED)
+    for j, (head, unit, *_r) in enumerate(metrics):
+        x = mx0 + j * (mw + mg)
+        c.text(x, 4, mw, [(head, {'weight': 'Bold', 'color': MUTED})], size=30)
+        c.text(x, 46, mw, unit, size=28, color=MUTED)
+    y0, rh = 96, 86
+    for r, (tag, label, sub, m) in enumerate(rows):
+        y = y0 + r * rh
+        if r == 0 or tag == '模型':
+            c.rect(20, y + 3, W - 40, rh - 6, fill=CARD if r == 0 else TINT, radius=12)
+        c.rect(lx + 8, y + (rh - 44) / 2, 92, 44, fill=BASE_C if r == 0 else INK, radius=22)
+        c.text(lx + 8, y + (rh - 44) / 2 + 1, 92, [(tag, {'weight': 'Bold', 'color': '#FFFFFF'})], size=28,
+               align='center')
+        if sub:
+            c.text(lx + 118, y + 6, 500, [(label, {'weight': 'Bold'})], size=32)
+            c.text(lx + 118, y + 48, 500, sub, size=28, color=MUTED)
+        else:
+            c.text(lx + 118, y + (rh - 45) / 2, 500, [(label, {'weight': 'Bold'})], size=32)
+        for j, (_h, _u, get, top, fmt) in enumerate(metrics):
+            x = mx0 + j * (mw + mg)
+            v, b = get(m), get(base)
+            col = BASE_C if r == 0 or v == b else (ACCENT if v < b else WARN)
+            by = y + (rh - 30) / 2
+            c.rect(x, by, track, 30, fill=TRACK, radius=6)
+            bw = max(8, v / top * track)
+            c.rect(x, by, bw, 30, fill=col, radius=6)
+            if r:  # baseline tick inside the track, so the changed rows read against the baseline
+                bx = x + b / top * track
+                c.line([(bx, by - 8), (bx, by + 38)], color=INK, width=3)
+            lx2 = x + track + 16
+            c.text(lx2, y + (rh - 54) / 2, 140, [(fmt(v), {'weight': 'Bold', 'color': INK if r else MUTED})], size=38)
+            if j == 0:  # severity counted against both readings, next to the main-reading count
+                tx = lx2 + width(fmt(v), 38, 'Bold') + 6
+                c.text(tx, y + (rh - 40) / 2, mw - (tx - x) + mg, f'（{both[r]}）', size=28, color=MUTED)
+            if tag == '模型' and j == 2:
+                tx = lx2 + width(fmt(v), 38, 'Bold') + 10
+                c.text(tx, y + (rh - 40) / 2, W - 20 - tx, '剩 ID ' + '、'.join(sorted(left, key=int)), size=28,
+                       color=MUTED)
+    fy = y0 + 4 * rh + 6
+    fh = c.text(lx, fy, W - 60, [(f'16 位元與 14B 是看過這 {n} 篇後才跑，同一個 prompt 各跑一次，只看方向，不是系統成績；'
+                                  f'YMYL 從 {len(base["ymyl_flagged_without_ymyl_in_main"])} 篇降到 {len(left)} 篇，'
+                                  '依事前規則是方向不明確', {'color': MUTED})], size=28, gap=1.36)
+    # reasons: inferences, each tied to evidence that is checked against the source files
+    verbatim(prompt, '只是談到貸款、賭博、法律等高風險主題')
+    codes = {}
+    for r in targets:
+        for code in {x['code'] for x in r['target']['Reasons']}:
+            codes[code] = codes.get(code, 0) + 1
+    assert len(codes) == 5, codes
+    ex = post14['excerpts']
+    borderline = set(re.findall(r"'(\d+)'", re.search(r"YMYL_BORDERLINE = \{([^}]*)\}", (
+        ROOT_FROZEN / 'scripts' / 'selfcheck.py').read_text(encoding='utf-8')).group(1)))
+    assert borderline == {'5', '10'}
+    no_ymyl = [r['ID'] for r in targets
+               if r['ID'] not in borderline and 'YMYL_RISK' not in {x['code'] for x in r['target']['Reasons']}]
+    flagged = {arm: [i for i in no_ymyl if 'YMYL_RISK' in train_cmp[i][f'{arm}_codes']] for arm in ('adapter', 'base')}
+    assert len(flagged['adapter']) == len(flagged['base'])
+    assert set(base['ymyl_flagged_without_ymyl_in_main']) - set(left) == {'8', '12'}
+    assert '否認' in ex['17']['qwen3_14b']['Reasons'][0]['explanation']
+    assert any('引導讀者參與' in x['explanation'] for x in ex['3']['qwen3_14b']['Reasons'] if x['code'] == 'YMYL_RISK')
+    reasons = [('8B 較難照帶例外的規則判',
+                'prompt 寫明只談主題不算 YMYL，8B 仍照主題標；同一個 prompt 給 14B，ID 8、12 不再被標，'
+                '嚴重度也較準。'),
+               ('12 筆微調沒改變這點',
+                f'每種代碼只有 {min(codes.values())} 到 {max(codes.values())} 個訓練例子；明確沒有 YMYL 的 {len(no_ymyl)} 篇'
+                f"訓練文章，有、無微調都標了 {len(flagged['adapter'])} 篇。"),
+               ('規則寫法可能也有問題', '14B 仍把 ID 3 的單純推薦讀成引導參與，定義留有解讀空間；ID 17 讀反警語，原因分不開。')]
+    ry = fy + fh + 14
+    c.text(lx, ry, 900, [('為什麼：我的推論', {'weight': 'Bold', 'color': ACCENT})], size=32)
+    cy, gap = ry + 52, 24
+    cw = (W - 40 - 2 * gap) / 3
+    ch = H - cy - 10
+    for k, (head, body) in enumerate(reasons):
+        x = 20 + k * (cw + gap)
+        c.rect(x, cy, cw, ch, fill=WARN_TINT if k == 2 else TINT, radius=14)
+        c.text(x + 26, cy + 16, cw - 52, [(head, {'weight': 'Bold', 'color': WARN if k == 2 else ACCENT})], size=32)
+        h = c.text(x + 26, cy + 66, cw - 52, body, size=32, gap=1.42)
+        if cy + 66 + h > H - 14:
+            raise SystemExit(f'reason card {k} overflows')
+    c.save('slide-sources.png')
 
+
+# Qwen3-8B attention shapes from the model's config.json on Hugging Face (hidden_size 4096, 32 query heads and 8
+# key/value heads of head_dim 128, 36 layers). Used only to count the LoRA parameters; checked against the number of
+# adapter tensors the training run reports and, when the adapter file was downloaded, against its tensor shapes.
+QWEN3_8B = dict(layers=36, hidden=4096, q_out=32 * 128, v_out=8 * 128)
+
+
+def lora_setup():
+    """LoRA settings as written in the frozen workflow.py, and the parameter count they imply for Qwen3-8B."""
+    src = (ROOT_FROZEN / 'scripts' / 'workflow.py').read_text(encoding='utf-8')
+    m = re.search(r"LoraConfig\(r=(\d+),lora_alpha=(\d+),lora_dropout=([\d.]+),target_modules=\[([^\]]+)\]", src)
+    q = re.search(r"BitsAndBytesConfig\(load_in_4bit=True,bnb_4bit_quant_type='nf4',bnb_4bit_use_double_quant=True,"
+                  r"bnb_4bit_compute_dtype=torch\.float16\)", src)
+    t = re.search(r"per_device_train_batch_size=(\d+),gradient_accumulation_steps=(\d+),fp16=True", src)
+    assert m and q and t and 'prepare_model_for_kbit_training(model,use_gradient_checkpointing=True)' in src
+    assert 'labels=[-100]*len(a)+b' in src  # prompt tokens are masked: loss on the answer only
+    r, alpha, dropout = int(m.group(1)), int(m.group(2)), float(m.group(3))
+    targets = [x.strip().strip("'") for x in m.group(4).split(',')]
+    assert targets == ['q_proj', 'v_proj']
+    a = QWEN3_8B
+    per_layer = r * (a['hidden'] + a['q_out']) + r * (a['hidden'] + a['v_out'])
+    params = a['layers'] * per_layer
+    tensors = a['layers'] * len(targets) * 2
+    adapter = TRAIN_OUT / 'adapter' / 'adapter_model.safetensors'
+    if adapter.exists():  # not in git; verify when present
+        import struct
+        with open(adapter, 'rb') as f:
+            head = json.loads(f.read(struct.unpack('<Q', f.read(8))[0]))
+        head.pop('__metadata__', None)
+        counted = 0
+        for v in head.values():
+            k = 1
+            for d in v['shape']:
+                k *= d
+            counted += k
+        assert (counted, len(head)) == (params, tensors), (counted, len(head))
+    return dict(r=r, alpha=alpha, dropout=dropout, targets=targets, params=params, tensors=tensors,
+                batch=int(t.group(1)), accum=int(t.group(2)))
+
+
+def fig_method(comp, post):
+    """Slide: how quantization and fine-tuning were done, why, and what came of it (frozen system's own runs)."""
+    model = read_json(TRAIN_OUT / 'model.json')
+    vram = read_json(TRAIN_OUT / 'hardware.json')['devices'][0]['vram_bytes'] / 2 ** 30
+    training = read_json(TRAIN_OUT / 'training.json')
+    lora = lora_setup()
+    assert training['changed_adapter_tensors'] == lora['tensors']
+    n_params = model['parameters']
+    gib = {'16 位元權重': n_params * 2 / 2 ** 30, '4-bit 模型': model['footprint_bytes'] / 2 ** 30}
+    rows = [json.loads(x) for x in (EVAL_OUT / 'holdout.jsonl').read_text(encoding='utf-8').splitlines() if x]
+    gib['4-bit 審核峰值'] = max(a['peak_gpu_bytes'] for r in rows for a in r['attempts']) / 2 ** 30
+    secs = mean_seconds(EVAL_OUT / 'holdout.jsonl')
+    cfg = training['config']
+    epochs = cfg['epochs']
+    logs = [x for x in training['logs'] if 'loss' in x]
+    per_epoch = [sum(x['loss'] for x in logs if e < x['epoch'] <= e + 1) / sum(1 for x in logs if e < x['epoch'] <= e + 1)
+                 for e in range(epochs)]
+    assert training['global_step'] == len(logs) == epochs * 12 // (lora['batch'] * lora['accum'])
+    fp = post['systems']['fp16_no_adapter']
+    n_diff = sum(it['adapter']['verdict'] != it['base']['verdict'] for it in comp['items'])
+    share = lora['params'] / n_params * 100
+
+    c = Canvas(1920, 846)
+    gap = 30
+    cw = (1920 - 40 - gap) / 2
+    lab_w = 110
+
+    def row(x, y, label, body, col, size=32):
+        chip(c, x + 28, y + 2, label, col, size=28, h=44, pad=16)
+        return c.text(x + 28 + lab_w, y, cw - 56 - lab_w, body, size=size, gap=1.4)
+
+    # quantization
+    x, y = 20, 10
+    c.rect(x, y, cw, 826, fill=CARD, radius=16)
+    c.text(x + 28, y + 18, cw - 56, [('量化：4-bit 載入單張 T4', {'weight': 'Bold', 'color': ACCENT})], size=38)
+    yy = y + 92
+    yy += row(x, yy, '設定', 'bitsandbytes 4-bit NF4、雙重量化、運算用 fp16', INK) + 30
+    # memory bars against one T4
+    c.text(x + 28, yy, cw - 56, [('GPU 記憶體（GiB）', {'color': MUTED})], size=28)
+    yy += 48
+    bx, bw, top = x + 28 + 230, cw - 56 - 230 - 90, 16
+    t4x = bx + vram / top * bw
+    for k, (name, v) in enumerate(gib.items()):
+        by = yy + k * 72
+        c.text(x + 28, by, 230, name, size=28)
+        col = WARN if v > vram else ACCENT
+        c.rect(bx, by + 8, min(v, top) / top * bw, 32, fill=col, radius=6)
+        c.text(bx + min(v, top) / top * bw + 10, by, 90, [(f'{v:.1f}', {'weight': 'Bold', 'color': col})], size=28)
+    c.line([(t4x, yy - 6), (t4x, yy + 3 * 72)], color=INK, width=3)
+    c.text(t4x - 260, yy + 3 * 72 + 2, 520, [(f'單張 T4 {vram:.1f}', {'weight': 'Bold'})], size=28, align='center')
+    yy += 3 * 72 + 76
+    yy += row(x, yy, '理由', '16 位元放不進一張 T4。NF4 的刻度依權重常見的分布設計，雙重量化連縮放常數也壓縮；'
+                           'T4 沒有原生 bf16，所以用 fp16', INK) + 30
+    assert fp is post['systems']['fp16_no_adapter']  # the 16-bit run had no adapter
+    yy += row(x, yy, '結果', f'每篇審核約 {secs:.0f} 秒。凍結後用 16 位元、不載微調重跑，不該標 YMYL 的 '
+                           f"{len(fp['items_without_ymyl_in_main'])} 篇仍標 {len(fp['ymyl_flagged_without_ymyl_in_main'])} 篇；\n"
+                           '依事前規則，多標不是量化造成', WARN)
+    if yy > 826:
+        raise SystemExit('quantization card overflows')
+
+    # fine-tuning
+    x = 20 + cw + gap
+    lr = f"{cfg['learning_rate']:.0e}".replace('e-0', 'e-')
+    c.rect(x, y, cw, 826, fill=CARD, radius=16)
+    c.text(x + 28, y + 18, cw - 56, [('微調：4-bit 底模上的 LoRA', {'weight': 'Bold', 'color': ACCENT})], size=38)
+    yy = y + 92
+    yy += row(x, yy, '設定', f"r={lora['r']}、alpha {lora['alpha']}、dropout {lora['dropout']:g}，只加在 q_proj、v_proj",
+              INK, size=30) + 22
+    c.text(x + 28 + lab_w, yy, cw - 56 - lab_w,
+           [(f"{lora['params'] / 1e4:.0f} 萬個參數", {'weight': 'Bold', 'size': 50}),
+            (f'　佔全部 {n_params / 1e8:.0f} 億的 {share:.3f}%', {'color': MUTED})], size=30)
+    yy += 100
+    yy += row(x, yy, '做法', '底模維持 4-bit 不動，只訓練旁加的小矩陣；loss 只算答案，不算 prompt、知識卡與文章',
+              INK, size=30) + 28
+    yy += row(x, yy, '訓練', f'12 筆 AI 寫的監督答案；每 {lora["batch"] * lora["accum"]} 筆更新一次，'
+                           f"{epochs} 輪共 {training['global_step']} 步，學習率 {lr} 逐步遞減", INK, size=30) + 28
+    yy += row(x, yy, '理由', '只有 12 筆，學習率刻意不調高：背下答案會讓只看訓練資料的自動檢查假性通過',
+              INK, size=30) + 28
+    yy += row(x, yy, '結果', '每輪平均 loss ' + ' → '.join(f'{v:.2f}' for v in per_epoch)
+              + f'；判斷沒學會，測試的逐筆判定和不載微調只差 {n_diff} 篇', WARN, size=30)
+    if yy > 826:
+        raise SystemExit('fine-tuning card overflows')
+    c.save('slide-method.png')
+
+
+def fig_next(items, post14, prompt):
+    """Slide: the two YMYL errors 14B still makes (next to the frozen 8B), how the definition could change, and the
+    cost of moving to 14B and the need for new data."""
+    ex = post14['excerpts']
     a3, kw = items['3']['Article'], items['3']['Keyword']
-    assert a3.count(kw) == facts['id3_keyword_occurrences']
-    rows = [('ID 17｜反詐騙提醒', '「' + items['17']['Article'] + '」', '17',
-             '「' + expl('17', '該句話否定了詐騙行為的風險') + '」'),
-            ('ID 8｜二胎申請文件', '「' + items['8']['Article'] + '」', '8',
-             '「' + expl('8', '未說明此貸款可能涉及高風險') + '」'),
-            (f"ID 3｜同一個關鍵字重複 {a3.count(kw)} 次", None, '3',
-             '沒提重複，只說「' + expl('3', '文章主動推薦娛樂城，可能涉及網路賭博') + '」')]
-    labels = {'none': '沒有缺失', 'STUFFING': '關鍵字堆疊'}
-    c = Canvas(1920, 800)
-    c1x, c1w, c2x, c2w, c3x, c3w = 30, 900, 960, 640, 1620, 270
-    c.text(c1x + 28, 8, c1w, [('原文', {'weight': 'Bold', 'color': MUTED})], size=30)
-    c.text(c2x, 8, c2w, [('模型的判斷', {'weight': 'Bold', 'color': WARN})], size=30)
-    c.text(c3x, 8, c3w, [('參考判斷', {'weight': 'Bold', 'color': ACCENT})], size=30)
-    y, rh = 56, 166
-    for head, art, iid, model in rows:
+    k3 = a3.count(kw)
+
+    def q14(i, code):
+        rs = [x for x in ex[i]['qwen3_14b']['Reasons'] if x['code'] == code]
+        assert rs, (i, code)
+        return rs[0]
+
+    def sev_label(r):
+        return {'YMYL_RISK': 'YMYL', 'STUFFING': '堆疊'}[r]
+
+    r17, r3 = q14('17', 'YMYL_RISK'), q14('3', 'YMYL_RISK')
+    assert [x['code'] for x in ex['3']['qwen3_14b']['Reasons']] == ['STUFFING', 'YMYL_RISK']
+    lead = verbatim(prompt, '引導讀者實際參與可能違法的活動')
+    # ID 3 first: its reason points at a definition that can be read loosely; ID 17's cause cannot be separated
+    rows = [('3', f'ID 3｜同一個關鍵字重複 {k3} 次', f"參考：關鍵字堆疊 {items['3']['adapter']['ref_severity']}", None,
+             f"14B：堆疊＋YMYL {r3['severity']} · {ex['3']['qwen3_14b']['Score']} 分",
+             '「' + verbatim(r3['explanation'], '引導讀者參與違法活動卻未交代風險') + '」',
+             f'「{lead}」限於原文給出註冊、儲值、出金、下注等步驟', '單純推薦不算'),
+            ('17', 'ID 17｜反詐騙提醒', '參考：沒有缺失', '「' + items['17']['Article'] + '」',
+             f"14B：YMYL {r17['severity']} · {ex['17']['qwen3_14b']['Score']} 分",
+             '「' + verbatim(r17['explanation'], '否認了正規平台客服在特定情境下可能詢問驗證碼的可能性') + '」',
+             '警語裡的絕對說法是提醒，不算否認風險', '原因也可能是沒讀懂否定句，這次分不開')]
+    c = Canvas(1920, 846)
+    c1x, c1w, c2x, c2w, c3x, c3w = 30, 680, 740, 640, 1410, 480
+    c.text(c1x + 26, 4, c1w, [('原文與參考判斷', {'weight': 'Bold', 'color': MUTED})], size=30)
+    pw = slide_tag(c, c2x, 0, '凍結後對照', MUTED)
+    c.text(c2x + pw + 16, 4, c2w - pw - 16, [('凍結的系統（8B）與 14B', {'weight': 'Bold', 'color': WARN})], size=30)
+    c.text(c3x, 4, c3w, [('YMYL 定義可以改成', {'weight': 'Bold', 'color': ACCENT})], size=30)
+    y, rh = 52, 262
+    for iid, head, ref, art, chip14, why14, fix, fix_note in rows:
         a = items[iid]['adapter']
+        assert a['codes'] == ['YMYL_RISK']
         c.rect(c1x, y, 1890 - c1x, rh, fill=CARD, radius=14)
         c.rect(c1x, y, 10, rh, fill=WARN, radius=4)
-        c.text(c1x + 28, y + 10, c1w - 40, [(head, {'weight': 'Bold'})], size=32)
+        c.text(c1x + 26, y + 10, c1w - 30, [(head, {'weight': 'Bold'})], size=32)
+        c.text(c1x + 26, y + 58, c1w - 30, [(ref, {'weight': 'Bold', 'color': ACCENT})], size=32)
         if art is None:
             art = [('「', {})] + [(p, {'bg': HIGHLIGHT} if p == kw else {})
                                  for p in re.split(f'({re.escape(kw)})', a3) if p] + [('」', {})]
-        c.text(c1x + 28, y + 58, c1w - 36, art, size=30, gap=1.36)
-        chip = f"YMYL 風險 · {a['severity']} · {a['score']} 分"
-        assert a['codes'] == ['YMYL_RISK']
-        c.rect(c2x, y + 12, 440, 50, fill=WARN, radius=25)
-        c.text(c2x, y + 14, 440, [(chip, {'weight': 'Bold', 'color': '#FFFFFF'})], size=30, align='center')
-        c.text(c2x, y + 74, c2w - 10, model, size=30, gap=1.36)
-        ref_code = a['ref_codes'][0] if a['ref_codes'] else 'none'
-        ref = labels[ref_code] + ('' if ref_code == 'none' else f" {a['ref_severity']}")
-        c.text(c3x, y + 14, c3w, [(ref, {'weight': 'Bold', 'color': ACCENT})], size=30)
-        c.text(c3x, y + 58, c3w, f"{a['ref_range'][0]}–{a['ref_range'][1]} 分", size=30, color=MUTED)
-        y += rh + 10
-    fp, b4 = post['systems']['fp16_no_adapter'], post['systems']['base_4bit_no_adapter']
-    assert post['reading_a'].startswith('YMYL over-flagging is not caused by 4-bit quantization')
-    # what to do next, and what the post-freeze 16-bit comparison showed
-    by, bh = y + 8, 800 - y - 18
-    bands = [(c1x, 920, '下一步', ACCENT, TINT,
-              '程式先抽出重複次數、保證用語、第一人稱自述，模型只判斷被標出的句子；每種代碼設嚴重度上限。效果需要另外驗證。'),
-             (970, 920, '事後對照：16 位元不量化', WARN, WARN_TINT,
-              f"不該標 YMYL 的 {len(fp['items_without_ymyl_in_main'])} 篇仍標了 {len(fp['ymyl_flagged_without_ymyl_in_main'])} 篇"
-              f"（4-bit 是 {len(b4['ymyl_flagged_without_ymyl_in_main'])} 篇），量化不是主因；其他 8B 模型沒有實測。")]
-    for x, w, head, col, fill, body in bands:
-        c.rect(x, by, w, bh, fill=fill, radius=14)
-        c.text(x + 28, by + 18, w - 56, [(head, {'weight': 'Bold', 'color': col})], size=34)
-        c.text(x + 28, by + 72, w - 56, body, size=32, gap=1.4)
-    c.save('slide-ymyl.png')
+        h = c.text(c1x + 26, y + 108, c1w - 30, art, size=32, gap=1.36)
+        if 108 + h > rh:
+            raise SystemExit(f'ID {iid} article overflows')
+        chip(c, c2x, y + 12, f"8B：YMYL {a['severity']} · {a['score']} 分", WARN_TINT, fg=WARN)
+        chip(c, c2x, y + 68, chip14, WARN)
+        h = c.text(c2x, y + 128, c2w - 10, why14, size=32, gap=1.36)
+        if 128 + h > rh:
+            raise SystemExit(f'ID {iid} 14B reason overflows')
+        h = c.text(c3x, y + 14, c3w - 10, [(fix, {'weight': 'Medium'})], size=32, gap=1.4)
+        c.text(c3x, y + 26 + h, c3w - 10, fix_note, size=30, color=INK)
+        y += rh + 12
+    # next steps beyond the definition: the cost of 14B and validation on new data
+    sysm = post14['systems']
+    s14 = mean_seconds(KAGGLE_14B / 'holdout_14b.jsonl')
+    s8 = mean_seconds(EVAL_OUT / 'holdout_base.jsonl')
+    peak = post14['run_14b']['peak_gpu_bytes_max'] / 2 ** 30
+    j14 = sysm['qwen3_14b_4bit_no_adapter']
+    cards = [('改用 14B 的取捨', f'單張 T4 推論放得下（峰值 {peak:.1f} GiB）；每篇約 {s14:.0f} 秒，同樣不載微調的 8B '
+                              f"約 {s8:.0f} 秒；JSON 第一次只過 {j14['json_first_pass']}/{len(items)}，靠重寫才全部合格；"
+                              'T4 上預期無法微調。'),
+             ('用新資料驗證', f'這 {len(items)} 篇已用於評估與兩次事後分析。下一輪先累積數十筆人工標註，'
+                           '含沒有缺失的文章與邊界案例，用來驗證定義與模型的修改；微調等資料夠了再評估。')]
+    cy, gap = y + 4, 30
+    cw = (1890 - c1x - gap) / 2
+    ch = 846 - cy - 10
+    for k, (head, body) in enumerate(cards):
+        x = c1x + k * (cw + gap)
+        c.rect(x, cy, cw, ch, fill=TINT, radius=14)
+        c.text(x + 28, cy + 16, cw - 56, [(head, {'weight': 'Bold', 'color': ACCENT})], size=32)
+        h = c.text(x + 28, cy + 66, cw - 56, body, size=32, gap=1.4)
+        if cy + 66 + h > 846 - 12:
+            raise SystemExit(f'next-step card {k} overflows')
+    c.save('slide-next.png')
 
 
 def main():
-    comp, items, raw, split, lock, training = load()
+    comp, items, raw, split, lock = load()
+    post, post14 = read_json(POSTHOC), read_json(POSTHOC14B)
+    prompt = (ROOT_FROZEN / 'system_prompt.txt').read_text(encoding='utf-8')
+    targets = [json.loads(line) for line in (ROOT_FROZEN / 'data' / 'train_targets.jsonl').read_text(
+        encoding='utf-8').splitlines() if line.strip()]
+    train_cmp = {it['ID']: it for it in read_json(TRAIN_OUT / 'baseline_comparison.json')['items']}
     fig_problem(split, lock)
     fig_architecture(split, lock)
+    fig_method(comp, post)
     fig_output(items, raw, comp)
     fig_scorecard(comp, items)
     fig_doc_scores(comp, items)
-    post = read_json(POSTHOC)
-    fig_finetune(comp, training, split, items, post)
-    fig_ymyl(items, comp['facts'], post)
+    fig_sources(comp, items, post, post14, prompt, targets, train_cmp)
+    fig_next(items, post14, prompt)
 
 
 if __name__ == '__main__':

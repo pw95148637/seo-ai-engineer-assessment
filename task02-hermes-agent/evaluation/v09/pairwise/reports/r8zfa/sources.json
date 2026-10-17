@@ -1,0 +1,74 @@
+{
+  "8d3189889319466baa6ed2d840acfd3a": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/8d3189889319466baa6ed2d840acfd3a.txt"
+  },
+  "56376013d7ee4c1499fdbe7814b0c54d": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/56376013d7ee4c1499fdbe7814b0c54d.txt"
+  },
+  "05426b25670647919e70845418e3e0fe": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/05426b25670647919e70845418e3e0fe.txt"
+  },
+  "e9b41939d6e149d4a2d220ce1c5b33c6": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/e9b41939d6e149d4a2d220ce1c5b33c6.txt"
+  },
+  "ffe6c81073d1482ab15201ea99f00279": {
+    "url": "https://2030.tw/wordcup/%E5%AF%8C%E6%9C%89%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/ffe6c81073d1482ab15201ea99f00279.txt"
+  },
+  "3833efba90eb4510aa2b1131b38437e0": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E8%80%81%E8%99%8E%E6%A9%9F%E9%80%8158888",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/3833efba90eb4510aa2b1131b38437e0.txt"
+  },
+  "2022feb10ee74490bba263201aa7c4c3": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E7%BC%BA%E9%BB%9E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/2022feb10ee74490bba263201aa7c4c3.txt"
+  },
+  "ab613db8dd964d1398f06652182cdfb0": {
+    "url": "https://2030.tw/article/responsible-ai-008-audrey-tang/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/ab613db8dd964d1398f06652182cdfb0.txt"
+  },
+  "53d51e0ba5084b619a040196cf5ba622": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/53d51e0ba5084b619a040196cf5ba622.txt"
+  },
+  "c31d014826cd4c39983dfec5d4f3bdab": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/c31d014826cd4c39983dfec5d4f3bdab.txt"
+  },
+  "d1e3a078082343e690c62b6a102312f3": {
+    "url": "https://itritech.itri.org.tw/blog/2030-future-development/",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/d1e3a078082343e690c62b6a102312f3.txt"
+  },
+  "9c85b513cfb042b18e6614c65b665c02": {
+    "url": "https://paulkuo.tw/articles/world-outlook-2030/",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/9c85b513cfb042b18e6614c65b665c02.txt"
+  }
+}

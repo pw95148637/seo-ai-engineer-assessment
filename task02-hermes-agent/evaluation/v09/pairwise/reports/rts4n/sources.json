@@ -1,0 +1,68 @@
+{
+  "e5e834d3fe4b43aea8d855413d121f2e": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/e5e834d3fe4b43aea8d855413d121f2e.txt"
+  },
+  "fb890c6dcee64f6893c4d73e382f0b90": {
+    "url": "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/fb890c6dcee64f6893c4d73e382f0b90.txt"
+  },
+  "0cdfea8630884af89e5be9c3cbe693b9": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/0cdfea8630884af89e5be9c3cbe693b9.txt"
+  },
+  "8de86f2694844b01a9dc77f072b156e5": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/8de86f2694844b01a9dc77f072b156e5.txt"
+  },
+  "1257a382ecb542268025fc8b9ebce385": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/1257a382ecb542268025fc8b9ebce385.txt"
+  },
+  "6f43ede748a14fd8abce300af13de2d1": {
+    "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/6f43ede748a14fd8abce300af13de2d1.txt"
+  },
+  "cc8fd97b94874bfe87156cd74af79391": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/cc8fd97b94874bfe87156cd74af79391.txt"
+  },
+  "d8be5bff0e3d4d20b4e3e05e7f86ea2f": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E6%8F%90%E6%AC%BE%E6%95%99%E5%AD%B8",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/d8be5bff0e3d4d20b4e3e05e7f86ea2f.txt"
+  },
+  "f46cde1064744f85b1bdf0e8767fd145": {
+    "url": "https://012.tw/",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/f46cde1064744f85b1bdf0e8767fd145.txt"
+  },
+  "d8ec9cd076fe4d91a82293bf986281d9": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/d8ec9cd076fe4d91a82293bf986281d9.txt"
+  },
+  "165809e633f24db48622e1e6a7fc5ce5": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/165809e633f24db48622e1e6a7fc5ce5.txt"
+  }
+}

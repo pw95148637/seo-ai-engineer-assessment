@@ -1,23 +1,25 @@
 <!doctype html>
 <html><head><meta charset="utf-8">
+<!-- Forced-conflict run 1 of the tiered version (evidence/runtime-claude-conflict-v8-1, summary.md and state.json).
+     Every quote is a verbatim substring of the model output; full-width diagram slide with caption: 1920 x 768. -->
 <style>
   html,body{margin:0;padding:0;background:#fff}
   body{width:1920px;height:768px;position:relative;font-family:"Noto Sans TC";color:#1F2A30}
   .lane{position:absolute;left:0;width:150px;border-radius:16px;display:flex;align-items:center;justify-content:center;
-        font-size:32px;font-weight:700;color:#fff;writing-mode:horizontal-tb;text-align:center;line-height:1.25}
+        font-size:32px;font-weight:700;color:#fff;text-align:center;line-height:1.25}
   .head{position:absolute;top:0;height:64px;display:flex;align-items:center;gap:16px}
   .rnd{font-size:36px;font-weight:700}
   .res{font-size:30px;font-weight:700;padding:3px 16px;border-radius:10px;color:#fff}
   .rej{background:#B3261E}
   .pass{background:#0E8A6A}
-  .card{position:absolute;box-sizing:border-box;width:540px;border-radius:16px;border:3px solid;padding:16px 22px}
+  .card{position:absolute;box-sizing:border-box;width:540px;border-radius:16px;border:3px solid;padding:14px 22px}
   .pl{background:#FDF0E4;border-color:#C46A1F}
   .au{background:#E3F1EC;border-color:#0E8A6A}
   .t{font-size:34px;font-weight:700;line-height:1.3}
   .pl .t{color:#8A4510}
   .au .t{color:#0B5E49}
-  .q{font-size:32px;line-height:1.45;margin-top:10px}
-  .n{font-size:28px;line-height:1.4;margin-top:8px;color:#4A565C}
+  .q{font-size:34px;line-height:1.4;margin-top:8px}
+  .n{font-size:30px;line-height:1.38;margin-top:8px;color:#4A565C}
   svg{position:absolute;left:0;top:0}
   .chip{position:absolute;font-size:28px;font-weight:700;color:#0B5E49;background:#fff;border:3px solid #0E8A6A;border-radius:12px;padding:0 10px;line-height:1.45}
 </style></head>
@@ -29,54 +31,55 @@
     <marker id="g" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M0,0 L16,8 L0,16 z" fill="#0E8A6A"/></marker>
   </defs>
-  <!-- planner -> auditor within each round -->
-  <line x1="440" y1="370" x2="440" y2="428" stroke="#46545B" stroke-width="4" marker-end="url(#a)"/>
-  <line x1="1040" y1="370" x2="1040" y2="428" stroke="#46545B" stroke-width="4" marker-end="url(#a)"/>
-  <line x1="1640" y1="370" x2="1640" y2="428" stroke="#46545B" stroke-width="4" marker-end="url(#a)"/>
-  <!-- State handoff: auditor n -> planner n+1 -->
-  <path d="M710,570 C745,570 735,400 740,310 C742,260 750,230 766,230" fill="none" stroke="#0E8A6A" stroke-width="5" marker-end="url(#g)"/>
-  <path d="M1310,570 C1345,570 1335,400 1340,310 C1342,260 1350,230 1366,230" fill="none" stroke="#0E8A6A" stroke-width="5" marker-end="url(#g)"/>
+  <!-- planner -> code check + auditor within each round -->
+  <line x1="440" y1="358" x2="440" y2="414" stroke="#46545B" stroke-width="4" marker-end="url(#a)"/>
+  <line x1="1040" y1="358" x2="1040" y2="414" stroke="#46545B" stroke-width="4" marker-end="url(#a)"/>
+  <line x1="1640" y1="358" x2="1640" y2="414" stroke="#46545B" stroke-width="4" marker-end="url(#a)"/>
+  <!-- State handoff: review of round n -> planner of round n+1 -->
+  <path d="M710,580 C745,580 735,400 740,300 C742,250 750,220 766,220" fill="none" stroke="#0E8A6A" stroke-width="5" marker-end="url(#g)"/>
+  <path d="M1310,580 C1345,580 1335,400 1340,300 C1342,250 1350,220 1366,220" fill="none" stroke="#0E8A6A" stroke-width="5" marker-end="url(#g)"/>
 </svg>
 
-<div class="lane" style="top:80px;height:290px;background:#C46A1F">SEO<br>Planner</div>
-<div class="lane" style="top:432px;height:270px;background:#0E8A6A">YMYL<br>Auditor</div>
+<div class="lane" style="top:76px;height:280px;background:#C46A1F">SEO<br>Planner</div>
+<div class="lane" style="top:420px;height:300px;background:#0E8A6A">程式檢查<br>＋<br>Auditor</div>
 
-<div class="head" style="left:172px"><span class="rnd">第 1 輪</span><span class="res rej">退回 6 項</span></div>
-<div class="head" style="left:772px"><span class="rnd">第 2 輪</span><span class="res rej">退回 1 項</span></div>
+<div class="head" style="left:172px"><span class="rnd">第 1 輪</span><span class="res rej">MUST 10 項</span></div>
+<div class="head" style="left:772px"><span class="rnd">第 2 輪</span><span class="res rej">MUST 1 項</span></div>
 <div class="head" style="left:1372px"><span class="rnd">第 3 輪</span><span class="res pass">通過</span></div>
 
-<div class="card pl" style="left:170px;top:80px;height:290px">
-  <div class="t">照要求把指定詞寫進標題</div>
-  <div class="q">「娛樂城推薦前必看：「保證出金」是真的嗎？5大話術一次拆解」</div>
-  <div class="n">同時自備一個不含指定詞的替代標題</div>
+<div class="card pl" style="left:170px;top:76px;height:280px">
+  <div class="t">兩個指定詞寫進疑問句標題</div>
+  <div class="q">「娛樂城「穩賺不賠、保證出金」？5個詐騙警訊一次看懂」</div>
+  <div class="n">說明中先擬好兩個退路</div>
 </div>
-<div class="card au" style="left:170px;top:432px;height:270px">
-  <div class="t">6 項各寫出讀者會被誤導成什麼</div>
-  <div class="q">「讀者可能只看到「娛樂城推薦」和「保證出金」排在一起」</div>
-  <div class="n">標題建議採用 Planner 自備的方向</div>
-</div>
-
-<div class="card pl" style="left:770px;top:80px;height:290px">
-  <div class="t">6 項全數接受，新增查核清單</div>
-  <div class="q">「如果為了堅持這兩個詞而拿不到通過，文章就不會發布，點擊會是零。」</div>
-</div>
-<div class="card au" style="left:770px;top:432px;height:270px">
-  <div class="t">只退回 FAQ 1 題</div>
-  <div class="q">「這是我上一輪建議的寫法本身不合規，在此更正」</div>
-  <div class="n">「出金沒問題」也是保證式說法</div>
+<div class="card au" style="left:170px;top:420px;height:300px">
+  <div class="t">程式 6 項，Auditor 4 項</div>
+  <div class="q">「程式只擋下了「包贏」。同一個小標裡還有「保證獲利」「穩賺」」</div>
+  <div class="n">另退 3 處 LEGAL；兩個退路都被否決</div>
 </div>
 
-<div class="card pl" style="left:1370px;top:80px;height:290px">
-  <div class="t">兩個問句選一個，說明理由</div>
-  <div class="q">「娛樂城廣告的出金承諾，可以相信嗎？」</div>
-  <div class="n">沒選另一句，因為「可能讓讀者以為只要事前檢查過，就能放心選平台」</div>
+<div class="card pl" style="left:770px;top:76px;height:280px">
+  <div class="t">放棄指定詞，逐項回應 10 項</div>
+  <div class="q">「保留這兩個詞，稿子就不會發布，點擊數是零。」</div>
+  <div class="n">採納 2 則建議：新標題、待查核清單</div>
 </div>
-<div class="card au" style="left:1370px;top:432px;height:270px">
-  <div class="t">通過</div>
-  <div class="q">「你沒選「事前看得出來嗎？」，理由我也認同」</div>
-  <div class="n">另提醒撰寫內文時要注意的 3 點</div>
+<div class="card au" style="left:770px;top:420px;height:300px">
+  <div class="t">只退回自己上一輪的建議</div>
+  <div class="q">「這個寫法是照我上一輪的改寫建議來的，錯在我」</div>
+  <div class="n">新小標的「不會輸」仍是保證式說法</div>
 </div>
 
-<div class="chip" style="left:690px;top:378px">State</div>
-<div class="chip" style="left:1290px;top:378px">State</div>
+<div class="card pl" style="left:1370px;top:76px;height:280px">
+  <div class="t">照 Auditor 的方向改小標</div>
+  <div class="q">「警訊1：用獲利承諾拉人的平台宣傳」</div>
+  <div class="n">不寫承諾內容；再採納 2 則建議</div>
+</div>
+<div class="card au" style="left:1370px;top:420px;height:300px">
+  <div class="t">沒有 MUST，當輪通過</div>
+  <div class="q">「這一輪沒有違規，稿子可以過審。」</div>
+  <div class="n">新提的 2 則建議附在定稿上</div>
+</div>
+
+<div class="chip" style="left:690px;top:364px">State</div>
+<div class="chip" style="left:1290px;top:364px">State</div>
 </body></html>

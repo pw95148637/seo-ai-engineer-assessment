@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6.1-sol",
+  "provider": "openai-codex",
+  "session_prompt_tokens": 266316,
+  "session_completion_tokens": 6413,
+  "session_total_tokens": 272729,
+  "session_input_tokens": 79052,
+  "session_output_tokens": 6413,
+  "session_cache_read_tokens": 187264,
+  "session_cache_write_tokens": 0,
+  "session_reasoning_tokens": 157,
+  "session_api_calls": 7,
+  "session_estimated_cost_usd": 0.0,
+  "session_cost_status": "included",
+  "note": "Estimate is not billed subscription cost; no paid API provider selected. The end-of-turn review is counted separately in -review.json."
+}

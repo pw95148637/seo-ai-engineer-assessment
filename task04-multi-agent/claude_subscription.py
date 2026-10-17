@@ -165,7 +165,8 @@ class ClaudeDualRoleAgent:
                 classify(envelope, returncode, stderr)
             value = envelope.get("structured_output")
             try:
-                validate(role, value)
+                # A prompt version with its own output contract (v8) brings its own validator.
+                getattr(self.roles, "validate", validate)(role, value)
             except ValueError as e:
                 raise ProviderError("Invalid structured output: " + str(e)) from e
             return value

@@ -1,0 +1,10 @@
+{
+  "run_id": "1181c5e20b0840cbbddbe2b5760f78d5",
+  "state": "model_failed_or_partial",
+  "exit_code": 3,
+  "model_attempted": true,
+  "successful_api_calls": 0,
+  "report_submitted": false,
+  "hermes_learning": "learn",
+  "review_completed": false
+}

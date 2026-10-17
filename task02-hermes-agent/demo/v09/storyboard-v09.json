@@ -1,0 +1,207 @@
+{
+  "header": "任務二｜Hermes SEO 競爭情報 Agent 真實執行錄影",
+  "banner": "評估結束後另跑的一次・真實執行，只快轉等待",
+  "fps": 12,
+  "caption_seconds": 7,
+  "speed": {"base": 1, "idle_gap": 4, "idle_speed": 3, "lead": 1.5, "min_ff": 1.0},
+  "idle_ignore": ["main"],
+  "title_card": {
+    "seconds": 10,
+    "title": "Hermes 帶著前十次的經驗研究競爭者 2030.tw",
+    "sub": "官方 Hermes（固定 commit 311155f）加上本題的唯讀研究工具。\n模型決定查什麼、何時收斂；程式（控制器）負責範圍、預算、證據與經驗的寫入。",
+    "req": "原題五項：自主研究、Tool Use、Evidence-based Decision、競爭分析與行動建議、Memory / Learning",
+    "lines": [
+      "這次研究在 v0.9 評估結束後另跑，用帶經驗那組第 10 次之後的帳本複本，不計入判定",
+      "畫面：上＝檢視器（讀控制器即時寫入的 research.sqlite）　中＝Hermes agent.log　下＝實際執行的命令",
+      "錄影方式：tmux 每 0.25 秒擷取真實終端畫面；右上角標示播放倍率與實際經過時間"
+    ],
+    "note": "原始擷取、trace、報告與帳本複本都在 repo，可逐項核對"
+  },
+  "intro": {
+    "label": "準備",
+    "captions": ["三個窗格啟動。"]
+  },
+  "segments": [
+    {
+      "marker": "[1/5]", "pane": "viewer", "label": "① Memory / Learning：開始前的經驗",
+      "card": {"step": "1 / 5", "title": "開始前：帳本與研究記憶", "seconds": 5,
+               "sub": "經驗只由控制器量測與人工審查寫入，模型沒有寫入路徑；交給模型前，控制器先重抓確認。",
+               "req": "原題：Memory / Learning"},
+      "speed": {"lead": 14}, "caption_seconds": 7,
+      "captions": [
+        "開始前的帳本：兩個目標頁的網址、一則人工審查回饋（由 Claude 在使用者授權下代審），以及一條候選、一條已撤銷的失敗經驗。",
+        "研究記憶：上一份報告的 9 條發現、讀過的 24 個站內頁、看過但沒讀的 425 個站內連結，以及上次的 7 個未知項。",
+        "最下方的命令開始研究：打開研究記憶（--research-memory），關閉 Hermes 內建的學習（--hermes-learning off）。"
+      ]
+    },
+    {
+      "marker": "[2/5]", "pane": "viewer", "label": "② Agent 自主研究 ＋ Tool Use",
+      "card": {"step": "2 / 5", "title": "Agent 自主研究與工具使用", "seconds": 5,
+               "sub": "模型自己決定下一步：先查預算與經驗，再選工具讀頁、搜尋、讀站外頁；每次讀頁都寫出要查證什麼。",
+               "req": "原題：Agent 自主研究、Tool Use"},
+      "speed": {"idle_speed": 1}, "caption_seconds": 6,
+      "captions": [
+        "模型的第一步是查預算與經驗。控制器先讀 robots.txt，再重抓帳本記下的兩個目標頁，確認仍是目標詞頁。",
+        "兩條目標頁經驗確認有效，連同人工審查回饋交給模型。",
+        "接著重抓研究記憶中 9 條發現所在的頁面，看頁面有沒有變。"
+      ]
+    },
+    {
+      "marker": "把研究記憶交給模型", "pane": "viewer", "label": "② Agent 自主研究 ＋ Tool Use",
+      "speed": {"idle_speed": 2}, "caption_seconds": 9,
+      "captions": [
+        "頁面都沒變，待重讀、撤銷都是 0：9 條發現連同這次的證據編號交給模型，另附 12 個沒讀過的站內頁與 7 個未知項。"
+      ]
+    },
+    {
+      "marker": "#2 research_evidence", "pane": "viewer", "label": "② Agent 自主研究 ＋ Tool Use",
+      "speed": {"idle_speed": 1}, "caption_seconds": 6,
+      "captions": [
+        "模型直接讀控制器剛確認的兩個目標頁，第 2、3 次工具呼叫就讀到；接著搜尋網域名稱，找站外的提及。"
+      ]
+    },
+    {
+      "marker": "#5 research_fetch", "pane": "viewer", "label": "② Agent 自主研究 ＋ Tool Use",
+      "speed": {"idle_speed": 1}, "caption_seconds": 5.8,
+      "captions": [
+        "搜尋結果全是股市網站（2030 也是台股代號）。\n模型改讀研究記憶列出、之前沒讀過的「星盈娛樂城評價」頁，目的是找反例。",
+        "讀頁工具交出結構化資料（FAQPage 5 題、NewsArticle）與圖片連結：\n「WG娛樂城」橫幅連到另一個網域，標為 nofollow。",
+        "它排除股票字眼再搜一次，結果變成維基百科、國發會等網站；再用品牌名「2030玩運彩」搜尋。"
+      ]
+    },
+    {
+      "marker": "#8 research_evidence", "pane": "viewer", "label": "② Agent 自主研究 ＋ Tool Use",
+      "speed": {"idle_speed": 2}, "caption_seconds": 5.4,
+      "captions": [
+        "品牌名搜尋沒有結果。它回頭讀研究記憶的發現所在頁：目錄、3A 缺點頁、58888 優惠頁，在上次的發現上往下查。",
+        "再以網址路徑與「科技」兩個詞搜尋，找網站早期內容的線索。",
+        "結果是政府、新聞與學校等網站；它再讀研究記憶裡的首頁，以及一個科技主題的舊網址頁。"
+      ]
+    },
+    {
+      "marker": "#15 research_offpage", "pane": "viewer", "label": "② Agent 自主研究 ＋ Tool Use",
+      "speed": {"idle_speed": 2}, "caption_seconds": 5.8,
+      "captions": [
+        "站外只能讀這次搜尋列出的網址：模型挑了兩份教育相關的 PDF，查它們有沒有引用 2030.tw。",
+        "兩份都被控制器以「格式不支援」擋下：讀頁工具只收文字、HTML、XML 與 JSON。"
+      ]
+    },
+    {
+      "marker": "#17 research_offpage", "pane": "viewer", "label": "② Agent 自主研究 ＋ Tool Use",
+      "speed": {"idle_speed": 5}, "caption_seconds": 7,
+      "captions": [
+        "改讀兩個 HTML 站外頁：都沒有連到或提及 2030.tw。畫面也註明，這只代表這一頁，不是完整的 backlinks。",
+        "接著是模型整理報告的長回合（實際 54 秒），以快轉播放。"
+      ]
+    },
+    {
+      "marker": "[3/5]", "pane": "viewer", "label": "③ Evidence-based Decision",
+      "card": {"step": "3 / 5", "title": "依證據收斂：每一條都可核對", "seconds": 5,
+               "sub": "已知與推論都要引用這次存下的證據。\n引用不存在、來自其他次研究或雜湊不符，控制器就退回報告。",
+               "req": "原題：Evidence-based Decision"},
+      "speed": {"idle_speed": 4}, "caption_seconds": 8,
+      "captions": [
+        "報告第一次提交就被接受：13 項主張（觀察 9、推論 2、未知 2）、7 項行動。",
+        "每項主張列出引用的頁面。控制器只核對證據編號、雜湊與結構；引用是否真的支持主張，由不看分數的盲評檢查。",
+        "研究結束前，模型還要寫最終回覆（實際 39 秒），以快轉播放。",
+        "研究完成：8 次模型呼叫，命令正常結束。接著檢視器顯示模型途中寫下的假設與修正。"
+      ]
+    },
+    {
+      "marker": "模型在研究途中寫下的假設", "pane": "viewer", "label": "③ Evidence-based Decision",
+      "speed": {"idle_speed": 1}, "caption_seconds": 4.5,
+      "captions": [
+        "模型途中寫下的假設：先讀重驗過的頁，再抽查沒讀過的頁找反例；站外要分清連結、純提及與無關結果。",
+        "它依新樣本修正判斷：58888 頁換了模板、3A 缺點頁確實談風險，所以不能說全站同模板或完全沒有風險揭露。"
+      ]
+    },
+    {
+      "marker": "修正判斷（續 2/2）", "pane": "viewer", "label": "③ Evidence-based Decision",
+      "speed": {"idle_speed": 1}, "caption_seconds": 9,
+      "captions": ["站外收斂：PDF 讀不到、兩個 HTML 頁都沒有提及，所以結論是「沒有確認有效的入站來源」，不是「沒有外部連結」。"]
+    },
+    {
+      "marker": "[4/5]", "pane": "viewer", "label": "④ 最終競爭分析與行動建議",
+      "card": {"step": "4 / 5", "title": "最終競爭分析與行動建議", "seconds": 5,
+               "sub": "先寫競爭者做了什麼（站內、站外），再列還不知道什麼，最後是給我們自己網站的行動。",
+               "req": "原題：最終競爭分析與行動建議"},
+      "speed": {"idle_speed": 1}, "caption_seconds": 4.5,
+      "captions": [
+        "結論：體育入口加上多種意圖的娛樂城內容，再導向外部註冊頁；沒有證據證明它的排名或流量成效。",
+        "我們的切入是可查證：比較、優惠條款與品牌資訊都附來源，而不是比文章數量。"
+      ]
+    },
+    {
+      "marker": "我們還不知道什麼（續 2/3）", "pane": "viewer", "label": "④ 最終競爭分析與行動建議",
+      "speed": {"idle_speed": 1}, "caption_seconds": 9,
+      "captions": ["站內證據：署名只是「2030編輯部」，結構化資料混入無關的 MLB 新聞，主要註冊按鈕都連到同一個外站網址。\n反證也記下了：3A 缺點頁確實談到風險。"]
+    },
+    {
+      "marker": "我們還不知道什麼（續 3/3）", "pane": "viewer", "label": "④ 最終競爭分析與行動建議",
+      "speed": {"idle_speed": 1}, "caption_seconds": 9,
+      "captions": ["站外只有兩頁陰性樣本；報告明列 7 個未知項與缺的資料，例如完整的 backlinks、排名與流量。"]
+    },
+    {
+      "marker": "[4/5] 行動建議", "pane": "viewer", "label": "④ 最終競爭分析與行動建議",
+      "speed": {"idle_speed": 1}, "caption_seconds": 4.5,
+      "captions": [
+        "7 項行動都針對我方網站、依優先順序：P0 先確認合規邊界，建立自己的 Search Console 基準。",
+        "P1 做可查證的決策頁與品牌頁；優惠頁只在有公開可靠的條款依據時才做。"
+      ]
+    },
+    {
+      "marker": "值得優先採取的競爭行動（續 2/2）", "pane": "viewer", "label": "④ 最終競爭分析與行動建議",
+      "speed": {"idle_speed": 1}, "caption_seconds": 9,
+      "captions": ["P1 也包括清理結構化資料；站外只做可被引用的資料、不買連結；最後一項寫出 4 到 8 週的檢視方式。"]
+    },
+    {
+      "marker": "[5/5]", "pane": "viewer", "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "card": {"step": "5 / 5", "title": "學到了什麼、交給人什麼", "seconds": 5,
+               "sub": "研究結束後，控制器把這次的發現寫進研究記憶；程式列出要人決定的事。",
+               "req": "原題：Memory / Learning"},
+      "speed": {"idle_speed": 1}, "caption_seconds": 9,
+      "captions": ["這次的量測：第 2 次工具呼叫就讀到目標頁，共 19 次工具呼叫，報告第一次就被接受；交給模型的 3 條經驗都沒有失效。"]
+    },
+    {
+      "marker": "這次表現如何（score_run）（續 2/2）", "pane": "viewer", "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "speed": {"idle_speed": 1}, "caption_seconds": 9,
+      "captions": ["對照評估：帶經驗的第 1 次與不學習的第 10 次，都到第 9 次工具呼叫才讀到目標頁。\n成本（沒命中快取的輸入加輸出）這次 73,348，介於兩者之間。"]
+    },
+    {
+      "marker": "新發現", "pane": "viewer", "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "speed": {"idle_speed": 1}, "caption_seconds": 9,
+      "captions": ["研究記憶新增 9 條發現（先列為候選），取代上一份報告的 9 條。\n下一次開始前，控制器會重抓這些頁面，確認後才交給模型。"]
+    },
+    {
+      "marker": "run 後帳本變化（續 2/2）", "pane": "viewer", "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "speed": {"idle_speed": 1}, "caption_seconds": 9,
+      "captions": ["PDF 被擋的經驗先記成候選，要在另一次研究再重現才會啟用。\n兩條目標頁經驗再次確認，效期從這次重新起算 7 天（到 10-24）。"]
+    },
+    {
+      "marker": "交還人類：研究後要人決定的事", "pane": "viewer", "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "speed": {"idle_speed": 1}, "caption_seconds": 9,
+      "captions": ["研究後由程式列出要人決定的事：P0 行動交法務或決策者確認；9 條新發現要人抽查，不實的用否決停用。\n搜尋與站外頁的預算用完、PDF 被擋，由人決定是否放寬。"]
+    },
+    {
+      "marker": "研究後要人決定的事（scripts/handoff_queue.py）（續 2/2）", "pane": "viewer",
+      "label": "⑤ Memory / Learning：學到什麼、交給人什麼",
+      "speed": {"idle_speed": 2}, "caption_seconds": 9,
+      "captions": ["7 個未知項依需要的資料分成 5 類，由人決定授權哪些資料。\n研究途中不等人：越界的請求當場被擋，要人決定的事都列在這份清單。"]
+    }
+  ],
+  "end_hold": 3,
+  "end_caption": "錄影結束畫面：右上角時間是實際經過時間。",
+  "outro_card": {
+    "seconds": 14,
+    "title": "v0.9 評估：判準先鎖定的 20 次研究",
+    "lines": [
+      "帶經驗（發現路徑＋審查回饋＋研究記憶）與不學習兩組，從空白開始在 2030.tw 交錯各跑 10 次",
+      "帶經驗：第 10 次勝第 1 次，3:0，三位評審都標明顯",
+      "同一輪，帶經驗勝不學習：第 10 次與第 9 次都是 3:0，但都只標些微",
+      "不學習：第 1 次勝第 10 次（3:0，些微），單次之間的差異本身就看得出來",
+      "十次累積讀過的站內頁：帶經驗 24 頁，不學習 13 頁",
+      "本片是評估結束後另跑的一次，不計入判定；證據在 evaluation/v09/RESULT.md 與 demo/v09/run/"
+    ],
+    "note": "評審：三位沒看過分數與計畫的 Claude agent（非 SEO 專業人員），逐條核對頁面快照"
+  }
+}

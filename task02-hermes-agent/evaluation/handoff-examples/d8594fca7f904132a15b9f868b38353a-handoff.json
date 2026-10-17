@@ -1,0 +1,437 @@
+{
+  "schema": "handoff-queue/1",
+  "source": {
+    "db": "evaluation/v08/runs/ledger-series",
+    "run": "d8594fca7f904132a15b9f868b38353a",
+    "sha256": "b3ea0df04621fc4e1edab8b0ed78a7a674fa7a1f972d87023d546c294eeaace9"
+  },
+  "run": {
+    "id": "d8594fca7f904132a15b9f868b38353a",
+    "host": "2030.tw",
+    "created": "2026-10-16T20:00:54.428591+00:00",
+    "started": true,
+    "mode": "memory",
+    "learning": true,
+    "keywords": [
+      "娛樂城",
+      "3A娛樂城"
+    ],
+    "status": "finished",
+    "outcome": "research_complete",
+    "hermes_learning": "off",
+    "report_accepted": true,
+    "report_rejections": 0,
+    "preflight": {
+      "ready": true,
+      "blocker": "",
+      "logged_in": true,
+      "rate_limited": false,
+      "tools": 6,
+      "tools_match": true
+    },
+    "human_reviews": []
+  },
+  "usage": {
+    "requests": {
+      "used": 9,
+      "limit": 30,
+      "by": {
+        "model": 2,
+        "offpage": 4,
+        "controller": 3
+      }
+    },
+    "calls": {
+      "used": 16,
+      "limit": 40
+    },
+    "searches": {
+      "used": 5,
+      "limit": 5
+    },
+    "offpage": {
+      "used": 2,
+      "limit": 4
+    },
+    "seconds": {
+      "used": null,
+      "limit": 900
+    }
+  },
+  "summary": {
+    "by_priority": {
+      "decide": 1,
+      "review": 5,
+      "info": 3
+    },
+    "by_category": {
+      "preflight": {
+        "items": 0,
+        "decide": 0
+      },
+      "lesson_change": {
+        "items": 2,
+        "decide": 0
+      },
+      "lessons_in_use": {
+        "items": 1,
+        "decide": 0
+      },
+      "limit": {
+        "items": 2,
+        "decide": 0
+      },
+      "report_rejection": {
+        "items": 0,
+        "decide": 0
+      },
+      "unknown": {
+        "items": 1,
+        "decide": 0
+      },
+      "action": {
+        "items": 3,
+        "decide": 1
+      }
+    },
+    "handled": 0
+  },
+  "command_root": "runs/v08-ledger-copy",
+  "items": [
+    {
+      "category": "action",
+      "priority": "decide",
+      "title": "第 1 項（需要法務或決策者）：P0｜我方先確認營運與內容適用法域、年齡限制、個資與責任博彩要求，再評估是否承接兩個詞；如發佈評測，…",
+      "decision": "交法務或決策者確認後，再決定是否執行。",
+      "why_human": "Agent 沒有修改網站或對外發布的工具，建議只能由人執行。Agent 把它排為 P0（最優先），優先順序牽涉我方資源，要人核可。內容涉及法規或合規（觸發詞：法域、年齡、個資、責任博彩、KYC、合法、法律），要法務或決策者確認。",
+      "evidence": [
+        "action:1：P0｜我方先確認營運與內容適用法域、年齡限制、個資與責任博彩要求，再評估是否承接兩個詞；如發佈評測，明示商業關係與資料限制，不把SSL/KYC當作合法或付款保證。",
+        "理由：競爭頁把安全與出金作為核心賣點；我方應先控制法律與信任風險，不直接複製競爭者保證式說法。成本低至中，屬上線前門檻，非排名效果保證。"
+      ],
+      "if_no_action": "不會執行。",
+      "options": [
+        {
+          "choice": "採納：由人排入工作並執行",
+          "command": null
+        },
+        {
+          "choice": "不採納並標註理由（成為之後研究的審查標準）",
+          "command": "python scripts/feedback.py --root runs/v08-ledger-copy label --run d8594fca7f904132a15b9f868b38353a --target action:1 --label scope_error --reason \"<理由>\" --reviewer \"<審查者>\""
+        }
+      ],
+      "refs": {
+        "target": "action:1",
+        "tag": "P0",
+        "legal_terms": [
+          "法域",
+          "年齡",
+          "個資",
+          "責任博彩",
+          "KYC",
+          "合法",
+          "法律"
+        ]
+      },
+      "id": "H1"
+    },
+    {
+      "category": "lesson_change",
+      "priority": "review",
+      "title": "候選經驗：failure|research_search|plain",
+      "decision": "決定是否先否決。它還沒被採用，不會出現在研究中。",
+      "why_human": "失敗模式要在 2 個研究中重現才啟用，目前 1 個；再重現就自動啟用，不經人核准。控制器把搜尋回報「沒有結果」算成研究方法失敗（逾時與限流不算）；免金鑰搜尋有時對正常的查詢也回報沒有結果，是查詢不好還是索引暫時沒回應，要人判斷。",
+      "evidence": [
+        "lesson dc86bf8b9498（failure_pattern）：failure|research_search|plain",
+        "控制器紀錄的理由：1 run(s) reproduced failure|research_search|plain on 1 host(s)",
+        "失敗：搜尋「\"2030.tw\" \"運彩\"」→ no_results（HTTP 503：DuckDuckGo search failed: DDGSException: No results found.，evidence 1cb961ad8aca465e8ee8d93a995a2ab1）",
+        "帳本目前狀態：candidate，效期到 2026-10-23 20:03 UTC"
+      ],
+      "if_no_action": "維持候選；再有一個研究重現就自動啟用，7 天沒有新支持就到期。",
+      "options": [
+        {
+          "choice": "等更多量測：不需操作",
+          "command": null
+        },
+        {
+          "choice": "否決（阻止它自動啟用）",
+          "command": "python scripts/feedback.py --root runs/v08-ledger-copy veto --lesson dc86bf8b9498 --reason \"<理由>\" --reviewer \"<審查者>\""
+        }
+      ],
+      "refs": {
+        "lesson": "dc86bf8b9498",
+        "old": "revoked",
+        "new": "candidate",
+        "created": false
+      },
+      "id": "H2"
+    },
+    {
+      "category": "limit",
+      "priority": "review",
+      "title": "預算用完：搜尋 5/5",
+      "decision": "決定下次是否放寬這項預算，或接受目前的覆蓋範圍。",
+      "why_human": "預算是操作者為時間、請求與成本設的上限；Agent 只能在上限內取捨，不能自己加。",
+      "evidence": [
+        "用量 5/5（上限固定在 `Research.search`）"
+      ],
+      "if_no_action": "下次研究用同樣的預算。",
+      "options": [
+        {
+          "choice": "維持",
+          "command": null
+        },
+        {
+          "choice": "放寬：改 `src/research_core.py` 的 `Limits`（搜尋上限在 `Research.search`）。這是程式變更，正式評估前要先登錄新計畫",
+          "command": null
+        }
+      ],
+      "refs": {
+        "budget": "searches"
+      },
+      "id": "H3"
+    },
+    {
+      "category": "unknown",
+      "priority": "review",
+      "title": "未知項 8 項，需要的資料分成 6 類",
+      "decision": "逐類決定要授權什麼資料，或接受為未知。",
+      "why_human": "補齊未知項通常需要帳號、付費資料、我方網站資料或法務判斷，都要人授權；各類的原因寫在依據的分類標題。",
+      "evidence": [
+        "【完整反向連結】公開索引看不到完整反向連結；新資料源有費用或處理成本，要人授權。",
+        "claim:11：未知：2030.tw完整backlink數量、referring domains、錨文字分布、歷史增減、付費連結、其他頁面的提及及其對兩關鍵字排名的貢獻。本輪未確認正向站外提及，不能據此宣稱沒有backlinks。（也涉及：競爭者的排名、流量與轉換）",
+        "unknowns[2]：完整backlink清單、入站錨文字分布及其因果影響；本輪兩個站外首頁查無連結不代表全網沒有。",
+        "這次 research_offpage 讀了 2 頁，連到目標站 0 頁、提及目標網域 0 頁",
+        "【競爭者的排名、流量與轉換】這些是競爭者的私有資料，Agent 沒有合法取得途徑；第三方工具要付費，而且只是估算。",
+        "claim:12：競爭者兩關鍵字的實際排名、自然流量、點擊率、轉換與營收未知；本輪公開頁面與有限搜尋不能取代其私有Search Console或分析帳號，也尚未審核我方網站。（也涉及：我方網站資料）",
+        "unknowns[1]：競爭者完整索引、排名、自然流量、轉換與收入。",
+        "【我方網站資料】我方資料要我方帳號授權，Agent 沒有登入能力。",
+        "unknowns[6]：我方網域、現有內容、權限數據、預算與法遵條件未提供；行動為我方評估方案，不是對競爭站的修改。（也涉及：法律、金流與契約）",
+        "【法律、金流與契約】牌照、法律實體、契約與出入金說法的查證涉及法規與實際金流，Agent 不能也不應代為查證。",
+        "unknowns[4]：出金與最低入金等說法的真實性、品牌法律實體、官方身分與轉介佣金契約。",
+        "【需要額外量測】要多花請求預算或使用外部服務，屬於成本取捨。",
+        "unknowns[5]：Core Web Vitals、行動版實測、結構化資料有效性、完整robots.txt與sitemap審核未涵蓋。",
+        "【其他】沒有對應的現成資料源，要人判斷價值與成本。",
+        "unknowns[3]：站方所稱2502篇的實際有效URL、獨特內容數量及更新品質。",
+        "分類依關鍵詞判斷，可能分錯；原文在報告的 unknowns 與 kind=unknown 的主張"
+      ],
+      "if_no_action": "下次研究仍是未知。",
+      "options": [
+        {
+          "choice": "完整反向連結：接受只用公開索引，或授權付費反向連結索引、Common Crawl 的網站連結圖。",
+          "command": null
+        },
+        {
+          "choice": "競爭者的排名、流量與轉換：接受為未知，或授權付費的第三方估算工具。",
+          "command": null
+        },
+        {
+          "choice": "我方網站資料：提供我方網域、Search Console 與內容清單，或維持只研究競爭者。",
+          "command": null
+        },
+        {
+          "choice": "法律、金流與契約：交給法務判斷是否需要查證、怎麼查。",
+          "command": null
+        },
+        {
+          "choice": "需要額外量測：決定是否放寬預算，或另用量測工具（例如 PageSpeed、結構化資料測試）。",
+          "command": null
+        },
+        {
+          "choice": "其他：決定是否值得追查、用什麼資料。",
+          "command": null
+        },
+        {
+          "choice": "接受全部為未知",
+          "command": null
+        }
+      ],
+      "refs": {},
+      "id": "H4"
+    },
+    {
+      "category": "action",
+      "priority": "review",
+      "title": "第 5 項（需要法務或決策者）：P1｜建立我方上線前基準，分開記錄娛樂城與3A查詢群的我方GSC曝光、點擊、落地頁及合規轉換；以4至…",
+      "decision": "交法務或決策者確認後，再決定是否執行。",
+      "why_human": "Agent 沒有修改網站或對外發布的工具，建議只能由人執行。內容涉及法規或合規（觸發詞：合規），要法務或決策者確認。",
+      "evidence": [
+        "action:5：P1｜建立我方上線前基準，分開記錄娛樂城與3A查詢群的我方GSC曝光、點擊、落地頁及合規轉換；以4至8週作首輪檢查窗口而非成效承諾。競爭者只做固定條件公開SERP與頁面版本追蹤；後續若用第三方backlink索引，標示涵蓋限制並抽驗來源。",
+        "理由：公開頁面能解讀策略設計，無法證明流量或成效；以我方授權數據決定是否擴張，成本與品質分別評估。成本低至中。"
+      ],
+      "if_no_action": "不會執行。",
+      "options": [
+        {
+          "choice": "採納：由人排入工作並執行",
+          "command": null
+        },
+        {
+          "choice": "不採納並標註理由（成為之後研究的審查標準）",
+          "command": "python scripts/feedback.py --root runs/v08-ledger-copy label --run d8594fca7f904132a15b9f868b38353a --target action:5 --label scope_error --reason \"<理由>\" --reviewer \"<審查者>\""
+        }
+      ],
+      "refs": {
+        "target": "action:5",
+        "tag": "P1",
+        "legal_terms": [
+          "合規"
+        ]
+      },
+      "id": "H5"
+    },
+    {
+      "category": "action",
+      "priority": "review",
+      "title": "其他行動建議 3 項",
+      "decision": "逐項決定是否採納並排入工作。",
+      "why_human": "Agent 沒有修改網站或對外發布的工具，建議只能由人執行；是否值得做是我方的資源取捨。",
+      "evidence": [
+        "action:2：P1｜若我方適合承接，先做少量證據型頁：娛樂城主詞頁提供可重現的比較方法、條款與風險矩陣；3A頁提供品牌實體與官方身分查核、可引用條款、日期、變更紀錄、已確認與未確認欄。未實測就不寫實測，不以投入賭資作為研究必要條件。",
+        "　理由：競爭者兩頁骨架近似且數字缺少可見驗證紀錄；用證據與意圖分工競爭，比照抄其自稱2502篇更可驗證。成本中，品質潛力高，SEO效果待我方數據驗證。",
+        "action:3：P1｜審核我方現有URL後，建立清楚的主題樞紐—一般指南—品牌查核頁內鏈，使用描述性錨文字；檢查200、canonical、robots與重複URL。先避免我方既有頁互搶意圖，再決定新增或合併。",
+        "　理由：競爭者已有可驗證首頁到兩落地頁的路徑，不能只靠一篇孤立文章競爭；我方尚未受審，故不預設需改哪些URL。成本低至中。",
+        "action:4：P2｜我方先公開值得引用的原始資產，例如條款變更追蹤、出金限制詞彙解讀與風險查核表，再向主題相關且有編輯審查的媒體或消費者教育網站提案；逐頁驗證實際發布連結、錨文字、rel和上下文，不購買精確匹配錨文字連結或洗論壇。",
+        "　理由：本輪沒有確認競爭者的正向入站來源，不能複製一個未證實的外鏈名單；以可引用價值作為我方off-page測試。成本中至高，取得連結與排名影響皆不保證。"
+      ],
+      "if_no_action": "不會執行。",
+      "options": [
+        {
+          "choice": "採納：由人排入工作並執行",
+          "command": null
+        },
+        {
+          "choice": "不採納並標註理由（N 換成項次）",
+          "command": "python scripts/feedback.py --root runs/v08-ledger-copy label --run d8594fca7f904132a15b9f868b38353a --target action:N --label scope_error --reason \"<理由>\" --reviewer \"<審查者>\""
+        }
+      ],
+      "refs": {
+        "targets": [
+          "action:2",
+          "action:3",
+          "action:4"
+        ]
+      },
+      "id": "H6"
+    },
+    {
+      "category": "lesson_change",
+      "priority": "info",
+      "title": "已撤銷的經驗再次記錄：failure|research_search|site_operator",
+      "decision": "不需要決定；列出供核對。",
+      "why_human": "撤銷後的失敗與反例照常計數，狀態不變。",
+      "evidence": [
+        "lesson e29ca3d21f8a（failure_pattern）：failure|research_search|site_operator",
+        "控制器紀錄的理由：counterexample: 3 successful call(s) with feature site_operator in run d8594fca7f904132a15b9f868b38353a",
+        "失敗：搜尋「\"2030玩運彩\" -site:2030.tw」→ no_results（HTTP 503：DuckDuckGo search failed: DDGSException: No results found.，evidence 9da88b7aecdd4cfba4e61415856fcba0）",
+        "反例：搜尋「\"2030.tw\" -site:2030.tw」→ ok（HTTP 200，evidence 26fc7389bd2145588b0c18846992e971）",
+        "反例：搜尋「\"2030\" \"3A娛樂城\" -site:2030.tw」→ ok（HTTP 200，evidence b1298478417d4d5cb7c70aac7c6e3abe）",
+        "反例：搜尋「\"https://2030.tw\" -site:2030.tw -site:finance.yahoo.com -site:tw.stock.yahoo.com」→ ok（HTTP 200，evidence 7f40a24e105d4f6f875c9ad8a83a85a4）",
+        "帳本目前狀態：revoked"
+      ],
+      "if_no_action": "維持撤銷。",
+      "options": [
+        {
+          "choice": "不處理",
+          "command": null
+        },
+        {
+          "choice": "否決（永久停用，之後不會自動恢復）",
+          "command": "python scripts/feedback.py --root runs/v08-ledger-copy veto --lesson e29ca3d21f8a --reason \"<理由>\" --reviewer \"<審查者>\""
+        }
+      ],
+      "refs": {
+        "lesson": "e29ca3d21f8a",
+        "old": "revoked",
+        "new": "revoked",
+        "created": false
+      },
+      "id": "H7"
+    },
+    {
+      "category": "lessons_in_use",
+      "priority": "info",
+      "title": "這次研究使用的經驗（3 條）",
+      "decision": "確認這些經驗仍然可信，不可信的就否決。",
+      "why_human": "經驗會改變 Agent 先讀什麼、避開什麼、怎麼寫主張。發現路徑每次使用前由控制器重抓確認；人工審查經驗沒有效期。",
+      "evidence": [
+        "lesson 98d867029fed（discovery_path）discovery|2030.tw|3a娛樂城：適用 this_host，開始時重抓 ok（evidence ad974c9841f4424ca0ab148f69e6c5e9），效期 2026-10-23 19:52 UTC",
+        "lesson dfb379fdb342（discovery_path）discovery|2030.tw|娛樂城：適用 this_host，開始時重抓 ok（evidence db55111bf3bc4f99a48f9b59e8a0ca7a），效期 2026-10-23 19:52 UTC",
+        "lesson 38b7cba20063（human_feedback）feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1：適用 general，效期 無，人工審查，帳本記錄的審查者為 總控Claude（使用者授權代審）；沒有效期，只能由人否決",
+        "event 242（lessons_presented）"
+      ],
+      "if_no_action": "之後的研究照常使用。",
+      "options": [
+        {
+          "choice": "不處理",
+          "command": null
+        },
+        {
+          "choice": "否決 98d867029fed",
+          "command": "python scripts/feedback.py --root runs/v08-ledger-copy veto --lesson 98d867029fed --reason \"<理由>\" --reviewer \"<審查者>\""
+        },
+        {
+          "choice": "否決 dfb379fdb342",
+          "command": "python scripts/feedback.py --root runs/v08-ledger-copy veto --lesson dfb379fdb342 --reason \"<理由>\" --reviewer \"<審查者>\""
+        },
+        {
+          "choice": "否決 38b7cba20063",
+          "command": "python scripts/feedback.py --root runs/v08-ledger-copy veto --lesson 38b7cba20063 --reason \"<理由>\" --reviewer \"<審查者>\""
+        }
+      ],
+      "refs": {
+        "event": 242
+      },
+      "id": "H8"
+    },
+    {
+      "category": "limit",
+      "priority": "info",
+      "title": "搜尋沒有結果或失敗：2/5 次",
+      "decision": "接受免金鑰搜尋的覆蓋限制，或授權付費搜尋、反向連結資料源。",
+      "why_human": "Agent 只能用現有的免金鑰索引；新的資料源可能有費用與使用條款，要人授權。",
+      "evidence": [
+        "event 258：搜尋「\"2030玩運彩\" -site:2030.tw」→ no_results（HTTP 503：DuckDuckGo search failed: DDGSException: No results found.，evidence 9da88b7aecdd4cfba4e61415856fcba0）",
+        "event 264：搜尋「\"2030.tw\" \"運彩\"」→ no_results（HTTP 503：DuckDuckGo search failed: DDGSException: No results found.，evidence 1cb961ad8aca465e8ee8d93a995a2ab1）"
+      ],
+      "if_no_action": "下次仍用同一個免金鑰索引。",
+      "options": [
+        {
+          "choice": "接受",
+          "command": null
+        },
+        {
+          "choice": "授權新資料源：改控制器程式，正式評估前要先登錄新計畫",
+          "command": null
+        }
+      ],
+      "refs": {},
+      "id": "H9"
+    }
+  ],
+  "fixed_rules": [
+    {
+      "matter": "登入與用量額度",
+      "how": "使用者自己在瀏覽器完成裝置登入。runner 開跑前檢查登入、限流與工具清單，未就緒就以 exit 2 停止、不呼叫模型。Agent 沒有登入或查用量的工具。",
+      "where": "scripts/login_hermes.sh、scripts/run_research.py、src/runner_support.py 的 readiness"
+    },
+    {
+      "matter": "付費",
+      "how": "Agent 沒有付費 API 金鑰或付費工具；搜尋用 Hermes 內建的免金鑰 DDGS。加入付費資料源要改控制器程式，由人授權費用。",
+      "where": "plugin/__init__.py、src/research_core.py"
+    },
+    {
+      "matter": "對外發布或修改網站",
+      "how": "平常的研究只有六個唯讀研究工具：HTTP 只送不帶內容的 GET，research_finish 只把報告寫進研究目錄；沒有 shell、檔案或瀏覽器工具。比較 Hermes 原生學習時另加 Hermes 的 memory 與 skills 工具，只寫 Hermes 自己的儲存。實際工具清單與預期不同時 runner 拒絕開跑。",
+      "where": "src/research_core.py 的 HTTP、src/runner_support.py 的 HERMES_MODES、scripts/run_research.py 的 build_agent"
+    },
+    {
+      "matter": "否決經驗與人工審查",
+      "how": "lesson 只由控制器量測與人工審查產生，模型沒有寫入帳本的工具。人工標註與否決用 feedback.py，要寫審查者與理由；否決後不再自動恢復。",
+      "where": "src/lessons.py 的 Ledger.add_feedback、Ledger.veto，scripts/feedback.py"
+    },
+    {
+      "matter": "研究對象與預算",
+      "how": "操作者開跑時指定網站、關鍵字與 research_fetch 的允許網域；research_offpage 只讀這次搜尋列出的站外網址，每次最多 4 頁。預算寫在控制器，每次工具呼叫都檢查。Agent 沒有修改它們的工具。",
+      "where": "scripts/run_research.py 的 --target、--keyword、--allow-host，src/research_core.py 的 Limits 與 Research.search"
+    }
+  ]
+}

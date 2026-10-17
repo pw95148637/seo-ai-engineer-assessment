@@ -1,0 +1,156 @@
+{
+  "run_id": "08b9eb72aa8c468aa01ee8f966716d04",
+  "host": "2030.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": {
+      "call": 9,
+      "evidence_id": "ad42404e6b3d4280add5fca4fde19e7f",
+      "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    },
+    "3A娛樂城": {
+      "call": 8,
+      "evidence_id": "407bd9b5397847ca8869f66d4e099640",
+      "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    }
+  },
+  "both_target_pages_read": true,
+  "tool_calls": 15,
+  "calls_before_first_hit": 7,
+  "calls_until_both_hit": 9,
+  "searches": 5,
+  "failed_searches": 4,
+  "failed_search_kinds": {
+    "no_results": 4,
+    "error": 0
+  },
+  "failed_search_queries": [
+    "site:2030.tw \"3A娛樂城\"",
+    "\"2030.tw\" \"娛樂城\" -site:2030.tw -site:finance.yahoo.com -site:tw.stock.yahoo.com",
+    "site:2030.tw 娛樂城 3A",
+    "\"2030\" \"玩運彩\" -site:2030.tw"
+  ],
+  "http_requests": 9,
+  "http_requests_controller": 0,
+  "sitemap_reads": 0,
+  "refetched_verified_pages": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 0
+  },
+  "lessons_presented": 0,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 305071,
+    "prompt": 298828,
+    "completion": 6243,
+    "api_calls": 8,
+    "cache_read": 219392,
+    "cache_write": 0,
+    "uncached_prompt": 79436,
+    "cost": 85679
+  },
+  "hermes_tools": {
+    "research_status": 1,
+    "research_fetch": 8,
+    "research_search": 5,
+    "research_finish": 1
+  },
+  "claims": 13,
+  "actions": 6,
+  "sections": {
+    "on_page": 10,
+    "off_page": 2,
+    "other": 1
+  },
+  "offpage": {
+    "claims": 2,
+    "observation": 1,
+    "inference": 0,
+    "unknown": 1,
+    "three_columns": false,
+    "known": 1,
+    "known_external": 1,
+    "known_link_verified": 0,
+    "pages_fetched": 0,
+    "pages_linking_to_target": 0
+  },
+  "offpage_policy_violations": [],
+  "state": "research_complete",
+  "transcript_calls": 7,
+  "v09": {
+    "onsite_read": [
+      "https://2030.tw",
+      "https://2030.tw/wordcup",
+      "https://2030.tw/wordcup/3a娛樂城",
+      "https://2030.tw/wordcup/3a娛樂城不出金",
+      "https://2030.tw/wordcup/3a娛樂城合法嗎",
+      "https://2030.tw/wordcup/?cat=娛樂城安全與出金",
+      "https://2030.tw/wordcup/娛樂城",
+      "https://2030.tw/wordcup/娛樂城推薦"
+    ],
+    "cited_claims": 11,
+    "claim_pages": [
+      [
+        "https://2030.tw"
+      ],
+      [
+        "https://2030.tw/wordcup"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/娛樂城推薦"
+      ],
+      [
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/娛樂城推薦"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城合法嗎"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城不出金",
+        "https://2030.tw/wordcup/3a娛樂城合法嗎"
+      ],
+      [
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      [
+        "https://2030.tw/wordcup/?cat=娛樂城安全與出金"
+      ],
+      [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/娛樂城推薦"
+      ],
+      [
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/娛樂城"
+      ],
+      []
+    ],
+    "memory": null,
+    "resolved_unknowns": [],
+    "candidates_read": 0,
+    "controller_requests": 0
+  }
+}

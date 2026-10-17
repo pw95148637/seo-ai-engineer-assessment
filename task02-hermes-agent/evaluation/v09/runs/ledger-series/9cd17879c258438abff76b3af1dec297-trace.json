@@ -1,0 +1,290 @@
+[
+  {
+    "id": 1,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "start",
+    "data": "{\"mode\": \"memory\", \"target\": \"https://2030.tw\", \"keywords\": [\"娛樂城\", \"3A娛樂城\"], \"limits\": {\"requests\": 30, \"calls\": 40, \"bytes\": 2000000, \"seconds\": 900, \"timeout\": 20, \"interval\": 2, \"redirects\": 3, \"offpage\": 4, \"controller_requests\": 10}, \"learning\": true, \"required_sections\": [\"on_page\", \"off_page\"]}"
+  },
+  {
+    "id": 2,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_status\", \"args\": {}}"
+  },
+  {
+    "id": 3,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "lessons_presented",
+    "data": "{\"time\": \"2026-10-17T08:28:11.141927+00:00\", \"lessons\": []}"
+  },
+  {
+    "id": 4,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "memory_presented",
+    "data": "{\"time\": \"2026-10-17T08:28:11.170174+00:00\", \"findings\": [], \"recheck\": [], \"revoked\": [], \"candidates\": [], \"unknowns\": [], \"checked_pages\": 0, \"controller_requests\": 0}"
+  },
+  {
+    "id": 5,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://2030.tw/\", \"purpose\": \"驗證首頁是否以娛樂城泛詞或3A娛樂城為主題，檢查可見標題、導覽、內鏈及結構化資料，尋找與品牌導流假設不符的證據。\"}}"
+  },
+  {
+    "id": 6,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/robots.txt\", \"number\": 1, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 7,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"5d88c4cf3102487e88eedb9663f322e4\", \"url\": \"https://2030.tw/robots.txt\", \"status\": 200, \"sha256\": \"c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-17T08:28:19.881876+00:00\", \"headers\": {\"content-type\": \"text/plain; charset=utf-8\", \"last-modified\": \"Sat, 17 Oct 2026 08:28:19 GMT\"}}"
+  },
+  {
+    "id": 8,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/\", \"number\": 2, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 9,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"cb5396def79544cb98173d81dc0370ef\", \"url\": \"https://2030.tw/\", \"status\": 200, \"sha256\": \"63eef6045318ca42304443735bcb006805f3adcba12ea024fdaef7227d45298d\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-17T08:28:21.235905+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 06:11:16 GMT\"}}"
+  },
+  {
+    "id": 10,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"cb5396def79544cb98173d81dc0370ef\", \"kind\": \"html\", \"links_count\": 136, \"purpose\": \"驗證首頁是否以娛樂城泛詞或3A娛樂城為主題，檢查可見標題、導覽、內鏈及結構化資料，尋找與品牌導流假設不符的證據。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 11,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"2030.tw\\\"\"}}"
+  },
+  {
+    "id": 12,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"2030.tw\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 1}"
+  },
+  {
+    "id": 13,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"7520bcfb7d2c4cb1a135e898e998d72d\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-17T08:28:23.981645+00:00\", \"query\": \"\\\"2030.tw\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 5, \"outcome\": \"ok\"}"
+  },
+  {
+    "id": 14,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"site:2030.tw \\\"3A娛樂城\\\"\"}}"
+  },
+  {
+    "id": 15,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "search_request",
+    "data": "{\"query\": \"site:2030.tw \\\"3A娛樂城\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 2}"
+  },
+  {
+    "id": 16,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"d36bc22c62f649d49b3b1d149e5b4689\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-17T08:28:29.972863+00:00\", \"query\": \"site:2030.tw \\\"3A娛樂城\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 0, \"outcome\": \"no_results\"}"
+  },
+  {
+    "id": 17,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://2030.tw/wordcup/\", \"purpose\": \"首頁以線上娛樂城推薦錨文字指向此頁；驗證實際主題、3A品牌內容、比較標準及轉換連結，反查首頁泛詞入口假設。\"}}"
+  },
+  {
+    "id": 18,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/\", \"number\": 3, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 19,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"c301feecdce542f780b08de6ee2b185f\", \"url\": \"https://2030.tw/wordcup/\", \"status\": 200, \"sha256\": \"78123e000542102429c1e62b58f7273a7b2caed166b19e619b9410373cb5ea6c\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-17T08:28:35.452665+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 06:21:19 GMT\"}}"
+  },
+  {
+    "id": 20,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"c301feecdce542f780b08de6ee2b185f\", \"kind\": \"html\", \"links_count\": 110, \"purpose\": \"首頁以線上娛樂城推薦錨文字指向此頁；驗證實際主題、3A品牌內容、比較標準及轉換連結，反查首頁泛詞入口假設。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 21,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"2030.tw\\\" 娛樂城 -site:2030.tw\"}}"
+  },
+  {
+    "id": 22,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"2030.tw\\\" 娛樂城 -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 3}"
+  },
+  {
+    "id": 23,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"370a3f109d7f41f7bf74e14b65fa9206\", \"status\": 503, \"method\": \"search_index\", \"time\": \"2026-10-17T08:28:41.725258+00:00\", \"query\": \"\\\"2030.tw\\\" 娛樂城 -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 0, \"outcome\": \"no_results\"}"
+  },
+  {
+    "id": 24,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"2030玩運彩\\\" -site:2030.tw\"}}"
+  },
+  {
+    "id": 25,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"2030玩運彩\\\" -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 4}"
+  },
+  {
+    "id": 26,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"6a83757295344a159793a08d736a9b1a\", \"status\": 503, \"method\": \"search_index\", \"time\": \"2026-10-17T08:28:47.018094+00:00\", \"query\": \"\\\"2030玩運彩\\\" -site:2030.tw\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 0, \"outcome\": \"no_results\"}"
+  },
+  {
+    "id": 27,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle/\", \"purpose\": \"抽查首頁最新體育入口，驗證是否具實質賽事資訊及娛樂城或3A導流，避免僅由首頁大量標題推定內容品質或導流策略。\"}}"
+  },
+  {
+    "id": 28,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle/\", \"number\": 4, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 29,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"4d674733826d4ffb8e305e4a3f665abf\", \"url\": \"https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle/\", \"status\": 200, \"sha256\": \"8baea9d4e0a2340fe2da98887246774cb22e63dc38451885e315068a8e9081f1\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-17T08:28:47.436364+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 08:25:43 GMT\"}}"
+  },
+  {
+    "id": 30,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"4d674733826d4ffb8e305e4a3f665abf\", \"kind\": \"html\", \"links_count\": 105, \"purpose\": \"抽查首頁最新體育入口，驗證是否具實質賽事資訊及娛樂城或3A導流，避免僅由首頁大量標題推定內容品質或導流策略。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 31,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"purpose\": \"直接核對3A目標頁的title、H1、評測依據、FAQ、內外鏈及schema，驗證品牌評價是否有可追溯測試證據，並查目錄的MLB schema錯置是否同樣存在。\"}}"
+  },
+  {
+    "id": 32,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"number\": 5, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 33,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"97f8a8480d174245867d739c1cf18e0c\", \"url\": \"https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"status\": 200, \"sha256\": \"d340bd2d469460205a7494f514b219e1885824d449e943a4531278f37f0ae1db\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-17T08:28:59.239111+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 06:48:02 GMT\"}}"
+  },
+  {
+    "id": 34,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"97f8a8480d174245867d739c1cf18e0c\", \"kind\": \"html\", \"links_count\": 67, \"purpose\": \"直接核對3A目標頁的title、H1、評測依據、FAQ、內外鏈及schema，驗證品牌評價是否有可追溯測試證據，並查目錄的MLB schema錯置是否同樣存在。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 35,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"purpose\": \"直接核對娛樂城泛詞頁與3A品牌頁的意圖分工、比較表及證據來源，尋找重複模板或足以推翻內容薄弱假設的具體資訊。\"}}"
+  },
+  {
+    "id": 36,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"number\": 6, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 37,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"8015e9841c454feeb9dba7e2f996865e\", \"url\": \"https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"status\": 200, \"sha256\": \"dbcab05545c962b38ff42806341390ec516fb7b5f41c527a33a10810918793ea\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-17T08:29:01.237313+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 06:16:40 GMT\"}}"
+  },
+  {
+    "id": 38,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"8015e9841c454feeb9dba7e2f996865e\", \"kind\": \"html\", \"links_count\": 68, \"purpose\": \"直接核對娛樂城泛詞頁與3A品牌頁的意圖分工、比較表及證據來源，尋找重複模板或足以推翻內容薄弱假設的具體資訊。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 39,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"https://2030.tw/\\\" -site:2030.tw -股票 -stock -yahoo\"}}"
+  },
+  {
+    "id": 40,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"https://2030.tw/\\\" -site:2030.tw -股票 -stock -yahoo\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 5}"
+  },
+  {
+    "id": 41,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"55acaa4898d54df7a4e5698ea852c38f\", \"status\": 503, \"method\": \"search_index\", \"time\": \"2026-10-17T08:29:07.337524+00:00\", \"query\": \"\\\"https://2030.tw/\\\" -site:2030.tw -股票 -stock -yahoo\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 0, \"outcome\": \"no_results\"}"
+  },
+  {
+    "id": 42,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"purpose\": \"以目錄第二個不同品牌作反例抽樣，查是否有獨立測試記錄、不同章節與品牌專屬CTA；避免由娛樂城與3A兩頁就推論整個品牌內容群皆採同模板或同一轉換目的地。\"}}"
+  },
+  {
+    "id": 43,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"number\": 7, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 44,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"f47b182120194e0fb3c158451be65e16\", \"url\": \"https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E\", \"status\": 200, \"sha256\": \"7b49d45d4b936aeb09e36d92f8d2726d0d19d7951a493ca1287b00eca36aabee\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-17T08:29:17.055862+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Sat, 17 Oct 2026 06:48:49 GMT\"}}"
+  },
+  {
+    "id": 45,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"f47b182120194e0fb3c158451be65e16\", \"kind\": \"html\", \"links_count\": 68, \"purpose\": \"以目錄第二個不同品牌作反例抽樣，查是否有獨立測試記錄、不同章節與品牌專屬CTA；避免由娛樂城與3A兩頁就推論整個品牌內容群皆採同模板或同一轉換目的地。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 46,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_finish\", \"args\": {\"report\": {\"claims\": [{\"text\": \"首頁title與H1主打2030玩運彩瘋世足、MLB/NBA及世界盃，導覽以「線上娛樂城推薦」連到/wordcup/；因此不能把首頁當成娛樂城或3A主關鍵字落地頁。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"cb5396def79544cb98173d81dc0370ef\"], \"topic\": \"architecture\"}, {\"text\": \"娛樂城目錄的title、H1、description針對線上娛樂城推薦，提供品牌、評價、優惠、玩法、安全與出金分類，首屏列出3a娛樂城與娛樂城內頁。頁面自稱2502篇評測、53頁，這是頁面宣告而非本輪核實的獨立優質文章或索引數。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"c301feecdce542f780b08de6ee2b185f\"], \"topic\": \"keyword_cluster\"}, {\"text\": \"3A頁title為「3a娛樂城｜遊戲種類、優惠、出金全攻略」，娛樂城頁title為「娛樂城評價｜台灣玩家首選平台」；兩者有自指canonical、index/follow、可見FAQ與五題FAQPage，並有Article標記。這些是實作證據，不證明Google已索引、給予FAQ呈現或排名。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"97f8a8480d174245867d739c1cf18e0c\", \"8015e9841c454feeb9dba7e2f996865e\"], \"topic\": \"metadata\"}, {\"text\": \"娛樂城、3A及富遊三個樣本均依平台特色、遊戲種類、出金安全、註冊、優惠、客服、FAQ排列；三者主要註冊CTA均指向https://don0911.3a1788.bet/?st=wg2030並帶nofollow。富遊頁未呈現品牌專屬的不同註冊目的地；此觀察不能外推所有目錄文章或最終重導落地品牌。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"97f8a8480d174245867d739c1cf18e0c\", \"8015e9841c454feeb9dba7e2f996865e\", \"f47b182120194e0fb3c158451be65e16\"], \"topic\": \"conversion\"}, {\"text\": \"目錄與抽查的三個娛樂城內頁都含不相干的MLB賽果NewsArticle及指向另一篇MLB URL的WebPage資料；3A可見更新日期為2026-09-24，Article dateModified為2026-09-29。這些是結構化資料與頁面主體／日期的一致性缺口，未量測搜尋影響或處罰。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"c301feecdce542f780b08de6ee2b185f\", \"97f8a8480d174245867d739c1cf18e0c\", \"8015e9841c454feeb9dba7e2f996865e\", \"f47b182120194e0fb3c158451be65e16\"], \"topic\": \"structured_data\"}, {\"text\": \"3A文章自述玩了數月、出金半小時至一小時、最低入金1000元及24小時客服，但本輪可讀正文與連結未見對應測試紀錄、條款來源、牌照查核或出金憑證。娛樂城泛詞頁也未提供具名平台比較表。這代表樣本的可追溯證據不足，不代表其主張必定為假。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"97f8a8480d174245867d739c1cf18e0c\", \"8015e9841c454feeb9dba7e2f996865e\"], \"topic\": \"editorial_evidence\"}, {\"text\": \"體育頁是反例：抽查MLB文章提供團隊、先發與打線數據，標示Tank01 MLB API及更新時間；但亦出現「#6 打者」占位。不能把全站概括成沒有實質資訊，也不能將其來源標示當成數據已獨立查真。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"4d674733826d4ffb8e305e4a3f665abf\"], \"topic\": \"counterevidence\"}, {\"text\": \"綜合首頁體育內容、娛樂城主題目錄、關鍵字與品牌內頁及共用追蹤CTA，樣本較符合「體育入口加娛樂城關鍵字群、註冊導向」的內容架構；聯盟分潤關係、導流規模、收益及SEO成功均未獲證實。\", \"kind\": \"inference\", \"section\": \"on_page\", \"evidence_ids\": [\"cb5396def79544cb98173d81dc0370ef\", \"c301feecdce542f780b08de6ee2b185f\", \"97f8a8480d174245867d739c1cf18e0c\", \"f47b182120194e0fb3c158451be65e16\"], \"topic\": \"strategy\"}, {\"text\": \"公開索引對帶引號的2030.tw查詢回傳世界盃與同名股票代號等站外結果，未提供可確認與競爭者網站相關的站外提及。這只是該查詢的索引結果，不是原頁或反向連結證據。\", \"kind\": \"observation\", \"section\": \"off_page\", \"evidence_ids\": [\"7520bcfb7d2c4cb1a135e898e998d72d\"], \"topic\": \"discovery\"}, {\"text\": \"品牌名、網域加娛樂城及完整網址排除股票等後續查詢未取得可用結果；site查詢亦未取得有效目標頁。這些檢索可用性限制不能證明不存在站外提及、反向連結或索引。\", \"kind\": \"observation\", \"section\": \"off_page\", \"evidence_ids\": [\"370a3f109d7f41f7bf74e14b65fa9206\", \"6a83757295344a159793a08d736a9b1a\", \"55acaa4898d54df7a4e5698ea852c38f\", \"d36bc22c62f649d49b3b1d149e5b4689\"], \"topic\": \"access\"}, {\"text\": \"Off-page推論：同名股票造成檢索歧義，故僅用網域名稱蒐集候選容易誤判；本輪沒有足以支持競爭者採買連結、PBN、媒體投放或自然口碑成效的推論證據。\", \"kind\": \"inference\", \"section\": \"off_page\", \"evidence_ids\": [\"7520bcfb7d2c4cb1a135e898e998d72d\"], \"topic\": \"disambiguation\"}, {\"text\": \"本輪未找到相關且可供research_offpage抽讀的站外搜尋候選，因此未確認任何入站連結、站外品牌提及、錨文字、rel或上下文；完整backlink規模、品質、來源策略及對排名的貢獻未知。站內列出的社群、WG及3A網址只是出站連結。\", \"kind\": \"unknown\", \"section\": \"off_page\", \"evidence_ids\": [], \"topic\": \"backlinks\"}, {\"text\": \"娛樂城與3A娛樂城的實際排名、流量、CTR、轉換率、收錄覆蓋、Core Web Vitals及歷史網域變動未知；亦未取得我們自己網站的現況，因此競爭行動皆為供我方評估的建議，並非已診斷我方缺陷。\", \"kind\": \"unknown\", \"section\": \"other\", \"evidence_ids\": [], \"topic\": \"measurement\"}], \"actions\": [{\"action\": \"P0／我方：先做兩個意圖明確的試點頁——娛樂城為風險、選擇標準及具名比較入口；3A娛樂城為品牌查核頁。區分官方宣告、可核實事實與未知，列來源、查核日期、作者及利益揭露；無資料不虛構出金測試。成本中，內容可驗證品質優先，不預估流量。\", \"reason\": \"競爭樣本有廣泛章節但缺可追溯實測與泛詞具名比較；以證據而非篇數形成可測試差異。需先確認我方業務與當地法規允許。\"}, {\"action\": \"P0／我方：檢查試點頁HTTP、canonical、可索引性、標題/H1、可見更新日期與schema一致性；只標記實際內容，避免殘留其他文章NewsArticle/WebPage，不以FAQ數量作為排名目標。成本低至中，驗收以逐頁一致性為準。\", \"reason\": \"競爭者多個樣本有同一MLB schema錯置；這提供我方品質檢核項目，而非保證修正即可超越競爭者。\"}, {\"action\": \"P1／我方：建清楚的主題hub→泛詞／品牌頁→來源與必要子題的內鏈；先補足3A出金條款與申訴風險等可核實內容，再決定是否需要獨立長尾頁。CTA標示實際去向與商業關係，不讓不同品牌頁暗示同一網址就是各品牌官方站。成本中；不複製2502頁規模。\", \"reason\": \"競爭者具分類與內鏈架構，但三樣本章節相似且共用註冊目的地；我方可用意圖區隔與轉換透明度競爭。\"}, {\"action\": \"P1／我方off-page：先發布可引用的條款差異表、查核方法及更正紀錄，再向相關消費安全、資料查核或體育資訊編輯做少量精準接洽；記錄實際來源頁、錨文字、rel與上下文，付費合作揭露。不依本輪證據購買競爭者所謂同款backlinks。成本中高，品質以相關性、編輯獨立性與可驗證引用衡量。\", \"reason\": \"本輪未驗證競爭者入站來源，無法據以複製其連結策略；我方應評估可持續的引用資產，而非把出站網址當作入站清單。\"}, {\"action\": \"P0建立基線、P2持續驗證／我方：取得自有網址與合法授權的Search Console後，記錄泛詞及3A詞群的曝光、點擊、CTR、查詢落地頁與收錄；另以固定地區／裝置及日期的公開SERP樣本比較競爭者。試點上線後先確認索引，再按約4至8週觀察與更新。成本低至中，不承諾名次或流量。\", \"reason\": \"公開內容能支持做法與缺口，不能支持競爭者成效；先以我方真實數據驗證是否值得擴張。\"}], \"unknowns\": [\"相關站外提及與入站連結的實際來源、錨文字、rel、上下文與完整分布。\", \"娛樂城及3A娛樂城在指定地區裝置的排名與SERP競爭版圖；搜尋量與流量均未驗證。\", \"追蹤註冊連結的最終落地、合作關係與收益；本輪未操作註冊或投注。\", \"目錄宣稱文章數的逐頁實際內容品質、索引覆蓋、其他長尾頁重複程度及參數頁canonical行為。\", \"3A出金、優惠、客服、牌照及安全宣告的真實性；SSL不能單獨證明平台可信或合法。\", \"我方網站網址、內容基線、法規條件、資源與授權分析資料尚未提供。\"]}}}"
+  },
+  {
+    "id": 47,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "report",
+    "data": "{\"claims\": [{\"text\": \"首頁title與H1主打2030玩運彩瘋世足、MLB/NBA及世界盃，導覽以「線上娛樂城推薦」連到/wordcup/；因此不能把首頁當成娛樂城或3A主關鍵字落地頁。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"cb5396def79544cb98173d81dc0370ef\"], \"topic\": \"architecture\"}, {\"text\": \"娛樂城目錄的title、H1、description針對線上娛樂城推薦，提供品牌、評價、優惠、玩法、安全與出金分類，首屏列出3a娛樂城與娛樂城內頁。頁面自稱2502篇評測、53頁，這是頁面宣告而非本輪核實的獨立優質文章或索引數。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"c301feecdce542f780b08de6ee2b185f\"], \"topic\": \"keyword_cluster\"}, {\"text\": \"3A頁title為「3a娛樂城｜遊戲種類、優惠、出金全攻略」，娛樂城頁title為「娛樂城評價｜台灣玩家首選平台」；兩者有自指canonical、index/follow、可見FAQ與五題FAQPage，並有Article標記。這些是實作證據，不證明Google已索引、給予FAQ呈現或排名。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"97f8a8480d174245867d739c1cf18e0c\", \"8015e9841c454feeb9dba7e2f996865e\"], \"topic\": \"metadata\"}, {\"text\": \"娛樂城、3A及富遊三個樣本均依平台特色、遊戲種類、出金安全、註冊、優惠、客服、FAQ排列；三者主要註冊CTA均指向https://don0911.3a1788.bet/?st=wg2030並帶nofollow。富遊頁未呈現品牌專屬的不同註冊目的地；此觀察不能外推所有目錄文章或最終重導落地品牌。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"97f8a8480d174245867d739c1cf18e0c\", \"8015e9841c454feeb9dba7e2f996865e\", \"f47b182120194e0fb3c158451be65e16\"], \"topic\": \"conversion\"}, {\"text\": \"目錄與抽查的三個娛樂城內頁都含不相干的MLB賽果NewsArticle及指向另一篇MLB URL的WebPage資料；3A可見更新日期為2026-09-24，Article dateModified為2026-09-29。這些是結構化資料與頁面主體／日期的一致性缺口，未量測搜尋影響或處罰。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"c301feecdce542f780b08de6ee2b185f\", \"97f8a8480d174245867d739c1cf18e0c\", \"8015e9841c454feeb9dba7e2f996865e\", \"f47b182120194e0fb3c158451be65e16\"], \"topic\": \"structured_data\"}, {\"text\": \"3A文章自述玩了數月、出金半小時至一小時、最低入金1000元及24小時客服，但本輪可讀正文與連結未見對應測試紀錄、條款來源、牌照查核或出金憑證。娛樂城泛詞頁也未提供具名平台比較表。這代表樣本的可追溯證據不足，不代表其主張必定為假。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"97f8a8480d174245867d739c1cf18e0c\", \"8015e9841c454feeb9dba7e2f996865e\"], \"topic\": \"editorial_evidence\"}, {\"text\": \"體育頁是反例：抽查MLB文章提供團隊、先發與打線數據，標示Tank01 MLB API及更新時間；但亦出現「#6 打者」占位。不能把全站概括成沒有實質資訊，也不能將其來源標示當成數據已獨立查真。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"4d674733826d4ffb8e305e4a3f665abf\"], \"topic\": \"counterevidence\"}, {\"text\": \"綜合首頁體育內容、娛樂城主題目錄、關鍵字與品牌內頁及共用追蹤CTA，樣本較符合「體育入口加娛樂城關鍵字群、註冊導向」的內容架構；聯盟分潤關係、導流規模、收益及SEO成功均未獲證實。\", \"kind\": \"inference\", \"section\": \"on_page\", \"evidence_ids\": [\"cb5396def79544cb98173d81dc0370ef\", \"c301feecdce542f780b08de6ee2b185f\", \"97f8a8480d174245867d739c1cf18e0c\", \"f47b182120194e0fb3c158451be65e16\"], \"topic\": \"strategy\"}, {\"text\": \"公開索引對帶引號的2030.tw查詢回傳世界盃與同名股票代號等站外結果，未提供可確認與競爭者網站相關的站外提及。這只是該查詢的索引結果，不是原頁或反向連結證據。\", \"kind\": \"observation\", \"section\": \"off_page\", \"evidence_ids\": [\"7520bcfb7d2c4cb1a135e898e998d72d\"], \"topic\": \"discovery\"}, {\"text\": \"品牌名、網域加娛樂城及完整網址排除股票等後續查詢未取得可用結果；site查詢亦未取得有效目標頁。這些檢索可用性限制不能證明不存在站外提及、反向連結或索引。\", \"kind\": \"observation\", \"section\": \"off_page\", \"evidence_ids\": [\"370a3f109d7f41f7bf74e14b65fa9206\", \"6a83757295344a159793a08d736a9b1a\", \"55acaa4898d54df7a4e5698ea852c38f\", \"d36bc22c62f649d49b3b1d149e5b4689\"], \"topic\": \"access\"}, {\"text\": \"Off-page推論：同名股票造成檢索歧義，故僅用網域名稱蒐集候選容易誤判；本輪沒有足以支持競爭者採買連結、PBN、媒體投放或自然口碑成效的推論證據。\", \"kind\": \"inference\", \"section\": \"off_page\", \"evidence_ids\": [\"7520bcfb7d2c4cb1a135e898e998d72d\"], \"topic\": \"disambiguation\"}, {\"text\": \"本輪未找到相關且可供research_offpage抽讀的站外搜尋候選，因此未確認任何入站連結、站外品牌提及、錨文字、rel或上下文；完整backlink規模、品質、來源策略及對排名的貢獻未知。站內列出的社群、WG及3A網址只是出站連結。\", \"kind\": \"unknown\", \"section\": \"off_page\", \"evidence_ids\": [], \"topic\": \"backlinks\"}, {\"text\": \"娛樂城與3A娛樂城的實際排名、流量、CTR、轉換率、收錄覆蓋、Core Web Vitals及歷史網域變動未知；亦未取得我們自己網站的現況，因此競爭行動皆為供我方評估的建議，並非已診斷我方缺陷。\", \"kind\": \"unknown\", \"section\": \"other\", \"evidence_ids\": [], \"topic\": \"measurement\"}], \"actions\": [{\"action\": \"P0／我方：先做兩個意圖明確的試點頁——娛樂城為風險、選擇標準及具名比較入口；3A娛樂城為品牌查核頁。區分官方宣告、可核實事實與未知，列來源、查核日期、作者及利益揭露；無資料不虛構出金測試。成本中，內容可驗證品質優先，不預估流量。\", \"reason\": \"競爭樣本有廣泛章節但缺可追溯實測與泛詞具名比較；以證據而非篇數形成可測試差異。需先確認我方業務與當地法規允許。\"}, {\"action\": \"P0／我方：檢查試點頁HTTP、canonical、可索引性、標題/H1、可見更新日期與schema一致性；只標記實際內容，避免殘留其他文章NewsArticle/WebPage，不以FAQ數量作為排名目標。成本低至中，驗收以逐頁一致性為準。\", \"reason\": \"競爭者多個樣本有同一MLB schema錯置；這提供我方品質檢核項目，而非保證修正即可超越競爭者。\"}, {\"action\": \"P1／我方：建清楚的主題hub→泛詞／品牌頁→來源與必要子題的內鏈；先補足3A出金條款與申訴風險等可核實內容，再決定是否需要獨立長尾頁。CTA標示實際去向與商業關係，不讓不同品牌頁暗示同一網址就是各品牌官方站。成本中；不複製2502頁規模。\", \"reason\": \"競爭者具分類與內鏈架構，但三樣本章節相似且共用註冊目的地；我方可用意圖區隔與轉換透明度競爭。\"}, {\"action\": \"P1／我方off-page：先發布可引用的條款差異表、查核方法及更正紀錄，再向相關消費安全、資料查核或體育資訊編輯做少量精準接洽；記錄實際來源頁、錨文字、rel與上下文，付費合作揭露。不依本輪證據購買競爭者所謂同款backlinks。成本中高，品質以相關性、編輯獨立性與可驗證引用衡量。\", \"reason\": \"本輪未驗證競爭者入站來源，無法據以複製其連結策略；我方應評估可持續的引用資產，而非把出站網址當作入站清單。\"}, {\"action\": \"P0建立基線、P2持續驗證／我方：取得自有網址與合法授權的Search Console後，記錄泛詞及3A詞群的曝光、點擊、CTR、查詢落地頁與收錄；另以固定地區／裝置及日期的公開SERP樣本比較競爭者。試點上線後先確認索引，再按約4至8週觀察與更新。成本低至中，不承諾名次或流量。\", \"reason\": \"公開內容能支持做法與缺口，不能支持競爭者成效；先以我方真實數據驗證是否值得擴張。\"}], \"unknowns\": [\"相關站外提及與入站連結的實際來源、錨文字、rel、上下文與完整分布。\", \"娛樂城及3A娛樂城在指定地區裝置的排名與SERP競爭版圖；搜尋量與流量均未驗證。\", \"追蹤註冊連結的最終落地、合作關係與收益；本輪未操作註冊或投注。\", \"目錄宣稱文章數的逐頁實際內容品質、索引覆蓋、其他長尾頁重複程度及參數頁canonical行為。\", \"3A出金、優惠、客服、牌照及安全宣告的真實性；SSL不能單獨證明平台可信或合法。\", \"我方網站網址、內容基線、法規條件、資源與授權分析資料尚未提供。\"]}"
+  },
+  {
+    "id": 48,
+    "run": "9cd17879c258438abff76b3af1dec297",
+    "kind": "learning",
+    "data": "{\"changes\": [{\"lesson\": \"91597b6a9458\", \"key\": \"failure|research_search|plain\", \"status\": \"revoked\", \"reason\": \"counterexample: 1 successful call(s) with feature plain in run 9cd17879c258438abff76b3af1dec297\"}, {\"lesson\": \"85f93322df1c\", \"key\": \"failure|research_search|site_operator\", \"status\": \"candidate\", \"reason\": \"1 run(s) reproduced failure|research_search|site_operator on 1 host(s)\"}, {\"lesson\": \"d94869ffa2dc\", \"key\": \"discovery|2030.tw|娛樂城\", \"status\": \"active\", \"reason\": \"run 9cd17879c258438abff76b3af1dec297 read 娛樂城 page: HTTP 200 and title/H1 match\"}, {\"lesson\": \"08856145cf1e\", \"key\": \"discovery|2030.tw|3a娛樂城\", \"status\": \"active\", \"reason\": \"run 9cd17879c258438abff76b3af1dec297 read 3A娛樂城 page: HTTP 200 and title/H1 match\"}, {\"pages\": 6}, {\"findings\": 8, \"unknowns\": 8}]}"
+  }
+]

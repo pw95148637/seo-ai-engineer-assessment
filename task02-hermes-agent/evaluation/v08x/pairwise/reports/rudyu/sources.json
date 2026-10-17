@@ -1,0 +1,50 @@
+{
+  "865f78253c9043cbb5af432e340cf9b8": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/865f78253c9043cbb5af432e340cf9b8.txt"
+  },
+  "39f38b25e81b44d4b4ada2871db8a4c3": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/39f38b25e81b44d4b4ada2871db8a4c3.txt"
+  },
+  "4fef17e18567472dbeeafdb05adb3fe4": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/4fef17e18567472dbeeafdb05adb3fe4.txt"
+  },
+  "2f717ec8c0fc4f73af7c328fd3123cbb": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/2f717ec8c0fc4f73af7c328fd3123cbb.txt"
+  },
+  "7d904d56853f444c811dedd13a423d1a": {
+    "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/7d904d56853f444c811dedd13a423d1a.txt"
+  },
+  "d54f2ec71fb3488abfe12988bee97af9": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/d54f2ec71fb3488abfe12988bee97af9.txt"
+  },
+  "e73bace4aab84a64bd280348f4304e8a": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/e73bace4aab84a64bd280348f4304e8a.txt"
+  },
+  "212b161b8fa64c29a2e32cd8ffb60cfd": {
+    "url": "https://tw.stock.yahoo.com/quote/2030.TW",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/212b161b8fa64c29a2e32cd8ffb60cfd.txt"
+  }
+}

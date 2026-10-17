@@ -36,7 +36,9 @@ STYLE = dict(reset='\033[0m', bold='\033[1m', dim='\033[2m', red='\033[31m', gre
              bred='\033[1;31m', byellow='\033[1;33m', bcyan='\033[1;36m', bmagenta='\033[1;35m')
 KIND_ZH = {'observation': '觀察', 'inference': '推論', 'unknown': '未知'}
 SECTION_ZH = {'on_page': '站內', 'off_page': '站外', 'other': '其他'}
-STATUS_ZH = {'active': '使用中', 'candidate': '候選', 'revoked': '已撤銷', 'expired': '已到期', 'vetoed': '人工否決'}
+STATUS_ZH = {'active': '使用中', 'candidate': '候選', 'revoked': '已撤銷', 'expired': '已到期', 'vetoed': '人工否決',
+             'superseded': '已被取代'}
+PRIORITY_ZH = {'decide': '需要決定', 'review': '視需要處理', 'info': '紀錄'}
 
 
 # Text layout ---------------------------------------------------------------------------------------------------
@@ -164,6 +166,20 @@ class Project:
             self.score_run = score_run
         except Exception as exc:
             self.notes.append('score_run unavailable: ' + type(exc).__name__)
+        self.html = self.structured_data = self.image_links = self.handoff = None
+        try:
+            from src.research_core import HTML, structured_data, image_links
+            self.html, self.structured_data, self.image_links = HTML, structured_data, image_links
+        except Exception as exc:
+            self.notes.append('page extras unavailable: ' + type(exc).__name__)
+        try:
+            import importlib.util
+            spec = importlib.util.spec_from_file_location('handoff_queue', Path(task_root) / 'scripts' / 'handoff_queue.py')
+            self.handoff = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(self.handoff)
+        except Exception as exc:
+            self.handoff = None
+            self.notes.append('handoff_queue unavailable: ' + type(exc).__name__)
 
     def hits(self, info, keywords, host):
         if not info or info.get('kind') != 'html' or info.get('status') != 200:
@@ -203,6 +219,18 @@ def ledger_snapshot(db):
         lessons.append(d)
     feedback = [dict(r) for r in db.execute('SELECT * FROM feedback ORDER BY id')] if table_exists(db, 'feedback') else []
     return dict(lessons=lessons, feedback=feedback)
+
+
+def memory_snapshot(db):
+    """Research memory held by a ledger (v0.9): findings, pages read, links seen but not read, latest unknowns."""
+    if not table_exists(db, 'site_pages'):
+        return None
+    read = {r[0] for r in db.execute('SELECT norm FROM site_pages')}
+    unread = {r[0] for r in db.execute('SELECT norm FROM site_links')} - read
+    last = db.execute('SELECT run FROM open_unknowns ORDER BY id DESC LIMIT 1').fetchone()
+    return dict(findings=db.execute("SELECT COUNT(*) FROM lessons WHERE kind='finding' AND status IN ('candidate','active')")
+                .fetchone()[0], pages=len(read), unread=len(unread),
+                unknowns=db.execute('SELECT COUNT(*) FROM open_unknowns WHERE run=?', (last[0],)).fetchone()[0] if last else 0)
 
 
 def load_ledger_json(path):
@@ -259,6 +287,8 @@ class EventsView:
         self.t_start = None
         self.offpage = re.compile(args.offpage_topics)
         self.shown = set()
+        self.memory_eids = {}
+        self.memory_candidates = set()
 
     # helpers
     def stamp(self, when=None):
@@ -299,7 +329,7 @@ class EventsView:
 
     # section 1
     LEDGER_RULE = ('規則：lessons 只由控制器量測或人工審查寫入，模型沒有寫入路徑；有範圍與效期，與新證據衝突時以新證據為準。'
-                   'discovery 類在交給模型前由控制器重抓確認。')
+                   'discovery 類與研究記憶的發現，交給模型前都由控制器重抓確認。')
 
     def show_ledger(self, snap, source, after_rows=2):
         """One screen: title, [1/5] rule, one row per lesson, rule text, plus `after_rows` lines the caller prints next.
@@ -311,8 +341,9 @@ class EventsView:
         o.clear()
         self.header()
         o.rule('[1/5] 記憶帳本：本 run 開始前的 lessons（Memory / Learning）', 'bcyan')
-        lessons = snap.get('lessons', [])
-        self.ledger_rows = {x['id']: x for x in lessons}
+        self.ledger_rows = {x['id']: x for x in snap.get('lessons', [])}
+        lessons = [x for x in snap.get('lessons', []) if x.get('kind') != 'finding']  # findings: one memory line below
+        mem = snap.get('memory')
         width, height = o.size()[0] - 1, o.size()[1]
 
         def summary(items):
@@ -323,10 +354,13 @@ class EventsView:
 
         o.write(clip(f'共 {len(lessons)} 條（{summary(lessons) or "空"}）· 人工回饋 {len(snap.get("feedback", []))} 筆 · '
                      f'{source}', width), 'dim')
+        if mem:
+            o.write(clip(f'研究記憶：上一份報告的發現 {mem["findings"]} 條 · 讀過的站內頁 {mem["pages"]} 頁 · '
+                         f'看過但沒讀的站內連結 {mem["unread"]} 個 · 上次的未知項 {mem["unknowns"]} 項', width), 'bgreen')
         rule_rows = wrap(self.LEDGER_RULE, width)
-        # Rows left for lessons: pane height minus title (and banner), [1/5] rule, summary, rule text, the caller's
-        # trailing lines and the cursor row after the last newline.
-        room = height - (2 if self.a.banner else 1) - 2 - len(rule_rows) - after_rows - 1
+        # Rows left for lessons: pane height minus title (and banner), [1/5] rule, summary, memory line, rule text, the
+        # caller's trailing lines and the cursor row after the last newline.
+        room = height - (2 if self.a.banner else 1) - 2 - (1 if mem else 0) - len(rule_rows) - after_rows - 1
         if not lessons:
             o.write('帳本是空的：這是第一次處理這個工作，沒有可用經驗。', 'yellow')
         order = sorted(lessons, key=lambda x: (x.get('status') != 'active', x.get('status') != 'candidate', x.get('kind', '')))
@@ -339,7 +373,8 @@ class EventsView:
                 extra.append(f'支持 {x["support_runs"]} run')
             if x.get('expires') and x.get('status') in ('active', 'candidate'):
                 extra.append('效期至 ' + x['expires'][5:10])
-            text = ' · '.join(extra + [decode_urls(x.get('statement') or x.get('key', ''))])
+            # The v0.6 review record names the reviewer with an internal role word; the screen says who wrote it.
+            text = ' · '.join(extra + [decode_urls(x.get('statement') or x.get('key', '')).replace('總控Claude', 'Claude')])
             head = pad(status, 9) + pad(x.get('kind', '?'), 16) + x['id'][:6] + '  '
             o.write(o.paint(head, style) + clip(text, width - text_width(head)))
         if len(shown) < len(order):
@@ -388,6 +423,8 @@ class EventsView:
             self.search_response(db, d)
         elif kind == 'lessons_presented':
             self.lessons_presented(d, when)
+        elif kind == 'memory_presented':
+            self.memory_presented(db, d, when)
         elif kind == 'tool_error':
             self.tool_error(d)
         elif kind == 'report':
@@ -417,6 +454,8 @@ class EventsView:
             if args.get('purpose'):
                 o.block('目的：' + args['purpose'], 'white', prefix=' ' * 10, first=' ' * 8 + '  ', max_lines=2)
             self.lesson_match_url(url)
+            if unquote(url).rstrip('/').casefold() in self.memory_candidates:
+                self.note('這是研究記憶列出、之前沒讀過的站內頁', 'yellow')
         elif name == 'research_offpage':
             url = args.get('url', '')
             self.last_fetch = url
@@ -433,9 +472,13 @@ class EventsView:
             what = readable_url(r['url'], self.host) if r else str(args.get('evidence_id'))[:8]
             q = f'，在其中找「{args["query"]}」' if args.get('query') else ''
             self.line(f'回查已存證據 {what}{q}', None, when, f'{n} research_evidence ', 'bcyan')
+            used = False
             for lesson in self.presented:
                 if (lesson.get('verification') or {}).get('evidence_id') == args.get('evidence_id'):
                     self.note(f'直接使用控制器本輪重抓確認的證據（lesson {lesson["id"][:6]}），不必再抓一次', 'yellow')
+                    used = True
+            if not used and args.get('evidence_id') in self.memory_eids:
+                self.note('讀研究記憶的發現所在頁：控制器本輪剛重抓，頁面沒變', 'yellow')
             info = self.info(db, args.get('evidence_id'))
             for k in self.proj.hits(info, self.keywords, self.host):
                 self.first_hit(k)
@@ -498,6 +541,9 @@ class EventsView:
         r = self.evidence_row(db, d.get('evidence_id'))
         url = r['url'] if r else ''
         if d.get('actor') == 'controller':
+            if 'research memory' in (d.get('purpose') or ''):
+                self.line(f'重抓研究記憶的頁面 {readable_url(url, self.host)} → HTTP 200', 'dim', when, '控制器 ', 'yellow')
+                return
             ok = self.proj.hits(info, self.keywords, self.host)
             verdict = ('符合「' + '」「'.join(ok) + '」目標頁') if ok else '不符合關鍵字頁'
             self.line(f'重抓帳本目標頁 {readable_url(url, self.host)} → HTTP 200，{verdict}', None, when, '控制器 ', 'yellow')
@@ -506,12 +552,74 @@ class EventsView:
         if kind == 'html':
             title = clip(info.get('title', ''), 46)
             self.sub(f'HTTP 200 · HTML · {links} 個連結 · title「{title}」', 'green', 2)
+            extra = self.page_extras(r)
+            if extra:
+                self.sub(extra, 'dim', 2)
             for k in self.proj.hits(info, self.keywords, self.host):
                 self.first_hit(k)
         elif kind == 'sitemap':
             self.sub(f'HTTP 200 · sitemap · 列出 {links} 個網址', 'green')
         else:
             self.sub(f'HTTP 200 · {kind} · {links} 個連結', 'green')
+
+    def page_extras(self, r):
+        """Structured data and image links of a stored page, as the v0.9 tools pass them to the model."""
+        if not r or not self.proj.html:
+            return ''
+        try:
+            h = self.proj.html(r['url'])
+            h.feed((self.root / r['path']).read_bytes().decode('utf-8', 'replace'))
+            sd = self.proj.structured_data(h.jsonld)['objects']
+            imgs, _ = self.proj.image_links(h, lambda host: bool(self.host) and (host == self.host or host.endswith('.' + self.host)))
+        except Exception:
+            return ''
+        parts = []
+        if sd:
+            names = []
+            for x in sd:
+                n = x['type'][0] + (f'（{x["faq_questions"]} 題）' if 'faq_questions' in x else '')
+                if n not in names:
+                    names.append(n)
+            parts.append('結構化資料：' + '、'.join(names[:5]))
+        ext = [x for x in imgs if not x['internal']]
+        if ext:
+            x = ext[0]
+            rel = f' {"/".join(x["rel"])}' if x['rel'] else ''
+            parts.append(f'圖片連結：「{x["alt"] or x["file"]}」→ {x["host"]}{rel}' + (f' 等 {len(ext)} 個' if len(ext) > 1 else ''))
+        return ' · '.join(parts)
+
+    def memory_presented(self, db, d, when):
+        findings = d.get('findings') or []
+        self.memory_eids = {e: f['id'] for f in findings for e in f.get('evidence_ids') or []}
+        cands = d.get('candidates') or []
+        self.memory_candidates = {unquote(u).rstrip('/').casefold() for u in cands}
+        self.line(f'把研究記憶交給模型：仍成立的發現 {len(findings)} 條（頁面本輪重抓沒變，附本輪證據編號）· '
+                  f'待重讀 {len(d.get("recheck") or [])} · 撤銷 {len(d.get("revoked") or [])} · 沒讀過的站內頁 {len(cands)} · '
+                  f'上次的未知項 {len(d.get("unknowns") or [])}', 'yellow', when, '控制器 ', 'yellow')
+        width = self.out.size()[0] - 12
+        ids = [f['id'] for f in findings]
+        text = {}
+        if ids:
+            text = {r['id']: r['statement'] for r in db.execute(
+                f'SELECT id,statement FROM lessons WHERE id IN ({",".join("?" * len(ids))})', ids)}
+        for f in findings[:3]:
+            self.out.write(' ' * 10 + self.out.paint(clip('發現 ' + decode_urls(text.get(f['id'], f['id'])), width), 'green'))
+        if len(findings) > 3:
+            self.out.write(' ' * 10 + self.out.paint(f'另 {len(findings) - 3} 條發現', 'dim'))
+        if cands:
+            self.out.write(' ' * 10 + self.out.paint(clip('沒讀過：' + '、'.join(readable_url(u, self.host) for u in cands[:4])
+                                                          + (f' 等 {len(cands)} 頁' if len(cands) > 4 else ''), width), 'cyan'))
+        texts = []
+        try:
+            cur = db.execute('SELECT created FROM runs WHERE id=?', (self.rid,)).fetchone()
+            row = db.execute('SELECT o.run FROM open_unknowns o JOIN runs r ON r.id=o.run WHERE r.created<? '
+                             'ORDER BY o.id DESC LIMIT 1', (cur['created'],)).fetchone() if cur else None
+            if row:
+                texts = [x for (x,) in db.execute('SELECT text FROM open_unknowns WHERE run=? ORDER BY position', (row[0],))]
+        except sqlite3.Error:
+            texts = []
+        for i, x in enumerate(texts[:2], 1):
+            self.out.write(' ' * 10 + self.out.paint(clip(f'未知 u{i}：' + x, width), 'dim'))
 
     def first_hit(self, k):
         if k in self.hit:
@@ -774,18 +882,19 @@ class EventsView:
         if compare and score:
             compare.append(('本 run', score))
             lines.append(('', None))
-            lines.append(('與先前 run 對照（先前 run 取自各自的分數檔；這四欄的定義在 v0.6 與 v0.7 相同）', 'bold', 'head'))
-            cols = (22, 16, 12, 10, 11)
-            head = ('run', '首次命中前呼叫', '兩頁都讀到', '失敗搜尋', 'tokens')
+            lines.append(('與先前 run 對照（先前 run 取自各自的分數檔）', 'bold', 'head'))
+            cols = (26, 16, 12, 10, 11)
+            head = ('run', '首次命中前呼叫', '兩頁都讀到', '失敗搜尋', '成本')
             lines.append(('  ' + ''.join(pad(h, w) for h, w in zip(head, cols)), 'dim', True))
             for label, s in compare:
-                tok = (s.get('tokens') or {}).get('total') or 0
-                row = (clip(label, 21), str(s.get('calls_before_first_hit')), '是' if s.get('both_target_pages_read') else '否',
+                tok = (s.get('tokens') or {}).get('cost') or (s.get('tokens') or {}).get('total') or 0
+                row = (clip(label, 25), str(s.get('calls_before_first_hit')), '是' if s.get('both_target_pages_read') else '否',
                        f'{s.get("failed_searches")}/{s.get("searches")}', f'{tok:,}')
                 lines.append(('  ' + ''.join(pad(v, w) for v, w in zip(row, cols)), 'bold' if label == '本 run' else None, True))
         if lines:
             self.pages('[5/5] 學習與評估：這次表現如何（score_run）', lines, self.a.page_pause)
         self.pages('[5/5] 學習與評估：run 後帳本變化', self.ledger_change(db), self.a.page_pause)
+        self.handoff_pages()
 
     def ledger_change(self, db):
         lines = []
@@ -794,7 +903,19 @@ class EventsView:
         now = {x['id']: x for x in after.get('lessons', [])}
         if not self.cfg.get('learning'):
             lines.append(('本 run 以 --no-learn 凍結帳本：控制器不從本 run 學習。', 'yellow'))
-        changes = (self.learning or {}).get('changes') or []
+        all_changes = (self.learning or {}).get('changes') or []
+        changes = [c for c in all_changes if 'lesson' in c]
+        memory = {k: v for c in all_changes if 'lesson' not in c for k, v in c.items()}
+        new_findings = [x for x in now.values() if x.get('kind') == 'finding' and (x.get('data') or {}).get('run') == self.rid]
+        if memory or new_findings:
+            replaced = sum(1 for lid, x in now.items() if x.get('kind') == 'finding' and x.get('status') == 'superseded'
+                           and (before.get(lid) or {}).get('status') in ('candidate', 'active'))
+            lines.append((f'研究記憶（研究結束後由控制器寫入）：新增 {len(new_findings)} 條發現（候選，下次開跑前重抓確認）、'
+                          f'取代上一份報告的 {replaced} 條；記下這次讀的站內頁 {memory.get("pages", 0)} 頁、'
+                          f'報告的未知項 {memory.get("unknowns", 0)} 項', 'bold', 'head'))
+            for x in new_findings:
+                lines += self.fmt(decode_urls(x.get('statement') or ''), 'green', 2, 1, '新發現 ')
+            lines.append(('', None))
         if changes:
             lines.append((f'控制器學習（learning 事件，{len(changes)} 項）：', 'bold'))
             for c in changes:
@@ -802,6 +923,8 @@ class EventsView:
                                   'green', 2, 2, f'{str(c.get("lesson"))[:6]} ')
         diffs = []
         for lid, x in now.items():
+            if x.get('kind') == 'finding':
+                continue  # summarized above
             old = before.get(lid)
             if not old:
                 diffs.append((f'新增 {lid[:6]} {x.get("key")}（{STATUS_ZH.get(x.get("status"), x.get("status"))}）', 'green'))
@@ -812,7 +935,7 @@ class EventsView:
             elif None not in (old.get('support_runs'), x.get('support_runs')) and old['support_runs'] != x['support_runs']:
                 diffs.append((f'{lid[:6]} {x.get("key")}：支持 run {old.get("support_runs") or 0} → {x.get("support_runs") or 0}', 'dim'))
         for lid in before:
-            if lid not in now:
+            if lid not in now and before[lid].get('kind') != 'finding':
                 diffs.append((f'{lid[:6]} 已不在帳本', 'red'))
         lines.append(('帳本前後比對（lessons 表）：', 'bold'))
         if diffs:
@@ -820,11 +943,27 @@ class EventsView:
                 lines += self.fmt(t, s, 2, 2)
         else:
             lines.append(('  沒有任何 lesson 新增、改狀態或改效期。', None))
-        active = [x for x in now.values() if x.get('status') == 'active']
-        lines.append((f'run 後：{len(now)} 條 lessons，使用中 {len(active)} 條。下一個 run 開始時，discovery 類會先被控制器重抓確認。', 'dim'))
-        lines.append(('如何證明進步：同一計分程式比較空帳本、有帳本、無 lessons 對照與保留站；v0.6 判定 not_proven'
-                      '（evaluation/v06/VERDICT.md），之後各版的判定見該版 VERDICT。', 'dim'))
+        plain = [x for x in now.values() if x.get('kind') != 'finding']
+        active = [x for x in plain if x.get('status') == 'active']
+        lines.append((f'run 後：{len(plain)} 條 lessons，使用中 {len(active)} 條。下一個 run 開始時，discovery 類與研究記憶的發現會先被控制器重抓確認。', 'dim'))
+        lines.append((self.a.proof, 'dim'))
         return lines
+
+    def handoff_pages(self):
+        if not self.proj.handoff or not self.rid:
+            return
+        try:
+            q = self.proj.handoff.build_queue(self.db_path, self.rid, self.root)
+        except Exception as exc:
+            self.out.write(f'handoff_queue 無法產生：{type(exc).__name__}', 'red')
+            return
+        lines = [('研究結束後，程式從這次的執行紀錄列出要人決定的事；Agent 沒有能自己處理這些事的工具。', 'dim')]
+        for x in q['items']:
+            style = 'byellow' if x['priority'] == 'decide' else ('yellow' if x['priority'] == 'review' else 'dim')
+            lines += self.fmt(x['title'], style, 0, 1, f'[{PRIORITY_ZH.get(x["priority"], x["priority"])}] ')
+            if x['priority'] != 'info':
+                lines += self.fmt(x['decision'], None, 4, 1, glue=True)
+        self.pages('[5/5] 交還人類：研究後要人決定的事（scripts/handoff_queue.py）', lines, self.a.page_pause)
 
     # runtime loops
     def run(self):
@@ -842,6 +981,7 @@ class EventsView:
         if self.a.ledger_db and Path(self.a.ledger_db).exists():
             src = connect_ro(self.a.ledger_db)
             self.before = ledger_snapshot(src)
+            self.before['memory'] = memory_snapshot(src)
             src.close()
             self.show_ledger(self.before, self.a.ledger_db + '（本 run 由此複製）')
         else:
@@ -925,6 +1065,7 @@ class EventsView:
         t0 = t0 or min(t for t in times if t)
         t_end = t_end or max(t for t in times if t)
         self.before = load_ledger_json(a.ledger_before) if a.ledger_before else ledger_snapshot(db)
+        self.before.setdefault('memory', memory_snapshot(db))
         self.replay_clock = 0.0
         self.out.clear()
         self.show_ledger(self.before, a.ledger_before or str(self.db_path), after_rows=0)
@@ -1150,6 +1291,8 @@ def main():
     e.add_argument('--compare', action='append', help='LABEL=score.json from an earlier run, shown next to this run')
     e.add_argument('--offpage-topics', default=OFFPAGE_TOPICS, help='regex on claim topic for the off-page group')
     e.add_argument('--banner', help='line shown under the title, e.g. a rehearsal notice')
+    e.add_argument('--proof', default='如何證明進步：判準先鎖定的評估比較帶經驗與不學習的兩組，判定與依據見各版的 VERDICT 或 RESULT。',
+                   help='closing line on the ledger page: where the evaluation verdict is')
     e.add_argument('--page-pause', type=float, default=8.0, help='seconds each closing page stays on screen')
     e.add_argument('--pace', type=float, default=1.0, help='seconds between claim lines after the report')
     e.add_argument('--interval', type=float, default=0.3)

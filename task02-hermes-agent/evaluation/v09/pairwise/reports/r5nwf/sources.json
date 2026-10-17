@@ -1,0 +1,68 @@
+{
+  "0f271f318f414a87a5583567df78dcf8": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/0f271f318f414a87a5583567df78dcf8.txt"
+  },
+  "4869ef82a0724fbd8de4342528ad8fcc": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/4869ef82a0724fbd8de4342528ad8fcc.txt"
+  },
+  "5adde0b56e8d4174b83829b5beb68939": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/5adde0b56e8d4174b83829b5beb68939.txt"
+  },
+  "cf003701841941e8b526c3bb14f04ca9": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/cf003701841941e8b526c3bb14f04ca9.txt"
+  },
+  "e67867366aec4a508545672c3ad0f86a": {
+    "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/e67867366aec4a508545672c3ad0f86a.txt"
+  },
+  "157602fb122f442b96dfb97a3da05c9a": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/157602fb122f442b96dfb97a3da05c9a.txt"
+  },
+  "b71122ebb22e4cbe9d2fc151e9b35274": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E%E6%8E%A8%E8%96%A6",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/b71122ebb22e4cbe9d2fc151e9b35274.txt"
+  },
+  "9b02c483833d4c3bb15c69d3756ed91f": {
+    "url": "https://havespring.com/casino-ranking/",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/9b02c483833d4c3bb15c69d3756ed91f.txt"
+  },
+  "94716629e7e94399a62d57c5492d8f5d": {
+    "url": "https://3aaa.com.tw/",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/94716629e7e94399a62d57c5492d8f5d.txt"
+  },
+  "84c0ced795774c69ac9cbd9571398d90": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/84c0ced795774c69ac9cbd9571398d90.txt"
+  },
+  "cc685840a464474e97a6be9acfcffaee": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/cc685840a464474e97a6be9acfcffaee.txt"
+  }
+}

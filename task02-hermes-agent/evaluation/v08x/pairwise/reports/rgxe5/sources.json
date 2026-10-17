@@ -1,0 +1,62 @@
+{
+  "a6cbb43aa2db47feb8982d3ce6867506": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/a6cbb43aa2db47feb8982d3ce6867506.txt"
+  },
+  "d763e22f068a420eb5da21ffd1794e9e": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/d763e22f068a420eb5da21ffd1794e9e.txt"
+  },
+  "2fe1686831ac4cd98588815fc1cfa9d8": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/2fe1686831ac4cd98588815fc1cfa9d8.txt"
+  },
+  "d79230fa4b8d442e8035bca004adc44d": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/d79230fa4b8d442e8035bca004adc44d.txt"
+  },
+  "39c9bfe54196473da25b7e5d74c52324": {
+    "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/39c9bfe54196473da25b7e5d74c52324.txt"
+  },
+  "d4bee9a871564196a6b644ef796738a2": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/d4bee9a871564196a6b644ef796738a2.txt"
+  },
+  "d3ad7de2212e42f8a6e69cb80ba01a46": {
+    "url": "https://3aarena.com.tw/",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/d3ad7de2212e42f8a6e69cb80ba01a46.txt"
+  },
+  "6a333e000a0f4fc78d6b46e955b8ba1f": {
+    "url": "https://gamebet.com.tw/",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/6a333e000a0f4fc78d6b46e955b8ba1f.txt"
+  },
+  "9072e6a510b24075af315732e4f2a8c6": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/9072e6a510b24075af315732e4f2a8c6.txt"
+  },
+  "ac5b84d1035e4f229c5af0031cc4710a": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/ac5b84d1035e4f229c5af0031cc4710a.txt"
+  }
+}

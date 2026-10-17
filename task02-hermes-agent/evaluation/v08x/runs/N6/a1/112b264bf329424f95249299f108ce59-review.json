@@ -1,0 +1,16 @@
+{
+  "triggered": true,
+  "completed": true,
+  "timed_out": false,
+  "result": "skill",
+  "usage": {
+    "api_calls": 3,
+    "input": 6438,
+    "output": 427,
+    "cache_read": 227584
+  },
+  "actions": [
+    "💾 Self-improvement review: Skill 'public-evidence-seo-research' patched"
+  ],
+  "warnings": []
+}

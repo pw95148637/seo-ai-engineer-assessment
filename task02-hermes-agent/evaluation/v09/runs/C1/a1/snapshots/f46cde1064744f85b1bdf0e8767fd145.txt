@@ -1,0 +1,575 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="012.tw 是台灣最大的網址導航站，把台灣人最常用的新聞、購物、金融、論壇、娛樂與線上工具全部分類整理好。人工挑選、持續更新，手機電腦都好用，免註冊。">
+<title>012.tw台灣網址導航 - 台灣最大的網站導航站</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="012.tw台灣網址導航 - 台灣最大的網站導航站">
+<meta property="og:description" content="012.tw 是台灣最大的網址導航站，把台灣人最常用的新聞、購物、金融、論壇、娛樂與線上工具全部分類整理好。人工挑選、持續更新，手機電腦都好用，免註冊。">
+<meta property="og:url" content="https://012.tw/">
+<meta property="og:site_name" content="012.tw 台灣網址導航">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="012.tw台灣網址導航 - 台灣最大的網站導航站">
+<meta name="twitter:description" content="012.tw 是台灣最大的網址導航站，把台灣人最常用的新聞、購物、金融、論壇、娛樂與線上工具全部分類整理好。人工挑選、持續更新，手機電腦都好用，免註冊。">
+<script>try{var p=JSON.parse(localStorage.getItem("012mb_v1")||"null");if(p&&p.level){var d=document.documentElement;d.classList.add("mbon");var n=String(p.nickname||"").trim(),a=Array.from(n);if(a.length>10){n=a.slice(0,10).join("")+"…";}d.style.setProperty("--mbnk",JSON.stringify(n));d.style.setProperty("--mb1",JSON.stringify(a.length?a[0]:""));}var ow=localStorage.getItem("012mb_owner_v1");if(p&&p.level){try{localStorage.setItem("012mb_was_in","1");}catch(e){}}if(!(p&&p.level)&&ow&&localStorage.getItem("012mb_was_in")==="1"){var K="012nav_brand_v1,012nav_fav_v1,012fx_fav_v1,012wheel_v1,012gb_fav_v1,012tra_fav_v1,012tra_recent_v1,012nav_recent_v1,012nav_recent_tool_v1,012nav_search_v1,012nav_quick_v1,012led_saved_v1";K.split(",").forEach(function(k){var v=localStorage.getItem(k);if(v!==null){localStorage.setItem("012guest_"+k,v);localStorage.removeItem(k);}});localStorage.setItem("012guest_who_v1",ow);try{localStorage.removeItem("012mb_was_in");}catch(e){}document.documentElement.setAttribute("data-mb-guest","1");}if(!(p&&p.level)){for(var i=localStorage.length-1;i>=0;i--){var dk=localStorage.key(i);if(dk&&dk.lastIndexOf("012dev_",0)===0){var dv=localStorage.getItem(dk),tk=dk.slice(7);if(dv!==null){localStorage.setItem(tk,dv);}localStorage.removeItem(dk);}}}}catch(e){}</script>
+<link rel="stylesheet" href="css/nav.css?v=1.0.347">
+<link rel="stylesheet" href="/css/almanac.css?v=1.0.290">
+<style>
+.nh-today{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:16px;padding:12px 20px;border:1px solid rgba(255,255,255,.14);border-radius:18px;background:rgba(255,255,255,.11);font-size:13.5px;color:#dbe7ff;justify-content:center}
+.nh-today .td{color:#fff;font-weight:600;letter-spacing:.3px}
+.nh-today .wx{display:inline-flex;align-items:center;gap:6px;cursor:pointer;color:#bfe6ff;position:relative}
+.nh-today .wx:hover{color:#fff;text-decoration:underline}
+.nh-today .wdot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22d3ee;box-shadow:0 0 8px #22d3ee}
+/* 點天氣時彈出的「自己設定地區」面板（預設用 IP 定位；已取消 GPS，不會跳任何權限視窗） */
+.nh-today .wx-ask{position:absolute;left:50%;top:calc(100% + 12px);transform:translateX(-50%);z-index:70;display:none;width:310px;max-width:calc(100vw - 32px);padding:12px 14px;border:1px solid rgba(56,189,248,.38);border-radius:12px;background:#0b1a2b;box-shadow:0 14px 34px rgba(0,0,0,.5);color:#dbe7ff;font-size:12.5px;line-height:1.7;text-align:left;text-decoration:none;cursor:default;font-weight:400}
+.nh-today .wx-ask.on{display:block}
+.nh-today .wx-ask b{display:block;color:#fff;font-size:13px;margin-bottom:2px}
+.nh-today .wx-ask::before{content:"";position:absolute;left:50%;top:-6px;width:10px;height:10px;margin-left:-5px;background:#0b1a2b;border-left:1px solid rgba(56,189,248,.38);border-top:1px solid rgba(56,189,248,.38);transform:rotate(45deg)}
+.nh-today .wx-cur{display:block;color:#9fb6d9;font-size:12px;margin:0 0 8px}
+.nh-today .wx-row{display:flex;gap:6px;margin:0 0 8px}
+/* 縣市下拉框：iOS 風（圓角、半透明灰底、右側小箭頭、隱藏原生外觀； 改版需求） */
+.nh-today .wx-selwrap{position:relative;flex:1;min-width:0;display:block}
+.nh-today .wx-selwrap::after{content:"";position:absolute;right:13px;top:50%;width:7px;height:7px;margin-top:-5px;border-right:2px solid #9fb6d9;border-bottom:2px solid #9fb6d9;transform:rotate(45deg);pointer-events:none}
+.nh-today .wx-sel{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:100%;box-sizing:border-box;font:inherit;font-size:13px;line-height:1.4;padding:10px 34px 10px 12px;border-radius:11px;border:1px solid rgba(148,163,184,.26);background:rgba(148,163,184,.17);color:#eef4ff;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.05);transition:background .15s,border-color .15s,box-shadow .15s}
+.nh-today .wx-sel:hover{background:rgba(148,163,184,.23)}
+.nh-today .wx-sel:active{background:rgba(148,163,184,.28)}
+.nh-today .wx-sel:focus{outline:none;border-color:rgba(56,189,248,.7);background:rgba(148,163,184,.23);box-shadow:0 0 0 3px rgba(34,211,238,.16)}
+.nh-today .wx-sel option{background:#0d1f33;color:#eef4ff}
+.nh-today .wx-or{display:block;color:#9fb6d9;font-size:11.5px;margin:2px 0 6px}
+/* iOS 式開關（IP 定位／GPS 定位，兩個互斥）
+ ⚠️整列都可點（data-wx-row）→ 游標與 hover 都要讓使用者看得出來；
+ 以前只有 button 本體吃得到點擊，點「文字」或「小圓鈕」完全沒反應（回報的狀況）。 */
+.nh-today .wx-sw{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 7px;color:#dbe7ff;font-size:12.5px;cursor:pointer}
+.nh-today .wx-sw:hover{color:#fff}
+.nh-today .wx-sw:hover .wx-toggle{border-color:rgba(148,163,184,.7)}
+.nh-today .wx-toggle{position:relative;flex:0 0 auto;width:42px;height:23px;padding:0;border-radius:12px;border:1px solid rgba(148,163,184,.45);background:rgba(148,163,184,.22);cursor:pointer;transition:background .18s,border-color .18s}
+.nh-today .wx-toggle i{position:absolute;top:2px;left:2px;width:17px;height:17px;border-radius:50%;background:#e2e8f0;transition:left .18s,background .18s}
+.nh-today .wx-toggle.on{background:linear-gradient(135deg,#22d3ee,#a78bfa);border-color:transparent}
+.nh-today .wx-toggle.on i{left:21px;background:#02121d}
+.nh-today .wx-mode-note{display:block;color:#9fb6d9;font-size:11.5px;margin:0 0 8px}
+@media(max-width:640px){.nh-today{border-radius:14px;align-items:flex-start;font-size:12.5px}.nh-today .wx-ask{left:0;transform:none;width:min(330px,calc(100vw - 32px))}.nh-today .wx-ask::before{left:22px;margin-left:0}}
+/* ---------- 最近搜尋（v1.0.59）：點搜尋框才在下方下拉顯示，內容由 nav.js 從 localStorage 填 --------- */
+.nh-search{position:relative}   /* nav.css 沒設定位；內嵌樣式在 <link> 之後，這裡補上就夠（不必動 nav.css 版號） */
+.srch-drop{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:80;background:#0b1a2b;border:1px solid rgba(56,189,248,.32);border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.5);padding:6px}
+.srch-drop[hidden]{display:none}
+.srch-drop .sh-hd{padding:6px 10px 4px;font-size:11.5px;color:var(--muted);letter-spacing:.5px}
+.srch-drop .sh-row{display:block;width:100%;text-align:left;cursor:pointer;font:inherit;font-size:13.5px;padding:9px 12px;border:0;border-radius:9px;background:transparent;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.srch-drop .sh-row:hover{background:rgba(34,211,238,.16);color:#fff}
+.srch-drop .sh-ft{margin-top:2px;padding:6px 6px 2px;border-top:1px solid rgba(255,255,255,.08);text-align:right}
+.srch-drop .sh-clr{cursor:pointer;font:inherit;font-size:12px;padding:7px 13px;border-radius:999px;border:1px dashed rgba(125,211,252,.4);background:transparent;color:var(--link)}
+.srch-drop .sh-clr:hover{border-style:solid;color:#fff}
+/* ---------- 首頁「熱門話題」跑馬燈（.ht-*）----------
+ 三列水平跑馬燈：每列內容從右向左移動，兩端用 mask 淡出。
+ ⚠️ 內容**不寫進 HTML**：首頁有整頁快取（TTL 600 秒），寫死＝10 分鐘前的舊話題；
+ 容器預設 display:none，沒有話題（上游抓不到）就整塊不出現、不留空白。
+ ⚠️ 外層 pointer-events:none：捲動經過的空白處不會擋住滑鼠，只有話題標籤吃得到點擊。
+ ⚠️ 位移距離由 nav.js 量測後塞 --ht-go（＝「一份內容的寬度」px），並把內容複製成足以
+ 填滿容器的份數 → 循環時左右兩份接得上、不會跳動。
+ ⚠️ 這段註解在 echo 出來的 style 裡，會送到訪客的原始碼：不要在這裡寫需求或修改背景。 */
+.ht-tags{position:absolute;top:24px;right:20px;width:min(46%,330px);height:84px;pointer-events:none;z-index:3;display:none}
+.ht-tags.on{display:block}
+.ht-row{position:absolute;left:0;right:0;height:24px;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 86%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 12%,#000 86%,transparent)}
+.ht-row:nth-child(1){top:0}
+.ht-row:nth-child(2){top:30px}
+.ht-row:nth-child(3){top:60px}
+.ht-track{white-space:nowrap;will-change:transform;animation-name:ht-run;animation-timing-function:linear;animation-iteration-count:infinite}
+.ht-seq{display:inline-flex;align-items:center;gap:8px;padding-right:8px}
+@keyframes ht-run{from{transform:translate3d(0,0,0)}to{transform:translate3d(var(--ht-go,0),0,0)}}
+.ht-tag{pointer-events:auto;display:inline-flex;align-items:center;cursor:pointer;font-size:12.5px;line-height:1.5;
+  padding:2px 11px;border-radius:999px;border:1px solid rgba(125,211,252,.3);background:rgba(11,26,43,.5);
+  color:#cfe6ff;text-decoration:none;transition:.2s}
+.ht-tag::before{content:"#";margin-right:3px;color:#7dd3fc;opacity:.8}
+.ht-tag:hover{color:#02121c;background:linear-gradient(135deg,#22d3ee,#a78bfa);border-color:transparent;box-shadow:0 0 16px rgba(34,211,238,.45)}
+.ht-tag:hover::before{color:#02121c}
+/* 沒有話題時不顯示動態（避免內容不足、捲到一半變空白） */
+.ht-tags.still .ht-track{animation:none}
+/* 單欄（手機／窄視窗）時左邊就是標題與搜尋框，右側沒空間放這塊 → 收掉 */
+@media(max-width:860px){.ht-tags{display:none!important}}
+@media(prefers-reduced-motion:reduce){.ht-track{animation:none}}
+/* 熱門網站的「＋ 新增」達到上限（20 個）時變灰（nav.js 加 .off；點下去會用 alert 說明要先刪） */
+#brandAdd.off{opacity:.45;cursor:not-allowed}
+/* ---------- 首頁「今天日期」可點：點一下開農民曆浮窗（見 javascripts/almanac.js）----------
+ ⚠️ role／tabindex／.td-btn 都由 JS 加上 → 沒有 JS 時它只是一行純文字，
+ 不會變成「看起來能按、按了沒反應」的假按鈕（無障礙也正確）。 */
+.nh-today .td-btn{cursor:pointer}
+.nh-today .td-btn:hover{color:#fff;text-decoration:underline}
+.nh-today .td-btn:focus-visible{outline:2px solid #67e8f9;outline-offset:4px;border-radius:8px}
+/* ---------- 農民曆浮窗的外框（.calm-*）：只在首頁用得到，所以放這裡；
+ 浮窗裡的月曆（.cal-bar／.cal／.cal-d／.cal-yj／.cal-fest）用共用的 css/almanac.css，
+ 與 /tool-datetime/almanac 同一份 → 兩邊外觀與資料一致。 */
+/* z-index 9500：要蓋過「加到桌面」提示條（9000），但讓短網址浮窗（99999）維持在最上層；
+ ⚠️ 不用 inset:0（舊 Safari 不支援），老老實實寫四邊。 */
+/* 浮窗打開時鎖住背景頁面的捲動（almanac.js 的 open()／close() 在 <html> 上切換 .calm-lock）——
+ 不鎖的話在浮窗上「上下滑」捲到的是背後的整個首頁（的「系統原生捲動」感）。
+ ⚠️ 背景色在 body（會傳播到 canvas）→ 拿掉捲軸不會露白，不必補 padding。 */
+html.calm-lock{overflow:hidden}
+.calm-mask{position:fixed;top:0;left:0;right:0;bottom:0;z-index:9500;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(3,8,18,.72);backdrop-filter:blur(6px)}
+.calm-mask.on{display:flex}
+.calm-card{width:min(470px,100%);max-height:min(88vh,760px);display:flex;flex-direction:column;border:1px solid rgba(56,189,248,.3);border-radius:18px;background:#0b1a2b;box-shadow:0 24px 60px rgba(0,0,0,.6);overflow:hidden}
+.calm-hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.calm-hd .t{color:#fff;font-size:15px;font-weight:700}
+.calm-hd .hint{color:var(--muted);font-size:11.5px}
+.calm-x{cursor:pointer;font:inherit;font-size:15px;line-height:1;padding:6px 11px;border-radius:999px;border:1px solid rgba(148,163,184,.35);background:transparent;color:var(--muted)}
+.calm-x:hover{color:#fff;border-color:rgba(148,163,184,.7)}
+.calm-body{padding:12px 14px 14px;overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:rgba(148,163,184,.5) transparent}
+/* 浮窗內容區的捲軸改成本站玻璃風自繪捲軸（原本是系統原生捲軸：深色卡片上出現一條 Windows
+ 原生灰白捲軸，與整站風格不一致 → 回報）。
+ ⚠️ Firefox 走上面的 scrollbar-width／scrollbar-color；WebKit／Blink 走下面這批。
+ ⚠️ scrollbar-gutter 不開（開了會一直留一條空白），用 border+background-clip 做出「浮起膠囊」感。 */
+.calm-body::-webkit-scrollbar{width:10px;height:10px}
+.calm-body::-webkit-scrollbar-track{background:transparent}
+.calm-body::-webkit-scrollbar-thumb{background:rgba(148,163,184,.45);border:2px solid transparent;border-radius:999px;background-clip:padding-box}
+.calm-body::-webkit-scrollbar-thumb:hover{background:rgba(103,232,249,.6);border:2px solid transparent;background-clip:padding-box}
+.calm-body::-webkit-scrollbar-corner{background:transparent}
+.calm-body .cal-bar{margin-top:0}
+.calm-ft{padding:9px 14px 12px;border-top:1px solid rgba(255,255,255,.08);text-align:right}
+.calm-ft a{color:var(--link);font-size:12.5px;text-decoration:none}
+.calm-ft a:hover{text-decoration:underline}
+.calm-err{color:#fca5a5;font-size:13px;line-height:1.8;padding:8px 2px}
+.calm-load{color:var(--muted);font-size:13px;padding:14px 2px;text-align:center}
+@media(max-width:560px){.calm-mask{padding:8px}.calm-card{max-height:92vh;border-radius:14px}.calm-body{padding:10px}.calm-hd{padding:10px 12px}}
+/* ---------- 即時新聞／示警卡（#hotSec；內容由 javascripts/hotnews.js 填） ----------
+ ★ 展開全部。
+ 收合機制＝外層 .hn-box（overflow:hidden，高度由 JS 量測設定）＋內層 .hn-track（被 translateY 上推）。
+ ⚠️ 沒有任何 JS 時 .hn-box 不會被設高度 → 內容全部照常顯示（不會因為收合而看不到東西）。 */
+/* ⚠️ .nh-card 本身是 padding:0（站的通用設計：內距由各內容區塊自帶）→ 這張卡的每個區塊都要自己出
+ 左右內距，否則文字與示警框會**貼齊卡片邊框**；
+ 實測只有 1～3px，標題列本來就有 19px）。18px 與其他卡片一致。
+ ⚠️ 貼邊這種事光看程式碼看不出來，要**量 getBoundingClientRect 到卡片邊框的距離**（hotnews_ui_check.js 有斷言）。 */
+.hn-note{margin:0 0 10px;padding:0 18px;color:var(--muted);font-size:12.5px;line-height:1.7}
+.hn-note a{color:var(--link)}
+#hnBody{padding:0 18px}
+.hn-alerts{margin:0 0 12px;padding:10px 12px;border:1px solid rgba(248,113,113,.35);border-radius:12px;background:rgba(248,113,113,.08)}
+.hn-alerts[hidden]{display:none}
+.hn-stack{display:grid;gap:7px}
+.hn-box{overflow:hidden;transition:height .35s ease}
+.hn-track{transition:transform .45s ease;will-change:transform}
+.hot-open .hn-box{height:auto!important}         /* 展開：取消固定高度，全部顯示（class 由 hotnews.js 加） */
+.hot-open .hn-track{transform:none!important;transition:none}
+.hn-al{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:13.5px;line-height:1.6;color:var(--text)}
+/* ★ 收合狀態：示警**固定單行**
+ —— 說明文字多的示警（例：水庫放流列出十幾個鄉鎮）以前會把這一條撐成 2～3 行，輪播時卡片高度還會跟著跳。
+ 現在：不收合時維持原樣（可換行、看得到全文），收合時整條限制成一行＋說明用省略號，
+ 搭配 JS 的「固定高度」量測（只用第一條的高度）→ 高度完全固定、輪播不會跳。
+ ⚠️ flex 子項要能縮小必須 min-width:0（否則 ellipsis 不會出現）。 */
+#hotSec:not(.hot-open) .hn-al{flex-wrap:nowrap;overflow:hidden}
+#hotSec:not(.hot-open) .hn-al .x{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#hotSec:not(.hot-open) .hn-al .hn-s{flex:0 1 auto;min-width:0;max-width:36%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#hotSec:not(.hot-open) .hn-al time{flex:none}
+.hn-ch{flex:none;font-size:11.5px;font-weight:800;padding:2px 8px 3px;border-radius:999px;background:#b3261e;color:#fff}
+.hn-ch.r1{background:#b45309}
+.hn-ch.r2{background:#475569}
+.hn-al .x{color:var(--muted)}
+.hn-al time{color:var(--muted);font-size:12px;margin-left:auto;white-space:nowrap}
+.hn-list{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.hn-list li{display:flex;gap:8px;align-items:baseline;padding:7px 2px;border-bottom:1px solid rgba(255,255,255,.06)}
+.hn-list li:last-child{border-bottom:0}
+.hn-list a{color:var(--text);text-decoration:none;font-size:14px;line-height:1.6;flex:1}
+.hn-list a:hover{color:var(--link);text-decoration:underline}
+.hn-list .hn-s,.hn-list time{flex:none;color:var(--muted);font-size:11.5px;white-space:nowrap}
+.hn-load,.hn-err{color:var(--muted);font-size:13px;padding:10px 2px;border:0}
+.hn-err{color:#fca5a5}
+.hn-src{margin:10px 0 0;padding:0 18px 16px;color:var(--muted);font-size:11.5px;line-height:1.7}
+@media(max-width:560px){.hn-list li{flex-wrap:wrap}.hn-list a{flex:1 1 100%}.hn-al time{margin-left:0}}
+/* 手機：收合時示警那條塞不下「型別＋說明＋機關＋時間」→ 先把機關收掉（展開時仍看得到） */
+@media(max-width:560px){#hotSec:not(.hot-open) .hn-al .hn-s{display:none}}
+/* 尊重「減少動態」偏好：不做上翻動畫（JS 也會停止輪播，只顯示收合的 1／3 條） */
+@media (prefers-reduced-motion: reduce){.hn-track,.hn-box{transition:none}}
+/* ---------- 會員入口的登入狀態（ ----------
+ 入口是靜態連結（跟著整頁快取走），登入狀態只能由前端補；但 member.js 是 defer（等 HTML 解析完才跑），
+ 所以先顯示「登入 / 註冊」再跳成頭像＋暱稱。
+ → 由 <head> 的 inline script 在**第一次繪製之前**設好 html.mbon、--mbnk、--mb1，再由這裡決定顯示哪個 span。
+ ⚠️ 字級刻意**繼承**（不寫死）：.nh-nav a 在 901–1320px 有 media query 縮成 13px，
+ 若用「font-size:0 藏掉原文字＋::after 畫新文字」的寫法，新文字的字級就會跟旁邊的 nav 項不一致。
+ ⚠️ 起「頭像＋暱稱」的規則和 css/nav.css 那一份**一字不差**（這裡是為了首次繪製不閃爍
+ 才內嵌；改任何一邊都要一起改，小說站 novel/css/site.css 也有一份逐條對應的複本）。 */
+#mbHead .mb-in{display:none}
+html.mbon #mbHead .mb-io{display:none}
+html.mbon #mbHead .mb-in{display:inline-flex;align-items:center;gap:6px;min-width:0}
+#mbHead .mb-av{flex:none;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;
+  justify-content:center;font-style:normal;font-size:12px;font-weight:800;color:#06121f;overflow:hidden;
+  background-color:#0e7490;background-image:linear-gradient(135deg,#22d3ee,#a78bfa);
+  background-size:cover;background-position:center}
+#mbHead .mb-av::after{content:var(--mb1,"👤")}
+#mbHead .mb-nk{font-weight:700;max-width:11em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html.mbon #mbHead .mb-nk::after{content:var(--mbnk,"")}
+/* 已登入時也要**在第一次繪製就是「選中」的樣子**（＝ .nh-nav a.on 的效果：亮膠囊＋陰影）。
+ 只靠 member.js 補 `on` class 的話，文字已經對了、背景卻晚一步才亮 → 還是一次視覺變化。
+ ⚠️ 這幾條的特异性（1,1,1）高於 nav.css 的 `.nh-nav a.on`（0,2,1），所以一定蓋得過。 */
+html.mbon #mbHead{color:#02121d}
+html.mbon #mbHead::before{opacity:1;box-shadow:0 0 22px rgba(34,211,238,.5)}
+/* ---------- 快捷工具「設定」彈窗----------
+ 只有首頁用，放本頁 inline（不動 nav.css，免得為了它全站升 ?v=）。
+ 開關用 iOS 開關造型（tools.css 同款數值）；mask 點外面＝關閉。 */
+.qm-mask{position:fixed;inset:0;z-index:99990;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(2,8,20,.62);backdrop-filter:blur(4px)}
+.qm-mask[hidden]{display:none}
+.qm-box{width:min(94vw,560px);max-height:86vh;display:flex;flex-direction:column;background:#0c1524;border:1px solid rgba(138,180,248,.16);border-radius:18px;box-shadow:0 24px 64px rgba(0,0,0,.5);overflow:hidden}
+.qm-hd{display:flex;align-items:center;justify-content:space-between;padding:14px 16px 0}
+.qm-hd h3{margin:0;font-size:16px;color:#fff}
+.qm-sub{margin:6px 16px 0;font-size:12.5px;color:var(--muted);line-height:1.8}
+/* ★ 清單＝滾動區（ 修「工具加多後列表顯示不完整」）：
+ flex 子項預設 min-height:auto ⇒ 內容一超過就拒絕縮小，.qm-list 被撐得比 .qm-box 還高、
+ 底部的工具被裁掉（捲動也沒用）。**捲動容器一定要補 min-height:0** 才肯縮進 max-height 裡滾
+ （與 LED 160px 的 min-width:auto 同型坑，見 feedback 記憶）。
+ 版面＝卡片式：grid 自動多欄、窄視窗自動降欄數。 */
+.qm-list{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;padding:12px 16px;
+  /* ★ 上下滑動要套「深色玻璃捲軸」：.nh-sb 定義在 css/tools.css、首頁沒載它
+ ⇒ 數值照抄 .nh-sb（與 index.php 短網址浮窗 .calm-body 那份一字不差；改了要三處同步） */
+  scrollbar-width:thin;scrollbar-color:rgba(148,163,184,.5) transparent}
+.qm-list::-webkit-scrollbar{width:10px;height:10px}
+.qm-list::-webkit-scrollbar-track{background:transparent}
+.qm-list::-webkit-scrollbar-thumb{background:rgba(148,163,184,.45);border:2px solid transparent;border-radius:999px;background-clip:padding-box}
+.qm-list::-webkit-scrollbar-thumb:hover{background:rgba(103,232,249,.6);border:2px solid transparent;background-clip:padding-box}
+.qm-list::-webkit-scrollbar-corner{background:transparent}
+.qm-row{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin:0;padding:10px 12px;border:1px solid rgba(148,163,184,.22);border-radius:12px;background:rgba(148,163,184,.08);cursor:pointer;transition:border-color .15s,background .15s}
+.qm-row:hover{border-color:rgba(34,211,238,.45)}
+.qm-row:has(input:checked){border-color:rgba(34,211,238,.55);background:rgba(34,211,238,.10)}
+.qm-row .n{flex:1;font-size:13.5px;color:#eef4ff;line-height:1.5;min-height:2.9em;word-break:break-all;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.qm-row input[type=checkbox]{-webkit-appearance:none;appearance:none;position:relative;flex:0 0 auto;width:42px;height:23px;margin:0;border-radius:12px;border:1px solid rgba(148,163,184,.45);background:rgba(148,163,184,.22);cursor:pointer;transition:background .18s,border-color .18s}
+.qm-row input[type=checkbox]::after{content:"";position:absolute;top:2px;left:2px;width:17px;height:17px;border-radius:50%;background:#e2e8f0;transition:left .18s,background .18s}
+.qm-row input[type=checkbox]:checked{background:linear-gradient(135deg,#22d3ee,#a78bfa);border-color:transparent}
+.qm-row input[type=checkbox]:checked::after{left:21px;background:#02121d}
+.qm-row input[type=checkbox]:focus-visible{box-shadow:0 0 0 3px rgba(34,211,238,.35)}
+.qm-ft{display:flex;gap:10px;justify-content:flex-end;padding:12px 16px;border-top:1px solid rgba(148,163,184,.12)}
+.qm-ft .qm-ok{background:linear-gradient(135deg,#22d3ee,#a78bfa);color:#02121d;border-color:transparent;font-weight:700}
+.qm-ft .tbtn{cursor:pointer}
+/* ★ 彈窗內的 .tbtn 要自己補樣式：nav.css 的 .tbtn 只定義在 .nh-card-hd 作用域下，
+ 彈窗不在 .nh-card-hd 裡 ⇒ 原本吃到的是瀏覽器預設灰鈕，和網站風格不一致。
+ 數值照抄 .nh-card-hd .tbtn（膠囊鈕基準）。 */
+.qm-hd .tbtn,.qm-ft .tbtn{border:1px solid var(--line);background:rgba(12,22,44,.7);color:#b9d7ff;font-size:13px;font-weight:700;border-radius:999px;padding:6px 15px;cursor:pointer;transition:.25s;line-height:1.4;font-family:inherit}
+.qm-hd .tbtn:hover,.qm-ft .tbtn:hover{transform:translateY(-2px);border-color:var(--brand);color:#fff;box-shadow:0 0 14px rgba(34,211,238,.35)}
+/* ---------- 2026-10-17 UI 強化（站方選 1~5）：錨點條／站內提示／首字色塊 ---------- */
+/* ★ 2026-10-17 追加：快捷工具窄屏（≤720px）預設收兩行——.qc-fold／maxHeight 由 nav.js 掛，.qc-more 按鈕由 JS 生成 */
+#quickCloud.qc-fold{overflow:hidden}
+.qc-more{display:block;margin:10px auto 0;padding:6px 16px;border-radius:999px;border:1px solid rgba(148,163,184,.3);
+  background:rgba(12,22,44,.6);color:#b9d7ff;font-size:12.5px;font-weight:600;cursor:pointer;transition:.2s}
+.qc-more:hover{color:#fff;border-color:rgba(34,211,238,.55);box-shadow:0 0 10px rgba(34,211,238,.25)}
+/* #5 首字色塊：有 .lk-ic 的連結就不畫原本的青色圓點（nav.css 的 a:before）。 */
+.cat-card li a.ic:before{display:none}
+.lk-ic{flex:none;position:relative;width:19px;height:19px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;
+  font-style:normal;font-size:11px;font-weight:800;color:#eaf6ff;line-height:1;
+  background:hsl(var(--lh,200) 45% 30%);box-shadow:inset 0 0 0 1px hsla(var(--lh,200),70%,72%,.35)}
+/* ★ 2026-10-17：色塊上疊本地快取的 favicon（16px，warm 代抓存 tmp/fav/）；圖示載入失敗自移除 ⇒ 露出首字 */
+.lk-ic img{position:absolute;inset:0;width:16px;height:16px;margin:auto;border-radius:4px}
+/* #4 hero 外搜框的「站內也有」提示列（nav.js 填）。 */
+.ns-inhero{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:10px 8px 2px;font-size:13px;color:var(--muted);text-align:left}
+.ns-inhero[hidden]{display:none}
+.ns-inhero .ih-n{color:#7dd3fc;text-decoration:none;padding:2px 9px;border:1px solid rgba(125,211,252,.35);border-radius:999px;background:rgba(34,211,238,.08);transition:.2s}
+.ns-inhero .ih-n:hover{border-color:rgba(34,211,238,.7);color:#fff}
+.ns-inhero .ih-all{color:#7dd3fc;font-weight:700;text-decoration:none;border-bottom:1px dashed rgba(125,211,252,.5)}
+.ns-inhero .ih-all:hover{color:#fff;border-color:transparent}
+</style>
+<script>
+/* 網站點擊統計：只送一個 beacon，不影響右鍵／開新視窗／SEO
+ ★ v2 點擊來源（更正）：歸**組**（二級分類）——
+ 分類頁組塊／首頁分類卡帶 data-src="grp:<gid>" ⇒ 總點擊+1 且 該組+1（分類數＝Σ組同步）；
+ 熱門／歷史／搜尋等非分類入口只 +總點擊。
+ 歷史紀錄等只有網址的入口走 hitU()（/?nav_click_url=…，寫回時反查 nav_site id）。 */
+(function(){
+  function beacon(u){
+    try{
+      if(navigator.sendBeacon){ navigator.sendBeacon(u); }
+      else { var i=new Image(); i.src=u; }
+    }catch(e){}
+  }
+  function hit(t,s){
+    var u="/?nav_click="+t;
+    if(s){ u+="&src="+encodeURIComponent(s); }
+    beacon(u);
+  }
+  function hitU(url,s){
+    var u="/?nav_click_url="+encodeURIComponent(url);
+    if(s){ u+="&src="+encodeURIComponent(s); }
+    beacon(u);
+  }
+  window.navHit=hit; window.navHitU=hitU;   /* nav.js 的「歷史紀錄」點擊用（那邊只有網址） */
+  document.addEventListener("click",function(ev){
+    var a=ev.target;
+    while(a && a.tagName!=="A"){ a=a.parentNode; }
+    if(!a || !a.getAttribute){ return; }
+    var t=a.getAttribute("data-nid");
+    var s=a.getAttribute("data-src")||"";
+    if(t){ hit(t,s); }
+    else if(s){ var h=a.getAttribute("href")||""; if(/^https?:\/\//i.test(h)){ hitU(h,s); } }
+  },true);
+})();
+</script>
+</head><body>
+<header class="nh-top"><div class="nh-container nh-top-in">
+  <a class="nh-logo" href="/" target="_self"><span class="dot">導</span>012.tw <em>網址導航</em></a>
+  <input type="checkbox" id="navToggle" class="nh-toggle">
+  <label for="navToggle" class="nh-burger" aria-label="選單"><span></span><span></span><span></span></label>
+  <nav class="nh-nav" id="navMenu">
+    <a class="mb-entry" id="mbHead" href="/member" target="_self" data-mbpop="1"><span class="mb-io">登入 / 註冊</span><span class="mb-in"><i class="mb-av" aria-hidden="true"></i><b class="mb-nk"></b></span></a>
+  </nav>
+</div></header>
+<div class="hm-top">
+<section class="nh-hero"><div class="nh-hero-bg" aria-hidden="true"></div><div class="nh-container">
+<h1>台灣網站導航</h1><p class="hero-sub">台灣最大的網站導航站 · 找網站從這裡開始</p>
+<div class="ht-tags" id="htTags" role="list" aria-label="熱門話題（點一下用選定的搜尋引擎搜尋）"></div>
+<form class="nh-search" id="engForm" role="search">
+  <div class="nh-eng">
+    <button type="button" class="ne-btn" id="engBtn" aria-haspopup="listbox" aria-expanded="false" aria-label="選擇搜尋引擎">
+      <span class="ne-ico e-google" id="engIco">G</span><span class="ne-cap" id="engCap">Google</span>
+      <svg class="ne-car" viewBox="0 0 10 6" width="10" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="ne-menu" id="engMenu" role="listbox" aria-label="搜尋引擎" hidden>
+      <div class="ne-opt on" role="option" tabindex="-1" data-eng="google" aria-selected="true"><span class="ne-ico e-google">G</span><span class="ne-nm">Google</span><span class="ne-tick">✓</span></div>
+      <div class="ne-opt" role="option" tabindex="-1" data-eng="bing" aria-selected="false"><span class="ne-ico e-bing">B</span><span class="ne-nm">Bing</span><span class="ne-tick">✓</span></div>
+      <div class="ne-opt" role="option" tabindex="-1" data-eng="yahoo" aria-selected="false"><span class="ne-ico e-yahoo">奇</span><span class="ne-nm">奇摩</span><span class="ne-tick">✓</span></div>
+    </div>
+  </div>
+  <input type="search" id="engQuery" name="q" placeholder="輸入關鍵字搜尋…" autocomplete="off">
+  <button type="submit" class="ns-go">搜尋</button>
+  <div class="srch-drop" id="srchHist" hidden role="listbox" aria-label="最近搜尋">
+    <div class="sh-hd">最近搜尋</div>
+    <div class="sh-list" id="srchList"></div>
+    <div class="sh-ft"><button type="button" class="sh-clr" id="srchClr">清除記錄</button></div>
+  </div>
+  <div class="ns-inhero" id="nsInhero" hidden></div>
+</form>
+<div class="nh-today"><span class="td" id="todayDate" title="點一下看農民曆：月曆・當日宜忌・近期節日">📅 2026年10月17日　星期六　農曆 九月初八</span><span class="wx" id="wxBox" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" title="目前用 IP 定位（約略位置）　點一下可自己設定地區"><span class="wdot"></span><span id="wxTxt">天氣讀取中…</span><span class="wx-ask" id="wxAsk" role="dialog" aria-label="定位方式與地區"><b>定位方式</b><span class="wx-cur" id="wxCur">目前：IP 定位（預設）</span><span class="wx-sw" data-wx-row="ip"><span>IP 定位（精確度低）</span><button type="button" class="wx-toggle on" data-wx="ip" role="switch" aria-checked="true" aria-label="IP 定位（精確度低）"><i></i></button></span><span class="wx-sw" data-wx-row="gps"><span>GPS 定位（精確度高）</span><button type="button" class="wx-toggle" data-wx="gps" role="switch" aria-checked="false" aria-label="GPS 定位（精確度高）"><i></i></button></span><span class="wx-mode-note" id="wxModeNote"></span><span class="wx-or">自己選擇地區（兩個開關都關時使用）</span><span class="wx-row"><span class="wx-selwrap"><select id="wxTw" class="wx-sel" aria-label="選擇縣市"><option value="">請選擇縣市…</option><option value="25.04|121.56|臺北市" data-city="臺北">臺北市</option><option value="25.01|121.47|新北市" data-city="板橋">新北市</option><option value="24.99|121.3|桃園市" data-city="桃園">桃園市</option><option value="24.15|120.68|臺中市" data-city="臺中">臺中市</option><option value="22.99|120.21|臺南市" data-city="臺南">臺南市</option><option value="22.62|120.31|高雄市" data-city="高雄">高雄市</option><option value="25.13|121.74|基隆市" data-city="基隆">基隆市</option><option value="23.48|120.45|嘉義市" data-city="嘉義">嘉義市</option><option value="24.8|120.97|新竹市" data-city="新竹">新竹市</option><option value="24.84|121.01|新竹縣" data-city="竹北">新竹縣</option><option value="24.56|120.82|苗栗縣" data-city="苗栗">苗栗縣</option><option value="23.92|120.66|南投縣" data-city="南投">南投縣</option><option value="24.07|120.56|彰化縣" data-city="彰化">彰化縣</option><option value="23.71|120.54|雲林縣" data-city="斗六">雲林縣</option><option value="23.46|120.33|嘉義縣" data-city="太保">嘉義縣</option><option value="22.67|120.49|屏東縣" data-city="屏東">屏東縣</option><option value="24.76|121.75|宜蘭縣" data-city="宜蘭">宜蘭縣</option><option value="23.98|121.6|花蓮縣" data-city="花蓮">花蓮縣</option><option value="22.76|121.14|臺東縣" data-city="臺東">臺東縣</option><option value="23.57|119.59|澎湖縣" data-city="馬公">澎湖縣</option><option value="24.44|118.32|金門縣" data-city="金城">金門縣</option><option value="26.15|119.93|連江縣" data-city="南竿">連江縣</option></select></span></span></span></span></div>
+</div></section>
+<section class="nh-section reveal"><div class="nh-card"><div class="nh-card-hd"><h2>快捷工具</h2><span class="hd-tools"><button type="button" class="tbtn" id="quickHide" aria-haspopup="dialog" aria-expanded="false">設定</button></span></div>
+<p class="q-hint" id="quickHint">排序依本月使用量；按「設定」可勾選要收起來的工具（只記在這一台裝置）</p>
+<div class="chip-cloud" id="quickCloud" style="padding-top:8px">
+<a class="cat-chip" href="/tool-tra" data-k="tra">臺鐵即時動態</a>
+<a class="cat-chip" href="/tool-typhoon" data-k="typhoon">颱風預警</a>
+<a class="cat-chip" href="/tool-calculator" data-k="calculator">計算工具</a>
+<a class="cat-chip" href="/tool-excel" data-k="excel">Excel 工具</a>
+<a class="cat-chip" href="/tool-currency" data-k="currency">即時匯率</a>
+<a class="cat-chip" href="/tool-pdf" data-k="pdf">PDF 工具</a>
+<a class="cat-chip" href="/tool-earthquake" data-k="earthquake">地震速報</a>
+<a class="cat-chip" href="/tool-text" data-k="text">文字工具</a>
+<a class="cat-chip" href="/tool-anti-fraud" data-k="anti-fraud">165 防騙網</a>
+<a class="cat-chip" href="/tool-net" data-k="net">網路工具</a>
+<a class="cat-chip" href="/tool-unit" data-k="unit">單位換算</a>
+<a class="cat-chip" href="/tool-crypto" data-k="crypto">加密貨幣</a>
+<a class="cat-chip" href="/tool-datetime" data-k="datetime">日期／時間</a>
+<a class="cat-chip" href="/tool-image" data-k="image">圖片工具</a>
+<a class="cat-chip" href="/novel/" data-k="novel">小說閱讀</a>
+<a class="cat-chip" href="/tool-garbage" data-k="garbage">垃圾車助手</a>
+<a class="cat-chip" href="/tool-wheel" data-k="wheel">隨機輪盤</a>
+<a class="cat-chip" href="/tool-tv" data-k="tv">新聞直播</a>
+<a class="cat-chip" href="/tool-transfer" data-k="transfer">掃碼快傳</a>
+<a class="cat-chip" href="/tool-led" data-k="led">LED 彈幕</a>
+</div>
+</div></section>
+</div>
+<section class="nh-section reveal" id="recentSec" style="display:none"><div class="nh-card"><div class="nh-card-hd"><h2>最近訪問</h2><span class="hd-tools"><span class="hint">只記在這台裝置的瀏覽器，不會上傳</span><button type="button" class="tbtn" id="recentClr">清除</button></span></div>
+<div class="chip-cloud" id="recentCloud" style="padding-top:8px"></div>
+</div></section>
+<section class="nh-section reveal"><div class="nh-card"><div class="nh-card-hd"><h2>我的最愛</h2>
+<span class="hd-tools"><span class="hint" id="favHint">最多 10 個，只記在這台裝置的瀏覽器；按「調整」可刪除或排序</span><button type="button" class="tbtn" id="favEdit">調整</button></span>
+</div>
+<div id="favGrid" class="nh-brand"></div>
+<div class="brand-empty" id="favEmpty">還沒有最愛網站，按下面的「＋」加入你常逛的網站</div>
+</div></section>
+<section class="nh-section reveal"><div class="nh-card"><div class="nh-card-hd"><h2>熱門網站</h2>
+<span class="hd-tools"><span class="hint">依全站點擊數排名，每 12 小時更新；要加入自己的網站，請用上面的「我的最愛」</span></span>
+</div>
+<div id="brandGrid" class="nh-brand" data-list="[{&quot;n&quot;:&quot;Yahoo!奇摩&quot;,&quot;u&quot;:&quot;https:\/\/tw.yahoo.com\/&quot;,&quot;t&quot;:&quot;s2555&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;Google 搜尋&quot;,&quot;u&quot;:&quot;https:\/\/www.google.com.tw\/&quot;,&quot;t&quot;:&quot;s2558&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;Youtube&quot;,&quot;u&quot;:&quot;https:\/\/www.youtube.com\/&quot;,&quot;t&quot;:&quot;s2729&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;Facebook&quot;,&quot;u&quot;:&quot;https:\/\/www.facebook.com\/&quot;,&quot;t&quot;:&quot;s763&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;Gmail&quot;,&quot;u&quot;:&quot;https:\/\/mail.google.com\/&quot;,&quot;t&quot;:&quot;s954&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;中時新聞網&quot;,&quot;u&quot;:&quot;https:\/\/www.chinatimes.com\/&quot;,&quot;t&quot;:&quot;s2321&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;聯合新聞網&quot;,&quot;u&quot;:&quot;https:\/\/udn.com\/news\/index&quot;,&quot;t&quot;:&quot;s2319&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;Mobile01&quot;,&quot;u&quot;:&quot;https:\/\/www.mobile01.com\/&quot;,&quot;t&quot;:&quot;s903&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;伊莉討論區&quot;,&quot;u&quot;:&quot;https:\/\/www.eyny.com\/&quot;,&quot;t&quot;:&quot;s792&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;LINE&quot;,&quot;u&quot;:&quot;https:\/\/line.me\/zh-hant\/&quot;,&quot;t&quot;:&quot;s773&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;Netflix&quot;,&quot;u&quot;:&quot;https:\/\/www.netflix.com\/tw\/&quot;,&quot;t&quot;:&quot;s2714&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;TVBS新聞網&quot;,&quot;u&quot;:&quot;https:\/\/news.tvbs.com.tw\/&quot;,&quot;t&quot;:&quot;s2330&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;ChatGPT&quot;,&quot;u&quot;:&quot;https:\/\/chatgpt.com\/&quot;,&quot;t&quot;:&quot;s292&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;PTT 批踢踢實業坊&quot;,&quot;u&quot;:&quot;https:\/\/www.ptt.cc\/&quot;,&quot;t&quot;:&quot;s789&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;蝦皮購物&quot;,&quot;u&quot;:&quot;https:\/\/shopee.tw\/&quot;,&quot;t&quot;:&quot;s1647&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;ETtoday新聞雲&quot;,&quot;u&quot;:&quot;https:\/\/www.ettoday.net\/&quot;,&quot;t&quot;:&quot;s2335&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;Dcard&quot;,&quot;u&quot;:&quot;https:\/\/www.dcard.tw\/&quot;,&quot;t&quot;:&quot;s790&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;巴哈姆特&quot;,&quot;u&quot;:&quot;http:\/\/www.gamer.com.tw\/&quot;,&quot;t&quot;:&quot;s1137&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;Claude&quot;,&quot;u&quot;:&quot;https:\/\/claude.ai\/&quot;,&quot;t&quot;:&quot;s293&quot;,&quot;src&quot;:&quot;hot&quot;},{&quot;n&quot;:&quot;friDay影音&quot;,&quot;u&quot;:&quot;https:\/\/video.friday.tw\/&quot;,&quot;t&quot;:&quot;s2719&quot;,&quot;src&quot;:&quot;hot&quot;}]"></div>
+<div class="brand-empty is-hide" id="brandEmpty">熱門網站清單為空，要加入自己的網站請用上面的「我的最愛」</div>
+</div></section>
+<section class="nh-section reveal" id="hotSec"><div class="nh-card">
+<div class="nh-card-hd"><h2>即時新聞／示警</h2><span class="hd-tools"><span class="hint" id="hnAt">載入中…</span><button type="button" class="tbtn" id="hnMore" aria-expanded="false" aria-controls="hnBody">顯示全部</button></span></div>
+<p class="hn-note" id="hnNote">即時彙整公開新聞標題與政府示警 —— 只顯示標題並連回原站，版權屬各媒體；示警資料來自民生示警公開資料平台。沒有 JavaScript 時請直接看 <a href="/L-news">新聞分類</a>。</p>
+<div id="hnBody">
+<div class="hn-alerts" id="hnAlerts" hidden><div class="hn-box" id="hnAlBox"><div class="hn-track hn-stack" id="hnAlTrack"></div></div></div>
+<div class="hn-box" id="hnNewsBox"><ul class="hn-list hn-track" id="hnList"><li class="hn-load">載入中…</li></ul></div>
+</div>
+<p class="hn-src" id="hnSrc">來源：民生示警公開資料平台（NCDR）・Yahoo奇摩新聞・自由時報・ETtoday新聞雲</p>
+</div></section>
+<div class="nh-sec-h reveal"><span class="tx">熱門分類</span><span class="ln"></span></div>
+<section class="nh-section">
+<div class="ns-wrap"><div class="cards-filter"><span class="cf-lab">站內搜尋</span><input type="search" id="navFilter" placeholder="搜尋站內網站：名稱或網址…" autocomplete="off"><button type="button" class="cf-clear" id="navClear" aria-label="清除">×</button></div><div class="ns-drop" id="navDrop" hidden></div></div>
+<div class="nh-cards" id="cardsBox">
+<div class="cat-card reveal" id="cc-ai" title="整理 ChatGPT、Claude、Gemini、DeepSeek、豆包、Kimi 等 AI 聊天與角色陪伴工具，Midjourney 繪圖、Sora／可靈／海螺影音生成、AI 翻譯與字幕、Hugging Face 與 Cursor 開發平台、AI 搜尋研究、代理自動化、3D 設計、雲端硬體與學習資源，以及台灣 TAIDE、AI Labs、Appier、雅婷智慧等在地資源。">
+<div class="tt"><h3>A　I</h3></div>
+<ul>
+<li><a class="ic" href="https://chatgpt.com/" target="_blank" rel="noopener nofollow" data-nid="s292" data-src="grp:11"><i class="lk-ic" style="--lh:23" aria-hidden="true">C<img src="tmp/fav/210dccbf3cf6ac1d2bd45945f9a5c941.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>ChatGPT</a></li>
+<li><a class="ic" href="https://claude.ai/" target="_blank" rel="noopener nofollow" data-nid="s293" data-src="grp:11"><i class="lk-ic" style="--lh:252" aria-hidden="true">C<img src="tmp/fav/9e2ae48000fc2ee08a7f050bc6c7590c.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Claude</a></li>
+<li><a class="ic" href="https://gemini.google.com/" target="_blank" rel="noopener nofollow" data-nid="s294" data-src="grp:11"><i class="lk-ic" style="--lh:25" aria-hidden="true">G<img src="tmp/fav/7509d4277b71cf022fbaaecb6e6ff102.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Google Gemini</a></li>
+<li><a class="ic" href="https://www.midjourney.com/" target="_blank" rel="noopener nofollow" data-nid="s305" data-src="grp:12"><i class="lk-ic" style="--lh:108" aria-hidden="true">M<img src="tmp/fav/061974a37d4e72b930f60631e3d5f999.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Midjourney</a></li>
+<li><a class="ic" href="https://immersivetranslate.com/" target="_blank" rel="noopener nofollow" data-nid="s2500" data-src="grp:242"><i class="lk-ic" style="--lh:67" aria-hidden="true">沉<img src="tmp/fav/5c3f4a6727dd8e9fa8736be9e483680c.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>沉浸式翻譯</a></li>
+</ul>
+<div class="more"><a href="/L-ai" target="_self">查看全部</a></div>
+</div>
+<div class="cat-card reveal" id="cc-community" title="台灣社群、論壇、部落格與交友平台總覽：Facebook、Instagram、Threads、LINE、Dcard、PTT 等社群媒體與論壇，方格子、Medium、痞客邦、Matters、Substack 等部落格與創作平台，以及 Tinder、Pairs 等交友約會服務。">
+<div class="tt"><h3>社　群</h3></div>
+<ul>
+<li><a class="ic" href="https://www.facebook.com/" target="_blank" rel="noopener nofollow" data-nid="s763" data-src="grp:47"><i class="lk-ic" style="--lh:230" aria-hidden="true">F<img src="tmp/fav/660328a7f9004d462085aa67a82065db.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Facebook</a></li>
+<li><a class="ic" href="https://www.eyny.com/" target="_blank" rel="noopener nofollow" data-nid="s792" data-src="grp:48"><i class="lk-ic" style="--lh:106" aria-hidden="true">伊<img src="tmp/fav/15c304a48c78b384f0ec4c9f2e390d22.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>伊莉討論區</a></li>
+<li><a class="ic" href="https://line.me/zh-hant/" target="_blank" rel="noopener nofollow" data-nid="s773" data-src="grp:47"><i class="lk-ic" style="--lh:170" aria-hidden="true">L<img src="tmp/fav/051fe719aa5e4c1664e037041dc35dcb.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>LINE</a></li>
+<li><a class="ic" href="https://www.ptt.cc/" target="_blank" rel="noopener nofollow" data-nid="s789" data-src="grp:48"><i class="lk-ic" style="--lh:127" aria-hidden="true">P<img src="tmp/fav/7f7c6ba5366ade70b7c3177bcae3c224.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>PTT 批踢踢實業坊</a></li>
+<li><a class="ic" href="https://www.dcard.tw/" target="_blank" rel="noopener nofollow" data-nid="s790" data-src="grp:48"><i class="lk-ic" style="--lh:187" aria-hidden="true">D<img src="tmp/fav/fa25ae95cc1ba32479ef5258b827c2ca.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Dcard</a></li>
+</ul>
+<div class="more"><a href="/L-community" target="_self">查看全部</a></div>
+</div>
+<div class="cat-card reveal" id="cc-game" title="遊戲資訊、平台商店、遊戲官網、手遊、電競賽事、攻略資料庫、實況影音與模組工具等，包含巴哈姆特、Steam、PlayStation、Xbox、Twitch、Nexus Mods、8591 等，追新遊戲、玩遊戲、查攻略與交易寶物。">
+<div class="tt"><h3>遊　戲</h3></div>
+<ul>
+<li><a class="ic" href="http://www.gamer.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s1137" data-src="grp:83"><i class="lk-ic" style="--lh:232" aria-hidden="true">巴<img src="tmp/fav/3b73c1d5ae5943b3ce3fc6524d8adabb.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>巴哈姆特</a></li>
+<li><a class="ic" href="http://www.8591.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s1144" data-src="grp:83"><i class="lk-ic" style="--lh:293" aria-hidden="true">8<img src="tmp/fav/afbb7cb2351dcc1d40d9e28b81617b45.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>8591寶物交易網</a></li>
+<li><a class="ic" href="http://www.gamebase.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s1141" data-src="grp:83"><i class="lk-ic" style="--lh:169" aria-hidden="true">遊<img src="tmp/fav/51646e013c9cd8b03b0ca4c05622f3aa.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>遊戲基地</a></li>
+<li><a class="ic" href="http://www.gamesmomo.com/" target="_blank" rel="noopener nofollow" data-nid="s1149" data-src="grp:83"><i class="lk-ic" style="--lh:83" aria-hidden="true">遊<img src="tmp/fav/64c696be1f41d32c463269ab6c8811cc.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>遊戲桃</a></li>
+<li><a class="ic" href="http://www.mycard520.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s1139" data-src="grp:83"><i class="lk-ic" style="--lh:190" aria-hidden="true">M<img src="tmp/fav/b394c7b721660c7152465a0ba99a0450.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>MyCard</a></li>
+</ul>
+<div class="more"><a href="/L-game" target="_self">查看全部</a></div>
+</div>
+<div class="cat-card reveal" id="cc-shopping" title="台灣網購與拍賣總覽：蝦皮、momo、PChome、露天市集、博客來、東森購物等綜合電商，GOMAJI 夠麻吉、ihergo 愛合購、17Life、486 團購等團購平台，服飾鞋包、美妝保養、3C 家電、生活超市、生鮮食品、母嬰寵物、圖書文創、二手拍賣、海外代購與比價優惠。">
+<div class="tt"><h3>購　物</h3></div>
+<ul>
+<li><a class="ic" href="https://shopee.tw/" target="_blank" rel="noopener nofollow" data-nid="s1647" data-src="grp:134"><i class="lk-ic" style="--lh:350" aria-hidden="true">蝦<img src="tmp/fav/819229514b35cc7df935216812e6751f.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>蝦皮購物</a></li>
+<li><a class="ic" href="https://www.ruten.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s1758" data-src="grp:142"><i class="lk-ic" style="--lh:217" aria-hidden="true">露<img src="tmp/fav/d7b843465786411b9a9beb23fe01c58b.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>露天市集</a></li>
+<li><a class="ic" href="https://24h.pchome.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s1649" data-src="grp:134"><i class="lk-ic" style="--lh:342" aria-hidden="true">P<img src="tmp/fav/da63681f16b34bd25eb8716b439e805a.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>PChome 24h購物</a></li>
+<li><a class="ic" href="https://www.momoshop.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s1648" data-src="grp:134"><i class="lk-ic" style="--lh:31" aria-hidden="true">m<img src="tmp/fav/e06e6c59989e192c2f5f01bd62ec5b5c.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>momo購物網</a></li>
+<li><a class="ic" href="https://www.books.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s1652" data-src="grp:134"><i class="lk-ic" style="--lh:236" aria-hidden="true">博<img src="tmp/fav/70412ef432e64a697f991885e12b2d91.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>博客來</a></li>
+</ul>
+<div class="more"><a href="/L-shopping" target="_self">查看全部</a></div>
+</div>
+<div class="cat-card reveal" id="cc-video" title="影音串流與電視總覽：Netflix、Disney+、HBO Max、Apple TV+ 等國際串流，friDay 影音、MyVideo、LINE TV、CatchPlay+、Hami Video、LiTV、KKTV 等台灣在地平台，YouTube、TikTok、Twitch 等影片與直播，bilibili／騰訊視頻／優酷／芒果TV 等華文影音平台，Viki／WeTV／HIDIVE 等亞洲劇集串流，Apple Podcasts／Firstory 等 Podcast 與線上音訊，中華電信 MOD、頻道大戶等 IPTV，以及台灣電視頻道（含客家電視、原視、台灣好+）、金馬影展等影展資訊與電影院線。">
+<div class="tt"><h3>影　音</h3></div>
+<ul>
+<li><a class="ic" href="https://www.youtube.com/" target="_blank" rel="noopener nofollow" data-nid="s2729" data-src="grp:265"><i class="lk-ic" style="--lh:288" aria-hidden="true">Y<img src="tmp/fav/ab3201c6103205c14f6e56b11b2fcd46.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Youtube</a></li>
+<li><a class="ic" href="https://www.netflix.com/tw/" target="_blank" rel="noopener nofollow" data-nid="s2714" data-src="grp:263"><i class="lk-ic" style="--lh:271" aria-hidden="true">N<img src="tmp/fav/d6ee1af12cb1ccb2c10ced55159615cd.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Netflix</a></li>
+<li><a class="ic" href="https://video.friday.tw/" target="_blank" rel="noopener nofollow" data-nid="s2719" data-src="grp:264"><i class="lk-ic" style="--lh:150" aria-hidden="true">f<img src="tmp/fav/43686df93181c895649d1e7edb6a376e.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>friDay影音</a></li>
+<li><a class="ic" href="https://vimeo.com/" target="_blank" rel="noopener nofollow" data-nid="s2764" data-src="grp:265"><i class="lk-ic" style="--lh:271" aria-hidden="true">V<img src="tmp/fav/6040c1ecb3ba58fb545282cfae168f49.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Vimeo</a></li>
+<li><a class="ic" href="https://www.twitch.tv/" target="_blank" rel="noopener nofollow" data-nid="s2731" data-src="grp:265"><i class="lk-ic" style="--lh:22" aria-hidden="true">T<img src="tmp/fav/7106a273bf3bbce901b765718ecbe69b.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Twitch</a></li>
+</ul>
+<div class="more"><a href="/L-video" target="_self">查看全部</a></div>
+</div>
+<div class="cat-card reveal" id="cc-news" title="台灣即時新聞與主流媒體，收錄聯合、自由、中時、中央社、公視、TVBS、三立、ETtoday 等，並含財經雜誌與國際中文新聞。">
+<div class="tt"><h3>新　聞</h3></div>
+<ul>
+<li><a class="ic" href="https://tw.yahoo.com/" target="_blank" rel="noopener nofollow" data-nid="s2555" data-src="grp:214"><i class="lk-ic" style="--lh:68" aria-hidden="true">Y<img src="tmp/fav/672b2b5adcff0e9cb1e3f319dec147b1.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Yahoo!奇摩</a></li>
+<li><a class="ic" href="https://www.chinatimes.com/" target="_blank" rel="noopener nofollow" data-nid="s2321" data-src="grp:214"><i class="lk-ic" style="--lh:259" aria-hidden="true">中<img src="tmp/fav/0e479a79de73c7b8f3c4135988df48b4.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>中時新聞網</a></li>
+<li><a class="ic" href="https://udn.com/news/index" target="_blank" rel="noopener nofollow" data-nid="s2319" data-src="grp:214"><i class="lk-ic" style="--lh:100" aria-hidden="true">聯<img src="tmp/fav/d2e5d55fd68c96c76ece724e44c3bd16.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>聯合新聞網</a></li>
+<li><a class="ic" href="https://news.tvbs.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s2330" data-src="grp:215"><i class="lk-ic" style="--lh:210" aria-hidden="true">T<img src="tmp/fav/eb3f6c7fccd1754a95f1b5dda58065a3.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>TVBS新聞網</a></li>
+<li><a class="ic" href="https://www.ettoday.net/" target="_blank" rel="noopener nofollow" data-nid="s2335" data-src="grp:216"><i class="lk-ic" style="--lh:43" aria-hidden="true">E<img src="tmp/fav/e37207d8ef01135b293bf38330d549bf.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>ETtoday新聞雲</a></li>
+</ul>
+<div class="more"><a href="/L-news" target="_self">查看全部</a></div>
+</div>
+<div class="cat-card reveal" id="cc-financial" title="財經新聞、股市資訊與看盤工具，包含 Yahoo 股市、鉅亨網、CMoney、MoneyDJ、臺灣證券交易所等，掌握投資理財動態。">
+<div class="tt"><h3>財　經</h3></div>
+<ul>
+<li><a class="ic" href="http://www.cnyes.com/" target="_blank" rel="noopener nofollow" data-nid="s2792" data-src="grp:270"><i class="lk-ic" style="--lh:186" aria-hidden="true">鉅<img src="tmp/fav/877ee3f09bf6d1a4f24dd4c3ff405424.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>鉅亨網</a></li>
+<li><a class="ic" href="https://www.macromicro.me/" target="_blank" rel="noopener nofollow" data-nid="s2802" data-src="grp:270"><i class="lk-ic" style="--lh:79" aria-hidden="true">財<img src="tmp/fav/af22894c37c8f21465e63552cb2b0cd4.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>財經M平方</a></li>
+<li><a class="ic" href="https://www.mma.com.tw/MemberPortal/Member/home.aspx" target="_blank" rel="noopener nofollow" data-nid="s1083" data-src="grp:77"><i class="lk-ic" style="--lh:313" aria-hidden="true">M<img src="tmp/fav/000440fa867e1e6559a9c7755b06161c.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>MMA金融交易網</a></li>
+<li><a class="ic" href="https://www.tdcc.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s2804" data-src="grp:270"><i class="lk-ic" style="--lh:40" aria-hidden="true">臺<img src="tmp/fav/8fc81ec60a93bec24703e48b5db45f8b.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>臺灣集中保管結算所</a></li>
+<li><a class="ic" href="http://www.hexun.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s2793" data-src="grp:270"><i class="lk-ic" style="--lh:60" aria-hidden="true">和</i>和訊網</a></li>
+</ul>
+<div class="more"><a href="/L-financial" target="_self">查看全部</a></div>
+</div>
+<div class="cat-card reveal" id="cc-email" title="免費電子信箱與郵件工具總覽：Gmail、Outlook.com、Yahoo Mail、iCloud Mail、Proton Mail 等國際信箱，HiNet、Seednet、Mail2000、網易、QQ 等台灣與中文信箱，企業信箱與自訂網域，Outlook、Thunderbird 等收信軟體，一次性匿名信箱，以及郵件檢測安全與電子報行銷服務。">
+<div class="tt"><h3>信　箱</h3></div>
+<ul>
+<li><a class="ic" href="https://mail.google.com/" target="_blank" rel="noopener nofollow" data-nid="s954" data-src="grp:65"><i class="lk-ic" style="--lh:120" aria-hidden="true">G<img src="tmp/fav/be5cab0695415d9363d18ad1345c73eb.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Gmail</a></li>
+<li><a class="ic" href="https://mail.proton.me/" target="_blank" rel="noopener nofollow" data-nid="s958" data-src="grp:65"><i class="lk-ic" style="--lh:18" aria-hidden="true">P<img src="tmp/fav/eaf36f3342aea07c559591f58989fa65.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Proton Mail</a></li>
+<li><a class="ic" href="https://outlook.live.com/" target="_blank" rel="noopener nofollow" data-nid="s955" data-src="grp:65"><i class="lk-ic" style="--lh:34" aria-hidden="true">O</i>Outlook.com</a></li>
+<li><a class="ic" href="https://mail.yahoo.com/" target="_blank" rel="noopener nofollow" data-nid="s956" data-src="grp:65"><i class="lk-ic" style="--lh:176" aria-hidden="true">Y</i>Yahoo Mail</a></li>
+<li><a class="ic" href="https://www.icloud.com/mail" target="_blank" rel="noopener nofollow" data-nid="s957" data-src="grp:65"><i class="lk-ic" style="--lh:59" aria-hidden="true">i</i>iCloud Mail</a></li>
+</ul>
+<div class="more"><a href="/L-email" target="_self">查看全部</a></div>
+</div>
+<div class="cat-card reveal" id="cc-music" title="音樂串流、獨立音樂、歌詞、廣播電台與 KTV，收錄 KKBOX、Spotify、Apple Music、StreetVoice、Hit FM 等入口。">
+<div class="tt"><h3>音　樂</h3></div>
+<ul>
+<li><a class="ic" href="https://open.spotify.com/" target="_blank" rel="noopener nofollow" data-nid="s2370" data-src="grp:220"><i class="lk-ic" style="--lh:140" aria-hidden="true">S<img src="tmp/fav/479d9b75ba443b8f480f172fa1d2d13d.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Spotify</a></li>
+<li><a class="ic" href="https://music.amazon.com/" target="_blank" rel="noopener nofollow" data-nid="s2373" data-src="grp:220"><i class="lk-ic" style="--lh:80" aria-hidden="true">A<img src="tmp/fav/42faf465f90d0aaa5c2ad60ded7ca71f.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Amazon Music</a></li>
+<li><a class="ic" href="https://www.kkbox.com/tw/tc/" target="_blank" rel="noopener nofollow" data-nid="s2367" data-src="grp:220"><i class="lk-ic" style="--lh:187" aria-hidden="true">K<img src="tmp/fav/d1bb2701d1446941a7a6afbe40ce9028.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>KKBOX</a></li>
+<li><a class="ic" href="https://www.mymusic.net.tw/" target="_blank" rel="noopener nofollow" data-nid="s2368" data-src="grp:220"><i class="lk-ic" style="--lh:149" aria-hidden="true">M</i>MyMusic</a></li>
+<li><a class="ic" href="https://music.friday.tw/" target="_blank" rel="noopener nofollow" data-nid="s2369" data-src="grp:220"><i class="lk-ic" style="--lh:185" aria-hidden="true">f</i>friDay音樂</a></li>
+</ul>
+<div class="more"><a href="/L-music" target="_self">查看全部</a></div>
+</div>
+<div class="cat-card reveal" id="cc-digital" title="3C 科技與軟體資訊：科技新聞媒體、3C 評測與討論區、軟體下載與工具、生產力協作、開發者與開源資源、資訊安全，以及 3C 品牌官網。">
+<div class="tt"><h3>科　技</h3></div>
+<ul>
+<li><a class="ic" href="https://www.google.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s2558" data-src="grp:243"><i class="lk-ic" style="--lh:164" aria-hidden="true">G<img src="tmp/fav/f199784336b4d980050ff3898e89c42e.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Google 搜尋</a></li>
+<li><a class="ic" href="https://www.mobile01.com/" target="_blank" rel="noopener nofollow" data-nid="s903" data-src="grp:59"><i class="lk-ic" style="--lh:37" aria-hidden="true">M<img src="tmp/fav/76fb1231dd73c4f1c5e75bdeaff42bc3.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Mobile01</a></li>
+<li><a class="ic" href="https://tw.search.yahoo.com/" target="_blank" rel="noopener nofollow" data-nid="s2560" data-src="grp:243"><i class="lk-ic" style="--lh:325" aria-hidden="true">Y<img src="tmp/fav/12a7996add677b2879a13f5e0ccc79ad.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Yahoo!奇摩搜尋</a></li>
+<li><a class="ic" href="https://www.bing.com/" target="_blank" rel="noopener nofollow" data-nid="s2559" data-src="grp:243"><i class="lk-ic" style="--lh:287" aria-hidden="true">B<img src="tmp/fav/fd34edfe67a924377d8a9dfe9a78a38a.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Bing</a></li>
+<li><a class="ic" href="https://duckduckgo.com/" target="_blank" rel="noopener nofollow" data-nid="s2561" data-src="grp:243"><i class="lk-ic" style="--lh:323" aria-hidden="true">D</i>DuckDuckGo</a></li>
+</ul>
+<div class="more"><a href="/L-digital" target="_self">查看全部</a></div>
+</div>
+<div class="cat-card reveal" id="cc-bank" title="台灣銀行、純網銀、證券期貨、基金投資、行動支付與金融查詢入口，含臺灣銀行、中國信託、國泰世華、玉山、台新、將來銀行、LINE Bank、元大證券、台灣 Pay 等，另有記帳與理財工具。">
+<div class="tt"><h3>金　融</h3></div>
+<ul>
+<li><a class="ic" href="https://www.bot.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s512" data-src="grp:32"><i class="lk-ic" style="--lh:161" aria-hidden="true">臺<img src="tmp/fav/1ec2fb4cdc40a9c47646f386790b7d11.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>臺灣銀行</a></li>
+<li><a class="ic" href="https://www.tbb.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s523" data-src="grp:32"><i class="lk-ic" style="--lh:73" aria-hidden="true">臺<img src="tmp/fav/1e324628435a693f8f26a3fba5640ccc.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>臺灣企銀</a></li>
+<li><a class="ic" href="https://www.landbank.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s513" data-src="grp:32"><i class="lk-ic" style="--lh:123" aria-hidden="true">土</i>土地銀行</a></li>
+<li><a class="ic" href="https://www.megabank.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s514" data-src="grp:32"><i class="lk-ic" style="--lh:358" aria-hidden="true">兆</i>兆豐國際商業銀行</a></li>
+<li><a class="ic" href="https://www.kgibank.com.tw/" target="_blank" rel="noopener nofollow" data-nid="s515" data-src="grp:32"><i class="lk-ic" style="--lh:197" aria-hidden="true">凱</i>凱基商業銀行</a></li>
+</ul>
+<div class="more"><a href="/L-bank" target="_self">查看全部</a></div>
+</div>
+<div class="cat-card reveal" id="cc-chucun" title="雲端硬碟、網盤、網路相簿與圖床總覽：Google Drive、OneDrive、iCloud、Dropbox、MEGA、Box、pCloud 等儲存空間，百度網盤、阿里雲盤、夸克網盤等中文網盤，WeTransfer、Send Anywhere 等檔案傳輸，Backblaze、Syncthing 等備份同步工具，Synology、QNAP NAS 私有雲，以及 AWS、Azure、阿里雲與台灣在地雲端服務。">
+<div class="tt"><h3>雲端服務</h3></div>
+<ul>
+<li><a class="ic" href="https://internxt.com/" target="_blank" rel="noopener nofollow" data-nid="s616" data-src="grp:37"><i class="lk-ic" style="--lh:355" aria-hidden="true">I<img src="tmp/fav/363dc9c1bd543f6b2548fa21b75aa8af.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Internxt</a></li>
+<li><a class="ic" href="https://filen.io/" target="_blank" rel="noopener nofollow" data-nid="s621" data-src="grp:37"><i class="lk-ic" style="--lh:76" aria-hidden="true">F<img src="tmp/fav/fe0e2eb27b65832d85f283f86513e17e.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Filen</a></li>
+<li><a class="ic" href="https://postimages.org/" target="_blank" rel="noopener nofollow" data-nid="s652" data-src="grp:39"><i class="lk-ic" style="--lh:97" aria-hidden="true">P<img src="tmp/fav/05cc1fd838633a4a9b968e85167a24d4.png" alt="" width="16" height="16" loading="lazy" onerror="if(this.parentNode){this.parentNode.removeChild(this);}"></i>Postimages</a></li>
+<li><a class="ic" href="https://drive.google.com/" target="_blank" rel="noopener nofollow" data-nid="s607" data-src="grp:37"><i class="lk-ic" style="--lh:328" aria-hidden="true">G</i>Google Drive</a></li>
+<li><a class="ic" href="https://onedrive.live.com/" target="_blank" rel="noopener nofollow" data-nid="s608" data-src="grp:37"><i class="lk-ic" style="--lh:309" aria-hidden="true">M</i>Microsoft OneDrive</a></li>
+</ul>
+<div class="more"><a href="/L-chucun" target="_self">查看全部</a></div>
+</div>
+</div></section>
+<div class="nh-sec-h reveal"><span class="tx">全部分類</span><span class="ln"></span></div>
+<section class="nh-section reveal"><div class="nh-card"><div class="chip-cloud">
+<a class="cat-chip" href="/L-video" target="_self" title="影音串流與電視總覽：Netflix、Disney+、HBO Max、Apple TV+ 等國際串流，friDay 影音、MyVideo、LINE TV、CatchPlay+、Hami Video、LiTV、KKTV 等台灣在地平台，YouTube、TikTok、Twitch 等影片與直播，bilibili／騰訊視頻／優酷／芒果TV 等華文影音平台，Viki／WeTV／HIDIVE 等亞洲劇集串流，Apple Podcasts／Firstory 等 Podcast 與線上音訊，中華電信 MOD、頻道大戶等 IPTV，以及台灣電視頻道（含客家電視、原視、台灣好+）、金馬影展等影展資訊與電影院線。 · 共 65 個網址"><span class="n">65</span>影音</a>
+<a class="cat-chip" href="/L-news" target="_self" title="台灣即時新聞與主流媒體，收錄聯合、自由、中時、中央社、公視、TVBS、三立、ETtoday 等，並含財經雜誌與國際中文新聞。 · 共 50 個網址"><span class="n">50</span>新聞</a>
+<a class="cat-chip" href="/L-community" target="_self" title="台灣社群、論壇、部落格與交友平台總覽：Facebook、Instagram、Threads、LINE、Dcard、PTT 等社群媒體與論壇，方格子、Medium、痞客邦、Matters、Substack 等部落格與創作平台，以及 Tinder、Pairs 等交友約會服務。 · 共 96 個網址"><span class="n">96</span>社群</a>
+<a class="cat-chip" href="/L-digital" target="_self" title="3C 科技與軟體資訊：科技新聞媒體、3C 評測與討論區、軟體下載與工具、生產力協作、開發者與開源資源、資訊安全，以及 3C 品牌官網。 · 共 83 個網址"><span class="n">83</span>科技 3C</a>
+<a class="cat-chip" href="/L-health" target="_self" title="醫院與醫學中心、健保與掛號查詢、心理健康資源、各縣市社區心理衛生中心、心理諮商與輔導機構、精神醫療、正念放鬆與心理衛教，另有藥局與用藥查詢、線上掛號與健保快易通、長照與防疫公衛資源。 · 共 164 個網址"><span class="n">164</span>醫療健康</a>
+<a class="cat-chip" href="/L-ai" target="_self" title="整理 ChatGPT、Claude、Gemini、DeepSeek、豆包、Kimi 等 AI 聊天與角色陪伴工具，Midjourney 繪圖、Sora／可靈／海螺影音生成、AI 翻譯與字幕、Hugging Face 與 Cursor 開發平台、AI 搜尋研究、代理自動化、3D 設計、雲端硬體與學習資源，以及台灣 TAIDE、AI Labs、Appier、雅婷智慧等在地資源。 · 共 215 個網址"><span class="n">215</span>AI</a>
+<a class="cat-chip" href="/L-lottery" target="_self" title="台灣彩券與運動彩券官方網站、開獎號碼與發票對獎服務、第三方開獎查詢與分析工具，以及香港、中國大陸與歐美知名彩券網站。 · 共 19 個網址"><span class="n">19</span>彩券</a>
+<a class="cat-chip" href="/L-shopping" target="_self" title="台灣網購與拍賣總覽：蝦皮、momo、PChome、露天市集、博客來、東森購物等綜合電商，GOMAJI 夠麻吉、ihergo 愛合購、17Life、486 團購等團購平台，服飾鞋包、美妝保養、3C 家電、生活超市、生鮮食品、母嬰寵物、圖書文創、二手拍賣、海外代購與比價優惠。 · 共 205 個網址"><span class="n">205</span>購物</a>
+<a class="cat-chip" href="/L-email" target="_self" title="免費電子信箱與郵件工具總覽：Gmail、Outlook.com、Yahoo Mail、iCloud Mail、Proton Mail 等國際信箱，HiNet、Seednet、Mail2000、網易、QQ 等台灣與中文信箱，企業信箱與自訂網域，Outlook、Thunderbird 等收信軟體，一次性匿名信箱，以及郵件檢測安全與電子報行銷服務。 · 共 93 個網址"><span class="n">93</span>信箱</a>
+<a class="cat-chip" href="/L-game" target="_self" title="遊戲資訊、平台商店、遊戲官網、手遊、電競賽事、攻略資料庫、實況影音與模組工具等，包含巴哈姆特、Steam、PlayStation、Xbox、Twitch、Nexus Mods、8591 等，追新遊戲、玩遊戲、查攻略與交易寶物。 · 共 223 個網址"><span class="n">223</span>遊戲</a>
+<a class="cat-chip" href="/L-jobs" target="_self" title="台灣求職與人力銀行，收錄 104、1111、Yes123、Yourator、CakeResume 與 LinkedIn，找工作、投履歷與職涯規劃，另有國營事業招考資訊。 · 共 24 個網址"><span class="n">24</span>求職</a>
+<a class="cat-chip" href="/L-agency" target="_self" title="收錄台灣政府機關、各級法院與檢察署、駐外館處、地方政府、大專院校與高中職、醫療院所及公營事業官方網站，包含行政院各部會、司法院、臺灣大學、長庚醫院、台電、中華郵政等，另有裁判書與法律扶助等訴訟資源，方便查詢政府資訊、學校公告、醫院掛號與公共服務。 · 共 273 個網址"><span class="n">273</span>政府機關</a>
+<a class="cat-chip" href="/L-auto" target="_self" title="台灣汽車與機車資訊總匯，收錄 Toyota、Lexus、BMW、Mercedes-Benz、Tesla、Gogoro 等品牌官網，以及 U-CAR、8891 中古車、電動車充電、租車共享、保修用品與監理法規查詢。 · 共 125 個網址"><span class="n">125</span>汽車</a>
+<a class="cat-chip" href="/L-financial" target="_self" title="財經新聞、股市資訊與看盤工具，包含 Yahoo 股市、鉅亨網、CMoney、MoneyDJ、臺灣證券交易所等，掌握投資理財動態。 · 共 57 個網址"><span class="n">57</span>財經</a>
+<a class="cat-chip" href="/L-maps" target="_self" title="電子地圖與導航服務：綜合世界地圖、台灣在地圖資與導航、政府圖資與防災地圖、歷史老地圖、戶外地形，以及地球與衛星影像。 · 共 37 個網址"><span class="n">37</span>地圖</a>
+<a class="cat-chip" href="/L-music" target="_self" title="音樂串流、獨立音樂、歌詞、廣播電台與 KTV，收錄 KKBOX、Spotify、Apple Music、StreetVoice、Hit FM 等入口。 · 共 37 個網址"><span class="n">37</span>音樂</a>
+<a class="cat-chip" href="/L-xuexi" target="_self" title="線上學習平台、開放式課程、語言學習、考試證照與程式教學，收錄 Hahow、均一教育平台、臺大 OCW、TOEIC 等入口。 · 共 43 個網址"><span class="n">43</span>學習</a>
+<a class="cat-chip" href="/L-chucun" target="_self" title="雲端硬碟、網盤、網路相簿與圖床總覽：Google Drive、OneDrive、iCloud、Dropbox、MEGA、Box、pCloud 等儲存空間，百度網盤、阿里雲盤、夸克網盤等中文網盤，WeTransfer、Send Anywhere 等檔案傳輸，Backblaze、Syncthing 等備份同步工具，Synology、QNAP NAS 私有雲，以及 AWS、Azure、阿里雲與台灣在地雲端服務。 · 共 165 個網址"><span class="n">165</span>雲端服務</a>
+<a class="cat-chip" href="/L-bank" target="_self" title="台灣銀行、純網銀、證券期貨、基金投資、行動支付與金融查詢入口，含臺灣銀行、中國信託、國泰世華、玉山、台新、將來銀行、LINE Bank、元大證券、台灣 Pay 等，另有記帳與理財工具。 · 共 82 個網址"><span class="n">82</span>金融</a>
+<a class="cat-chip" href="/L-comics" target="_self" title="動漫線上看、漫畫出版社與動漫資料庫，收錄 LINE WEBTOON、巴哈姆特動畫瘋、東立、MyAnimeList 等，追漫畫、看新番與同人交流。 · 共 29 個網址"><span class="n">29</span>動漫</a>
+<a class="cat-chip" href="/L-traffic" target="_self" title="交通運輸資訊，收錄台鐵、高鐵、捷運、客運、叫車與航班查詢，另有列車班次、國道即時路況與各縣市停車場查詢，規劃行程與日常通勤。 · 共 34 個網址"><span class="n">34</span>交通</a>
+<a class="cat-chip" href="/L-ent" target="_self" title="台灣與國際娛樂新聞、韓流與追星平台、演唱會與展演售票系統（KKTIX、拓元、OPENTIX）、展覽與活動場地資訊，以及電影資訊與影評網站。 · 共 34 個網址"><span class="n">34</span>娛樂</a>
+<a class="cat-chip" href="/L-food" target="_self" title="美食外送與餐廳訂位、台灣連鎖餐飲品牌官網、美食評論與米其林指南、中文與英文食譜網站，找餐廳、看評價、學做菜一次搞定。 · 共 39 個網址"><span class="n">39</span>美食</a>
+<a class="cat-chip" href="/L-sns" target="_self" title="圖片搜尋、免費與商用圖庫、中文設計素材、向量圖示與插畫、GIF 動圖貼圖、桌布背景，以及線上圖片編輯與壓縮工具。 · 共 41 個網址"><span class="n">41</span>圖庫與素材</a>
+<a class="cat-chip" href="/L-translate" target="_self" title="線上翻譯與辭典工具：Google 翻譯、DeepL、Bing 翻譯、百度、有道、Papago 等多語引擎，劍橋、牛津、Merriam-Webster 等英英辭典，以及教育部辭典、萌典、漢典等中文辭書。 · 共 29 個網址"><span class="n">29</span>翻譯</a>
+<a class="cat-chip" href="/L-xingzuo" target="_self" title="星座運勢與西洋占星、免費星盤查詢、紫微斗數與八字排盤、塔羅與易經占卜、姓名學命名、農民曆與生肖運勢等命理資訊。 · 共 49 個網址"><span class="n">49</span>星座命理</a>
+<a class="cat-chip" href="/L-daily" target="_self" title="台灣人每天都會查的即時資訊：天氣與颱風停班停課、統一發票對獎與雲端載具、油價與水電、地震與災害防救、水情與水庫，以及政府便民服務入口。 · 共 40 個網址"><span class="n">40</span>生活資訊</a>
+<a class="cat-chip" href="/L-fangchan" target="_self" title="買屋、租屋與房價行情：591、信義、永慶、台灣房屋等房仲與租屋平台，內政部實價登錄成交行情查詢。 · 共 22 個網址"><span class="n">22</span>房產</a>
+<a class="cat-chip" href="/L-crypto" target="_self" title="加密貨幣行情、交易所與資訊入口，包含 CoinMarketCap、Binance，以及台灣 MAX、ACE、BitoPro 等合規交易所與繁中媒體。 · 共 55 個網址"><span class="n">55</span>加密貨幣</a>
+<a class="cat-chip" href="/L-insurance" target="_self" title="台灣保險公司入口：國泰、富邦、南山、新光、凱基、台灣人壽等壽險，富邦、國泰世紀、新光、明台等產險，並收錄保險比較平台、保險局與壽險／產險公會。 · 共 50 個網址"><span class="n">50</span>保險</a>
+<a class="cat-chip" href="/L-mobile" target="_self" title="手機資訊與電信服務：中華電信、台灣大哥大、遠傳等電信業者，ePrice、Sogi 手機王、電腦王阿達等台灣評測，GSMArena、PhoneArena 等國際評測，以及 Apple、Samsung、Google Pixel、小米等品牌官網與手機配件通路。 · 共 32 個網址"><span class="n">32</span>手機</a>
+<a class="cat-chip" href="/L-novel" target="_self" title="電子書平台、有聲書與網路小說，收錄 Readmoo、Kobo、Pubu、HyRead、BookWalker、起點中文網等入口。 · 共 37 個網址"><span class="n">37</span>閱讀</a>
+<a class="cat-chip" href="/L-others" target="_self" title="其他實用網站：DCView、攝影家手札、DCFever 等攝影社群與相機評測，台灣攝影學會，短網址與網域服務，網站架設與網路工具，以及線上轉檔工具。 · 共 31 個網址"><span class="n">31</span>其他</a>
+<a class="cat-chip" href="/L-training" target="_self" title="台灣職棒與職籃官網、NBA 與 MLB 等國際主要賽事、國內外體育新聞媒體、即時比分與賽事數據、政府體育機關與國內單項運動協會、賽事直播轉播，以及跑步健身與運動裝置服務。 · 共 44 個網址"><span class="n">44</span>運動</a>
+<a class="cat-chip" href="/L-travel" target="_self" title="旅遊訂房與行程規劃，收錄 Booking.com、Agoda、Klook、KKday、雄獅旅遊與背包客棧等，另有機票比價、活動票券與民宿露營。 · 共 42 個網址"><span class="n">42</span>旅遊</a>
+</div></div></section>
+<footer class="nh-foot"><div class="in">
+  <span>© 2026 <a href="/" target="_self">012.tw 網址導航</a> · <a href="/contact/" target="_self">聯絡我們</a> · <a href="/feedback/" target="_self">功能建議</a> · <a href="/server/" target="_self">服務條款</a> · <a href="/privacy/" target="_self">隱私政策</a> · 收錄僅供參考，請自行判斷內容安全</span>
+  <span class="bd">RWD / H5</span>
+</div></footer>
+<script src="/javascripts/member.js?v=1.0.290" defer></script>
+<link rel="stylesheet" href="/javascripts/cat/cat-assistant.css?v=1.0.347">
+<script>window.CAT12_CONFIG = { tips: ['點左邊的分類可以快速找工具喔！','地震或颱風警示時，我會第一時間跳出來提醒你。','這台裝置的資料只記在自己的瀏覽器，不會上傳。','012 收錄的網站都通過 Google Safe Browsing 安全檢查，放心點。','每個外連網址旁都有掃毒安全圖示，先看圖示再點擊，絕對放心。','可疑網址先查再用：防詐查詢的資料每日與 165 同步。','站上工具大多在瀏覽器內完成，檔案不上傳伺服器，隱私最穩。'], tipIntervalSec: 45, bubbleMs: 6000, images: {base: '/javascripts/cat/img/idle.png', blink: '/javascripts/cat/img/blink.png',wave: '/javascripts/cat/img/wave.png', happy: '/javascripts/cat/img/happy.png',quake: '/javascripts/cat/img/quake.png', typhoon: '/javascripts/cat/img/typhoon.png',notice: '/javascripts/cat/img/notice.png', air: '/javascripts/cat/img/air.png',rain: '/javascripts/cat/img/rain.png', cny: '/javascripts/cat/img/cny.png',xmas: '/javascripts/cat/img/xmas.png' } };</script>
+<script src="/javascripts/cat/cat-assistant.js?v=1.0.348"></script>
+<div class="qm-mask" id="qModal" hidden><div class="qm-box" role="dialog" aria-modal="true" aria-labelledby="qModalTitle"><div class="qm-hd"><h3 id="qModalTitle">快捷工具設定</h3><button type="button" class="tbtn" id="qModalClose" aria-label="關閉">✕</button></div><p class="qm-sub">開＝顯示在首頁，關＝收起來；設定只記在這一台裝置。</p><div class="qm-list" id="qModalList"></div><div class="qm-ft"><button type="button" class="tbtn" id="qModalReset">全部顯示</button><button type="button" class="tbtn qm-ok" id="qModalDone">完成</button></div></div></div>
+<script src="javascripts/nav.js?v=1.0.357"></script>
+<script src="javascripts/typhoon-alert.js?v=1.0.290" defer></script>
+<script src="javascripts/weather.js?v=1.0.290"></script>
+<script src="javascripts/almanac.js?v=1.0.290"></script>
+<script src="javascripts/hotnews.js?v=1.0.290"></script>
+<div id="a2hsTip" style="display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:9000;max-width:560px;margin:0 auto;background:rgba(10,18,38,.97);border:1px solid rgba(34,211,238,.35);border-radius:14px;padding:14px 16px;box-shadow:0 18px 48px rgba(0,0,0,.55);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#e6eefc;line-height:1.6"><button type="button" id="a2hsClose" aria-label="關閉引導" style="position:absolute;top:8px;right:8px;width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.08);color:#c7d6ef;font-size:17px;line-height:1;cursor:pointer">×</button><div style="display:flex;gap:12px;align-items:flex-start;padding-right:32px"><div style="flex:none;width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#22d3ee,#a78bfa);display:flex;align-items:center;justify-content:center;font-weight:900;color:#06121f;font-size:15px">012</div><div style="min-width:0"><div id="a2hsTitle" style="font-size:14.5px;font-weight:800;margin:1px 0 3px;color:#fff">把 012.tw 加到手機桌面</div><div id="a2hsDesc" style="font-size:12.5px;color:#a9bcd8">一鍵開啟，像 App 一樣方便。</div></div></div></div><script>(function(){var K="012nav_a2hs_v1",BOX=document.getElementById("a2hsTip");if(!BOX){return;}try{if(localStorage.getItem(K)){return;}}catch(e){}try{if(window.matchMedia&&window.matchMedia("(display-mode: standalone)").matches){return;}}catch(e){}if(navigator.standalone){return;}function go(){if(document.getElementById("suMask")){return;}var ua=navigator.userAgent||"",t=document.getElementById("a2hsTitle"),d=document.getElementById("a2hsDesc");if(/iPhone|iPad|iPod/i.test(ua)){t.textContent="把 012.tw 加到手機桌面";d.textContent="點下方「分享」→「加入主畫面」，即可像 App 一鍵開啟。";}else if(/Android/i.test(ua)){t.textContent="把 012.tw 加到手機桌面";d.textContent="點右上角「⋮」選單 →「加到主畫面」，即可像 App 一鍵開啟。";}else{t.textContent="把 012.tw 設為首頁";d.textContent="按 Ctrl + D（Mac：⌘ + D）加入書籤；或在瀏覽器設定中把首頁設為 012.tw。";}BOX.style.display="block";}var CL=document.getElementById("a2hsClose");if(CL){CL.onclick=function(){BOX.style.display="none";try{localStorage.setItem(K,"1");}catch(e){}};}function start(){setTimeout(go,2500);}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",start);}else{start();}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"c6c2776b9e3c440faf40b2710e1d99fe","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

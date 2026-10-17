@@ -1,0 +1,161 @@
+{
+  "run_id": "286d18e38e0942d394e8ec54b500800f",
+  "host": "2030.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": {
+      "call": 10,
+      "evidence_id": "1257a382ecb542268025fc8b9ebce385",
+      "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    },
+    "3A娛樂城": {
+      "call": 9,
+      "evidence_id": "8de86f2694844b01a9dc77f072b156e5",
+      "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    }
+  },
+  "both_target_pages_read": true,
+  "tool_calls": 16,
+  "calls_before_first_hit": 8,
+  "calls_until_both_hit": 10,
+  "searches": 5,
+  "failed_searches": 3,
+  "failed_search_kinds": {
+    "no_results": 3,
+    "error": 0
+  },
+  "failed_search_queries": [
+    "site:2030.tw \"3A娛樂城\"",
+    "\"2030玩運彩\" -site:2030.tw",
+    "\"2030.tw/\" \"娛樂城\" -site:2030.tw"
+  ],
+  "http_requests": 11,
+  "http_requests_controller": 0,
+  "sitemap_reads": 0,
+  "refetched_verified_pages": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 0
+  },
+  "lessons_presented": 0,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 323487,
+    "prompt": 316568,
+    "completion": 6919,
+    "api_calls": 8,
+    "cache_read": 236800,
+    "cache_write": 0,
+    "uncached_prompt": 79768,
+    "cost": 86687
+  },
+  "hermes_tools": {
+    "research_status": 1,
+    "research_fetch": 8,
+    "research_search": 5,
+    "research_offpage": 1,
+    "research_finish": 1
+  },
+  "claims": 13,
+  "actions": 6,
+  "sections": {
+    "on_page": 9,
+    "off_page": 3,
+    "other": 1
+  },
+  "offpage": {
+    "claims": 3,
+    "observation": 1,
+    "inference": 1,
+    "unknown": 1,
+    "three_columns": true,
+    "known": 1,
+    "known_external": 1,
+    "known_link_verified": 0,
+    "pages_fetched": 1,
+    "pages_linking_to_target": 0
+  },
+  "offpage_policy_violations": [],
+  "state": "research_complete",
+  "transcript_calls": 8,
+  "v09": {
+    "onsite_read": [
+      "https://2030.tw",
+      "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle",
+      "https://2030.tw/wordcup",
+      "https://2030.tw/wordcup/3a娛樂城",
+      "https://2030.tw/wordcup/3a娛樂城出金速度",
+      "https://2030.tw/wordcup/3a娛樂城提款教學",
+      "https://2030.tw/wordcup/娛樂城",
+      "https://2030.tw/wordcup/富遊娛樂城"
+    ],
+    "cited_claims": 11,
+    "claim_pages": [
+      [
+        "https://2030.tw",
+        "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle"
+      ],
+      [
+        "https://2030.tw/wordcup"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/3a娛樂城提款教學",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城提款教學",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/3a娛樂城提款教學",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      [
+        "https://2030.tw",
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      [
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/3a娛樂城提款教學"
+      ],
+      [
+        "https://2030.tw/wordcup",
+        "https://2030.tw/wordcup/3a娛樂城",
+        "https://2030.tw/wordcup/3a娛樂城出金速度",
+        "https://2030.tw/wordcup/3a娛樂城提款教學",
+        "https://2030.tw/wordcup/娛樂城",
+        "https://2030.tw/wordcup/富遊娛樂城"
+      ],
+      [
+        "https://2030.tw/taiwanplus/mlb-live-20261017-tb-vs-cle"
+      ],
+      [],
+      []
+    ],
+    "memory": null,
+    "resolved_unknowns": [],
+    "candidates_read": 0,
+    "controller_requests": 0
+  }
+}

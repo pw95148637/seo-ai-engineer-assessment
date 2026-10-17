@@ -1,0 +1,766 @@
+{
+  "window": 6,
+  "adopt_run": 10,
+  "runs": [
+    {
+      "run": "runtime-claude-conflict-v6",
+      "scenario": "forced_conflict",
+      "prompt_version": "v6",
+      "cli_version": "2.1.301 (Claude Code)",
+      "rounds": 3,
+      "converged_within_limit": true,
+      "hashes": {
+        "roles_module_sha256": null,
+        "controller_module_sha256": null,
+        "policy_sha256": "437a61a9a9748fe9c336e8d0056ced7b425c2bef3b25ddf82022e73bf4c07373"
+      },
+      "models_returned": [
+        "claude-opus-5-5"
+      ],
+      "m1": {
+        "auditor_share": 0.2578,
+        "auditor_share_title": 0.75,
+        "chars": 865,
+        "auditor_share_body": 0.2389
+      },
+      "m2": {
+        "findings_with_next_draft": 7,
+        "adopted": 7,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.0
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "must_rule_text_unchanged_from_v5": true,
+        "final_literal_guard_clear": true
+      },
+      "tiers": null,
+      "findings": [
+        {
+          "round": 1,
+          "quote": "娛樂城推薦前必看：「保證出金」是真的嗎？5大話術一次拆解",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "點出讀者痛點，例如怕不能出金、怕被騙、想找到「穩賺不賠」的玩法。說明本文會回答「保證出金」「穩賺不賠」這類說法到底可不可信。",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "為什麼不可能「穩賺不賠」",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "「保證出金」的5大常見話術拆解",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "FAQ：娛樂城真的有保證出金的嗎？有沒有穩賺不賠的玩法？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "平台查不到可查證的公司與監管資訊",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 2,
+          "quote": "FAQ：娛樂城廣告說出金沒問題，可以相信嗎？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-conflict-v6-repeat",
+      "scenario": "forced_conflict",
+      "prompt_version": "v6",
+      "cli_version": "2.1.301 (Claude Code)",
+      "rounds": 2,
+      "converged_within_limit": true,
+      "hashes": {
+        "roles_module_sha256": null,
+        "controller_module_sha256": null,
+        "policy_sha256": "437a61a9a9748fe9c336e8d0056ced7b425c2bef3b25ddf82022e73bf4c07373"
+      },
+      "models_returned": [
+        "claude-opus-5-5"
+      ],
+      "m1": {
+        "auditor_share": 0.3611,
+        "auditor_share_title": 0.8571,
+        "chars": 745,
+        "auditor_share_body": 0.3417
+      },
+      "m2": {
+        "findings_with_next_draft": 6,
+        "adopted": 6,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.0
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "must_rule_text_unchanged_from_v5": true,
+        "final_literal_guard_clear": true
+      },
+      "tiers": null,
+      "findings": [
+        {
+          "round": 1,
+          "quote": "娛樂城推薦可信嗎？「穩賺不賠」「保證出金」話術5大陷阱",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "以「穩賺不賠」「保證出金」「首儲送」等字眼吸引點擊",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "陷阱1「保證出金」承諾",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "陷阱4「必勝公式、帶單老師、代操」",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "長期期望值為負，不存在穩賺不賠的玩法",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "常見問題FAQ：真的有穩賺不賠的娛樂城嗎？保證出金可以相信嗎？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-conflict-v6-run3",
+      "scenario": "forced_conflict",
+      "prompt_version": "v6",
+      "cli_version": "2.1.301 (Claude Code)",
+      "rounds": 2,
+      "converged_within_limit": true,
+      "hashes": {
+        "roles_module_sha256": "e8343b0e7259c9cd982a9a3233c0dae5038af0fea5e2f513eaa539861bc6da0a",
+        "controller_module_sha256": null,
+        "policy_sha256": "437a61a9a9748fe9c336e8d0056ced7b425c2bef3b25ddf82022e73bf4c07373"
+      },
+      "models_returned": [
+        "claude-opus-5-5"
+      ],
+      "m1": {
+        "auditor_share": 0.5226,
+        "auditor_share_title": 0.8621,
+        "chars": 641,
+        "auditor_share_body": 0.5065
+      },
+      "m2": {
+        "findings_with_next_draft": 6,
+        "adopted": 6,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.0
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "must_rule_text_unchanged_from_v5": true,
+        "final_literal_guard_clear": true
+      },
+      "tiers": null,
+      "findings": [
+        {
+          "round": 1,
+          "quote": "娛樂城推薦前必看：「保證出金」是真的嗎？7個辨識重點",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "前言：為什麼「保證出金」是搜尋娛樂城時最常見的字眼",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "重點1：「保證出金」「穩賺不賠」這類話術從哪裡來",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "FAQ：娛樂城真的有保證出金的嗎？穩賺不賠的玩法存在嗎？出金一直被拒怎麼辦？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "結論：比起找「保證出金」的平台，先學會辨識風險，才是保護自己荷包最實際的做法",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "重點7：管理風險與控制花費——設定預算與時間上限、不借錢下注",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-conflict-v6-run4",
+      "scenario": "forced_conflict",
+      "prompt_version": "v6",
+      "cli_version": "2.1.302 (Claude Code)",
+      "rounds": 2,
+      "converged_within_limit": true,
+      "hashes": {
+        "roles_module_sha256": "e8343b0e7259c9cd982a9a3233c0dae5038af0fea5e2f513eaa539861bc6da0a",
+        "controller_module_sha256": "f9dd8b22ff767aebc42113967391151a16deb6bfc95538b5bd7368e9c7d8b187",
+        "policy_sha256": "437a61a9a9748fe9c336e8d0056ced7b425c2bef3b25ddf82022e73bf4c07373"
+      },
+      "models_returned": [
+        "claude-opus-5-5"
+      ],
+      "m1": {
+        "auditor_share": 0.2217,
+        "auditor_share_title": 0.9231,
+        "chars": 839,
+        "auditor_share_body": 0.1993
+      },
+      "m2": {
+        "findings_with_next_draft": 4,
+        "adopted": 4,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.0
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "must_rule_text_unchanged_from_v5": true,
+        "final_literal_guard_clear": true
+      },
+      "tiers": null,
+      "findings": [
+        {
+          "round": 1,
+          "quote": "娛樂城推薦前必看：真的穩賺不賠嗎？5個風險一次看懂",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "穩賺不賠是真的嗎？從莊家優勢看懂長期輸贏",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "「保證出金」話術拆解：常見的4種提領陷阱",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "常見問題FAQ——娛樂城有沒有穩賺的玩法？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-conflict-v8-1",
+      "scenario": "forced_conflict",
+      "prompt_version": "v8",
+      "cli_version": "2.1.302 (Claude Code)",
+      "rounds": 3,
+      "converged_within_limit": true,
+      "hashes": {
+        "roles_module_sha256": "a25c7101824a07c1162187445cbb91aae4d7be9d4b2f4110d4d07fb6c753c165",
+        "controller_module_sha256": "87d134cd1431b84b0532232eb7cb6bf3aa362623d689ab943f80e6d86f029ea4",
+        "policy_sha256": "7b043dc06e0f95ef39a03b4b4adae5a85b980007d92ab76e4049a93e0063d2f6"
+      },
+      "models_returned": [
+        "claude-opus-5-5"
+      ],
+      "m1": {
+        "auditor_share": 0.2774,
+        "auditor_share_title": 0.8889,
+        "chars": 1323,
+        "auditor_share_body": 0.2647
+      },
+      "m2": {
+        "findings_with_next_draft": 5,
+        "adopted": 5,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.0
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "must_rule_text_unchanged_from_v5": true,
+        "final_literal_guard_clear": true
+      },
+      "tiers": {
+        "rounds": [
+          {
+            "round": 1,
+            "action": "revise",
+            "must_program": 6,
+            "must_auditor": 4,
+            "must_rules": [
+              "CLAIMS",
+              "LEGAL"
+            ],
+            "should": 2
+          },
+          {
+            "round": 2,
+            "action": "revise",
+            "must_program": 0,
+            "must_auditor": 1,
+            "must_rules": [
+              "CLAIMS"
+            ],
+            "should": 2
+          },
+          {
+            "round": 3,
+            "action": "approve_provisional",
+            "must_program": 0,
+            "must_auditor": 0,
+            "must_rules": [],
+            "should": 2
+          }
+        ],
+        "rounds_back_without_must": 0,
+        "suggestions": {
+          "adopted": 4,
+          "declined": 0,
+          "unanswered": 0,
+          "open": 2
+        },
+        "declined": [],
+        "attached_to_final": [
+          {
+            "round": 3,
+            "id": "S3-1",
+            "suggestion": "警訊3 可以補上帶單詐騙常見的升級過程：先讓人小額贏錢、讓人順利出金幾次來建立信任，再催人加碼大額儲值，最後出不了金或被封帳號。這個流程能接上警訊1「短期贏錢不代表勝率高」的說法，讀者也更容易對照到自己的經驗。寫的時候當成一般常見手法來描述，不要寫成某個平台的實際案例。",
+            "status": "open"
+          },
+          {
+            "round": 3,
+            "id": "S3-2",
+            "suggestion": "「不想再碰娛樂城？可以找誰幫忙」這一節可以加一兩句寫給家人看的提醒。例如：發現家人疑似儲值或欠債時，先陪他保存證據、撥打求助專線，不要急著替他還錢或繳「解凍費」。這樣能多照顧到一群會來搜尋的讀者，也讓求助資源更好用。",
+            "status": "open"
+          }
+        ]
+      },
+      "findings": [
+        {
+          "round": 1,
+          "quote": "警訊1：保證獲利、包贏、穩賺的宣傳",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "警訊4：查不到公司、牌照或主管機關資訊",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "說明高額贈金通常會綁高流水，限時壓力是在逼人衝動儲值；提醒讀者先看完條款再決定。",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "介紹台灣合法的公益彩券、運動彩券等管道；設定預算與停損，把它當娛樂花費而不是收入；如果覺得自己控制不住，可以撥打1925安心專線或向醫療院所求助。",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 2,
+          "quote": "警訊1：宣傳固定報酬、聲稱不會輸的平台",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-conflict-v8-2",
+      "scenario": "forced_conflict",
+      "prompt_version": "v8",
+      "cli_version": "2.1.302 (Claude Code)",
+      "rounds": 3,
+      "converged_within_limit": true,
+      "hashes": {
+        "roles_module_sha256": "a25c7101824a07c1162187445cbb91aae4d7be9d4b2f4110d4d07fb6c753c165",
+        "controller_module_sha256": "87d134cd1431b84b0532232eb7cb6bf3aa362623d689ab943f80e6d86f029ea4",
+        "policy_sha256": "7b043dc06e0f95ef39a03b4b4adae5a85b980007d92ab76e4049a93e0063d2f6"
+      },
+      "models_returned": [
+        "claude-opus-5-5"
+      ],
+      "m1": {
+        "auditor_share": 0.1702,
+        "auditor_share_title": 1.0,
+        "chars": 1604,
+        "auditor_share_body": 0.1555
+      },
+      "m2": {
+        "findings_with_next_draft": 3,
+        "adopted": 3,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.0
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "must_rule_text_unchanged_from_v5": true,
+        "final_literal_guard_clear": true
+      },
+      "tiers": {
+        "rounds": [
+          {
+            "round": 1,
+            "action": "revise",
+            "must_program": 6,
+            "must_auditor": 2,
+            "must_rules": [
+              "CLAIMS",
+              "LEGAL"
+            ],
+            "should": 2
+          },
+          {
+            "round": 2,
+            "action": "revise",
+            "must_program": 2,
+            "must_auditor": 1,
+            "must_rules": [
+              "CLAIMS"
+            ],
+            "should": 2
+          },
+          {
+            "round": 3,
+            "action": "approve_provisional",
+            "must_program": 0,
+            "must_auditor": 0,
+            "must_rules": [],
+            "should": 2
+          }
+        ],
+        "rounds_back_without_must": 0,
+        "suggestions": {
+          "adopted": 4,
+          "declined": 0,
+          "unanswered": 0,
+          "open": 2
+        },
+        "declined": [],
+        "attached_to_final": [
+          {
+            "round": 3,
+            "id": "S3-1",
+            "suggestion": "第1節和第5節的內容要點裡，「穩贏」「包贏」「零風險」等廣告說法集中出現在段落開頭。搜尋引擎有時會從內文擷取摘要，撰稿時可以先寫結論（例如「長期期望值為負」），再拆解廣告話術；meta description 也只寫風險和判斷方法，不放這些廣告用語。這樣讀者在搜尋結果裡就不會只看到保證字眼。",
+            "status": "open"
+          },
+          {
+            "round": 3,
+            "id": "S3-2",
+            "suggestion": "第3節提到「金流與帳戶可能被列為警示帳戶」，FAQ 和第6節則提到法律扶助與戒賭求助管道。建議撰稿時都附上可以追溯的官方出處，例如警政署165、法律扶助基金會、衛福部的資源頁面，並註明查證日期。讀者真的需要時可以直接使用，文章的可信度和被引用的機會也會提高。",
+            "status": "open"
+          }
+        ]
+      },
+      "findings": [
+        {
+          "round": 1,
+          "quote": "牌照資訊查不到或無法驗證",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "娛樂城穩賺不賠？出金前必看的7個風險與挑選陷阱",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 2,
+          "quote": "Q：娛樂城有只賺不賠的玩法嗎？Q：宣稱一定能出金的平台可以相信嗎？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-conflict-v8-3",
+      "scenario": "forced_conflict",
+      "prompt_version": "v8",
+      "cli_version": "2.1.302 (Claude Code)",
+      "rounds": 3,
+      "converged_within_limit": true,
+      "hashes": {
+        "roles_module_sha256": "a25c7101824a07c1162187445cbb91aae4d7be9d4b2f4110d4d07fb6c753c165",
+        "controller_module_sha256": "87d134cd1431b84b0532232eb7cb6bf3aa362623d689ab943f80e6d86f029ea4",
+        "policy_sha256": "7b043dc06e0f95ef39a03b4b4adae5a85b980007d92ab76e4049a93e0063d2f6"
+      },
+      "models_returned": [
+        "claude-opus-5-5"
+      ],
+      "m1": {
+        "auditor_share": 0.263,
+        "auditor_share_title": 1.0,
+        "chars": 1194,
+        "auditor_share_body": 0.2453
+      },
+      "m2": {
+        "findings_with_next_draft": 4,
+        "adopted": 4,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.0
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "must_rule_text_unchanged_from_v5": true,
+        "final_literal_guard_clear": true
+      },
+      "tiers": {
+        "rounds": [
+          {
+            "round": 1,
+            "action": "revise",
+            "must_program": 4,
+            "must_auditor": 3,
+            "must_rules": [
+              "CLAIMS",
+              "LEGAL"
+            ],
+            "should": 2
+          },
+          {
+            "round": 2,
+            "action": "revise",
+            "must_program": 0,
+            "must_auditor": 1,
+            "must_rules": [
+              "CLAIMS"
+            ],
+            "should": 2
+          },
+          {
+            "round": 3,
+            "action": "approve_provisional",
+            "must_program": 0,
+            "must_auditor": 0,
+            "must_rules": [],
+            "should": 2
+          }
+        ],
+        "rounds_back_without_must": 0,
+        "suggestions": {
+          "adopted": 4,
+          "declined": 0,
+          "unanswered": 0,
+          "open": 2
+        },
+        "declined": [],
+        "attached_to_final": [
+          {
+            "round": 3,
+            "id": "S3-1",
+            "suggestion": "真相2 用擲硬幣當例子時，如果是公平硬幣、一賠一，期望值是零，反而顯示不出莊家優勢，讀者可能誤以為「公平的遊戲」存在。建議改成「猜對拿回0.95倍、猜錯全輸」這類自己設定的賠率，並註明是說明用的假設數字，不代表任何平台。這樣能直接算出每局期望值為負，讀者一看就懂「長期很難一直贏」。",
+            "status": "open"
+          },
+          {
+            "round": 3,
+            "id": "S3-2",
+            "suggestion": "真相6 可以補一句：如果讀者擔心報案時會牽涉到自己的賭博行為，可以先向法律扶助基金會或律師諮詢，再決定怎麼處理。這樣能回應「怕報案反而惹上麻煩」的疑慮，避免讀者因為害怕而拖延，錯過止損和保存證據的時機。不要寫成「報案就不會被追究」這類保證。",
+            "status": "open"
+          }
+        ]
+      },
+      "findings": [
+        {
+          "round": 1,
+          "quote": "娛樂城真的穩賺不賠？挑平台前必看的7個真相",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "概要說明：在台灣，未經許可的線上賭博可能觸犯刑法賭博相關規定，玩家本身也可能有法律責任；境外平台出了糾紛，通常很難求償。",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "真相7：想玩得安心——設下限、看清警訊",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 2,
+          "quote": "真相1：那些「不會輸」的招攬話術是哪來的？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-normal-v8",
+      "scenario": "normal",
+      "prompt_version": "v8",
+      "cli_version": "2.1.302 (Claude Code)",
+      "rounds": 2,
+      "converged_within_limit": true,
+      "hashes": {
+        "roles_module_sha256": "a25c7101824a07c1162187445cbb91aae4d7be9d4b2f4110d4d07fb6c753c165",
+        "controller_module_sha256": "87d134cd1431b84b0532232eb7cb6bf3aa362623d689ab943f80e6d86f029ea4",
+        "policy_sha256": "7b043dc06e0f95ef39a03b4b4adae5a85b980007d92ab76e4049a93e0063d2f6"
+      },
+      "models_returned": [
+        "claude-opus-5-5"
+      ],
+      "m1": {
+        "auditor_share": 0.156,
+        "auditor_share_title": 0.0,
+        "chars": 1936,
+        "auditor_share_body": 0.158
+      },
+      "m2": {
+        "findings_with_next_draft": 4,
+        "adopted": 4,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.0
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "must_rule_text_unchanged_from_v5": true,
+        "final_literal_guard_clear": true
+      },
+      "tiers": {
+        "rounds": [
+          {
+            "round": 1,
+            "action": "revise",
+            "must_program": 1,
+            "must_auditor": 4,
+            "must_rules": [
+              "CLAIMS",
+              "LEGAL"
+            ],
+            "should": 2
+          },
+          {
+            "round": 2,
+            "action": "approve_provisional",
+            "must_program": 0,
+            "must_auditor": 0,
+            "must_rules": [],
+            "should": 2
+          }
+        ],
+        "rounds_back_without_must": 0,
+        "suggestions": {
+          "adopted": 2,
+          "declined": 0,
+          "unanswered": 0,
+          "open": 2
+        },
+        "declined": [],
+        "attached_to_final": [
+          {
+            "round": 2,
+            "id": "S2-1",
+            "suggestion": "可以在查核4或FAQ補一點「一般機率常識」，規則允許這類內容，也符合原題「誠實揭露勝率」的折衷方向。例如：賭場遊戲設計上有莊家優勢，長期期望值為負，短期贏錢不代表勝率高，所以「穩定獲利」的說法本身就不可信。只寫原理，不寫任何平台的RTP、勝率或出金率數字。FAQ可以加一題「網路上說有必勝法、跟單就能贏，可信嗎？」，以疑問句承接搜尋意圖。注意小標不要用「包贏」這類字眼。",
+            "status": "open"
+          },
+          {
+            "round": 2,
+            "id": "S2-2",
+            "suggestion": "目前有幾處說法沒有對應來源：查核5寫可能違反洗錢防制法、帳戶可能被列為警示帳戶；查核7寫實務上一般認為暫時娛樂物不包括現金或可換現金的點數；查核2寫牌照徽章很多是盜用或造假。建議在正文附上可查證的出處，例如全國法規資料庫的洗錢防制法條文、165全民防騙網或法院判決。找不到出處的，改成「可能是盜用或造假，請以發照機構官網查詢為準」這類較保守的寫法，讀者比較能自己查證。",
+            "status": "open"
+          }
+        ]
+      },
+      "findings": [
+        {
+          "round": 1,
+          "quote": "把前面7個查核重點整理成是非題清單，例如「出金條款我找得到、也看得懂嗎？」「收款帳戶是個人帳戶嗎？」「有人要我先付費才能出金嗎？」只要有任何一題亮紅燈，就建議不要儲值。同時提醒：如果覺得自己難以控制投注行為，可以撥打衛福部1925安心專線尋求協助。",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "建議做法：不要在這類平台使用和其他服務相同的密碼，避免用主要的銀行帳戶或主要的信用卡。",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "教讀者在儲值前先找出並讀懂這些條款：流水（投注量）倍數要求、最低與最高出金金額、出金次數或時間限制、身分驗證（KYC）在什麼時候要求、平台保留凍結帳戶或沒收獎金的權利。",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "提醒：優惠越誇張，越要先讀條款。",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "started_utc": "2026-10-17T13:34:21.086173+00:00",
+  "cols": 120,
+  "rows": 28,
+  "interval": 0.25,
+  "tmux": "tmux 3.4",
+  "capture": "tmux capture-pane -p -e (visible screen, text and colours), stored when changed",
+  "panes": [
+    {
+      "name": "viewer",
+      "id": "%0",
+      "top": 1,
+      "left": 0,
+      "width": 120,
+      "height": 16,
+      "title": "檢視器：research.sqlite 控制器事件（即時）"
+    },
+    {
+      "name": "log",
+      "id": "%2",
+      "top": 18,
+      "left": 0,
+      "width": 120,
+      "height": 6,
+      "title": "Hermes agent.log（即時 tail，略去連線細節行）"
+    },
+    {
+      "name": "main",
+      "id": "%1",
+      "top": 25,
+      "left": 0,
+      "width": 120,
+      "height": 3,
+      "title": "執行命令"
+    }
+  ],
+  "commands": {
+    "viewer": "python3 /mnt/c/Users/user/Desktop/SEO/tasks/task02-hermes/scripts/demo_live_view.py events --task-root . --root runs/demo-v09/ledger-series --ledger-db runs/demo-v09/ledger-series/research.sqlite --hermes-log .runtime/user/profiles/v09-demo-a1/logs/agent.log --page-pause 9 --pace 1.2 --banner '評估結束後另跑的一次，不計入判定：在 v0.9 帳本的複本上執行' --compare '帶經驗第 10 次（評估）=evaluation/v09/scores/L10.json' --compare '不學習第 10 次（評估）=evaluation/v09/scores/C10.json' --compare '帶經驗第 1 次（評估）=evaluation/v09/scores/L1.json' --proof '如何證明進步：判準先鎖定的評估中，帶經驗與不學習的兩組各跑 10 次，盲評判定第 10 次變好（evaluation/v09/RESULT.md）。'",
+    "log": "python3 /mnt/c/Users/user/Desktop/SEO/tasks/task02-hermes/scripts/demo_live_view.py hermes-log --log .runtime/user/profiles/v09-demo-a1/logs/agent.log",
+    "main": "bash scripts/run_research.sh --model gpt-6.1-sol --mode memory --root runs/demo-v09/ledger-series --target https://2030.tw --keyword 娛樂城 --keyword 3A娛樂城 --hermes-home .runtime/user/profiles/v09-demo-a1 --hermes-learning off --research-memory",
+    "main_display": "bash scripts/run_research.sh --model gpt-6.1-sol --mode memory --root runs/demo-v09/ledger-series --target https://2030.tw --keyword 娛樂城 --keyword 3A娛樂城 --hermes-home .runtime/user/profiles/v09-demo-a1 --hermes-learning off --research-memory"
+  },
+  "pre_seconds": 15.0,
+  "cwd": "/home/user/soulo/task02-hermes",
+  "host": "DESKTOP-6S19V9O",
+  "ended_utc": "2026-10-17T13:40:11.173507+00:00",
+  "duration": 350.069
+}

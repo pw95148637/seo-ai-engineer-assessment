@@ -32,7 +32,7 @@ SIZES = {
     "slide-architecture.html": (1600, 840),
     "slide-negotiation.html": (1920, 768),
     "slide-final-outline.html": (1920, 846),
-    "slide-v7-comparison.html": (1920, 768),
+    "slide-comparison.html": (1920, 768),
 }
 PORT = 9333
 STATE_LOG = HERE.parent.parent / "report" / "state-log.html"

@@ -5,6 +5,7 @@ The terminal area shows exactly the pane screens tmux captured (text and colours
 script never rewrites their content. It adds, outside the terminal area: a top bar (title, optional rehearsal
 banner, playback speed, real elapsed time), a caption band, full-screen chapter cards at storyboard markers, and an
 optional title/outro card. Long waits play at a fixed higher speed and the top bar says so for every such frame.
+A wait is a stretch with no screen change; the storyboard's "idle_ignore" lists panes whose changes don't count.
 
   python scripts/demo_render.py --capture demo/v07/rehearsal/capture --storyboard demo/v07/storyboard-rehearsal.json \
       --out demo/v07/rehearsal.mp4 --snapshots 4,20,45
@@ -38,7 +39,8 @@ FONT_CANDIDATES = dict(
     mono_bold=['C:/Windows/Fonts/consolab.ttf', '/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf'],
     cjk=['C:/Windows/Fonts/msjh.ttc', '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc'],
     cjk_bold=['C:/Windows/Fonts/msjhbd.ttc', '/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc'],
-    emoji=['C:/Windows/Fonts/seguiemj.ttf'])  # optional: wide symbols the CJK font lacks (e.g. 🎰)
+    emoji=['C:/Windows/Fonts/seguiemj.ttf'],  # optional: wide symbols the CJK font lacks (e.g. 🎰)
+    fallback=['C:/Windows/Fonts/segoeui.ttf', 'C:/Windows/Fonts/seguisym.ttf'])  # optional: what the emoji font lacks (٩ ๑ ❛)
 
 
 def find_font(kind):
@@ -160,10 +162,12 @@ class Fonts:
         self.asc, self.desc = asc, desc
         emoji = next((p for p in FONT_CANDIDATES['emoji'] if Path(p).exists()), None)
         self.emoji = ImageFont.truetype(emoji, size) if emoji else None
+        self.fallbacks = [ImageFont.truetype(p, size) for p in FONT_CANDIDATES['fallback'] if Path(p).exists()]
         self._notdef = self._sig('\U000f0000')
         self._cjk_notdef = self._sig('\U000f0000', self.cjk)
         self._has = {}
         self._cjk_has = {}
+        self._symbol = {}
 
     def _sig(self, ch, font=None):
         img = Image.new('L', (self.size * 2, self.size * 2))
@@ -175,6 +179,17 @@ class Fonts:
         if ch not in self._cjk_has:
             self._cjk_has[ch] = self._sig(ch, self.cjk) != self._cjk_notdef
         return self._cjk_has[ch]
+
+    def symbol_font(self, ch):
+        """Font for a glyph the CJK font lacks: the emoji font when it has `ch`, else the first fallback that has it,
+        else the emoji font (its .notdef box), so a missing glyph never silently changes width."""
+        if ch not in self._symbol:
+            covers = lambda font: self._sig(ch, font) != self._sig('\U000f0000', font)
+            pick = self.emoji
+            if not covers(self.emoji):
+                pick = next((f for f in self.fallbacks if covers(f)), self.emoji)
+            self._symbol[ch] = pick
+        return self._symbol[ch]
 
     def in_mono(self, ch):
         """True if the mono font has a real glyph for `ch` (not its .notdef box)."""
@@ -254,13 +269,14 @@ class TerminalRenderer:
                 run = []
                 if ch != ' ' and self.f.emoji and not self.f.in_cjk(ch):
                     span = w * self.cw
-                    font = self.f.emoji
+                    font = self.f.symbol_font(ch)
+                    # Emoji keep their own colours; a fallback font's glyph takes the terminal colour.
+                    paint = dict(embedded_color=True) if font is self.f.emoji else dict(fill=self.fg_color(key))
                     gw = font.getlength(ch)
                     if gw > span:
                         font = ImageFont.truetype(font.path, max(6, int(self.f.size * span / gw)))
                         gw = font.getlength(ch)
-                    d.text((x0 + col * self.cw + (span - gw) / 2, y + self.base), ch, font=font, anchor='ls',
-                           embedded_color=True)
+                    d.text((x0 + col * self.cw + (span - gw) / 2, y + self.base), ch, font=font, anchor='ls', **paint)
                 elif ch != ' ':
                     font = self.f.cjk_bold if bold else self.f.cjk
                     gw = font.getlength(ch)
@@ -457,7 +473,10 @@ def main():
     layout, frames = load_capture(capture)
     fps = a.fps or story.get('fps', 12)
     t_end = max(layout.get('duration') or 0, frames[-1]['t'] if frames else 0)
-    change_times = sorted({f['t'] for f in frames})
+    # Panes in idle_ignore (e.g. a spinner redrawn every capture) still draw but don't count as activity, so the
+    # waits they animate can fast-forward.
+    ignore = set(story.get('idle_ignore') or [])
+    change_times = sorted({f['t'] for f in frames if f['pane'] not in ignore})
     markers = find_markers(frames, story.get('segments', []))
     ui = UI()
     term = TerminalRenderer(layout, (SIDE, TOP + 4, W - 2 * SIDE, H - TOP - BOTTOM - 8))

@@ -100,8 +100,10 @@ class OffpageTests(LessonFixture):
             '<a href="mailto:a@research.example">mail</a>').encode('utf-8'))
         x = self.fetch(self.engine(), B + '/')
         self.assertEqual(x['outbound_hosts'], [
-            {'host': 'social.example', 'links': 2, 'rel': [], 'sample': 'https://social.example/p'},
-            {'host': 'aff.example', 'links': 1, 'rel': ['nofollow', 'sponsored'], 'sample': 'https://aff.example/register?st=x'}])
+            {'host': 'social.example', 'links': 2, 'image_links': 0, 'rel': [], 'sample': 'https://social.example/p',
+             'sample_anchor': 'fb'},
+            {'host': 'aff.example', 'links': 1, 'image_links': 0, 'rel': ['nofollow', 'sponsored'],
+             'sample': 'https://aff.example/register?st=x', 'sample_anchor': '註冊'}])
         self.assertEqual(x['outbound_hosts_total'], 2)
 
     def test_finish_requires_on_and_off_page_sections(self):

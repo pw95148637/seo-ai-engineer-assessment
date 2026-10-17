@@ -1,0 +1,45 @@
+User-agent: *
+Disallow: /news/*/?*
+Disallow: /*/news/*/?*
+Disallow: /education-centre/*/?*
+Disallow: /*/education-centre/*/?*
+Disallow: /sv/news/
+Disallow: /nl/news/
+Disallow: /da/news/
+Disallow: /en/news/
+Disallow: /de/education-centre/
+Disallow: /da/education-centre/
+Disallow: /fr/education-centre/
+Disallow: /nl/education-centre/
+Disallow: /it/education-centre/
+Disallow: /sv/education-centre/
+Disallow: /en/education-centre/
+Disallow: /widget/
+Allow: /news/?p=*
+Allow: /*/news/?p=*
+Allow: /education-centre/articles/?p=*
+Allow: /*/education-centre/articles/?p=*
+Allow: /$
+
+disallow: /*/faqs/
+disallow: /faqs/
+allow: /about/faqs/
+
+
+User-agent: facebookexternalhit
+Disallow:
+
+User-agent: Facebot
+Disallow:
+
+User-agent: facebookexternalhit/1.1
+Disallow:
+
+User-agent: facebookexternalhit/1.0
+Disallow:
+
+User-agent: Twitterbot
+Disallow:
+
+Sitemap: https://www.markets.com/sitemap_index.xml
+Sitemap: https://www.markets.com/academy/sitemap.xml

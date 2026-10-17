@@ -1,0 +1,29 @@
+{
+  "before": {
+    "homes": {
+      "v08-c1-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-c2-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-c3-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-c4-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-c5-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-hc-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-hl-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-hn-a1": "96243e87181c0bb70300fdcd3e4844a5ac2c14a3e89bb59bbe3d45ef46a09f7a",
+      "v08-l1-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l2-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l3-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l4-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l5-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-n": "96243e87181c0bb70300fdcd3e4844a5ac2c14a3e89bb59bbe3d45ef46a09f7a",
+      "v08x-c6-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08x-n": "96243e87181c0bb70300fdcd3e4844a5ac2c14a3e89bb59bbe3d45ef46a09f7a"
+    },
+    "root_learned": [],
+    "user_hermes": null
+  },
+  "own": "v08x-c6-a1",
+  "expected": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "ledger_before": "b3ea0df04621fc4e1edab8b0ed78a7a674fa7a1f972d87023d546c294eeaace9",
+  "ledger_after": "b3ea0df04621fc4e1edab8b0ed78a7a674fa7a1f972d87023d546c294eeaace9",
+  "problems": []
+}

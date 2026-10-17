@@ -1,0 +1,148 @@
+{
+  "claims": [
+    {
+      "text": "兩個目標頁本輪均為HTTP 200，title及H1含各自關鍵字，canonical指向各自URL，robots為index, follow；這些是頁面設定，不等於搜尋引擎已收錄或排名。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "b6656e5dcf894a34b171dab7c10059eb",
+        "f58f7f68cc7841afad6635edd9fdf0ac"
+      ],
+      "topic": "metadata"
+    },
+    {
+      "text": "首頁以體育賽事與運彩資訊為主，錨文字「線上娛樂城推薦」連至/wordcup/；該樞紐頁直接連到3a娛樂城與娛樂城目標頁，支持首頁—樞紐—落地頁的內鏈層級。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "9aa51a8f4b3c4532b6967770fe2d1e51",
+        "921eb252b8e74002a7440c629e5b78b6"
+      ],
+      "topic": "internal_linking"
+    },
+    {
+      "text": "樞紐頁顯示共2502篇評測及品牌、評價、優惠、玩法、安全出金等分類；此為頁面自報數字，未逐頁驗證內容總數、獨特性、可索引性或收錄量。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "921eb252b8e74002a7440c629e5b78b6"
+      ],
+      "topic": "content_inventory"
+    },
+    {
+      "text": "兩個落地頁均採平台特色、遊戲種類、出金安全、註冊、新手優惠、客服六類段落，再接FAQ、總結與CTA；泛詞娛樂城頁未提供具名平台比較表。抽樣支持共用內容框架，但不能推及全站或認定AI生成。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "b6656e5dcf894a34b171dab7c10059eb",
+        "f58f7f68cc7841afad6635edd9fdf0ac"
+      ],
+      "topic": "content_structure"
+    },
+    {
+      "text": "兩頁「🎰 立即註冊領取優惠」錨文字均連至https://don0911.3a1788.bet/?st=wg2030；樞紐另有同主機、st=wg2030idx的出站連結。這是出站導流證據，不是入站backlink。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "b6656e5dcf894a34b171dab7c10059eb",
+        "f58f7f68cc7841afad6635edd9fdf0ac",
+        "921eb252b8e74002a7440c629e5b78b6"
+      ],
+      "topic": "conversion_links"
+    },
+    {
+      "text": "可見架構與相同註冊目的地支持「以樞紐和關鍵字落地頁承接多種查詢，再匯向註冊入口」的策略推論；尚無證據證明其佣金契約或此策略的搜尋成效。",
+      "kind": "inference",
+      "section": "on_page",
+      "evidence_ids": [
+        "921eb252b8e74002a7440c629e5b78b6",
+        "b6656e5dcf894a34b171dab7c10059eb",
+        "f58f7f68cc7841afad6635edd9fdf0ac"
+      ],
+      "topic": "strategy"
+    },
+    {
+      "text": "3A頁署名為2030編輯部，標示2026年09月24日更新，並自述出金半小時至一小時、最低入金新台幣1000元及使用數月經驗；讀取內容未提供可核對測試紀錄或條款來源。編輯部署名不是具名作者或專業背書，數字真實性未經本輪驗證。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "b6656e5dcf894a34b171dab7c10059eb"
+      ],
+      "topic": "evidence_quality"
+    },
+    {
+      "text": "反證：3A頁有手機版、最低入金、出金與客服FAQ及小額體驗提醒；泛詞頁提醒洗碼量、提領限制與量力而為。因此不能說兩頁完全沒有實用資訊或風險提示。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "b6656e5dcf894a34b171dab7c10059eb",
+        "f58f7f68cc7841afad6635edd9fdf0ac"
+      ],
+      "topic": "counterevidence"
+    },
+    {
+      "text": "已直接讀取搜尋列出的casinobase.tw/reviews/與icasino.tw/comparison/；兩頁回傳均無指向2030.tw的連結、無目標網域提及，也無指定品牌字串2030玩運彩。因此這兩頁沒有可記錄的目標入站錨文字、rel或提及上下文。",
+      "kind": "observation",
+      "section": "off_page",
+      "evidence_ids": [
+        "43bc4acfb65f4e60bae53d26b8134fcf",
+        "437bc3bacaf34b5aaa32e741eba6881b"
+      ],
+      "topic": "verified_external_pages"
+    },
+    {
+      "text": "網域加娛樂城搜尋命中的部分頁面，直接核對後未含目標連結或提及；搜尋結果在本輪只能作線索，不能直接作backlink證明，也不宜據此安排複製連結來源的行動。",
+      "kind": "inference",
+      "section": "off_page",
+      "evidence_ids": [
+        "cbf759d388444e34800960ecd804a4c5",
+        "43bc4acfb65f4e60bae53d26b8134fcf",
+        "437bc3bacaf34b5aaa32e741eba6881b"
+      ],
+      "topic": "discovery_quality"
+    },
+    {
+      "text": "2030.tw完整backlink輪廓、有效引用網域數、入站錨文字分布、連結取得方式及站外品牌聲量仍未知；兩個未命中的站外頁不代表全網沒有連結，首頁的Facebook與Twitter出站連結也不是入站證據。",
+      "kind": "unknown",
+      "section": "off_page",
+      "evidence_ids": [],
+      "topic": "backlink_unknowns"
+    },
+    {
+      "text": "本輪未驗證兩個關鍵字的Google排名、流量、CTR、轉換率或營收，也沒有競爭者私有Search Console或分析資料；不能判定已發生關鍵字互搶或任何搜尋懲罰。",
+      "kind": "unknown",
+      "section": "other",
+      "evidence_ids": [],
+      "topic": "performance"
+    }
+  ],
+  "actions": [
+    {
+      "action": "P0：我們自己的網站先做意圖分工：娛樂城主頁承接選擇標準與有來源的比較；3A娛樂城頁承接品牌查證、條款及風險。已有相關頁則先盤點合併需求，不另造近似頁。",
+      "reason": "競爭者兩頁共用內容框架，泛詞頁缺具名比較表；差異化應是決策資訊與證據，不是堆字數。預估成本中、內容品質機會高；順位不代表保證排名提升。"
+    },
+    {
+      "action": "P0：先為自站3A內容建立可核對證據表：來源URL、查核日期、條款原文、適用條件與未知項；不虛構體驗、出金測試或安全保證。具名負責人、方法與商業關係明示；法規與責任博弈資訊另查官方來源。",
+      "reason": "競爭者有具體數字和編輯部署名，但抽樣內容缺可核對測試依據；優先以可追溯性競爭。SSL不能單獨證明營運合法、資金安全或保證出金。成本中高，品質價值高。"
+    },
+    {
+      "action": "P1：在自站建立清楚的主題樞紐、麵包屑及情境內鏈，讓比較頁、品牌頁與安全出金指南各有用途；核對title、H1、canonical及索引設定，結構化資料只標記真實可見內容。",
+      "reason": "競爭者已有首頁—樞紐—落地頁路徑，不能把增加內鏈本身當獨家優勢；我們應重視路徑清晰與資訊分工。成本低至中，品質價值中高。"
+    },
+    {
+      "action": "P1：自站off-page先製作可被引用的條款差異表、風險檢核表或可重現研究，再向主題相關且有編輯審核的站點提案；逐筆保存來源頁、目標URL、錨文字、rel、上下文與查核日。停止以本輪未驗證命中名單作買鏈或複製連結清單。",
+      "reason": "本輪未確認競爭者任何入站連結，因此沒有依據制定追平其引用網域數的KPI。研究資產成本中高、外聯成本另計；以引用相關性與獨立性評品質，不以URL數量判斷。"
+    },
+    {
+      "action": "P1：發布或修改前建立自站基線，取得授權後用我們自己的Search Console按頁面及查詢群組觀察曝光、點擊、CTR與落地頁分布；固定條件抽樣SERP，依資料決定擴充或調整，暫不仿製2502篇規模。",
+      "reason": "沒有競爭者成效資料，也尚未取得我們的網站現況。先驗證少量差異化頁面的結果，才能區分內容品質與製作／維護成本；不要以競爭者自報篇數推定成功。"
+    }
+  ],
+  "unknowns": [
+    "自站網域、內容庫、技術限制、受眾與授權分析基線未提供，本報告是供自站評估的優先順序，不是已實施或已驗證的成效。",
+    "未做全站爬取；樞紐自報2502篇不代表2502篇唯一、有效或已收錄頁面。",
+    "未驗證JavaScript渲染、Core Web Vitals、行動版體驗、完整H標籤數量及結構化資料。",
+    "未驗證3A的官方營運主體、牌照、入出金條款、站外註冊目的地的營運歸屬或佣金安排。",
+    "公開搜尋共使用五次；同名股票與世界盃結果造成雜訊。直接核對站外頁僅兩頁，不是完整backlink索引；無成功入站樣本可供錨文字及上下文分析。"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "7ff2c0f2c55f4c2e8b53d8f5695abbcb": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/7ff2c0f2c55f4c2e8b53d8f5695abbcb.txt"
+  },
+  "2f27c9e004054d1bb1f19475f3cda715": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/2f27c9e004054d1bb1f19475f3cda715.txt"
+  },
+  "04492eb13d0741f8805816bd43ee363f": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/04492eb13d0741f8805816bd43ee363f.txt"
+  },
+  "0038ad81d3db4ae793b75de28618825c": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/0038ad81d3db4ae793b75de28618825c.txt"
+  },
+  "3da9a66e98414bd89484c0b30da3ca84": {
+    "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/3da9a66e98414bd89484c0b30da3ca84.txt"
+  },
+  "a49c492db8d548af97b4178155a99b15": {
+    "url": "https://2030.tw/taiwanplus/mlb-live-20261018-tb-vs-cle/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/a49c492db8d548af97b4178155a99b15.txt"
+  },
+  "4c3ba3b9d204453d8c0d9725404aba24": {
+    "url": "https://casinobase.tw/reviews/",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/4c3ba3b9d204453d8c0d9725404aba24.txt"
+  },
+  "94eeb45bc2c645f79fb345b85676bd21": {
+    "url": "https://3aaa.com.tw/",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/94eeb45bc2c645f79fb345b85676bd21.txt"
+  },
+  "bc1e5fe207bc4a219147dcf816ea78ea": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/bc1e5fe207bc4a219147dcf816ea78ea.txt"
+  },
+  "1ddb8c9745864ccf9dad519658d340b9": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/1ddb8c9745864ccf9dad519658d340b9.txt"
+  }
+}

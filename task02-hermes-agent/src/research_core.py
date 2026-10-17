@@ -22,6 +22,7 @@ class Limits:
     interval:float=2
     redirects:int=3
     offpage:int=4
+    controller_requests:int=10  # the controller's own re-checks of stored lessons and findings, apart from the model's budget
 SECTIONS=('on_page','off_page','other')
 LINK_REL={'nofollow','sponsored','ugc'}
 # Characters left as they are when a path or query is percent-encoded; '%' keeps existing escapes intact.
@@ -83,10 +84,16 @@ class HTTP:
 class HTML(HTMLParser):
     def __init__(self,url):
         super().__init__(convert_charrefs=True);self.url=url;self.links=[];self.anchors=[];self.anchor=None;self.rels={};self.text=[];self.title=[];self.h1=[];self.skip=0;self.tag='';self.in_title=False;self.in_h1=False;self.canonical=None;self.description=None;self.robots=None
+        # JSON-LD blocks and images inside links: page structure the visible text leaves out (summaries only).
+        self.jsonld=[];self.jsonld_buf=None;self.images=[]
     def handle_starttag(self,t,attrs):
         a=dict(attrs);self.tag=t
         if t=='title':self.in_title=True
         if t=='h1':self.in_h1=True
+        if t=='script' and 'ld+json' in (a.get('type') or '').lower():self.jsonld_buf=[]
+        if t=='img' and self.anchor is not None:
+            src=a.get('src') or a.get('data-src') or ''
+            self.images.append((self.anchor[0],(a.get('alt') or '').strip(),unquote(urlsplit(urljoin(self.url,src)).path.rsplit('/',1)[-1]) if src else ''))
         if t in ('script','style'):self.skip+=1
         if t=='a' and a.get('href'):
             self.links.append(urljoin(self.url,a['href']));self.anchor=[self.links[-1],[]];self.anchors.append(self.anchor)
@@ -95,12 +102,16 @@ class HTML(HTMLParser):
         if t=='meta' and (a.get('name') or '').lower()=='description':self.description=a.get('content')
         if t=='meta' and (a.get('name') or '').lower()=='robots':self.robots=a.get('content')
     def handle_endtag(self,t):
+        if t=='script' and self.jsonld_buf is not None:
+            if len(self.jsonld)<20:self.jsonld.append(''.join(self.jsonld_buf)[:200_000])
+            self.jsonld_buf=None
         if t in ('script','style'):self.skip=max(0,self.skip-1)
         if t=='title':self.in_title=False
         if t=='h1':self.in_h1=False
         if t=='a':self.anchor=None
         self.tag=''
     def handle_data(self,d):
+        if self.jsonld_buf is not None:self.jsonld_buf.append(d);return
         if self.skip or not d.strip():return
         self.text.append(d.strip())
         if self.anchor is not None:self.anchor[1].append(d.strip())
@@ -113,6 +124,55 @@ class HTML(HTMLParser):
             if not out.get(u):out[u]=' '.join(parts)
         return list(out.items())
 def now():return datetime.now(timezone.utc).isoformat()
+def page_lines(text):return {x.strip() for x in (text or '').split('\n') if len(x.strip())>=4}
+JSONLD_FIELDS=('headline','name','datePublished','dateModified','url')
+def structured_data(blocks,limit=12):
+    """JSON-LD summary: @type and a few fields per object (FAQ question count, rating, breadcrumb). Page data, not
+    instructions; the full markup stays in the snapshot."""
+    out=[];errors=0
+    def walk(o,depth=0):
+        if len(out)>=limit or depth>3:return
+        if isinstance(o,list):
+            for x in o:walk(x,depth)
+            return
+        if not isinstance(o,dict):return
+        if '@graph' in o:walk(o['@graph'],depth+1)
+        t=o.get('@type')
+        if t is None:return
+        s=dict(type=[str(x)[:40] for x in (t if isinstance(t,list) else [t])][:3])
+        for f in JSONLD_FIELDS:
+            if isinstance(o.get(f),(str,int,float)):s[f]=str(o[f])[:160]
+        for f in ('author','publisher'):
+            v=o.get(f);v=v[0] if isinstance(v,list) and v else v
+            if isinstance(v,dict) and v.get('name'):s[f]=str(v['name'])[:80]
+            elif isinstance(v,str):s[f]=v[:80]
+        if 'FAQPage' in s['type']:
+            me=o.get('mainEntity');qs=me if isinstance(me,list) else [me] if me else []
+            s['faq_questions']=sum(1 for q in qs if isinstance(q,dict))
+            s['faq_sample']=[str(q['name'])[:100] for q in qs if isinstance(q,dict) and q.get('name')][:3]
+        if isinstance(o.get('itemListElement'),list):
+            s['items']=len(o['itemListElement'])
+            if 'BreadcrumbList' in s['type']:
+                s['breadcrumb']=[str(i['item'].get('name') if isinstance(i.get('item'),dict) else i.get('name'))[:40] for i in o['itemListElement'] if isinstance(i,dict)][:6]
+        r=o.get('aggregateRating')
+        if isinstance(r,dict):s['rating']={k:str(r[k])[:20] for k in ('ratingValue','reviewCount','ratingCount','bestRating') if k in r}
+        out.append(s)
+    cap,limit=limit,40  # collect more, then keep the content types first and drop exact repeats
+    for b in blocks:
+        try:walk(json.loads(b))
+        except ValueError:errors+=1
+    first=('FAQPage','Article','NewsArticle','BlogPosting','Review','Product','ItemList','BreadcrumbList','WebPage')
+    rows=[];[rows.append(o) for o in sorted(out,key=lambda o:min([first.index(t) for t in o['type'] if t in first] or [len(first)])) if o not in rows]
+    return dict(objects=rows[:cap],blocks=len(blocks),unparsed_blocks=errors,truncated=len(rows)>cap)
+def image_links(h,is_target,limit=20):
+    """Links whose content is an image: URL, host, alt text, file name and rel. Outbound ones first, since banners
+    are where pages place ads and affiliate links."""
+    rows,seen=[],set()
+    for u,alt,f in h.images:
+        if (u,alt,f) in seen:continue
+        seen.add((u,alt,f));host=(urlsplit(u).hostname or '').lower()
+        rows.append(dict(url=u[:200],host=host,internal=bool(is_target(host)),alt=alt[:80],file=f[:80],rel=sorted(h.rels.get(u,set())&LINK_REL)))
+    return ([r for r in rows if not r['internal']]+[r for r in rows if r['internal']])[:limit],len(rows)
 def safe_xml(text):
     if '<!DOCTYPE' in text.upper() or '<!ENTITY' in text.upper():raise Failure('xml_entity_forbidden')
     return ET.fromstring(text)
@@ -150,7 +210,7 @@ def report_markdown(run_id,report):
     if report.get('unknowns'):lines+=['','## 其他未知']+[f'- {u}' for u in report['unknowns']]
     return '\n'.join(lines)+'\n'
 class Research:
-    def __init__(self,root,target='https://2030.tw',hosts=None,limits=None,transport=None,resolve=None,clock=time.monotonic,sleep=time.sleep,mode='memory',learn=True,run_id=None,searcher=None,keywords=(),required_sections=()):
+    def __init__(self,root,target='https://2030.tw',hosts=None,limits=None,transport=None,resolve=None,clock=time.monotonic,sleep=time.sleep,mode='memory',learn=True,run_id=None,searcher=None,keywords=(),required_sections=(),memory=False):
         if mode not in ('baseline','memory','history'):raise ValueError('invalid mode')
         if any(s not in SECTIONS for s in required_sections):raise ValueError('invalid required section')
         self.root=Path(root);self.root.mkdir(parents=True,exist_ok=True);self.db=sqlite3.connect(self.root/'research.sqlite',check_same_thread=False);self.db.row_factory=sqlite3.Row
@@ -160,10 +220,12 @@ class Research:
         CREATE TABLE IF NOT EXISTS evidence(id TEXT PRIMARY KEY,run TEXT,url TEXT,status INT,hash TEXT,path TEXT,meta TEXT);
         ''')
         self.ledger=Ledger(self.db);self.keywords=tuple(keywords);self.actor='model';self.channel='direct';self.presented=None
+        # memory: v0.9 research memory (findings, unread candidates, open unknowns) in memory mode; controller_pages caches the controller's own re-fetches of this run
+        self.memory=bool(memory);self.memory_presented=None;self.controller_pages={}
         self.searcher=searcher;self.searches=0;self.search_urls=set();self.offpage_used=0;self.required_sections=tuple(required_sections)
         self.proxy_dns=transport is None and bool(os.environ.get('HTTPS_PROXY') or os.environ.get('https_proxy'))
         self.target=target.rstrip('/');self.host=urlsplit(target).hostname;self.hosts=set(hosts or [self.host]);self.limits=limits or Limits();self.transport=transport or HTTP();self.resolve=resolve or self.dns
-        self.clock=clock;self.sleep=sleep;self.start=clock();self.mode=mode;self.learn=learn;self.id=run_id or uuid.uuid4().hex;self.requests=0;self.calls=0;self.last={};self.rules={};self.closed=False
+        self.clock=clock;self.sleep=sleep;self.start=clock();self.mode=mode;self.learn=learn;self.id=run_id or uuid.uuid4().hex;self.requests=0;self.controller_requests=0;self.calls=0;self.last={};self.rules={};self.closed=False
         self.db.execute('INSERT INTO runs VALUES(?,?,?,?,?)',(self.id,self.host,mode,'open',now()));self.db.commit();self.event('start',dict(mode=mode,target=target,keywords=list(self.keywords),limits=vars(self.limits),learning=learn,required_sections=list(self.required_sections)))
     @staticmethod
     def dns(h):return {x[4][0] for x in socket.getaddrinfo(h,443,type=socket.SOCK_STREAM)}
@@ -196,10 +258,15 @@ class Research:
         return ascii_url(u)
     def raw(self,url,hosts=None):
         self.gate();url=self.url(url,hosts)
-        if self.requests>=self.limits.requests:raise Failure('request_budget')
+        mine=self.actor=='controller'
+        if mine and self.controller_requests>=self.limits.controller_requests:raise Failure('controller_request_budget')
+        if not mine and self.requests>=self.limits.requests:raise Failure('request_budget')
         host=urlsplit(url).hostname;delay=self.limits.interval-(self.clock()-self.last.get(host,-1e10))
         if delay>0:self.sleep(delay)
-        self.gate();self.requests+=1;self.last[host]=self.clock();self.event('request',dict(url=url,number=self.requests,actor=self.actor,channel=self.channel))
+        self.gate()
+        if mine:self.controller_requests+=1
+        else:self.requests+=1
+        self.last[host]=self.clock();self.event('request',dict(url=url,number=self.controller_requests if mine else self.requests,actor=self.actor,channel=self.channel))
         status,headers,body=self.transport(url,min(self.limits.timeout,max(.01,self.limits.seconds-(self.clock()-self.start))),self.limits.bytes)
         headers={k.lower():v for k,v in headers.items()}
         if len(body)>self.limits.bytes:raise Failure('response_too_large')
@@ -217,12 +284,13 @@ class Research:
         return self.rules[origin]
     def outbound(self,h):
         """External hosts a target page links to: outbound links, never evidence of backlinks."""
-        out={}
+        out={};texts=dict(h.anchor_pairs());alts={}
+        for u,alt,f in h.images:alts.setdefault(u,alt or f)
         for u in h.links:
             p=urlsplit(u);host=(p.hostname or '').lower()
             if p.scheme not in ('http','https') or not host or self.is_target(host):continue
-            o=out.setdefault(host,dict(host=host,links=0,rel=set(),sample=u[:120]))
-            o['links']+=1;o['rel']|=h.rels.get(u,set())&LINK_REL
+            o=out.setdefault(host,dict(host=host,links=0,image_links=0,rel=set(),sample=u[:120],sample_anchor=(texts.get(u) or ('[圖片] '+alts[u] if alts.get(u) else ''))[:80]))
+            o['links']+=1;o['image_links']+=u in alts;o['rel']|=h.rels.get(u,set())&LINK_REL
         rows=sorted(out.values(),key=lambda o:(-o['links'],o['host']))
         return [dict(o,rel=sorted(o['rel'])) for o in rows[:10]],len(rows)
     def fetch(self,url,purpose,hosts=None):
@@ -248,6 +316,7 @@ class Research:
                 h=HTML(url);h.feed(text);result=dict(**base,kind='html',title=' '.join(h.title),h1=' '.join(h.h1),canonical=h.canonical,description=h.description,robots=h.robots,links=list(dict.fromkeys(h.links))[:1000],text='\n'.join(h.text)[:30000])
                 if self.keywords:result['keyword_links']=self.keyword_links(h.anchor_pairs())
                 result['outbound_hosts'],result['outbound_hosts_total']=self.outbound(h)
+                result['structured_data']=structured_data(h.jsonld);result['image_links'],result['image_links_total']=image_links(h,self.is_target)
             elif 'xml' in ct or text.lstrip().startswith('<?xml'):
                 tree=safe_xml(text);links=list(dict.fromkeys(n.text.strip() for n in tree.iter() if n.tag.split('}')[-1]=='loc' and n.text))[:1000];result=dict(**base,kind='sitemap',links=links,text=text[:30000])
             else:result=dict(**base,kind='text',links=[],text=text[:30000])
@@ -341,7 +410,9 @@ class Research:
             h=HTML(r['url']);h.feed(text)
             # Search visible text plus metadata, not a truncated HTML header.
             text='\n'.join(h.text)
-            extra=dict(title=' '.join(h.title),h1=' '.join(h.h1),description=h.description,canonical=h.canonical,robots=h.robots)
+            extra=dict(title=' '.join(h.title),h1=' '.join(h.h1),description=h.description,canonical=h.canonical,robots=h.robots,structured_data=structured_data(h.jsonld))
+            extra['outbound_hosts'],extra['outbound_hosts_total']=self.outbound(h)
+            extra['image_links'],extra['image_links_total']=image_links(h,self.is_target)
             if query:
                 extra['matching_links']=[u for u in dict.fromkeys(h.links) if query.casefold() in u.casefold()][:12]
                 extra['matching_anchor_links']=[dict(url=u,anchor=t[:80]) for u,t in h.anchor_pairs() if query.casefold() in t.casefold()][:12]
@@ -367,20 +438,57 @@ class Research:
             self.presented=self.ledger.applicable(self.host,self.verify_discovery,persist=self.learn) if self.mode=='memory' else []
             self.event('lessons_presented',dict(time=now(),lessons=[dict(id=x['id'],key=x['key'],applies=x['applies'],expires=x['expires'],verification=x.get('verification')) for x in self.presented]))
         return self.presented
-    def verify_discovery(self,lesson):
-        url,k=lesson['data']['target_url'],lesson['data']['keyword'];self.actor='controller'
-        try:x=self.fetch(url,'controller re-verification of a stored discovery lesson')
-        except (Failure,ValueError,OSError,ET.ParseError) as e:
-            code=str(e).split(':')[0] if isinstance(e,Failure) else type(e).__name__;return ('fail' if code in ('robots_disallow','host_not_allowed') else 'inconclusive',code,None)
+    def check_page(self,url,purpose='controller re-verification of stored research memory'):
+        """The controller's own fetch of a stored page, once per run per URL, on the controller budget."""
+        key=norm_url(url)
+        if key in self.controller_pages:return self.controller_pages[key]
+        self.actor='controller'
+        try:
+            x=self.fetch(url,purpose)
+            if x.get('status') in (404,410):out=dict(state='gone',reason='HTTP '+str(x['status']),evidence_id=x['evidence_id'])
+            elif x.get('status')!=200 or x.get('kind')!='html':out=dict(state='error',reason='HTTP '+str(x.get('status')),evidence_id=x['evidence_id'])
+            else:out=dict(state='ok',evidence_id=x['evidence_id'],url=x['url'],title=x.get('title',''),h1=x.get('h1',''),lines=page_lines(x.get('text','')))
+        except Failure as e:
+            code=str(e).split(':')[0];out=dict(state='blocked' if code in ('robots_disallow','host_not_allowed') else 'budget' if code=='controller_request_budget' else 'error',reason=code)
+        except (ValueError,OSError,ET.ParseError) as e:out=dict(state='error',reason=type(e).__name__)
         finally:self.actor='model'
-        if x.get('status') in (404,410):return 'fail','HTTP '+str(x['status']),x['evidence_id']
-        if x.get('status')!=200:return 'inconclusive','HTTP '+str(x.get('status')),x['evidence_id']
-        if x.get('kind')=='html' and keyword_page(x['url'],x.get('title'),x.get('h1'),k):return 'ok','HTTP 200 and title/H1 match; read it with research_evidence before citing',x['evidence_id']
-        return 'fail','HTTP 200 but title/H1 no longer match the keyword',x['evidence_id']
+        self.controller_pages[key]=out
+        return out
+    def old_page(self,eid):
+        """(title, visible lines) of a stored HTML snapshot, as fetch() extracts them; None when missing or altered."""
+        r=self.db.execute('SELECT * FROM evidence WHERE id=?',(eid,)).fetchone()
+        if not r or not (self.root/r['path']).exists():return None
+        body=(self.root/r['path']).read_bytes()
+        if hashlib.sha256(body).hexdigest()!=r['hash']:return None
+        h=HTML(r['url']);h.feed(body.decode('utf-8','replace'))
+        return ' '.join(h.title),page_lines('\n'.join(h.text)[:30000])
+    def verify_discovery(self,lesson):
+        url,k=lesson['data']['target_url'],lesson['data']['keyword']
+        c=self.check_page(url,'controller re-verification of a stored discovery lesson')
+        if c['state'] in ('blocked','gone'):return 'fail',c['reason'],c.get('evidence_id')
+        if c['state']!='ok':return 'inconclusive',c['reason'],c.get('evidence_id')
+        if keyword_page(c['url'],c.get('title'),c.get('h1'),k):return 'ok','HTTP 200 and title/H1 match; read it with research_evidence before citing',c['evidence_id']
+        return 'fail','HTTP 200 but title/H1 no longer match the keyword',c['evidence_id']
+    def memory_view(self):
+        # Computed once per run, after the lessons: the controller re-fetches the pages of stored findings first.
+        if self.memory_presented is None:
+            if not (self.memory and self.mode=='memory'):self.memory_presented={}
+            else:
+                from src.research_memory import ResearchMemory
+                m=ResearchMemory(self.db).present(self.host,self.keywords,self.check_page,self.old_page,persist=self.learn)
+                # Nothing kept yet (a first run): no research_memory block, so the prompt carries no empty lists.
+                self.memory_presented=m if any(m[k] for k in ('findings','findings_to_recheck','unread_candidates','open_unknowns','revoked')) else {}
+                self.event('memory_presented',dict(time=now(),findings=[dict(id=f['id'],evidence_ids=f['evidence_ids']) for f in m['findings']],
+                                                   recheck=[f['id'] for f in m['findings_to_recheck']],revoked=m['revoked'],
+                                                   candidates=[c['url'] for c in m['unread_candidates']],
+                                                   unknowns=[u['id'] for u in m['open_unknowns']],checked_pages=m['checked_pages'],
+                                                   controller_requests=self.controller_requests))
+        return self.memory_presented
     def status(self):
-        lessons=self.lessons()
+        lessons=self.lessons();memory=self.memory_view()
         history=[dict(r) for r in self.db.execute('SELECT kind,data FROM events WHERE run!=? ORDER BY id DESC LIMIT 10',(self.id,))] if self.mode=='history' else []
         out=dict(run_id=self.id,requests_used=self.requests,requests_left=self.limits.requests-self.requests,tool_calls_used=self.calls,searches_used=self.searches,searches_left=5-self.searches,offpage_left=self.limits.offpage-self.offpage_used,remaining_seconds=max(0,self.limits.seconds-(self.clock()-self.start)),lessons=lessons,raw_history=history)
+        if memory:out['research_memory']=memory
         if self.mode=='memory':out['lesson_rules']=('Lessons are procedures learned from controller measurements or human review, with scope and expiry: act on each statement. '
                                                      'A verification with result ok was fetched by the controller in this run; its evidence_id is current-run evidence you can read with research_evidence and cite. '
                                                      'When new evidence disagrees with a lesson, follow the evidence.')
@@ -403,6 +511,7 @@ class Research:
         for a in report['actions']:
             if not isinstance(a,dict) or not a.get('action') or not a.get('reason'):raise Failure('action_schema')
         if not isinstance(report.get('unknowns',[]),list) or not all(isinstance(u,str) for u in report.get('unknowns',[])):raise Failure('report_schema')
+        if not isinstance(report.get('resolved_unknowns',[]),list) or not all(isinstance(u,str) for u in report.get('resolved_unknowns',[])):raise Failure('report_schema')
         markdown=report_markdown(self.id,report)  # rendered before the run closes, so a render error cannot follow acceptance
         self.db.execute('UPDATE runs SET status="finished" WHERE id=?',(self.id,));self.db.commit();self.event('report',report);self.closed=True
         (self.root/(self.id+'-report.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -424,14 +533,16 @@ class Research:
         except (Failure,ValueError,KeyError,TypeError,AttributeError,OSError,ET.ParseError,sqlite3.Error) as e:
             # call_logged=False marks calls stopped by a gate before their tool_call event (budget, time, closed run).
             result=dict(error=str(e),error_type=type(e).__name__);self.event('tool_error',dict(name=name,call_logged=logged,**result));return result
-    def learn_completed(self):return learn_run(self.db,self.root,self.id)
+    def learn_completed(self):return learn_run(self.db,self.root,self.id,memory=self.memory)
     def export(self,path):Path(path).write_text(json.dumps([dict(r) for r in self.db.execute('SELECT * FROM events WHERE run=? ORDER BY id',(self.id,))],ensure_ascii=False,indent=2),encoding='utf-8')
 
-def learn_run(db,root,run_id):
+def learn_run(db,root,run_id,memory=False):
     """Learn from one run after the runner judged it research_complete.
 
     Learning happens once, only for memory-mode runs started with learning on, and reads controller
-    events and stored evidence only; report claims never become lessons.
+    events and stored evidence only; report claims never become lessons. With memory (v0.9) the research memory also
+    records the run's on-site pages, links, re-checkable findings of the accepted report and its unknowns
+    (src/research_memory.py); findings are re-verified by the controller before any later run sees them.
     """
     db.row_factory=sqlite3.Row
     run=db.execute('SELECT * FROM runs WHERE id=?',(run_id,)).fetchone()
@@ -444,5 +555,8 @@ def learn_run(db,root,run_id):
         r=db.execute('SELECT * FROM evidence WHERE id=?',(eid,)).fetchone()
         return snapshot_info(root,r) if r else None
     changes=Ledger(db).learn_from_run(run_id,run['host'],cfg.get('keywords',[]),page_info)
+    if memory:
+        from src.research_memory import ResearchMemory
+        changes=changes+ResearchMemory(db).learn_from_run(run_id,run['host'],cfg.get('keywords',[]),page_info)
     db.execute('INSERT INTO events(run,kind,data) VALUES(?,?,?)',(run_id,'learning',json.dumps(dict(changes=changes),ensure_ascii=False)));db.commit()
     return changes

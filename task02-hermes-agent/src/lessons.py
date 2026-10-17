@@ -1,7 +1,8 @@
 """Lessons ledger. Only controller measurements and human review create or change lessons.
 
 The model has no write path here: lessons are built from controller events, HTTP status, titles and
-human input, never from report claims or page instructions. Lesson keys come from fixed lists, so
+human input, never from report claims or page instructions. (The v0.9 research memory, src/research_memory.py,
+keeps re-checkable report findings in the same table under kind "finding"; applicable() never shows them.) Lesson keys come from fixed lists, so
 page or model text cannot name a lesson. Every lesson keeps its source runs, evidence ids and a
 status history so a wrong lesson can be traced, revoked or vetoed.
 """
@@ -79,8 +80,11 @@ def norm_url(url):
     return unquote(url).rstrip('/').casefold()
 
 
+SITE_OPERATOR = re.compile(r'(?<![-\w])site:', re.I)  # site:host, not the -site:host exclusion
+
+
 def search_feature(query):
-    return 'site_operator' if 'site:' in query.casefold() else 'plain'
+    return 'site_operator' if SITE_OPERATOR.search(query) else 'plain'
 
 
 class Ledger:
@@ -262,6 +266,8 @@ class Ledger:
         out, verified = [], 0
         rows = self.db.execute('SELECT * FROM lessons WHERE status="active" ORDER BY kind,key').fetchall()
         for lesson in map(self._row, rows):
+            if lesson['kind'] == 'finding':
+                continue  # research memory findings are re-verified and shown by src/research_memory.py
             if lesson['expires'] and lesson['expires'] <= self.ts():
                 if persist:
                     self._retire(lesson, 'expired', 'controller', None, 'TTL reached without new support')

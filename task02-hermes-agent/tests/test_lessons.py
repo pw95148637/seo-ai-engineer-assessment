@@ -135,7 +135,8 @@ class LessonTests(LessonFixture):
         self.assertIn(MAIN, self.t.calls[before:])
         self.assertEqual(r.call('research_evidence', {'evidence_id': path['verification']['evidence_id']})['url'], MAIN)
         r.status()
-        self.assertEqual(r.requests, 3, 'robots plus two re-verifications, once per run')
+        self.assertEqual((r.requests, r.controller_requests), (0, 3),
+                         'robots plus two re-verifications, once per run, on the controller budget')
         events = [json.loads(x[0]) for x in r.db.execute('SELECT data FROM events WHERE run=? AND kind="request"', (r.id,))]
         self.assertTrue(all(e['actor'] == 'controller' for e in events))
 

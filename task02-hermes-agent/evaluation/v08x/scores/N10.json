@@ -1,0 +1,92 @@
+{
+  "run_id": "387030bf70b64265888f5318b457fd22",
+  "host": "2030.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": {
+      "call": 7,
+      "evidence_id": "eedce88d9f4246028232c755021cec15",
+      "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    },
+    "3A娛樂城": {
+      "call": 6,
+      "evidence_id": "4536e4dd38144e3ead26ed7ce7e8207c",
+      "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    }
+  },
+  "both_target_pages_read": true,
+  "tool_calls": 13,
+  "calls_before_first_hit": 5,
+  "calls_until_both_hit": 7,
+  "searches": 2,
+  "failed_searches": 1,
+  "failed_search_kinds": {
+    "no_results": 1,
+    "error": 0
+  },
+  "failed_search_queries": [
+    "\"2030玩運彩\" -site:2030.tw"
+  ],
+  "http_requests": 11,
+  "http_requests_controller": 0,
+  "sitemap_reads": 0,
+  "refetched_verified_pages": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 0
+  },
+  "lessons_presented": 0,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 266787,
+    "prompt": 260553,
+    "completion": 6234,
+    "api_calls": 8,
+    "cache_read": 185344,
+    "cache_write": 0,
+    "uncached_prompt": 75209,
+    "cost": 81443
+  },
+  "hermes_tools": {
+    "research_status": 1,
+    "skill_view": 1,
+    "research_fetch": 8,
+    "research_search": 2,
+    "research_offpage": 1,
+    "research_finish": 1
+  },
+  "claims": 14,
+  "actions": 5,
+  "sections": {
+    "on_page": 10,
+    "off_page": 3,
+    "other": 1
+  },
+  "offpage": {
+    "claims": 3,
+    "observation": 1,
+    "inference": 0,
+    "unknown": 2,
+    "three_columns": false,
+    "known": 1,
+    "known_external": 1,
+    "known_link_verified": 0,
+    "pages_fetched": 1,
+    "pages_linking_to_target": 0
+  },
+  "offpage_policy_violations": [],
+  "state": "research_complete",
+  "transcript_calls": 6,
+  "review_cost": 6677,
+  "learned": true
+}

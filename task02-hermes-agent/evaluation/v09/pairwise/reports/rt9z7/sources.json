@@ -1,0 +1,62 @@
+{
+  "476f82db344e4dc4a16ef2849a61818e": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/476f82db344e4dc4a16ef2849a61818e.txt"
+  },
+  "69779a3f709243bd896bb0fde53eb0f6": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/69779a3f709243bd896bb0fde53eb0f6.txt"
+  },
+  "bb592b13324747d898733ac55a05005a": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/bb592b13324747d898733ac55a05005a.txt"
+  },
+  "44d5ba6a80e84ee092b0bd79550a900a": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/44d5ba6a80e84ee092b0bd79550a900a.txt"
+  },
+  "ca77f6ca3be4444ba2a9da41b5b2d380": {
+    "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/ca77f6ca3be4444ba2a9da41b5b2d380.txt"
+  },
+  "65554fa435524c09b2d120d07371b735": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/65554fa435524c09b2d120d07371b735.txt"
+  },
+  "8c9aaf9140f64990ac4fb27b71b1ab7b": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E6%8F%90%E6%AC%BE%E6%95%99%E5%AD%B8",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/8c9aaf9140f64990ac4fb27b71b1ab7b.txt"
+  },
+  "afd489f37f8049909a309b3d489228d5": {
+    "url": "https://2030.tw/wordcup/?cat=%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%AE%89%E5%85%A8%E8%88%87%E5%87%BA%E9%87%91",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/afd489f37f8049909a309b3d489228d5.txt"
+  },
+  "f7754c934b64487789d49522e023e707": {
+    "url": "search:ddgs",
+    "status": 200,
+    "method": "search_index",
+    "snapshot": "snapshots/f7754c934b64487789d49522e023e707.txt"
+  },
+  "481fc476424048a38979b52fa335fa1a": {
+    "url": "https://finance.yahoo.com/quote/2030.TW/?fr=sycsrp_catchall",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/481fc476424048a38979b52fa335fa1a.txt"
+  }
+}

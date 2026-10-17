@@ -1,0 +1,32 @@
+{
+  "2a2c74500d104db49277b1b05193e163": {
+    "url": "https://2030.tw/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/2a2c74500d104db49277b1b05193e163.txt"
+  },
+  "d94e4d0bd85b43158a814bb0b6974dbd": {
+    "url": "https://2030.tw/wordcup/",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/d94e4d0bd85b43158a814bb0b6974dbd.txt"
+  },
+  "b3543e98c3d5425b813ba2b4832c5b00": {
+    "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/b3543e98c3d5425b813ba2b4832c5b00.txt"
+  },
+  "d148a4f4306f462987c058c8d36e0c0b": {
+    "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "status": 200,
+    "method": "direct_http",
+    "snapshot": "snapshots/d148a4f4306f462987c058c8d36e0c0b.txt"
+  },
+  "0cbf6949495b4aa7a7e74e8965558c53": {
+    "url": "https://tw.stock.yahoo.com/quote/2030.TW",
+    "status": 200,
+    "method": "offpage_http",
+    "snapshot": "snapshots/0cbf6949495b4aa7a7e74e8965558c53.txt"
+  }
+}

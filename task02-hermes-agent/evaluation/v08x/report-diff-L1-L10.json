@@ -1,0 +1,382 @@
+{
+  "a": {
+    "step": "L1",
+    "run_id": "4eab193d244d46e7ad35dc4e17a52689",
+    "claims": [
+      {
+        "item": "claim:1",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "positioning",
+        "text": "首頁title與H1主打2030玩運彩、MLB/NBA與世界盃，導覽以「線上娛樂城推薦」連至/wordcup/；不是以娛樂城或3A娛樂城作首頁主標。",
+        "urls": [
+          "https://2030.tw/"
+        ]
+      },
+      {
+        "item": "claim:2",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "architecture",
+        "text": "/wordcup/為娛樂城推薦集合頁，具有品牌、評價、優惠、玩法、安全出金等分類，並連至娛樂城與3a娛樂城獨立頁。頁面自稱2502篇評測，未逐篇驗證，不能等同索引量或品質。",
+        "urls": [
+          "https://2030.tw/wordcup/"
+        ]
+      },
+      {
+        "item": "claim:3",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "technical",
+        "text": "兩個核心頁均回傳200，具有各自title、自我canonical、允許index follow的meta robots、編輯部署名與更新日期；可見FAQ不等於已驗證FAQ結構化資料或搜尋富結果。",
+        "urls": [
+          "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E"
+        ]
+      },
+      {
+        "item": "claim:4",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "content_quality",
+        "text": "兩頁同有特色、遊戲、出金安全、註冊、優惠、客服六大段落及手機版、入金、出金、安全、客服五類FAQ；文字並非完全相同。3A頁宣稱出金半小時到一小時、最低入金1000元，但所讀內容未見可核對的測試紀錄、條款來源或獨立佐證；這些數字不是本研究驗證的產品事實。",
+        "urls": [
+          "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E"
+        ]
+      },
+      {
+        "item": "claim:5",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "outbound_conversion",
+        "text": "兩頁皆有四個指向don0911.3a1788.bet/?st=wg2030的出站連結，擷取rel為nofollow；集合頁註冊出站含st=wg2030idx。這些是出站導流證據，不是2030.tw入站連結。",
+        "urls": [
+          "https://2030.tw/wordcup/",
+          "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E"
+        ]
+      },
+      {
+        "item": "claim:6",
+        "section": "on_page",
+        "kind": "inference",
+        "topic": "strategy",
+        "text": "公開頁面較支持以運彩資訊站導覽串接娛樂城集合頁，再用泛詞及品牌長尾頁覆蓋需求並集中導流至3A的策略推論；參數樣式可能用於歸因，但無法確認聯盟合約、收益或成效。",
+        "urls": [
+          "https://2030.tw/",
+          "https://2030.tw/wordcup/",
+          "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E"
+        ]
+      },
+      {
+        "item": "claim:7",
+        "section": "off_page",
+        "kind": "observation",
+        "topic": "candidate_verification",
+        "text": "off-page已知：直接讀取搜尋候選Yahoo彰源(2030.TW)股票頁，links_to_target為空，2030玩運彩品牌提及為零；2030.TW出現於股票名稱上下文，沒有可記錄的目標站入站錨文字。",
+        "urls": [
+          "https://tw.stock.yahoo.com/quote/2030.TW"
+        ]
+      },
+      {
+        "item": "claim:8",
+        "section": "off_page",
+        "kind": "inference",
+        "topic": "search_disambiguation",
+        "text": "off-page推論：網域字串搜尋會受股票代碼同名污染，此Yahoo候選不能作為2030.tw網站的品牌背書或backlink證據；此排除只適用該頁，不外推全網。",
+        "urls": [
+          "https://tw.stock.yahoo.com/quote/2030.TW"
+        ]
+      },
+      {
+        "item": "claim:9",
+        "section": "off_page",
+        "kind": "unknown",
+        "topic": "backlink_profile",
+        "text": "off-page未知：本輪未取得有效的目標站站外背書或入站連結證據；完整backlinks、referring domains、入站錨文字分布、付費置入、歷史網域權重及站外策略成效均未知。未取得不代表不存在。",
+        "urls": []
+      },
+      {
+        "item": "claim:10",
+        "section": "other",
+        "kind": "unknown",
+        "topic": "measurement_limits",
+        "text": "競爭者兩詞實際排名、曝光、自然流量、轉換、Google選定canonical、全站索引、CWV及內容產製方式未知；未使用私有Search Console或分析資料，也未審核我方網站。",
+        "urls": []
+      }
+    ],
+    "actions": [
+      {
+        "item": "action:1",
+        "action": "P0：僅針對我方網站，先取得合法授權的Search Console／分析基準與公開SERP樣本，建立娛樂城、3A娛樂城及安全／出金長尾的查詢—落地頁對照；確認法規、年齡限制與品牌定位後再決定是否競逐。成本低至中。",
+        "reason": "競爭者有落地頁不代表有排名；我方網站與基準未提供，不能先斷言需要擴頁或改版。用我方曝光、CTR、有效索引及合規轉換衡量，不推估對手流量。"
+      },
+      {
+        "item": "action:2",
+        "action": "P1：若符合我方定位，建立或改善一個娛樂城中立選擇指南及一個3A獨立評估頁；公開查核日期、資料來源、營運主體／牌照查核、條款限制、爭議與未知、編輯及商業關係。無合法可驗證實測就明示未實測。成本中至高。",
+        "reason": "核心競爭機會是可核查的證據與搜尋意圖差異，不是跟進對方自稱2502篇；不複製沒有來源的出金速度、安全保證或玩家經驗。"
+      },
+      {
+        "item": "action:3",
+        "action": "P1：我方集合頁承接比較意圖，品牌頁承接品牌查核，安全與條款頁承接問題意圖；使用相關性內鏈及明確錨文字，檢查title、H1、canonical、索引與參數頁，FAQ以可見內容為準。成本中。",
+        "reason": "對手已有可走訪的集合頁與品牌頁結構，值得借鑑可發現性，但其共用架構與泛詞頁導往單一品牌不應直接照抄；是否互搶須由我方查詢—頁面資料驗證。"
+      },
+      {
+        "item": "action:4",
+        "action": "P2：我方先發布可被引用的條款比較、風險辨識清單或有方法與日期的公開研究，再向相關且合規的媒體／組織爭取編輯引用；逐頁驗證目標URL、錨文字、上下文與rel，拒絕買連結及大量論壇洗版。成本中至高。",
+        "reason": "本輪沒有證據可供複製競爭者外鏈來源；以相關性、可信度和有效引用評估品質，不以網址數量或保證排名為指標。"
+      },
+      {
+        "item": "action:5",
+        "action": "P2：建立我方實驗與競爭監測紀錄，追蹤核心頁內容及導流變化；我方上線後先驗收抓取／索引，再以4至8週為初步觀察窗比較查詢與頁面表現，必要時延長；不預設提升幅度。成本低至中。",
+        "reason": "把研究假設轉成可驗證實驗，分開記錄證據品質、實作成本與SEO結果；不把競爭者頁面聲稱的更新日期視為已證實的更新頻率。"
+      }
+    ],
+    "unknowns": [
+      "五次公開索引搜尋已用完；部分無結果，一組僅回空白項；不能據此證明目標詞沒有索引或排名。",
+      "站外直接驗證僅一個同名股票候選，不構成完整backlink調查；未有有效目標入站錨文字可報。",
+      "讀取四個目標頁，不代表全站內容品質；連結清單有截斷，未做全站爬取或歷史沿革驗證。",
+      "未測試頁速、行動呈現、結構化資料、Google索引狀態或參數頁canonical；meta index follow只是頁面宣告。",
+      "我方網域、商業模式、合法服務範圍、授權數據與工程資源未提供；所有競爭行動均供我方評估，並非對2030.tw的修改建議。"
+    ],
+    "cited_urls": [
+      "https://2030.tw/",
+      "https://2030.tw/wordcup/",
+      "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "https://tw.stock.yahoo.com/quote/2030.TW"
+    ]
+  },
+  "b": {
+    "step": "L10",
+    "run_id": "14ba9fdcf4f94bcdb3c0c6a6c159bee8",
+    "claims": [
+      {
+        "item": "claim:1",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "metadata",
+        "text": "兩個目標頁均回傳HTTP 200，title、H1與description含各自主詞，canonical指向自身，robots為index, follow；這只表示抓取時的頁面設定，不證明已收錄或排名。",
+        "urls": [
+          "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E"
+        ]
+      },
+      {
+        "item": "claim:2",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "internal_architecture",
+        "text": "首頁主要呈現MLB與世界盃等體育內容，以「線上娛樂城推薦」連至/wordcup/；後者的卡片分別連到3a娛樂城與娛樂城目標頁，構成首頁至樞紐至落地頁的可見路徑。",
+        "urls": [
+          "https://2030.tw/",
+          "https://2030.tw/wordcup/"
+        ]
+      },
+      {
+        "item": "claim:3",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "content_coverage",
+        "text": "樞紐自稱共2502篇評測，展示品牌、評價、優惠、玩法、安全與出金等分類及分頁；2502只是站方顯示的數字，未逐頁核實，也不是索引量或品質指標。",
+        "urls": [
+          "https://2030.tw/wordcup/"
+        ]
+      },
+      {
+        "item": "claim:4",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "content_template",
+        "text": "娛樂城泛詞頁與3a品牌頁共用平台特色、遊戲、出金安全、註冊、優惠、客服及五種FAQ題型；泛詞頁是一般指南，並非逐品牌比較表。",
+        "urls": [
+          "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E"
+        ]
+      },
+      {
+        "item": "claim:5",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "conversion_links",
+        "text": "兩個目標頁「立即註冊領取優惠」的連結皆為https://don0911.3a1788.bet/?st=wg2030；樞紐另有同host帶st=wg2030idx的出站連結。這些是出站導流，不是入站backlinks。",
+        "urls": [
+          "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "https://2030.tw/wordcup/"
+        ]
+      },
+      {
+        "item": "claim:6",
+        "section": "on_page",
+        "kind": "inference",
+        "topic": "strategy",
+        "text": "結構、相似模板與共同CTA目的地支持以廣泛關鍵字入口導向共同註冊漏斗的策略推論，但不能據此證明佣金合約、實際轉換或SEO成效。",
+        "urls": [
+          "https://2030.tw/wordcup/",
+          "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E"
+        ]
+      },
+      {
+        "item": "claim:7",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "substantiation",
+        "text": "3a頁署名為2030編輯部並標示2026年09月24日更新，以第一人稱主張體驗數月、出金半小時至一小時、最低入金1000元；本次讀取正文未見可重現的測試方法、交易憑據或引用資料支持這些數字。編輯部署名不是具名作者或專業背書。",
+        "urls": [
+          "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E"
+        ]
+      },
+      {
+        "item": "claim:8",
+        "section": "on_page",
+        "kind": "observation",
+        "topic": "counterevidence",
+        "text": "反證：3a頁提供手機版、KYC與客服FAQ；泛詞頁明確提醒洗碼量、活動條款與提領限制，故不能稱兩頁完全無實用資訊或風險提示。這不代表其出金或安全性說法經獨立驗證。",
+        "urls": [
+          "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E"
+        ]
+      },
+      {
+        "item": "claim:9",
+        "section": "off_page",
+        "kind": "observation",
+        "topic": "checked_external_pages",
+        "text": "直接讀取CasinoBase /reviews/與icasino.tw /comparison/，均未偵測到連回2030.tw的連結、目標網域提及或2030字串；這只是兩個頁面的陰性結果，不適用於整個網路。",
+        "urls": [
+          "https://casinobase.tw/reviews/",
+          "https://icasino.tw/comparison/"
+        ]
+      },
+      {
+        "item": "claim:10",
+        "section": "off_page",
+        "kind": "observation",
+        "topic": "brand_mention",
+        "text": "nJAV法文搜尋頁的標題與搜尋介面出現2030玩運彩瘋世足，擷取到兩處品牌上下文，但沒有目標網域提及或連回2030.tw的連結；無可記錄的目標連結錨文字或rel。",
+        "urls": [
+          "https://njavtv.com/fr/search/2030%E7%8E%A9%E9%81%8B%E5%BD%A9%E7%98%8B%E4%B8%96%E8%B6%B3"
+        ]
+      },
+      {
+        "item": "claim:11",
+        "section": "off_page",
+        "kind": "inference",
+        "topic": "mention_quality",
+        "text": "已讀nJAV頁的品牌出現方式較符合搜尋詞回顯，不足視為獨立編輯推薦、有效入站連結或站方主動操作的證據。",
+        "urls": [
+          "https://njavtv.com/fr/search/2030%E7%8E%A9%E9%81%8B%E5%BD%A9%E7%98%8B%E4%B8%96%E8%B6%B3"
+        ]
+      },
+      {
+        "item": "claim:12",
+        "section": "off_page",
+        "kind": "unknown",
+        "topic": "backlink_coverage",
+        "text": "未知完整backlink數、referring domains、錨文字分布、歷史外鏈變化、付費連結或PBN關係；本輪沒有確認到正向入站連結，不能推導全站沒有backlinks或外鏈弱。",
+        "urls": []
+      },
+      {
+        "item": "claim:13",
+        "section": "other",
+        "kind": "unknown",
+        "topic": "performance",
+        "text": "未知兩個主詞的Google實際排名、搜尋量、流量與轉換。未取得競爭者私有Search Console或分析資料，也未完成固定地區與裝置的SERP抽樣。",
+        "urls": []
+      }
+    ],
+    "actions": [
+      {
+        "item": "action:1",
+        "action": "P0｜我方先建立固定台灣地區、裝置與日期的公開SERP基線，分開記錄娛樂城、3A娛樂城及出金、安全、優惠等意圖；如有授權，只用我方Search Console與分析資料追蹤我方表現。",
+        "reason": "本輪證據揭露內容與導流設計，未證實排名或需求量；低成本基線可避免把競爭者文章量誤當成效。"
+      },
+      {
+        "item": "action:2",
+        "action": "P1｜我方優先製作一個有明確比較方法的娛樂城指南與一個獨立3A品牌查核頁；不自稱官方，不沿用對方文案。列出來源日期、條款、營運實體與可查核性、風險與未知；未能驗證的出金數字明確標示。",
+        "reason": "對方泛詞頁不是逐品牌比較，品牌頁數字缺少可重現佐證；差異化機會在可驗證決策資訊，而不是更多相似模板頁。"
+      },
+      {
+        "item": "action:3",
+        "action": "P1｜我方補足具名責任編輯、評測方法、商業關係揭露、修改紀錄及更正管道，區分文件查核與真實測試；僅在合法合規且可保護個資時採用實測，不為SEO安排下注。",
+        "reason": "對方只有團隊署名與第一人稱經驗，不能充當獨立專業背書；透明方法較能形成可稽核的品質差異。"
+      },
+      {
+        "item": "action:4",
+        "action": "P1｜我方以主題樞紐連至指南、品牌查核、條款與風險頁，提供語意清楚的內鏈；自檢200、canonical、robots、標題與行動版可用性，避免多頁爭奪同一意圖。",
+        "reason": "競爭者已具備首頁至樞紐至目標頁路徑與基本metadata；我方需滿足基本可發現性，但不能把堆頁或精準錨文字當品質保證。"
+      },
+      {
+        "item": "action:5",
+        "action": "P2｜我方先發布可引用的條款比較資料、風險查核清單或計算工具，再小規模接觸相關且具編輯審核的媒體與消費者教育來源；只記錄實際讀取確認的品牌提及、目標URL、錨文字、上下文與rel。",
+        "reason": "本輪未確認競爭者正向入站連結，沒有可合理複製的外鏈名單；以原創資產測試取得引用，比購買精準錨文字或論壇洗版可控。"
+      },
+      {
+        "item": "action:6",
+        "action": "衡量與停損｜先用少量核心頁驗證，再決定是否擴充；每輪分開記錄工時與費用，以及引用完整性、資訊更新、我方有效曝光、點擊與合規目標完成。",
+        "reason": "競爭者自稱2502篇並非品質或投資回報證據；我方網址與現況未提供，不能承諾排名、流量增幅或直接部署。"
+      }
+    ],
+    "unknowns": [
+      "競爭者完整外鏈圖、域名歷史與過去內容演變未驗證。",
+      "FAQ可見不代表有FAQ結構化資料或可獲rich results；未做schema、Core Web Vitals、JavaScript呈現及全站爬取。",
+      "正文顯示的更新日期與HTTP last-modified不能證明實質內容何時更改。",
+      "st參數不證明佣金關係；未驗證註冊目的站的營運身分、授權、條款或安全性。",
+      "未提供我方網站、技術狀態與合規範圍；行動是優先評估清單，非已執行的網站改動。",
+      "公開搜尋有股票代碼與不相關結果噪音；搜尋摘要未當成已讀原頁證明，站外樣本不代表完整backlink索引。"
+    ],
+    "cited_urls": [
+      "https://2030.tw/",
+      "https://2030.tw/wordcup/",
+      "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "https://casinobase.tw/reviews/",
+      "https://icasino.tw/comparison/",
+      "https://njavtv.com/fr/search/2030%E7%8E%A9%E9%81%8B%E5%BD%A9%E7%98%8B%E4%B8%96%E8%B6%B3"
+    ]
+  },
+  "counts": {
+    "L1": {
+      "on_page/observation": 5,
+      "on_page/inference": 1,
+      "on_page/unknown": 0,
+      "off_page/observation": 1,
+      "off_page/inference": 1,
+      "off_page/unknown": 1,
+      "other/observation": 0,
+      "other/inference": 0,
+      "other/unknown": 1
+    },
+    "L10": {
+      "on_page/observation": 7,
+      "on_page/inference": 1,
+      "on_page/unknown": 0,
+      "off_page/observation": 2,
+      "off_page/inference": 1,
+      "off_page/unknown": 1,
+      "other/observation": 0,
+      "other/inference": 0,
+      "other/unknown": 1
+    }
+  },
+  "only_in": {
+    "L1": [
+      "https://tw.stock.yahoo.com/quote/2030.TW"
+    ],
+    "L10": [
+      "https://casinobase.tw/reviews/",
+      "https://icasino.tw/comparison/",
+      "https://njavtv.com/fr/search/2030%E7%8E%A9%E9%81%8B%E5%BD%A9%E7%98%8B%E4%B8%96%E8%B6%B3"
+    ]
+  },
+  "both": [
+    "https://2030.tw/",
+    "https://2030.tw/wordcup/",
+    "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+    "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E"
+  ]
+}

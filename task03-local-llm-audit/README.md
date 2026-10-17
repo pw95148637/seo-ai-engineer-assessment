@@ -60,7 +60,7 @@ python scripts/compare_holdout.py
 - `python scripts/regate.py kaggle-retrieved/soulo-work03-v3b-train/work03`：用現行的自動檢查重判凍結版本的訓練輸出，應為 `"status": "FAIL"`、`"hard_total_excl_contract": 4`，這是凍結決定的依據。
 - `python scripts/posthoc_analysis.py`：依 `evaluation/posthoc-plan.md` 重算凍結後的事後分析（16 位元對照與微調前後的誤差），讀 `kaggle-retrieved/soulo-work03-posthoc-fp16/` 的下載輸出，寫出 `evaluation/posthoc-results.json`。
 - `python scripts/posthoc14b_analysis.py`：依 `evaluation/posthoc14b-plan.md` 重算凍結後的 Qwen3-14B 對照（同一個凍結 prompt 換成較大的模型），讀 `kaggle-retrieved/soulo-work03-posthoc-14b/` 的下載輸出，寫出 `evaluation/posthoc14b-results.json`。
-- `python scripts/make_deliverable_figures.py`：從上一步的比對結果與下載的輸出重畫報告與簡報的圖到 `deliverable/img/`，需要 Pillow 與 Noto Sans TC 字型（`NotoSansTC-VF.ttf`）。
+- `python scripts/make_deliverable_figures.py`：從 `compare_holdout.py` 與兩個事後分析的結果、下載的輸出重畫報告與簡報的圖到 `deliverable/img/`，需要 Pillow 與 Noto Sans TC 字型（`NotoSansTC-VF.ttf`）。
 
 `report/holdout8-audit.html` 下載後用瀏覽器開啟，可排序、篩選；表格也可用 `pandas.read_csv('report/holdout8-audit.csv', encoding='utf-8-sig')` 讀成 DataFrame。
 

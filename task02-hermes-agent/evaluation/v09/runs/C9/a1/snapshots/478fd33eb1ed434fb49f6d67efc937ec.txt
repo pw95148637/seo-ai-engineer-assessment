@@ -1,0 +1,13 @@
+User-agent: AhrefsSiteAudit
+Allow: /
+Disallow: /cdn-cgi/
+
+User-agent: AhrefsBot
+Allow: /
+Disallow: /cdn-cgi/
+
+User-agent: *
+Allow: /
+Disallow: /cdn-cgi/
+
+Sitemap: https://havespring.com/sitemap.xml

@@ -1,0 +1,42 @@
+[2mtail .runtime/user/profiles/v09-demo-a1/logs/agent.log（只顯示新行；略去連線細節行）[0m
+21:34:45 turn_context conversation turn: session=20261017_213443_239f21 platform=unknown history=0 msg='自主研究 https:
+//2030.tw 針對「娛樂城」「3A娛樂城」的 SEO 策略（含 on-page 與 off-page）與值得優先採取的競爭行動。20...'
+[34m21:34:50 conversation_loop API call #1: in=4099 out=15 total=4114 latency=4.1s[0m
+21:35:08 tool_executor tool research_status completed (17.81s, 10816 chars)
+[34m21:35:19 conversation_loop API call #2: in=9354 out=496 total=9850 latency=10.9s cache=3968/9354 (42%)[0m
+21:35:19 tool_executor tool research_evidence completed (0.05s, 7488 chars)
+21:35:19 tool_executor tool research_evidence completed (0.04s, 8570 chars)
+21:35:24 provider DDGS search '"2030.tw" -site:2030.tw': 5 results (limit 5)
+21:35:24 tool_executor tool research_search completed (5.32s, 1800 chars)
+21:35:26 tool_executor tool research_fetch completed (1.46s, 14712 chars)
+[34m21:35:30 conversation_loop API call #3: in=30128 out=185 total=30313 latency=4.0s cache=9216/30128 (31%)[0m
+21:35:35 provider DDGS search '"https://2030.tw" -site:2030.tw -股票 -股市 -Froch -yahoo': 5 results (limit 5)
+21:35:35 tool_executor tool research_search completed (5.10s, 2742 chars)
+[33m21:35:42 provider DDGS search error: DDGSException: No results found.[0m
+[33m21:35:42 tool_executor Tool research_search returned error (6.64s): {"evidence_id": "caa752949fba42859ea4d517c12e5d63",[0m
+[33m"source_type": "search_index", "untrusted_content": true, "success": false, "error": "DuckDuckGo search failed: DDGSEx…[0m
+21:35:42 tool_executor tool research_evidence completed (0.04s, 7166 chars)
+21:35:42 tool_executor tool research_evidence completed (0.04s, 9001 chars)
+21:35:42 tool_executor tool research_evidence completed (0.05s, 5975 chars)
+[34m21:35:51 conversation_loop API call #4: in=45346 out=318 total=45664 latency=8.8s cache=29952/45346 (66%)[0m
+[33m21:35:57 provider DDGS search error: DDGSException: No results found.[0m
+[33m21:35:57 tool_executor Tool research_search returned error (6.41s): {"evidence_id": "5475876768b0422796de853987bcfdd2",[0m
+[33m"source_type": "search_index", "untrusted_content": true, "success": false, "error": "DuckDuckGo search failed: DDGSEx…[0m
+21:36:00 provider DDGS search '"2030.tw" "科技"': 5 results (limit 5)
+21:36:00 tool_executor tool research_search completed (3.27s, 1766 chars)
+21:36:00 tool_executor tool research_evidence completed (0.05s, 12309 chars)
+21:36:01 tool_executor tool research_evidence completed (0.05s, 11949 chars)
+[34m21:36:06 conversation_loop API call #5: in=61002 out=234 total=61236 latency=5.4s cache=45184/61002 (74%)[0m
+[33m21:36:09 tool_executor Tool research_offpage returned error (3.09s): {"error": "unsupported_content_type", "error_type"[0m
+[33m: "Failure"}[0m
+[33m21:36:13 tool_executor Tool research_offpage returned error (4.06s): {"error": "unsupported_content_type", "error_type"[0m
+[33m: "Failure"}[0m
+[34m21:36:21 conversation_loop API call #6: in=61290 out=286 total=61576 latency=7.9s cache=60800/61290 (99%)[0m
+21:36:24 tool_executor tool research_offpage completed (3.33s, 524 chars)
+21:36:27 tool_executor tool research_offpage completed (2.62s, 560 chars)
+[34m21:37:21 conversation_loop API call #7: in=61969 out=3244 total=65213 latency=53.9s cache=61184/61969 (99%)[0m
+21:37:22 tool_executor tool research_finish completed (0.77s, 145 chars)
+[34m21:38:01 conversation_loop API call #8: in=65268 out=2242 total=67510 latency=39.2s cache=61824/65268 (95%)[0m
+21:38:01 trajectory Trajectory saved to trajectory_samples.jsonl
+[1;32m21:38:01 conversation_loop Turn ended: reason=text_response(finish_reason=stop) model=gpt-6.1-sol api_calls=8/16 budget[0m
+[1;32m=8/16 tool_turns=7 last_msg_role=assistant response_len=3268 session=20261017_213443_239f21[0m

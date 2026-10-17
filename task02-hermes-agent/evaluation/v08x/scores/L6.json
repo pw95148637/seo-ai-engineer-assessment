@@ -1,0 +1,91 @@
+{
+  "run_id": "daf9f1eb4e1e4d2da6c9f15a21696556",
+  "host": "2030.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": {
+      "call": 3,
+      "evidence_id": "f58f7f68cc7841afad6635edd9fdf0ac",
+      "via": "research_evidence"
+    },
+    "3A娛樂城": {
+      "call": 2,
+      "evidence_id": "b6656e5dcf894a34b171dab7c10059eb",
+      "via": "research_evidence"
+    }
+  },
+  "both_target_pages_read": true,
+  "tool_calls": 17,
+  "calls_before_first_hit": 1,
+  "calls_until_both_hit": 3,
+  "searches": 5,
+  "failed_searches": 2,
+  "failed_search_kinds": {
+    "no_results": 2,
+    "error": 0
+  },
+  "failed_search_queries": [
+    "\"2030\" \"3A娛樂城\" -site:2030.tw",
+    "\"2030玩運彩\" -site:2030.tw"
+  ],
+  "http_requests": 9,
+  "http_requests_controller": 3,
+  "sitemap_reads": 0,
+  "refetched_verified_pages": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 0
+  },
+  "lessons_presented": 3,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 176812,
+    "prompt": 171176,
+    "completion": 5636,
+    "api_calls": 7,
+    "cache_read": 123264,
+    "cache_write": 0,
+    "uncached_prompt": 47912,
+    "cost": 53548
+  },
+  "hermes_tools": {
+    "research_status": 1,
+    "research_evidence": 6,
+    "research_search": 5,
+    "research_fetch": 2,
+    "research_offpage": 2,
+    "research_finish": 1
+  },
+  "claims": 12,
+  "actions": 5,
+  "sections": {
+    "on_page": 8,
+    "off_page": 3,
+    "other": 1
+  },
+  "offpage": {
+    "claims": 3,
+    "observation": 1,
+    "inference": 1,
+    "unknown": 1,
+    "three_columns": true,
+    "known": 1,
+    "known_external": 1,
+    "known_link_verified": 0,
+    "pages_fetched": 2,
+    "pages_linking_to_target": 0
+  },
+  "offpage_policy_violations": [],
+  "state": "research_complete",
+  "transcript_calls": 1,
+  "review_cost": 0,
+  "learned": null
+}

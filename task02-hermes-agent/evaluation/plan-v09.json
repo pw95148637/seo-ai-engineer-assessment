@@ -1,0 +1,428 @@
+{
+  "plan_id": "task02-v09-cumulative-research",
+  "created_utc": "2026-10-17T08:24:31.336223+00:00",
+  "status": "registered before any v0.9 run",
+  "question": "With tools that show JSON-LD, image links and outbound hosts, does a ledger that carries research forward (findings re-verified by the controller, on-site pages seen but not read, open unknowns) make the 10th report better than the 1st and better than a 10th run without learning, as judged blind? Does it read more of the site over ten runs, and at what cost?",
+  "why": "v0.8x: the ledger learned where the target pages are; the saved budget did not become on-site exploration, and blind reviewers preferred a no-learning 10th run that read more pages (L10 < C10, 3:0). All six reports missed the JSON-LD and the second affiliate destination, which the controller never passed to the model (the HTML extraction skipped <script> and image alt). Report quality depended on which pages a run happened to read (C1 > C10).",
+  "base": "v0.8 (plan e2b95aab) and v0.8x (plan 18923ac4) stay as registered; their results are not rescored. This plan changes files in their code fingerprint, so their --verify passes only on the code of commit a30d710 (the v0.8x program and evidence files belong with that code).",
+  "changes": [
+    "research_core: HTML extraction keeps a JSON-LD summary (structured_data: @type, headline, dates, author, FAQ question count and sample, rating, breadcrumb) and image links (alt text, file name, host, rel); outbound_hosts gain image_links and sample_anchor; research_evidence returns structured_data, outbound_hosts and image_links for HTML snapshots. Visible text, size limits and the untrusted-data rule are unchanged.",
+    "research_core: the controller's own re-fetches (discovery lessons, research memory) use a separate budget of 10 requests (Limits.controller_requests) instead of the model's 30.",
+    "research_memory (new, ledger arm only, --research-memory): after a completed run it records on-site pages read, internal links seen on them, the accepted report's observation/inference claims whose every citation is a hash-valid on-site HTML page (findings), and the report's unknowns. At the next run start the controller re-fetches the pages of the stored findings (at most 8 pages): unchanged pages (same title, at least 70% of earlier visible lines kept) make the finding current with this run's evidence ids; a changed page sends it to re-check; 404/410 or a robots block revokes it. research_status shows research_memory: current findings, findings to re-check, up to 12 unread on-site candidates (ranked by keyword in anchor or URL, same section as a keyword page, number of read pages linking) and up to 8 open unknowns. A newer report supersedes older findings; findings start as candidates and become active when re-verified; expiry (7 days) and human veto apply.",
+    "lessons: search_feature no longer counts \"-site:\" (an exclusion) as a site: query; findings are kept in the lessons table (kind finding) and never shown as lessons.",
+    "research prompt: one added sentence, identical for both arms, saying that a research_memory block (when present) lists what earlier research confirmed and left open, to dig deeper from the re-confirmed findings, prefer unread candidates and unknowns, cite this run's evidence, and write a report that stands alone; research_finish accepts optional resolved_unknowns (ids), not shown in the report.",
+    "tool descriptions mention structured_data, image_links, research_memory and resolved_unknowns."
+  ],
+  "design": [
+    "10 rounds on 2030.tw; each round runs control and ledger once in the order of round_order (each arm first five times; rounds 1 and 10 share the order CL). Both arms start empty and use the v0.9 tools.",
+    "Control: every run a new empty home and an empty controller root, --no-learn, no research memory.",
+    "Ledger: one controller root for L1-L10 with lessons and research memory, learning after every completed run. After round 1 the ledger receives the one review v0.8 used (LF; written by Claude under the user's authorization, recorded as a human review), so the ledger arm differs from the v0.8 ledger arm only by the research memory, the controller budget and the v0.9 tools.",
+    "No native arm: v0.8 and v0.8x measured Hermes' own learning twice (regression on cost both times, a 2:1 product edge in v0.8x); this plan tests the redesigned ledger against no learning.",
+    "No holdout run: the question is the same task; harm to other sites is not re-checked.",
+    "Scores after the last step; pairwise blind review after scoring."
+  ],
+  "round_order": [
+    "CL",
+    "LC",
+    "CL",
+    "LC",
+    "LC",
+    "CL",
+    "LC",
+    "CL",
+    "LC",
+    "CL"
+  ],
+  "order": [
+    "C1",
+    "L1",
+    "LF",
+    "L2",
+    "C2",
+    "C3",
+    "L3",
+    "L4",
+    "C4",
+    "L5",
+    "C5",
+    "C6",
+    "L6",
+    "L7",
+    "C7",
+    "C8",
+    "L8",
+    "L9",
+    "C9",
+    "C10",
+    "L10"
+  ],
+  "steps": {
+    "C1": {
+      "kind": "run",
+      "arm": "control",
+      "round": 1,
+      "home": "v09-c1",
+      "ledger_learn": false,
+      "memory": false,
+      "root": "evaluation/v09/runs/C1",
+      "note": "no learning: empty root, no lessons, no research memory"
+    },
+    "L1": {
+      "kind": "run",
+      "arm": "ledger",
+      "round": 1,
+      "home": "v09-l1",
+      "ledger_learn": true,
+      "memory": true,
+      "root": "evaluation/v09/runs/ledger-series",
+      "shared_root": true,
+      "note": "one ledger for L1-L10: lessons and research memory from earlier runs; a completed run teaches both"
+    },
+    "C2": {
+      "kind": "run",
+      "arm": "control",
+      "round": 2,
+      "home": "v09-c2",
+      "ledger_learn": false,
+      "memory": false,
+      "root": "evaluation/v09/runs/C2",
+      "note": "no learning: empty root, no lessons, no research memory"
+    },
+    "L2": {
+      "kind": "run",
+      "arm": "ledger",
+      "round": 2,
+      "home": "v09-l2",
+      "ledger_learn": true,
+      "memory": true,
+      "root": "evaluation/v09/runs/ledger-series",
+      "shared_root": true,
+      "note": "one ledger for L1-L10: lessons and research memory from earlier runs; a completed run teaches both"
+    },
+    "C3": {
+      "kind": "run",
+      "arm": "control",
+      "round": 3,
+      "home": "v09-c3",
+      "ledger_learn": false,
+      "memory": false,
+      "root": "evaluation/v09/runs/C3",
+      "note": "no learning: empty root, no lessons, no research memory"
+    },
+    "L3": {
+      "kind": "run",
+      "arm": "ledger",
+      "round": 3,
+      "home": "v09-l3",
+      "ledger_learn": true,
+      "memory": true,
+      "root": "evaluation/v09/runs/ledger-series",
+      "shared_root": true,
+      "note": "one ledger for L1-L10: lessons and research memory from earlier runs; a completed run teaches both"
+    },
+    "C4": {
+      "kind": "run",
+      "arm": "control",
+      "round": 4,
+      "home": "v09-c4",
+      "ledger_learn": false,
+      "memory": false,
+      "root": "evaluation/v09/runs/C4",
+      "note": "no learning: empty root, no lessons, no research memory"
+    },
+    "L4": {
+      "kind": "run",
+      "arm": "ledger",
+      "round": 4,
+      "home": "v09-l4",
+      "ledger_learn": true,
+      "memory": true,
+      "root": "evaluation/v09/runs/ledger-series",
+      "shared_root": true,
+      "note": "one ledger for L1-L10: lessons and research memory from earlier runs; a completed run teaches both"
+    },
+    "C5": {
+      "kind": "run",
+      "arm": "control",
+      "round": 5,
+      "home": "v09-c5",
+      "ledger_learn": false,
+      "memory": false,
+      "root": "evaluation/v09/runs/C5",
+      "note": "no learning: empty root, no lessons, no research memory"
+    },
+    "L5": {
+      "kind": "run",
+      "arm": "ledger",
+      "round": 5,
+      "home": "v09-l5",
+      "ledger_learn": true,
+      "memory": true,
+      "root": "evaluation/v09/runs/ledger-series",
+      "shared_root": true,
+      "note": "one ledger for L1-L10: lessons and research memory from earlier runs; a completed run teaches both"
+    },
+    "C6": {
+      "kind": "run",
+      "arm": "control",
+      "round": 6,
+      "home": "v09-c6",
+      "ledger_learn": false,
+      "memory": false,
+      "root": "evaluation/v09/runs/C6",
+      "note": "no learning: empty root, no lessons, no research memory"
+    },
+    "L6": {
+      "kind": "run",
+      "arm": "ledger",
+      "round": 6,
+      "home": "v09-l6",
+      "ledger_learn": true,
+      "memory": true,
+      "root": "evaluation/v09/runs/ledger-series",
+      "shared_root": true,
+      "note": "one ledger for L1-L10: lessons and research memory from earlier runs; a completed run teaches both"
+    },
+    "C7": {
+      "kind": "run",
+      "arm": "control",
+      "round": 7,
+      "home": "v09-c7",
+      "ledger_learn": false,
+      "memory": false,
+      "root": "evaluation/v09/runs/C7",
+      "note": "no learning: empty root, no lessons, no research memory"
+    },
+    "L7": {
+      "kind": "run",
+      "arm": "ledger",
+      "round": 7,
+      "home": "v09-l7",
+      "ledger_learn": true,
+      "memory": true,
+      "root": "evaluation/v09/runs/ledger-series",
+      "shared_root": true,
+      "note": "one ledger for L1-L10: lessons and research memory from earlier runs; a completed run teaches both"
+    },
+    "C8": {
+      "kind": "run",
+      "arm": "control",
+      "round": 8,
+      "home": "v09-c8",
+      "ledger_learn": false,
+      "memory": false,
+      "root": "evaluation/v09/runs/C8",
+      "note": "no learning: empty root, no lessons, no research memory"
+    },
+    "L8": {
+      "kind": "run",
+      "arm": "ledger",
+      "round": 8,
+      "home": "v09-l8",
+      "ledger_learn": true,
+      "memory": true,
+      "root": "evaluation/v09/runs/ledger-series",
+      "shared_root": true,
+      "note": "one ledger for L1-L10: lessons and research memory from earlier runs; a completed run teaches both"
+    },
+    "C9": {
+      "kind": "run",
+      "arm": "control",
+      "round": 9,
+      "home": "v09-c9",
+      "ledger_learn": false,
+      "memory": false,
+      "root": "evaluation/v09/runs/C9",
+      "note": "no learning: empty root, no lessons, no research memory"
+    },
+    "L9": {
+      "kind": "run",
+      "arm": "ledger",
+      "round": 9,
+      "home": "v09-l9",
+      "ledger_learn": true,
+      "memory": true,
+      "root": "evaluation/v09/runs/ledger-series",
+      "shared_root": true,
+      "note": "one ledger for L1-L10: lessons and research memory from earlier runs; a completed run teaches both"
+    },
+    "C10": {
+      "kind": "run",
+      "arm": "control",
+      "round": 10,
+      "home": "v09-c10",
+      "ledger_learn": false,
+      "memory": false,
+      "root": "evaluation/v09/runs/C10",
+      "note": "no learning: empty root, no lessons, no research memory"
+    },
+    "L10": {
+      "kind": "run",
+      "arm": "ledger",
+      "round": 10,
+      "home": "v09-l10",
+      "ledger_learn": true,
+      "memory": true,
+      "root": "evaluation/v09/runs/ledger-series",
+      "shared_root": true,
+      "note": "one ledger for L1-L10: lessons and research memory from earlier runs; a completed run teaches both"
+    },
+    "LF": {
+      "kind": "ledger_feedback",
+      "arm": "ledger",
+      "note": "controller only: the v0.6 human review, as in v0.8"
+    }
+  },
+  "feedback": {
+    "source": "evaluation/v06/runs/2030-series/research.sqlite",
+    "source_sha256": "94f45b3c645c49eeb11442d757fefcc2797f0eac4318b12078e9f51458581889",
+    "run": "8cad8d54a03c4f94a716e7653b5b3112",
+    "target": "claim:8",
+    "label": "unsupported",
+    "reason": "頁面只有2030編輯部團隊署名，不是具名作者，不能當作者資訊或專業背書",
+    "reviewer": "總控Claude（使用者授權代審）",
+    "scope": "general",
+    "lesson_key": "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1",
+    "ledger_statement": "人工審查（總控Claude（使用者授權代審））把 run 8cad8d54 的 claim:8 標為「證據不支持」：頁面只有2030編輯部團隊署名，不是具名作者，不能當作者資訊或專業背書。該項原文：「反證：3A頁有具體出金時段、最低入金、手機版與客服FAQ、作者及更新標示；娛樂城主詞頁提醒洗碼量和提領限制。因此不能稱其完全沒有實用資訊或風險提醒；有數字也不等於數字已驗證。」",
+    "ledger_prefix": "審查標準（寫本輪主張時套用；原句是過去被標註的例子，不需重查）：",
+    "message": "人工審查回饋（審查者：總控Claude（使用者授權代審））：先前一份 2030.tw 研究報告中的 claim:8 被標為「證據不支持」。理由：頁面只有2030編輯部團隊署名，不是具名作者，不能當作者資訊或專業背書。該項原文：「反證：3A頁有具體出金時段、最低入金、手機版與客服FAQ、作者及更新標示；娛樂城主詞頁提醒洗碼量和提領限制。因此不能稱其完全沒有實用資訊或風險提醒；有數字也不等於數字已驗證。」\n這是審查標準：之後寫研究主張時套用；引用的原句是過去被標註的例子，不需要重查。本回合沒有研究工具，不需要重新研究網站。",
+    "how": "Only the ledger arm receives it, after round 1 (LF): the v0.6 review lesson is added unchanged and research_status shows it after FEEDBACK_PREFIX. The reviewer field is the original record: the review was written by Claude under the user's authorization and entered as a human review."
+  },
+  "model": "gpt-6.1-sol",
+  "provider": "openai-codex",
+  "hermes_commit": "311155fade43d1993ea968909a2ad36762345bbc",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "primary_target": "https://2030.tw",
+  "isolation": "As in v0.8: before and after every step the learned-content digest of every Hermes profile home, the root home and ~/.hermes, and the ledger hash; only the stepping arm's own store may change; every run uses skip_memory and no Hermes memory or skill tools (hermes-learning off); control runs must be shown no controller lessons and no research memory. Any failure marks the step isolation_violation and the arm invalid.",
+  "retry_rule": "An attempt is logged before it starts; an attempt that does not settle is undone (ledger restored) and retried once in the same command; after two failures the step is abandoned. Research settles on research_complete, no_autonomous_tool_use or missing_controller_report. A settled step is never rerun.",
+  "usage_gate": {
+    "stop": 90,
+    "rule": "Usage is read before and after every attempt into evaluation/v09/usage-log.jsonl; no attempt starts at or above 90% of the Session or Weekly window. Banked resets, credits and payment are never used."
+  },
+  "schedule": {
+    "latest_start": "2026-10-18T12:00:00+08:00"
+  },
+  "metrics": [
+    "calls: tool results before the first one that delivered a target page (v0.8 definition)",
+    "cost: uncached prompt + completion tokens (tokens.cost); total tokens listed",
+    "pages: target pages read (0-2)",
+    "onsite_read: distinct on-site HTML pages (HTTP 200) whose content reached the model in the run: fetched by the model, or a controller fetch the model read with research_evidence",
+    "cumulative_onsite: distinct on-site pages read by the arm in runs 1..k",
+    "new_page_claims: observation/inference claims citing at least one on-site page the arm had not read in earlier runs",
+    "cited_claims: observation/inference claims of the accepted report (each cites this run's evidence by schema); semantic support is judged only in the blind review",
+    "resolved_unknowns (ledger): ids in resolved_unknowns that were presented as open unknowns in that run (self-reported by the model, checked only against the presented ids)",
+    "candidates_read (ledger): presented unread candidates that the run read",
+    "memory: findings shown, to re-check, revoked; controller requests",
+    "new_page_share: new_page_claims / cited_claims",
+    "requests_total: HTTP requests of the run, model and controller together (the ledger arm has the extra controller budget)",
+    "tool_calls, seconds, offsite_pages, total tokens, isolation, as in v0.8x"
+  ],
+  "rules": {
+    "control_band": "[min, max] over C1-C10 (at least 3 scored controls).",
+    "failure_criteria": {
+      "F1": "a target page that more than half of the scored control runs read is missed by at least 2 of the scored runs among L8-L10",
+      "F2": "the median cost of L8-L10 > 1.3 x the median cost of C1-C10 (three runs instead of one, because v0.8x showed a single prompt-cache miss can move one run's cost by half); computed over the scored runs among L8-L10, at least 2, otherwise the verdict is incomplete",
+      "F4": "any off-page request in L1-L10 broke the search-provenance or robots rule",
+      "F5": "a stale lesson was presented in L1-L10",
+      "F6": "at least 2 of L8-L10 ended without an accepted report while more than half of the scored control runs have one"
+    },
+    "exploration": "E1 (reported, not part of the verdict; the prompt asks the ledger arm to read unread candidates, so it mostly shows whether the model did): over the rounds both arms completed, the ledger read more of the site when its distinct on-site pages >= 1.2 x the control's, less when <= 1/1.2, otherwise similar.",
+    "novelty": "E2: mean new_page_claims and new_page_share over runs 2-10, ledger against control (reported).",
+    "unknowns": "E3: resolved_unknowns per ledger run (reported).",
+    "pair_majority": "A pair is won by a report when at least 2 of 3 reviewers prefer it; otherwise no_majority.",
+    "product_verdict": "better (\"the product improved\") when L10 wins against L1 AND L10 wins against C10 AND L9 wins against C9 (the original question plus two same-round comparisons, which remove drift over time); better_than_control_only when both same-round pairs are won but not L1-L10; better_than_first_unattributed when only L1-L10 is won (it may be drift and noise); worse_than_control when C10 wins against L10 and C9 against L9; not_shown otherwise; pending while answers are missing. C1-C10 is reported as the first-against-tenth result without learning (drift and noise together, one pair).",
+    "missing_report": "A run in the pairwise set without an accepted report is replaced, before the packet is written, by the nearest run of the same arm that has one (L1/C1 by run 2 then 3; L9/C9 by 8 then 7; L10/C10 by 9 then 8), never reusing a run already shown; the replacement is recorded (shown_runs).",
+    "blinding": "Report texts are not edited beyond run ids and run dates. Before the packet is written, every report is scanned for the fixed terms in LEAK_TERMS (上次, 先前, 前次, 前一輪, 之前的研究, 重新確認, 重新驗證, 研究記憶, research_memory, 重抓, 未讀候選, resolved_unknowns) and for open-unknown ids (u1-u8); counts go to the key, and any hit in a ledger report is reported with the verdict as blinding_risk.",
+    "verdict": "invalid if an isolation check failed in either arm; incomplete if L1, L10, C1 or C10 is missing or fewer than 3 controls are scored; regression if any F holds; pending_blind_review while answers are missing; improved when the product verdict is better; otherwise not_proven.",
+    "note": "One run per arm and point: no statistical claim."
+  },
+  "pairwise": {
+    "reports": [
+      "C1",
+      "L1",
+      "C9",
+      "L9",
+      "C10",
+      "L10"
+    ],
+    "pairs": [
+      [
+        "L1",
+        "L10"
+      ],
+      [
+        "L10",
+        "C10"
+      ],
+      [
+        "L9",
+        "C9"
+      ],
+      [
+        "C1",
+        "C10"
+      ]
+    ],
+    "packet": "As in v0.8x: each report under a random code with report.md (run id and run dates removed), sources.json and the cited snapshots; one assignment per reviewer with its own random pair order and A/B sides; the key outside the packet. Reviewers are not told what distinguishes the reports. The packet is copied to a folder outside the project, so reviewers do not load the project notes.",
+    "reviewers": "Three agents, each a fresh context, that have seen neither scores nor this plan, dispatched by the coordinating session on the model it runs (recorded with the answers); each opens only the packet copy outside the project. Answers are kept unedited.",
+    "question": "Which report better answers the original question (what 2030.tw does on-page and off-page for 娛樂城 and 3A娛樂城, and which actions we should take first), judged on evidence support, errors or overclaiming, separation of known / inferred / unknown, and specific, prioritized actions; preferred A, B or equal, strength, reasons and concrete defects per report."
+  },
+  "estimates": {
+    "runs": "20 research runs",
+    "minutes": "v0.8x: 2-3 minutes per run; about 60-70 minutes in sequence",
+    "session_usage": "v0.8x: about 2.3 Session points per run; estimate 45-55 points"
+  },
+  "limitations": [
+    "The plan author built the research memory after reading v0.8x reports and blind reviews; the reviewers' common observations (JSON-LD, image banners) motivated the tool changes, so the tools now point at signals those reviewers valued.",
+    "The ledger arm differs from the control arm by a bundle: discovery lessons, the one review (LF), the research memory and up to 10 extra controller requests per run. An improved verdict credits that bundle, not the research memory alone. Both arms get the tool changes, so the tools are not part of the difference.",
+    "Findings are the model's own claims; the controller re-checks only that their pages still hold, not that the claim is true. A wrong claim that the next run re-cites without checking could persist.",
+    "resolved_unknowns is self-reported by the model.",
+    "The main noise is between runs (v0.8x: C1 beat C10 3:0 with no learning), not only between reviewers; one run per arm and point, three reviewers, a 2:1 majority is a weak signal. The two same-round pairs reduce but do not remove this.",
+    "All runs take about 70 minutes, so the site barely changes: the re-check, revoke and expiry paths of the memory are hardly exercised. This does not test whether the memory stays reliable when the site changes.",
+    "One site, one model, one afternoon.",
+    "Report style may reveal the ledger arm (for example deeper pages); reviewers are blind to scores and plan.",
+    "No holdout and no native arm."
+  ],
+  "review": {
+    "by": "an agent that had not taken part, reading only the draft plan and the program, once, before registration",
+    "adopted": [
+      "F1 and F6 use a share of the control runs and two of L8-L10 instead of a fixed count of 3 and one run",
+      "a fixed replacement rule for a missing report (missing_report)",
+      "a fixed leak-term scan with blinding_risk instead of editing reports after the fact",
+      "the limitation now names the whole ledger bundle instead of claiming the memory alone is isolated",
+      "a second same-round pair (L9-C9) and a stricter product rule, with clearer labels",
+      "E1 reported only, over rounds both arms completed",
+      "new_page_share, requests_total, F2 with missing runs, successful research_evidence reads only",
+      "reviewer instructions no longer claim identical conditions; reviewer execution written down",
+      "the review record and LF wording corrected; limitations on run noise, untested re-check paths and single site and model"
+    ],
+    "not_adopted": [
+      "C1-C10 is kept as a fourth pair (the reviewer suggested replacing it with L9-C9): it is the first-against-tenth comparison without learning that the original question implies"
+    ]
+  },
+  "code_fingerprint": {
+    "src/research_core.py": "88c8d0ed533814356563a8813543b0eef61554954f0b31a22960a04801c9bb54",
+    "src/lessons.py": "5f5b9da61b29b7defdf732d21e0b7bb5fd09ecdefdfc272e892128b35be171dd",
+    "src/scoring.py": "40a700ed9de291a25d503f20f7ebb43315a3fd7c22a4e0364ff52958034e7c7d",
+    "src/runner_support.py": "f8f97925c9382eaf0eee370d7e42ed80fb99483cd1ed8f6143cedefbddebb7ee",
+    "src/hermes_homes.py": "225a686fdef96c2861e47bf4ea385c470e470017d619b995084de9bc1eea5b96",
+    "plugin/__init__.py": "56f62786e82873c83f879866435d0154783845fdc0efe7d3234b93557143ab3c",
+    "plugin/plugin.yaml": "499bfbf33a8b7f22fbe266aaa6c002607453beb44fa28e063ce94007c841ab37",
+    "scripts/run_research.py": "c373e195dc2efacb594816b3408dc414de18e0a191604df4c2a9fe30be4d4c33",
+    "scripts/run_research.sh": "25e9b1e0d59b291d2b59267b078d806cdbc27bedff926336b600c1e871c1884d",
+    "scripts/hermes_env.sh": "93ea9f00c93808dea38946711376701b9d1a8b730360b76e45b252b738775ca6",
+    "scripts/install_hermes.sh": "ee94571754acdfa04e44843ea7dba3eba51ef6c973bd5214213d2cd9567817de",
+    "scripts/enable_plugin.sh": "4f352508cc2bcf56c02c3d1b61e1d403cda4997de9f748dbc75cd13ffecb395b",
+    "scripts/setup_research.sh": "59210e69f7b473d9889074512b91d36bf2af7b02251c6b965b8e0f1413570b01",
+    "scripts/evaluate_v08.py": "0021928877c0370f089ec8ab5c7a905b01d2d5af0c330d35de7a8249d5034e1b",
+    "scripts/score_run.py": "f7306a4f9ba429d3343c35a1f58fbd5bdbe097a6da79aab137cddc4987c3ba39",
+    "scripts/feedback.py": "5e62462a1c8a53febe44e3d1980936047975901c680bb8f30c8f61669a59f056",
+    "src/research_memory.py": "52ad917889977138be3a98b796aa6ac2e4b8334f247c3a45816292fcdea7b7d6",
+    "scripts/evaluate_v09.py": "2329b9f41ef1923c77634e2b39b1aff1c6a8cbbdbc562593cf51fec2e0bba024"
+  },
+  "draft_created_utc": "2026-10-17T08:23:09.500398+00:00",
+  "plan_sha256": "4737155614153611f92d28bb32490ed97292ee537c965ae1edff22b693c90fb0"
+}

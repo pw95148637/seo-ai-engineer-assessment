@@ -5,16 +5,16 @@
 | 目錄 | 題目 | 內容 |
 |---|---|---|
 | [`task01-prompt-chain/`](task01-prompt-chain/) | 一、提示詞鏈（20%） | 一個指令跑完的提示詞鏈（Claude Code skill）：各步 prompt、關卡與重試規則、寫作準則、事先查證的來源、文章檢查與盲評工具；A／B／C 結果、最終文章、架構圖、理論依據與迭代紀錄 |
-| [`task02-hermes-agent/`](task02-hermes-agent/) | 二、Hermes 自主 SEO 競爭情報 Agent（30%） | 官方 Hermes 固定版本加唯讀研究 plugin、控制器、證據庫與 lessons 帳本、判準先寫好的評估（含與 Hermes 原生學習的三組對照）、33 次真實執行的 trace、Demo 影片（`demo/`） |
+| [`task02-hermes-agent/`](task02-hermes-agent/) | 二、Hermes 自主 SEO 競爭情報 Agent（30%） | 官方 Hermes 固定版本加唯讀研究 plugin、控制器、證據庫、lessons 帳本與研究記憶、判準先寫好的評估（與 Hermes 原生學習的三組對照、延伸到第 10 次的兩兩盲評、研究記憶組與對照組各 10 次）、68 次真實執行的 trace、Demo 影片（`demo/v09/`） |
 | [`task03-local-llm-audit/`](task03-local-llm-audit/) | 三、Local LLM SEO 內容審核（25%） | Kaggle Notebook 產生器、審核與格式檢查程式、凍結鎖、8 筆測試與事後分析的原始輸出與重算程式；[Kaggle 評估 Notebook](https://www.kaggle.com/code/pw95148637/soulo-work03-v3-eval) |
-| [`task04-multi-agent/`](task04-multi-agent/) | 四、多代理人協作與衝突處理（25%） | asyncio 狀態機、兩個角色的提示詞與審核規則、Claude CLI adapter、真實協商與改版實驗的原始輸出 |
+| [`task04-multi-agent/`](task04-multi-agent/) | 四、多代理人協作與衝突處理（25%） | asyncio 狀態機、兩個角色的提示詞與分級審核規則（不能協商的 MUST 與可以協商的建議）、程式檢查、Claude CLI adapter、真實協商、Auditor 探測與判準先寫好的改版實驗的原始輸出 |
 
 每題目錄都有自己的 README，寫明架構、結果、限制與重現命令。最快的核對方式是各題的離線測試，不需要 GPU 或任何帳號；第三、四題要先安裝套件（需要網路），第三題另需從公司資料表重建資料：
 
 ```bash
-cd task02-hermes-agent && python -m unittest discover -s tests -v       # 159 項，只用標準函式庫
-cd task03-local-llm-audit                                                # 依該題 README 的第 0 到 2 步：安裝套件、重建資料、離線檢查
-cd task04-multi-agent && pip install -r requirements.txt && python -m unittest -v   # 48 項
+cd task02-hermes-agent && python -m unittest discover -s tests -v       # 191 項，只用標準函式庫
+cd task03-local-llm-audit                                                # 依該題 README「重現」：安裝套件，再做第 0 到 2 步（重建資料、離線檢查、重算指標）
+cd task04-multi-agent && pip install -r requirements.txt && python -m unittest -v   # 91 項
 ```
 
 Windows 上請先設定 `PYTHONUTF8=1`。

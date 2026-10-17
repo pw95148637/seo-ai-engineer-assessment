@@ -1,0 +1,31 @@
+{
+  "reviewer": "R1",
+  "pairs": [
+    {
+      "pair": "P1",
+      "A": "r9npr",
+      "B": "rgxe5"
+    },
+    {
+      "pair": "P2",
+      "A": "r55kz",
+      "B": "rt9z8"
+    },
+    {
+      "pair": "P3",
+      "A": "r9npr",
+      "B": "r55kz"
+    },
+    {
+      "pair": "P4",
+      "A": "r9npr",
+      "B": "rccad"
+    },
+    {
+      "pair": "P5",
+      "A": "rudyu",
+      "B": "rccad"
+    }
+  ],
+  "answer_file": "answers/R1.json"
+}
