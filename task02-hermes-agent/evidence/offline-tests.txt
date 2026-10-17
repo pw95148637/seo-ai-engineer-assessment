@@ -1,0 +1,10 @@
+test_duplicate_runs_do_not_generalize (test_memory.MemoryTests.test_duplicate_runs_do_not_generalize) ... ok
+test_import_cannot_activate_itself (test_memory.MemoryTests.test_import_cannot_activate_itself) ... ok
+test_missing_evidence_rejected (test_memory.MemoryTests.test_missing_evidence_rejected) ... ok
+test_persistence_scope_expiry_revocation (test_memory.MemoryTests.test_persistence_scope_expiry_revocation) ... ok
+test_unknown_evidence_quarantines (test_memory.MemoryTests.test_unknown_evidence_quarantines) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK

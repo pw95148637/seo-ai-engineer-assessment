@@ -1,0 +1,308 @@
+{
+  "header": "任務二｜Hermes SEO 競爭情報 Agent 真實執行錄影",
+  "banner": "真實執行・未剪接，只快轉等待",
+  "fps": 12,
+  "caption_seconds": 7,
+  "speed": {
+    "base": 1,
+    "idle_gap": 4,
+    "idle_speed": 2,
+    "lead": 1.5,
+    "min_ff": 1.0
+  },
+  "title_card": {
+    "seconds": 10,
+    "title": "Hermes 自主研究競爭者 2030.tw 的 SEO 策略",
+    "sub": "官方 Hermes（固定 commit 311155f）加上本題的唯讀研究工具。模型決定查什麼、用哪個工具、何時收斂；程式負責 robots、允許網域、預算、證據帳本與引用檢查。",
+    "req": "原題五項：自主研究、Tool Use、Evidence-based Decision、競爭分析與行動建議、Memory / Learning",
+    "lines": [
+      "關鍵字「娛樂城」「3A娛樂城」。這次執行帶著上一版累積的學習帳本；學習凍結，方便和空帳本的對照組比較",
+      "畫面：上＝檢視器（讀控制器即時寫入的 research.sqlite）　中＝Hermes agent.log　下＝實際執行的命令",
+      "錄影方式：tmux 每 0.25 秒擷取真實終端畫面；右上角標示播放倍率與實際經過時間"
+    ],
+    "note": "原始擷取、trace、報告與分數都在 repo，可逐項核對"
+  },
+  "intro": {
+    "label": "準備",
+    "captions": [
+      "三個窗格啟動；最下方命令先等 15 秒，讓上方檢視器顯示開始時的帳本。"
+    ]
+  },
+  "segments": [
+    {
+      "marker": "[1/5]",
+      "pane": "viewer",
+      "label": "① Memory / Learning：開始前，帳本裡有什麼",
+      "card": {
+        "step": "1 / 5",
+        "title": "開始前，帳本裡有什麼",
+        "seconds": 5,
+        "sub": "這次執行從上一版累積的帳本開始，學習凍結；lessons 來自上一版前兩次研究的量測與一次審查回饋。",
+        "req": "原題：Memory / Learning"
+      },
+      "speed": {
+        "lead": 30
+      },
+      "caption_seconds": 7.4,
+      "captions": [
+        "這次執行從上一版累積的帳本開始，學習凍結、不寫入新經驗。最下方命令裡的 R4 就是這一組在評估計畫中的代號。",
+        "4 條使用中的 lessons：兩個目標頁的網址、site: 查詢在這個網站常沒有結果，以及一條審查回饋。",
+        "審查回饋由 Claude 在使用者授權下代審。帳本只由控制器量測與審查寫入，模型沒有寫入路徑。"
+      ]
+    },
+    {
+      "marker": "[2/5]",
+      "pane": "viewer",
+      "label": "② Agent 自主研究 × Tool Use",
+      "card": {
+        "step": "2 / 5",
+        "title": "Agent 自主研究與工具使用",
+        "seconds": 5,
+        "sub": "每一步由模型自己決定：先查預算與 lessons，提出待驗假設，再選工具讀頁、搜尋、讀站外頁。",
+        "req": "原題：Agent 自主研究、Tool Use"
+      },
+      "caption_seconds": 7,
+      "captions": [
+        "控制器先重抓帳本記載的兩個目標頁，確認仍是目標詞頁，才把 lessons 與這次的 evidence_id 交給模型。",
+        "藍色行是模型每一回合的輸入／輸出 tokens 與累計量；較長的等待會快轉，右上角標示倍率。"
+      ],
+      "speed": {
+        "idle_speed": 1
+      }
+    },
+    {
+      "marker": "#2 research_evidence",
+      "pane": "viewer",
+      "label": "② Agent 自主研究 × Tool Use",
+      "caption_seconds": 6.6,
+      "captions": [
+        "模型直接讀控制器剛確認的證據：第 2、3 次工具呼叫就讀到兩個目標頁，沒有重抓，也沒有讀 sitemap。",
+        "接著模型自己決定查首頁，讀頁前都寫出要查證什麼；搜尋網域「2030.tw」時被同名股票代號干擾。"
+      ],
+      "speed": {
+        "idle_speed": 1
+      }
+    },
+    {
+      "marker": "#6 research_search",
+      "pane": "viewer",
+      "label": "② Agent 自主研究 × Tool Use",
+      "speed": {
+        "idle_speed": 1
+      },
+      "caption_seconds": 10,
+      "captions": [
+        "第一個改寫的查詢排除股票字詞，仍然沒有結果；沒有結果的搜尋會記為失敗。"
+      ]
+    },
+    {
+      "marker": "#7 research_search",
+      "pane": "viewer",
+      "label": "② Agent 自主研究 × Tool Use",
+      "speed": {
+        "idle_speed": 1
+      },
+      "caption_seconds": 6.8,
+      "captions": [
+        "模型改用品牌名「2030玩運彩」搜尋，找到一個站外網域。",
+        "再讀 /wordcup/ 目錄，查證它是不是直接連到兩個目標頁的主題樞紐。"
+      ]
+    },
+    {
+      "marker": "#11 research_offpage",
+      "pane": "viewer",
+      "label": "② Agent 自主研究 × Tool Use",
+      "caption_seconds": 9.6,
+      "captions": [
+        "站外頁只能讀這次搜尋結果列出的網址，並先讀 robots.txt。這一頁沒有連到 2030.tw 的連結。",
+        "之後兩次搜尋都沒有結果，5 次搜尋的預算用完，模型改為回查已存的證據。",
+        "回查時模型在目標頁找「st=」「註冊」等字樣，追查註冊按鈕連到哪裡。"
+      ],
+      "speed": {
+        "idle_speed": 1
+      }
+    },
+    {
+      "marker": "#17 research_evidence",
+      "pane": "viewer",
+      "label": "② Agent 自主研究 × Tool Use",
+      "speed": {
+        "idle_speed": 3
+      },
+      "caption_seconds": 6.3,
+      "captions": [
+        "模型回查站外原頁，找到品牌名稱的文字提及；報告把它算成提及，不算 backlink。",
+        "畫面停住是在等模型回覆：這一回合花了 54 秒、輸出 2,459 tokens，把證據整理成報告，以 ×3 快轉。",
+        "預算有上限：HTTP 30 次、工具呼叫 40 次、搜尋 5 次、站外頁 4 頁；超出或違規時控制器直接擋下。"
+      ]
+    },
+    {
+      "marker": "[3/5]",
+      "pane": "viewer",
+      "label": "③ Evidence-based Decision",
+      "card": {
+        "step": "3 / 5",
+        "title": "依證據收斂，控制器逐項核對",
+        "seconds": 5,
+        "sub": "報告的每項觀察與推論都要引用這次執行的證據；缺證據、引用錯誤或缺少必填段落，控制器會退回。",
+        "req": "原題：Evidence-based Decision"
+      },
+      "caption_seconds": 6.5,
+      "captions": [
+        "結果：報告第一次提交就被接受。11 項主張分成觀察 5、推論 4、未知 2，觀察與推論都引用這次抓到的證據。",
+        "控制器核對證據 ID、雜湊與段落；缺少站內或站外段落、引用不存在的證據，報告都會被退回。",
+        "引用是否真的支持主張，控制器不判斷，另由沒看過分數的審查者盲評。",
+        "接著模型花 40 秒寫出給人看的結論與行動建議。"
+      ]
+    },
+    {
+      "marker": "模型在研究途中寫下的假設",
+      "pane": "viewer",
+      "label": "③ Evidence-based Decision",
+      "speed": {
+        "idle_speed": 1
+      },
+      "captions": [
+        "模型途中寫下的假設與修正：先列三個待驗假設；網域搜尋被股票代號干擾，就改查品牌名；站外頁沒有連到目標站，所以不算 backlink。"
+      ]
+    },
+    {
+      "marker": "修正判斷（續 2/2）",
+      "pane": "viewer",
+      "label": "③ Evidence-based Decision",
+      "speed": {
+        "idle_speed": 6,
+        "lead": 0.5
+      },
+      "captions": [
+        "這些文字取自執行結束後寫出的 hermes.json，研究進行中看不到。"
+      ]
+    },
+    {
+      "marker": "[4/5]",
+      "pane": "viewer",
+      "label": "④ 最終競爭分析與行動建議",
+      "card": {
+        "step": "4 / 5",
+        "title": "最終競爭分析與行動建議",
+        "seconds": 5,
+        "sub": "先看競爭者做了什麼（站內／站外），再看還不知道什麼，最後是給我們自己網站的優先行動。",
+        "req": "原題：最終競爭分析與行動建議"
+      },
+      "speed": {
+        "idle_speed": 1
+      },
+      "caption_seconds": 9,
+      "captions": [
+        "結論：可觀察的策略是「體育資訊入口 → 娛樂城主題樞紐 → 廣義／品牌評測頁 → 註冊導流」，但證據不能證明它帶來排名或流量。"
+      ]
+    },
+    {
+      "marker": "我們還不知道什麼（續 2/3）",
+      "pane": "viewer",
+      "label": "④ 最終競爭分析與行動建議",
+      "speed": {
+        "idle_speed": 1
+      },
+      "caption_seconds": 9,
+      "captions": [
+        "站內也找到反證：3A 頁寫了出金時間與客服，娛樂城頁提醒洗碼與提領限制。站外只確認一處品牌提及，沒有連結。"
+      ]
+    },
+    {
+      "marker": "我們還不知道什麼（續 3/3）",
+      "pane": "viewer",
+      "label": "④ 最終競爭分析與行動建議",
+      "speed": {
+        "idle_speed": 1
+      },
+      "caption_seconds": 9,
+      "captions": [
+        "仍未知 7 項：完整 backlinks、排名、流量與收益都沒有資料，報告寫明缺什麼，不做推估。"
+      ]
+    },
+    {
+      "marker": "值得優先採取的競爭行動 ==",
+      "pane": "viewer",
+      "label": "④ 最終競爭分析與行動建議",
+      "speed": {
+        "idle_speed": 1
+      },
+      "caption_seconds": 9,
+      "captions": [
+        "6 項行動都針對我們自己的網站，依 P0 到 P2 排序並附理由：先建立兩個關鍵字的 SERP 基準，再做小型內容試點。"
+      ]
+    },
+    {
+      "marker": "值得優先採取的競爭行動（續 2/2）",
+      "pane": "viewer",
+      "label": "④ 最終競爭分析與行動建議",
+      "speed": {
+        "idle_speed": 1
+      },
+      "caption_seconds": 9,
+      "captions": [
+        "最後一項是暫緩：不跟進大量鋪頁或購買錨文字外鏈，先用試點的收錄與曝光決定是否擴張。"
+      ]
+    },
+    {
+      "marker": "[5/5]",
+      "pane": "viewer",
+      "label": "⑤ Memory / Learning：這次的量測與對照",
+      "card": {
+        "step": "5 / 5",
+        "title": "學到的經驗用上了沒有，怎麼量",
+        "seconds": 5,
+        "sub": "同一套計分程式量測讀到目標頁前的工具呼叫、失敗搜尋、tokens 與站外證據，再和上一版的執行對照。",
+        "req": "原題：Memory / Learning"
+      },
+      "speed": {
+        "idle_speed": 1
+      },
+      "caption_seconds": 9,
+      "captions": [
+        "量測：第 2 次工具呼叫讀到第一個目標頁，第 3 次兩頁都讀到；sitemap 讀取 0 次，重抓已確認的頁面 0 次。"
+      ]
+    },
+    {
+      "marker": "score_run）（續 2/2）",
+      "pane": "viewer",
+      "label": "⑤ Memory / Learning：這次的量測與對照",
+      "speed": {
+        "idle_speed": 1
+      },
+      "caption_seconds": 9,
+      "captions": [
+        "和上一版對照：讀到目標頁前的工具呼叫，上一版三組是 7、6、3 次，這次 1 次；失敗搜尋 3/5，沒有減少。"
+      ]
+    },
+    {
+      "marker": "run 後帳本變化",
+      "pane": "viewer",
+      "label": "⑤ Memory / Learning：這次的量測與對照",
+      "speed": {
+        "idle_speed": 1
+      },
+      "caption_seconds": 7.5,
+      "captions": [
+        "同版程式、空帳本的對照組要第 9 次工具呼叫才讀到目標頁。這次的總 tokens 比它多 16%，扣掉快取命中後約少 20%（判定後的分析）。",
+        "依事先登錄的標準（總 tokens），判定為「學習未證明改善」，沒有退步。帳本前後沒有變化，因為學習凍結。"
+      ]
+    }
+  ],
+  "end_hold": 3,
+  "end_caption": "錄影結束畫面：右上角時間是實際經過時間。",
+  "outro_card": {
+    "seconds": 10,
+    "title": "判定與證據",
+    "lines": [
+      "判定（依事先登錄的標準）：學習未證明改善，站外研究未達標，沒有退步",
+      "找頁變快，但總 tokens 比對照組多 16%",
+      "判定後扣掉快取命中重算：2030.tw 約少 20%、保留站約多 11%，判定不變",
+      "站外只找到一處品牌提及，沒有連到目標站的頁面",
+      "後續 v0.8 從空白學起的學習序列與判定，見文件",
+      "證據：evaluation/v07/（VERDICT.md、runs/R4/、scores/）；錄影原始擷取：demo/v07/r4/capture/"
+    ],
+    "note": "本片未重新排版畫面內容；章節卡、字幕與倍率標示在終端畫面之外"
+  }
+}

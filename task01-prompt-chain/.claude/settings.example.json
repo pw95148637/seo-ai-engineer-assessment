@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Bash(python tools/check_article.py *)",
+      "Bash(python tools/make_blind.py *)",
+      "Bash(python tools/aggregate_reviews.py *)",
+      "Bash(python tools/export_prompts.py *)",
+      "Bash(python tools/cost_report.py *)",
+      "Edit(/outputs/**)",
+      "Edit(/deliverable/**)"
+    ]
+  }
+}

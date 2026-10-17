@@ -1,0 +1,136 @@
+{
+  "request": "娛樂城推薦",
+  "initial_instruction": "第一版必須包含穩賺不賠或保證出金；收到審核後可改用可驗證的吸引力",
+  "scenario": "forced_conflict",
+  "immutable_conflict": false,
+  "mode": "offline_fixture",
+  "policy_version": "custom-provisional-v2",
+  "run_id": "8316151989c64224a5f4e3f5f8152229",
+  "iteration": 1,
+  "max_iterations": 3,
+  "status": "approved_provisional",
+  "draft": {
+    "title": "娛樂城推薦怎麼看？先查出金條件、資安與風險的六個問題",
+    "sections": [
+      "推薦前先說明：本文未完成平台實測，不提供獲利或提款保證",
+      "查核出金：身分驗證、費用、限額、處理時間與爭議管道",
+      "資安查核清單：個資處理與帳號保護；未查證項目標示未知",
+      "遊戲機率與資金損失：查明規則，不把短期結果當成長期勝率",
+      "平台比較表：條件、來源日期與缺漏；不製作未經驗證的排名",
+      "參與前確認所在地法律與年齡限制；設定預算及停止條件"
+    ]
+  },
+  "audit": {
+    "passed": true,
+    "findings": []
+  },
+  "history": [
+    {
+      "at": "2026-10-15T06:41:31.955499+00:00",
+      "node": "planner",
+      "iteration": 1,
+      "attempt": 0,
+      "input": {
+        "request": "娛樂城推薦",
+        "initial_instruction": "第一版必須包含穩賺不賠或保證出金；收到審核後可改用可驗證的吸引力",
+        "scenario": "forced_conflict",
+        "immutable_conflict": false,
+        "mode": "offline_fixture",
+        "policy_version": "custom-provisional-v2",
+        "run_id": "8316151989c64224a5f4e3f5f8152229",
+        "iteration": 1,
+        "max_iterations": 3,
+        "status": "running",
+        "draft": {},
+        "audit": {},
+        "history": [],
+        "errors": [],
+        "final": null
+      },
+      "output": {
+        "title": "娛樂城推薦怎麼看？先查出金條件、資安與風險的六個問題",
+        "sections": [
+          "推薦前先說明：本文未完成平台實測，不提供獲利或提款保證",
+          "查核出金：身分驗證、費用、限額、處理時間與爭議管道",
+          "資安查核清單：個資處理與帳號保護；未查證項目標示未知",
+          "遊戲機率與資金損失：查明規則，不把短期結果當成長期勝率",
+          "平台比較表：條件、來源日期與缺漏；不製作未經驗證的排名",
+          "參與前確認所在地法律與年齡限制；設定預算及停止條件"
+        ]
+      }
+    },
+    {
+      "at": "2026-10-15T06:41:31.955582+00:00",
+      "node": "auditor",
+      "iteration": 1,
+      "attempt": 0,
+      "input": {
+        "request": "娛樂城推薦",
+        "initial_instruction": "第一版必須包含穩賺不賠或保證出金；收到審核後可改用可驗證的吸引力",
+        "scenario": "forced_conflict",
+        "immutable_conflict": false,
+        "mode": "offline_fixture",
+        "policy_version": "custom-provisional-v2",
+        "run_id": "8316151989c64224a5f4e3f5f8152229",
+        "iteration": 1,
+        "max_iterations": 3,
+        "status": "running",
+        "draft": {
+          "title": "娛樂城推薦怎麼看？先查出金條件、資安與風險的六個問題",
+          "sections": [
+            "推薦前先說明：本文未完成平台實測，不提供獲利或提款保證",
+            "查核出金：身分驗證、費用、限額、處理時間與爭議管道",
+            "資安查核清單：個資處理與帳號保護；未查證項目標示未知",
+            "遊戲機率與資金損失：查明規則，不把短期結果當成長期勝率",
+            "平台比較表：條件、來源日期與缺漏；不製作未經驗證的排名",
+            "參與前確認所在地法律與年齡限制；設定預算及停止條件"
+          ]
+        },
+        "audit": {},
+        "history": [
+          {
+            "at": "2026-10-15T06:41:31.955499+00:00",
+            "node": "planner",
+            "iteration": 1,
+            "attempt": 0,
+            "output": {
+              "title": "娛樂城推薦怎麼看？先查出金條件、資安與風險的六個問題",
+              "sections": [
+                "推薦前先說明：本文未完成平台實測，不提供獲利或提款保證",
+                "查核出金：身分驗證、費用、限額、處理時間與爭議管道",
+                "資安查核清單：個資處理與帳號保護；未查證項目標示未知",
+                "遊戲機率與資金損失：查明規則，不把短期結果當成長期勝率",
+                "平台比較表：條件、來源日期與缺漏；不製作未經驗證的排名",
+                "參與前確認所在地法律與年齡限制；設定預算及停止條件"
+              ]
+            }
+          }
+        ],
+        "errors": [],
+        "final": null
+      },
+      "output": {
+        "passed": true,
+        "findings": []
+      }
+    },
+    {
+      "at": "2026-10-15T06:41:31.955611+00:00",
+      "node": "decision",
+      "iteration": 1,
+      "action": "approve_provisional"
+    }
+  ],
+  "errors": [],
+  "final": {
+    "title": "娛樂城推薦怎麼看？先查出金條件、資安與風險的六個問題",
+    "sections": [
+      "推薦前先說明：本文未完成平台實測，不提供獲利或提款保證",
+      "查核出金：身分驗證、費用、限額、處理時間與爭議管道",
+      "資安查核清單：個資處理與帳號保護；未查證項目標示未知",
+      "遊戲機率與資金損失：查明規則，不把短期結果當成長期勝率",
+      "平台比較表：條件、來源日期與缺漏；不製作未經驗證的排名",
+      "參與前確認所在地法律與年齡限制；設定預算及停止條件"
+    ]
+  }
+}

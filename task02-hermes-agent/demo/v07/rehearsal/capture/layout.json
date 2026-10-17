@@ -1,0 +1,48 @@
+{
+  "started_utc": "2026-10-16T06:33:24.603890+00:00",
+  "cols": 120,
+  "rows": 28,
+  "interval": 0.25,
+  "tmux": "tmux 3.4",
+  "capture": "tmux capture-pane -p -e (visible screen, text and colours), stored when changed",
+  "panes": [
+    {
+      "name": "viewer",
+      "id": "%0",
+      "top": 1,
+      "left": 0,
+      "width": 120,
+      "height": 16,
+      "title": "檢視器（演練：重播 v0.6 R3 的 research.sqlite 事件）"
+    },
+    {
+      "name": "log",
+      "id": "%2",
+      "top": 18,
+      "left": 0,
+      "width": 120,
+      "height": 6,
+      "title": "Hermes agent.log（演練：重播 v0.6 R3 的原始日誌行）"
+    },
+    {
+      "name": "main",
+      "id": "%1",
+      "top": 25,
+      "left": 0,
+      "width": 120,
+      "height": 3,
+      "title": "命令（演練：不呼叫模型）"
+    }
+  ],
+  "commands": {
+    "viewer": "python3 /mnt/c/Users/user/Desktop/SEO/tasks/task02-hermes/scripts/demo_live_view.py events --task-root . --root evaluation/v06/runs/2030-series --replay --steps evaluation/v06/steps.json --step R3 --hermes-log .runtime/user/logs/agent.log --pre 6 --page-pause 4 --pace 0.4 --banner '演練：重播 v0.6 R3（只測管線，非最終 Demo；不呼叫模型）' --ledger-before evaluation/v06/ledger/R3-attempt1-before.json --ledger-after evaluation/v06/ledger/R3-attempt1-after.json --compare 'v0.6 R1=evaluation/v06/scores/R1.json' --compare 'v0.6 B1=evaluation/v06/scores/B1.json'",
+    "log": "python3 /mnt/c/Users/user/Desktop/SEO/tasks/task02-hermes/scripts/demo_live_view.py hermes-log --log .runtime/user/logs/agent.log --replay --steps evaluation/v06/steps.json --step R3 --pre 6",
+    "main": "python3 /mnt/c/Users/user/Desktop/SEO/tasks/task02-hermes/scripts/demo_live_view.py replay-console --steps evaluation/v06/steps.json --step R3 --console evaluation/v06/console/R3-attempt1.txt --label v0.6 --linger 0",
+    "main_display": "python3 scripts/demo_live_view.py replay-console --step R3   # 演練：重播原始命令與輸出"
+  },
+  "pre_seconds": 6.0,
+  "cwd": "/home/user/soulo/task02-hermes",
+  "host": "DESKTOP-6S19V9O",
+  "ended_utc": "2026-10-16T06:37:03.503398+00:00",
+  "duration": 218.894
+}

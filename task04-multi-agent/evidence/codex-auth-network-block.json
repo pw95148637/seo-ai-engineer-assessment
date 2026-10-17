@@ -1,0 +1,8 @@
+{
+  "observed_at_taipei": "2026-10-16T02:18:03+08:00",
+  "user_reported_device_authorization_complete": true,
+  "tool_error": "Network access to \"https://auth.openai.com:443\" was blocked by policy.",
+  "cli_status": "Not logged in",
+  "model_calls": 0,
+  "next_action": "Do not request another code in the same blocked environment. Use normal CLI login and run the existing package on the user's own Linux/WSL environment, or an environment permitting official auth and model endpoints."
+}

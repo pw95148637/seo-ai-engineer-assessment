@@ -1,0 +1,100 @@
+# Task03 reproduction from a fresh export (README steps 0-2)
+date: 2026-10-16T09:47:07Z (UTC); host: Windows 11, Python 3.13.14; PYTHONUTF8=1
+Setup: git archive of HEAD for tasks/task03-local-llm plus the uncommitted files of this change, then every company CSV under data/ and kaggle-retrieved/*/work03/data/ deleted, so step 0 has to download the public sheet. No GPU, no Kaggle run.
+
+$ python scripts/fetch_data.py
+restored: data\seo-diagnostic-samples.csv (12504f2058a4)
+restored: data\train12.csv (7dfa0c9f6008)
+restored: data\holdout8.csv (818b491f1954)
+restored: kaggle-retrieved\soulo-work03-v3-eval\work03\data\holdout8.csv (818b491f1954)
+restored: kaggle-retrieved\soulo-work03-v2-train\work03\data\train12.csv (4193d94c59bd)
+restored: kaggle-retrieved\soulo-work03-v3-eval\work03\data\train12.csv (4193d94c59bd)
+restored: kaggle-retrieved\soulo-work03-v3-train\work03\data\train12.csv (4193d94c59bd)
+restored: kaggle-retrieved\soulo-work03-v3b-train\work03\data\train12.csv (4193d94c59bd)
+restored: kaggle-retrieved\v2\work03\data\train12.csv (4193d94c59bd)
+restored: kaggle-retrieved\v3\work03\data\train12.csv (4193d94c59bd)
+PASS: company data and the 12/8 split match the recorded hashes
+exit=0
+
+$ python scripts/validate_data.py
+{
+  "status": "PASS",
+  "source_rows": 20,
+  "train_rows": 12,
+  "holdout_rows": 8,
+  "overlap": 0,
+  "seed": 42,
+  "split_reproduced": true,
+  "source_sha256": "12504f2058a4305817d3991c01fe05b17feea1754869ab3617b3480e67e50065",
+  "train_ids": [
+    "20",
+    "6",
+    "15",
+    "5",
+    "10",
+    "14",
+    "16",
+    "19",
+    "7",
+    "13",
+    "18",
+    "11"
+  ],
+  "holdout_ids": [
+    "2",
+    "12",
+    "3",
+    "17",
+    "8",
+    "9",
+    "1",
+    "4"
+  ]
+}
+exit=0
+
+$ python scripts/workflow.py check-targets
+PASS: 12 train-only targets validated
+exit=0
+
+$ python scripts/test_workflow.py
+{"adapter": {}, "base": {"REQUIRED_CODE_MISSED": 1, "SEVERE_SCORE_TOO_HIGH": 1}}
+PASS: 12 targets; retry and denominator accounting; severity-band contract and retry; prompt bands match code; raw failure preservation; no overwrite; invalid consistency; completion-only loss mask; length rejection; gate heuristics; round-1 real outputs rejected for false experience, risk-removal advice, TW_266 mixing, score 55-59 and source dumping; v2 real outputs rejected for missing severity, YMYL over-flagging, missed experience, legal-consequence softening and ID14/7 at 55; v3b real outputs keep 4 hard failures (ID20 flagged, ID5 experience missed, ID7 invalid, YMYL over-flagging) without the ID14 checker false positive. Synthetic/train-only, no GPU/model results.
+exit=0
+
+$ python scripts/check_contract.py
+markdown REJECT JSONDecodeError
+out_of_range REJECT ValidationError
+boolean_score REJECT ValidationError
+extra_field REJECT ValidationError
+missing_advice REJECT ValidationError
+wrong_quote REJECT ValueError
+unknown_source REJECT ValueError
+duplicate_key REJECT ValueError
+missing_severity REJECT ValidationError
+unknown_severity REJECT ValidationError
+score_outside_band REJECT ValueError
+no_reason_low_score REJECT ValueError
+PASS: 1 valid, 12 invalid rejected. Synthetic checks, not model results.
+exit=0
+
+$ python scripts/verify_notebook.py
+PASS: train notebook current (7 code cells); kaggle/train copy identical; no holdout text; metadata separation; train->eval seam and report rehearsed on synthetic rows; eval build gated by lock (eval notebook present); all scripts parse; no model outputs
+exit=0
+
+$ python scripts/compare_holdout.py
+adapter verdicts {'準確': 3, '部分準確': 2, '偏差': 3} | code-set exact 4 | sev main/alt 1 4 | score main/alt 1 4 | MAE 27.0 | micro P/R 0.556 0.833
+base verdicts {'準確': 2, '部分準確': 3, '偏差': 3} | code-set exact 2 | sev main/alt 2 5 | score main/alt 1 4 | MAE 21.25 | micro P/R 0.455 0.833
+wrote evaluation/holdout8-comparison.json report/holdout8-audit.csv report/holdout8-audit.html
+exit=0
+
+$ python scripts/regate.py kaggle-retrieved/soulo-work03-v3b-train/work03
+{"status": "FAIL", "selfcheck": "train_selfcheck.jsonl", "hard_train12": {"CLEAN_ITEM_FLAGGED": 1, "REQUIRED_CODE_MISSED": 1, "INVALID_JSON": 1, "YMYL_OVERFLAG": 1}, "hard_consistency": {}, "hard_total_excl_contract": 4, "hard_codes_excl_contract": ["CLEAN_ITEM_FLAGGED", "INVALID_JSON", "REQUIRED_CODE_MISSED", "YMYL_OVERFLAG"], "score_mae": 31.9, "score_mae_n": 11, "no_valid_output": ["7"], "severe_scores": {"14": 0, "7": null}, "target_severe": {"14": 12, "7": 15}, "consistency_id14_scores": [0, 0, 0], "ymyl_flagged": "9/12", "ymyl_on_clear": "5/7", "ymyl_on_target": "2/3"}
+HARD train ID20 CLEAN_ITEM_FLAGGED YMYL_RISK
+HARD train ID5 REQUIRED_CODE_MISSED EXPERIENCE_UNVERIFIED
+HARD train ID7 INVALID_JSON no valid JSON after allowed attempts
+HARD train12 YMYL_OVERFLAG YMYL_RISK on 5/7 clearly non-YMYL items (max 1): IDs 20,6,16,18,11
+exit=0
+
+$ diff -r evaluation <working tree>/evaluation && diff -r report <working tree>/report
+identical (recomputed metrics, CSV and HTML match the committed files byte for byte)

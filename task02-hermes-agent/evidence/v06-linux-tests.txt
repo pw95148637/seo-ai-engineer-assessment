@@ -1,0 +1,188 @@
+# task02 v0.6 offline tests in WSL2 Ubuntu 24.04
+date_utc: 2026-10-16T04:47:57Z
+kernel: Linux 6.18.54.1-microsoft-standard-WSL2 x86_64
+cwd: ~/soulo/task02-hermes (rsync copy of the Windows tree, without .runtime, runs, repository.bundle)
+note: before an empty tests/__init__.py was added, run B imported only 66 tests (errors=2: test_evaluation_v06, test_scoring).
+      Cause: hermes_env.sh puts .runtime/pinned on PYTHONPATH; its tests/__init__.py is a regular package and
+      shadowed this task's tests/ namespace directory in 'from tests.test_lessons import ...'. Run A was 81 OK before
+      and after. tests/ is not part of the plan-v06 code fingerprint, so the registered plan still verifies.
+
+## A. runbook command: python3 -m unittest discover -s tests -v (Python 3.12.3)
+test_attempt_is_logged_before_the_run_and_agent_outcomes_are_final (test_evaluation_v06.EvaluationTests.test_attempt_is_logged_before_the_run_and_agent_outcomes_are_final) ... ok
+test_failed_attempt_needs_retry_flag_and_has_a_limit (test_evaluation_v06.EvaluationTests.test_failed_attempt_needs_retry_flag_and_has_a_limit) ... ok
+test_holdout_preflight_falls_back_to_rank_two (test_evaluation_v06.EvaluationTests.test_holdout_preflight_falls_back_to_rank_two) ... ok
+test_plan_hash_and_code_fingerprint_are_enforced (test_evaluation_v06.EvaluationTests.test_plan_hash_and_code_fingerprint_are_enforced) ... ok
+test_registered_holdout_rule_on_archived_snapshots (test_evaluation_v06.EvaluationTests.test_registered_holdout_rule_on_archived_snapshots) ... ok
+test_steps_run_in_registered_order_and_r2_needs_feedback (test_evaluation_v06.EvaluationTests.test_steps_run_in_registered_order_and_r2_needs_feedback) ... ok
+test_verdict_rules (test_evaluation_v06.EvaluationTests.test_verdict_rules) ... ok
+test_writes_new_directory_and_never_touches_archive (test_evaluation_v06.SyntheticCheckTests.test_writes_new_directory_and_never_touches_archive) ... ok
+test_baseline_neither_sees_nor_writes_lessons (test_lessons.LessonTests.test_baseline_neither_sees_nor_writes_lessons) ... ok
+test_discovery_records_source_anchor_and_sitemap_misses (test_lessons.LessonTests.test_discovery_records_source_anchor_and_sitemap_misses) ... ok
+test_fetch_maps_anchor_text_to_url (test_lessons.LessonTests.test_fetch_maps_anchor_text_to_url) ... ok
+test_finish_tool_states_failed_source_rule (test_lessons.LessonTests.test_finish_tool_states_failed_source_rule) ... ok
+test_frozen_run_does_not_persist_revocation (test_lessons.LessonTests.test_frozen_run_does_not_persist_revocation) ... ok
+test_human_feedback_reaches_next_prompt_and_rejects_answers (test_lessons.LessonTests.test_human_feedback_reaches_next_prompt_and_rejects_answers) ... ok
+test_keyword_links_are_limited (test_lessons.LessonTests.test_keyword_links_are_limited) ... ok
+test_keyword_page_rule (test_lessons.LessonTests.test_keyword_page_rule) ... ok
+test_model_cannot_write_lessons (test_lessons.LessonTests.test_model_cannot_write_lessons) ... ok
+test_reverified_paths_and_repeated_failure_are_presented (test_lessons.LessonTests.test_reverified_paths_and_repeated_failure_are_presented) ... ok
+test_reverify_404_revokes_and_503_keeps_unverified (test_lessons.LessonTests.test_reverify_404_revokes_and_503_keeps_unverified) ... ok
+test_scope_host_paths_stay_home_failures_transfer_as_hint (test_lessons.LessonTests.test_scope_host_paths_stay_home_failures_transfer_as_hint) ... ok
+test_single_failure_is_candidate_and_hidden (test_lessons.LessonTests.test_single_failure_is_candidate_and_hidden) ... ok
+test_veto_is_final (test_lessons.LessonTests.test_veto_is_final) ... ok
+test_bad_ids_slashes_and_relabel_after_veto (test_lessons.ReviewRegressionTests.test_bad_ids_slashes_and_relabel_after_veto) ... ok
+test_controller_reverification_does_not_support_its_own_lesson (test_lessons.ReviewRegressionTests.test_controller_reverification_does_not_support_its_own_lesson) ... ok
+test_empty_placeholder_result_is_not_a_counterexample (test_lessons.ReviewRegressionTests.test_empty_placeholder_result_is_not_a_counterexample) ... ok
+test_failed_learning_rolls_back_everything (test_lessons.ReviewRegressionTests.test_failed_learning_rolls_back_everything) ... ok
+test_infrastructure_noise_is_not_learned (test_lessons.ReviewRegressionTests.test_infrastructure_noise_is_not_learned) ... ok
+test_listing_pages_and_xhtml (test_lessons.ReviewRegressionTests.test_listing_pages_and_xhtml) ... ok
+test_malformed_claim_is_a_schema_rejection (test_lessons.ReviewRegressionTests.test_malformed_claim_is_a_schema_rejection) ... ok
+test_page_text_cannot_name_a_lesson (test_lessons.ReviewRegressionTests.test_page_text_cannot_name_a_lesson) ... ok
+test_stale_candidate_expires_before_counting (test_lessons.ReviewRegressionTests.test_stale_candidate_expires_before_counting) ... ok
+test_veto_survives_counterexample_and_feedback_edge_cases (test_lessons.ReviewRegressionTests.test_veto_survives_counterexample_and_feedback_edge_cases) ... ok
+test_vetoed_discovery_stays_vetoed (test_lessons.ReviewRegressionTests.test_vetoed_discovery_stays_vetoed) ... ok
+test_compact_return_keeps_full_verified_snapshot (test_presentation.PresentationTests.test_compact_return_keeps_full_verified_snapshot) ... ok
+test_default_evidence_marks_truncation (test_presentation.PresentationTests.test_default_evidence_marks_truncation) ... ok
+test_focused_evidence_reaches_past_initial_html_prefix (test_presentation.PresentationTests.test_focused_evidence_reaches_past_initial_html_prefix) ... ok
+test_invalid_query_cannot_trigger_extra_fetch (test_presentation.PresentationTests.test_invalid_query_cannot_trigger_extra_fetch) ... ok
+test_optional_evidence_query_and_required_search_query (test_presentation.PresentationTests.test_optional_evidence_query_and_required_search_query) ... ok
+test_403_saved_no_retry (test_research_core.CoreTests.test_403_saved_no_retry) ... ok
+test_429_no_retry (test_research_core.CoreTests.test_429_no_retry) ... ok
+test_closed_and_crossrun (test_research_core.CoreTests.test_closed_and_crossrun) ... ok
+test_expiry_and_counterexample (test_research_core.CoreTests.test_expiry_and_counterexample) ... ok
+test_fake_citation (test_research_core.CoreTests.test_fake_citation) ... ok
+test_holdout_no_learning (test_research_core.CoreTests.test_holdout_no_learning) ... ok
+test_injection_is_data (test_research_core.CoreTests.test_injection_is_data) ... ok
+test_memory_changes_decision_after_verified_runs (test_research_core.CoreTests.test_memory_changes_decision_after_verified_runs) ... ok
+test_private_dns (test_research_core.CoreTests.test_private_dns) ... ok
+test_redirect_to_other_host (test_research_core.CoreTests.test_redirect_to_other_host) ... ok
+test_request_budget_includes_robots (test_research_core.CoreTests.test_request_budget_includes_robots) ... ok
+test_robots_disallow (test_research_core.CoreTests.test_robots_disallow) ... ok
+test_robots_unknown (test_research_core.CoreTests.test_robots_unknown) ... ok
+test_size_budget (test_research_core.CoreTests.test_size_budget) ... ok
+test_tampered_snapshot (test_research_core.CoreTests.test_tampered_snapshot) ... ok
+test_time_budget (test_research_core.CoreTests.test_time_budget) ... ok
+test_timeout (test_research_core.CoreTests.test_timeout) ... ok
+test_tool_budget (test_research_core.CoreTests.test_tool_budget) ... ok
+test_xml_entity (test_research_core.CoreTests.test_xml_entity) ... ok
+test_no_proxy_fails_on_dns_unavailable (test_research_core.ProxyDNSTests.test_no_proxy_fails_on_dns_unavailable) ... ok
+test_proxy_can_resolve_operator_approved_host (test_research_core.ProxyDNSTests.test_proxy_can_resolve_operator_approved_host) ... ok
+test_extra_shell_blocks (test_runner.RunnerTests.test_extra_shell_blocks) ... ok
+test_logged_out_stops_before_model (test_runner.RunnerTests.test_logged_out_stops_before_model) ... ok
+test_model_text_without_tools_cannot_pass (test_runner.RunnerTests.test_model_text_without_tools_cannot_pass) ... ok
+test_nested_h1_is_extracted (test_runner.RunnerTests.test_nested_h1_is_extracted) ... ok
+test_partial_cannot_be_success (test_runner.RunnerTests.test_partial_cannot_be_success) ... ok
+test_quota_blocks (test_runner.RunnerTests.test_quota_blocks) ... ok
+test_report_plus_tools_can_complete (test_runner.RunnerTests.test_report_plus_tools_can_complete) ... ok
+test_smoke_needs_tool_not_full_report (test_runner.RunnerTests.test_smoke_needs_tool_not_full_report) ... ok
+test_text_without_report_cannot_pass_research (test_runner.RunnerTests.test_text_without_report_cannot_pass_research) ... ok
+test_archived_v05_runs_reproduce_recorded_facts (test_scoring.ScoringTests.test_archived_v05_runs_reproduce_recorded_facts) ... ok
+test_blind_packet_hides_arm_and_copies_sources (test_scoring.ScoringTests.test_blind_packet_hides_arm_and_copies_sources) ... ok
+test_controller_reverification_is_not_a_model_read (test_scoring.ScoringTests.test_controller_reverification_is_not_a_model_read) ... ok
+test_empty_placeholder_search_counts_as_failed (test_scoring.ScoringTests.test_empty_placeholder_search_counts_as_failed) ... ok
+test_gated_call_does_not_erase_previous_read (test_scoring.ScoringTests.test_gated_call_does_not_erase_previous_read) ... ok
+test_late_finish_and_failed_evidence_read_do_not_rewrite_the_record (test_scoring.ScoringTests.test_late_finish_and_failed_evidence_read_do_not_rewrite_the_record) ... ok
+test_scores_coverage_cost_and_failures (test_scoring.ScoringTests.test_scores_coverage_cost_and_failures) ... ok
+test_stale_check_reads_expiry (test_scoring.ScoringTests.test_stale_check_reads_expiry) ... ok
+test_stale_presentation_is_detected_from_history (test_scoring.ScoringTests.test_stale_presentation_is_detected_from_history) ... ok
+test_failure_not_promoted_as_direct_evidence (test_search.SearchTests.test_failure_not_promoted_as_direct_evidence) ... ok
+test_index_evidence_distinct_and_hash_verified (test_search.SearchTests.test_index_evidence_distinct_and_hash_verified) ... ok
+test_missing_provider_no_network (test_search.SearchTests.test_missing_provider_no_network) ... ok
+test_search_budget (test_search.SearchTests.test_search_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 81 tests in 17.489s
+
+OK
+
+## B. Hermes environment: source scripts/hermes_env.sh; python -m unittest discover -s tests -v
+python: Python 3.14.7 from .runtime/tools
+test_attempt_is_logged_before_the_run_and_agent_outcomes_are_final (test_evaluation_v06.EvaluationTests.test_attempt_is_logged_before_the_run_and_agent_outcomes_are_final) ... ok
+test_failed_attempt_needs_retry_flag_and_has_a_limit (test_evaluation_v06.EvaluationTests.test_failed_attempt_needs_retry_flag_and_has_a_limit) ... ok
+test_holdout_preflight_falls_back_to_rank_two (test_evaluation_v06.EvaluationTests.test_holdout_preflight_falls_back_to_rank_two) ... ok
+test_plan_hash_and_code_fingerprint_are_enforced (test_evaluation_v06.EvaluationTests.test_plan_hash_and_code_fingerprint_are_enforced) ... ok
+test_registered_holdout_rule_on_archived_snapshots (test_evaluation_v06.EvaluationTests.test_registered_holdout_rule_on_archived_snapshots) ... ok
+test_steps_run_in_registered_order_and_r2_needs_feedback (test_evaluation_v06.EvaluationTests.test_steps_run_in_registered_order_and_r2_needs_feedback) ... ok
+test_verdict_rules (test_evaluation_v06.EvaluationTests.test_verdict_rules) ... ok
+test_writes_new_directory_and_never_touches_archive (test_evaluation_v06.SyntheticCheckTests.test_writes_new_directory_and_never_touches_archive) ... ok
+test_baseline_neither_sees_nor_writes_lessons (test_lessons.LessonTests.test_baseline_neither_sees_nor_writes_lessons) ... ok
+test_discovery_records_source_anchor_and_sitemap_misses (test_lessons.LessonTests.test_discovery_records_source_anchor_and_sitemap_misses) ... ok
+test_fetch_maps_anchor_text_to_url (test_lessons.LessonTests.test_fetch_maps_anchor_text_to_url) ... ok
+test_finish_tool_states_failed_source_rule (test_lessons.LessonTests.test_finish_tool_states_failed_source_rule) ... ok
+test_frozen_run_does_not_persist_revocation (test_lessons.LessonTests.test_frozen_run_does_not_persist_revocation) ... ok
+test_human_feedback_reaches_next_prompt_and_rejects_answers (test_lessons.LessonTests.test_human_feedback_reaches_next_prompt_and_rejects_answers) ... ok
+test_keyword_links_are_limited (test_lessons.LessonTests.test_keyword_links_are_limited) ... ok
+test_keyword_page_rule (test_lessons.LessonTests.test_keyword_page_rule) ... ok
+test_model_cannot_write_lessons (test_lessons.LessonTests.test_model_cannot_write_lessons) ... ok
+test_reverified_paths_and_repeated_failure_are_presented (test_lessons.LessonTests.test_reverified_paths_and_repeated_failure_are_presented) ... ok
+test_reverify_404_revokes_and_503_keeps_unverified (test_lessons.LessonTests.test_reverify_404_revokes_and_503_keeps_unverified) ... ok
+test_scope_host_paths_stay_home_failures_transfer_as_hint (test_lessons.LessonTests.test_scope_host_paths_stay_home_failures_transfer_as_hint) ... ok
+test_single_failure_is_candidate_and_hidden (test_lessons.LessonTests.test_single_failure_is_candidate_and_hidden) ... ok
+test_veto_is_final (test_lessons.LessonTests.test_veto_is_final) ... ok
+test_bad_ids_slashes_and_relabel_after_veto (test_lessons.ReviewRegressionTests.test_bad_ids_slashes_and_relabel_after_veto) ... ok
+test_controller_reverification_does_not_support_its_own_lesson (test_lessons.ReviewRegressionTests.test_controller_reverification_does_not_support_its_own_lesson) ... ok
+test_empty_placeholder_result_is_not_a_counterexample (test_lessons.ReviewRegressionTests.test_empty_placeholder_result_is_not_a_counterexample) ... ok
+test_failed_learning_rolls_back_everything (test_lessons.ReviewRegressionTests.test_failed_learning_rolls_back_everything) ... ok
+test_infrastructure_noise_is_not_learned (test_lessons.ReviewRegressionTests.test_infrastructure_noise_is_not_learned) ... ok
+test_listing_pages_and_xhtml (test_lessons.ReviewRegressionTests.test_listing_pages_and_xhtml) ... ok
+test_malformed_claim_is_a_schema_rejection (test_lessons.ReviewRegressionTests.test_malformed_claim_is_a_schema_rejection) ... ok
+test_page_text_cannot_name_a_lesson (test_lessons.ReviewRegressionTests.test_page_text_cannot_name_a_lesson) ... ok
+test_stale_candidate_expires_before_counting (test_lessons.ReviewRegressionTests.test_stale_candidate_expires_before_counting) ... ok
+test_veto_survives_counterexample_and_feedback_edge_cases (test_lessons.ReviewRegressionTests.test_veto_survives_counterexample_and_feedback_edge_cases) ... ok
+test_vetoed_discovery_stays_vetoed (test_lessons.ReviewRegressionTests.test_vetoed_discovery_stays_vetoed) ... ok
+test_compact_return_keeps_full_verified_snapshot (test_presentation.PresentationTests.test_compact_return_keeps_full_verified_snapshot) ... ok
+test_default_evidence_marks_truncation (test_presentation.PresentationTests.test_default_evidence_marks_truncation) ... ok
+test_focused_evidence_reaches_past_initial_html_prefix (test_presentation.PresentationTests.test_focused_evidence_reaches_past_initial_html_prefix) ... ok
+test_invalid_query_cannot_trigger_extra_fetch (test_presentation.PresentationTests.test_invalid_query_cannot_trigger_extra_fetch) ... ok
+test_optional_evidence_query_and_required_search_query (test_presentation.PresentationTests.test_optional_evidence_query_and_required_search_query) ... ok
+test_403_saved_no_retry (test_research_core.CoreTests.test_403_saved_no_retry) ... ok
+test_429_no_retry (test_research_core.CoreTests.test_429_no_retry) ... ok
+test_closed_and_crossrun (test_research_core.CoreTests.test_closed_and_crossrun) ... ok
+test_expiry_and_counterexample (test_research_core.CoreTests.test_expiry_and_counterexample) ... ok
+test_fake_citation (test_research_core.CoreTests.test_fake_citation) ... ok
+test_holdout_no_learning (test_research_core.CoreTests.test_holdout_no_learning) ... ok
+test_injection_is_data (test_research_core.CoreTests.test_injection_is_data) ... ok
+test_memory_changes_decision_after_verified_runs (test_research_core.CoreTests.test_memory_changes_decision_after_verified_runs) ... ok
+test_private_dns (test_research_core.CoreTests.test_private_dns) ... ok
+test_redirect_to_other_host (test_research_core.CoreTests.test_redirect_to_other_host) ... ok
+test_request_budget_includes_robots (test_research_core.CoreTests.test_request_budget_includes_robots) ... ok
+test_robots_disallow (test_research_core.CoreTests.test_robots_disallow) ... ok
+test_robots_unknown (test_research_core.CoreTests.test_robots_unknown) ... ok
+test_size_budget (test_research_core.CoreTests.test_size_budget) ... ok
+test_tampered_snapshot (test_research_core.CoreTests.test_tampered_snapshot) ... ok
+test_time_budget (test_research_core.CoreTests.test_time_budget) ... ok
+test_timeout (test_research_core.CoreTests.test_timeout) ... ok
+test_tool_budget (test_research_core.CoreTests.test_tool_budget) ... ok
+test_xml_entity (test_research_core.CoreTests.test_xml_entity) ... ok
+test_no_proxy_fails_on_dns_unavailable (test_research_core.ProxyDNSTests.test_no_proxy_fails_on_dns_unavailable) ... ok
+test_proxy_can_resolve_operator_approved_host (test_research_core.ProxyDNSTests.test_proxy_can_resolve_operator_approved_host) ... ok
+test_extra_shell_blocks (test_runner.RunnerTests.test_extra_shell_blocks) ... ok
+test_logged_out_stops_before_model (test_runner.RunnerTests.test_logged_out_stops_before_model) ... ok
+test_model_text_without_tools_cannot_pass (test_runner.RunnerTests.test_model_text_without_tools_cannot_pass) ... ok
+test_nested_h1_is_extracted (test_runner.RunnerTests.test_nested_h1_is_extracted) ... ok
+test_partial_cannot_be_success (test_runner.RunnerTests.test_partial_cannot_be_success) ... ok
+test_quota_blocks (test_runner.RunnerTests.test_quota_blocks) ... ok
+test_report_plus_tools_can_complete (test_runner.RunnerTests.test_report_plus_tools_can_complete) ... ok
+test_smoke_needs_tool_not_full_report (test_runner.RunnerTests.test_smoke_needs_tool_not_full_report) ... ok
+test_text_without_report_cannot_pass_research (test_runner.RunnerTests.test_text_without_report_cannot_pass_research) ... ok
+test_archived_v05_runs_reproduce_recorded_facts (test_scoring.ScoringTests.test_archived_v05_runs_reproduce_recorded_facts) ... ok
+test_blind_packet_hides_arm_and_copies_sources (test_scoring.ScoringTests.test_blind_packet_hides_arm_and_copies_sources) ... ok
+test_controller_reverification_is_not_a_model_read (test_scoring.ScoringTests.test_controller_reverification_is_not_a_model_read) ... ok
+test_empty_placeholder_search_counts_as_failed (test_scoring.ScoringTests.test_empty_placeholder_search_counts_as_failed) ... ok
+test_gated_call_does_not_erase_previous_read (test_scoring.ScoringTests.test_gated_call_does_not_erase_previous_read) ... ok
+test_late_finish_and_failed_evidence_read_do_not_rewrite_the_record (test_scoring.ScoringTests.test_late_finish_and_failed_evidence_read_do_not_rewrite_the_record) ... ok
+test_scores_coverage_cost_and_failures (test_scoring.ScoringTests.test_scores_coverage_cost_and_failures) ... ok
+test_stale_check_reads_expiry (test_scoring.ScoringTests.test_stale_check_reads_expiry) ... ok
+test_stale_presentation_is_detected_from_history (test_scoring.ScoringTests.test_stale_presentation_is_detected_from_history) ... ok
+test_failure_not_promoted_as_direct_evidence (test_search.SearchTests.test_failure_not_promoted_as_direct_evidence) ... ok
+test_index_evidence_distinct_and_hash_verified (test_search.SearchTests.test_index_evidence_distinct_and_hash_verified) ... ok
+test_missing_provider_no_network (test_search.SearchTests.test_missing_provider_no_network) ... ok
+test_search_budget (test_search.SearchTests.test_search_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 81 tests in 21.762s
+
+OK
+
+## plan verify: python3 scripts/evaluate_v06.py --verify
+{"ok": true, "plan_sha256": "90f562aa9f4426926a24a179add2dd661b98f76c61a8e08d73338719cafbb849", "holdout": "casinobase.tw", "done": []}

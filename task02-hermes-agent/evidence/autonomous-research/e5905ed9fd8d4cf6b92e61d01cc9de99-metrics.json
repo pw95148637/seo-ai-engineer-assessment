@@ -1,0 +1,107 @@
+{
+  "run_id": "e5905ed9fd8d4cf6b92e61d01cc9de99",
+  "state": "research_complete",
+  "exit_code": 0,
+  "model_attempted": true,
+  "successful_api_calls": 9,
+  "report_submitted": true,
+  "usage": {
+    "model": "gpt-6.1-sol",
+    "provider": "openai-codex",
+    "session_prompt_tokens": 478987,
+    "session_completion_tokens": 5719,
+    "session_total_tokens": 484706,
+    "session_api_calls": 9,
+    "session_estimated_cost_usd": 0.0,
+    "session_cost_status": "included",
+    "note": "Estimate is not billed subscription cost; no paid API provider selected."
+  },
+  "requests": 11,
+  "searches": 5,
+  "tool_calls": 24,
+  "tool_errors": 1,
+  "claim_count": 9,
+  "current_sources": [
+    {
+      "url": "https://2030.tw/",
+      "status": 200,
+      "sha256": "800c380050093859727cdd7bb58581a691b9033822fc452b9f16d67c3414ec1d"
+    },
+    {
+      "url": "https://2030.tw/2kapb2a/",
+      "status": 200,
+      "sha256": "f35c6f5dfac5c8c8c539cf09959e3d5d4077a356070b97d8ded0a7cd97d43d52"
+    },
+    {
+      "url": "https://2030.tw/article/sports-everywhere-49-tzyy-yuang-shiang/",
+      "status": 200,
+      "sha256": "9001086702928fdd0bd3c4f8a0f5c11383c3fd997152bd4ed82667adf496b3b9"
+    },
+    {
+      "url": "https://2030.tw/category-sitemap.xml",
+      "status": 200,
+      "sha256": "73f29e73435aaf62eda33bd4a512f79aa4ca156e654f57cd94e44d4e07ea06b5"
+    },
+    {
+      "url": "https://2030.tw/page-sitemap.xml",
+      "status": 200,
+      "sha256": "3426ef9d9961c399262c19e6e17c7775fd7987918829c129d00617970dbbbe65"
+    },
+    {
+      "url": "https://2030.tw/post-sitemap1.xml",
+      "status": 200,
+      "sha256": "fb5e7fb970e98742b4cd542412345ae28a73353b34f91afa14125e6bed52e2ad"
+    },
+    {
+      "url": "https://2030.tw/robots.txt",
+      "status": 200,
+      "sha256": "c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a"
+    },
+    {
+      "url": "https://2030.tw/robots.txt",
+      "status": 200,
+      "sha256": "c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a"
+    },
+    {
+      "url": "https://2030.tw/sample-page/",
+      "status": 200,
+      "sha256": "b30d1be9f37b0a4bc1be79685f99dd1e750a54ca02ac369b23c4592d86fe0bf6"
+    },
+    {
+      "url": "https://2030.tw/sitemap_index.xml",
+      "status": 200,
+      "sha256": "c2b1cbd2d15813b603973f68aac53e5548a063e62ad7b6d0bf46de55f93b883e"
+    },
+    {
+      "url": "https://2030.tw/taiwanplus/mlb-live-20261016-tb-vs-cle/",
+      "status": 200,
+      "sha256": "8d88a4ddc88b6c64c72fff7aeed5cac52a335e5e9f009306adbbd9b1ab4f2995"
+    },
+    {
+      "url": "search:ddgs",
+      "status": 503,
+      "sha256": "5bd0413fea51a9a77dffc59257e4557ce68cf507ffbf81d76b2f2d4a72b993b0"
+    },
+    {
+      "url": "search:ddgs",
+      "status": 200,
+      "sha256": "5a0fd7804fb23be99c648f12a9aeabb85cd8151aab841bb21636f96e81511fad"
+    },
+    {
+      "url": "search:ddgs",
+      "status": 503,
+      "sha256": "5bd0413fea51a9a77dffc59257e4557ce68cf507ffbf81d76b2f2d4a72b993b0"
+    },
+    {
+      "url": "search:ddgs",
+      "status": 503,
+      "sha256": "5bd0413fea51a9a77dffc59257e4557ce68cf507ffbf81d76b2f2d4a72b993b0"
+    },
+    {
+      "url": "search:ddgs",
+      "status": 200,
+      "sha256": "48dcf88a31998a54b78cf99ea5c4687a98d323870559c7cab9cb3a55d27fbc13"
+    }
+  ],
+  "observations_after": 1
+}

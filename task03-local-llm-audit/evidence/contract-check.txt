@@ -1,0 +1,9 @@
+markdown REJECT JSONDecodeError
+out_of_range REJECT ValidationError
+boolean_score REJECT ValidationError
+extra_field REJECT ValidationError
+missing_advice REJECT ValidationError
+wrong_quote REJECT ValueError
+unknown_source REJECT ValueError
+duplicate_key REJECT ValueError
+PASS: 1 valid, 8 invalid rejected. Synthetic checks, not model results.

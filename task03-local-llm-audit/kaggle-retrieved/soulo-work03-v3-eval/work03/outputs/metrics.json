@@ -1,0 +1,26 @@
+{
+  "n": 8,
+  "first_pass_json_valid": 8,
+  "final_json_valid": 8,
+  "first_pass_json_rate": 1.0,
+  "final_json_rate": 1.0,
+  "note": "Contract validity (schema, quotes, sources, Score within the highest-severity band) is not diagnostic accuracy",
+  "auto_flag_counts": {
+    "hard:FALSE_EXPERIENCE": 1,
+    "soft:MANY_SOURCES": 1
+  },
+  "auto_flag_note": "Heuristics fixed before holdout was read (post-freeze checker fix declared in freeze_decision.json), not accuracy",
+  "base": {
+    "n": 8,
+    "first_pass_json_valid": 8,
+    "final_json_valid": 8,
+    "first_pass_json_rate": 1.0,
+    "final_json_rate": 1.0,
+    "note": "Same prompt, greedy decoding and repair rule without the adapter: comparison only, not the frozen system",
+    "auto_flag_counts": {
+      "soft:ADVICE_PADDING": 1,
+      "hard:FALSE_EXPERIENCE": 1,
+      "soft:MANY_SOURCES": 1
+    }
+  }
+}

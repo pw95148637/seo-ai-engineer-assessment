@@ -1,0 +1,106 @@
+{
+  "global_step": 6,
+  "changed_adapter_tensors": 144,
+  "metrics": {
+    "train_runtime": 134.4877,
+    "train_samples_per_second": 0.178,
+    "train_steps_per_second": 0.045,
+    "total_flos": 1381176459264000,
+    "train_loss": 2.4975620905558267,
+    "epoch": 2
+  },
+  "logs": [
+    {
+      "loss": 2.6474,
+      "grad_norm": 2.226278305053711,
+      "learning_rate": 0.0001,
+      "epoch": 0.3333333333333333,
+      "step": 1
+    },
+    {
+      "loss": 2.5347,
+      "grad_norm": 2.2534687519073486,
+      "learning_rate": 8.333333333333334e-05,
+      "epoch": 0.6666666666666666,
+      "step": 2
+    },
+    {
+      "loss": 2.6193,
+      "grad_norm": 2.1781723499298096,
+      "learning_rate": 6.666666666666667e-05,
+      "epoch": 1,
+      "step": 3
+    },
+    {
+      "loss": 2.4584,
+      "grad_norm": 1.9806702136993408,
+      "learning_rate": 5e-05,
+      "epoch": 1.3333333333333333,
+      "step": 4
+    },
+    {
+      "loss": 2.1906,
+      "grad_norm": 1.9282350540161133,
+      "learning_rate": 3.3333333333333335e-05,
+      "epoch": 1.6666666666666665,
+      "step": 5
+    },
+    {
+      "loss": 2.5349,
+      "grad_norm": 2.478599786758423,
+      "learning_rate": 1.6666666666666667e-05,
+      "epoch": 2,
+      "step": 6
+    },
+    {
+      "train_runtime": 134.4877,
+      "train_samples_per_second": 0.178,
+      "train_steps_per_second": 0.045,
+      "total_flos": 1381176459264000,
+      "train_loss": 2.4975620905558267,
+      "epoch": 2,
+      "step": 6
+    }
+  ],
+  "train_ids": [
+    "20",
+    "6",
+    "15",
+    "5",
+    "10",
+    "14",
+    "16",
+    "19",
+    "7",
+    "13",
+    "18",
+    "11"
+  ],
+  "lengths": [
+    1217,
+    1266,
+    1291,
+    1269,
+    1286,
+    1273,
+    1240,
+    1262,
+    1275,
+    1277,
+    1276,
+    1268
+  ],
+  "targets_sha256": "d70c4aeb371c9ea137dbf5efec0f207aca5c2018a1bf9cede36437b1995a1e61",
+  "config": {
+    "model_id": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "max_length": 3072,
+    "context_limit": 4096,
+    "max_new_tokens": 768,
+    "epochs": 2,
+    "learning_rate": 0.0001,
+    "seed": 42,
+    "status": "Initial train-only configuration; GPU feasibility pending. No holdout-based changes."
+  },
+  "claim": "Actual training, not proof of generalization"
+}

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+.deps/
+.venv/
+evidence/runtime*/
+.codex-cli/
+# Claude CLI runs carry no API key or credential; keep them as delivery evidence.
+!evidence/runtime-claude-*/

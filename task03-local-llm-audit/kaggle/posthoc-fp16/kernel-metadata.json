@@ -1,0 +1,20 @@
+{
+  "id": "pw95148637/soulo-work03-posthoc-fp16",
+  "title": "Soulo Work03 Posthoc FP16",
+  "code_file": "work03_posthoc.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "machine_shape": "NvidiaTeslaT4",
+  "competition_sources": [],
+  "model_sources": [],
+  "dataset_sources": [
+    "pw95148637/soulo-work03-isolated-holdout8"
+  ],
+  "kernel_sources": [
+    "pw95148637/soulo-work03-v3b-train"
+  ]
+}

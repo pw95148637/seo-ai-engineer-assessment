@@ -1,0 +1,30 @@
+{
+  "090d399d": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "off_page_supported_known": 1,
+    "coverage": {"on_page": 2, "off_page": 1, "actionable": 2, "epistemic": 2},
+    "notes": "站內面完整：內容、首頁→/wordcup/→目標頁內鏈、canonical/robots、兩詞對應都有涵蓋，11 項主張逐一核對都成立；站外只讀到股票代碼 2030.TW 的陰性樣本，沒有實際讀到品牌提及或入站連結，off_page 給 1。行動逐項附優先序、對應發現與驗收方式。"
+  },
+  "8227d5ec": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "off_page_supported_known": 1,
+    "coverage": {"on_page": 1, "off_page": 1, "actionable": 2, "epistemic": 2},
+    "notes": "主張全部核對成立，「查看評價」全部連到外站、攻略卡片連到 Google 首頁、優惠條件前後不一等發現都扎實；但全篇沒有回報任何技術訊號（canonical、robots、sitemap 都沒提），on_page 給 1。站外只有同名陰性樣本，其中 casinobase.com 的快照只是一段 JS 轉址，沒有取得頁面內容。"
+  },
+  "9633dd5a": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "off_page_supported_known": 1,
+    "coverage": {"on_page": 2, "off_page": 2, "actionable": 2, "epistemic": 2},
+    "notes": "四份中唯一以實際讀取的站外頁佐證品牌提及的報告（MaxePro，附上下文，並區分提及與連結），off_page 給 2。不過 claim:8 寫「未出現2030.tw網域」與快照不符：該 blockquote 帶 cite=\"https://2030.tw/b5g/\"。cite 不是可點擊的連結，「未確認入站連結」的結論仍成立，因此記為部分支持，未計入 unsupported。"
+  },
+  "a600ecd2": {
+    "unsupported": 1,
+    "scope_error": 0,
+    "off_page_supported_known": 1,
+    "coverage": {"on_page": 2, "off_page": 1, "actionable": 2, "epistemic": 2},
+    "notes": "技術訊號涵蓋最完整：三頁 canonical、robots.txt，以及只列首頁的 sitemap。claim:3 把頒獎台版型的 DOM 順序誤讀成「9.2 分排在 9.4 分前」的一致性疑點，但快照中有春卡片標 alt=\"rank 1\"，CSS order 也直接反駁這點，計 1 項 unsupported。站外只有兩個陰性樣本，off_page 給 1。"
+  }
+}

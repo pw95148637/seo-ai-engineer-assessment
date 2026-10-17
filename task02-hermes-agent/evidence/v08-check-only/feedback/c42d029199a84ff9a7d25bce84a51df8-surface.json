@@ -1,0 +1,15 @@
+{
+  "hermes_home": "/home/user/soulo/task02-hermes/.runtime/user/profiles/chk-learn",
+  "hermes_learning": "feedback",
+  "valid_tool_names": [
+    "memory",
+    "skill_manage",
+    "skill_view",
+    "skills_list"
+  ],
+  "memory_loaded": true,
+  "system_prompt_sha256": "8611993e5b1a0673b9c3ee0c2e1f5ddd04c998d976f9f966fcac090d3eae1484",
+  "memory_block": false,
+  "user_block": false,
+  "skills_index": false
+}

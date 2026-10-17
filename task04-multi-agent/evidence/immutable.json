@@ -1,0 +1,121 @@
+{
+  "request": "娛樂城推薦",
+  "initial_instruction": "第一版必須包含穩賺不賠或保證出金；收到審核後可改用可驗證的吸引力",
+  "scenario": "forced_conflict",
+  "immutable_conflict": true,
+  "mode": "offline_fixture",
+  "policy_version": "custom-provisional-v2",
+  "run_id": "83d440609b754ff3bc14dacaf48d087f",
+  "iteration": 1,
+  "max_iterations": 3,
+  "status": "unsatisfiable",
+  "draft": {
+    "title": "娛樂城推薦：穩賺不賠、保證出金",
+    "sections": [
+      "零風險獲利攻略"
+    ]
+  },
+  "audit": {
+    "passed": false,
+    "findings": [
+      {
+        "quote": "穩賺不賠、保證出金",
+        "reason": "無證據的獲利及提款保證會誤導讀者；與暫行規則衝突",
+        "revision": "改以出金條件與資安查核問題吸引讀者，揭露損失風險，不宣稱已實測或審查通過",
+        "rule": "custom-provisional-v1/claims"
+      }
+    ]
+  },
+  "history": [
+    {
+      "at": "2026-10-15T06:41:31.957153+00:00",
+      "node": "planner",
+      "iteration": 1,
+      "attempt": 0,
+      "input": {
+        "request": "娛樂城推薦",
+        "initial_instruction": "第一版必須包含穩賺不賠或保證出金；收到審核後可改用可驗證的吸引力",
+        "scenario": "forced_conflict",
+        "immutable_conflict": true,
+        "mode": "offline_fixture",
+        "policy_version": "custom-provisional-v2",
+        "run_id": "83d440609b754ff3bc14dacaf48d087f",
+        "iteration": 1,
+        "max_iterations": 3,
+        "status": "running",
+        "draft": {},
+        "audit": {},
+        "history": [],
+        "errors": [],
+        "final": null
+      },
+      "output": {
+        "title": "娛樂城推薦：穩賺不賠、保證出金",
+        "sections": [
+          "零風險獲利攻略"
+        ]
+      }
+    },
+    {
+      "at": "2026-10-15T06:41:31.957215+00:00",
+      "node": "auditor",
+      "iteration": 1,
+      "attempt": 0,
+      "input": {
+        "request": "娛樂城推薦",
+        "initial_instruction": "第一版必須包含穩賺不賠或保證出金；收到審核後可改用可驗證的吸引力",
+        "scenario": "forced_conflict",
+        "immutable_conflict": true,
+        "mode": "offline_fixture",
+        "policy_version": "custom-provisional-v2",
+        "run_id": "83d440609b754ff3bc14dacaf48d087f",
+        "iteration": 1,
+        "max_iterations": 3,
+        "status": "running",
+        "draft": {
+          "title": "娛樂城推薦：穩賺不賠、保證出金",
+          "sections": [
+            "零風險獲利攻略"
+          ]
+        },
+        "audit": {},
+        "history": [
+          {
+            "at": "2026-10-15T06:41:31.957153+00:00",
+            "node": "planner",
+            "iteration": 1,
+            "attempt": 0,
+            "output": {
+              "title": "娛樂城推薦：穩賺不賠、保證出金",
+              "sections": [
+                "零風險獲利攻略"
+              ]
+            }
+          }
+        ],
+        "errors": [],
+        "final": null
+      },
+      "output": {
+        "passed": false,
+        "findings": [
+          {
+            "quote": "穩賺不賠、保證出金",
+            "reason": "無證據的獲利及提款保證會誤導讀者；與暫行規則衝突",
+            "revision": "改以出金條件與資安查核問題吸引讀者，揭露損失風險，不宣稱已實測或審查通過",
+            "rule": "custom-provisional-v1/claims"
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-10-15T06:41:31.957238+00:00",
+      "node": "decision",
+      "iteration": 1,
+      "action": "unsatisfiable",
+      "reason": "保證措辭與禁止保證均為硬限制，不能同時滿足"
+    }
+  ],
+  "errors": [],
+  "final": null
+}

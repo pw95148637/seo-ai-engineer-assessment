@@ -1,0 +1,18 @@
+{
+  "before": {
+    "homes": {
+      "v08-c1-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-c2-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l1-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l2-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-n": "130f9361718fc271d0f0923ec54ccde2c1757747d2143133dc5c479bde613dab"
+    },
+    "root_learned": [],
+    "user_hermes": null
+  },
+  "own": "v08-n",
+  "expected": null,
+  "ledger_before": "1ce40fcd5f33348b81553cc233e4d5f922cd112b41a23aff660d47ac7f3dd6a6",
+  "ledger_after": "1ce40fcd5f33348b81553cc233e4d5f922cd112b41a23aff660d47ac7f3dd6a6",
+  "problems": []
+}

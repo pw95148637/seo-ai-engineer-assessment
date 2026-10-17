@@ -1,0 +1,56 @@
+test_adopted_own_and_kept (test_balance_v7.BalanceAnalysisTests.test_adopted_own_and_kept) ... ok
+test_text_from_planner_note_is_not_credited_to_auditor (test_balance_v7.BalanceAnalysisTests.test_text_from_planner_note_is_not_credited_to_auditor) ... ok
+test_v6_formal_run_baseline (test_balance_v7.BalanceAnalysisTests.test_v6_formal_run_baseline) ... ok
+test_auditor_gives_direction_not_copy (test_balance_v7.PromptV7Tests.test_auditor_gives_direction_not_copy) ... ok
+test_first_round_keeps_the_verbatim_demand_but_no_fallback (test_balance_v7.PromptV7Tests.test_first_round_keeps_the_verbatim_demand_but_no_fallback) ... ok
+test_no_example_answers_from_the_task_in_prompts (test_balance_v7.PromptV7Tests.test_no_example_answers_from_the_task_in_prompts) ... ok
+test_planner_still_has_no_rulebook (test_balance_v7.PromptV7Tests.test_planner_still_has_no_rulebook) ... ok
+test_v6_prompts_are_untouched (test_balance_v7.PromptV7Tests.test_v6_prompts_are_untouched) ... ok
+test_v7_outputs_pass_the_unchanged_workflow_validation (test_balance_v7.PromptV7Tests.test_v7_outputs_pass_the_unchanged_workflow_validation) ... ok
+test_runner_uses_v7_prompts_and_records_them (test_balance_v7.RunnerV7Tests.test_runner_uses_v7_prompts_and_records_them) ... Executing <Task pending name='Task-2' coro=<RunnerV7Tests.test_runner_uses_v7_prompts_and_records_them() running at C:\Users\user\Desktop\SEO\tasks\task04-multi-agent\test_balance_v7.py:109> wait_for=<Future pending cb=[Task.task_wakeup()] created at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py:459> cb=[_run_until_complete_cb() at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py:181] created at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py:101> took 0.241 seconds
+ok
+test_canonical_conflict_case (test_case_input.CaseTests.test_canonical_conflict_case) ... ok
+test_other_case_contracts (test_case_input.CaseTests.test_other_case_contracts) ... ok
+test_planner_does_not_receive_rulebook (test_case_input.CaseTests.test_planner_does_not_receive_rulebook) ... ok
+test_sources_resolve (test_case_input.CaseTests.test_sources_resolve) ... ok
+test_raw_outputs_match_offline_state (test_case_input.RawEvidenceTests.test_raw_outputs_match_offline_state) ... ok
+test_tampered_state_fails (test_case_input.RawEvidenceTests.test_tampered_state_fails) ... ok
+test_full_runner_saves_canonical_input_and_summary (test_case_input.RunnerTests.test_full_runner_saves_canonical_input_and_summary) ... ok
+test_invalid_output_not_retried (test_claude_adapter.ClaudeAdapterTests.test_invalid_output_not_retried) ... ok
+test_isolation_check_uses_largest_single_request (test_claude_adapter.ClaudeAdapterTests.test_isolation_check_uses_largest_single_request) ... ok
+test_runner_end_to_end_with_isolated_env (test_claude_adapter.ClaudeAdapterTests.test_runner_end_to_end_with_isolated_env) ... Executing <Task pending name='Task-46' coro=<ClaudeAdapterTests.test_runner_end_to_end_with_isolated_env() running at C:\Users\user\Desktop\SEO\tasks\task04-multi-agent\test_claude_adapter.py:61> wait_for=<Future pending cb=[Task.task_wakeup()] created at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py:459> cb=[_run_until_complete_cb() at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py:181] created at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py:101> took 0.317 seconds
+ok
+test_timeout_kills_cli_process (test_claude_adapter.ClaudeAdapterTests.test_timeout_kills_cli_process) ... ok
+test_transient_cli_error_retried_once (test_claude_adapter.ClaudeAdapterTests.test_transient_cli_error_retried_once) ... ok
+test_real_loopback_http (test_provider.LoopbackTest.test_real_loopback_http) ... Executing <Task pending name='Task-97' coro=<LoopbackTest.test_real_loopback_http() running at C:\Users\user\Desktop\SEO\tasks\task04-multi-agent\test_provider.py:163> cb=[_run_until_complete_cb() at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py:181] created at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py:101> took 0.364 seconds
+ok
+test_400_not_retried (test_provider.ProviderTests.test_400_not_retried) ... ok
+test_401_not_retried (test_provider.ProviderTests.test_401_not_retried) ... ok
+test_429_retry_after (test_provider.ProviderTests.test_429_retry_after) ... ok
+test_503_exhausted (test_provider.ProviderTests.test_503_exhausted) ... ok
+test_async_cancel_recorded (test_provider.ProviderTests.test_async_cancel_recorded) ... ok
+test_contradictory_audit_rejected (test_provider.ProviderTests.test_contradictory_audit_rejected) ... ok
+test_http_timeout_retried (test_provider.ProviderTests.test_http_timeout_retried) ... ok
+test_incremental_evidence (test_provider.ProviderTests.test_incremental_evidence) ... ok
+test_invalid_role_json (test_provider.ProviderTests.test_invalid_role_json) ... ok
+test_malformed_envelope (test_provider.ProviderTests.test_malformed_envelope) ... ok
+test_no_recursive_history_inputs (test_provider.ProviderTests.test_no_recursive_history_inputs) ... ok
+test_request_limit (test_provider.ProviderTests.test_request_limit) ... ok
+test_retry_after_and_url_config (test_provider.ProviderTests.test_retry_after_and_url_config) ... ok
+test_truncated_completion (test_provider.ProviderTests.test_truncated_completion) ... ok
+test_two_distinct_roles_and_feedback (test_provider.ProviderTests.test_two_distinct_roles_and_feedback) ... ok
+test_api (test_workflow.Tests.test_api) ... ok
+test_conflict_revision (test_workflow.Tests.test_conflict_revision) ... ok
+test_false_pass (test_workflow.Tests.test_false_pass) ... ok
+test_immutable (test_workflow.Tests.test_immutable) ... ok
+test_limit (test_workflow.Tests.test_limit) ... ok
+test_normal (test_workflow.Tests.test_normal) ... ok
+test_retry_recovery (test_workflow.Tests.test_retry_recovery) ... ok
+test_schema (test_workflow.Tests.test_schema) ... ok
+test_timeout (test_workflow.Tests.test_timeout) ... ok
+test_total_timeout (test_workflow.Tests.test_total_timeout) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 8.213s
+
+OK

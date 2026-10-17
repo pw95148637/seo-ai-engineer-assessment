@@ -1,0 +1,539 @@
+{
+  "112f91fc": [
+    {
+      "item": "claim:1",
+      "label": "ok",
+      "reason": "首頁快照 title「2026 LINE娛樂城推薦與評測指南」、H1「2026 台灣最值得信賴的 LINE娛樂城 推薦與評測指南」；有「2026 嚴選 LINE娛樂城 推薦排行榜」、21 篇 /reviews/ 連結、/comparison/ 連結 4 處、/games/ 連結；出站含 ?vkjc=、?ReferralCode=、?Promotion= 等參數；正文「我們可能會獲得部分的推廣佣金」。全部找到。"
+    },
+    {
+      "item": "claim:2",
+      "label": "ok",
+      "reason": "推論所依據的事實可在首頁（排行榜＋帶參數出站連結）、比較頁（依入金門檻／視覺風格／營運公司／玩家類型分類比較）、來博評測頁找到；並明說不支持流量或轉換，無越界。"
+    },
+    {
+      "item": "claim:3",
+      "label": "ok",
+      "reason": "搜尋快照第 2 筆為 icasino.tw/comparison/；同批有 casinobase.tw（提款快速、比較）、tftw.com.tw／tzgaming（平台本身）、henfoo.com（LINE 娛樂城）。快照未顯示查詢字串，但內容與敘述一致；已自述非固定排名。"
+    },
+    {
+      "item": "claim:4",
+      "label": "ok",
+      "reason": "3A 搜尋快照含 3aarena.com.tw、3aaa.com.tw、兩個 YouTube 頻道、GitHub entertainmentcit；主張也說未抓取站外頁、不認定官方。"
+    },
+    {
+      "item": "claim:5",
+      "label": "ok",
+      "reason": "Tower Rush 快照「五、塔樓衝刺中文資訊與玩家評測」下列「333 AAA 部落格 - 3A 娛樂城塔樓衝刺實測攻略 — https://www.333aaa.com.tw/2025/11/25/qt-tower-rush-3a-251125/」；與主張一致，且未把它當合作或 backlink。"
+    },
+    {
+      "item": "claim:6",
+      "label": "ok",
+      "reason": "reviews-sitemap 21 個品牌 slug、page-sitemap 17 個、post-sitemap 23 個網址，均無 3A 相關路徑；主張已限定範圍。"
+    },
+    {
+      "item": "claim:7",
+      "label": "ok",
+      "reason": "how-we-rate：「我們的 5 步實測流程」及 30%/25%/20%/15%/10% 五項權重；來博評測：最後實測日期 2026/07/25、▲截圖說明、客服等待 3-5 分鐘、到帳 30 秒到 1 分鐘；Q6 寫「本次實測是以 150 元的本金進行，50 元的入金流程並未親自完整跑過…以平台官方揭露為依據」。全部找到。"
+    },
+    {
+      "item": "claim:8",
+      "label": "ok",
+      "reason": "影片頁有「不剪輯・不修飾・全程實錄」「為什麼點擊播放才載入影片？…20 多支 Vimeo 影片」及 21 個 /reviews/ 連結；主張也說未播放、不能證實。"
+    },
+    {
+      "item": "claim:9",
+      "label": "ok",
+      "reason": "比較頁 5 星區「以下依綜合評分由高至低排序」：河神、財哥、黑桃A、超吉爆、鈔有感…；首頁「依綜合評等由高至低排列」，首個 H3 為鈔有感；比較頁兩處「最新名次請以首頁排行榜為準」。結論保守。"
+    },
+    {
+      "item": "claim:10",
+      "label": "ok",
+      "reason": "針對自家網站的策略假設；所依據的方法頁、測試邊界與跨頁排序差異已在 claim 7、9 核實；已註明非排名保證。"
+    },
+    {
+      "item": "claim:11",
+      "label": "ok",
+      "reason": "robots.txt：Disallow /wp-admin/、Allow admin-ajax.php、Sitemap: sitemap_index.xml；首頁與比較頁 canonical 指向自身、robots「follow, index」。並明說不能推論全站。"
+    },
+    {
+      "item": "claim:12",
+      "label": "ok",
+      "reason": "sitemap_index 有 games-sitemap1…games-sitemap56 等多個分片；首頁有 /games/ 與 /line-casinos/rtp/、/law/、/kelly-criterion/ 等知識連結；已自述不證明品質或流量。"
+    },
+    {
+      "item": "claim:13",
+      "label": "ok",
+      "reason": "快照為「DuckDuckGo search failed: DDGSException: No results found.」（status 503，access 主題可用）；主張不拿它推論不存在。"
+    },
+    {
+      "item": "claim:14",
+      "label": "ok",
+      "reason": "unknown 類，只列未知項，沒有斷言具體事實。"
+    },
+    {
+      "item": "action:1",
+      "label": "ok",
+      "reason": "針對自家網站做基線與合規閘門，未要求修改競爭者，也未引用不存在的競爭者事實。"
+    },
+    {
+      "item": "action:2",
+      "label": "ok",
+      "reason": "理由「icasino.tw 對 3A 的已驗證線索只是遊戲文參考引用」「多網域」分別有 claim 5、claim 4 支持；行動對象是自家網站。"
+    },
+    {
+      "item": "action:3",
+      "label": "ok",
+      "reason": "理由「競爭者已有方法與測試邊界揭露」「跨頁排序差異」有 claim 7、9 支持；行動對象是自家網站。"
+    },
+    {
+      "item": "action:4",
+      "label": "ok",
+      "reason": "理由「競爭者有多層內容與內鏈架構」有 claim 2、12 支持；明說沒有證據證明頁數是成效來源。"
+    },
+    {
+      "item": "action:5",
+      "label": "ok",
+      "reason": "理由「競爭者樣本未顯示明確全站抓取障礙」「影片頁只證明有內容設計」與 claim 8、11 一致；明確不把出站網址當 backlink。"
+    }
+  ],
+  "13898e57": [
+    {
+      "item": "claim:1",
+      "label": "ok",
+      "reason": "首頁 title「2030玩運彩瘋世足｜MLB/NBA比分、中職賽程、世界盃預測分析」，description 談運彩、MLB、NBA、世足；有 3 處「[A href=https://2030.tw/wordcup/] 線上娛樂城推薦」。"
+    },
+    {
+      "item": "claim:2",
+      "label": "ok",
+      "reason": "/wordcup/ title「線上娛樂城推薦｜2026最新評價排名 - 2030玩運彩瘋世足」；分類有熱門娛樂城品牌、評價與推薦、優惠與活動、遊戲與玩法、安全與出金；有連到 /wordcup/娛樂城、/wordcup/3a娛樂城 及多個品牌頁；「共 2502 篇評測」。並註明是站方宣告。"
+    },
+    {
+      "item": "claim:3",
+      "label": "ok",
+      "reason": "兩頁 canonical 都指向自身，robots「index, follow」；title 分別為「3a娛樂城｜遊戲種類、優惠、出金全攻略」「娛樂城評價｜台灣玩家首選平台」；正文「2026年09月24日 更新 2030編輯部」「2026年10月09日 更新 2030編輯部」。"
+    },
+    {
+      "item": "claim:4",
+      "label": "ok",
+      "reason": "四頁 H2 都依序為平台特色、遊戲種類、出金速度與安全性、註冊教學、優惠活動、客服支援、常見問題 FAQ、總結評價；各有 4 處 don0911.3a1788.bet/?st=wg2030；目錄頁有 ?st=wg2030idx。並註明未抓取外部 host。"
+    },
+    {
+      "item": "claim:5",
+      "label": "ok",
+      "reason": "推論依據（首頁運彩定位、目錄、品牌頁、長尾頁、外部註冊連結）都已在 claim 1、2、4 核實；並明說不支持流量、轉換或 SEO 成效。"
+    },
+    {
+      "item": "claim:6",
+      "label": "ok",
+      "reason": "3A 頁「半小時到一小時內」；出金速度頁「15到30分鐘」；兩頁都沒有具體測試日期、金額或紀錄（只寫「試過幾次小額提領跟一次比較大額的」）；H3「Q: 3a娛樂城出金速度有手機版可以玩嗎?」。"
+    },
+    {
+      "item": "claim:7",
+      "label": "ok",
+      "reason": "推論依據（出金時間差異、共用章節、長尾套詞）已核實；明說不能斷言 AI 生成、違規、處罰或互搶。"
+    },
+    {
+      "item": "claim:8",
+      "label": "ok",
+      "reason": "3A 頁有「半小時到一小時」、最低入金「新台幣1000元」、手機版與客服 FAQ、「2030編輯部」與更新日期；娛樂城頁「通常都會有洗碼量的要求」「特別是洗碼量跟提領限制」。"
+    },
+    {
+      "item": "claim:9",
+      "label": "ok",
+      "reason": "robots.txt 只 Disallow /wp-admin/ 並宣告 sitemap_index.xml；page-sitemap 35 個網址無 wordcup。說明：post-sitemap2 快照實際上 XML 結構完整（274 個 <url>，以 </urlset> 及 Rank Math 註解結尾，查無 wordcup），主張說「內容遭截斷」與快照不符。但這是對自己讀取過程的保守說明，不是競爭者事實，也沒讓結論變得更強，因此不記缺陷。"
+    },
+    {
+      "item": "claim:10",
+      "label": "ok",
+      "reason": "unknown 類，描述本輪搜尋限制，沒有對競爭者斷言具體事實；明說不能當作無收錄或零排名。"
+    },
+    {
+      "item": "claim:11",
+      "label": "ok",
+      "reason": "unknown 類，只列未知項，並指出出站連結不是入站資料。"
+    },
+    {
+      "item": "action:1",
+      "label": "ok",
+      "reason": "對象明確為我方網站，不索取競爭者私有帳號。"
+    },
+    {
+      "item": "action:2",
+      "label": "ok",
+      "reason": "理由「主詞與品牌頁結構接近、實測證據不足」「站方宣告2502篇」有 claim 2、4、6 支持；行動對象為我方。"
+    },
+    {
+      "item": "action:3",
+      "label": "ok",
+      "reason": "理由「3A兩頁出金時間敘述不同且無比較方法」有 claim 6 支持，且明說不是指控造假。"
+    },
+    {
+      "item": "action:4",
+      "label": "ok",
+      "reason": "理由「長尾頁重新鋪陳整套泛用內容」有 claim 4、6 支持；明說不能認定競爭者已有互搶。"
+    },
+    {
+      "item": "action:5",
+      "label": "ok",
+      "reason": "理由「競爭者目標頁已有基本可爬設定」有 claim 3 支持；明說不宣稱競爭者速度或 schema 有問題。"
+    },
+    {
+      "item": "action:6",
+      "label": "ok",
+      "reason": "4 至 8 週已標明是建議觀察窗口、非排名承諾；對象為我方 GSC。"
+    }
+  ],
+  "475ad4a1": [
+    {
+      "item": "claim:1",
+      "label": "ok",
+      "reason": "首頁 title「2030玩運彩瘋世足｜MLB/NBA比分、中職賽程、世界盃預測分析」，有「線上娛樂城推薦」連到 /wordcup/；/wordcup/ 有連到 /wordcup/娛樂城 與 /wordcup/3a娛樂城。"
+    },
+    {
+      "item": "claim:2",
+      "label": "ok",
+      "reason": "/wordcup/「共 2502 篇評測」「全部 (2502)」，有品牌、評價與推薦、優惠、遊戲與玩法、安全與出金等分類，以及 ?p=2、?p=3…?p=53 分頁；並註明未獨立驗證。"
+    },
+    {
+      "item": "claim:3",
+      "label": "ok",
+      "reason": "兩頁 canonical 都指向自身、robots「index, follow」；title/H1 含「3a娛樂城」「娛樂城」；robots.txt 只 Disallow /wp-admin/。"
+    },
+    {
+      "item": "claim:4",
+      "label": "ok",
+      "reason": "娛樂城、3a娛樂城、娛樂城推薦三頁 H2/H3 骨架相同；三頁各有 4 處 don0911.3a1788.bet/?st=wg2030，及多處「立即註冊」「註冊」。"
+    },
+    {
+      "item": "claim:5",
+      "label": "ok",
+      "reason": "推論依據（2502 篇目錄、相同模板、註冊 CTA）已核實；明說不證明有效、AI 生成、聯盟關係或處罰。"
+    },
+    {
+      "item": "claim:6",
+      "label": "ok",
+      "reason": "3A 頁「半小時到一小時」、「新台幣1000元」、手機版與客服 FAQ、「2026年09月24日 更新 2030編輯部」；娛樂城頁有洗碼量、活動條款、提領限制及「量力而為」。"
+    },
+    {
+      "item": "claim:7",
+      "label": "ok",
+      "reason": "推薦頁「嚴選出幾家真的「還不錯」的娛樂城推薦名單」，但正文只有泛用段落與 FAQ，沒有具名平台比較表；三頁的第一人稱實測說法都沒有逐筆紀錄。並限定不推論全站。"
+    },
+    {
+      "item": "claim:8",
+      "label": "ok",
+      "reason": "只推論可能有意圖重疊，並明說不知道是否實際蠶食；依據的三頁主題確實重疊。"
+    },
+    {
+      "item": "claim:9",
+      "label": "ok",
+      "reason": "post-sitemap1（1999 個網址）、post-sitemap2（274 個網址）、page-sitemap 用 grep 查 wordcup 都是 0；/wordcup/ 直接連到兩個目標頁。結論已限於這三份清單。"
+    },
+    {
+      "item": "claim:10",
+      "label": "ok",
+      "reason": "搜尋快照有 3aarena、3agamer、3aaa、gamebet 等 3A 標題，以及「彰源 (2030.TW) 走勢圖 - Yahoo股市」股票雜訊；並說明未讀外站原頁、不當成排名。"
+    },
+    {
+      "item": "claim:11",
+      "label": "ok",
+      "reason": "unknown 類，只列未知項，並說明出站連結不是 backlinks。"
+    },
+    {
+      "item": "action:1",
+      "label": "ok",
+      "reason": "明確只針對我方網站，並寫「不修改2030.tw」。"
+    },
+    {
+      "item": "action:2",
+      "label": "ok",
+      "reason": "理由「已讀3A頁有FAQ與具體數字」有 claim 6 支持；行動對象為我方。"
+    },
+    {
+      "item": "action:3",
+      "label": "ok",
+      "reason": "理由「主詞、推薦及分類入口意圖相近且模板相似」有 claim 4、8 支持；明說不能宣稱已蠶食。"
+    },
+    {
+      "item": "action:4",
+      "label": "ok",
+      "reason": "理由「查過的三份sitemap未見wordcup」有 claim 9 支持，且不把它當成取勝原因。"
+    },
+    {
+      "item": "action:5",
+      "label": "ok",
+      "reason": "4–8 週標明是首次觀察窗、不承諾提升幅度；不複製 2502 篇、不買連結。"
+    }
+  ],
+  "4f17dbd9": [
+    {
+      "item": "claim:1",
+      "label": "ok",
+      "reason": "首頁有「線上娛樂城推薦」連到 /wordcup/；目錄連到兩個目標頁；兩頁 title/H1 含對應詞、canonical 指向自身、robots「index, follow」；並明說不證明收錄或排名。"
+    },
+    {
+      "item": "claim:2",
+      "label": "ok",
+      "reason": "目錄「共 2502 篇評測」，有品牌、評價、優惠、玩法、安全與出金分類及 ?p= 分頁；並註明是站方顯示數量。"
+    },
+    {
+      "item": "claim:3",
+      "label": "ok",
+      "reason": "推論依據（目錄詞彙覆蓋、相同章節、「相關推薦」「熱門娛樂城推薦」內鏈）在引用快照都找得到；明說不是已證實有效的策略。"
+    },
+    {
+      "item": "claim:4",
+      "label": "ok",
+      "reason": "3A 與娛樂城頁各有 4 處 don0911.3a1788.bet/?st=wg2030 及多處「立即註冊」；目錄有 ?st=wg2030idx；並明說不證明分潤、官方身分或成效。"
+    },
+    {
+      "item": "claim:5",
+      "label": "ok",
+      "reason": "3A 頁「2026年09月24日 更新 2030編輯部」「實際玩了幾個月下來」「半小時到一小時」、FAQ「通常是「新台幣1000元」」、手機版與客服 FAQ；主詞頁「2026年10月09日 更新 2030編輯部」、洗碼量／活動條款／提領限制。"
+    },
+    {
+      "item": "claim:6",
+      "label": "ok",
+      "reason": "3A 頁「我看他們有SSL加密憑證，代表我們的個人資料跟交易紀錄都有被保護好」及 FAQ 的 SSL 敘述，沒有稽核證據；正文沒有可核對的測試紀錄。推論有所依據且保守。"
+    },
+    {
+      "item": "claim:7",
+      "label": "ok",
+      "reason": "三頁 H2 骨架相同；推薦頁有「嚴選出幾家」，但沒有具名比較表；明說不能證明蠶食、AI 生成或處罰。"
+    },
+    {
+      "item": "claim:8",
+      "label": "ok",
+      "reason": "robots.txt 只 Disallow /wp-admin/ 並指向 sitemap_index.xml；sitemap_index 列 6 份子 sitemap；post-sitemap1／2 與 page-sitemap 用 grep 查 wordcup 都是 0；目錄可連到兩頁。範圍限定正確。"
+    },
+    {
+      "item": "claim:9",
+      "label": "ok",
+      "reason": "0aa0… 快照 title/url 皆空字串；bbb5… 是「No results found」(503)；68a0…、1c5e… 回傳其他 host（xn--fifa…、168taiwan、worldcupcasino、wggame 等）。access 主題可引用非 200 來源。"
+    },
+    {
+      "item": "claim:10",
+      "label": "ok",
+      "reason": "68a0… 摘要同時有正面（「整體給我的感受是相當正面的」）與負面（「贏錢被鎖帳號？」「提款限制多、網傳代操詐騙風險高」）標題；明說未讀外部原頁、不下定論。"
+    },
+    {
+      "item": "claim:11",
+      "label": "ok",
+      "reason": "unknown 類，只列未知項，並說明出站連結不是反向連結。"
+    },
+    {
+      "item": "action:1",
+      "label": "ok",
+      "reason": "對象為我方網站；固定地區／裝置／日期另存 SERP 屬方法建議。"
+    },
+    {
+      "item": "action:2",
+      "label": "ok",
+      "reason": "理由「對手已有品牌頁與FAQ」有 claim 5 支持；並說「不將索引摘要中的負面指控當事實」。"
+    },
+    {
+      "item": "action:3",
+      "label": "ok",
+      "reason": "理由「對手主詞、目錄及推薦文章有重疊風險」有 claim 7 支持，且不保證排名。"
+    },
+    {
+      "item": "action:4",
+      "label": "ok",
+      "reason": "理由「對手內鏈可達而抽查sitemap未見目標路徑」有 claim 8 支持；明說不能推導對手故障。"
+    },
+    {
+      "item": "action:5",
+      "label": "ok",
+      "reason": "6 至 8 週標明是預設觀察窗、非成效保證；理由中的「沒有對手流量／backlinks」與 claim 11 一致。"
+    }
+  ],
+  "5a480368": [
+    {
+      "item": "claim:1",
+      "label": "ok",
+      "reason": "首頁 title「2026 LINE娛樂城推薦與評測指南」、H1、description 都主打 LINE 娛樂城推薦／評測；有 /comparison/ 4 處、21 個不重複 /reviews/ 連結、/games/…、/how-we-rate/ 3 處；正文「可能會獲得部分的推廣佣金」。"
+    },
+    {
+      "item": "claim:2",
+      "label": "ok",
+      "reason": "首頁連到 comparison 與 reviews/cygder；cygder 評測連到 /comparison/ 與 /games/；塔樓衝刺頁有 14 處連回首頁、3 處連到 /comparison/。推論依據成立，並明說不能證明 SEO 成效。"
+    },
+    {
+      "item": "claim:3",
+      "label": "ok",
+      "reason": "搜尋快照第 2 筆是 icasino.tw/comparison/；並明說 position 不是 Google 台灣排名。"
+    },
+    {
+      "item": "claim:4",
+      "label": "ok",
+      "reason": "塔樓衝刺頁「五、塔樓衝刺中文資訊與玩家評測」後列「333 AAA 部落格 - 3A 娛樂城塔樓衝刺實測攻略」及 333aaa.com.tw 連結；不把它當專頁、合作關係或反向連結。"
+    },
+    {
+      "item": "claim:5",
+      "label": "ok",
+      "reason": "site 搜尋快照回傳首頁、Curse of Echnaton、塔樓衝刺（摘要含 333 AAA 引用）、Plushie Wins、Diamond Rise，沒有 3A 專頁；推論已修正為保守版本，且明說不能推斷全站不存在。"
+    },
+    {
+      "item": "claim:6",
+      "label": "ok",
+      "reason": "how-we-rate：「5 步實測流程」及 30%/25%/20%/15%/10%；cygder 評測作者「山姆 Sam」、「最後實測日期： 2026/07/25」、▲截圖說明、「約落在 30 秒到 1 分鐘之間」、「等待時間約落在 5 分鐘以內」。並註明未獨立核實。"
+    },
+    {
+      "item": "claim:7",
+      "label": "ok",
+      "reason": "影片頁有 21 個 /reviews/ 連結、「不剪輯・不修飾・全程實錄」、「為什麼點擊播放才載入影片？…Vimeo」；並說明未播放。"
+    },
+    {
+      "item": "claim:8",
+      "label": "ok",
+      "reason": "首頁「依綜合評等由高至低排列」，首位 H3 為鈔有感；比較頁「依綜合評分由高至低排序」，首位為河神；「最新排行請以首頁排行榜為準」。不推論造假。"
+    },
+    {
+      "item": "claim:9",
+      "label": "ok",
+      "reason": "規格表「理論最高倍率 單局 ×100」、比較表「×100（彩金 30 萬封頂）」；8.2 節「累積倍率衝到了 ×500、×1000」「要蓋到 ×3,000 倍才碰到 30 萬天花板」。頁內張力確實存在，且不判定外部真實上限。"
+    },
+    {
+      "item": "claim:10",
+      "label": "ok",
+      "reason": "明星代言頁「直接前往官方網站或雙平台下載，安全有保障」、「完全不用擔心遇到釣魚網站或信用卡被盜刷的風險」、「透過第三方幣商交易存在極高的詐騙風險」。"
+    },
+    {
+      "item": "claim:11",
+      "label": "ok",
+      "reason": "首頁、比較頁、cygder 的 canonical 都指向自身，robots「follow, index」；/author/sam/ robots「follow, noindex」，og:type profile，列出該作者文章。並明說 noindex 不等於錯誤。"
+    },
+    {
+      "item": "claim:12",
+      "label": "ok",
+      "reason": "策略假設；依據的「E-E-A-T 宣稱」（首頁 description「秉持最高 E-E-A-T 標準」）、評測權重、影片合輯，以及跨頁排序與風險用語問題都已核實。"
+    },
+    {
+      "item": "claim:13",
+      "label": "ok",
+      "reason": "unknown 類，只列未知項。"
+    },
+    {
+      "item": "action:1",
+      "label": "ok",
+      "reason": "標明「僅供我方」；不把競爭者 position 套成我方目標。理由「競爭者目前可見主軸是LINE娛樂城」有 claim 1 支持。"
+    },
+    {
+      "item": "action:2",
+      "label": "ok",
+      "reason": "理由「已見的3A證據只是遊戲文引用」有 claim 4、5 支持；行動對象為我方。"
+    },
+    {
+      "item": "action:3",
+      "label": "ok",
+      "reason": "理由「競爭者已有日期、權重與數值自述」有 claim 6 支持。"
+    },
+    {
+      "item": "action:4",
+      "label": "ok",
+      "reason": "理由「競爭者可見跨頁排序差異並需以首頁為準」有 claim 8 支持；並明說不是懲罰推論。"
+    },
+    {
+      "item": "action:5",
+      "label": "ok",
+      "reason": "理由「競爭者已有比較、品牌與遊戲交叉內鏈」有 claim 2 支持。"
+    },
+    {
+      "item": "action:6",
+      "label": "ok",
+      "reason": "28 天是初次檢視窗口，並說「必要時延長」；不以出站清單冒充 backlinks。"
+    }
+  ],
+  "a9827eaa": [
+    {
+      "item": "claim:1",
+      "label": "ok",
+      "reason": "首頁 title／H1「2030玩運彩瘋世足」及 MLB 等賽事內容；「線上娛樂城推薦」連到 /wordcup/；/wordcup/ title「線上娛樂城推薦｜2026最新評價排名」、H1「2026 線上娛樂城推薦」，並有分類連結。"
+    },
+    {
+      "item": "claim:2",
+      "label": "ok",
+      "reason": "/wordcup/「共 2502 篇評測」；文章清單第一項是 /wordcup/3a娛樂城「3a娛樂城」。並註明未驗證。"
+    },
+    {
+      "item": "claim:3",
+      "label": "ok",
+      "reason": "六頁 canonical 都指向自身；title 分別含娛樂城、娛樂城推薦、3a娛樂城、3a娛樂城出金速度、「3a娛樂城不出金｜體驗心得…」、「3a娛樂城合法嗎推薦｜…」；H2 骨架都是平台特色／遊戲／出金速度與安全性／註冊／優惠／客服／FAQ。"
+    },
+    {
+      "item": "claim:4",
+      "label": "ok",
+      "reason": "推論依據（目錄、品牌頁、修飾詞頁、「相關推薦」「熱門娛樂城推薦」內鏈）已核實；明說不證明成效、生成工具、處罰或互搶。"
+    },
+    {
+      "item": "claim:5",
+      "label": "ok",
+      "reason": "3A、娛樂城、富遊頁各有 4 處 don0911.3a1788.bet/?st=wg2030；目錄有 ?st=wg2030idx；多處「立即註冊」。"
+    },
+    {
+      "item": "claim:6",
+      "label": "ok",
+      "reason": "推論依據為 claim 5 已核實的共用帶參數網址；明說不能確認跳轉、官方身分、佣金或轉換，且出站不是 backlinks。"
+    },
+    {
+      "item": "claim:7",
+      "label": "ok",
+      "reason": "3A 頁「半小時到一小時」、「新台幣1000元」；出金速度頁「15到30分鐘」；合法嗎頁「大概15到30分鐘內」、「最低只要台幣500元」；三頁都沒有測試日期、金額或紀錄。"
+    },
+    {
+      "item": "claim:8",
+      "label": "ok",
+      "reason": "不出金頁有「不少玩家反映有延遲的狀況」、客服「鬼打牆」「制式化」、「流水倍數」限制等疑慮；沒有案例來源；把「3a娛樂城不出金」當平台名稱使用，並有 4 處註冊 CTA。不推論拒絕出金屬實。"
+    },
+    {
+      "item": "claim:9",
+      "label": "ok",
+      "reason": "合法嗎頁正文談介面、遊戲、KYC、SSL、出金、客服，查無牌照、法條或監管機構；H3「Q: 3a娛樂城合法嗎有手機版可以玩嗎?」；推薦頁沒有具名比較表或評分準則。"
+    },
+    {
+      "item": "claim:10",
+      "label": "ok",
+      "reason": "機會假設，依據已在 claim 7–9 核實；明說非保證。"
+    },
+    {
+      "item": "claim:11",
+      "label": "ok",
+      "reason": "?cat=娛樂城安全與出金 頁「共 154 篇（分類：娛樂城安全與出金」，清單首項是「合法娛樂城」「玩娛樂城收到傳票dcard」，與主目錄不同；canonical 為 https://2030.tw/wordcup/；主頁與 3A 頁 robots「index, follow」。"
+    },
+    {
+      "item": "claim:12",
+      "label": "ok",
+      "reason": "三份快照都是「DuckDuckGo search failed: DDGSException: No results found.」(503)，access 主題可用；明說不能推論未收錄或沒有外鏈。"
+    },
+    {
+      "item": "claim:13",
+      "label": "ok",
+      "reason": "unknown 類，只列未知項。"
+    },
+    {
+      "item": "action:1",
+      "label": "ok",
+      "reason": "只針對我方網站，並說不使用競爭者私有資料。"
+    },
+    {
+      "item": "action:2",
+      "label": "ok",
+      "reason": "理由「對手合法嗎頁缺乏法律問題的直接證據，跨頁出金及入金宣稱也有差異」有 claim 7、9 支持；不以 SSL/KYC 當合法保證。"
+    },
+    {
+      "item": "action:3",
+      "label": "ok",
+      "reason": "理由「不出金頁雖有警語仍以遊戲註冊為主」有 claim 8 支持；不渲染未證實指控。"
+    },
+    {
+      "item": "action:4",
+      "label": "ok",
+      "reason": "理由「對手已有目錄、品牌與相關推薦連結」「canonical 僅為宣告」與 claim 4、11 一致；對象為我方。"
+    },
+    {
+      "item": "action:5",
+      "label": "ok",
+      "reason": "4 至 8 週是建議觀察期，並說收益未知；不買外鏈。"
+    }
+  ]
+}

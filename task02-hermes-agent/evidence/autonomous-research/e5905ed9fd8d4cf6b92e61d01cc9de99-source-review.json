@@ -1,0 +1,136 @@
+{
+  "reviewer": "development assistant source review, not an independent SEO expert",
+  "run_id": "e5905ed9fd8d4cf6b92e61d01cc9de99",
+  "snapshot_integrity": [
+    {
+      "id": "fd7dc793c2774d059ef3bf662b00f834",
+      "sha256_matches": true
+    },
+    {
+      "id": "25054f75b90a4117aa411d8b49487470",
+      "sha256_matches": true
+    },
+    {
+      "id": "6f096ac304a54c4ba776456bdf615e20",
+      "sha256_matches": true
+    },
+    {
+      "id": "fc55a466540041638674227e29e22811",
+      "sha256_matches": true
+    },
+    {
+      "id": "e41fc50d1a9f45728150ef195ad8f15d",
+      "sha256_matches": true
+    },
+    {
+      "id": "2b0cb4951ebb4f5d86c4fb83793a9334",
+      "sha256_matches": true
+    },
+    {
+      "id": "511d1ba692a44cdf8e5567583997e857",
+      "sha256_matches": true
+    },
+    {
+      "id": "826d443ac1ad4073bae808f14e704e21",
+      "sha256_matches": true
+    },
+    {
+      "id": "592a99345e2f492eadb80bdf23814b26",
+      "sha256_matches": true
+    },
+    {
+      "id": "93f5fd88e59648e59698af8756065ec1",
+      "sha256_matches": true
+    },
+    {
+      "id": "659585d21b9b408588ca7f570445031c",
+      "sha256_matches": true
+    },
+    {
+      "id": "4678937a3c354dc7921e4270e72df53f",
+      "sha256_matches": true
+    },
+    {
+      "id": "0029e1e09ef64937a32eab4d744a2483",
+      "sha256_matches": true
+    },
+    {
+      "id": "1fecf4eebc2247949444034b0aa42646",
+      "sha256_matches": true
+    },
+    {
+      "id": "fd80663b6cc74e909bbcb25c6a0d25a8",
+      "sha256_matches": true
+    },
+    {
+      "id": "cbfd8468ceea4803a0b27ed72fe34950",
+      "sha256_matches": true
+    }
+  ],
+  "claims": [
+    {
+      "index": 1,
+      "verdict": "supported within stated scope",
+      "note": "Homepage title/H1 and external registration URL verified in raw snapshot."
+    },
+    {
+      "index": 2,
+      "verdict": "supported within stated scope",
+      "note": "Inference stays conditional; no rank or 3A relationship claim."
+    },
+    {
+      "index": 3,
+      "verdict": "supported within stated scope",
+      "note": "Tank01 self-attribution and metadata description verified; data accuracy remains unknown."
+    },
+    {
+      "index": 4,
+      "verdict": "supported within stated scope",
+      "note": "WordPress sample text, index-follow and sitemap URL verified."
+    },
+    {
+      "index": 5,
+      "verdict": "supported within stated scope",
+      "note": "robots scope and self canonicals verified; not proof of indexing."
+    },
+    {
+      "index": 6,
+      "verdict": "supported within stated scope",
+      "note": "Fetched URL content contradicts assumptions from slug names."
+    },
+    {
+      "index": 7,
+      "verdict": "supported within stated scope",
+      "note": "All five domain/title/snippet records present; index source only."
+    },
+    {
+      "index": 8,
+      "verdict": "supported within stated scope",
+      "note": "Conditional search-intent interpretation, not validated ranking opportunity."
+    },
+    {
+      "index": 9,
+      "verdict": "supported within stated scope",
+      "note": "Unknowns reflect unmeasured data and sampling limits."
+    }
+  ],
+  "action_scope_defects": [
+    {
+      "index": 1,
+      "issue": "GSC baseline is only available for our own site; competitor private GSC not available."
+    },
+    {
+      "index": 2,
+      "issue": "Cannot delete or noindex competitor sample-page. Treat as competitor weakness and an audit check for our own site."
+    },
+    {
+      "index": 5,
+      "issue": "Cannot repair competitor metadata template. Apply better metadata to our own competing page templates."
+    },
+    {
+      "index": 6,
+      "issue": "Competitor slug audit is research; redirects/canonical changes apply only to our own controllable URLs."
+    }
+  ],
+  "correction": "Raw report preserved. Future prompt explicitly separates competitor public evidence from our own site actions. No source evidence was prewritten for the Agent."
+}

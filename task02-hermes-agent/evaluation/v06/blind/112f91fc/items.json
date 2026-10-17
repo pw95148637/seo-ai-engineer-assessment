@@ -1,0 +1,338 @@
+{
+  "blind_id": "112f91fc",
+  "claims": [
+    {
+      "item": "claim:1",
+      "kind": "observation",
+      "topic": "strategy",
+      "text": "首頁title與H1明確聚焦2026 LINE娛樂城推薦與評測，包含排行榜、評測入口、比較頁、遊戲指南與帶推廣參數的出站連結，並揭露可能獲得推廣佣金。",
+      "sources": [
+        {
+          "evidence_id": "563c88dde8fd408a97e5ce887818e738",
+          "url": "https://icasino.tw/",
+          "status": 200,
+          "sha256": "f0032e8212d7bfcb032886009bb1ceda8225e177f5a3fa4696f28f57419724d3",
+          "snapshot": "snapshots/563c88dde8fd408a97e5ce887818e738.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:2",
+      "kind": "inference",
+      "topic": "strategy",
+      "text": "公開頁面支持『LINE娛樂城推薦入口—多角度比較—個別品牌評測—註冊導流』的內容與商業架構推論；不支持此架構已帶來特定流量或轉換。",
+      "sources": [
+        {
+          "evidence_id": "563c88dde8fd408a97e5ce887818e738",
+          "url": "https://icasino.tw/",
+          "status": 200,
+          "sha256": "f0032e8212d7bfcb032886009bb1ceda8225e177f5a3fa4696f28f57419724d3",
+          "snapshot": "snapshots/563c88dde8fd408a97e5ce887818e738.txt"
+        },
+        {
+          "evidence_id": "46d78be91ab24810a5a089c2d7a8e0fd",
+          "url": "https://icasino.tw/comparison/",
+          "status": 200,
+          "sha256": "d8a04ed1db7564b2438ad9b674ac4719303d783d11426d0973ca5a7b71b16afd",
+          "snapshot": "snapshots/46d78be91ab24810a5a089c2d7a8e0fd.txt"
+        },
+        {
+          "evidence_id": "a5c09c67cfad4da7828b0f26811a518a",
+          "url": "https://icasino.tw/reviews/lybobet/",
+          "status": 200,
+          "sha256": "5c618eb6d382bcb2b859fad0cf4759fc8ed54d7ca07d81d97e4b522aac3289ae",
+          "snapshot": "snapshots/a5c09c67cfad4da7828b0f26811a518a.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:3",
+      "kind": "observation",
+      "topic": "search_intent",
+      "text": "泛詞『娛樂城』的本輪公開搜尋返回icasino.tw/comparison/；同批摘要同時有出金比較、直接遊戲平台及LINE平台。這只是單次索引線索，不能稱為Google台灣固定排名。",
+      "sources": [
+        {
+          "evidence_id": "010f408ae8384a3dacfd852335db1ff8",
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256": "577fa3a01941d734f41d9005bec6dede9906bf3b726051b53c820389be733445",
+          "snapshot": "snapshots/010f408ae8384a3dacfd852335db1ff8.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:4",
+      "kind": "observation",
+      "topic": "brand",
+      "text": "3A娛樂城搜尋摘要出現多個以3A命名的網域及社群帳號；未直接抓取這些站外頁，不能認定哪個為官方或其安全性。",
+      "sources": [
+        {
+          "evidence_id": "dc04862f27bd41ebb25b23b697faa007",
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256": "e85e5ed64413ba0bed13a5521739b3496854ef86c9e4f6a9927f21532a83f7e1",
+          "snapshot": "snapshots/dc04862f27bd41ebb25b23b697faa007.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:5",
+      "kind": "observation",
+      "topic": "brand",
+      "text": "Tower Rush原頁在參考來源的『中文資訊與玩家評測』段落列出『333 AAA 部落格 - 3A 娛樂城塔樓衝刺實測攻略』出站網址。此為來源引用，不是本站3A品牌評測或證實的合作關係。",
+      "sources": [
+        {
+          "evidence_id": "04836ef339d04c99b152fa530dcea454",
+          "url": "https://icasino.tw/games/towerrush/",
+          "status": 200,
+          "sha256": "06467fee6b23e82f83a8cd1c874ec86745fc24612681b59554fc4b9eb0ef3aeb",
+          "snapshot": "snapshots/04836ef339d04c99b152fa530dcea454.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:6",
+      "kind": "observation",
+      "topic": "brand",
+      "text": "抽查的reviews、page與post三份sitemap網址清單未見可辨識的3A專頁；這些是URL清單而非所有頁面全文，且未遍查games等分區，不能斷言全站不存在3A內容。",
+      "sources": [
+        {
+          "evidence_id": "80d8e5d1f4674ca29308bdd2b086f951",
+          "url": "https://icasino.tw/reviews-sitemap.xml",
+          "status": 200,
+          "sha256": "e334b8add476fcb8716a275c7acd2e60e32980fe8a85969c125e8cf41f7e348c",
+          "snapshot": "snapshots/80d8e5d1f4674ca29308bdd2b086f951.txt"
+        },
+        {
+          "evidence_id": "f0beed804f274874bc8ffce2b5f57135",
+          "url": "https://icasino.tw/page-sitemap.xml",
+          "status": 200,
+          "sha256": "98cb938c3119293b7b73cab0f023dff75c8cd7b2853c2d4c07e4e37588c79e7d",
+          "snapshot": "snapshots/f0beed804f274874bc8ffce2b5f57135.txt"
+        },
+        {
+          "evidence_id": "1bb7eee1c72346f39f5f1eeee721b769",
+          "url": "https://icasino.tw/post-sitemap.xml",
+          "status": 200,
+          "sha256": "a72c228de449b0b56e4246ca3ffa0c39a82d768ffa45f93af64a11af4fd7e2cd",
+          "snapshot": "snapshots/1bb7eee1c72346f39f5f1eeee721b769.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:7",
+      "kind": "observation",
+      "topic": "quality_counterevidence",
+      "text": "競爭者有評測方法頁，列五步流程與五項權重；來博評測列測試日期、截圖說明、客服等待與入帳時間，FAQ明說最低50元來自平台揭露，實際測150元且未完整測50元流程。因此50與150並非矛盾，也不宜稱其只有空泛宣傳；原始影像真實性和測量方法仍未獨立核驗。",
+      "sources": [
+        {
+          "evidence_id": "7a35816c76634fb1bc5221a8e57ed63e",
+          "url": "https://icasino.tw/how-we-rate/",
+          "status": 200,
+          "sha256": "349aaab6befbc88ba170bc31327d82f13607e54d8582a8cf75a81906c5c8eecd",
+          "snapshot": "snapshots/7a35816c76634fb1bc5221a8e57ed63e.txt"
+        },
+        {
+          "evidence_id": "a5c09c67cfad4da7828b0f26811a518a",
+          "url": "https://icasino.tw/reviews/lybobet/",
+          "status": 200,
+          "sha256": "5c618eb6d382bcb2b859fad0cf4759fc8ed54d7ca07d81d97e4b522aac3289ae",
+          "snapshot": "snapshots/a5c09c67cfad4da7828b0f26811a518a.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:8",
+      "kind": "observation",
+      "topic": "quality_counterevidence",
+      "text": "影片合輯頁宣稱收錄不剪輯的Vimeo實測影片並採點擊載入，連往各評測；本輪僅讀文字與連結，未播放，不能證實影片內容、不剪輯或效能改善。",
+      "sources": [
+        {
+          "evidence_id": "77f322a638b54354ac9db0479446fd76",
+          "url": "https://icasino.tw/line-casino-video-reviews/",
+          "status": 200,
+          "sha256": "743618c2d9e13b7a2db1a497272147eab267c043900ab1ee07d427ce3a9fb43c",
+          "snapshot": "snapshots/77f322a638b54354ac9db0479446fd76.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:9",
+      "kind": "observation",
+      "topic": "quality",
+      "text": "比較頁明稱依綜合評分排序，首位河神、鈔有感在超吉爆之後；首頁稱綜合評等由高至低排列卻把鈔有感置首。比較頁FAQ亦要求最新名次以首頁為準，故可判為不同頁排序未一致，但不能證明操控或欺騙。",
+      "sources": [
+        {
+          "evidence_id": "46d78be91ab24810a5a089c2d7a8e0fd",
+          "url": "https://icasino.tw/comparison/",
+          "status": 200,
+          "sha256": "d8a04ed1db7564b2438ad9b674ac4719303d783d11426d0973ca5a7b71b16afd",
+          "snapshot": "snapshots/46d78be91ab24810a5a089c2d7a8e0fd.txt"
+        },
+        {
+          "evidence_id": "563c88dde8fd408a97e5ce887818e738",
+          "url": "https://icasino.tw/",
+          "status": 200,
+          "sha256": "f0032e8212d7bfcb032886009bb1ceda8225e177f5a3fa4696f28f57419724d3",
+          "snapshot": "snapshots/563c88dde8fd408a97e5ce887818e738.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:10",
+      "kind": "inference",
+      "topic": "opportunity",
+      "text": "對自家網站而言，可追溯的來源、測試邊界、統一比較資料及更新紀錄，比複製『權威／安全』形容詞更值得優先評估；此為基於競爭者證據形式及跨頁排序差異的競爭假設，非排名提升保證。",
+      "sources": [
+        {
+          "evidence_id": "7a35816c76634fb1bc5221a8e57ed63e",
+          "url": "https://icasino.tw/how-we-rate/",
+          "status": 200,
+          "sha256": "349aaab6befbc88ba170bc31327d82f13607e54d8582a8cf75a81906c5c8eecd",
+          "snapshot": "snapshots/7a35816c76634fb1bc5221a8e57ed63e.txt"
+        },
+        {
+          "evidence_id": "a5c09c67cfad4da7828b0f26811a518a",
+          "url": "https://icasino.tw/reviews/lybobet/",
+          "status": 200,
+          "sha256": "5c618eb6d382bcb2b859fad0cf4759fc8ed54d7ca07d81d97e4b522aac3289ae",
+          "snapshot": "snapshots/a5c09c67cfad4da7828b0f26811a518a.txt"
+        },
+        {
+          "evidence_id": "46d78be91ab24810a5a089c2d7a8e0fd",
+          "url": "https://icasino.tw/comparison/",
+          "status": 200,
+          "sha256": "d8a04ed1db7564b2438ad9b674ac4719303d783d11426d0973ca5a7b71b16afd",
+          "snapshot": "snapshots/46d78be91ab24810a5a089c2d7a8e0fd.txt"
+        },
+        {
+          "evidence_id": "563c88dde8fd408a97e5ce887818e738",
+          "url": "https://icasino.tw/",
+          "status": 200,
+          "sha256": "f0032e8212d7bfcb032886009bb1ceda8225e177f5a3fa4696f28f57419724d3",
+          "snapshot": "snapshots/563c88dde8fd408a97e5ce887818e738.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:11",
+      "kind": "observation",
+      "topic": "technical",
+      "text": "robots.txt公開限制wp-admin並允許admin-ajax，提供sitemap入口；已抽查HTML頁回傳200並有自指canonical與index設定。這只支持樣本的基礎可抓取條件，不能證明全站索引、CWV、結構化資料或不存在技術問題。",
+      "sources": [
+        {
+          "evidence_id": "a0095ed1ced24138962983f3f3c18832",
+          "url": "https://icasino.tw/robots.txt",
+          "status": 200,
+          "sha256": "3d7558faaf6d45580e37d50b2d3ea639aef0fb12364c7a299381184632e91599",
+          "snapshot": "snapshots/a0095ed1ced24138962983f3f3c18832.txt"
+        },
+        {
+          "evidence_id": "90347222559244a69b9b0cd2e77a63da",
+          "url": "https://icasino.tw/sitemap_index.xml",
+          "status": 200,
+          "sha256": "04bfa686f0892af26ee8760877b5418b841b4df82c5b22a0bfeeae847ba1540a",
+          "snapshot": "snapshots/90347222559244a69b9b0cd2e77a63da.txt"
+        },
+        {
+          "evidence_id": "563c88dde8fd408a97e5ce887818e738",
+          "url": "https://icasino.tw/",
+          "status": 200,
+          "sha256": "f0032e8212d7bfcb032886009bb1ceda8225e177f5a3fa4696f28f57419724d3",
+          "snapshot": "snapshots/563c88dde8fd408a97e5ce887818e738.txt"
+        },
+        {
+          "evidence_id": "46d78be91ab24810a5a089c2d7a8e0fd",
+          "url": "https://icasino.tw/comparison/",
+          "status": 200,
+          "sha256": "d8a04ed1db7564b2438ad9b674ac4719303d783d11426d0973ca5a7b71b16afd",
+          "snapshot": "snapshots/46d78be91ab24810a5a089c2d7a8e0fd.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:12",
+      "kind": "inference",
+      "topic": "content_scope",
+      "text": "sitemap索引有多個games分片，首頁也提供廣泛遊戲與知識連結，支持有遊戲長尾內容架構的推論；分片或連結多本身不能證明頁面品質、自然流量或SEO優勢。",
+      "sources": [
+        {
+          "evidence_id": "90347222559244a69b9b0cd2e77a63da",
+          "url": "https://icasino.tw/sitemap_index.xml",
+          "status": 200,
+          "sha256": "04bfa686f0892af26ee8760877b5418b841b4df82c5b22a0bfeeae847ba1540a",
+          "snapshot": "snapshots/90347222559244a69b9b0cd2e77a63da.txt"
+        },
+        {
+          "evidence_id": "563c88dde8fd408a97e5ce887818e738",
+          "url": "https://icasino.tw/",
+          "status": 200,
+          "sha256": "f0032e8212d7bfcb032886009bb1ceda8225e177f5a3fa4696f28f57419724d3",
+          "snapshot": "snapshots/563c88dde8fd408a97e5ce887818e738.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:13",
+      "kind": "observation",
+      "topic": "access",
+      "text": "本輪精確site搜尋3A娛樂城回報無結果錯誤；不可用此失敗結果推斷競爭者沒有3A內容。",
+      "sources": [
+        {
+          "evidence_id": "fde6b7744a814a7f993bb5d338d68cde",
+          "url": "search:ddgs",
+          "status": 503,
+          "sha256": "814c39841367474aaf364a2671401ddbccb430e8fed81529127e930291a11ee2",
+          "snapshot": "snapshots/fde6b7744a814a7f993bb5d338d68cde.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:14",
+      "kind": "unknown",
+      "topic": "limitations",
+      "text": "競爭者流量、轉換、完整backlinks、連結權重、固定排名及自家網站現況均未知；出站參考連結不等於對方完整入站連結資料。",
+      "sources": []
+    }
+  ],
+  "actions": [
+    {
+      "item": "action:1",
+      "action": "P0｜先對自家網站建立查詢—頁面基線與合規閘門：盤點娛樂城、LINE娛樂城、3A及延伸詞的既有頁面；如有授權，只使用自家GSC與分析資料評估曝光、點擊、落地頁和有效互動。成本低至中。",
+      "reason": "尚無自家網站資料，不應先斷言缺頁或推薦新建頁。將不可換現娛樂與出金意圖分開；品牌身分與法律主張須獨立核實。驗收為頁面對應表、基線與可公開證據清單，不設定虛構流量目標。"
+    },
+    {
+      "item": "action:2",
+      "action": "P1｜有足夠來源且符合自家定位時，先小規模建立或更新一個中立3A查核頁，標示非官方、來源日期、網域歧義、營運身分、條款與申訴證據；未核實項目明寫未知，不給安全或出金保證。成本中。",
+      "reason": "目前icasino.tw對3A的已驗證線索只是遊戲文參考引用，不能宣稱其已佔據品牌詞；公開摘要中的多網域也使身分查核具差異化價值。驗收為每項核心主張可追溯、沒有冒充官方或未證實詐騙指控。"
+    },
+    {
+      "item": "action:3",
+      "action": "P1｜自家娛樂城主題頁及比較頁採證據型比較：統一資料來源、測試與官方宣稱分欄、記錄裝置／時段／樣本及版本日期，榜單從單一資料來源生成；加入適用與不適用情境。成本中。",
+      "reason": "競爭者已有方法與測試邊界揭露，普通排行榜不足以差異化；跨頁排序差異提供資料一致性的改善機會。驗收為各頁數值、排序及更新版本一致，可由原始紀錄追溯。"
+    },
+    {
+      "item": "action:4",
+      "action": "P2｜以少量主題群試驗而非大量擴頁：主題總覽連至比較頁、個別查核頁和相關遊戲／風險解釋，錨文字描述真實內容；先審自家既有頁，避免同意圖重複新建。成本中，擴張成本高。",
+      "reason": "競爭者有多層內容與內鏈架構，但沒有證據證明頁數是成效來源。發布前定義意圖，發布後用自家資料觀察查詢對應、收錄與有效互動；無新增價值則合併或停止。"
+    },
+    {
+      "item": "action:5",
+      "action": "P2｜先驗自家技術基本盤，再投入影片與站外推廣：確認狀態碼、canonical、robots、sitemap、行動可用性；影像只為可驗證體驗服務。站外以有來源的原創研究尋求自然引用，不把競爭者出站網址當backlink清單。成本低至高分階段。",
+      "reason": "競爭者樣本未顯示明確全站抓取障礙，無法以公開資料推定其技術弱點；影片頁只證明有內容設計，不證明排名收益。驗收依自家實測技術結果與可核對引用，而非連結數量。"
+    }
+  ],
+  "unknowns": [
+    "自家網站網址、定位、現有內容、預算、授權GSC／分析資料均未提供；全部行動為評估建議，未修改任何網站。",
+    "競爭者Google台灣穩定排名、搜尋量、自然流量、CTR、轉換與收入未知。",
+    "未全面爬站；games及其他sitemap分區未遍查，不能斷言沒有3A專頁或其他提及。",
+    "站外來源未直接抓取；3A官方身分、相關網域關係、完整backlinks與第三方口碑未知。",
+    "影片未播放、截圖未逐張核驗、交易與客服紀錄未獨立驗真；競爭者自稱獨立及合法不能當已證實事實。",
+    "未測CWV、JavaScript渲染、結構化資料、全站重複度或實際索引；不可宣稱技術全面正常、存在關鍵字內耗或內容由AI生成。",
+    "已用完五次公開搜尋；包括一次空白結果與一次無結果錯誤，均未用作頁面不存在的證據。"
+  ],
+  "review_questions": [
+    "Is each observation/inference supported by its cited snapshot? (unsupported)",
+    "Does any claim or action confuse the competitor with our own site, or overreach beyond public evidence? (scope_error)"
+  ]
+}

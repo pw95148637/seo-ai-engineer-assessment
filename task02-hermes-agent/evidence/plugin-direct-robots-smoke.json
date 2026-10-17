@@ -1,0 +1,13 @@
+{
+  "model_called": false,
+  "test": "direct registered tool, robots only",
+  "result": {
+    "evidence_id": "2f5d6e92f1764a8691ba97b5e61c89b2",
+    "url": "https://2030.tw/robots.txt",
+    "status": 200,
+    "untrusted_content": true,
+    "kind": "text",
+    "links": [],
+    "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://2030.tw/sitemap_index.xml\n"
+  }
+}

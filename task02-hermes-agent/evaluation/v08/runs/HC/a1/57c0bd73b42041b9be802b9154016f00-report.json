@@ -1,0 +1,169 @@
+{
+  "claims": [
+    {
+      "text": "首頁以「台灣娛樂城推薦評比平台」為title與H1定位；排行、優惠、攻略、安全、術語形成共用導航，已讀HTML頁面均有對應自身URL的canonical。這是可見的主題與技術配置，不代表排名或流量成果。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "671ef42ca7c4443db76d72fcd83b2c32",
+        "9af893a9bdcb4e47a086baf12aa930d7",
+        "87e235afd17a41fabe4b7265744f2582",
+        "2f0ba9ba30e74f04b8c7e80d2d0fdfeb",
+        "7a24174d65474685a73531ee916c3d38",
+        "db5de736904e42dfa910782ee8643054"
+      ],
+      "topic": "architecture"
+    },
+    {
+      "text": "從各頁title、description、H1及內容推斷，娛樂城策略是以年度評比及優惠承接商業比較意圖，以防詐、攻略、術語覆蓋資訊意圖；只能證明內容布局，不能證明這些頁已取得搜尋成效。",
+      "kind": "inference",
+      "section": "on_page",
+      "evidence_ids": [
+        "671ef42ca7c4443db76d72fcd83b2c32",
+        "9af893a9bdcb4e47a086baf12aa930d7",
+        "87e235afd17a41fabe4b7265744f2582",
+        "7a24174d65474685a73531ee916c3d38",
+        "2f0ba9ba30e74f04b8c7e80d2d0fdfeb",
+        "db5de736904e42dfa910782ee8643054"
+      ],
+      "topic": "intent_strategy"
+    },
+    {
+      "text": "本輪讀取的六個HTML頁面未見3A娛樂城提及或專屬頁連結；公開sitemap僅列首頁，site查詢3A所回傳的可用結果也只是首頁、排行、優惠、防詐、攻略，不能當作3A品牌覆蓋證據。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "671ef42ca7c4443db76d72fcd83b2c32",
+        "9af893a9bdcb4e47a086baf12aa930d7",
+        "87e235afd17a41fabe4b7265744f2582",
+        "7a24174d65474685a73531ee916c3d38",
+        "2f0ba9ba30e74f04b8c7e80d2d0fdfeb",
+        "db5de736904e42dfa910782ee8643054",
+        "c67d0763fba149d2b0d1032ff23e8d27",
+        "95f025b560454eca99047fc4a20b51c1"
+      ],
+      "topic": "3a_coverage"
+    },
+    {
+      "text": "是否另有未被本輪發現、未連結或動態呈現的3A頁，以及3A娛樂城與娛樂城的實際排名、搜尋量與流量，皆未知。",
+      "kind": "unknown",
+      "section": "on_page",
+      "evidence_ids": [],
+      "topic": "coverage_and_performance"
+    },
+    {
+      "text": "排行頁並非沒有方法說明：它介紹CB-FIVE、五項面向與測試程序；但抓取文字中各權重皆為0%，未展示可重算的樣本與逐筆紀錄。0%可能與動態呈現有關，不能據此認定真實評分權重為零。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "9af893a9bdcb4e47a086baf12aa930d7"
+      ],
+      "topic": "methodology_counterevidence"
+    },
+    {
+      "text": "優惠頁有具體條件，但同頁存在需釐清的口徑差異：任你博卡片為20倍流水，表格為15x；錢盈卡片為3倍，表格為10x。有春生日活動到期日為「-」，其他條目亦有「官方公布截止日前」。不同活動可能解釋差異，不能直接判定內容造假或過期。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "87e235afd17a41fabe4b7265744f2582"
+      ],
+      "topic": "consistency_freshness"
+    },
+    {
+      "text": "攻略頁可見多次重複的英文文章標題及2025/08/22日期，提取連結未顯示獨立攻略URL，且有指向Google的出站連結。術語頁亦有多個分類標題但本次文字主要展開平台術語。這支持進一步檢查內容完成度與可爬深層頁，不足以斷言所有點擊均失效或遭搜尋引擎處罰。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "2f0ba9ba30e74f04b8c7e80d2d0fdfeb",
+        "db5de736904e42dfa910782ee8643054"
+      ],
+      "topic": "content_and_links"
+    },
+    {
+      "text": "防詐頁實際提供辨識說明與165求助文字，因此不能將全站歸為只有促銷；但本次提取未見黑名單個案的原始證據連結，且頁面將HTTPS與提款速度列入合法對照，不能把該頁的合法或詐騙標籤當作已獨立核實的法律結論。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "7a24174d65474685a73531ee916c3d38"
+      ],
+      "topic": "safety_counterevidence"
+    },
+    {
+      "text": "首頁、排行與優惠頁含導向多個外部娛樂城網域的連結；hs168.vip等是目標站的出站目的地，不是本站入站連結。提取中的rel列表為空，但無法僅據此確認佣金、合約或站群關係。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "671ef42ca7c4443db76d72fcd83b2c32",
+        "9af893a9bdcb4e47a086baf12aa930d7",
+        "87e235afd17a41fabe4b7265744f2582"
+      ],
+      "topic": "outbound_not_backlinks"
+    },
+    {
+      "text": "網域排除本站、品牌名、放寬品牌加網域的站外查詢皆未取得可用結果，因而本輪沒有符合research_offpage讀取條件的站外頁；這是公開搜尋可用性限制，不是沒有入站連結的證明。",
+      "kind": "observation",
+      "section": "off_page",
+      "evidence_ids": [
+        "7287e75755f94acb9b3a6e202a3071e2",
+        "14f64b6c9bbe4cf9b42c02a2405e62b7",
+        "cacadc29daee4713b659dce4a89125b9"
+      ],
+      "topic": "access"
+    },
+    {
+      "text": "已知的off-page實質內容觀察為空：本輪未核實任何站外頁的目標站入站連結、錨文字、rel或品牌提及上下文。",
+      "kind": "unknown",
+      "section": "off_page",
+      "evidence_ids": [],
+      "topic": "verified_mentions"
+    },
+    {
+      "text": "off-page推論不成立：沒有足夠公開證據判定其以購買連結、論壇口碑、媒體公關或其他方式取得權威，也不能推論其連結弱。",
+      "kind": "unknown",
+      "section": "off_page",
+      "evidence_ids": [],
+      "topic": "strategy_inference"
+    },
+    {
+      "text": "完整反向連結總量、引薦網域品質、錨文字分布、自然／付費比例、歷史變化與實際引薦流量未知；即使未來讀到少量站外頁，也不等於完整backlink索引。",
+      "kind": "unknown",
+      "section": "off_page",
+      "evidence_ids": [],
+      "topic": "backlink_profile"
+    }
+  ],
+  "actions": [
+    {
+      "action": "P0／我們自己的網站：先確認合規與編輯規範；所有評測保留來源URL、查核日期、適用司法管轄區、作者／審核者、利益揭露及更正機制。不複製競爭者黑名單指控或將海外牌照、HTTPS等同台灣合法。",
+      "reason": "競爭頁有防詐內容但可追溯依據不足；以可核實資料差異化，比增加無來源字數更值得優先投資。"
+    },
+    {
+      "action": "P1／我們自己的網站：先製作一個3A娛樂城查證型主頁，覆蓋品牌實體及網址辨識、條款與出金限制、評價來源和爭議查核；未確認者明標未知，證據不足時不給分、不自稱實測、不仿冒官方。以單一主頁搭配必要的深入解釋，避免大量近似品牌頁。",
+      "reason": "已讀競爭頁未見3A專屬覆蓋，屬待驗的內容機會而非已證實的排名缺口；此行動是自站小規模測試，不是保證流量。"
+    },
+    {
+      "action": "P1／我們自己的網站：將娛樂城總覽／比較、優惠條款、防詐及術語按意圖分工，從總覽連向有證據的品牌頁並回鏈；統一資料來源、活動ID、有效日期及流水計算基底，防止卡片與表格口徑衝突。",
+      "reason": "競爭者已有主題導航，因此單純複製類別不是優勢；可信資料與一致性是較明確的差異化方向。"
+    },
+    {
+      "action": "P1／我們自己的網站：驗證伺服器可讀內容、真實a href內鏈、canonical與完整sitemap，移除佔位與重複文章；以實際爬取確認品牌與深入內容可被發現。",
+      "reason": "競爭者抽取未呈現深層評價／攻略URL，公開sitemap僅首頁；但競爭者有導航且索引可見其他頁，不可宣稱它們不可索引。"
+    },
+    {
+      "action": "P2／我們自己的網站：以有來源的優惠條款比較資料、風險辨識清單及更正紀錄作為可引用資產，向相關媒體／消費者教育站編輯接觸；遵守平台規範，不買大量精確錨文字連結、不洗論壇。若有付費合作，明確揭露並適當標示sponsored。",
+      "reason": "這是自站可評估的自然提及策略，不是對競爭者off-page打法的模仿；目前尚無其站外成功案例可供驗證。"
+    },
+    {
+      "action": "驗證與停損／僅用自站獲授權資料：先記錄索引與兩組查詢的基線，再於發布後2至4週檢查抓取、索引和查詢對應，後續觀察曝光、點擊與合格互動；站外逐筆核對來源頁、連結目標、錨文字、rel與上下文。依結果調整，不承諾排名或流量成長。",
+      "reason": "沒有自站資訊與競爭者私有數據，無法計算勝率或ROI；需把低成本查證型內容試驗與較高成本外聯分開評估。"
+    }
+  ],
+  "unknowns": [
+    "競爭者私有Search Console、分析、轉換與流量數據不可得，未虛構數值。",
+    "未取得站外可讀候選頁，因此沒有research_offpage核實紀錄，也沒有可報告的入站錨文字與上下文。",
+    "已用完五次公開搜尋；不再以重複查詢補造結果。",
+    "本輪未執行瀏覽器渲染、Core Web Vitals、完整爬站或歷史追蹤，動態計數與擷取重複需後續辨識。",
+    "未見3A僅限本輪已讀頁、sitemap與可用索引結果，不等於全站沒有相關內容。",
+    "我們自己的網站URL、既有內容、權威、資源及合規審核結果尚未提供；優先順序為待自站驗證的建議，未修改任何網站。"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "hermes_home": "/home/user/soulo/task02-hermes/.runtime/user/profiles/smoke-review2",
+  "hermes_learning": "learn",
+  "valid_tool_names": [
+    "memory",
+    "research_evidence",
+    "research_fetch",
+    "research_finish",
+    "research_offpage",
+    "research_search",
+    "research_status",
+    "skill_manage",
+    "skill_view",
+    "skills_list"
+  ],
+  "memory_loaded": true,
+  "system_prompt_sha256": "16b1f37ac27132ac370bb79577fc5e90499601b4cad74fadbf6464e943b2596d",
+  "memory_block": true,
+  "user_block": false,
+  "skills_index": false
+}

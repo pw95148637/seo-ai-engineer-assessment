@@ -1,0 +1,14 @@
+{
+  "before": {
+    "homes": {
+      "v08-c1-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "root_learned": [],
+    "user_hermes": null
+  },
+  "own": "v08-c1-a1",
+  "expected": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "ledger_before": null,
+  "ledger_after": null,
+  "problems": []
+}

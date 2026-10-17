@@ -1,0 +1,17 @@
+{
+  "hermes_home": "/home/user/soulo/task02-hermes/.runtime/user/profiles/chk-off",
+  "hermes_learning": "off",
+  "valid_tool_names": [
+    "research_evidence",
+    "research_fetch",
+    "research_finish",
+    "research_offpage",
+    "research_search",
+    "research_status"
+  ],
+  "memory_loaded": false,
+  "system_prompt_sha256": "296bbb99c27b3895f28da1d9e84cd40610fa0a4ec9cded553c19f9094ce7a700",
+  "memory_block": false,
+  "user_block": false,
+  "skills_index": false
+}

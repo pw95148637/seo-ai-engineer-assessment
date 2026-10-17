@@ -1,0 +1,10 @@
+name: soulo-research
+version: 0.7.0
+description: Read-only research with bounded requests, search-gated off-page reads, evidence and a controller-owned lessons ledger
+provides_tools:
+  - research_status
+  - research_search
+  - research_fetch
+  - research_offpage
+  - research_evidence
+  - research_finish

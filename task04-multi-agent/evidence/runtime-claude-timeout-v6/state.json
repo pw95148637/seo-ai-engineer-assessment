@@ -1,0 +1,34 @@
+{
+  "request": "規劃面向台灣讀者的「娛樂城推薦」文章大綱，保留搜尋關聯與具體閱讀收益，以出金條件、資安及法律風險查核為切入點，不為未查證平台背書。",
+  "initial_instruction": "產出吸引讀者且不誤導的大綱；沒有實測或平台證據，不捏造經驗、排名、機率或審查結果。",
+  "scenario": "normal",
+  "immutable_conflict": false,
+  "mode": "llm_runtime",
+  "policy_version": "custom-provisional-v5",
+  "run_id": "b53302f0e5b04ce893d04519eef75035",
+  "iteration": 1,
+  "max_iterations": 3,
+  "status": "error",
+  "draft": {},
+  "audit": {},
+  "history": [],
+  "errors": [
+    {
+      "role": "planner",
+      "attempt": 0,
+      "iteration": 1,
+      "type": "TimeoutError"
+    },
+    {
+      "role": "planner",
+      "attempt": 1,
+      "iteration": 1,
+      "type": "TimeoutError"
+    },
+    {
+      "type": "TimeoutError",
+      "message": ""
+    }
+  ],
+  "final": null
+}

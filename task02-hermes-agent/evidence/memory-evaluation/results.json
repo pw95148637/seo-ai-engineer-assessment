@@ -1,0 +1,190 @@
+{
+  "kind": "synthetic_component_ablation_no_model",
+  "case_sha256": "e00ebe2e5a3fd211f6a193e8604c4bd126b27374aec7880da5bdcf051835c636",
+  "development_runs": 2,
+  "holdout_cases": 6,
+  "holdout_learning": false,
+  "policy": "fixed traversal; memory only changes initial URL; history not interpreted by this policy",
+  "results": [
+    {
+      "case": "fresh-a",
+      "mode": "baseline",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 8,
+      "gold": 8
+    },
+    {
+      "case": "fresh-a",
+      "mode": "history",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 8,
+      "gold": 8
+    },
+    {
+      "case": "fresh-a",
+      "mode": "memory",
+      "requests": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 8,
+      "gold": 8
+    },
+    {
+      "case": "fresh-b",
+      "mode": "baseline",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 12,
+      "gold": 12
+    },
+    {
+      "case": "fresh-b",
+      "mode": "history",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 12,
+      "gold": 12
+    },
+    {
+      "case": "fresh-b",
+      "mode": "memory",
+      "requests": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 12,
+      "gold": 12
+    },
+    {
+      "case": "fresh-c",
+      "mode": "baseline",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 6,
+      "gold": 6
+    },
+    {
+      "case": "fresh-c",
+      "mode": "history",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 6,
+      "gold": 6
+    },
+    {
+      "case": "fresh-c",
+      "mode": "memory",
+      "requests": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 6,
+      "gold": 6
+    },
+    {
+      "case": "empty-a",
+      "mode": "baseline",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 8,
+      "gold": 8
+    },
+    {
+      "case": "empty-a",
+      "mode": "history",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 8,
+      "gold": 8
+    },
+    {
+      "case": "empty-a",
+      "mode": "memory",
+      "requests": 4,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 8,
+      "gold": 8
+    },
+    {
+      "case": "empty-b",
+      "mode": "baseline",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 10,
+      "gold": 10
+    },
+    {
+      "case": "empty-b",
+      "mode": "history",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 10,
+      "gold": 10
+    },
+    {
+      "case": "empty-b",
+      "mode": "memory",
+      "requests": 4,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 10,
+      "gold": 10
+    },
+    {
+      "case": "stale-a",
+      "mode": "baseline",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 8,
+      "gold": 8
+    },
+    {
+      "case": "stale-a",
+      "mode": "history",
+      "requests": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "found": 8,
+      "gold": 8
+    },
+    {
+      "case": "stale-a",
+      "mode": "memory",
+      "requests": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "found": 8,
+      "gold": 8
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "mean_requests": 3.0,
+      "mean_precision": 1.0,
+      "mean_recall": 1.0
+    },
+    "history": {
+      "mean_requests": 3.0,
+      "mean_precision": 1.0,
+      "mean_recall": 1.0
+    },
+    "memory": {
+      "mean_requests": 2.6666666666666665,
+      "mean_precision": 0.8333333333333334,
+      "mean_recall": 0.8333333333333334
+    }
+  },
+  "conclusion": "Memory may reduce discovery requests on stable sitemaps but can worsen cost or recall after structural changes. No evidence yet of Hermes/LLM research-quality improvement."
+}

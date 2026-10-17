@@ -1,0 +1,32 @@
+{
+  "112f91fc": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "notes": "未發現缺陷。14 個 claims 都能在引用快照找到依據，包括評測方法、50/150 元說明、跨頁排序差異、3A 引用與 sitemap 範圍；搜尋結果、影片與出站連結都已加上限制。5 個 actions 都只針對自家網站。"
+  },
+  "13898e57": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "notes": "未發現記分缺陷。title、canonical、模板、出金時間差異與 CTA 參數都與快照一致。唯一瑕疵：claim 9 說 post-sitemap2「內容遭截斷」，但快照是完整 XML（274 筆，查無 wordcup）。這是保守的過程說明，不影響結論，因此不記分。"
+  },
+  "475ad4a1": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "notes": "未發現缺陷。首頁與目錄內鏈、2502 篇自述、相同模板、出金與入金數字、推薦頁沒有比較表、三份 sitemap 查無 wordcup、搜尋雜訊，都能在快照找到；推論與行動都限定在公開證據範圍，並只針對我方網站。"
+  },
+  "4f17dbd9": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "notes": "未發現缺陷。目標頁設定、CTA 參數、更新日期與「幾個月」體驗說法、SSL 敘述、三份 sitemap 查無 wordcup、空白／無結果搜尋與正負面摘要，都與快照一致；摘要也沒有被當成已讀原頁或事實。"
+  },
+  "5a480368": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "notes": "未發現缺陷。評測權重、實測日期與數據、跨頁排序、塔樓衝刺 ×100 與 ×500/×1000/×3000 的頁內張力、明星代言頁的強保證與風險提示、author 頁 noindex 都已核實；行動都標明只供我方使用。"
+  },
+  "a9827eaa": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "notes": "未發現缺陷。六頁自指 canonical 與相同模板、3A 各頁出金時間與最低入金說法不一、不出金與合法嗎頁未切題、分類參數頁 canonical 指回 /wordcup/、三次無結果搜尋，都與快照一致；推論與行動都沒有越界。"
+  }
+}

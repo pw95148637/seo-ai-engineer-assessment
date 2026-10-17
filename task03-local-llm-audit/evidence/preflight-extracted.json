@@ -1,0 +1,35 @@
+{
+  "provenance": "Extracted verbatim Python print values from downloaded executed Notebook, not re-executed locally",
+  "source_notebook_sha256": "f88f3bd5356fdaf5f9cf1d2c608b1147e655e976e5d21b45992e674bdf3d67b9",
+  "hardware": {
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "cuda_available": true,
+    "torch": "2.11.0+cu128",
+    "gpu_count": 2,
+    "devices": [
+      {
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632
+      },
+      {
+        "name": "Tesla T4",
+        "vram_bytes": 15636037632
+      }
+    ]
+  },
+  "model": {
+    "model": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "load_seconds": 134.43370671600002,
+    "device_map": "{'': 0}",
+    "memory_allocated_bytes": 6076724736,
+    "versions": {
+      "torch": "2.11.0+cu128",
+      "transformers": "4.57.6",
+      "accelerate": "1.14.0",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "generation_text": "審核文章時，必須提供具體且可核對的證據，以確保資訊的準確性與可靠性。",
+  "claim": "GPU and Chinese smoke only; training not measured here"
+}

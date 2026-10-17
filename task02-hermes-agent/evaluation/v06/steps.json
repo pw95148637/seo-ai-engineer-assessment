@@ -1,0 +1,177 @@
+[
+  {
+    "step": "R1",
+    "attempt": 1,
+    "run_id": "8cad8d54a03c4f94a716e7653b5b3112",
+    "state": "research_complete",
+    "exit_code": 0,
+    "started": "2026-10-16T04:51:19.241215+00:00",
+    "command": [
+      "bash",
+      "scripts/run_research.sh",
+      "--model",
+      "gpt-6.1-sol",
+      "--mode",
+      "memory",
+      "--root",
+      "/home/user/soulo/task02-hermes/evaluation/v06/runs/2030-series",
+      "--target",
+      "https://2030.tw",
+      "--keyword",
+      "娛樂城",
+      "--keyword",
+      "3A娛樂城"
+    ],
+    "ended": "2026-10-16T04:54:20.947341+00:00"
+  },
+  {
+    "step": "R2",
+    "attempt": 1,
+    "run_id": "bbde030a55674b72be1f2369a4cab01f",
+    "state": "research_complete",
+    "exit_code": 0,
+    "started": "2026-10-16T05:24:50.617871+00:00",
+    "command": [
+      "bash",
+      "scripts/run_research.sh",
+      "--model",
+      "gpt-6.1-sol",
+      "--mode",
+      "memory",
+      "--root",
+      "/home/user/soulo/task02-hermes/evaluation/v06/runs/2030-series",
+      "--target",
+      "https://2030.tw",
+      "--keyword",
+      "娛樂城",
+      "--keyword",
+      "3A娛樂城"
+    ],
+    "ended": "2026-10-16T05:27:45.545828+00:00"
+  },
+  {
+    "step": "B1",
+    "attempt": 1,
+    "run_id": "9f82e8c293f24c58a9364f7ef8bf4804",
+    "state": "research_complete",
+    "exit_code": 0,
+    "started": "2026-10-16T05:28:39.703744+00:00",
+    "command": [
+      "bash",
+      "scripts/run_research.sh",
+      "--model",
+      "gpt-6.1-sol",
+      "--mode",
+      "baseline",
+      "--root",
+      "/home/user/soulo/task02-hermes/evaluation/v06/runs/B1",
+      "--target",
+      "https://2030.tw",
+      "--keyword",
+      "娛樂城",
+      "--keyword",
+      "3A娛樂城",
+      "--no-learn"
+    ],
+    "ended": "2026-10-16T05:31:40.574345+00:00"
+  },
+  {
+    "step": "R3",
+    "attempt": 1,
+    "run_id": "d19adf916c5b49f7a84819d2ee163049",
+    "state": "research_complete",
+    "exit_code": 0,
+    "started": "2026-10-16T05:32:05.836517+00:00",
+    "command": [
+      "bash",
+      "scripts/run_research.sh",
+      "--model",
+      "gpt-6.1-sol",
+      "--mode",
+      "memory",
+      "--root",
+      "/home/user/soulo/task02-hermes/evaluation/v06/runs/2030-series",
+      "--target",
+      "https://2030.tw",
+      "--keyword",
+      "娛樂城",
+      "--keyword",
+      "3A娛樂城",
+      "--no-learn"
+    ],
+    "ended": "2026-10-16T05:34:56.743219+00:00"
+  },
+  {
+    "step": "HP",
+    "attempt": 1,
+    "state": "chosen",
+    "result": {
+      "time": "2026-10-16T05:35:35.784697+00:00",
+      "checks": [
+        {
+          "host": "casinobase.tw",
+          "error": "transport:TimeoutError",
+          "ok": false
+        },
+        {
+          "host": "icasino.tw",
+          "homepage_status": 200,
+          "ok": true
+        }
+      ],
+      "chosen": "icasino.tw"
+    }
+  },
+  {
+    "step": "HB",
+    "attempt": 1,
+    "run_id": "b30d426fd79544bebd134af5ad958100",
+    "state": "research_complete",
+    "exit_code": 0,
+    "started": "2026-10-16T05:35:59.341122+00:00",
+    "command": [
+      "bash",
+      "scripts/run_research.sh",
+      "--model",
+      "gpt-6.1-sol",
+      "--mode",
+      "baseline",
+      "--root",
+      "/home/user/soulo/task02-hermes/evaluation/v06/runs/HB",
+      "--target",
+      "https://icasino.tw",
+      "--keyword",
+      "娛樂城",
+      "--keyword",
+      "3A娛樂城",
+      "--no-learn"
+    ],
+    "ended": "2026-10-16T05:38:46.397213+00:00"
+  },
+  {
+    "step": "HM",
+    "attempt": 1,
+    "run_id": "ee4d9ba1e4de4c2d81cb363a796ae7ea",
+    "state": "research_complete",
+    "exit_code": 0,
+    "started": "2026-10-16T05:39:13.328586+00:00",
+    "command": [
+      "bash",
+      "scripts/run_research.sh",
+      "--model",
+      "gpt-6.1-sol",
+      "--mode",
+      "memory",
+      "--root",
+      "/home/user/soulo/task02-hermes/evaluation/v06/runs/HM",
+      "--target",
+      "https://icasino.tw",
+      "--keyword",
+      "娛樂城",
+      "--keyword",
+      "3A娛樂城",
+      "--no-learn"
+    ],
+    "ended": "2026-10-16T05:42:40.559604+00:00"
+  }
+]

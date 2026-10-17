@@ -1,0 +1,125 @@
+From https://github.com/NousResearch/hermes-agent
+ * branch              311155fade43d1993ea968909a2ad36762345bbc -> FETCH_HEAD
+HEAD is now at 311155fa refactor(profiles): build the seed routing view once; expand `enabled` too
+
+[0;36m☤ Hermes Agent Setup[0m
+
+[0;36m→[0m Checking for uv...
+[0;36m→[0m Staging pinned uv 0.12.3 (linux-x64) into the pm store...
+[0;32m✓[0m uv installed (uv 0.12.3 (x86_64-unknown-linux-gnu))
+[0;36m→[0m Installing python + tools + dependencies via pm (hash-verified via uv.lock)...
+[0;36m→[0m (first run on a fresh checkout can take 1-5 minutes)
+Downloading cpython-3.14.7-linux-x86_64-gnu (download) (34.3MiB)
+ Downloaded cpython-3.14.7-linux-x86_64-gnu (download)
+Installed Python 3.14.7 in 4.17s
+ + cpython-3.14.7-linux-x86_64-gnu
+Preparing the isolated Hermes runtime…
+  → Installing Python dependencies…
+  ✓ Installing Python dependencies
+  ffmpeg:   3.3%  4.0 MiB / 120.7 MiB
+  ffmpeg:   6.6%  8.0 MiB / 120.7 MiB
+  ffmpeg:   9.9%  12.0 MiB / 120.7 MiB
+  ffmpeg:  13.3%  16.0 MiB / 120.7 MiB
+  ffmpeg:  16.6%  20.0 MiB / 120.7 MiB
+  ffmpeg:  19.9%  24.0 MiB / 120.7 MiB
+  ffmpeg:  23.2%  28.0 MiB / 120.7 MiB
+  ffmpeg:  26.5%  32.0 MiB / 120.7 MiB
+  ffmpeg:  29.8%  36.0 MiB / 120.7 MiB
+  ffmpeg:  33.1%  40.0 MiB / 120.7 MiB
+  ffmpeg:  36.4%  44.0 MiB / 120.7 MiB
+  ffmpeg:  39.8%  48.0 MiB / 120.7 MiB
+  ffmpeg:  43.1%  52.0 MiB / 120.7 MiB
+  ffmpeg:  46.4%  56.0 MiB / 120.7 MiB
+  ffmpeg:  49.7%  60.0 MiB / 120.7 MiB
+  ffmpeg:  53.0%  64.0 MiB / 120.7 MiB
+  ffmpeg:  56.3%  68.0 MiB / 120.7 MiB
+  ffmpeg:  59.6%  72.0 MiB / 120.7 MiB
+  ffmpeg:  62.9%  76.0 MiB / 120.7 MiB
+  ffmpeg:  66.3%  80.0 MiB / 120.7 MiB
+  ffmpeg:  69.6%  84.1 MiB / 120.7 MiB
+  ffmpeg:  73.0%  88.1 MiB / 120.7 MiB
+  ffmpeg:  76.3%  92.1 MiB / 120.7 MiB
+  ffmpeg:  79.7%  96.2 MiB / 120.7 MiB
+  ffmpeg:  83.0%  100.2 MiB / 120.7 MiB
+  ffmpeg:  86.3%  104.2 MiB / 120.7 MiB
+  ffmpeg:  89.6%  108.2 MiB / 120.7 MiB
+  ffmpeg:  92.9%  112.2 MiB / 120.7 MiB
+  ffmpeg:  96.5%  116.5 MiB / 120.7 MiB
+  ffmpeg:  99.9%  120.6 MiB / 120.7 MiB
+  ffmpeg: 100.0%  120.7 MiB / 120.7 MiB
+  ffmpeg: 100.0%  120.7 MiB / 120.7 MiB
+  ffmpeg: unpacking
+✓ ffmpeg
+  node:  15.6%  5.0 MiB / 32.0 MiB
+  node:  28.1%  9.0 MiB / 32.0 MiB
+  node:  40.6%  13.0 MiB / 32.0 MiB
+  node:  53.1%  17.0 MiB / 32.0 MiB
+  node:  68.8%  22.0 MiB / 32.0 MiB
+  node:  84.4%  27.0 MiB / 32.0 MiB
+  node: 100.0%  32.0 MiB / 32.0 MiB
+  node: 100.0%  32.0 MiB / 32.0 MiB
+  node: unpacking
+✓ node
+  npm: 100.0%  2.9 MiB / 2.9 MiB
+  npm: 100.0%  2.9 MiB / 2.9 MiB
+  npm: unpacking
+✓ npm
+  python:   3.3%  4.0 MiB / 119.7 MiB
+  python:   6.7%  8.0 MiB / 119.7 MiB
+  python:  10.0%  12.0 MiB / 119.7 MiB
+  python:  13.4%  16.0 MiB / 119.7 MiB
+  python:  16.7%  20.0 MiB / 119.7 MiB
+  python:  20.0%  24.0 MiB / 119.7 MiB
+  python:  23.4%  28.0 MiB / 119.7 MiB
+  python:  26.7%  32.0 MiB / 119.7 MiB
+  python:  30.1%  36.0 MiB / 119.7 MiB
+  python:  33.4%  40.0 MiB / 119.7 MiB
+  python:  36.8%  44.0 MiB / 119.7 MiB
+  python:  40.1%  48.0 MiB / 119.7 MiB
+  python:  43.4%  52.0 MiB / 119.7 MiB
+  python:  46.8%  56.0 MiB / 119.7 MiB
+  python:  50.9%  61.0 MiB / 119.7 MiB
+  python:  54.3%  65.0 MiB / 119.7 MiB
+  python:  57.6%  69.0 MiB / 119.7 MiB
+  python:  60.9%  73.0 MiB / 119.7 MiB
+  python:  64.3%  77.0 MiB / 119.7 MiB
+  python:  67.6%  81.0 MiB / 119.7 MiB
+  python:  71.0%  85.0 MiB / 119.7 MiB
+  python:  74.3%  89.0 MiB / 119.7 MiB
+  python:  77.7%  93.0 MiB / 119.7 MiB
+  python:  81.0%  97.0 MiB / 119.7 MiB
+  python:  85.1%  101.9 MiB / 119.7 MiB
+  python:  88.5%  105.9 MiB / 119.7 MiB
+  python:  91.8%  109.9 MiB / 119.7 MiB
+  python:  95.9%  114.8 MiB / 119.7 MiB
+  python: 100.0%  119.7 MiB / 119.7 MiB
+  python: 100.0%  119.7 MiB / 119.7 MiB
+  python: unpacking
+✓ python
+  ripgrep: 100.0%  2.2 MiB / 2.2 MiB
+  ripgrep: 100.0%  2.2 MiB / 2.2 MiB
+  ripgrep: unpacking
+✓ ripgrep
+  → Installing Python dependencies…
+  ✓ Installing Python dependencies
+✓ venv
+  → Resolving Python dependencies…
+  ✓ Resolving Python dependencies
+  → Installing Python dependencies…
+  ✓ Installing Python dependencies
+✓ test environment
+  agent-browser: 100.0%  0.0 MiB / 0.0 MiB
+✗ chromium: install failed: sha256 mismatch for https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-linux64.zip: pinned b5e3195041af345a668d110f5daf5581961fa3608626ea588c97dd0fe81c4e38, got 5b131ca14aa96311d3432b0062c7443d3b0e6346ec279bd376a75f0a76bcd5d7 — retry, or run `hermes pm doctor`
+⚠ optional agent-browser was not installed; its tools stay unavailable until `hermes pm install agent-browser` succeeds
+  cua-driver:  14.6%  4.0 MiB / 27.5 MiB
+  cua-driver:  29.1%  8.0 MiB / 27.5 MiB
+  cua-driver:  43.7%  12.0 MiB / 27.5 MiB
+  cua-driver:  58.2%  16.0 MiB / 27.5 MiB
+  cua-driver:  74.4%  20.4 MiB / 27.5 MiB
+  cua-driver:  92.1%  25.3 MiB / 27.5 MiB
+  cua-driver: 100.0%  27.5 MiB / 27.5 MiB
+  cua-driver: 100.0%  27.5 MiB / 27.5 MiB
+  cua-driver: unpacking
+✓ cua-driver
+[0;32m✓[0m Tools + dependencies installed (hash-verified via pm + uv.lock)
+install_exit=0

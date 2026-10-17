@@ -1,0 +1,162 @@
+{
+  "claims": [
+    {
+      "text": "首頁title與H1為CasinoBase｜台灣娛樂城推薦評比平台；/reviews/與/bonuses/分別以2026排行與優惠體驗金為title、H1主題，三頁canonical各指向自身。共同導覽連到排行、優惠、攻略、防詐與術語，支持以娛樂城及延伸意圖組織內容的觀察，不證明排名。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "331907f4ec834ff3b7f19b64735c46ec",
+        "c024c241dae144fb999e4e432bba2701",
+        "a4e4b4ff4a864132955b2c8f79bbac64"
+      ],
+      "topic": "keyword_architecture"
+    },
+    {
+      "text": "在已讀首頁、排行、優惠、攻略、防詐頁的抽取內容及連結中未見3A娛樂城；公開sitemap只列首頁。這僅界定本次樣本，不能證明全站沒有3A頁。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "331907f4ec834ff3b7f19b64735c46ec",
+        "c024c241dae144fb999e4e432bba2701",
+        "a4e4b4ff4a864132955b2c8f79bbac64",
+        "1bda73c3186847ada98d16fa837afdfd",
+        "eac323a15d984921aff74a300792b0b2",
+        "dcd3ed2811224188a852a523c896982e"
+      ],
+      "topic": "3a_sample_coverage"
+    },
+    {
+      "text": "排行頁宣稱採CB-FIVE加權模型、實測及每月更新，但本次文字抽取五項權重皆顯示0%；本頁抽取連結沒有個別站內品牌評測URL或PTT/Dcard來源。首頁9.2分品牌列在9.4分品牌之前，排行頁FAQ卻稱9.4分品牌第一。這是可核驗性及呈現一致性的疑點，不是造假判定；權重可能受動態渲染影響。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "331907f4ec834ff3b7f19b64735c46ec",
+        "c024c241dae144fb999e4e432bba2701"
+      ],
+      "topic": "editorial_verifiability"
+    },
+    {
+      "text": "優惠頁同品牌不同區塊條件未一致對應，例如任你博／任你搏在活動卡為20倍流水、比較區為15x；錢盈卡片為3倍、比較區為10x；金大發卡片首儲2000送500、比較區首儲1000送500。可能是不同活動，但本頁未清楚對應；部分期限為破折號或官方公布截止日前，無法單憑每日更新自述驗證新鮮度。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "a4e4b4ff4a864132955b2c8f79bbac64"
+      ],
+      "topic": "offer_consistency"
+    },
+    {
+      "text": "攻略頁存在重複英文文章標題，抽取出的出站連結含Google首頁，未見相應獨立攻略文章URL。防詐頁有大量平台風險指控，但本次抽取沒有站外證據連結；不能將該站指控當成已證實事實。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "1bda73c3186847ada98d16fa837afdfd",
+        "eac323a15d984921aff74a300792b0b2"
+      ],
+      "topic": "content_depth"
+    },
+    {
+      "text": "robots.txt允許所有路徑並列sitemap.xml；該sitemap只列首頁，而已直接讀取的分類頁可回傳200。這顯示已知sitemap未涵蓋所讀分類頁，不等於分類頁不能被爬取或未索引。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "5e8ef1f2130141309dd0bf8b3bd9e48a",
+        "dcd3ed2811224188a852a523c896982e",
+        "c024c241dae144fb999e4e432bba2701",
+        "a4e4b4ff4a864132955b2c8f79bbac64"
+      ],
+      "topic": "crawl_discovery"
+    },
+    {
+      "text": "競爭者可見策略較像娛樂城商業比較主頁搭配排行、優惠、攻略與防詐的主題覆蓋，再導向外部平台。仍不能由此推定實際流量、轉換、排名或聯盟佣金。自有網站可優先用可稽核評測及清楚活動條件差異化，而不是複製頁數或年份。",
+      "kind": "inference",
+      "section": "on_page",
+      "evidence_ids": [
+        "331907f4ec834ff3b7f19b64735c46ec",
+        "c024c241dae144fb999e4e432bba2701",
+        "a4e4b4ff4a864132955b2c8f79bbac64",
+        "1bda73c3186847ada98d16fa837afdfd",
+        "eac323a15d984921aff74a300792b0b2"
+      ],
+      "topic": "strategy_assessment"
+    },
+    {
+      "text": "已直接讀取的站外兩頁yuvayuva.com.tw/online-casino-recommend-and-evaluation/index.html與taiwancasinoguide.com/，均未檢出連到casinobase.tw的連結、網域文字或CasinoBase提及；因此本樣本沒有可記錄的目標入站錨文字及提及上下文。",
+      "kind": "observation",
+      "section": "off_page",
+      "evidence_ids": [
+        "daaf29dc0be1445dbbc1a9356eae8967",
+        "5114f28e9fe0461c8d8e991ba223720c"
+      ],
+      "topic": "verified_external_sample"
+    },
+    {
+      "text": "放寬品牌搜尋出現的候選不一定是品牌提及；兩個已讀候選均無目標連結或提及，因此這批搜尋相關性不能用來證明競爭者有外部背書或連結建設成效。",
+      "kind": "inference",
+      "section": "off_page",
+      "evidence_ids": [
+        "c4a60b776c8a4b93ba3dffb2a0685e50",
+        "daaf29dc0be1445dbbc1a9356eae8967",
+        "5114f28e9fe0461c8d8e991ba223720c"
+      ],
+      "topic": "external_evidence_quality"
+    },
+    {
+      "text": "競爭者完整反向連結、referring domains、入站錨文字分布、付費合作、論壇背書與off-page對排名的貢獻均未知；本站outbound_hosts是出站，不能填補這些未知。",
+      "kind": "unknown",
+      "section": "off_page",
+      "evidence_ids": [],
+      "topic": "backlink_profile"
+    },
+    {
+      "text": "兩個含中文路徑的站外候選因工具UnicodeEncodeError未能讀取，不能據此判定來源網站不可用。搜尋已用完五次；site關鍵字結果空白及精確查詢無結果不能當成未索引或沒有反向連結的證據。",
+      "kind": "unknown",
+      "section": "other",
+      "evidence_ids": [],
+      "topic": "access"
+    },
+    {
+      "text": "3A娛樂城專屬策略及排名未獲證實；也沒有競爭者Search Console、分析帳號、流量、點擊率或轉換資料。本次網域搜尋結果不是娛樂城或3A娛樂城的關鍵字排名測試。",
+      "kind": "unknown",
+      "section": "other",
+      "evidence_ids": [],
+      "topic": "performance_limits"
+    }
+  ],
+  "actions": [
+    {
+      "action": "P0｜自有網站先盤點現有URL、索引與自有Search Console查詢，以娛樂城比較主頁、排行與優惠分工；若已有頁面先改善，不直接新增重複主頁。成本低至中。",
+      "reason": "競爭者有清楚意圖分頁，但這不證明我們的網站有相同缺口；以自有數據確認再行動，避免重複意圖與無依據擴頁。"
+    },
+    {
+      "action": "P0｜自有評測先公開作者／審查者、測試日期、樣本與限制、分項分數及合計為100%的權重、可去識別證據、利益揭露與更正紀錄。成本中至高。",
+      "reason": "競爭者雖有模型與實測自述，公開樣本尚不足重現結果；可驗證性比堆字與評分更值得優先測試。不得虛構實測或把境外牌照等同台灣合法。"
+    },
+    {
+      "action": "P0｜自有優惠表以活動ID對應卡片與表格，逐一附官方條款、核對日期、期限、流水計算基礎、適用遊戲及提款限制；無法驗證就標未知或下架。成本中。",
+      "reason": "競爭者同品牌不同區塊有條件差異與模糊期限；一致且可核查的資料是具體差異化方向。"
+    },
+    {
+      "action": "P1｜3A娛樂城列為條件式試點，先驗證品牌實體、公開來源及自有查詢需求；資料足夠才建立單一中立評測頁，回答名稱／網址辨識、條款、可查證背景及風險，並從比較頁以自然錨文字連入。成本中，優先級視驗證結果調整。",
+      "reason": "本次未證實競爭者有3A專頁，也沒有需求量或SERP競爭程度證據；不能把未找到當成容易排名的缺口。"
+    },
+    {
+      "action": "P1｜在自有網站驗證真正可點擊的文章／評測內鏈、canonical、索引規則與涵蓋有效URL的sitemap；另用可執行渲染工具查手機體驗與效能。成本低至中。",
+      "reason": "競爭者sitemap與分類覆蓋不同、攻略抽取有Google出站線索；只作自站檢查項目，不假定自站也有問題。"
+    },
+    {
+      "action": "P1｜自有off-page先做可引用的研究資產，如優惠條件變更紀錄、流水規則說明及具來源的風險查核，再向相關媒體與作者做小量、揭露身分的編輯推薦；記錄實際引用URL、錨文字、上下文與rel。成本中至高。",
+      "reason": "本次未找到可確認的競爭者入站來源，沒有證據支持複製其外鏈；不購買保排名連結、不假裝玩家洗版，品質以來源相關性與引用價值評估，不以URL數量衡量。"
+    },
+    {
+      "action": "P2｜自有網站建立4至8週觀察週期，分頁群追蹤自有Search Console曝光、點擊、查詢與落地頁，並核對合規且有用的互動；外鏈只計已核實的新增引用。",
+      "reason": "這是評估窗口而非見效保證；需先有基線，才能區分內容改動與排名、點擊變化，不可借競爭者未知流量推算成果。"
+    }
+  ],
+  "unknowns": [
+    "競爭者娛樂城與3A娛樂城在指定地區／裝置／日期的實際SERP名次及歷史變化。",
+    "競爭者完整頁面清單、未連結頁面、JS渲染後內容、結構化資料、Core Web Vitals與實際更新頻率。",
+    "0%權重是否為動畫或渲染差異；不同優惠條件是否代表不同活動。",
+    "完整競爭者反向連結及站外推廣方式；兩頁陰性樣本不能代表全網。",
+    "我們自己的網域、既有內容、技術狀態、合法服務範圍、自有查詢需求與投入資源；以上行動均為待評估建議，未修改任何網站。"
+  ]
+}

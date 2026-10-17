@@ -1,0 +1,8 @@
+normal approved_provisional 1
+conflict approved_provisional 2
+immutable unsatisfiable 1
+stubborn human_review 3
+api_error error 1
+malformed error 1
+false_pass approved_provisional 2
+timeout error 1

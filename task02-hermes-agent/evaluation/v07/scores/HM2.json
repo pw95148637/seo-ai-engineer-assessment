@@ -1,0 +1,67 @@
+{
+  "run_id": "5c36e4a1981c4a2aa5c6867e5c671a26",
+  "host": "casinobase.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": null,
+    "3A娛樂城": null
+  },
+  "both_target_pages_read": false,
+  "tool_calls": 18,
+  "calls_before_first_hit": null,
+  "calls_until_both_hit": null,
+  "searches": 5,
+  "failed_searches": 1,
+  "failed_search_kinds": {
+    "no_results": 0,
+    "error": 1
+  },
+  "failed_search_queries": [
+    "\"casinobase.tw\" \"3A\" \"娛樂城\""
+  ],
+  "http_requests": 11,
+  "http_requests_controller": 0,
+  "sitemap_reads": 0,
+  "refetched_verified_pages": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 0
+  },
+  "lessons_presented": 2,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 139800,
+    "prompt": 134034,
+    "completion": 5766,
+    "api_calls": 7
+  },
+  "claims": 12,
+  "actions": 5,
+  "sections": {
+    "on_page": 8,
+    "off_page": 3,
+    "other": 1
+  },
+  "offpage": {
+    "claims": 3,
+    "observation": 1,
+    "inference": 1,
+    "unknown": 1,
+    "three_columns": true,
+    "known": 1,
+    "known_external": 1,
+    "known_link_verified": 0,
+    "pages_fetched": 2,
+    "pages_linking_to_target": 0
+  },
+  "offpage_policy_violations": [],
+  "blind_id": "8227d5ec"
+}

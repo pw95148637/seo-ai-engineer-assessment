@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html class="html" lang="zh-TW">
+<head>
+<meta charset="utf-8"/>
+<link href="https://gmpg.org/xfn/11" rel="profile"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/><!-- This site is optimized with the Yoast SEO Premium plugin v27.7 (Yoast SEO v27.7) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->
+<title>3A娛樂城｜真人視訊・電子遊戲・體育投注・彩票賓果</title>
+<link data-rocket-prefetch="" href="https://www.googletagmanager.com" rel="dns-prefetch"/>
+<link as="style" data-rocket-preload="" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap" rel="preload"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript data-wpr-hosted-gf-parameters="">
+<link href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap" rel="stylesheet"/>
+</noscript>
+<link as="image" data-rocket-preload="" fetchpriority="high" href="wp-content/uploads/2026/07/fh-home-v3-1-scaled.webp" rel="preload"/>
+<meta content="3A娛樂城提供 DG、MT、歐博、沙龍等六大真人名廳,八家電子機台、三家體育盤口與彩票賓果,同一組帳號通玩,並有 24 小時客服與富亨影城。" name="description"/>
+<link href="https://3aarena.com.tw/" rel="canonical"/>
+<meta content="zh_TW" property="og:locale"/>
+<meta content="website" property="og:type"/>
+<meta content="3A娛樂城" property="og:title"/>
+<meta content="3A娛樂城提供 DG、MT、歐博、沙龍等六大真人名廳,八家電子機台、三家體育盤口與彩票賓果,同一組帳號通玩,並有 24 小時客服與富亨影城。" property="og:description"/>
+<meta content="https://3aarena.com.tw/" property="og:url"/>
+<meta content="【3A娛樂城】娛樂城推薦首選" property="og:site_name"/>
+<meta content="2026-07-30T17:09:14+00:00" property="article:modified_time"/>
+<meta content="wp-content/uploads/2026/07/fh-home-v3-1-scaled.webp" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<script class="yoast-schema-graph" type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"\/","url":"\/","name":"富亨娛樂城｜真人視訊・電子遊戲・體育投注・彩票賓果","isPartOf":{"@id":"\/#website"},"about":{"@id":"\/#organization"},"primaryImageOfPage":{"@id":"\/#primaryimage"},"image":{"@id":"\/#primaryimage"},"thumbnailUrl":"\/wp-content\/uploads\/2026\/07\/fh-home-v3-1-scaled.webp","datePublished":"2026-04-09T00:35:58+00:00","dateModified":"2026-07-30T17:09:14+00:00","description":"富亨娛樂城提供 DG、MT、歐博、沙龍等六大真人名廳,八家電子機台、三家體育盤口與彩票賓果,同一組帳號通玩,並有 24 小時客服與富亨影城。","breadcrumb":{"@id":"\/#breadcrumb"},"inLanguage":"zh-TW","potentialAction":[{"@type":"ReadAction","target":["\/"]}]},{"@type":"ImageObject","inLanguage":"zh-TW","@id":"\/#primaryimage","url":"\/wp-content\/uploads\/2026\/07\/fh-home-v3-1-scaled.webp","contentUrl":"\/wp-content\/uploads\/2026\/07\/fh-home-v3-1-scaled.webp","width":2560,"height":1097,"caption":"荷官一開牌，氣氛立刻不一樣"},{"@type":"BreadcrumbList","@id":"\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁"}]},{"@type":"WebSite","@id":"\/#website","url":"\/","name":"【富亨娛樂城】娛樂城推薦首選|最多人推薦的娛樂城|玩運彩|百家樂|六合彩","description":"【富亨娛樂城】富亨娛樂城是全球博弈的領導品牌，優惠活動多、24小時客服服務、出金速度快、另提供多種遊戲，百家樂、玩運彩、六合彩、電子遊戲等，多種遊戲等你親自來體驗，最懂你的娛樂城","publisher":{"@id":"\/#organization"},"alternateName":"【富亨娛樂城】娛樂城推薦首選","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"zh-TW"},{"@type":"Organization","@id":"\/#organization","name":"【富亨娛樂城】娛樂城推薦首選","alternateName":"富亨娛樂城","url":"\/","logo":{"@type":"ImageObject","inLanguage":"zh-TW","@id":"\/#\/schema\/logo\/image\/","url":"https:\/\/imagedelivery.net\/20AUXKkVt8kARs9UL3eg9Q\/brushart.com.tw\/2022\/12\/fhlogo-phone.png\/w=180,h=61","contentUrl":"https:\/\/imagedelivery.net\/20AUXKkVt8kARs9UL3eg9Q\/brushart.com.tw\/2022\/12\/fhlogo-phone.png\/w=180,h=61","width":180,"height":61,"caption":"【富亨娛樂城】娛樂城推薦首選"},"image":{"@id":"\/#\/schema\/logo\/image\/"}}]}</script><!-- / Yoast SEO Premium plugin. -->
+<link href="https://3aarena.com.tw/feed/" rel="alternate" title="訂閱《【3A娛樂城】娛樂城推薦首選》» 資訊提供" type="application/rss+xml"/>
+<link href="https://3aarena.com.tw/comments/feed/" rel="alternate" title="訂閱《【3A娛樂城】娛樂城推薦首選》» 留言的資訊提供" type="application/rss+xml"/>
+<link href="https://3aarena.com.tw/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbrushart.com.tw%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="https://3aarena.com.tw/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbrushart.com.tw%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link href="wp-includes/css/dist/block-library/style.min.css" id="wp-block-library-css" media="all" rel="stylesheet"/>
+<style id="wp-block-library-theme-inline-css">
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote :where(cite),.wp-block-pullquote :where(footer),.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:hsla(0,0%,100%,.65)}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+/*# sourceURL=/wp-includes/css/dist/block-library/theme.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:where(.wp-block-gallery.is-layout-flex){gap: var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}:where(.wp-block-gallery.is-layout-grid){gap: var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}
+:where(.wp-block-latest-posts.is-layout-flex){gap: 1.25em;}:where(.wp-block-latest-posts.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link href="wp-content/plugins/elementor/assets/css/frontend.min.css" id="elementor-frontend-css" media="all" rel="stylesheet"/>
+<style id="elementor-frontend-inline-css">
+.wpr-dc-hidden{display:none!important}.wpr-dc-fallback{margin:0;padding:0}
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link href="wp-content/uploads/elementor/css/post-8215.css" id="elementor-post-8215-css" media="all" rel="stylesheet"/>
+<link href="wp-content/uploads/elementor/css/post-8226.css" id="elementor-post-8226-css" media="all" rel="stylesheet"/>
+<link data-minify="1" href="wp-content/cache/min/1/wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.min.css" id="font-awesome-css" media="all" rel="stylesheet"/>
+<link data-minify="1" href="wp-content/cache/min/1/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css" id="simple-line-icons-css" media="all" rel="stylesheet"/>
+<link href="wp-content/themes/oceanwp/assets/css/style.min.css" id="oceanwp-style-css" media="all" rel="stylesheet"/>
+<link data-minify="1" href="wp-content/cache/min/1/wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css" id="heateor_sss_frontend_css-css" media="all" rel="stylesheet"/>
+<style id="heateor_sss_frontend_css-inline-css">
+.heateor_sss_button_instagram span.heateor_sss_svg,a.heateor_sss_instagram span.heateor_sss_svg{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}.heateor_sss_horizontal_sharing .heateor_sss_svg,.heateor_sss_standard_follow_icons_container .heateor_sss_svg{color:#fff;border-width:0px;border-style:solid;border-color:transparent}.heateor_sss_horizontal_sharing .heateorSssTCBackground{color:#666}.heateor_sss_horizontal_sharing span.heateor_sss_svg:hover,.heateor_sss_standard_follow_icons_container span.heateor_sss_svg:hover{border-color:transparent;}.heateor_sss_vertical_sharing span.heateor_sss_svg,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg{color:#fff;border-width:0px;border-style:solid;border-color:transparent;}.heateor_sss_vertical_sharing .heateorSssTCBackground{color:#666;}.heateor_sss_vertical_sharing span.heateor_sss_svg:hover,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg:hover{border-color:transparent;}
+/*# sourceURL=heateor_sss_frontend_css-inline-css */
+</style>
+<link href="wp-content/plugins/royal-elementor-addons/assets/css/lib/animations/text-animations.min.css" id="wpr-text-animations-css-css" media="all" rel="stylesheet"/>
+<link href="wp-content/plugins/royal-elementor-addons/assets/css/frontend.min.css" id="wpr-addons-css-css" media="all" rel="stylesheet"/>
+<link data-minify="1" href="wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css" id="font-awesome-5-all-css" media="all" rel="stylesheet"/>
+<script data-cfasync="false" id="jquery-core-js" src="wp-includes/js/jquery/jquery.min.js"></script>
+<script data-cfasync="false" id="jquery-migrate-js" src="wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script id="heateor_sss_sharing_js-js-before">function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = '/wp-admin/admin-ajax.php', heateorSssCloseIconPath = '/wp-content/plugins/sassy-social-share/public/../images/close.png', heateorSssPluginIconPath = '/wp-content/plugins/sassy-social-share/public/../images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")}
+//# sourceURL=heateor_sss_sharing_js-js-before</script>
+<script data-minify="1" id="heateor_sss_sharing_js-js" src="wp-content/cache/min/1/wp-content/plugins/sassy-social-share/public/js/sassy-social-share-public.js"></script>
+<link href="https://3aarena.com.tw/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<meta content="WordPress 7.1" name="generator"/>
+<link href="https://3aarena.com.tw/" rel="shortlink"/><!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-444HL8R89X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-444HL8R89X');
+</script>
+<meta content="Elementor 4.2.0; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap" name="generator"/>
+<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+<link href="wp-content/uploads/2023/02/cropped-logo-e1677050562251-150x150.png" rel="icon" sizes="32x32"/>
+<link href="wp-content/uploads/2023/02/cropped-logo-e1677050562251-300x300.png" rel="icon" sizes="192x192"/>
+<link href="wp-content/uploads/2023/02/cropped-logo-e1677050562251-300x300.png" rel="apple-touch-icon"/>
+<meta content="https://3aarena.com.tw/wp-content/uploads/2023/02/cropped-logo-e1677050562251-300x300.png" name="msapplication-TileImage"/>
+<style id="wp-custom-css">
+.elementor a{color:#fff}@media only screen and (max-width:600px){body{overflow-x:hidden}}
+</style>
+<style id="wpr_lightbox_styles">
+				.lg-backdrop {
+					background-color: rgba(0,0,0,0.6) !important;
+				}
+				.lg-toolbar,
+				.lg-dropdown {
+					background-color: rgba(0,0,0,0.8) !important;
+				}
+				.lg-dropdown:after {
+					border-bottom-color: rgba(0,0,0,0.8) !important;
+				}
+				.lg-sub-html {
+					background-color: rgba(0,0,0,0.8) !important;
+				}
+				.lg-thumb-outer,
+				.lg-progress-bar {
+					background-color: #444444 !important;
+				}
+				.lg-progress {
+					background-color: #a90707 !important;
+				}
+				.lg-icon {
+					color: #efefef !important;
+					font-size: 20px !important;
+				}
+				.lg-icon.lg-toogle-thumb {
+					font-size: 24px !important;
+				}
+				.lg-icon:hover,
+				.lg-dropdown-text:hover {
+					color: #ffffff !important;
+				}
+				.lg-sub-html,
+				.lg-dropdown-text {
+					color: #efefef !important;
+					font-size: 14px !important;
+				}
+				#lg-counter {
+					color: #efefef !important;
+					font-size: 14px !important;
+				}
+				.lg-prev,
+				.lg-next {
+					font-size: 35px !important;
+				}
+
+				/* Defaults */
+				.lg-icon {
+				background-color: transparent !important;
+				}
+
+				#lg-counter {
+				opacity: 0.9;
+				}
+
+				.lg-thumb-outer {
+				padding: 0 10px;
+				}
+
+				.lg-thumb-item {
+				border-radius: 0 !important;
+				border: none !important;
+				opacity: 0.5;
+				}
+
+				.lg-thumb-item.active {
+					opacity: 1;
+				}
+	         </style><!-- OceanWP CSS -->
+<style type="text/css">
+/* Header CSS */#site-header.has-header-media .overlay-header-media{background-color:rgba(0,0,0,0.5)}
+</style>
+<style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style>
+<meta content="WP Rocket 3.23.2.2" data-wpr-features="wpr_minify_js wpr_preconnect_external_domains wpr_automatic_lazy_rendering wpr_oci wpr_minify_css wpr_cdn wpr_preload_links wpr_desktop" name="generator"/>
+</head>
+<body class="home wp-singular page-template page-template-elementor_header_footer page page-id-8199 wp-embed-responsive wp-theme-oceanwp oceanwp-theme dropdown-mobile default-breakpoint has-sidebar content-right-sidebar has-topbar has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-5" itemscope="" itemtype="https://schema.org/WebPage">
+<!-- Vendor JS Files -->
+<script src="action/assets/www/vendor/aos/aos.js"></script>
+<script src="action/assets/www/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="action/assets/www/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="action/assets/www/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="action/assets/www/vendor/swiper/swiper-bundle.min.js"></script><!-- jquery Files -->
+<script src="action/assets/www/vendor/jquery/jquery.min.js"></script>
+<script src="action/assets/www/vendor/jquery/popper.min.js"></script>
+<script src="action/assets/www/vendor/jquery/bootstrap.bundle.min.js"></script><!-- Template Main JS File -->
+<script src="action/assets/www/js/main.js"></script>
+<script src="action/assets/www/js/modal.js"></script>
+<script src="action/assets/www/js/jquery.blockUI.min.js"></script>
+<script src="action/assets/www/js/login.js"></script>
+<script src="action/assets/www/js/register.js"></script>
+<div class="site clr" id="outer-wrap">
+<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+<div class="clr" id="wrap">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/><!-- This site is optimized with the Yoast SEO Premium plugin v27.7 (Yoast SEO v27.7) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->
+<title>3A娛樂城｜真人視訊・電子遊戲・體育投注・彩票賓果</title>
+<meta content="3A娛樂城提供 DG、MT、歐博、沙龍等六大真人名廳,八家電子機台、三家體育盤口與彩票賓果,同一組帳號通玩,並有 24 小時客服與富亨影城。" name="description"/>
+<link href="https://3aarena.com.tw/" rel="canonical"/>
+<meta content="zh_TW" property="og:locale"/>
+<meta content="website" property="og:type"/>
+<meta content="3A娛樂城" property="og:title"/>
+<meta content="3A娛樂城提供 DG、MT、歐博、沙龍等六大真人名廳,八家電子機台、三家體育盤口與彩票賓果,同一組帳號通玩,並有 24 小時客服與富亨影城。" property="og:description"/>
+<meta content="https://3aarena.com.tw/" property="og:url"/>
+<meta content="【3A娛樂城】娛樂城推薦首選" property="og:site_name"/>
+<meta content="2026-07-30T17:09:14+00:00" property="article:modified_time"/>
+<meta content="wp-content/uploads/2026/07/fh-home-v3-1-scaled.webp" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<script class="yoast-schema-graph" type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"\/","url":"\/","name":"富亨娛樂城｜真人視訊・電子遊戲・體育投注・彩票賓果","isPartOf":{"@id":"\/#website"},"about":{"@id":"\/#organization"},"primaryImageOfPage":{"@id":"\/#primaryimage"},"image":{"@id":"\/#primaryimage"},"thumbnailUrl":"\/wp-content\/uploads\/2026\/07\/fh-home-v3-1-scaled.webp","datePublished":"2026-04-09T00:35:58+00:00","dateModified":"2026-07-30T17:09:14+00:00","description":"富亨娛樂城提供 DG、MT、歐博、沙龍等六大真人名廳,八家電子機台、三家體育盤口與彩票賓果,同一組帳號通玩,並有 24 小時客服與富亨影城。","breadcrumb":{"@id":"\/#breadcrumb"},"inLanguage":"zh-TW","potentialAction":[{"@type":"ReadAction","target":["\/"]}]},{"@type":"ImageObject","inLanguage":"zh-TW","@id":"\/#primaryimage","url":"\/wp-content\/uploads\/2026\/07\/fh-home-v3-1-scaled.webp","contentUrl":"\/wp-content\/uploads\/2026\/07\/fh-home-v3-1-scaled.webp","width":2560,"height":1097,"caption":"荷官一開牌，氣氛立刻不一樣"},{"@type":"BreadcrumbList","@id":"\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁"}]},{"@type":"WebSite","@id":"\/#website","url":"\/","name":"【富亨娛樂城】娛樂城推薦首選|最多人推薦的娛樂城|玩運彩|百家樂|六合彩","description":"【富亨娛樂城】富亨娛樂城是全球博弈的領導品牌，優惠活動多、24小時客服服務、出金速度快、另提供多種遊戲，百家樂、玩運彩、六合彩、電子遊戲等，多種遊戲等你親自來體驗，最懂你的娛樂城","publisher":{"@id":"\/#organization"},"alternateName":"【富亨娛樂城】娛樂城推薦首選","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"zh-TW"},{"@type":"Organization","@id":"\/#organization","name":"【富亨娛樂城】娛樂城推薦首選","alternateName":"富亨娛樂城","url":"\/","logo":{"@type":"ImageObject","inLanguage":"zh-TW","@id":"\/#\/schema\/logo\/image\/","url":"https:\/\/imagedelivery.net\/20AUXKkVt8kARs9UL3eg9Q\/brushart.com.tw\/2022\/12\/fhlogo-phone.png\/w=180,h=61","contentUrl":"https:\/\/imagedelivery.net\/20AUXKkVt8kARs9UL3eg9Q\/brushart.com.tw\/2022\/12\/fhlogo-phone.png\/w=180,h=61","width":180,"height":61,"caption":"【富亨娛樂城】娛樂城推薦首選"},"image":{"@id":"\/#\/schema\/logo\/image\/"}}]}</script><!-- / Yoast SEO Premium plugin. -->
+<link href="https://3aarena.com.tw/feed/" rel="alternate" title="訂閱《【3A娛樂城】娛樂城推薦首選》» 資訊提供" type="application/rss+xml"/>
+<link href="https://3aarena.com.tw/comments/feed/" rel="alternate" title="訂閱《【3A娛樂城】娛樂城推薦首選》» 留言的資訊提供" type="application/rss+xml"/>
+<link href="https://3aarena.com.tw/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<meta content="WordPress 7.1" name="generator"/>
+<link href="https://3aarena.com.tw/" rel="shortlink"/><!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-444HL8R89X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-444HL8R89X');
+</script>
+<meta content="Elementor 4.2.0; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap" name="generator"/>
+<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+<link href="wp-content/uploads/2023/02/cropped-logo-e1677050562251-150x150.png" rel="icon" sizes="32x32"/>
+<link href="wp-content/uploads/2023/02/cropped-logo-e1677050562251-300x300.png" rel="icon" sizes="192x192"/>
+<link href="wp-content/uploads/2023/02/cropped-logo-e1677050562251-300x300.png" rel="apple-touch-icon"/>
+<meta content="https://3aarena.com.tw/wp-content/uploads/2023/02/cropped-logo-e1677050562251-300x300.png" name="msapplication-TileImage"/>
+<style id="wp-custom-css">
+.elementor a{color:#fff}@media only screen and (max-width:600px){body{overflow-x:hidden}}
+</style>
+<style id="wpr_lightbox_styles">
+				.lg-backdrop {
+					background-color: rgba(0,0,0,0.6) !important;
+				}
+				.lg-toolbar,
+				.lg-dropdown {
+					background-color: rgba(0,0,0,0.8) !important;
+				}
+				.lg-dropdown:after {
+					border-bottom-color: rgba(0,0,0,0.8) !important;
+				}
+				.lg-sub-html {
+					background-color: rgba(0,0,0,0.8) !important;
+				}
+				.lg-thumb-outer,
+				.lg-progress-bar {
+					background-color: #444444 !important;
+				}
+				.lg-progress {
+					background-color: #a90707 !important;
+				}
+				.lg-icon {
+					color: #efefef !important;
+					font-size: 20px !important;
+				}
+				.lg-icon.lg-toogle-thumb {
+					font-size: 24px !important;
+				}
+				.lg-icon:hover,
+				.lg-dropdown-text:hover {
+					color: #ffffff !important;
+				}
+				.lg-sub-html,
+				.lg-dropdown-text {
+					color: #efefef !important;
+					font-size: 14px !important;
+				}
+				#lg-counter {
+					color: #efefef !important;
+					font-size: 14px !important;
+				}
+				.lg-prev,
+				.lg-next {
+					font-size: 35px !important;
+				}
+
+				/* Defaults */
+				.lg-icon {
+				background-color: transparent !important;
+				}
+
+				#lg-counter {
+				opacity: 0.9;
+				}
+
+				.lg-thumb-outer {
+				padding: 0 10px;
+				}
+
+				.lg-thumb-item {
+				border-radius: 0 !important;
+				border: none !important;
+				opacity: 0.5;
+				}
+
+				.lg-thumb-item.active {
+					opacity: 1;
+				}
+	         </style><!-- OceanWP CSS -->
+<style type="text/css">
+/* Header CSS */#site-header.has-header-media .overlay-header-media{background-color:rgba(0,0,0,0.5)}
+</style><!-- Vendor JS Files -->
+<script src="action/assets/www/vendor/aos/aos.js"></script>
+<script src="action/assets/www/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="action/assets/www/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="action/assets/www/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="action/assets/www/vendor/swiper/swiper-bundle.min.js"></script><!-- jquery Files -->
+<script src="action/assets/www/vendor/jquery/jquery.min.js"></script>
+<script src="action/assets/www/vendor/jquery/popper.min.js"></script>
+<script src="action/assets/www/vendor/jquery/bootstrap.bundle.min.js"></script><!-- Template Main JS File -->
+<script src="action/assets/www/js/main.js"></script>
+<script src="action/assets/www/js/modal.js"></script>
+<script src="action/assets/www/js/jquery.blockUI.min.js"></script>
+<script src="action/assets/www/js/login.js"></script>
+<script src="action/assets/www/js/register.js"></script>
+<style>.elementor-8215 .elementor-element.elementor-element-9af6a75{--display:flex;--min-height:0px;--justify-content:flex-start;--margin-top:-40px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}@media(min-width:768px){.elementor-8215 .elementor-element.elementor-element-9af6a75{--width:100%;}}/* Start custom CSS for html, class: .elementor-element-e64e1bb */.btn-sm {
+    white-space: nowrap; /* 強制文字不換行 */
+    display: inline-flex; /* 確保圖標與文字在同一行 */
+    align-items: center;  /* 垂直居中 */
+}
+
+#navbar ul li a {
+    font-size: 15px; /* 調整為你希望的大小 */
+    font-weight: 500; /* 增加粗細讓字體更清晰 */
+}/* End custom CSS */</style>
+<div class="elementor elementor-8215" data-elementor-id="8215" data-elementor-post-type="wpr_templates" data-elementor-type="wp-post">
+<div class="elementor-element elementor-element-9af6a75 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-e-type="container" data-element_type="container" data-id="9af6a75">
+<div class="elementor-element elementor-element-e64e1bb elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="e64e1bb" data-widget_type="html.default">
+<div class="elementor-widget-container">
+<link href="action/assets/www/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="action/assets/www/css/style.css" rel="stylesheet"/>
+<style>
+
+  .navbar-bg {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right:0 !important;
+    z-index: 9999 !important;
+    margin: 0 !important;
+
+  }
+  
+
+</style>
+<div class="navbar-bg">
+<div class="container d-flex align-items-center justify-content-between">
+<div class="logo">
+<a href="index.html"> <img alt="3A娛樂城" class="img-fluid" src="action/assets/www/images/logo.png"/> </a>
+</div>
+<nav class="navbar d-none d-lg-block" id="navbar">
+<ul>
+<li><a class="nav-link scrollto nav-lobby" href="action/index.html">遊戲大廳</a></li>
+<li><a class="nav-link scrollto nav-active" href="active/index.html">優惠情報</a></li>
+<li><a class="nav-link scrollto" href="movie/index.html">富亨影城</a></li>
+<li><a class="nav-link scrollto" href="blog/index.html">娛樂城攻略</a></li>
+<li><a class="nav-link scrollto nav-home" href="about/index.html">關於我們</a></li>
+<li class="d-none d-md-block" style="margin-left: 20px;"><a class="btn-login" href="/login.html" rel="noopener noreferrer" target="_blank"> <img class="btn-icon" src="action/assets/www/images/ft-nav/login.png"/>登入 </a></li>
+<li class="d-none d-md-block"><a class="btn-register" href="/login.html" rel="noopener noreferrer" target="_blank"> <img class="btn-icon" src="action/assets/www/images/ft-nav/register.png"/>註冊 </a></li>
+</ul><i class="bi bi-list mobile-nav-toggle"></i>
+</nav>
+<div class="d-flex align-items-center justify-content-between d-block d-lg-none">
+<a class="btn-login btn-sm" href="/login.html" rel="noopener noreferrer" target="_blank"> <img class="btn-icon" src="action/assets/www/images/ft-nav/login.png"/>登入 </a> <a class="btn-register btn-sm" href="/login.html" rel="noopener noreferrer" target="_blank"> <img class="btn-icon" src="action/assets/www/images/ft-nav/register.png"/>註冊 </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<main class="site-main clr" id="main" role="main">
+<style>
+.fx *{box-sizing:border-box}
+.fx{--ink:#04101f;--navy:#071b35;--navy2:#0c2547;--gold:#f6c744;--hi:#ffe9a3;
+ --line:rgba(246,199,68,.26);--tx:#eaf0f9;--mut:#9db0c9;
+ font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+ background:var(--ink);color:var(--tx);line-height:1.8;-webkit-font-smoothing:antialiased}
+.fx a{color:inherit;text-decoration:none}
+.fx img{display:block;max-width:100%}
+.fx-w{max-width:1240px;margin:0 auto;padding:0 24px}
+.fx a.fx-pc{cursor:pointer}
+.fx a.fx-pc:hover{transform:translateY(-3px)}
+.fx a.fx-pc:hover .go{color:var(--hi)}
+.fx-pb .go{display:inline-block;margin-top:14px;font-size:16px;font-weight:800;
+ color:var(--gold);border-bottom:1px solid var(--line);padding-bottom:3px}
+.fx-plinks{margin:26px 0 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.fx a.fx-plinks>a,.fx-plinks a{display:inline-flex;align-items:center;min-height:44px;
+ padding:0 18px;border-radius:8px;font-size:16px;font-weight:700;color:var(--gold);
+ background:rgba(246,199,68,.07);border:1px solid var(--line)}
+.fx-plinks a:hover{background:rgba(246,199,68,.14);border-color:var(--gold)}
+
+.fx-eb{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.34em;color:var(--gold)}
+.fx-t{font-size:clamp(24px,3.2vw,36px);font-weight:900;line-height:1.28;margin:10px 0 0;letter-spacing:.01em}
+.fx-lead{margin:12px 0 0;color:var(--mut);font-size:17px;max-width:58ch}
+/* 按鈕系統:主鈕實心金、次鈕要有自己的底。
+   次鈕原本只有 26% 不透明的金框、沒有填色,疊在主視覺照片上幾乎看不見 ——
+   改成半透明深底 + 毛玻璃 + 實心金框,任何底圖上都讀得到。 */
+.fx-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;
+ padding:14px 32px;border-radius:8px;font-weight:800;font-size:17px;letter-spacing:.06em;
+ border:1.5px solid transparent;transition:transform .18s,box-shadow .18s,background .18s,border-color .18s;
+ position:relative;isolation:isolate}
+.fx-btn svg{width:19px;height:19px;flex:0 0 19px}
+.fx a.fx-p{background:linear-gradient(180deg,#ffeaa8 0%,#f3c94f 52%,#dca823 100%);color:#33260a;
+ box-shadow:0 1px 0 rgba(255,255,255,.55) inset,0 10px 24px rgba(220,168,35,.32);
+ border-color:rgba(255,255,255,.28)}
+.fx a.fx-p:hover{transform:translateY(-2px);
+ box-shadow:0 1px 0 rgba(255,255,255,.7) inset,0 15px 32px rgba(220,168,35,.44)}
+.fx a.fx-p:active{transform:translateY(0)}
+.fx a.fx-s{background:rgba(5,17,34,.8);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+ border-color:rgba(246,199,68,.8);color:#ffd873;
+ box-shadow:0 6px 20px rgba(0,0,0,.35)}
+.fx a.fx-s:hover{background:rgba(246,199,68,.16);border-color:#f6c744;color:#fff0c2;
+ transform:translateY(-2px)}
+.fx a.fx-s:active{transform:translateY(0)}
+.fx a.fx-p:focus-visible,.fx a.fx-s:focus-visible{outline:2px solid #ffd873;outline-offset:3px}
+
+/* ── 主視覺:滿版、影像先行 ─────────────────────────────── */
+.fx-hero{position:relative;isolation:isolate;background:var(--navy);overflow:hidden}
+.fx-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+ object-position:72% 50%;z-index:-2}
+.fx-hero::after{content:"";position:absolute;inset:0;z-index:-1;
+ background:linear-gradient(94deg,#04101f 4%,rgba(4,16,31,.94) 32%,rgba(4,16,31,.55) 58%,rgba(4,16,31,.2))}
+.fx-hi{max-width:1240px;margin:0 auto;padding:clamp(66px,9vw,132px) 24px clamp(58px,8vw,110px)}
+.fx-hi h1{font-size:clamp(30px,5.2vw,58px);font-weight:900;line-height:1.16;margin:14px 0 0;
+ max-width:15ch;text-shadow:0 3px 22px rgba(0,0,0,.5)}
+.fx-hi h1 em{font-style:normal;display:block;
+ background:linear-gradient(92deg,#ffe9a3,#f6c744 46%,#d9a521);
+ -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.fx-hi p{margin:18px 0 0;max-width:40ch;font-size:clamp(17px,1.6vw,19px);color:#cfdcee}
+.fx-hcta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+
+/* 品牌數據軌 */
+.fx-rail{background:linear-gradient(180deg,#0a1e3a,#071b35);border-top:1px solid var(--line);
+ border-bottom:1px solid var(--line)}
+.fx-rail div{max-width:1240px;margin:0 auto;padding:0 24px;
+ display:grid;grid-template-columns:repeat(4,1fr)}
+.fx-rail dl{margin:0;padding:22px 10px;text-align:center;border-left:1px solid rgba(246,199,68,.14)}
+.fx-rail dl:first-child{border-left:0}
+.fx-rail dt{font-size:clamp(22px,2.6vw,30px);font-weight:900;color:var(--gold);
+ font-variant-numeric:tabular-nums;line-height:1.2}
+.fx-rail dd{margin:5px 0 0;font-size:14.5px;color:var(--mut);letter-spacing:.06em}
+
+/* 區塊 */
+.fx-sec{padding:clamp(52px,7vw,86px) 0}
+.fx-head{margin-bottom:34px}
+.fx-head.mid{text-align:center}
+.fx-head.mid .fx-lead{margin-left:auto;margin-right:auto}
+
+/* 產品大圖卡 */
+.fx-prod{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fx-pc{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);
+ background:var(--navy2);transition:.28s;min-height:420px;display:flex;align-items:flex-end}
+.fx-pc:hover{transform:translateY(-5px);border-color:var(--gold);
+ box-shadow:0 22px 44px rgba(0,0,0,.5)}
+.fx-pc>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:.5s}
+.fx-pc:hover>img{transform:scale(1.05)}
+.fx-pc::before{content:"";position:absolute;inset:0;z-index:1;
+ background:linear-gradient(180deg,rgba(4,16,31,.05) 0%,rgba(4,16,31,.35) 44%,rgba(4,16,31,.7) 66%,rgba(4,16,31,.86) 100%)}
+/* 文字不能只靠漸層壓照片:金幣、球場燈那些亮部會頂穿,實測最亮處只剩 2.3。
+   給文字區自己的深底 + 毛玻璃,legibility 才不受底圖內容影響。 */
+.fx-pb{position:relative;z-index:2;padding:24px 28px 26px;width:100%;
+ background:linear-gradient(180deg,rgba(4,16,31,0) 0,rgba(4,16,31,.82) 12%,rgba(4,16,31,.94) 38%,rgba(4,16,31,.97) 100%);
+ backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.fx-pb .k{font-size:12px;font-weight:800;letter-spacing:.28em;color:var(--gold);text-shadow:0 1px 5px rgba(0,0,0,.6)}
+.fx-pb h3{font-size:clamp(21px,2.3vw,26px);font-weight:900;margin:7px 0 8px;text-shadow:0 1px 6px rgba(0,0,0,.55)}
+.fx-pb p{margin:0;font-size:17px;color:#c6d4e6;line-height:1.75}
+.fx-tags{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 0;padding:0;list-style:none}
+.fx-tags li{font-size:13px;font-weight:700;color:var(--gold);border:1px solid rgba(246,199,68,.42);
+ background:rgba(246,199,68,.1);border-radius:4px;padding:4px 11px}
+
+/* 富亨影城:滿版電影感 */
+.fx-cine{position:relative;isolation:isolate;overflow:hidden;background:#050d1a}
+.fx-cine>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;z-index:-2}
+.fx-cine::after{content:"";position:absolute;inset:0;z-index:-1;
+ background:linear-gradient(88deg,#04101f 10%,rgba(4,16,31,.88) 44%,rgba(4,16,31,.3))}
+.fx-ci{max-width:1240px;margin:0 auto;padding:clamp(56px,7vw,96px) 24px}
+.fx-ci h2{font-size:clamp(24px,3.4vw,40px);font-weight:900;margin:12px 0 0;max-width:16ch}
+.fx-ci h2 em{font-style:normal;color:var(--gold)}
+.fx-ci ul{margin:20px 0 26px;padding:0;list-style:none;display:grid;gap:12px;max-width:46ch}
+.fx-ci li{display:flex;gap:12px;font-size:17px;color:#dbe6f4}
+.fx-ci li i{flex:0 0 24px;height:24px;margin-top:4px;border-radius:4px;
+ background:rgba(246,199,68,.16);border:1px solid rgba(246,199,68,.4);
+ color:var(--gold);font-style:normal;font-size:12px;font-weight:900;display:grid;place-items:center}
+
+/* 回饋磚 */
+.fx-bon{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fx-bc{position:relative;background:linear-gradient(165deg,#0e2748,#071b35);
+ border:1px solid var(--line);border-radius:12px;padding:26px 22px;overflow:hidden;transition:.24s}
+.fx-bc:hover{border-color:var(--gold);transform:translateY(-4px)}
+.fx-bc::before{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;
+ border-radius:50%;background:radial-gradient(circle,rgba(246,199,68,.22),transparent 68%)}
+.fx-bc .n{position:relative;font-size:clamp(26px,3vw,34px);font-weight:900;color:var(--gold);
+ line-height:1.1;font-variant-numeric:tabular-nums}
+.fx-bc h3{position:relative;font-size:17px;font-weight:800;margin:10px 0 8px;color:#fff}
+.fx-bc p{position:relative;margin:0;font-size:15.5px;color:var(--mut);line-height:1.72}
+
+/* 信任列 */
+.fx-trust{background:var(--navy);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fx-trust div{max-width:1240px;margin:0 auto;padding:26px 24px;display:flex;gap:34px;
+ flex-wrap:wrap;justify-content:center;align-items:center;font-size:16px;color:#c3d2e6}
+.fx-trust b{color:var(--gold);font-weight:800}
+
+/* FAQ */
+.fx-fq{max-width:920px;margin:0 auto;border-top:1px solid rgba(246,199,68,.2)}
+.fx-fq details{border-bottom:1px solid rgba(246,199,68,.2)}
+.fx-fq summary{cursor:pointer;list-style:none;padding:18px 42px 18px 0;position:relative;
+ font-size:17.5px;font-weight:800;min-height:44px}
+.fx-fq summary::-webkit-details-marker{display:none}
+.fx-fq summary::after{content:"+";position:absolute;right:8px;top:13px;font-size:27px;
+ font-weight:300;color:var(--gold);transition:.2s}
+.fx-fq details[open] summary::after{transform:rotate(45deg)}
+.fx-fq p{margin:0;padding:0 0 20px;font-size:17px;color:var(--mut)}
+
+/* 結尾 CTA */
+.fx-end{position:relative;text-align:center;padding:clamp(56px,7vw,92px) 24px;
+ background:radial-gradient(120% 150% at 50% 0,#14335e 0,#0a1e3a 52%,#04101f 100%);
+ border-top:1px solid var(--line)}
+.fx-end h2{font-size:clamp(24px,3.4vw,38px);font-weight:900;margin:0 0 10px}
+.fx-end h2 em{font-style:normal;color:var(--gold)}
+.fx-end p{margin:0 0 26px;color:var(--mut);font-size:17px}
+.fx-end div{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+@media(max-width:1000px){
+ .fx-prod{grid-template-columns:1fr}
+ .fx-bon{grid-template-columns:1fr 1fr}
+ .fx-rail div{grid-template-columns:1fr 1fr}
+ .fx-rail dl:nth-child(3){border-left:0}
+ .fx-hero>img{object-position:68% 50%}
+}
+@media(max-width:600px){
+ .fx-lead,.fx-pb p,.fx-fq p,.fx-ci li,.fx-hi p{font-size:16px}
+ .fx-hi{padding:56px 24px 46px}
+ .fx-hcta{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .fx-hcta .fx-btn{padding:13px 8px;font-size:16px;white-space:nowrap}
+ .fx-end div .fx-btn{flex:1 1 100%}
+ .fx-pc{min-height:360px}
+}
+@media(prefers-reduced-motion:reduce){.fx *{transition:none!important}}
+
+/* 佈景有 h1{color:#333},繼承贏不過它 —— 每個標題階層都要明寫顏色 */
+.fx h1,.fx h2,.fx h3,.fx h4,.fx dt{color:var(--tx)}
+.fx .fx-bc h3{color:#fff}
+</style>
+<div class="fx">
+<section class="fx-hero">
+<img alt="3A娛樂城真人荷官百家樂牌桌" decoding="async" fetchpriority="high" src="wp-content/uploads/2026/07/fh-home-v3-1-scaled.webp"/>
+<div class="fx-hi">
+<span class="fx-eb">FU-HENG CASINO</span>
+<h1>亞洲頂級線上娛樂<em>3A娛樂城</em></h1>
+<p>菲律賓 PAGCOR 合法授權,真人、電子、體育與彩票四大產品線齊備。註冊即享會員專屬影城,回饋與娛樂一次到位。</p>
+<div class="fx-hcta">
+<a class="fx-btn fx-p" href="active/index.html">看最新優惠</a><a class="fx-btn fx-s" href="dg百家樂試玩/index.html">免費試玩</a>
+</div>
+</div>
+</section>
+<div class="fx-rail">
+<div>
+<dl>
+<dt>
+          0.6%
+         </dt>
+<dd>
+          全站自動返水
+         </dd>
+</dl>
+<dl>
+<dt>
+          9,000
+         </dt>
+<dd>
+          首儲最高加碼
+         </dd>
+</dl>
+<dl>
+<dt>
+          24H
+         </dt>
+<dd>
+          出金與客服
+         </dd>
+</dl>
+<dl>
+<dt>
+          PAGCOR
+         </dt>
+<dd>
+          官方合法授權
+         </dd>
+</dl>
+</div>
+</div>
+<section class="fx-sec">
+<div class="fx-w">
+<div class="fx-head mid">
+<span class="fx-eb">OUR PRODUCTS</span>
+<h2 class="fx-t">四大產品線</h2>
+<p class="fx-lead">真人娛樂、電子遊戲、體育博彩與特色玩法,結合全台最穩健的出金系統,打造完整而安全的頂級線上娛樂體驗。</p>
+</div>
+<div class="fx-prod">
+<a class="fx-pc" href="live/index.html"><img alt="3A娛樂城真人娛樂" decoding="async" loading="lazy" src="wp-content/uploads/2026/07/fh-home-v3-2.webp"/>
+<div class="fx-pb">
+<span class="k">LIVE CASINO</span>
+<h3>真人娛樂 · 即時真人互動</h3>
+<p>專業荷官即時開桌真實視訊互動,讓您隨時感受娛樂城現場氛圍。集結 DG 真人、歐博真人、SA 沙龍、MT 真人以及 DB 真人等世界名廳,24 小時高解析度無延遲影音傳輸。</p>
+<ul class="fx-tags">
+<li>DG旗艦真人</li>
+<li>歐博精品名廳</li>
+<li>MT視訊互動</li>
+<li>DB極致百家</li>
+</ul><span class="go">瞭解更多 →</span>
+</div></a> <a class="fx-pc" href="slot/index.html"><img alt="3A娛樂城電子遊戲" decoding="async" loading="lazy" src="wp-content/uploads/2026/07/fh-home-v3-3.webp"/>
+<div class="fx-pb">
+<span class="k">SLOT</span>
+<h3>電子遊戲 · 終極遊戲天堂</h3>
+<p>引進 RSG 電子與 BNG 電子等業界頂尖系統,熱播爆分機台《雷神之錘》、《無敵奧丁》應有盡有,高達 97% 的超高返還率,搭配多樣彩金玩法。</p>
+<ul class="fx-tags">
+<li>RSG熱門電子</li>
+<li>BNG爆金系統</li>
+<li>雷神之錘爆分</li>
+<li>超高返還彩金</li>
+</ul><span class="go">瞭解更多 →</span>
+</div></a> <a class="fx-pc" href="sport/index.html"><img alt="3A娛樂城體育博彩" decoding="async" loading="lazy" src="wp-content/uploads/2026/07/fh-home-v3-4.webp"/>
+<div class="fx-pb">
+<span class="k">SPORTS</span>
+<h3>體育博彩 · 熱門賽事投注</h3>
+<p>網羅世界盃、歐冠、NBA、MLB、足球及各國電競等萬場體育賽事,超高賠率與水位,多樣化單雙、讓分玩法任君挑選。</p>
+<ul class="fx-tags">
+<li>NBA美職籃</li>
+<li>MLB美職棒</li>
+<li>全球頂級賽事</li>
+<li>業界最高水位</li>
+</ul><span class="go">瞭解更多 →</span>
+</div></a> <a class="fx-pc" href="keno/index.html"><img alt="3A娛樂城更多遊戲" decoding="async" loading="lazy" src="wp-content/uploads/2026/07/fh-home-v3-5.webp"/>
+<div class="fx-pb">
+<span class="k">MORE GAMES</span>
+<h3>更多遊戲 · 特色娛樂玩法</h3>
+<p>融合經典《歡樂捕魚》、多國大樂透、幸運飛艇以及經典棋牌對戰,基諾、捕魚和彩票等人氣遊戲一次滿足。</p>
+<ul class="fx-tags">
+<li>歡樂捕魚大師</li>
+<li>幸運飛艇彩票</li>
+<li>賓果極速彩球</li>
+<li>經典線上棋牌</li>
+</ul><span class="go">瞭解更多 →</span>
+</div></a>
+<nav class="fx-plinks">
+<a href="live/index.html">真人視訊</a><a href="slot/index.html">電子遊戲</a><a href="fish/index.html">捕魚機</a><a href="sport/index.html">體育投注</a><a href="keno/index.html">彩票賓果</a>
+</nav>
+</div>
+</div>
+</section>
+<section class="fx-cine">
+<img alt="富亨影城會員專屬觀影廳" decoding="async" loading="lazy" src="wp-content/uploads/2026/07/fh-home-v3-6-scaled.webp"/>
+<div class="fx-ci">
+<span class="fx-eb">FH CINEMA</span>
+<h2>註冊就送的<em>一座影城</em></h2>
+<ul>
+<li><i>✓</i><span>免費觀影:海量最新電影、熱門影集與動漫,無廣告 HD 高畫質。</span></li>
+<li><i>✓</i><span>體育直播:NBA、MLB、足球即時賽事高清轉播。</span></li>
+<li><i>✓</i><span>成人專區:提供隱密且流暢的頂級視聽享受。</span></li>
+</ul><a class="fx-btn fx-p" href="movie/index.html">進入富亨影城</a>
+</div>
+</section>
+<section class="fx-sec">
+<div class="fx-w">
+<div class="fx-head mid">
+<span class="fx-eb">MEMBER BONUS</span>
+<h2 class="fx-t">四檔常駐回饋</h2>
+<p class="fx-lead">返水由系統自動結算不必申請;檔期型活動依活動頁規則辦理。</p>
+</div>
+<div class="fx-bon">
+<div class="fx-bc">
+<div class="n">
+           0.6%
+          </div>
+<h3>自動返水</h3>
+<p>無須手動申請,系統自動計算。即時返水機制,讓長期投注累積更划算。</p>
+</div>
+<div class="fx-bc">
+<div class="n">
+           9,000
+          </div>
+<h3>首儲加碼</h3>
+<p>新會員首次儲值即享超值加碼回饋,最高可領 9,000 元獎金。</p>
+</div>
+<div class="fx-bc">
+<div class="n">
+           24H
+          </div>
+<h3>快速出金</h3>
+<p>全天候 24 小時快速出金服務,過程中完全免除任何手續費。</p>
+</div>
+<div class="fx-bc">
+<div class="n">
+           10%
+          </div>
+<h3>回饋日</h3>
+<p>固定舉辦富亨回饋日,儲值即享額外 10% 返利,最尊榮的 VIP 禮遇。</p>
+</div>
+</div>
+<p style="margin:22px 0 0;text-align:center;font-size:16px;color:#8fa3bd">完整規則與流水條件請見<a href="active/index.html" style="color:#f6c744;font-weight:700">優惠活動頁</a>公告。</p>
+</div>
+</section>
+<div class="fx-trust">
+<div>
+<span><b>PAGCOR</b> 菲律賓官方授權</span><span><b>256-bit SSL</b> 全站加密</span><span><b>24 小時</b> 真人客服</span><span><b>18+</b> 理性娛樂</span>
+</div>
+</div>
+<section class="fx-sec">
+<div class="fx-w">
+<div class="fx-head mid">
+<span class="fx-eb">FREE TRIAL &amp; FAQ</span>
+<h2 class="fx-t">先試玩,再入座</h2>
+<p class="fx-lead">三家真人名廳都開放免費試玩,看過牌桌再決定坐哪一桌。</p>
+<div style="margin-top:20px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+<a class="fx-btn fx-s" href="dg百家樂試玩/index.html">DG 真人百家樂</a><a class="fx-btn fx-s" href="歐博百家樂試玩/index.html">歐博真人百家樂</a><a class="fx-btn fx-s" href="沙龍百家樂試玩/index.html">沙龍真人百家樂</a>
+</div>
+</div>
+<div class="fx-fq">
+<details>
+<summary>3A娛樂城 brushart.com.tw 是否安全合法?</summary>
+<p>是的,3A娛樂城擁有菲律賓官方政府 PAGCOR 合法授權營運。全站採用 256 位元 SSL 安全加密技術,確保所有會員的個人隱私與帳務往來絕對安全透明。</p>
+</details>
+<details>
+<summary>富亨影視站是什麼?如何使用?</summary>
+<p>富亨影視站是我們回饋會員的專屬福利。只要註冊成為 brushart.com.tw 會員,即可享有無廣告、HD 高畫質的娛樂視聽,包含電影影集動漫、NBA／MLB／足球體育直播,以及成人專區。</p>
+</details>
+<details>
+<summary>儲值與提領的處理效率如何?</summary>
+<p>富亨提供全台最快的金流系統:儲值支援手機網銀、超商繳費及 USDT,1-3 分鐘極速入帳;出金 24 小時隨時申請,最快 10-15 分鐘匯達指定帳戶,且不收手續費。</p>
+</details>
+<details>
+<summary>富亨提供哪些娛樂產品?</summary>
+<p>真人百家樂(DG、歐博、SA 沙龍等名廳)、體育博彩(全球賽事高賠率水位投注)、電子老虎機(RSG、BNG,含《雷神之錘》等爆分機台)、彩票遊戲(賓果、幸運飛艇及各國大樂透)。</p>
+</details>
+</div>
+</div>
+</section>
+<section class="fx-end">
+<span class="fx-eb">JOIN US</span>
+<h2>回饋與影城,<em>一起拿</em></h2>
+<p>四檔常駐回饋 · 會員免費影城 · 24 小時真人客服</p>
+<div>
+<a class="fx-btn fx-p" href="active/index.html">看優惠活動</a><a class="fx-btn fx-s" href="blog/index.html">娛樂城攻略</a>
+</div>
+</section>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "富亨娛樂城 brushart.com.tw 是否安全合法?", "acceptedAnswer": {"@type": "Answer", "text": "是的,富亨娛樂城擁有菲律賓官方政府 PAGCOR 合法授權營運。全站採用 256 位元 SSL 安全加密技術,確保所有會員的個人隱私與帳務往來絕對安全透明。"}}, {"@type": "Question", "name": "富亨影視站是什麼?如何使用?", "acceptedAnswer": {"@type": "Answer", "text": "富亨影視站是我們回饋會員的專屬福利。只要註冊成為 brushart.com.tw 會員,即可享有無廣告、HD 高畫質的娛樂視聽,包含電影影集動漫、NBA／MLB／足球體育直播,以及成人專區。"}}, {"@type": "Question", "name": "儲值與提領的處理效率如何?", "acceptedAnswer": {"@type": "Answer", "text": "富亨提供全台最快的金流系統:儲值支援手機網銀、超商繳費及 USDT,1-3 分鐘極速入帳;出金 24 小時隨時申請,最快 10-15 分鐘匯達指定帳戶,且不收手續費。"}}, {"@type": "Question", "name": "富亨提供哪些娛樂產品?", "acceptedAnswer": {"@type": "Answer", "text": "真人百家樂(DG、歐博、SA 沙龍等名廳)、體育博彩(全球賽事高賠率水位投注)、電子老虎機(RSG、BNG,含《雷神之錘》等爆分機台)、彩票遊戲(賓果、幸運飛艇及各國大樂透)。"}}]}</script>
+</main><!-- #main -->
+<style>.elementor-8226 .elementor-element.elementor-element-e8d7ec9{--display:flex;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}/* Start custom CSS for html, class: .elementor-element-be4e6c1 *//* 強制修正底部導覽列對齊 */
+.ft-navbar .ft-nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    margin: 0;
+    padding: 10px 0; /* 增加上下間距 */
+}
+
+.ft-navbar .ft-link {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 12px; /* 根據需求調整文字大小 */
+    color: inherit;
+}
+
+.ft-navbar .ft-link img {
+    width: 25px;   /* 設定你理想的圖標寬度 */
+    height: 25px;  /* 設定你理想的圖標高度 */
+    margin-bottom: 4px; /* 圖標與文字的間距 */
+}/* End custom CSS */</style>
+<div class="elementor elementor-8226" data-elementor-id="8226" data-elementor-post-type="wpr_templates" data-elementor-type="wp-post" data-wpr-lazyrender="1">
+<div class="elementor-element elementor-element-e8d7ec9 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-e-type="container" data-element_type="container" data-id="e8d7ec9">
+<div class="elementor-element elementor-element-be4e6c1 elementor-widget elementor-widget-html" data-e-type="widget" data-element_type="widget" data-id="be4e6c1" data-widget_type="html.default">
+<div class="elementor-widget-container">
+<!-- ======= Footer ======= -->
+<footer id="footer">
+<div class="container footer-bottom clearfix d-none d-sm-block">
+<div class="copyright">
+           © Copyright <strong><span>3A娛樂城</span></strong>. All Rights Reserved<br/>
+<a class="dmca-badge" href="//www.dmca.com/Protection/Status.aspx?ID=ea10101f-6e68-4d74-9c02-fcd3e18dd545" title="DMCA.com Protection Status"> <img alt="DMCA.com Protection Status" src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=ea10101f-6e68-4d74-9c02-fcd3e18dd545"/></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+</div>
+</div>
+</footer><!-- End Footer --> <a class="scrollto back-to-top d-flex align-items-center justify-content-center" href="#header"> <i><img src="action/assets/www/images/ft-nav/expand.png.webp"/></i> </a> <!-- Vendor JS Files -->
+<script src="action/assets/www/vendor/aos/aos.js"></script>
+<script src="action/assets/www/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="action/assets/www/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="action/assets/www/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="action/assets/www/vendor/swiper/swiper-bundle.min.js"></script><!-- jQuery & Plugin Files -->
+<script src="action/assets/www/vendor/jquery/jquery.min.js"></script>
+<script src="action/assets/www/vendor/jquery/popper.min.js"></script>
+<script src="action/assets/www/vendor/jquery/bootstrap.bundle.min.js"></script><!-- Template Main JS File -->
+<script src="action/assets/www/js/main.js"></script>
+<script src="action/assets/www/js/modal.js"></script>
+<script src="action/assets/www/js/jquery.blockUI.min.js"></script>
+<script src="action/assets/www/js/login.js"></script>
+<script src="action/assets/www/js/register.js"></script><!-- Modal 控制邏輯 -->
+<script>
+  function closeFhModal() {
+      const modal = document.getElementById('fhNavyAnnouncement');
+      if (!modal) return;
+      modal.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+      modal.style.opacity = '0';
+      const innerModal = modal.querySelector('.fh-navy-modal');
+      if (innerModal) innerModal.style.transform = 'translateY(30px)';
+      
+      setTimeout(() => {
+          modal.style.display = 'none';
+      }, 400);
+  }
+
+  const fhModal = document.getElementById('fhNavyAnnouncement');
+  if (fhModal) {
+      fhModal.addEventListener('click', function(e) {
+          if (e.target === this) closeFhModal();
+      });
+  }
+</script><!-- 底部行動版導覽列 -->
+<nav class="fixed-bottom ft-navbar d-block d-lg-none">
+<ul class="ft-nav row p-0">
+<li class="col"><a class="ft-link" href="support/index.html"> <img src="action/assets/www/images/ft-nav/icon_sv.png.webp"/>
+<div>
+             客服
+            </div></a></li>
+<li class="col"><a class="ft-link" href="action/Active.aspx"> <img src="action/assets/www/images/ft-nav/icon_gift.png.webp"/>
+<div>
+             優惠
+            </div></a></li>
+<li class="col"><a class="ft-link" href="/login.html" rel="noopener noreferrer" target="_blank"> <img src="action/assets/www/images/ft-nav/icon_game.png.webp"/>
+<div>
+             首頁
+            </div></a></li>
+<li class="col"><a class="ft-link auth-btn" href="/login.html" id="authTriggerLogin" rel="noopener noreferrer" target="_blank"> <img src="action/assets/www/images/ft-nav/icon_member.png.webp"/>
+<div>
+             登入
+            </div></a></li>
+<li class="col"><a class="ft-link auth-btn" href="/login.html" id="authTriggerRegister" rel="noopener noreferrer" target="_blank"> <img src="action/assets/www/images/ft-nav/icon_register.png.webp"/>
+<div>
+             註冊
+            </div></a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/oceanwp/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+<link data-minify="1" href="wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css" id="elementor-icons-css" media="all" rel="stylesheet"/>
+<link href="wp-content/uploads/elementor/css/post-5.css" id="elementor-post-5-css" media="all" rel="stylesheet"/>
+<script id="elementor-webpack-runtime-js" src="wp-content/plugins/elementor/assets/js/webpack.runtime.min.js"></script>
+<script id="elementor-frontend-modules-js" src="wp-content/plugins/elementor/assets/js/frontend-modules.min.js"></script>
+<script id="jquery-ui-core-js-before">
+jQuery.uiBackCompat = true;
+//# sourceURL=jquery-ui-core-js-before
+</script>
+<script id="jquery-ui-core-js" src="wp-includes/js/jquery/ui/core.min.js"></script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"\u5206\u4eab\u5230 Facebook","shareOnX":"Share on X","pinIt":"\u91d8\u4e0a","download":"Download","downloadImage":"\u4e0b\u8f09\u5716\u7247","fullscreen":"\u5168\u87a2\u5e55","zoom":"\u653e\u5927","share":"\u5206\u4eab","playVideo":"\u64ad\u653e\u5f71\u97f3","previous":"\u4e0a\u4e00\u5f35","next":"\u4e0b\u4e00\u5f35","close":"\u95dc\u9589","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"\u884c\u52d5\u88dd\u7f6e","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.0","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"e_panel_promotions":true,"theme_builder_v2":true,"nested-elements":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php","uploadUrl":"\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"92b7c92be8","atomicFormsSendForm":"93c921d653"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":8199,"title":"%E5%AF%8C%E4%BA%A8%E5%A8%9B%E6%A8%82%E5%9F%8E%EF%BD%9C%E7%9C%9F%E4%BA%BA%E8%A6%96%E8%A8%8A%E3%83%BB%E9%9B%BB%E5%AD%90%E9%81%8A%E6%88%B2%E3%83%BB%E9%AB%94%E8%82%B2%E6%8A%95%E6%B3%A8%E3%83%BB%E5%BD%A9%E7%A5%A8%E8%B3%93%E6%9E%9C","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before</script>
+<script id="elementor-frontend-js" src="wp-content/plugins/elementor/assets/js/frontend.min.js"></script>
+<script data-minify="1" id="wpr-particles-js" src="wp-content/cache/min/1/wp-content/plugins/royal-elementor-addons/assets/js/lib/particles/particles.js"></script>
+<script id="wpr-jarallax-js" src="wp-content/plugins/royal-elementor-addons/assets/js/lib/jarallax/jarallax.min.js"></script>
+<script id="wpr-parallax-hover-js" src="wp-content/plugins/royal-elementor-addons/assets/js/lib/parallax/parallax.min.js"></script>
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script id="imagesloaded-js" src="wp-includes/js/imagesloaded.min.js"></script>
+<script id="oceanwp-main-js-extra">
+var oceanwpLocalize = {"nonce":"71eebd7dd1","isRTL":"","menuSearchStyle":"drop_down","mobileMenuSearchStyle":"disabled","sidrSource":null,"sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customScrollOffset":"0","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select"};
+var oceanwpLocalize = {"nonce":"71eebd7dd1","isRTL":"","menuSearchStyle":"drop_down","mobileMenuSearchStyle":"disabled","sidrSource":null,"sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customScrollOffset":"0","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select"};
+//# sourceURL=oceanwp-main-js-extra
+</script>
+<script id="oceanwp-main-js" src="wp-content/themes/oceanwp/assets/js/theme.min.js"></script>
+<script id="oceanwp-drop-down-mobile-menu-js" src="wp-content/themes/oceanwp/assets/js/drop-down-mobile-menu.min.js"></script>
+<script id="oceanwp-drop-down-search-js" src="wp-content/themes/oceanwp/assets/js/drop-down-search.min.js"></script>
+<script id="ow-magnific-popup-js" src="wp-content/themes/oceanwp/assets/js/vendors/magnific-popup.min.js"></script>
+<script id="oceanwp-lightbox-js" src="wp-content/themes/oceanwp/assets/js/ow-lightbox.min.js"></script>
+<script id="ow-flickity-js" src="wp-content/themes/oceanwp/assets/js/vendors/flickity.pkgd.min.js"></script>
+<script id="oceanwp-slider-js" src="wp-content/themes/oceanwp/assets/js/ow-slider.min.js"></script>
+<script id="oceanwp-scroll-effect-js" src="wp-content/themes/oceanwp/assets/js/scroll-effect.min.js"></script>
+<script id="oceanwp-scroll-top-js" src="wp-content/themes/oceanwp/assets/js/scroll-top.min.js"></script>
+<script id="oceanwp-select-js" src="wp-content/themes/oceanwp/assets/js/select.min.js"></script>
+<script id="elementor-pro-webpack-runtime-js" src="wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js"></script>
+<script id="wp-hooks-js" src="wp-includes/js/dist/hooks.min.js"></script>
+<script id="wp-i18n-js" src="wp-includes/js/dist/i18n.min.js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"c6f1a58e22","urls":{"assets":"\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"zh_TW","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before</script>
+<script id="elementor-pro-frontend-js" src="wp-content/plugins/elementor-pro/assets/js/frontend.min.js"></script>
+<script id="pro-elements-handlers-js" src="wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js"></script>
+<script id="wpr-addons-js-js-extra">var WprConfig = {"ajaxurl":"/wp-admin/admin-ajax.php","resturl":"/wp-json/wpraddons/v1","nonce":"3131d68adb","addedToCartText":"was added to cart","viewCart":"View Cart","comparePageID":"","comparePageURL":"/","wishlistPageID":"","wishlistPageURL":"/","chooseQuantityText":"Please select the required number of items.","site_key":"","site_key_v2":"","is_admin":"","input_empty":"Please fill out this field","select_empty":"Nothing selected","file_empty":"Please upload a file","recaptcha_error":"Recaptcha Error","woo_shop_ppp":"9","woo_shop_cat_ppp":"9","woo_shop_tag_ppp":"9","is_product_category":"","is_product_tag":"","sticky_section":"on"};
+//# sourceURL=wpr-addons-js-js-extra</script>
+<script data-cfasync="false" id="wpr-addons-js-js" src="wp-content/plugins/royal-elementor-addons/assets/js/frontend.min.js"></script>
+<script id="wpr-modal-popups-js-js" src="wp-content/plugins/royal-elementor-addons/assets/js/modal-popups.min.js"></script>
+<style id="fhf-css">
+html body #footer > .footer-bottom{display:none!important}
+html body .fhfoot{--fnavy1:#0a1530;--fnavy2:#0d1b3a;--fgold:#f0b429;--fgold2:#ffd25c;--fline:rgba(240,180,41,.28);--ftext:#eaf0f9;--fmut:#8fa3c9;
+ background:linear-gradient(180deg,var(--fnavy2),var(--fnavy1));padding:56px 24px 0;
+ font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;color:var(--ftext);position:relative;z-index:1;box-sizing:border-box}
+html body .fhfoot *{box-sizing:border-box}
+html body .fhfoot .fhf-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.3fr .8fr .8fr 1fr;gap:32px;padding-bottom:36px}
+html body .fhfoot .fhf-brand .brandline{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;margin-bottom:14px;white-space:nowrap;color:var(--ftext)}
+html body .fhfoot .fhf-brand .brandline img{height:28px;width:auto;margin:0}
+html body .fhfoot .fhf-brand p{font-size:12.5px;color:var(--fmut);max-width:34ch;margin:0 0 14px;line-height:1.7}
+html body .fhfoot .fhf-brand .rg{font-size:11.5px;color:var(--fmut);border:1px solid var(--fline);border-radius:8px;padding:6px 10px;display:inline-block}
+html body .fhfoot .fhf-col h5{font-size:13px;color:var(--fgold);letter-spacing:.08em;margin:0 0 16px;font-weight:700;line-height:1.4}
+html body .fhfoot .fhf-col a{display:block;font-size:13.5px;color:#c7d3ea;margin-bottom:11px;text-decoration:none;line-height:1.5}
+html body .fhfoot .fhf-col a:hover{color:var(--fgold2);text-decoration:none}
+html body .fhfoot .fhf-cs a{display:flex;align-items:center;gap:8px}
+html body .fhfoot .fhf-cs .dot{width:6px;height:6px;border-radius:50%;background:var(--fgold);flex:0 0 auto;display:inline-block}
+html body .fhfoot .fhf-bottom{border-top:1px solid var(--fline);max-width:1200px;margin:0 auto;padding:18px 0 26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--fmut)}
+@media(max-width:860px){html body .fhfoot .fhf-grid{grid-template-columns:1fr 1fr;row-gap:28px}html body .fhfoot .fhf-brand{grid-column:1/-1}}
+@media(max-width:560px){
+ html body .fhfoot{padding:36px 16px 0}
+ html body .fhfoot .fhf-grid{grid-template-columns:repeat(3,1fr);gap:14px;row-gap:20px;padding-bottom:22px}
+ html body .fhfoot .fhf-brand{grid-column:1/-1;margin-bottom:2px}
+ html body .fhfoot .fhf-brand p{font-size:12px;max-width:none;margin-bottom:10px;line-height:1.6}
+ html body .fhfoot .fhf-brand .rg{font-size:11px;padding:5px 9px}
+ html body .fhfoot .fhf-col h5{font-size:12px;margin-bottom:10px}
+ html body .fhfoot .fhf-col a{font-size:12px;margin-bottom:8px;line-height:1.35}
+ html body .fhfoot .fhf-cs a{gap:6px}
+ html body .fhfoot .fhf-bottom{padding:12px 0 18px;justify-content:center;text-align:center;font-size:11px;line-height:1.5}
+ html body .fhfoot{padding-bottom:74px}
+ html body .fhfoot .fhf-bottom .cert{display:none}
+}
+</style>
+<footer class="fhfoot" data-wpr-lazyrender="1">
+<div class="fhf-grid">
+<div class="fhf-brand">
+<div class="brandline">
+<img alt="3A娛樂城" src="action/assets/www/images/logo.png"/>
+</div>
+<p>真人娛樂．電子遊戲．體育投注．彩票賓果——PAGCOR 官方合法授權,四大產品線齊備,穩健出金、24 小時真人客服。</p><span class="rg">18+ 理性娛樂・未滿 18 歲禁止參與</span>
+</div>
+<div class="fhf-col">
+<h5>快速連結</h5><a href="active/index.html">優惠情報</a> <a href="about/index.html">關於我們</a> <a href="blog/index.html">娛樂城攻略</a> <a href="index.html">常見問題</a>
+</div>
+<div class="fhf-col">
+<h5>產品項目</h5><a href="live/index.html">真人視訊</a> <a href="slot/index.html">電子遊戲</a> <a href="sport/index.html">體育投注</a> <a href="keno/index.html">彩票賓果</a>
+</div>
+<div class="fhf-col fhf-cs">
+<h5>客服中心</h5><a href="support/index.html"><i class="dot"></i>24H 客服中心</a> <a href="https://lp.gkkvip.cc/ge/fh/" rel="noopener" target="_blank"><i class="dot"></i>線上客服</a> <a href="https://lin.ee/M9T8sS7" rel="noopener" target="_blank"><i class="dot"></i>LINE@ 客服</a>
+</div>
+</div>
+<div class="fhf-bottom">
+<span>© Copyright 3A娛樂城. All Rights Reserved</span> <span class="cert">PAGCOR 官方合法授權・256-bit SSL 全站加密</span><br/>
+<a class="dmca-badge" href="//www.dmca.com/Protection/Status.aspx?ID=ea10101f-6e68-4d74-9c02-fcd3e18dd545" title="DMCA.com Protection Status"> <img alt="DMCA.com Protection Status" src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=ea10101f-6e68-4d74-9c02-fcd3e18dd545"/></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+</div>
+</footer>
+<style id="fh-navfix-css">
+/* 搬到 body 之後補一次定位,避免其他規則的權重問題 */
+body > nav.ft-navbar{position:fixed!important;left:0;right:0;bottom:0;top:auto!important;z-index:1030}
+</style>
+<script id="fh-navfix">
+(function(){
+  /* 底部導覽原本掛在 .elementor-widget-container 裡,該層在快取版會變成 fixed 的定位基準,
+     導致導覽跟著頁面捲動、只有捲到最底才看得到。搬成 body 的直接子元素即可回到視窗定位。 */
+  function move(){
+    var n = document.querySelector('nav.ft-navbar');
+    if(!n || n.parentElement === document.body) return;
+    document.body.appendChild(n);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', move);
+  else move();
+  window.addEventListener('load', move);
+})();
+</script>
+<script id="fh-promo-link">(function(){
+  /* 底部導覽寫死在佈景 PHP 改不到,這裡在前端把「優惠」指到新的 WP 優惠頁 */
+  function fix(){
+    var n=document.querySelector('nav.ft-navbar'); if(!n) return;
+    n.querySelectorAll('a').forEach(function(a){
+      var t=(a.textContent||'').replace(/\s+/g,'');if(t.indexOf('優惠')>=0) a.setAttribute('href','/promotions/');
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',fix); else fix();
+  window.addEventListener('load',fix);
+})();</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a305122a4f6e67b1',t:'MTc4NzYwMjk2Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+<script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"5502262fd5bc4b5fa9a7ef2fe7381f8c","r":1}' integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" type="module"></script>
+</div><!-- #wrap -->
+</div><!-- #outer-wrap --> <a aria-label="Scroll to the top of the page" class="scroll-top-right" href="#" id="scroll-top"><i aria-hidden="true" class="fa fa-angle-up" role="img"></i></a> <!-- Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com --><!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1787584263 -->
+<style>
+    .casino-cta-wrapper {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .gift-boxes-img {
+      width: 130px;
+      height: auto;
+      margin-bottom: -15px;
+      z-index: 2;
+      pointer-events: none;
+      filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
+      animation: subtleRock 4s infinite ease-in-out;
+      transform-origin: bottom center;
+    }
+
+    @keyframes subtleRock {
+
+      0%,
+      100% {
+        transform: rotate(0deg);
+      }
+
+      25% {
+        transform: rotate(-3deg) translateY(-2px);
+      }
+
+      75% {
+        transform: rotate(3deg) translateY(-2px);
+      }
+    }
+
+    .line-cta-container {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      background-color: #06C755;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+      border-radius: 50px;
+      padding: 8px 20px 8px 10px;
+      /* Reduced padding on the green area */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      border: 3px solid #FFFFFF;
+      overflow: hidden;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      z-index: 1;
+    }
+
+    .casino-cta-wrapper:hover .line-cta-container {
+      transform: scale(1.03);
+      background-color: #05b34c;
+    }
+
+    .casino-cta-wrapper:hover .gift-boxes-img {
+      animation: subtleRock 4s infinite ease-in-out;
+      transform: translateY(-4px) scale(1.05);
+    }
+
+    .line-cta-container::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(60deg,
+          transparent 45%,
+          rgba(255, 255, 255, 0.6) 50%,
+          transparent 55%);
+      transform: rotate(30deg);
+      animation: borderGlowSweep 3s infinite linear;
+      pointer-events: none;
+    }
+
+    @keyframes borderGlowSweep {
+      0% {
+        transform: translateX(-100%) rotate(30deg);
+      }
+
+      100% {
+        transform: translateX(100%) rotate(30deg);
+      }
+    }
+
+    .line-icon-circle {
+      width: 42px;
+      height: 42px;
+      background-color: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .line-icon-circle svg {
+      width: 28px;
+      height: 28px;
+      fill: #06C755;
+    }
+
+    .cta-text-group {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+    }
+
+    .cta-title {
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    .cta-subtitle {
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.3px;
+      opacity: 0.95;
+    }
+
+    @media (max-width: 1024px) {
+      .casino-cta-wrapper {
+        bottom: 79px;
+      }
+    }
+  </style>
+  <div class="casino-cta-wrapper">
+    <img src="/wp-content/uploads/flotante/gift-boxes.webp" alt="禮盒" class="gift-boxes-img">
+
+    <a href="https://line.3a8688.com/" target="_blank" class="line-cta-container" aria-label="加入Line 領取專屬好禮">
+      <div class="line-icon-circle">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="none" stroke="#06C755" stroke-width="1.8" stroke-linejoin="round"
+            d="M5 8.5V13h3m1.5-4.5v5m2 0V9h.5l2 4h.5V8.5M19 9h-2.5v4H19m-2.5-2H19" />
+          <path fill="none" stroke="#06C755" stroke-width="1.8" stroke-linejoin="round"
+            d="M12 2.5C6.201 2.5 1.5 6.306 1.5 11c0 4.296 3.938 7.848 9.05 8.42c.384.043.729.285.767.67c.078.786-.09 1.81-.317 2.41c.948 0 11.5-5.236 11.5-11.5c0-4.694-4.701-8.5-10.5-8.5Z" />
+        </svg>
+      </div>
+      <div class="cta-text-group">
+        <span class="cta-title">加入Line</span>
+        <span class="cta-subtitle">領取專屬好禮</span>
+      </div>
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+﻿ID,Category,adapter_score,base_score,adapter_severity,base_severity,adapter_codes,base_codes,adapter_flags,base_flags,adapter_valid,base_valid
+2,Casino,0,25,critical,critical,YMYL_RISK,"YMYL_RISK,SEO_FALSE",,soft:ADVICE_PADDING,True/True,True/True
+12,Casino,45,50,major,major,"YMYL_RISK,EXPERIENCE_UNVERIFIED","YMYL_RISK,EXPERIENCE_UNVERIFIED",hard:FALSE_EXPERIENCE,hard:FALSE_EXPERIENCE,True/True,True/True
+3,Casino,0,0,critical,critical,YMYL_RISK,YMYL_RISK,,,True/True,True/True
+17,Casino,50,50,major,major,YMYL_RISK,YMYL_RISK,,,True/True,True/True
+8,Mortgage,50,55,major,major,YMYL_RISK,YMYL_RISK,soft:MANY_SOURCES,soft:MANY_SOURCES,True/True,True/True
+9,Mortgage,25,25,critical,critical,SEO_FALSE,SEO_FALSE,,,True/True,True/True
+1,Casino,0,45,critical,major,YMYL_RISK,"YMYL_RISK,UNSUPPORTED_CLAIM",,,True/True,True/True
+4,Casino,25,25,critical,critical,SEO_FALSE,SEO_FALSE,,,True/True,True/True

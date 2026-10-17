@@ -1,0 +1,1 @@
+PASS: 12 targets; retry and denominator accounting; raw failure preservation; no overwrite; invalid consistency; completion-only loss mask; length rejection. Synthetic only, no GPU/model results.

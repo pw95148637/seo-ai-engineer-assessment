@@ -1,0 +1,103 @@
+# Task03 offline checks for the two-stage v2 workflow
+date: 2026-10-16T03:02:06Z (UTC); host: Windows 11, Python 3.13.14; locale cp950, no PYTHONUTF8; stdout captured with PYTHONIOENCODING=utf-8
+Offline only: no GPU, no Kaggle run; holdout8 never printed or semantically read.
+
+$ python scripts/build_notebook.py
+Built train-stage notebook (canonical and kaggle/train); no model results embedded
+exit=0
+
+$ python scripts/workflow.py check-targets
+PASS: 12 train-only targets validated
+exit=0
+
+$ python scripts/test_workflow.py
+PASS: 12 targets; retry and denominator accounting; raw failure preservation; no overwrite; invalid consistency; completion-only loss mask; length rejection; gate heuristics; round-1 real outputs rejected for false experience, risk-removal advice, TW_266 mixing, score 55-59 and source dumping. Synthetic/train-only, no GPU/model results.
+exit=0
+
+$ python scripts/verify_notebook.py
+PASS: train notebook current (7 code cells); kaggle/train copy identical; no holdout text; metadata separation; train->eval seam and report rehearsed on synthetic rows; eval build gated by lock (eval notebook not built yet); all scripts parse; no model outputs
+exit=0
+
+$ python scripts/check_contract.py
+markdown REJECT JSONDecodeError
+out_of_range REJECT ValidationError
+boolean_score REJECT ValidationError
+extra_field REJECT ValidationError
+missing_advice REJECT ValidationError
+wrong_quote REJECT ValueError
+unknown_source REJECT ValueError
+duplicate_key REJECT ValueError
+PASS: 1 valid, 8 invalid rejected. Synthetic checks, not model results.
+exit=0
+
+$ python scripts/validate_data.py
+{
+  "status": "PASS",
+  "source_rows": 20,
+  "train_rows": 12,
+  "holdout_rows": 8,
+  "overlap": 0,
+  "seed": 42,
+  "split_reproduced": true,
+  "source_sha256": "12504f2058a4305817d3991c01fe05b17feea1754869ab3617b3480e67e50065",
+  "train_ids": [
+    "20",
+    "6",
+    "15",
+    "5",
+    "10",
+    "14",
+    "16",
+    "19",
+    "7",
+    "13",
+    "18",
+    "11"
+  ],
+  "holdout_ids": [
+    "2",
+    "12",
+    "3",
+    "17",
+    "8",
+    "9",
+    "1",
+    "4"
+  ]
+}
+exit=0
+
+$ PYTHONPATH=<tokenizers 0.22.2> python scripts/verify_round1_tokens.py <Qwen3-8B@b968826 tokenizer.json sha256 aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4>
+{"round1_training_lengths_match": true, "round1_consistency_input_tokens_match": true, "v2_prompt_tokens": [1490, 1515], "v2_max_train_length": 1625, "v2_target_tokens": [36, 118]}
+PASS: round-1 training lengths and consistency input tokens reproduce exactly
+exit=0
+
+$ sha256 of key inputs
+ce9490a512ecb9d3f27ddf4e3c19e4ce6cc597b1bcff70db5250512b09d4e69b *system_prompt.txt
+f916f48988b435f29463b24c36b44abaa1f91adf427a460fca4c59db7978042a *outputs/experiments/v2-interrupted/system_prompt.txt
+731f70acc57c55ae76e41a17ad519974a44128e7bb5875282eb20926a41e445b *outputs/experiments/initial/system_prompt.txt
+6598b86d21ad96d177e09793345a4954a2a1237b0c5c0b3891754e809d3c5784 *data/train_targets.jsonl
+95c59acafd1fad34313e5f8a57c41c396f6c73b0559ed2535ce752b30f46bac0 *run_config.json
+1fcbb5ed7a34f6e6278aa244beecf58d2cb8ff4836035d1fe7d607dfe2ba1616 *knowledge.json
+a9496a58b0c2f899ca8ee4fed4369e5f424a0ff821bed24c96c1989d01075607 *scripts/workflow.py
+605d73b600b64e6067ea66d27e3c9b361b9d01470c85c4bfc13cd3c720b9c01c *scripts/selfcheck.py
+e9cd85b139044e19a231beb1cf0838a42c8929de047410b57636662e58070c90 *scripts/audit_io.py
+c026fd7f88de554c7b67bcd399d3b65d32882cd43ca31bbad7291b3cde422c2e *scripts/test_workflow.py
+45005a097c9eafe039359f9848756296f2564597f72290b374c28764c05a7332 *outputs/training.json
+7b9648c468811ab0bf7deafc25a3d3791bdb09cb68ce2c687f85dba9eacd8f8a *outputs/consistency.json
+818b491f19541c7703cc311afd498fe1169c223a1c03fb4902e275b46b7a9106 *data/holdout8.csv
+445434b05a524c3ca09e790203aad6d49c46d6ed3c7bec8aebdc5d37462cee87 *notebooks/work03_local_llm.ipynb
+445434b05a524c3ca09e790203aad6d49c46d6ed3c7bec8aebdc5d37462cee87 *kaggle/train/work03_train.ipynb
+
+Kaggle read-only queries (python -P -m kaggle, CLI 2.2.4):
+datasets list --mine -> pw95148637/soulo-work03-isolated-holdout8 "Soulo Work03 Isolated Holdout8"
+datasets files pw95148637/soulo-work03-isolated-holdout8 -> holdout8.csv 1477 bytes (local data/holdout8.csv 1477 bytes)
+datasets download (scratch dir, hashed then deleted, content not opened) -> holdout8.csv sha256 818b491f19541c7703cc311afd498fe1169c223a1c03fb4902e275b46b7a9106 == local
+holdout-vs-payload mechanical overlap (counts only): whole snippets 0; 12- and 10-character overlaps 0; 8-character overlaps train12.csv 3, test_workflow.py 1 (common phrases)
+seam simulation (scratchpad/seam/sim_seam.py: train cells with stubbed GPU stages and the real round-1 adapter files -> mounted output -> review_lock -> eval cells up to evaluate,
+  synthetic holdout from relabelled train rows): genuine bundle reaches evaluate; tampered adapter_config.json stops at check-freeze before holdout is read.
+kernels list --mine -> soulo-gpu-and-8b-environment-preflight, soulo-work03-local-llm-lora-audit (v2-train/v2-eval slugs unused)
+quota -> GPU used 0.79h, remaining 29.21h of 30h, refresh 2026-10-17T00:00:00
+kaggle-retrieved/v2 and v3: diff -rq reports no differences; both are the latest (version 3) output because kernels output ignores the /<version> suffix
+  (kaggle_api_extended.kernels_output parses version but ApiListKernelSessionOutputRequest is sent with user_name and kernel_slug only).
+  outputs/training.json and consistency.json there equal local outputs/ as parsed JSON; outputs/adapter == outputs/experiments/initial/adapter byte for byte.

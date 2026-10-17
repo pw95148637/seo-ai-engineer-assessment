@@ -1,0 +1,5 @@
+/workspace/scratch/c5aedca3b876/package-check/task02-hermes/repository.bundle is okay
+The bundle contains this ref:
+74b50dba2befce9326261b126b724661a18086bd refs/heads/task/02
+The bundle records a complete history.
+The bundle uses this hash algorithm: sha1

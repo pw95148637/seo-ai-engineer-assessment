@@ -1,0 +1,76 @@
+# 開發紀錄
+
+2026-10-15，ChatGPT 與 Codex 協作。完整原題及五份指定文件已閱讀；只改第二題獨立區域，未修改其他題目或共用檔案。
+
+前一輪：全庫 clone 停滯，codeload 回 429；固定 commit shallow fetch 成功。安裝下載 uv/Python/工具與依賴期間讀取進度遭自動審核額度限制，最終 CLI/Tool 結果未確認。robots 與 sitemap 當時 HTTP 200，sitemap 六個子索引。原始檔未及保存，環境重載後已消失；這些只能作歷史紀錄，不能冒充本輪重新取得的原始證據。
+
+本輪：從原始交接包重建。本輪的 fetch/install、來源快照、測試紀錄另存 evidence。Google 進行中入口已驗證仍存在。記憶元件重建後重測 5 tests 通過。沒有付費 API 呼叫、模型研究或改善實驗結果。
+
+開發摘要不能替代完整 AI 對話紀錄；早期 ChatGPT 對話的分享連結：https://chatgpt.com/share/6ad1f303-abcc-83ec-93b7-a1603643ab01。
+
+最終環境：官方 setup 退出 0，可選 Chromium byte-range 下載失敗保留。原官方 wrapper 的 CLI/terminal smoke 通過。另嘗試直接重用官方 PM environment composition，首次覆蓋 PYTHONPATH 使 ruamel 缺失；修正為保留原 PYTHONPATH 後再次通過。兩路都有真實輸出，未更動 Hermes 原碼、未呼叫模型。
+
+晚間v0.3：正式控制器/五工具/帳本/記憶整合後以25項核心測試驗證，刪除最初未整合的memory原型及其五個測試，避免兩套規則。工具註冊起初被官方Tool Search延遲包裝成三個bridge，改用官方設定明示工具；原始失敗保留。實際HTTP工具因本地DNS不可用而失敗，對operator允許host採已設定HTTPS proxy解析，私人literal/未允許host仍拒絕；重試robots HTTP200，原始失敗、修正、來源帳本均保存。DDGS初次缺套件，官方PM --extra ddgs安裝成功，但中性查詢30秒逾時，未切付費後端。
+
+人工記憶對照出現成本下降但品質下降的負結果，保持原始保留案例與trace，不回流調整，不當作LLM改善證據。本輪仍未有模型呼叫或正式競品研究，OAuth狀態logged out。
+
+21:40接續v0.4：保留既有25項，不重建。DDGS套件來源顯示只讀DDGS_PROXY；銜接既有HTTPS proxy後，原官方免費provider與正式註冊research_search均成功（中性查詢3/5筆）。補唯讀OAuth預檢、模型結果/報告完成判準、失敗紀錄與nested H1擷取，現34項測試通過。未授權預檢實際退出2、model_attempted=false；未新開device code，未呼叫模型。
+
+v0.4最終檢查：Git bundle乾淨clone的34項測試通過；乾淨clone的plugin經官方doctor驗證manifest/import/五工具註冊成功。未授權預檢退出2且model_attempted=false；本輪沒有產生device code、沒有模型呼叫。人工記憶對照數值未改，未宣稱真正Agent改善。
+
+## OAuth跨回合中斷
+使用者完成頁面操作後，舊執行程序不存在，官方預檢仍logged out，未呼叫模型。新增官方CLI薄包裝保存本題未過期裝置挑戰，正常續接不會請求新碼；--new才產生新碼。挑戰0600、900秒上限、登入成功刪除、全部位於排除交付的.runtime內。
+
+## 2026-10-16：真正模型與自主研究
+成功續接原裝置挑戰，官方CLI保存本題OAuth，預檢ready。Plus usage API成功，gpt-6.1-sol工具smoke通過（2 calls、4331 tokens）。第一輪正式研究e5905ed9fd8d4cf6b92e61d01cc9de99完成，9 calls、484706累計tokens，16快照hash一致。原報告與來源複核分開保存；4項行動有競爭者/自有網站範圍歧義或錯誤，修正後續輸入，未覆寫原始結果。
+工具context膨脹造成成本偏高：完整快照仍保存，v0.5只向模型回傳60個連結/8000文字，來源讀取支援200字以內literal query，最多8片段；可讀到原HTML前30000字之外的可見內容，另帶robots/canonical及匹配URL。39 tests通過。節流不能算記憶改善。
+新增evaluate_agent.py：同一模型、prompt、工具及初始來源DB，三組隔離、停止學習，保存live來源差異、tokens/請求/完成率；重複同一真實任務、每組一次，非新站保留組、無統計顯著性宣稱。原人工元件負結果仍保留。
+
+額度快照期間出現計量窗口及banked reset數變動；本Work只執行唯讀usage與模型呼叫，沒有呼叫redeem/reset或購買credits。原因未確認，不將帳戶百分比差異全部歸因於本題成本，正式比較以逐run usage為主。
+
+## 三組真實評估完成
+同seed、固定模型/prompt/tools、隔離與凍結學習。baseline/history/memory皆完成，HTTP14/14/19、tokens438286/372990/743896；只有baseline直接讀到目標詞頁。33項主張做快照複核，未找到重大無支持主張；非獨立盲評，不能主張統計或因果。記憶雖被模型明確當線索，本次未改善成本或涵蓋，因此runner預設baseline，保留明確指定的memory實驗，不在原組調整重測。
+Demo為300秒真實紀錄字幕重播，非即時螢幕錄影、無旁白；原始報告與負結果可核對。剩GitHub／AI分享／對外權限驗收；不再追加模型呼叫。
+
+## 2026-10-16：v0.6 學習機制重設（離線，Claude Code）
+核對另一位 agent 的唯讀診斷後採用其主結論：v0.5 記憶以 sitemap URL 數作採納訊號，兩個種子 run 都沒讀到目標詞頁仍被判 active；fetch 只回網址不回錨文字；封存搜尋中含 `site:` 者 0/11 有結果（6 次逾時、5 次無結果）、不含者 8/12 有實際結果（另 3 次只回空白佔位、1 次逾時；診斷原寫 0/10、14/15，依快照更正）；三組評估的第一次 finish 都因引用失敗來源被退；memory 組 tokens 98.7% 為 prompt。
+實作：`src/lessons.py` lessons 帳本（失敗模式需 2 run 重現、反例撤銷；發現路徑只從真的讀到目標詞頁的 run 學、同站、7 天、使用前重抓；人工回饋與 veto；模型無寫入路徑），fetch 回傳 keyword_links，finish 說明寫明非 200 證據只能用於 topic=access，`src/scoring.py` 計分與盲評包，`scripts/evaluate_v06.py` 事先登錄的評估流程，`scripts/feedback.py`，`evaluate_memory.py` 改為合成元件檢查且只寫新目錄。sitemap 記憶移除，原三個記憶測試改寫為帳本的同類性質。
+測試抓到兩個錯誤並已修正：錨文字誤存成（網址, 文字）組；站內搜尋頁 `/?s=娛樂城` 的標題回顯查詢而被誤算為目標詞頁（以封存 trace 重算時發現，加入「查詢參數含關鍵字不算」）。保留站以「查詢恰為『娛樂城』的封存快照」機械規則算出 casinobase.tw，較寬規則會得到 3aarena.com.tw，兩者都記錄於計畫。未呼叫模型、未登入、未產生費用。
+另一個 agent 做唯讀程式審查，找到 2 個阻斷問題與多個應修項，均已修正並各補回歸測試：轉址的非數字 port 例外訊息會被當成 lesson 名稱（改為只接受固定清單內的控制器拒絕碼）；評估步驟在 run 結束後才記錄嘗試（改為開跑前先記錄）；學習改在 runner 判定完成後執行，重試不會重複累積；空白佔位搜尋結果不再算成功；逾時等基礎設施失敗不學；控制器重驗的頁面不算模型讀到；第二次 finish、失敗的 evidence 讀取不再改寫計分；`/search/`、`/tag/` 頁不算目標詞頁；XHTML 一律當 HTML；candidate 也會到期；回饋理由擋住緊鄰文字的斜線；重複標註回報清楚錯誤。另以突變測試確認 epoch、veto、到期與模型證據限定都有測試把關。測試由 65 增為 78 項。
+同一 agent 複查修正：原 18 項確認修好；新指出 3 項應修（被預算擋下的呼叫會抹掉前一次成功讀取、學習失敗不可見、evidence_id 非字串會讓計分無法執行）與數個小項，均已修正並補測試：tool_error 記錄是否已登記呼叫、學習改為單一交易失敗即回滾並回報 `learning_failed`、evidence_id 型別檢查與計分關閉連線、全形斜線、否決後可重新標註。測試 81 項，突變測試確認新防護都有測試把關。
+
+## 2026-10-16：v0.6 登錄評估實跑（WSL2，Claude Code）
+依 `plan-v06.json` 順序跑完 R2、B1、R3、HP、HB、HM（05:24–05:42 UTC），每步先 `--verify`，前後各記一次訂閱用量；六個研究 run 都一次 research_complete，未重試，未修改任何指紋內程式。每個 run 另用 `scripts/score_run.py` 重算，結果與步驟計分一致；WSL 與 Windows 的 `evaluation/v06/` 逐檔雜湊一致。保留站預檢時 casinobase.tw 逾時，依規則改用 icasino.tw。
+盲評交給另一個未看過分數的 Claude agent，只給六份隨機代號的盲評包，105 項逐項核對，六份缺陷皆 0；它把人工回饋標為不支持的 R1 claim:8 判為有依據，兩種標準的差異寫入判定。`--compare` 判定 not_proven：I1、I2、I5、I6 成立，I3（R3 失敗搜尋 2）、I4（R3 tokens 比 B1 多 2.3%）、I7（保留站失敗搜尋 2 比 2）不成立，F1–F3 不成立。
+從 trace 看到的原因：模型把發現路徑當線索，仍先讀首頁與目錄；lesson 中的 sitemap 敘述引來 R2、R3 各 6 次 sitemap 讀取（B1 為 0）；`site:` lesson 讓 R3 不再用 `site:`，但 DDGS 對精確查詢與「娛樂城」本身也回無結果。人工回饋的修正出現在 R2、R3 報告與 HM 的作者頁查核。Session 用量 24% → 39%，Weekly 19% → 22%，未用 banked resets 或 credits。判定與引文見 `evaluation/v06/VERDICT.md`。
+
+## 2026-10-16：v0.7 off-page 研究與 lesson 改寫（Windows 與 WSL2，Claude Code）
+依 v0.6 判定的兩個根本問題改程式：off-page 沒有任何站外證據；發現路徑 lesson 帶著過去的發現，報告又只能引用本 run 證據，模型因此重抓已確認頁並反覆讀 sitemap。以新計分重算 v0.6 trace 確認：R2、R3 各重抓 2 次控制器已確認的目標頁、sitemap 讀取 6 次（R1 3、B1 0），與 VERDICT 的人工計數一致；v0.6 計分欄位全部不變。
+實作：`research_offpage`（只讀本 run 搜尋結果列出的站外網址，目標站拒絕，robots、公開 IP、同 host 或 www. 轉址、每 run 4 頁，只回傳連到目標站的連結、錨文字、rel 與提及上下文）；搜尋結果標示 host 與是否為目標站；`research_fetch` 回傳出站連結摘要；主張加 section，plugin 執行時要求 on_page 與 off_page 各至少一項，另寫 `<run>-report.md`；lesson 在提供當下依資料重新產生作法指引（發現路徑交出本輪重抓的 evidence_id，不寫 sitemap 次數與錨文字；失敗模式寫成「不要用 site:」；人工回饋標為審查標準）；prompt 改稱 lessons 為作法指引；計分加 sitemap 讀取、重抓已確認頁、section、off-page 已知數與站外請求稽核；盲評包加 0–2 分的覆蓋評分表；`scripts/evaluate_v07.py` 登錄 R4（v0.6 帳本複本）對 B2（空帳本）。
+可行性：登錄前直接呼叫 Hermes 的 DDGS provider 查 5 個查詢（不呼叫模型、不抓頁）：網域字串多半回傳年份或同名股票代號（2030.TW），`-site:` 沒有結果，首頁標題中的品牌名可找到社群頁、網站資訊頁、同標題的另一網域與論壇。沒有讀任何 2030.tw 的站外頁，C2 是否成立事前未知。
+真實網路 smoke（`evidence/v07-controller-smoke/`，中性網站 python.org，不含模型）第一次發現既有傳輸缺陷：python.org 在未要求壓縮時仍回傳 gzip，解析器看到二進位資料，連結數為 0。控制器改為送 `Accept-Encoding: identity` 並在大小上限內解壓 gzip/deflate；2030.tw 回傳純文字，v0.6 不受影響。修正後 smoke：目標站與未列出的網址都被拒絕，維基百科 PSF 頁有 5 個連到 python.org 的連結，站外請求稽核 0 違規。真實 Hermes 的 `--check-only` 確認六個工具註冊、OAuth 已登入且未限流，未呼叫模型。
+另一個未看過結論的 agent 唯讀審查差異：沒有阻斷問題；5 項應修（`refetched_verified_pages` 把控制器所有 200 回應都當成已交付頁，重驗失敗時會誤判 L3；off-page 判定在一組待盲評時未處理三態；`research_evidence` 不帶 query 會回傳站外頁前 8000 字；C4 只稽核完成的 run；站外轉址被學成 lesson，且「避免：」接規則句會讀反）與 9 項小問題（來源比對過寬、目標 host 結尾的點、壓縮內容被靜默截短、畸形搜尋網址、DNS 先查後連、轉址跳數算成頁數、finish 先關 run 再產生報告、轉移提示與指引矛盾等）。逐項判斷後全部修正並補 12 項回歸測試（`tests/test_v07_review.py`）；「預算餘裕變小」判為非缺陷，估計 R4 約用 21 次直接 HTTP（上限 30）。修正後重跑真實網路 smoke 與 2030.tw 首頁（僅 robots 與首頁）皆正常，Hermes `--check-only` ready。
+測試由 81 增為 115 項（Windows 與 WSL 皆通過）；既有 81 項的測試檔未修改。
+計畫 `evaluation/plan-v07.json` 於 2026-10-16 06:41 UTC 登錄，SHA-256 `937980e83d1e38c8ce718bc5da2548dc622843e8da9c6072a90b38a77e143d7a`，鎖定 15 個程式檔與 v0.6 帳本雜湊 `94f45b3c645c49eeb11442d757fefcc2797f0eac4318b12078e9f51458581889`；Windows 與 WSL `--verify` 皆 ok。未呼叫模型、未產生費用、未 commit。
+
+## 2026-10-16：v0.7 登錄評估實跑與 Demo 錄製（WSL2，Claude Code）
+Demo 開場先修：檢視器窗格 16 列，帳本頁印 17 列，標題與 `[1/5]` 被捲出畫面、轉檔找不到章節標記；改成每條 lesson 一列後在 120×16 窗格以 live 模式確認，演練重跑五個標記都在。R4 以 `record_r4.sh` 同時錄影（第一次被權限機制擋下，取得使用者核准後執行），之後 B2、HP2（選 casinobase.tw）、HB2、HM2 依序執行，09:35–09:53 UTC，每步第一次就 research_complete，前後各記一次用量（Session 0% → 9%，Weekly 22% → 23%），未使用 banked resets 或 credits。
+結果：R4 第 2 次工具呼叫就讀到目標頁（B2 第 9 次），重抓已確認頁與 sitemap 讀取都是 0，v0.6 指出的兩項成本消失；但 tokens 225,174 比 B2 的 194,206 多 15.9%。逐次呼叫的輸入量顯示原因：R4 第 2 次呼叫後就讀進兩個目標頁，之後每次重送；兩組都是 7 次模型呼叫，找頁變快沒有讓研究變短。站外讀取四個 run 共 6 頁、違規 0，只找到一處品牌文字提及，沒有連到目標站的頁面。HB2 遇到中文路徑網址時 `research_offpage` 編碼失敗，模型改讀其他候選；修正在指紋內的 `src/research_core.py`，留給下一份計畫。
+盲評交給沒看過分數的 agent（四份，逐項核對快照）：缺陷只有 HB2 1 項，覆蓋分數 8／7／7／6。`--compare` 判定 learning not_proven（L4、H1 不成立）、offpage not_achieved（C1、C2 不成立）、無退步。盲評者的兩個判斷（細節錯但結論成立算支持、陰性站外樣本算進有支持的已知）改用較嚴讀法都不改變判定，寫入 `evaluation/v07/VERDICT.md` 的限制。Demo 轉成 4 分 50 秒，研究段實際速度、只快轉長的模型等待；轉檔時發現 🎰 畫成方框，加上 emoji 備援字型，另加 `demo_render.py --check-text` 檢查字幕截斷與英文拆行。
+判定後的追問：總 tokens 把命中提示快取的重送內容也算進去。`scripts/token_breakdown.py` 從每次呼叫的 `cache=命中/輸入` 重算，扣掉命中後的輸入加輸出 R4 比 B2 少 20.3%（58,390 對 73,246），保留站 HM2 比 HB2 多 11.0%；Session 用量 R4 2 點、B2 3 點。登錄的指標是總 tokens，看到結果才換指標等於事後調整，判定不變；分析寫進 `evaluation/v07/VERDICT.md`，下一份計畫改用計入快取的成本指標。
+
+## 2026-10-17：v0.8 設計，Hermes 原生學習與學習序列（Windows 與 WSL2，Claude Code，未呼叫模型）
+起因：runner 從早期版本就以 `skip_memory=True`、`skip_background_review=True` 關掉 Hermes 內建學習，沒有寫過理由，也沒有實測過。查固定版本原始碼確認：記憶回顧每 10 個使用者回合一次、skill 回顧要一個回合內 10 次工具迭代，本題每次研究只有一個回合、約 7 次迭代，照預設兩者都不會觸發；回顧在背景執行緒以主模型重送整段對話，寫入同一個 Hermes home。
+設計：三組（對照、lessons 帳本、Hermes 原生）都從空的狀態在 2030.tw 各跑 5 次、逐輪交錯並輪替順序，第 1 輪後兩個學習組收到同一條人工審查，比較第 5 次與自己的第 1 次及同輪對照組，再凍結到保留站各跑一次；學到的內容由沒看過分數的 agent 分類（環境事實、研究方法、錯誤或過度推廣、源自網頁文字、含網頁指示）。成本主指標改為計入快取的未命中輸入＋輸出。原生組的回顧間隔改為 1；每次 run 用自己的 Hermes profile home，OAuth 由 Hermes 的 profile 機制讀根 home，不複製憑證。一開始的設計是「累積後凍結」對「空帳本」，依使用者要求改成學習序列，直接回答第 N 次是否比第 1 次好；5 輪是在一個 Session 用量窗口與 10/17 下午判定期限內能可靠跑完的次數。
+實作：修正中文網址編碼（v0.7 HB2 的錯誤）；`run_research.py` 加 `--hermes-home`、`--hermes-learning`、`--feedback-file`，等待並記錄回顧，存快取計數、system prompt 與工具清單；`src/hermes_homes.py` 處理 home、學習內容雜湊、快照與隔離檢查；`scripts/evaluate_v08.py` 產生草稿、只接受與審過草稿相同的登錄、逐步核對儲存連續性與隔離、失敗嘗試自動還原、凍結、學習內容盲評包與判定。測試 115 → 147 項（Windows 與 WSL），既有測試檔未修改。WSL 固定版本 Hermes 以 `--check-only --inspect` 對四種模式建立 agent（不呼叫模型），工具集合、記憶區塊與 skills 索引都符合設計。計畫為草稿，待另一個 agent 審查後登錄。
+獨立審查後全部採用的修正：雜訊範圍改由 C1–C5 決定（取代看過 v0.7 後才訂的 10% 帶），第 5 次對第 1 次的變化要大於對照範圍寬度；保留站只當傷害檢查，沒跑時判定上限是 improved_primary_only，開跑條件由程式檢查；研究與回顧分開結算，回顧失敗只還原儲存、不重跑研究；沒結算的步驟在同一指令自動重試一次；執行期間不計分，`--score` 在最後一步之後才產生分數與盲評包；第 5 輪結算後 v0.8 即為正式結果，只依 18:00、22:00 兩個時限回退 v0.7；遙測排除改為逐一列出 Hermes 的路徑；對照組看到 lesson 或呼叫 Hermes 工具判 invalid；學習內容改比錯誤比例、front matter 合成一項、附首次出現的步驟；原生組回饋訊息加入與帳本前綴同義的指示。登錄前在拋棄式 home 跑一次回顧 smoke（2 次模型呼叫加 4 次回顧呼叫），回顧完成且建立一個 skill，用量讀數 Session 0%；測試 151 項。
+第二輪審查的修正：自比改為 v0.7 的兩兩門檻加上第 5 次（與第 4 次）落在對照範圍外，不再取決於第 1 次的位置；正式結果在 `--score` 時固定、不可覆寫；被拒絕的工具名只記錄，只有成功執行的 Hermes 記憶與 skill 工具才算越界；學習判定只用研究成本，研究＋回顧成本留在原生對帳本的比較；開跑門檻 Session ≤ 10%、保留站 ≤ 78%；品質寬度下限 2；錯誤比例要差 0.1 且至少 2 項才算較差；缺值記為未量測；原生 6 個 session 保留回顧內容的少於一半時判學習未運作；runner 在回顧開始前複製儲存，回顧失敗只退回那裡；18:00 後 `--score` 把未跑步驟記為 not_run；LZ 自動接 HP3。測試 158 項。
+
+## 2026-10-17：v0.8 登錄、實跑與判定（WSL2，Claude Code）
+登錄前：審查者核可後的兩項小修正已做，測試 159 項（Windows 略過 1 項 symlink 測試，WSL 全過）；在拋棄式 home 再跑一次回顧 smoke，確認 runner 在回顧開始前複製儲存、回顧失敗時能退回那份複本（`evidence/v08-review-smoke/wrapper-check/`）。計畫 `evaluation/plan-v08.json` 於 2026-10-16 19:20:47 UTC 登錄，SHA-256 `e2b95aabbaa5cbd1a5464d8a0518551a8f6a96227a0e045895fd2624b8c3607b`，與審過的草稿相同。
+實跑：23 步在 19:21–20:15 UTC 依序執行，每步第一次就結算，沒有重試、放棄或略過，隔離檢查全部通過；保留站預檢在 Session 41% 時選定 casinobase.tw。用量 Session 1% → 46%、Weekly 23% → 30%，沒有使用 banked resets 或 credits。`--score` 於 20:15:39 UTC 固定正式結果為 v0.8，接著產生 9 份報告盲評包與學習內容盲評包。
+盲評：另派兩個沒看過分數的 agent，一個依隨機順序核對 9 份報告（只有保留站對照組 1 項 unsupported：把 `rel="noopener"` 寫成空白；覆蓋分數 9 份都是 2/1/2/2），一個分類 22 項學習內容（全部 supported，沒有源自網頁的文字或指示）。答案原樣複製到 WSL，雜湊核對未變。
+判定（`--compare`，完全依登錄規則）：lessons 帳本 improved（讀到目標頁前的呼叫 8 → 1，第 4、5 次低於對照範圍 8–9；成本與品質相同；保留站無傷害）；Hermes 原生 regression（F2：第 5 次成本 82,543 > 1.3 × 對照中位數 55,721）；原生對帳本 ledger_better；學到的內容兩組 clean。
+從 transcript 與儲存查原生組為什麼只留 1 個 skill、0 條記憶：6 次回顧都選擇建立或修補同一個 skill，記憶工具從沒被呼叫；Hermes 的記憶指引把程序導向 skill、記憶只留每個 session 都適用的事實，回顧提示要求不帶事件細節的類別層級規則，所以學到的是通用研究方法、沒有網址，找頁沒有變快。成本上升來自記憶與 skill 工具說明、每次載入整個 skill、照 skill 多讀的頁面。寫成 `evaluation/v08/VERDICT.md`。
+對外稿依 v0.8 結果重寫：先定讀者要能說出的三件事（做了什麼、怎麼證明、學到什麼），再重畫架構圖（研究、學習、評估三區，標出誰判斷、誰把關、誰決定，以及兩種學習的實測結果）與三張投影用圖；`scripts/make_figures.py` 改為以 headless Chrome 從 `verdict.json` 與報告原文產生，字級低於標準時拒絕輸出。舊的四張圖確認全 repo 沒有引用後刪除。
+獨立冷讀後的修正（數字由 scores 與 transcript 重算）：帳本組的改善照實寫成預算的重新分配，學到的是兩個目標頁的位置，讀到目標頁前的呼叫 8 → 1，但總工具呼叫 13 → 16–18 次（對照 13–16）、耗時 156 → 159 秒，省下的呼叫轉去讀證據與站外頁（第 2 次起每次 2–4 頁，對照 1–2 頁），品質分數不變；原生組的成本判定寫成「對照中位數的 1.48 倍」，與「比自己第 1 次多 30%」分開；v0.7 段補上保留站計入快取後多 11.0%、覆蓋 6/8 照樣不過，以及 v0.8 判準改用對照組 5 次範圍的理由（對照組自身成本波動約 25%）；可靠性表改引 v0.5 的 3 次真實退回；簡報新增預算優先順序與自主權邊界一頁；「證據帳本」改名「證據庫」。Demo 片尾卡改列判定後快取分析的兩個數字並註明 v0.8 結果見文件：只改 `storyboard-r4.json` 的 `outro_card` 重新轉檔，先確認未改的 storyboard 重轉與原片逐位元組相同，改後解碼第 0–3340 幀逐像素相同、片尾卡前 16 幀有最多 2/255 的編碼差異。

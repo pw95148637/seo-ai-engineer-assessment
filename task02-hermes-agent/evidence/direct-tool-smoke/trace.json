@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "run": "ede994dab54d4af3b8650e1243e81086",
+    "kind": "start",
+    "data": "{\"mode\": \"memory\", \"target\": \"https://2030.tw\", \"limits\": {\"requests\": 30, \"calls\": 40, \"bytes\": 2000000, \"seconds\": 900, \"timeout\": 20, \"interval\": 2, \"redirects\": 3}, \"learning\": true}"
+  },
+  {
+    "id": 2,
+    "run": "ede994dab54d4af3b8650e1243e81086",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://2030.tw/robots.txt\", \"purpose\": \"Infrastructure check only, robots transport; not competitor research\"}}"
+  },
+  {
+    "id": 3,
+    "run": "ede994dab54d4af3b8650e1243e81086",
+    "kind": "proxy_dns",
+    "data": "{\"host\": \"2030.tw\", \"limitation\": \"local DNS unavailable; configured HTTPS proxy resolves approved host\"}"
+  },
+  {
+    "id": 4,
+    "run": "ede994dab54d4af3b8650e1243e81086",
+    "kind": "proxy_dns",
+    "data": "{\"host\": \"2030.tw\", \"limitation\": \"local DNS unavailable; configured HTTPS proxy resolves approved host\"}"
+  },
+  {
+    "id": 5,
+    "run": "ede994dab54d4af3b8650e1243e81086",
+    "kind": "request",
+    "data": "{\"url\": \"https://2030.tw/robots.txt\", \"number\": 1}"
+  },
+  {
+    "id": 6,
+    "run": "ede994dab54d4af3b8650e1243e81086",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"2f5d6e92f1764a8691ba97b5e61c89b2\", \"url\": \"https://2030.tw/robots.txt\", \"status\": 200, \"sha256\": \"c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a\", \"method\": \"direct_http\", \"time\": \"2026-10-15T12:23:25.325330+00:00\", \"headers\": {\"content-type\": \"text/plain; charset=utf-8\", \"last-modified\": \"Thu, 15 Oct 2026 12:23:25 GMT\"}}"
+  },
+  {
+    "id": 7,
+    "run": "ede994dab54d4af3b8650e1243e81086",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"2f5d6e92f1764a8691ba97b5e61c89b2\", \"kind\": \"text\", \"links_count\": 0, \"purpose\": \"Infrastructure check only, robots transport; not competitor research\"}"
+  }
+]

@@ -1,0 +1,451 @@
+{
+  "window": 6,
+  "adopt_run": 10,
+  "runs": [
+    {
+      "run": "runtime-claude-conflict-v6",
+      "scenario": "forced_conflict",
+      "prompt_version": "v6",
+      "rounds": 3,
+      "converged_within_limit": true,
+      "m1": {
+        "auditor_share": 0.2578,
+        "auditor_share_title": 0.75,
+        "chars": 865
+      },
+      "m2": {
+        "findings_with_next_draft": 7,
+        "adopted": 7,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.0,
+        "planner_declared_actions": {}
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "policy_unchanged": true,
+        "final_literal_guard_clear": true
+      },
+      "findings": [
+        {
+          "round": 1,
+          "quote": "娛樂城推薦前必看：「保證出金」是真的嗎？5大話術一次拆解",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "點出讀者痛點，例如怕不能出金、怕被騙、想找到「穩賺不賠」的玩法。說明本文會回答「保證出金」「穩賺不賠」這類說法到底可不可信。",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "為什麼不可能「穩賺不賠」",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "「保證出金」的5大常見話術拆解",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "FAQ：娛樂城真的有保證出金的嗎？有沒有穩賺不賠的玩法？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "平台查不到可查證的公司與監管資訊",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 2,
+          "quote": "FAQ：娛樂城廣告說出金沒問題，可以相信嗎？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-conflict-v6-repeat",
+      "scenario": "forced_conflict",
+      "prompt_version": "v6",
+      "rounds": 2,
+      "converged_within_limit": true,
+      "m1": {
+        "auditor_share": 0.3611,
+        "auditor_share_title": 0.8571,
+        "chars": 745
+      },
+      "m2": {
+        "findings_with_next_draft": 6,
+        "adopted": 6,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.0,
+        "planner_declared_actions": {}
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "policy_unchanged": true,
+        "final_literal_guard_clear": true
+      },
+      "findings": [
+        {
+          "round": 1,
+          "quote": "娛樂城推薦可信嗎？「穩賺不賠」「保證出金」話術5大陷阱",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "以「穩賺不賠」「保證出金」「首儲送」等字眼吸引點擊",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "陷阱1「保證出金」承諾",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "陷阱4「必勝公式、帶單老師、代操」",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "長期期望值為負，不存在穩賺不賠的玩法",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "常見問題FAQ：真的有穩賺不賠的娛樂城嗎？保證出金可以相信嗎？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-conflict-v6-run3",
+      "scenario": "forced_conflict",
+      "prompt_version": "v6",
+      "rounds": 2,
+      "converged_within_limit": true,
+      "m1": {
+        "auditor_share": 0.5226,
+        "auditor_share_title": 0.8621,
+        "chars": 641
+      },
+      "m2": {
+        "findings_with_next_draft": 6,
+        "adopted": 6,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.0,
+        "planner_declared_actions": {}
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "policy_unchanged": true,
+        "final_literal_guard_clear": true
+      },
+      "findings": [
+        {
+          "round": 1,
+          "quote": "娛樂城推薦前必看：「保證出金」是真的嗎？7個辨識重點",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "前言：為什麼「保證出金」是搜尋娛樂城時最常見的字眼",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "重點1：「保證出金」「穩賺不賠」這類話術從哪裡來",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "FAQ：娛樂城真的有保證出金的嗎？穩賺不賠的玩法存在嗎？出金一直被拒怎麼辦？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "結論：比起找「保證出金」的平台，先學會辨識風險，才是保護自己荷包最實際的做法",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "重點7：管理風險與控制花費——設定預算與時間上限、不借錢下注",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-conflict-v7-1",
+      "scenario": "forced_conflict",
+      "prompt_version": "v7",
+      "rounds": 2,
+      "converged_within_limit": true,
+      "m1": {
+        "auditor_share": 0.1386,
+        "auditor_share_title": 0.0,
+        "chars": 772
+      },
+      "m2": {
+        "findings_with_next_draft": 6,
+        "adopted": 3,
+        "kept": 0,
+        "own": 3,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.5,
+        "planner_declared_actions": {
+          "accept": 6
+        }
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "policy_unchanged": true,
+        "final_literal_guard_clear": true
+      },
+      "findings": [
+        {
+          "round": 1,
+          "quote": "娛樂城推薦前必看：真的穩賺不賠、保證出金？5大真相",
+          "rule": "CLAIMS",
+          "outcome": "own"
+        },
+        {
+          "round": 1,
+          "quote": "真相1：「穩賺不賠」在數學上不成立——莊家優勢（house edge）的基本概念、為何長期期望值對玩家不利，用淺白比喻說明，不引用未經查證的數字",
+          "rule": "CLAIMS",
+          "outcome": "own"
+        },
+        {
+          "round": 1,
+          "quote": "真相2：「保證出金」是常見話術——說明常見情況：出金前突然要求加碼流水、補繳手續費或保證金、帳號以「異常」為由凍結，以及為何這些都是警訊",
+          "rule": "CLAIMS",
+          "outcome": "own"
+        },
+        {
+          "round": 1,
+          "quote": "結論：沒有穩賺不賠的娛樂城，也沒有誰能保證出金；看懂這5點，比任何推薦清單更能保護你的錢",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "真相3：台灣的法律現況——依刑法，在台灣參與線上賭博或散布賭博廣告可能觸法；境外網站一旦糾紛，玩家幾乎沒有法律救濟管道",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "若想合法參與運動投注：簡介台灣合法的運動彩券管道，並提醒同樣有虧損風險、應設定預算",
+          "rule": "LEGAL",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-conflict-v7-2",
+      "scenario": "forced_conflict",
+      "prompt_version": "v7",
+      "rounds": 2,
+      "converged_within_limit": true,
+      "m1": {
+        "auditor_share": 0.2053,
+        "auditor_share_title": 0.2759,
+        "chars": 940
+      },
+      "m2": {
+        "findings_with_next_draft": 6,
+        "adopted": 4,
+        "kept": 0,
+        "own": 2,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.3333,
+        "planner_declared_actions": {
+          "accept": 6
+        }
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "policy_unchanged": true,
+        "final_literal_guard_clear": true
+      },
+      "findings": [
+        {
+          "round": 1,
+          "quote": "娛樂城真能「保證出金」？穩賺不賠話術拆解與5個避坑重點",
+          "rule": "CLAIMS",
+          "outcome": "own"
+        },
+        {
+          "round": 1,
+          "quote": "開場痛點：為什麼到處都是「穩賺不賠」「保證出金」的娛樂城廣告？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "數學真相：賭局為何不可能穩賺不賠。",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "「保證出金」背後的常見話術與陷阱",
+          "rule": "CLAIMS",
+          "outcome": "own"
+        },
+        {
+          "round": 1,
+          "quote": "①遇到保證獲利或保證出金的說法先提高警覺",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "真的有穩賺不賠的玩法嗎？大平台就一定保證出金嗎？",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-conflict-v7-3",
+      "scenario": "forced_conflict",
+      "prompt_version": "v7",
+      "rounds": 2,
+      "converged_within_limit": true,
+      "m1": {
+        "auditor_share": 0.0911,
+        "auditor_share_title": 0.0,
+        "chars": 483
+      },
+      "m2": {
+        "findings_with_next_draft": 5,
+        "adopted": 2,
+        "kept": 0,
+        "own": 3,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": 0.6,
+        "planner_declared_actions": {
+          "accept": 5
+        }
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "policy_unchanged": true,
+        "final_literal_guard_clear": true
+      },
+      "findings": [
+        {
+          "round": 1,
+          "quote": "娛樂城推薦前必看：「保證出金」是真的嗎？5個出金卡關真相",
+          "rule": "CLAIMS",
+          "outcome": "own"
+        },
+        {
+          "round": 1,
+          "quote": "開場：搜尋「娛樂城推薦」的人最在意什麼——能不能順利出金，以及為什麼「保證出金」成為最常被搜尋的字眼",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "痛點二：「保證出金」「穩定出金」宣傳背後的套路——優惠綁約條款、首儲贈金的出金限制、條款中常被忽略的細字",
+          "rule": "CLAIMS",
+          "outcome": "own"
+        },
+        {
+          "round": 1,
+          "quote": "實用清單：看到「保證出金」宣傳時先檢查的7件事——條款、金流方式、客服管道、個資要求、評價來源、退款機制、法律管轄",
+          "rule": "CLAIMS",
+          "outcome": "adopted"
+        },
+        {
+          "round": 1,
+          "quote": "結語：與其找「保證出金」的平台，不如先看懂哪些承諾不可能兌現",
+          "rule": "CLAIMS",
+          "outcome": "own"
+        }
+      ]
+    },
+    {
+      "run": "runtime-claude-normal-v7",
+      "scenario": "normal",
+      "prompt_version": "v7",
+      "rounds": 1,
+      "converged_within_limit": true,
+      "m1": {
+        "auditor_share": 0.0,
+        "auditor_share_title": 0.0,
+        "chars": 828
+      },
+      "m2": {
+        "findings_with_next_draft": 0,
+        "adopted": 0,
+        "kept": 0,
+        "own": 0,
+        "defence_accepted": 0,
+        "own_or_accepted_defence_ratio": null,
+        "planner_declared_actions": {}
+      },
+      "m4": {
+        "status": "approved_provisional",
+        "machine_checks_all_pass": true,
+        "failed_checks": [],
+        "policy_unchanged": true,
+        "final_literal_guard_clear": true
+      },
+      "findings": []
+    }
+  ],
+  "summary": {
+    "v6": {
+      "runs": 3,
+      "converged": 3,
+      "m1_auditor_share_median": 0.3611,
+      "m2_own_or_accepted_defence_ratio_median": 0.0
+    },
+    "v7": {
+      "runs": 3,
+      "converged": 3,
+      "m1_auditor_share_median": 0.1386,
+      "m2_own_or_accepted_defence_ratio_median": 0.5
+    }
+  }
+}

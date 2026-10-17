@@ -1,0 +1,84 @@
+%% 娛樂城提示詞鏈：資訊流向圖（系統 v4；architecture.png 的精簡 Mermaid 版，內容一致）
+%% 方框＝新的 subagent（每步重開）；六角形＝主控（主對話）；黃色＝作者本人；圓柱＝資料檔
+%% 邊上的【關卡】由主控判斷，不過關退回該步重做（最多 2 次）
+%% 「程式」＝check_article.py 機械檢查：字數、揭露、AI 腔字詞與驚嘆號、引文逐字出自來源、數字沒少
+%% 實線＝主要資訊流；虛線＝作者確認、退回／再修或回饋改版
+%% 「共用的資料」各步依需要讀取，不另畫箭頭（KW ~~~ SH 只用來排版）
+flowchart TD
+    KW(["關鍵字「娛樂城」"])
+    SH[("共用的資料（各步依需要讀取，盲評評審也拿來核對）<br/>事先查證的來源 evidence-pack：逐字摘錄、標明查核程度；各步新開的來源也逐字存檔<br/>寫作準則 style-guide：寫作、審核、修正、盲評同一把尺")]
+
+    subgraph SAUTH["作者本人（鏈執行中只參與兩次）"]
+        AUTH(["作者本人"])
+        EXP[("作者經驗檔 inputs/experience.md<br/>作者原文＋第一人稱使用限制")]
+    end
+
+    subgraph SA["階段 A｜微意圖建模"]
+        A["A 微意圖建模<br/>至少 4 個微意圖（本次 7 個），各附真人提問與官方證據＋SEO 競爭邏輯"]
+        SEL{{"主控選題<br/>4 準則：證據強度・讀者決定・競爭缺口・作者經驗<br/>YMYL 風險無法控制的直接排除"}}
+    end
+
+    subgraph SB["階段 B｜玩家視角長文"]
+        B1["B1 補問作者<br/>作者經驗不夠時，只問這個題目還缺的細節"]
+        B2["B2 寫作<br/>一次寫到可送審：試玩情境與評論，含去 AI 腔<br/>第一人稱只用作者原文"]
+    end
+
+    subgraph SC["階段 C｜E-E-A-T／YMYL 自我修正"]
+        C1E["C1 作者經驗審核（獨立）<br/>第一人稱逐句對作者原文，列出只有作者能確認的事<br/>只讀：文章＋作者經驗檔"]
+        C1F["C1 正確性審核（獨立）<br/>事實、計算、法律、讀者安全、缺漏、競爭情報、權威性<br/>讀來源，可上網查證"]
+        C1R["C1 讀者視角審核（獨立）<br/>口吻、結構、易不易懂<br/>刻意不給來源：看到的就是讀者看到的"]
+        C2["C2 整合修正<br/>一次整合三份審核，衝突的取捨寫明，同時顧口吻；新來源逐字摘錄"]
+        C3["C3 全文獨立複審<br/>只審不改；讀全文，特別看修改處與前後文；結論三選一"]
+        FIX["C2 小修<br/>只改 C3 列出的那幾句，其他一個字都不動"]
+        C4["C4 驗差異（獨立）<br/>只審不改，全 PASS 才定稿；FAIL 再修一次"]
+    end
+
+    subgraph SX["對照實驗與迭代｜不預設鏈比較好"]
+        FIN["鏈的定稿（本版）final.md<br/>最後一步是 C3 或 C4 的檢查"]
+        PREV["上一版系統的定稿<br/>有同一意圖時一起評"]
+        BL2["對照組 2：同資料與準則的單一 prompt<br/>作者經驗定案後啟動"]
+        BL1["對照組 1：只給題目的單一 prompt<br/>選題後啟動"]
+        BLIND["三位評審盲評（獨立）<br/>代號各自洗牌，逐篇列出具體缺陷；腳本洗牌代號、彙整分數"]
+        CMP["比較與成本 comparison・cost<br/>逐項分數、缺陷數、依牌價換算的成本；結果不利也照寫<br/>程式並列機械指標"]
+        SUM["自評 run-summary<br/>最影響品質的 3 個問題，追到哪個 prompt 或關卡"]
+        CHG["改版 SYSTEM_CHANGELOG（v1 → v4）<br/>作者與主控決定改什麼；每次執行另存系統快照 outputs/system/"]
+    end
+
+    KW --> A
+    KW ~~~ SH
+    A -- "【關卡】主控抽查來源" --> SEL
+    SEL -- "本次選定：帶單老師、預測程式、百家樂必勝法能不能信" --> B1
+    B1 -- "補問題目" --> AUTH
+    AUTH -- "回答原文（照錄、不改寫）" --> EXP
+    EXP -- "第一人稱只能出自這裡" --> B2
+    B2 --> C1E
+    B2 -- "【關卡】程式＋主控重算數字；三份審核同時派出" --> C1F
+    B2 --> C1R
+    C1E -. "只有作者能確認的事" .-> AUTH
+    AUTH -. "確認結果（原文也附加到作者經驗檔）" .-> C2
+    C1E --> C2
+    C1F -- "三份問題表；【關卡】主控確認每條有依據" --> C2
+    C1R --> C2
+    C2 -- "【關卡】程式＋主控抽查新來源" --> C3
+    C3 -. "退回 C2（最多 1 次）" .-> C2
+    C3 -- "小修：只差一兩句" --> FIX
+    FIX -- "【關卡】程式" --> C4
+    C3 -- "可以定稿（主控確認）" --> FIN
+    C4 -- "全部 PASS" --> FIN
+    FIN -- "同一題" --> BLIND
+    PREV --> BLIND
+    BL2 --> BLIND
+    BL1 --> BLIND
+    BLIND -. "評審列的缺陷：主控回到來源核對，成立的走小修" .-> FIX
+    BLIND --> CMP --> SUM
+    SUM -. "作者與主控決定改不改" .-> CHG
+    CHG -. "改版回到整條鏈：prompt、關卡、準則、工具" .-> KW
+
+    classDef human fill:#fff8c5,stroke:#bf8700,color:#000
+    classDef ctrl fill:#ddf4ff,stroke:#0969da,color:#000
+    classDef store fill:#f6f8fa,stroke:#8c959f,color:#000
+    classDef exp fill:#fbf8ff,stroke:#8250df,color:#000
+    class AUTH,EXP human
+    class SEL ctrl
+    class SH store
+    class FIN,PREV,BL1,BL2,BLIND,CMP,SUM,CHG exp

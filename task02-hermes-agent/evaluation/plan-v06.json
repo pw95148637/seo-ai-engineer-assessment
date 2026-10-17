@@ -1,0 +1,224 @@
+{
+  "plan_id": "task02-v06-lessons-evaluation",
+  "created_utc": "2026-10-16T03:55:45.693023+00:00",
+  "status": "registered before any v0.6 model run",
+  "question": "Does the lessons ledger make the third run on the same task better than the first run and a same-time no-memory run, without hurting quality on a held-out site?",
+  "v05_results": "evidence/live-agent-evaluation stays an archived negative result (memory did not improve). None of its runs, scores or ledgers are v0.6 data.",
+  "model": "gpt-6.1-sol",
+  "provider": "openai-codex",
+  "hermes_commit": "311155fade43d1993ea968909a2ad36762345bbc",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "primary_target": "https://2030.tw",
+  "holdout": {
+    "selection": {
+      "rule": "Archived DDGS snapshots (status 200) whose query, without quotes, equals exactly \"娛樂城\"; count distinct snapshots listing each result host (www. removed), excluding 2030.tw; ties by mean result rank, then host name. Rank 1 is the holdout; rank 2 is the fallback.",
+      "snapshots": [
+        {
+          "evidence_id": "9cff9a8afc474d1aa15a414ae6d04c37",
+          "run": "d9f11317db5d48f9b19f7fb7b457dc75",
+          "query": "娛樂城",
+          "archive": "evidence/autonomous-research"
+        },
+        {
+          "evidence_id": "e9dc4dfe7f0c4715a2b773ae6476131f",
+          "run": "d19217ae0c174d1a8dee6b423a6986da",
+          "query": "娛樂城",
+          "archive": "evidence/live-agent-evaluation/baseline"
+        },
+        {
+          "evidence_id": "47f92cd0b749466090835970712023df",
+          "run": "c6fa5b7873b74c428b21d432421dc672",
+          "query": "娛樂城",
+          "archive": "evidence/live-agent-evaluation/history"
+        }
+      ],
+      "ranking": [
+        {
+          "host": "casinobase.tw",
+          "snapshots": 3,
+          "mean_rank": 1.0
+        },
+        {
+          "host": "icasino.tw",
+          "snapshots": 3,
+          "mean_rank": 2.0
+        },
+        {
+          "host": "goldbobet.com",
+          "snapshots": 2,
+          "mean_rank": 3.0
+        },
+        {
+          "host": "henfoo.com",
+          "snapshots": 2,
+          "mean_rank": 4.0
+        },
+        {
+          "host": "tftw.com.tw",
+          "snapshots": 2,
+          "mean_rank": 5.0
+        }
+      ],
+      "primary": "casinobase.tw",
+      "fallback": "icasino.tw",
+      "alternative_rule_not_used": {
+        "rule": "any query containing \"娛樂城\" without site:",
+        "top": [
+          {
+            "host": "3aarena.com.tw",
+            "snapshots": 6,
+            "with_3a_brand_query": 4
+          },
+          {
+            "host": "3aaa.com.tw",
+            "snapshots": 4,
+            "with_3a_brand_query": 4
+          },
+          {
+            "host": "casinobase.tw",
+            "snapshots": 4,
+            "with_3a_brand_query": 0
+          }
+        ],
+        "why_not": "Its leader is counted mostly in queries naming the 3A brand, which measures brand navigation rather than competition for the head keyword. The registered rule follows the instruction to use the 「娛樂城」 search snapshots; both rules were computed before registration."
+      },
+      "reading": "Only result host names and ranks were read to compute this; no holdout page content was read before the plan was registered."
+    },
+    "preflight": "Step HP fetches robots.txt and the homepage of the rank-1 host with the controller only. If robots.txt is not 200/404/410, robots disallows the homepage, or the homepage is not HTTP 200, rank 2 is used. The choice is written to evaluation/v06/holdout-choice.json and applies to HB and HM."
+  },
+  "order": [
+    "R1",
+    "HF",
+    "R2",
+    "B1",
+    "R3",
+    "HP",
+    "HB",
+    "HM"
+  ],
+  "steps": {
+    "R1": {
+      "site": "primary",
+      "mode": "memory",
+      "learn": true,
+      "root": "evaluation/v06/runs/2030-series",
+      "note": "empty ledger; learns"
+    },
+    "HF": {
+      "kind": "human_feedback",
+      "on": "R1",
+      "root": "evaluation/v06/runs/2030-series",
+      "note": "reviewer labels R1 report with scripts/feedback.py"
+    },
+    "R2": {
+      "site": "primary",
+      "mode": "memory",
+      "learn": true,
+      "root": "evaluation/v06/runs/2030-series",
+      "note": "sees R1 lessons and feedback; learns"
+    },
+    "B1": {
+      "site": "primary",
+      "mode": "baseline",
+      "learn": false,
+      "root": "evaluation/v06/runs/B1",
+      "note": "same code, no lessons"
+    },
+    "R3": {
+      "site": "primary",
+      "mode": "memory",
+      "learn": false,
+      "root": "evaluation/v06/runs/2030-series",
+      "note": "ledger frozen"
+    },
+    "HP": {
+      "kind": "holdout_preflight",
+      "note": "controller-only check of robots.txt and homepage; no model"
+    },
+    "HB": {
+      "site": "holdout",
+      "mode": "baseline",
+      "learn": false,
+      "root": "evaluation/v06/runs/HB",
+      "note": "no lessons"
+    },
+    "HM": {
+      "site": "holdout",
+      "mode": "memory",
+      "learn": false,
+      "root": "evaluation/v06/runs/HM",
+      "ledger_from": "evaluation/v06/runs/2030-series",
+      "note": "copy of the ledger after R3, frozen; host-bound lessons do not apply to another host"
+    }
+  },
+  "human_feedback": {
+    "who": "The user, or the coordinating agent when the user delegates; the reviewer name is stored.",
+    "how": "scripts/feedback.py label|ok|veto on the R1 run in the series root",
+    "rules": [
+      "Labels: unsupported, scope_error, or reviewed_ok when nothing is wrong.",
+      "Reasons are at most 200 characters with no URL or path, so feedback cannot hand over answers.",
+      "scope general only for errors that do not depend on 2030.tw specifics."
+    ]
+  },
+  "metrics": {
+    "source": "src/scoring.py score_run",
+    "fields": [
+      "both_target_pages_read: model read (fetch or research_evidence) an HTTP 200 page on the target host whose URL slug or a title/H1 segment equals the keyword; on-site search pages do not count",
+      "calls_before_first_hit: model tool calls before the first target page read; when no page is read the run total tool_calls is used",
+      "failed_searches: searches without any result URL (timeout, error, no results or empty placeholder); failed_search_kinds splits no_results from error",
+      "first_finish_rejected",
+      "tokens.total from the Hermes session usage",
+      "http_requests (model + controller)",
+      "failed_source_citations",
+      "stale_lessons_presented: lessons shown while revoked, vetoed, expired or never active, checked against lesson_history"
+    ]
+  },
+  "improvement_criteria": {
+    "I1": "R3 reads both target pages",
+    "I2": "calls_before_first_hit(R3) <= 0.5 x R1 and <= 0.5 x B1",
+    "I3": "failed_searches(R3) = 0",
+    "I4": "tokens(R3) <= tokens(B1)",
+    "I5": "blind review: unsupported + scope_error defects of R3 <= B1",
+    "I6": "holdout: defects(HM) <= defects(HB) and target pages read by HM >= HB",
+    "I7": "holdout: failed_searches(HM) < failed_searches(HB), or both 0"
+  },
+  "failure_criteria": {
+    "F1": "R3 misses a target page that B1 read",
+    "F2": "tokens(R3) > 1.3 x tokens(B1)",
+    "F3": "any stale lesson presented in R1, R2, R3 or HM"
+  },
+  "verdict_rule": "regression if any F holds; incomplete while R3 or B1 token usage is missing; pending_blind_review while I5/I6 lack review data; improved only if every I holds; otherwise not_proven. One run per arm: no statistical claim.",
+  "blind_review": {
+    "packets": "evaluation/v06/blind/<blind_id>/items.json with cited snapshots; arm labels removed",
+    "reviewer": "someone who has not seen evaluation/v06/scores; answers per packet in evaluation/v06/blind-review.json as {blind_id: {\"unsupported\": n, \"scope_error\": n, \"notes\": \"\"}}"
+  },
+  "retry_rule": "An attempt is logged before it starts. A step that does not reach research_complete may be retried once with --retry, except no_autonomous_tool_use and missing_controller_report, which are the agent's own outcome. Only research_complete runs teach the ledger, so a failed attempt adds no support. A completed step is never rerun; a completed run whose scoring failed is scored again without rerunning.",
+  "limitations": [
+    "One run per arm; live pages and search results drift between runs.",
+    "R1-R3 repeat the same task, so host-bound lessons are expected to help there; the holdout tests only lessons that are not tied to 2030.tw.",
+    "score_run measures coverage and cost; semantic support depends on the blind review.",
+    "A memory-arm report may still mention lessons and so reveal its arm to the blind reviewer.",
+    "I3 counts search timeouts too, so provider outages can fail it without any learning effect."
+  ],
+  "code_fingerprint": {
+    "src/research_core.py": "daaac44210f12f0d3ec2b3af556cf7b9124e5f58c5fd079012e0fb3ab45acf40",
+    "src/lessons.py": "07b8226a87c079daf2fc2cb3d7cb610ec6141255a8e382518579767693ffe213",
+    "src/scoring.py": "43f0c1bf778c5a882c4c09ad7ef96cf0cb4eb70f64449562866ea397e5a70adb",
+    "src/runner_support.py": "9064f465b155fe22f2f845c39ac56acbc302d3a238772c5c79790ef0792b40c5",
+    "plugin/__init__.py": "de25773f60b57cb3eb5d90decbf058979b67e08bc67d397ecc46ff05888dc760",
+    "plugin/plugin.yaml": "c9fd36a4e2fe347937c9b342f8fd23333172ff9be527973e8b1c07278e606b58",
+    "scripts/run_research.py": "63a8fc6c4f46f6a7282e00e7a8f46f4c1e6d8b95d29c98ee25310ecfcfb50bd9",
+    "scripts/run_research.sh": "d4ca68771a816c9416bda492ebd488ae4c6114e7e8c1640ed01da1455b10ce69",
+    "scripts/hermes_env.sh": "93ea9f00c93808dea38946711376701b9d1a8b730360b76e45b252b738775ca6",
+    "scripts/install_hermes.sh": "ee94571754acdfa04e44843ea7dba3eba51ef6c973bd5214213d2cd9567817de",
+    "scripts/enable_plugin.sh": "4f352508cc2bcf56c02c3d1b61e1d403cda4997de9f748dbc75cd13ffecb395b",
+    "scripts/setup_research.sh": "59210e69f7b473d9889074512b91d36bf2af7b02251c6b965b8e0f1413570b01",
+    "scripts/evaluate_v06.py": "efed789f340dfe8f5a00a9dfa96f74fcf044c0eb48a6237adc8d85987cc87ffa",
+    "scripts/score_run.py": "f7306a4f9ba429d3343c35a1f58fbd5bdbe097a6da79aab137cddc4987c3ba39",
+    "scripts/feedback.py": "5e62462a1c8a53febe44e3d1980936047975901c680bb8f30c8f61669a59f056"
+  },
+  "plan_sha256": "90f562aa9f4426926a24a179add2dd661b98f76c61a8e08d73338719cafbb849"
+}

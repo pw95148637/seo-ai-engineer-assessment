@@ -1,0 +1,424 @@
+{
+  "blind_id": "b6d2aa16",
+  "claims": [
+    {
+      "item": "claim:1",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "keyword_mapping",
+      "text": "首頁 title 與 H1 均為「CasinoBase｜台灣娛樂城推薦評比平台」；/reviews/ 使用2026娛樂城評價排行榜標題、Top10、CB-FIVE與FAQ。兩頁canonical各指自身。這是頁面設定與內容觀察，不證明收錄或排名。",
+      "sources": [
+        {
+          "evidence_id": "45442294b5f843d6bf08417b99758f4a",
+          "url": "https://casinobase.tw/",
+          "status": 200,
+          "sha256": "7bb28e539379611a1f8409ae068c27f31afbf49e84437f1183f7abbb8a13b1c5",
+          "method": "direct_http",
+          "snapshot": "snapshots/45442294b5f843d6bf08417b99758f4a.txt"
+        },
+        {
+          "evidence_id": "9e12f0bbb0fb412daf589e5ef8741f9a",
+          "url": "https://casinobase.tw/reviews/",
+          "status": 200,
+          "sha256": "9b75c26301852a5bcfc8d8e5a3ec045523604084549760a3edb60d8b844deecd",
+          "method": "direct_http",
+          "snapshot": "snapshots/9e12f0bbb0fb412daf589e5ef8741f9a.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:2",
+      "kind": "inference",
+      "section": "on_page",
+      "topic": "site_architecture",
+      "text": "已讀首頁、排行、優惠、攻略、防詐、術語六頁，導覽連結共同連向這些主題頁，可推論目前可見架構以娛樂城泛詞及相關意圖為主題分工，不能據此認定SEO有效。",
+      "sources": [
+        {
+          "evidence_id": "45442294b5f843d6bf08417b99758f4a",
+          "url": "https://casinobase.tw/",
+          "status": 200,
+          "sha256": "7bb28e539379611a1f8409ae068c27f31afbf49e84437f1183f7abbb8a13b1c5",
+          "method": "direct_http",
+          "snapshot": "snapshots/45442294b5f843d6bf08417b99758f4a.txt"
+        },
+        {
+          "evidence_id": "9e12f0bbb0fb412daf589e5ef8741f9a",
+          "url": "https://casinobase.tw/reviews/",
+          "status": 200,
+          "sha256": "9b75c26301852a5bcfc8d8e5a3ec045523604084549760a3edb60d8b844deecd",
+          "method": "direct_http",
+          "snapshot": "snapshots/9e12f0bbb0fb412daf589e5ef8741f9a.txt"
+        },
+        {
+          "evidence_id": "5fb5ac422b21409d921bfa052aadf86d",
+          "url": "https://casinobase.tw/bonuses/",
+          "status": 200,
+          "sha256": "b524753672503e39db7fd8c17c5ec1c712a6f2f0eb1cd0ba817b2e87bebe3b9a",
+          "method": "direct_http",
+          "snapshot": "snapshots/5fb5ac422b21409d921bfa052aadf86d.txt"
+        },
+        {
+          "evidence_id": "e054ea7807b545d5970af40b2a37036c",
+          "url": "https://casinobase.tw/guides/",
+          "status": 200,
+          "sha256": "1a572d93b01648cf59465d578bf5ff1062930d45ec49e6bf2005af392f2e9102",
+          "method": "direct_http",
+          "snapshot": "snapshots/e054ea7807b545d5970af40b2a37036c.txt"
+        },
+        {
+          "evidence_id": "a38fb8024edd4fe583aee580358eea6a",
+          "url": "https://casinobase.tw/safety/",
+          "status": 200,
+          "sha256": "62ba518bdb4ad9ec463b5b839b12d2299c730e91e3d6bb6b97664ae3f455220c",
+          "method": "direct_http",
+          "snapshot": "snapshots/a38fb8024edd4fe583aee580358eea6a.txt"
+        },
+        {
+          "evidence_id": "e2c7dec6b88e49c99b1ddb4e0c0b2bd8",
+          "url": "https://casinobase.tw/terms/",
+          "status": 200,
+          "sha256": "14735129579b1ac99e6f9414d187825f20b12c8dc1b0af6cb776b398558ede68",
+          "method": "direct_http",
+          "snapshot": "snapshots/e2c7dec6b88e49c99b1ddb4e0c0b2bd8.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:3",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "3a_coverage",
+      "text": "六個已讀頁面的可讀內容與擷取連結未見3A娛樂城或其專頁；只限本次樣本，不宣稱全站不存在。",
+      "sources": [
+        {
+          "evidence_id": "45442294b5f843d6bf08417b99758f4a",
+          "url": "https://casinobase.tw/",
+          "status": 200,
+          "sha256": "7bb28e539379611a1f8409ae068c27f31afbf49e84437f1183f7abbb8a13b1c5",
+          "method": "direct_http",
+          "snapshot": "snapshots/45442294b5f843d6bf08417b99758f4a.txt"
+        },
+        {
+          "evidence_id": "9e12f0bbb0fb412daf589e5ef8741f9a",
+          "url": "https://casinobase.tw/reviews/",
+          "status": 200,
+          "sha256": "9b75c26301852a5bcfc8d8e5a3ec045523604084549760a3edb60d8b844deecd",
+          "method": "direct_http",
+          "snapshot": "snapshots/9e12f0bbb0fb412daf589e5ef8741f9a.txt"
+        },
+        {
+          "evidence_id": "5fb5ac422b21409d921bfa052aadf86d",
+          "url": "https://casinobase.tw/bonuses/",
+          "status": 200,
+          "sha256": "b524753672503e39db7fd8c17c5ec1c712a6f2f0eb1cd0ba817b2e87bebe3b9a",
+          "method": "direct_http",
+          "snapshot": "snapshots/5fb5ac422b21409d921bfa052aadf86d.txt"
+        },
+        {
+          "evidence_id": "e054ea7807b545d5970af40b2a37036c",
+          "url": "https://casinobase.tw/guides/",
+          "status": 200,
+          "sha256": "1a572d93b01648cf59465d578bf5ff1062930d45ec49e6bf2005af392f2e9102",
+          "method": "direct_http",
+          "snapshot": "snapshots/e054ea7807b545d5970af40b2a37036c.txt"
+        },
+        {
+          "evidence_id": "a38fb8024edd4fe583aee580358eea6a",
+          "url": "https://casinobase.tw/safety/",
+          "status": 200,
+          "sha256": "62ba518bdb4ad9ec463b5b839b12d2299c730e91e3d6bb6b97664ae3f455220c",
+          "method": "direct_http",
+          "snapshot": "snapshots/a38fb8024edd4fe583aee580358eea6a.txt"
+        },
+        {
+          "evidence_id": "e2c7dec6b88e49c99b1ddb4e0c0b2bd8",
+          "url": "https://casinobase.tw/terms/",
+          "status": 200,
+          "sha256": "14735129579b1ac99e6f9414d187825f20b12c8dc1b0af6cb776b398558ede68",
+          "method": "direct_http",
+          "snapshot": "snapshots/e2c7dec6b88e49c99b1ddb4e0c0b2bd8.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:4",
+      "kind": "unknown",
+      "section": "on_page",
+      "topic": "3a_performance",
+      "text": "無法確認3A娛樂城專頁存在與否、關鍵詞排名、曝光、點擊、流量或轉換；本站公開樣本不足以證明3A是低競爭或高價值機會。",
+      "sources": []
+    },
+    {
+      "item": "claim:5",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "link_destination",
+      "text": "排行頁文字承諾可點擊詳細評價頁，但其「查看評價」錨文字實際連至rg8888.org、hs168.vip/9eyamq等站外URL，而非本站品牌評測內頁。",
+      "sources": [
+        {
+          "evidence_id": "9e12f0bbb0fb412daf589e5ef8741f9a",
+          "url": "https://casinobase.tw/reviews/",
+          "status": 200,
+          "sha256": "9b75c26301852a5bcfc8d8e5a3ec045523604084549760a3edb60d8b844deecd",
+          "method": "direct_http",
+          "snapshot": "snapshots/9e12f0bbb0fb412daf589e5ef8741f9a.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:6",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "content_consistency",
+      "text": "優惠頁卡片寫任你搏20倍流水、錢盈3倍，比較表則寫任你博15倍、錢盈10倍；可能是活動或計算基礎不同，但可讀內容未清楚對應，屬未解釋差異，不是造假的證明。",
+      "sources": [
+        {
+          "evidence_id": "5fb5ac422b21409d921bfa052aadf86d",
+          "url": "https://casinobase.tw/bonuses/",
+          "status": 200,
+          "sha256": "b524753672503e39db7fd8c17c5ec1c712a6f2f0eb1cd0ba817b2e87bebe3b9a",
+          "method": "direct_http",
+          "snapshot": "snapshots/5fb5ac422b21409d921bfa052aadf86d.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:7",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "counterevidence",
+      "text": "不能將全站描述為毫無實用內容：優惠頁解釋流水計算、指定遊戲與驗證限制，防詐頁建議保留紀錄、停止進一步儲值或提供個資，術語頁解釋首存、返水、風控等詞。這些並不獨立證實該站測試、評分或平台安全性。",
+      "sources": [
+        {
+          "evidence_id": "5fb5ac422b21409d921bfa052aadf86d",
+          "url": "https://casinobase.tw/bonuses/",
+          "status": 200,
+          "sha256": "b524753672503e39db7fd8c17c5ec1c712a6f2f0eb1cd0ba817b2e87bebe3b9a",
+          "method": "direct_http",
+          "snapshot": "snapshots/5fb5ac422b21409d921bfa052aadf86d.txt"
+        },
+        {
+          "evidence_id": "a38fb8024edd4fe583aee580358eea6a",
+          "url": "https://casinobase.tw/safety/",
+          "status": 200,
+          "sha256": "62ba518bdb4ad9ec463b5b839b12d2299c730e91e3d6bb6b97664ae3f455220c",
+          "method": "direct_http",
+          "snapshot": "snapshots/a38fb8024edd4fe583aee580358eea6a.txt"
+        },
+        {
+          "evidence_id": "e2c7dec6b88e49c99b1ddb4e0c0b2bd8",
+          "url": "https://casinobase.tw/terms/",
+          "status": 200,
+          "sha256": "14735129579b1ac99e6f9414d187825f20b12c8dc1b0af6cb776b398558ede68",
+          "method": "direct_http",
+          "snapshot": "snapshots/e2c7dec6b88e49c99b1ddb4e0c0b2bd8.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:8",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "content_navigation",
+      "text": "攻略頁反覆顯示相同英文老虎機文章名稱與2025/08/22日期，擷取到的站外連結為google.com，未得到可讀的獨立攻略文章URL；這限制了品牌或長尾文章品質比較，不能推定AI生成、搜尋懲罰或全站重複內容。",
+      "sources": [
+        {
+          "evidence_id": "e054ea7807b545d5970af40b2a37036c",
+          "url": "https://casinobase.tw/guides/",
+          "status": 200,
+          "sha256": "1a572d93b01648cf59465d578bf5ff1062930d45ec49e6bf2005af392f2e9102",
+          "method": "direct_http",
+          "snapshot": "snapshots/e054ea7807b545d5970af40b2a37036c.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:9",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "provenance",
+      "text": "首頁與排行頁宣稱團隊實測、參考PTT/Dcard、量化評分；本次擷取未提供可點擊的原始實測或社群證據連結，未見具名個人作者。團隊署名與自述不能視為獨立驗證的專業或安全背書。",
+      "sources": [
+        {
+          "evidence_id": "45442294b5f843d6bf08417b99758f4a",
+          "url": "https://casinobase.tw/",
+          "status": 200,
+          "sha256": "7bb28e539379611a1f8409ae068c27f31afbf49e84437f1183f7abbb8a13b1c5",
+          "method": "direct_http",
+          "snapshot": "snapshots/45442294b5f843d6bf08417b99758f4a.txt"
+        },
+        {
+          "evidence_id": "9e12f0bbb0fb412daf589e5ef8741f9a",
+          "url": "https://casinobase.tw/reviews/",
+          "status": 200,
+          "sha256": "9b75c26301852a5bcfc8d8e5a3ec045523604084549760a3edb60d8b844deecd",
+          "method": "direct_http",
+          "snapshot": "snapshots/9e12f0bbb0fb412daf589e5ef8741f9a.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:10",
+      "kind": "observation",
+      "section": "off_page",
+      "topic": "access",
+      "text": "網域與CasinoBase品牌的站外搜尋均未回傳可用候選頁，因此沒有可用research_offpage直接驗證的站外頁。這是本次搜尋可用性限制，不是沒有backlinks的證據。",
+      "sources": [
+        {
+          "evidence_id": "49c4c53fb1b84010a7ba59b2bcdabee9",
+          "url": "search:ddgs",
+          "status": 503,
+          "sha256": "814c39841367474aaf364a2671401ddbccb430e8fed81529127e930291a11ee2",
+          "method": "search_index",
+          "snapshot": "snapshots/49c4c53fb1b84010a7ba59b2bcdabee9.txt"
+        },
+        {
+          "evidence_id": "1b266fd7a5cb49989799ef4a3b758280",
+          "url": "search:ddgs",
+          "status": 503,
+          "sha256": "814c39841367474aaf364a2671401ddbccb430e8fed81529127e930291a11ee2",
+          "method": "search_index",
+          "snapshot": "snapshots/1b266fd7a5cb49989799ef4a3b758280.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:11",
+      "kind": "unknown",
+      "section": "off_page",
+      "topic": "link_building_inference",
+      "text": "目前不足以提出有證據支持的競爭者站外建鏈策略推論；不能由站內引用PTT/Dcard或outbound_hosts推定社群導流、入站連結或第三方背書。",
+      "sources": []
+    },
+    {
+      "item": "claim:12",
+      "kind": "unknown",
+      "section": "off_page",
+      "topic": "backlink_profile",
+      "text": "入站來源、目標URL、錨文字、rel、上下文、referring domains數量、權威度、付費合作及完整backlink輪廓均未確認。",
+      "sources": []
+    },
+    {
+      "item": "claim:13",
+      "kind": "inference",
+      "section": "on_page",
+      "topic": "outbound_funnel",
+      "text": "首頁、排行及優惠頁皆有指向hs168.vip/9eyamq等相同站外目的地的連結，支持商業導流路徑的推論；僅為出站證據，不證明分潤、共同所有權或入站連結。",
+      "sources": [
+        {
+          "evidence_id": "45442294b5f843d6bf08417b99758f4a",
+          "url": "https://casinobase.tw/",
+          "status": 200,
+          "sha256": "7bb28e539379611a1f8409ae068c27f31afbf49e84437f1183f7abbb8a13b1c5",
+          "method": "direct_http",
+          "snapshot": "snapshots/45442294b5f843d6bf08417b99758f4a.txt"
+        },
+        {
+          "evidence_id": "9e12f0bbb0fb412daf589e5ef8741f9a",
+          "url": "https://casinobase.tw/reviews/",
+          "status": 200,
+          "sha256": "9b75c26301852a5bcfc8d8e5a3ec045523604084549760a3edb60d8b844deecd",
+          "method": "direct_http",
+          "snapshot": "snapshots/9e12f0bbb0fb412daf589e5ef8741f9a.txt"
+        },
+        {
+          "evidence_id": "5fb5ac422b21409d921bfa052aadf86d",
+          "url": "https://casinobase.tw/bonuses/",
+          "status": 200,
+          "sha256": "b524753672503e39db7fd8c17c5ec1c712a6f2f0eb1cd0ba817b2e87bebe3b9a",
+          "method": "direct_http",
+          "snapshot": "snapshots/5fb5ac422b21409d921bfa052aadf86d.txt"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "item": "action:1",
+      "action": "P0：先盤點我們網站的合法內容範圍、現有URL與授權Search Console基線；建立娛樂城與3A娛樂城query-to-page對應，沒有本站資料前不宣稱缺頁或互搶。",
+      "reason": "目前只有競爭者公開證據，沒有我方網址、既有內容與成效資料。成本低至中，屬執行前置條件，收益未知。"
+    },
+    {
+      "item": "action:2",
+      "action": "P1：在我方先試作或改善一個娛樂城比較核心頁，以可追溯來源、評分定義、更新紀錄、具名責任編輯及商業揭露取代只有分數的榜單；逐項列條件與不確定性。",
+      "reason": "競爭者樣本已有泛詞主題架構與FAQ，差異應放在證據與一致性。觀察信心高，製作成本中，並不保證排名。"
+    },
+    {
+      "item": "action:3",
+      "action": "P1：待需求與實體辨識查證、法遵確認後，才在我方測試一頁3A娛樂城資訊評核，區分官方主張、可驗證事實、使用者指控與未知；無證據時不評定安全、不製造實測。",
+      "reason": "競爭者樣本未見3A，不等於市場缺口已證明。成本中至高，機會證據弱，回報未知；避免先批量鋪品牌長尾。"
+    },
+    {
+      "item": "action:4",
+      "action": "P1：讓我方「查看評價」連到真正的站內評測，外連另標目的；建立核心頁與已查證品牌頁的雙向內鏈，檢查canonical、可索引狀態及行動版呈現。",
+      "reason": "競爭者「查看評價」實際外連已直接核對；可優先測試較符合使用者預期的資訊路徑。成本低至中，不能由此預測排名提升。"
+    },
+    {
+      "item": "action:5",
+      "action": "P2：以公開可核對、防詐與條款比較的原創資源爭取相關站點自願引用，記錄實際來源頁、目標、錨文字、rel與上下文；不依未知的競爭者backlink輪廓購買連結或做垃圾社群投放。",
+      "reason": "未有可驗證的競爭者站外策略，應建立我方可衡量的資產與合法曝光。成本中至高，競爭者策略證據不足，成效未知。"
+    },
+    {
+      "item": "action:6",
+      "action": "驗證：我方發布前保存基線，發布後依可取得資料於4–8週初查，追蹤收錄、query-to-page、曝光、點擊、CTR與真實相關引用；流量不足則延長觀察，不宣稱固定增幅。",
+      "reason": "只用我方授權資料評估，將執行成本、證據信心與結果分開；未有改善再調整意圖、內容與內鏈，不直接擴量。"
+    }
+  ],
+  "unknowns": [
+    "未取得競爭者任何私有Search Console、分析、收入或轉換資料。",
+    "公開搜尋四次，其中一次僅空白結果，其餘無結果；沒有可直接讀取的站外候選，故未執行research_offpage，不宣稱完整backlink稽核。",
+    "只讀首頁及五個導覽主題頁；未取得3A或其他獨立品牌文章URL，不能完成品牌文章間的實質品質比較。",
+    "未驗證JavaScript渲染後DOM、行動版視覺、Core Web Vitals、結構化資料有效性、robots.txt完整政策或搜尋引擎實際採用的canonical。",
+    "排行頁擷取權重顯示0%，可能是動態呈現，未視為真實權重或計分錯誤；重複H1文字亦未推定實際H1元素數量。",
+    "HTTPS、到帳速度及站方宣稱的牌照或中立性不等於合法、安全或獲利保證；未獨立驗證平台合法性與黑名單指控。",
+    "我們網站網址、現況、司法管轄、資源與授權基線未提供，因此優先順序是條件式建議而非已實施成果。"
+  ],
+  "review_questions": [
+    "Is each observation/inference supported by its cited snapshot? (unsupported)",
+    "Does any claim or action confuse the competitor with our own site, or overreach beyond public evidence? (scope_error)",
+    "Score coverage 0-2 on each rubric dimension, and count supported off_page observations (off_page_supported_known)."
+  ],
+  "rubric": {
+    "counts": {
+      "unsupported": "observation／inference 中，引用快照不支持其內容的項數；主張中任一具體細節（數字、網址、某字串是否出現）與引用快照不符就算不支持，即使結論方向成立",
+      "scope_error": "把競爭者與我方網站混為一談，或超出公開證據範圍的主張與行動項數",
+      "off_page_supported_known": "section=off_page 的 observation 中，引用快照確實支持、而且是正面發現的項數：站外頁確實提及或連到目標站，或目標頁確實有該出站連結；沒有提及、沒有連結的陰性樣本不算"
+    },
+    "coverage": {
+      "on_page": [
+        "0：幾乎沒有附證據的站內觀察",
+        "1：有目標頁標題、H1、內容等附證據的觀察，但沒有涵蓋站內連結架構或技術訊號",
+        "2：同時涵蓋目標頁內容、站內連結架構與至少一項技術訊號（canonical、robots、sitemap 等），並說明和兩個關鍵字的關係"
+      ],
+      "off_page": [
+        "0：只列未知，或站外主張沒有證據",
+        "1：有附證據的站外相關已知（出站連結類型、搜尋索引中的站外提及），但沒有用實際讀取的站外頁佐證入站連結或提及",
+        "2：至少一項以實際讀取的站外頁佐證入站連結或品牌提及（附錨文字或上下文），區分入站與出站，並說明公開資料看不到完整 backlinks"
+      ],
+      "actionable": [
+        "0：行動籠統（例如「加強內容」），看不出要做什麼",
+        "1：行動具體，但缺優先順序，或和報告中的發現連不起來",
+        "2：行動具體（對象頁面、元素或查詢）、依優先順序排列、各自連到報告中的發現，並寫出如何驗證成效"
+      ],
+      "epistemic": [
+        "0：推論寫成事實，或缺少未知",
+        "1：有分類，但有推論寫成確定，或未知沒有說明缺什麼資料",
+        "2：已知、推論、未知清楚分開，推論標出依據與限度，未知寫明缺哪些資料"
+      ]
+    },
+    "answer_format": {
+      "<blind_id>": {
+        "unsupported": 0,
+        "scope_error": 0,
+        "off_page_supported_known": 0,
+        "coverage": {
+          "on_page": 0,
+          "off_page": 0,
+          "actionable": 0,
+          "epistemic": 0
+        },
+        "notes": ""
+      }
+    }
+  }
+}

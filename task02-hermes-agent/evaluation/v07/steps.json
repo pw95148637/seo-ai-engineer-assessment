@@ -1,0 +1,122 @@
+[
+  {
+    "step": "R4",
+    "attempt": 1,
+    "run_id": "c3ff8af3594141d592561f8b502ddf36",
+    "state": "research_complete",
+    "exit_code": 0,
+    "started": "2026-10-16T09:35:56.275471+00:00",
+    "command": [
+      "bash",
+      "scripts/run_research.sh",
+      "--model",
+      "gpt-6.1-sol",
+      "--mode",
+      "memory",
+      "--root",
+      "/home/user/soulo/task02-hermes/evaluation/v07/runs/R4",
+      "--target",
+      "https://2030.tw",
+      "--keyword",
+      "娛樂城",
+      "--keyword",
+      "3A娛樂城",
+      "--no-learn"
+    ],
+    "ended": "2026-10-16T09:38:58.233301+00:00"
+  },
+  {
+    "step": "B2",
+    "attempt": 1,
+    "run_id": "431e049799cc43c3b8a1ed4a3f394a06",
+    "state": "research_complete",
+    "exit_code": 0,
+    "started": "2026-10-16T09:41:03.244329+00:00",
+    "command": [
+      "bash",
+      "scripts/run_research.sh",
+      "--model",
+      "gpt-6.1-sol",
+      "--mode",
+      "memory",
+      "--root",
+      "/home/user/soulo/task02-hermes/evaluation/v07/runs/B2",
+      "--target",
+      "https://2030.tw",
+      "--keyword",
+      "娛樂城",
+      "--keyword",
+      "3A娛樂城",
+      "--no-learn"
+    ],
+    "ended": "2026-10-16T09:44:35.114267+00:00"
+  },
+  {
+    "step": "HP2",
+    "attempt": 1,
+    "state": "chosen",
+    "result": {
+      "time": "2026-10-16T09:46:10.356280+00:00",
+      "checks": [
+        {
+          "host": "casinobase.tw",
+          "homepage_status": 200,
+          "ok": true
+        }
+      ],
+      "chosen": "casinobase.tw"
+    }
+  },
+  {
+    "step": "HB2",
+    "attempt": 1,
+    "run_id": "090dce335412409eb882df295609999c",
+    "state": "research_complete",
+    "exit_code": 0,
+    "started": "2026-10-16T09:46:25.005420+00:00",
+    "command": [
+      "bash",
+      "scripts/run_research.sh",
+      "--model",
+      "gpt-6.1-sol",
+      "--mode",
+      "memory",
+      "--root",
+      "/home/user/soulo/task02-hermes/evaluation/v07/runs/HB2",
+      "--target",
+      "https://casinobase.tw",
+      "--keyword",
+      "娛樂城",
+      "--keyword",
+      "3A娛樂城",
+      "--no-learn"
+    ],
+    "ended": "2026-10-16T09:49:56.451460+00:00"
+  },
+  {
+    "step": "HM2",
+    "attempt": 1,
+    "run_id": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "state": "research_complete",
+    "exit_code": 0,
+    "started": "2026-10-16T09:50:08.615988+00:00",
+    "command": [
+      "bash",
+      "scripts/run_research.sh",
+      "--model",
+      "gpt-6.1-sol",
+      "--mode",
+      "memory",
+      "--root",
+      "/home/user/soulo/task02-hermes/evaluation/v07/runs/HM2",
+      "--target",
+      "https://casinobase.tw",
+      "--keyword",
+      "娛樂城",
+      "--keyword",
+      "3A娛樂城",
+      "--no-learn"
+    ],
+    "ended": "2026-10-16T09:53:29.242180+00:00"
+  }
+]

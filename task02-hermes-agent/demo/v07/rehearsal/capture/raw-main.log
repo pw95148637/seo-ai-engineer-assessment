@@ -1,0 +1,7 @@
+（6 秒後開始，先讓上方檢視器顯示帳本）
+[2J[H$ python3 scripts/demo_live_view.py replay-console --step R3   # 演練：重播原始命令與輸出
+[1;33m演練：不呼叫模型。以下是 v0.6 已執行步驟 R3 的原始命令與輸出。[0m
+[1m$ bash scripts/run_research.sh --model gpt-6.1-sol --mode memory --root /home/user/soulo/task02-hermes/evaluation/v06/runs/2030-series --target https://2030.tw --keyword '娛樂城' --keyword '3A娛樂城' --no-learn[0m
+{"run_id": "d19adf916c5b49f7a84819d2ee163049", "state": "research_complete", "exit_code": 0, "model_attempted": true, "successful_api_calls": 8, "report_submitted": true}
+[1m[R3 結束 exit=0][0m
+[命令結束 exit=0 14:36:22]

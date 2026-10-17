@@ -1,0 +1,1 @@
+{"success": false, "error": "DuckDuckGo search failed: DDGSException: ConnectError: ConnectError('error sending request for url (https://www.google.com/wml/search?q=%222030.tw%2Fwordcup%22&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS) > Network is unreachable (os error 101)')"}

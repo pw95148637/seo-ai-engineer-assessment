@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-15T13:42:56.182094+00:00",
+  "explicit_config_present": {
+    "TASK04_API_KEY": false,
+    "TASK04_BASE_URL": false,
+    "TASK04_MODEL": false,
+    "GEMINI_API_KEY": false,
+    "OPENAI_API_KEY": false
+  },
+  "executables": {
+    "ollama": null,
+    "llama-server": null,
+    "codex": null,
+    "claude": null,
+    "gemini": null
+  },
+  "credential_files_read": false,
+  "provider_model_calls_this_turn": 0
+}

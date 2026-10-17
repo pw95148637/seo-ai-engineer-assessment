@@ -1,0 +1,39 @@
+test_403_saved_no_retry (test_research_core.CoreTests.test_403_saved_no_retry) ... ok
+test_429_no_retry (test_research_core.CoreTests.test_429_no_retry) ... ok
+test_closed_and_crossrun (test_research_core.CoreTests.test_closed_and_crossrun) ... ok
+test_expiry_and_counterexample (test_research_core.CoreTests.test_expiry_and_counterexample) ... ok
+test_fake_citation (test_research_core.CoreTests.test_fake_citation) ... ok
+test_holdout_no_learning (test_research_core.CoreTests.test_holdout_no_learning) ... ok
+test_injection_is_data (test_research_core.CoreTests.test_injection_is_data) ... ok
+test_memory_changes_decision_after_verified_runs (test_research_core.CoreTests.test_memory_changes_decision_after_verified_runs) ... ok
+test_private_dns (test_research_core.CoreTests.test_private_dns) ... ok
+test_redirect_to_other_host (test_research_core.CoreTests.test_redirect_to_other_host) ... ok
+test_request_budget_includes_robots (test_research_core.CoreTests.test_request_budget_includes_robots) ... ok
+test_robots_disallow (test_research_core.CoreTests.test_robots_disallow) ... ok
+test_robots_unknown (test_research_core.CoreTests.test_robots_unknown) ... ok
+test_size_budget (test_research_core.CoreTests.test_size_budget) ... ok
+test_tampered_snapshot (test_research_core.CoreTests.test_tampered_snapshot) ... ok
+test_time_budget (test_research_core.CoreTests.test_time_budget) ... ok
+test_timeout (test_research_core.CoreTests.test_timeout) ... ok
+test_tool_budget (test_research_core.CoreTests.test_tool_budget) ... ok
+test_xml_entity (test_research_core.CoreTests.test_xml_entity) ... ok
+test_no_proxy_fails_on_dns_unavailable (test_research_core.ProxyDNSTests.test_no_proxy_fails_on_dns_unavailable) ... ok
+test_proxy_can_resolve_operator_approved_host (test_research_core.ProxyDNSTests.test_proxy_can_resolve_operator_approved_host) ... ok
+test_extra_shell_blocks (test_runner.RunnerTests.test_extra_shell_blocks) ... ok
+test_logged_out_stops_before_model (test_runner.RunnerTests.test_logged_out_stops_before_model) ... ok
+test_model_text_without_tools_cannot_pass (test_runner.RunnerTests.test_model_text_without_tools_cannot_pass) ... ok
+test_nested_h1_is_extracted (test_runner.RunnerTests.test_nested_h1_is_extracted) ... ok
+test_partial_cannot_be_success (test_runner.RunnerTests.test_partial_cannot_be_success) ... ok
+test_quota_blocks (test_runner.RunnerTests.test_quota_blocks) ... ok
+test_report_plus_tools_can_complete (test_runner.RunnerTests.test_report_plus_tools_can_complete) ... ok
+test_smoke_needs_tool_not_full_report (test_runner.RunnerTests.test_smoke_needs_tool_not_full_report) ... ok
+test_text_without_report_cannot_pass_research (test_runner.RunnerTests.test_text_without_report_cannot_pass_research) ... ok
+test_failure_not_promoted_as_direct_evidence (test_search.SearchTests.test_failure_not_promoted_as_direct_evidence) ... ok
+test_index_evidence_distinct_and_hash_verified (test_search.SearchTests.test_index_evidence_distinct_and_hash_verified) ... ok
+test_missing_provider_no_network (test_search.SearchTests.test_missing_provider_no_network) ... ok
+test_search_budget (test_search.SearchTests.test_search_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.061s
+
+OK

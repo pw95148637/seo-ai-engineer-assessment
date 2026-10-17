@@ -1,0 +1,20 @@
+{
+  "provider": "openai-codex",
+  "models": [
+    "gpt-6.1-sol",
+    "gpt-6.1-sol-900k",
+    "gpt-6-astra",
+    "gpt-6-astra-900k",
+    "gpt-6-sol",
+    "gpt-6-sol-900k",
+    "gpt-6-luna",
+    "gpt-6-luna-900k",
+    "gpt-5.6-sol",
+    "gpt-5.6-sol-900k",
+    "gpt-5.6-terra",
+    "gpt-5.6-terra-900k",
+    "gpt-5.6-luna",
+    "gpt-5.6-luna-900k"
+  ],
+  "note": "Official catalog may fall back when live discovery fails; availability requires actual run."
+}

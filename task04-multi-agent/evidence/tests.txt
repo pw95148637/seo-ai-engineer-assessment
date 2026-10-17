@@ -1,0 +1,15 @@
+test_api (test_workflow.Tests.test_api) ... ok
+test_conflict_revision (test_workflow.Tests.test_conflict_revision) ... ok
+test_false_pass (test_workflow.Tests.test_false_pass) ... ok
+test_immutable (test_workflow.Tests.test_immutable) ... ok
+test_limit (test_workflow.Tests.test_limit) ... ok
+test_normal (test_workflow.Tests.test_normal) ... ok
+test_retry_recovery (test_workflow.Tests.test_retry_recovery) ... ok
+test_schema (test_workflow.Tests.test_schema) ... ok
+test_timeout (test_workflow.Tests.test_timeout) ... ok
+test_total_timeout (test_workflow.Tests.test_total_timeout) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.060s
+
+OK

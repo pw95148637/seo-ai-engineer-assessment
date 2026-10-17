@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "run": "637b59949f0d4a86a1e94b99d40e33ec",
+    "kind": "start",
+    "data": "{\"mode\": \"memory\", \"target\": \"https://2030.tw\", \"limits\": {\"requests\": 30, \"calls\": 40, \"bytes\": 2000000, \"seconds\": 900, \"timeout\": 20, \"interval\": 2, \"redirects\": 3}, \"learning\": true}"
+  },
+  {
+    "id": 2,
+    "run": "637b59949f0d4a86a1e94b99d40e33ec",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_status\", \"args\": {}}"
+  }
+]

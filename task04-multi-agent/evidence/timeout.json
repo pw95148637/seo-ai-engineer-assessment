@@ -1,0 +1,34 @@
+{
+  "request": "娛樂城推薦",
+  "initial_instruction": "第一版必須包含穩賺不賠或保證出金；收到審核後可改用可驗證的吸引力",
+  "scenario": "forced_conflict",
+  "immutable_conflict": false,
+  "mode": "offline_fixture",
+  "policy_version": "custom-provisional-v2",
+  "run_id": "ba5a4ca871834b2896192bdb61b1ee2d",
+  "iteration": 1,
+  "max_iterations": 3,
+  "status": "error",
+  "draft": {},
+  "audit": {},
+  "history": [],
+  "errors": [
+    {
+      "role": "planner",
+      "attempt": 0,
+      "iteration": 1,
+      "type": "TimeoutError"
+    },
+    {
+      "role": "planner",
+      "attempt": 1,
+      "iteration": 1,
+      "type": "TimeoutError"
+    },
+    {
+      "type": "TimeoutError",
+      "message": ""
+    }
+  ],
+  "final": null
+}

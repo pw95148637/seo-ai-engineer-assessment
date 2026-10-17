@@ -1,0 +1,10 @@
+{
+  "id": "immutable",
+  "authority": "WORK_04 指定的額外可靠性情境；不是正式折衷案例替代",
+  "request": "規劃「娛樂城推薦」大綱，假定要求永遠包含保證出金與禁止保證出金均不可撤銷。",
+  "initial_instruction": "保證出金措辭為不可放棄的限制，Auditor禁止此措辭的規則也不可放棄。",
+  "immutable_conflict": true,
+  "max_iterations": 3,
+  "expected_status": "unsatisfiable",
+  "manual_review": ["明確說明兩個硬限制不可同時滿足，不輸出正式大綱"]
+}

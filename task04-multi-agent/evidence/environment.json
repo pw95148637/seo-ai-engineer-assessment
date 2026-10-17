@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-15",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executables": {
+    "ollama": null,
+    "llama-server": null,
+    "vllm": null,
+    "codex": null,
+    "claude": null,
+    "gemini": null
+  },
+  "explicit_provider_key_present": {
+    "OPENAI_API_KEY": false,
+    "ANTHROPIC_API_KEY": false,
+    "GEMINI_API_KEY": false,
+    "GOOGLE_API_KEY": false,
+    "OPENROUTER_API_KEY": false
+  },
+  "credential_files_or_internal_tokens_read": false,
+  "provider_calls": 0
+}

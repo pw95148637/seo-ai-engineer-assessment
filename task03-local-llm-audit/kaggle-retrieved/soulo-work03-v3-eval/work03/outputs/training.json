@@ -1,0 +1,128 @@
+{
+  "global_step": 9,
+  "changed_adapter_tensors": 144,
+  "metrics": {
+    "train_runtime": 360.5483,
+    "train_samples_per_second": 0.1,
+    "train_steps_per_second": 0.025,
+    "total_flos": 3245582945525760.0,
+    "train_loss": 2.296025700039334,
+    "epoch": 3.0
+  },
+  "logs": [
+    {
+      "loss": 2.4628,
+      "grad_norm": 2.6524713039398193,
+      "learning_rate": 0.0001,
+      "epoch": 0.3333333333333333,
+      "step": 1
+    },
+    {
+      "loss": 2.4589,
+      "grad_norm": 2.598316192626953,
+      "learning_rate": 8.888888888888889e-05,
+      "epoch": 0.6666666666666666,
+      "step": 2
+    },
+    {
+      "loss": 2.6176,
+      "grad_norm": 2.319185256958008,
+      "learning_rate": 7.777777777777778e-05,
+      "epoch": 1.0,
+      "step": 3
+    },
+    {
+      "loss": 2.3159,
+      "grad_norm": 1.9835208654403687,
+      "learning_rate": 6.666666666666667e-05,
+      "epoch": 1.3333333333333333,
+      "step": 4
+    },
+    {
+      "loss": 2.0317,
+      "grad_norm": 1.8363806009292603,
+      "learning_rate": 5.555555555555556e-05,
+      "epoch": 1.6666666666666665,
+      "step": 5
+    },
+    {
+      "loss": 2.4375,
+      "grad_norm": 2.2306675910949707,
+      "learning_rate": 4.4444444444444447e-05,
+      "epoch": 2.0,
+      "step": 6
+    },
+    {
+      "loss": 2.3585,
+      "grad_norm": 1.9225773811340332,
+      "learning_rate": 3.3333333333333335e-05,
+      "epoch": 2.3333333333333335,
+      "step": 7
+    },
+    {
+      "loss": 1.9514,
+      "grad_norm": 1.7458348274230957,
+      "learning_rate": 2.2222222222222223e-05,
+      "epoch": 2.6666666666666665,
+      "step": 8
+    },
+    {
+      "loss": 2.0299,
+      "grad_norm": 1.9010807275772095,
+      "learning_rate": 1.1111111111111112e-05,
+      "epoch": 3.0,
+      "step": 9
+    },
+    {
+      "train_runtime": 360.5483,
+      "train_samples_per_second": 0.1,
+      "train_steps_per_second": 0.025,
+      "total_flos": 3245582945525760.0,
+      "train_loss": 2.296025700039334,
+      "epoch": 3.0,
+      "step": 9
+    }
+  ],
+  "train_ids": [
+    "20",
+    "6",
+    "15",
+    "5",
+    "10",
+    "14",
+    "16",
+    "19",
+    "7",
+    "13",
+    "18",
+    "11"
+  ],
+  "lengths": [
+    1931,
+    1984,
+    2009,
+    1987,
+    2004,
+    1991,
+    1958,
+    1980,
+    1993,
+    1995,
+    1994,
+    1986
+  ],
+  "targets_sha256": "622fa83a395477f8f6bbfdecb4af8847f29c2bd8fa28bc2de85c1287a93b57cc",
+  "prompt_sha256": "27891593b4a73f9985b83ab7f7d0fc71f861d31144e30aeef0838a99ead76ff7",
+  "config": {
+    "model_id": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "max_length": 3072,
+    "context_limit": 4096,
+    "max_new_tokens": 768,
+    "epochs": 3,
+    "learning_rate": 0.0001,
+    "seed": 42,
+    "status": "v3 train-only configuration: epochs 2->3 (about 9 steps); learning rate and max_length unchanged. v2 real run: train loss 2.72->2.53 and outputs kept pretty-printed JSON, 2 reasons and 3 advice versus compact 1/1 targets, so the adapter barely moved behaviour; more steps help the new key order/severity format, while a higher rate would make the in-sample gate pass by memorisation. Revision pinned from the round-1 Kaggle preflight (outputs/model.json). No holdout-based changes."
+  },
+  "claim": "Actual training, not proof of generalization"
+}

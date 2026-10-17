@@ -1,0 +1,5 @@
+Plugin Doctor: 
+/workspace/scratch/c5aedca3b876/task02-hermes/.runtime/clean-v04/git-copy/plugin
+  manifest: soulo-research 0.4.0 (standalone)
+  OK: runtime discovery, manifest parsing, import, and registration passed
+  registrations: 5 tool(s), 0 hook(s)

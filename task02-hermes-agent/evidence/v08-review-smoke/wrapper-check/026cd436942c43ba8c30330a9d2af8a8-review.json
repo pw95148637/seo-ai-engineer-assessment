@@ -1,0 +1,16 @@
+{
+  "triggered": true,
+  "completed": true,
+  "timed_out": false,
+  "result": "skill",
+  "usage": {
+    "api_calls": 4,
+    "input": 3370,
+    "output": 600,
+    "cache_read": 26624
+  },
+  "actions": [
+    "💾 Self-improvement review: Skill 'research-status-reporting' created"
+  ],
+  "warnings": []
+}

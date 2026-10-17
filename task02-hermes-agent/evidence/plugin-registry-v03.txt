@@ -1,0 +1,23 @@
+{
+  "tools": [
+    "research_evidence",
+    "research_fetch",
+    "research_finish",
+    "research_search",
+    "research_status"
+  ],
+  "handler": {
+    "run_id": "fddeb488f41444e7839d4dcb63ba7e6e",
+    "requests_used": 0,
+    "requests_left": 30,
+    "tool_calls_used": 1,
+    "searches_used": 0,
+    "searches_left": 5,
+    "remaining_seconds": 899.999432517,
+    "memory": null,
+    "raw_history": [],
+    "suggested_discovery": "https://2030.tw/"
+  },
+  "model_called": false,
+  "result": "PASS"
+}

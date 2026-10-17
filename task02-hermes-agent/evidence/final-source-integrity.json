@@ -1,0 +1,24 @@
+{
+  "snapshots": 36,
+  "mismatches": [],
+  "runs": [
+    [
+      "e5905ed9fd8d4cf6b92e61d01cc9de99",
+      "memory",
+      "finished"
+    ],
+    [
+      "d9f11317db5d48f9b19f7fb7b457dc75",
+      "memory",
+      "finished"
+    ]
+  ],
+  "memory": [
+    [
+      "2030.tw",
+      "active",
+      "2026-10-22T18:18:29.867086+00:00",
+      "sitemap_first: URL discovery only, 2 completed observations, latest URL yield=1000"
+    ]
+  ]
+}

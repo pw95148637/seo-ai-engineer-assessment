@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-16T20:07:01.908099+00:00",
+  "checks": [
+    {
+      "host": "casinobase.tw",
+      "homepage_status": 200,
+      "ok": true
+    }
+  ],
+  "chosen": "casinobase.tw"
+}

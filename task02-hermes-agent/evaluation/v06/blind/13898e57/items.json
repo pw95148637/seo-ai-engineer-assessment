@@ -1,0 +1,304 @@
+{
+  "blind_id": "13898e57",
+  "claims": [
+    {
+      "item": "claim:1",
+      "kind": "observation",
+      "topic": "architecture",
+      "text": "首頁title與主要可見內容定位為運彩、MLB、NBA與世界盃；首頁以「線上娛樂城推薦」連至/wordcup/。因此不能把首頁描述為直接以3A娛樂城為主題。",
+      "sources": [
+        {
+          "evidence_id": "1e365e4a72f04e4791b50a083f98f8bb",
+          "url": "https://2030.tw/",
+          "status": 200,
+          "sha256": "0fa83ece0b639bafdf8da02b0795ad9cf861f9e9c1f313705ac2b30c4a59d528",
+          "snapshot": "snapshots/1e365e4a72f04e4791b50a083f98f8bb.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:2",
+      "kind": "observation",
+      "topic": "content_strategy",
+      "text": "/wordcup/的title為「線上娛樂城推薦｜2026最新評價排名」，有品牌、評價、優惠、玩法、安全出金等分類，並連向娛樂城、3a娛樂城及其他品牌頁。頁面自稱2502篇評測；這是站方宣告，未逐頁驗證篇數、獨立性或品質。",
+      "sources": [
+        {
+          "evidence_id": "73a15afdb0fd46f59c440a89406c9acd",
+          "url": "https://2030.tw/wordcup/",
+          "status": 200,
+          "sha256": "22bf180979c0583d6717f9f53122dc5512a45883aa3ee2cbd4b4db9dce08e7ce",
+          "snapshot": "snapshots/73a15afdb0fd46f59c440a89406c9acd.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:3",
+      "kind": "observation",
+      "topic": "technical",
+      "text": "娛樂城與3a娛樂城各有200頁面、對應title、自指canonical與index, follow；正文均顯示2030編輯部及更新日期。這些是公開頁面設定，不是已索引或排名證明。",
+      "sources": [
+        {
+          "evidence_id": "8cbea41c2aa84026be7abd943652ca7e",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "snapshot": "snapshots/8cbea41c2aa84026be7abd943652ca7e.txt"
+        },
+        {
+          "evidence_id": "a0f2a3876e41435ca0754f7297a56d42",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "8fe3592514851597f397202afade2e7dc4f4e68ead1593f31a9aa49a459c02ea",
+          "snapshot": "snapshots/a0f2a3876e41435ca0754f7297a56d42.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:4",
+      "kind": "observation",
+      "topic": "conversion_design",
+      "text": "娛樂城、3a娛樂城、富遊娛樂城及3a娛樂城出金速度這些抽樣頁採用平台特色、遊戲、出金安全、註冊、優惠、客服、FAQ、總結的共同結構；皆出現https://don0911.3a1788.bet/?st=wg2030註冊目的地。目錄的目的地則帶st=wg2030idx。未抓取該外部host，無法認證其官方身分或商業合約。",
+      "sources": [
+        {
+          "evidence_id": "73a15afdb0fd46f59c440a89406c9acd",
+          "url": "https://2030.tw/wordcup/",
+          "status": 200,
+          "sha256": "22bf180979c0583d6717f9f53122dc5512a45883aa3ee2cbd4b4db9dce08e7ce",
+          "snapshot": "snapshots/73a15afdb0fd46f59c440a89406c9acd.txt"
+        },
+        {
+          "evidence_id": "8cbea41c2aa84026be7abd943652ca7e",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "snapshot": "snapshots/8cbea41c2aa84026be7abd943652ca7e.txt"
+        },
+        {
+          "evidence_id": "a0f2a3876e41435ca0754f7297a56d42",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "8fe3592514851597f397202afade2e7dc4f4e68ead1593f31a9aa49a459c02ea",
+          "snapshot": "snapshots/a0f2a3876e41435ca0754f7297a56d42.txt"
+        },
+        {
+          "evidence_id": "fb694ab935a941c3926d156532148d8c",
+          "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "709bc1cfb0b622e003530eeba6fb8fd1bd412022ad30eef0a8ff2e47e0de19ce",
+          "snapshot": "snapshots/fb694ab935a941c3926d156532148d8c.txt"
+        },
+        {
+          "evidence_id": "ad7150a251aa44dfbdce34c59c7adbca",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+          "status": 200,
+          "sha256": "611e171bb88f7ca987a8b46d93190da8dd6ddeaa85c24a1a2f599f2bc7a1e2c4",
+          "snapshot": "snapshots/ad7150a251aa44dfbdce34c59c7adbca.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:5",
+      "kind": "inference",
+      "topic": "strategy",
+      "text": "可見架構符合體育入口、娛樂城目錄、品牌及長尾關鍵字頁、外部註冊的導流設計。支持的是部署方式；不支持流量規模、轉換率、聯盟收益或SEO有效性。",
+      "sources": [
+        {
+          "evidence_id": "1e365e4a72f04e4791b50a083f98f8bb",
+          "url": "https://2030.tw/",
+          "status": 200,
+          "sha256": "0fa83ece0b639bafdf8da02b0795ad9cf861f9e9c1f313705ac2b30c4a59d528",
+          "snapshot": "snapshots/1e365e4a72f04e4791b50a083f98f8bb.txt"
+        },
+        {
+          "evidence_id": "73a15afdb0fd46f59c440a89406c9acd",
+          "url": "https://2030.tw/wordcup/",
+          "status": 200,
+          "sha256": "22bf180979c0583d6717f9f53122dc5512a45883aa3ee2cbd4b4db9dce08e7ce",
+          "snapshot": "snapshots/73a15afdb0fd46f59c440a89406c9acd.txt"
+        },
+        {
+          "evidence_id": "8cbea41c2aa84026be7abd943652ca7e",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "snapshot": "snapshots/8cbea41c2aa84026be7abd943652ca7e.txt"
+        },
+        {
+          "evidence_id": "ad7150a251aa44dfbdce34c59c7adbca",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+          "status": 200,
+          "sha256": "611e171bb88f7ca987a8b46d93190da8dd6ddeaa85c24a1a2f599f2bc7a1e2c4",
+          "snapshot": "snapshots/ad7150a251aa44dfbdce34c59c7adbca.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:6",
+      "kind": "observation",
+      "topic": "content_quality",
+      "text": "3A主頁自述出金半小時到一小時，出金速度長尾頁自述15到30分鐘；兩頁正文未提供足以比較的測試日期、金額、樣本紀錄或方法。長尾頁有「3a娛樂城出金速度有手機版可以玩嗎」等把整串關鍵字套入問題的文句。",
+      "sources": [
+        {
+          "evidence_id": "8cbea41c2aa84026be7abd943652ca7e",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "snapshot": "snapshots/8cbea41c2aa84026be7abd943652ca7e.txt"
+        },
+        {
+          "evidence_id": "ad7150a251aa44dfbdce34c59c7adbca",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+          "status": 200,
+          "sha256": "611e171bb88f7ca987a8b46d93190da8dd6ddeaa85c24a1a2f599f2bc7a1e2c4",
+          "snapshot": "snapshots/ad7150a251aa44dfbdce34c59c7adbca.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:7",
+      "kind": "inference",
+      "topic": "competitive_gap",
+      "text": "出金時間差異不能單憑本文判為造假，可能來自日期、金額或條件不同；但缺少可比較紀錄、共用章節及長尾套詞，支持樣本內存在證據透明度與意圖區隔不足的競爭機會。不能因此斷言全站AI生成、門頁違規、已被懲罰或已發生關鍵字互搶。",
+      "sources": [
+        {
+          "evidence_id": "8cbea41c2aa84026be7abd943652ca7e",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "snapshot": "snapshots/8cbea41c2aa84026be7abd943652ca7e.txt"
+        },
+        {
+          "evidence_id": "ad7150a251aa44dfbdce34c59c7adbca",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+          "status": 200,
+          "sha256": "611e171bb88f7ca987a8b46d93190da8dd6ddeaa85c24a1a2f599f2bc7a1e2c4",
+          "snapshot": "snapshots/ad7150a251aa44dfbdce34c59c7adbca.txt"
+        },
+        {
+          "evidence_id": "fb694ab935a941c3926d156532148d8c",
+          "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "709bc1cfb0b622e003530eeba6fb8fd1bd412022ad30eef0a8ff2e47e0de19ce",
+          "snapshot": "snapshots/fb694ab935a941c3926d156532148d8c.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:8",
+      "kind": "observation",
+      "topic": "counterevidence",
+      "text": "反證：3A頁有具體出金時段、最低入金、手機版與客服FAQ、作者及更新標示；娛樂城主詞頁提醒洗碼量和提領限制。因此不能稱其完全沒有實用資訊或風險提醒；有數字也不等於數字已驗證。",
+      "sources": [
+        {
+          "evidence_id": "8cbea41c2aa84026be7abd943652ca7e",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "snapshot": "snapshots/8cbea41c2aa84026be7abd943652ca7e.txt"
+        },
+        {
+          "evidence_id": "a0f2a3876e41435ca0754f7297a56d42",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "8fe3592514851597f397202afade2e7dc4f4e68ead1593f31a9aa49a459c02ea",
+          "snapshot": "snapshots/a0f2a3876e41435ca0754f7297a56d42.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:9",
+      "kind": "observation",
+      "topic": "technical",
+      "text": "robots.txt允許一般爬取但限制/wp-admin/，並宣告sitemap_index.xml；page-sitemap.xml的完整回傳未見/wordcup/。讀取的post-sitemap2.xml內容遭截斷，且其他分片未完整核查，不能推定全站sitemap未涵蓋wordcup，更不能推定未被搜尋引擎索引。",
+      "sources": [
+        {
+          "evidence_id": "3fdae3a3603f4b30b25806d2c78bcabe",
+          "url": "https://2030.tw/robots.txt",
+          "status": 200,
+          "sha256": "c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a",
+          "snapshot": "snapshots/3fdae3a3603f4b30b25806d2c78bcabe.txt"
+        },
+        {
+          "evidence_id": "a08ad0bf970d45e2b8cf7dd6f179e6bf",
+          "url": "https://2030.tw/sitemap_index.xml",
+          "status": 200,
+          "sha256": "c2b1cbd2d15813b603973f68aac53e5548a063e62ad7b6d0bf46de55f93b883e",
+          "snapshot": "snapshots/a08ad0bf970d45e2b8cf7dd6f179e6bf.txt"
+        },
+        {
+          "evidence_id": "02cec170625b402e987fe67e8c2ef903",
+          "url": "https://2030.tw/page-sitemap.xml",
+          "status": 200,
+          "sha256": "3426ef9d9961c399262c19e6e17c7775fd7987918829c129d00617970dbbbe65",
+          "snapshot": "snapshots/02cec170625b402e987fe67e8c2ef903.txt"
+        },
+        {
+          "evidence_id": "cbc4f9925de049a4be49716225e11154",
+          "url": "https://2030.tw/post-sitemap2.xml",
+          "status": 200,
+          "sha256": "4a56d2235653ff4d03b3cef26b1b89445dd03d34692269aae8157d4224d886ac",
+          "snapshot": "snapshots/cbc4f9925de049a4be49716225e11154.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:10",
+      "kind": "unknown",
+      "topic": "rankings",
+      "text": "本輪索引搜尋未建立2030.tw兩組目標詞的可靠排名證據；部分搜尋無結果或回傳空欄位，另兩次回傳其他網域摘要。這只限制本輪搜尋可見性，不能當作Google無收錄、2030.tw零排名或零流量。",
+      "sources": []
+    },
+    {
+      "item": "claim:11",
+      "kind": "unknown",
+      "topic": "off_page",
+      "text": "競爭者自然搜尋流量、CTR、轉換、完整backlinks、引用網域品質與歷史網域變更均未知。站內出站連結不是完整入站連結資料；本輪沒有外部原頁證據足以建立off-page優勢。",
+      "sources": []
+    }
+  ],
+  "actions": [
+    {
+      "item": "action:1",
+      "action": "P0／我們自己的網站：先確認目標市場、內容與導流的法律合規及品牌身分；建立我們自己的GSC、分析與兩組查詢基線，不索取或假設能取得競爭者私有帳號。",
+      "reason": "目前沒有我們網站、權限或既有表現資訊，不能宣稱已存在技術缺陷或保證成效；發布與導流前需確認適用性。成本低到中，屬必要前置，不等於排名提升。"
+    },
+    {
+      "item": "action:2",
+      "action": "P1／先做少量有證據的意圖頁：娛樂城主頁回答選擇標準、風險及可核實比較；3A頁處理品牌與網域辨識、條款、出金限制及來源。每項資訊標示來源、查核日期和未知；不杜撰親測。",
+      "reason": "競爭樣本有關鍵字落地頁，但主詞與品牌頁結構接近、實測證據不足。以證據密度與意圖完成度競爭，比追逐站方宣告2502篇更有依據。編輯查證成本中到高，品質潛力較高，排名效果待量測。"
+    },
+    {
+      "item": "action:3",
+      "action": "P1／建立公開證據與更正制度：呈現來源差異、適用條件、作者經歷、審核責任及商業關係；不以SSL或KYC單獨保證合法、安全或必定出金；無足夠證據就寫無法確認。",
+      "reason": "3A兩頁出金時間敘述不同且無比較方法，形成可透過資訊可追溯性改善的缺口；不是指控其造假。制度建置成本中，維護成本持續存在。"
+    },
+    {
+      "item": "action:4",
+      "action": "P1／我們網站採主題目錄、主頁與品牌頁的相關內鏈；3A出金問題先以完整專節處理，只有有獨立需求及足夠新增證據時才拆頁。付費導流若存在，揭露關係並核對品牌與目的地，不讓不同品牌共用容易誤認的CTA。",
+      "reason": "競爭者目錄與內鏈架構值得參考，但長尾頁重新鋪陳整套泛用內容，未充分證明拆頁價值。成本低到中；資訊架構可改善查找，不能預先認定競爭者已有互搶。"
+    },
+    {
+      "item": "action:5",
+      "action": "P2／對我們網站實測HTTP狀態、canonical、robots、sitemap與索引，檢查分類參數是否重複；結構化資料只標記真實可見內容，另量測行動體驗及CWV，不憑本輪抽取宣稱競爭者速度或schema有問題。",
+      "reason": "競爭者目標頁已有基本可爬設定，技術投入應由我們自己的實測缺口決定。成本低到中；未發現問題前不盲目重構。"
+    },
+    {
+      "item": "action:6",
+      "action": "P2／發布後以我們自己的GSC按查詢群和落地頁觀察索引、曝光、點擊、CTR與查詢分配，建議按週記錄並在4至8週檢視；另用固定地區、裝置、時間的公開SERP抽查競爭頁。未有證據前不投入大量同義長尾頁或購買連結。",
+      "reason": "本輪5次公開搜尋不足以確立排名或ROI；先驗證小規模內容能否取得相關曝光，再決定擴張。這是建議觀察窗口而非排名承諾；量測成本低，無法取代內容查證。"
+    }
+  ],
+  "unknowns": [
+    "我們網站URL、既有內容、技術現況、目標市場、權限、預算與基線未提供；競爭行動均是供我們網站評估，未實施修改。",
+    "2030.tw在Google台灣兩組目標詞的排名、已索引URL及歷史變化未知；公開索引工具搜尋不等同Google完整SERP。",
+    "競爭者流量、CTR、轉換、收益與完整backlinks未知，不能從內容量、出站連結或搜尋摘要推算。",
+    "外部註冊目的地未直接抓取，官方身分、牌照、實際優惠、出金時效及其與2030.tw的合約均未驗證。",
+    "本輪為首頁、目錄、兩個目標頁、富遊反例樣本及3A出金長尾頁的抽樣，不代表所有自稱評測的品質。",
+    "未完成所有sitemap分片與全站爬取；未驗證JS渲染、schema、CWV、行動版或歷史網域用途；不能據此指控違規或處罰。",
+    "搜尋額度已用滿5次；不因結果不足繞過允許host，也不把站方自稱2502篇當經獨立驗證的數量或品質。"
+  ],
+  "review_questions": [
+    "Is each observation/inference supported by its cited snapshot? (unsupported)",
+    "Does any claim or action confuse the competitor with our own site, or overreach beyond public evidence? (scope_error)"
+  ]
+}

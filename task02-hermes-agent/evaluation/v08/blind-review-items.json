@@ -1,0 +1,934 @@
+{
+  "155f1000": {
+    "claims": [
+      {
+        "item": "claim:1",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "首頁快照：title「2030玩運彩瘋世足｜MLB/NBA比分、中職賽程、世界盃預測分析」、H1「2030玩運彩瘋世足」、內文為MLB直播等賽事；導覽 <a> 文字「線上娛樂城推薦」href=https://2030.tw/wordcup/（共3處）"
+      },
+      {
+        "item": "claim:2",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/wordcup/快照：title「線上娛樂城推薦｜2026最新評價排名 - 2030玩運彩瘋世足」、文字「共 2502 篇評測」、分類連結 熱門娛樂城品牌/娛樂城評價與推薦/優惠與活動/遊戲與玩法/安全與出金/其他；列表首頁連到 /wordcup/3a娛樂城、/wordcup/娛樂城；『立即註冊』href=https://don0911.3a1788.bet/?st=wg2030idx rel=\"nofollow noopener\"；canonical=https://2030.tw/wordcup/"
+      },
+      {
+        "item": "claim:3",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "分類篩選快照：「顯示第 1 – 48 篇，共 154 篇（分類：娛樂城安全與出金）」，列表改為合法娛樂城、玩娛樂城收到傳票dcard等；title/description 與未篩選 /wordcup/ 完全相同；canonical=https://2030.tw/wordcup/；對照 /wordcup/快照：title「線上娛樂城推薦｜2026最新評價排名 - 2030玩運彩瘋世足」、文字「共 2502 篇評測」、分類連結 熱門娛樂城品牌/娛樂城評價與推薦/優惠與活動/遊戲與玩法/安全與出金/其他；列表首頁連到 /wordcup/3a娛樂城、/wordcup/娛樂城；『立即註冊』href=https://don0911.3a1788.bet/?st=wg2030idx rel=\"nofollow noopener\"；canonical=https://2030.tw/wordcup/"
+      },
+      {
+        "item": "claim:4",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3a娛樂城快照：title「3a娛樂城｜遊戲種類、優惠、出金全攻略」、H1「3a娛樂城 - 完整評測與玩家指南」、description「2026年3a娛樂城完整攻略…」；robots index, follow；canonical 自指；麵包屑「首頁 > 娛樂城推薦 > 3a娛樂城」；六個H2段（平台特色/遊戲/出金速度與安全性/註冊/優惠/客服）＋FAQ五題＋總結＋相關推薦；「2026年09月24日 更新」「2030編輯部」；「半小時到一小時內」「新台幣1000元」「SSL加密憑證…不用太擔心個資外洩的風險」「小額體驗」；A#33/34/35/52 href=https://don0911.3a1788.bet/?st=wg2030 rel=\"nofollow noopener\"；娛樂城快照：title「娛樂城評價｜台灣玩家首選平台」、H1「娛樂城 - 完整評測與玩家指南」、description「2026年娛樂城完整攻略…」（與3A頁同句型）；robots index, follow；canonical 自指；同樣六段＋FAQ；「2026年10月09日 更新」「2030編輯部」；正文泛論多家平台，含「洗碼量」「提領限制」「量力而為」；4個 don0911.3a1788.bet/?st=wg2030 nofollow 連結"
+      },
+      {
+        "item": "claim:5",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3a娛樂城快照：title「3a娛樂城｜遊戲種類、優惠、出金全攻略」、H1「3a娛樂城 - 完整評測與玩家指南」、description「2026年3a娛樂城完整攻略…」；robots index, follow；canonical 自指；麵包屑「首頁 > 娛樂城推薦 > 3a娛樂城」；六個H2段（平台特色/遊戲/出金速度與安全性/註冊/優惠/客服）＋FAQ五題＋總結＋相關推薦；「2026年09月24日 更新」「2030編輯部」；「半小時到一小時內」「新台幣1000元」「SSL加密憑證…不用太擔心個資外洩的風險」「小額體驗」；A#33/34/35/52 href=https://don0911.3a1788.bet/?st=wg2030 rel=\"nofollow noopener\"；富遊快照：title「富遊娛樂城評價｜台灣玩家首選平台」、H1「富遊娛樂城 - 完整評測與玩家指南」；canonical 自指、index, follow；同樣六段＋FAQ；「2026年10月13日 更新」「2030編輯部」；自稱「每一個環節都幫大家實測一遍」；出站僅 don0911.3a1788.bet/?st=wg2030（4個，nofollow）與頁首 wg1888 橫幅，無富遊專屬目的地；兩頁皆無交易樣本、測試日期金額或外部引用"
+      },
+      {
+        "item": "claim:6",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "三頁同一段落模板；娛樂城頁泛論多家平台而非單一品牌，作為反例成立；推論已標明不能推 AI 生成、處罰或互搶"
+      },
+      {
+        "item": "claim:7",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "收到傳票快照：正文「『玩娛樂城收到傳票dcard』這個平台名稱」、宣稱「15到30分鐘內」出金、「NT$500」最低入金；全頁無傳票或法律求助內容；分類頁摘要同樣寫『這個平台名稱』"
+      },
+      {
+        "item": "claim:8",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3A主頁「半小時到一小時內」；3a出金速度快照：title「3a娛樂城出金速度推薦｜安全出金平台評測」、H1「3a娛樂城出金速度 - 完整評測與玩家指南」；canonical 自指、index, follow；「15到30分鐘」並提「提領的金額大小、銀行作業時間或者尖峰時段」；FAQ「Q: 3a娛樂城出金速度有手機版可以玩嗎?」；仍含遊戲/註冊/優惠/客服段；供應商寫 DG、歐博、SA（3A主頁寫沙龍、歐博）；「2026年10月06日 更新」「2030編輯部」"
+      },
+      {
+        "item": "claim:9",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "3A頁以 SSL、KYC 支持安全並寫「不用太擔心個資外洩的風險」；推論只指出證據跨度，限度清楚"
+      },
+      {
+        "item": "claim:10",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3A、娛樂城、富遊三頁各有 don0911.3a1788.bet/?st=wg2030 且 rel 含 nofollow；/wordcup/ 有同 host ?st=wg2030idx"
+      },
+      {
+        "item": "claim:11",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "不同品牌頁共用同一 st=wg2030 目的地與多個註冊 CTA；已標明不證明佣金、歸屬或轉換"
+      },
+      {
+        "item": "claim:12",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "Yahoo彰源頁快照：title「彰源(2030.TW) 走勢圖 - Yahoo股市」；無任何指向 2030.tw 的連結、無「玩運彩」「娛樂城」字串；有「同業比較」「本益比 (同業平均)」等行情語境；陰性樣本，不計入 off_page_supported_known"
+      },
+      {
+        "item": "claim:13",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "搜尋快照：5筆結果皆為 Yahoo/Yahoo Finance 彰源(2030.TW)股票頁；Yahoo彰源頁快照：title「彰源(2030.TW) 走勢圖 - Yahoo股市」；無任何指向 2030.tw 的連結、無「玩運彩」「娛樂城」字串；有「同業比較」「本益比 (同業平均)」等行情語境"
+      },
+      {
+        "item": "claim:14",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項，不評支持度"
+      },
+      {
+        "item": "claim:15",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "930abe74 只有一筆空白 title/url；1543953f、590c4e13 為 No results found；5f40e418 為 Network is unreachable。快照無時間序，『最後一次』無法核對但不矛盾"
+      }
+    ],
+    "actions": [
+      {
+        "item": "action:1",
+        "scope": "ok"
+      },
+      {
+        "item": "action:2",
+        "scope": "ok"
+      },
+      {
+        "item": "action:3",
+        "scope": "ok"
+      },
+      {
+        "item": "action:4",
+        "scope": "ok"
+      },
+      {
+        "item": "action:5",
+        "scope": "ok"
+      },
+      {
+        "item": "action:6",
+        "scope": "ok"
+      }
+    ]
+  },
+  "b9bfd995": {
+    "claims": [
+      {
+        "item": "claim:1",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "首頁快照：title「2030玩運彩瘋世足｜MLB/NBA比分、中職賽程、世界盃預測分析」、H1「2030玩運彩瘋世足」、內文為MLB直播等賽事；導覽 <a> 文字「線上娛樂城推薦」href=https://2030.tw/wordcup/（共3處）"
+      },
+      {
+        "item": "claim:2",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/wordcup/快照：title「線上娛樂城推薦｜2026最新評價排名 - 2030玩運彩瘋世足」、文字「共 2502 篇評測」、分類連結 熱門娛樂城品牌/娛樂城評價與推薦/優惠與活動/遊戲與玩法/安全與出金/其他；列表首頁連到 /wordcup/3a娛樂城、/wordcup/娛樂城；『立即註冊』href=https://don0911.3a1788.bet/?st=wg2030idx rel=\"nofollow noopener\"；canonical=https://2030.tw/wordcup/"
+      },
+      {
+        "item": "claim:3",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3a娛樂城快照：title「3a娛樂城｜遊戲種類、優惠、出金全攻略」、H1「3a娛樂城 - 完整評測與玩家指南」、description「2026年3a娛樂城完整攻略…」；robots index, follow；canonical 自指；麵包屑「首頁 > 娛樂城推薦 > 3a娛樂城」；六個H2段（平台特色/遊戲/出金速度與安全性/註冊/優惠/客服）＋FAQ五題＋總結＋相關推薦；「2026年09月24日 更新」「2030編輯部」；「半小時到一小時內」「新台幣1000元」「SSL加密憑證…不用太擔心個資外洩的風險」「小額體驗」；A#33/34/35/52 href=https://don0911.3a1788.bet/?st=wg2030 rel=\"nofollow noopener\"；娛樂城快照：title「娛樂城評價｜台灣玩家首選平台」、H1「娛樂城 - 完整評測與玩家指南」、description「2026年娛樂城完整攻略…」（與3A頁同句型）；robots index, follow；canonical 自指；同樣六段＋FAQ；「2026年10月09日 更新」「2030編輯部」；正文泛論多家平台，含「洗碼量」「提領限制」「量力而為」；4個 don0911.3a1788.bet/?st=wg2030 nofollow 連結；兩頁 URL 含對應詞；200 依來源紀錄"
+      },
+      {
+        "item": "claim:4",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "首頁導覽→/wordcup/目錄→泛詞、品牌、長尾頁→don0911 註冊出站，配置可見；已標明不推排名或轉換"
+      },
+      {
+        "item": "claim:5",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "三頁同六段＋FAQ、皆署『2030編輯部』；3A『實際玩了幾個月』、娛樂城頁『保證都是我玩過的』、富遊『實測一遍』；皆無交易樣本或日期憑據"
+      },
+      {
+        "item": "claim:6",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3A主頁「半小時到一小時內」；3a出金速度快照：title「3a娛樂城出金速度推薦｜安全出金平台評測」、H1「3a娛樂城出金速度 - 完整評測與玩家指南」；canonical 自指、index, follow；「15到30分鐘」並提「提領的金額大小、銀行作業時間或者尖峰時段」；FAQ「Q: 3a娛樂城出金速度有手機版可以玩嗎?」；仍含遊戲/註冊/優惠/客服段；供應商寫 DG、歐博、SA（3A主頁寫沙龍、歐博）；「2026年10月06日 更新」「2030編輯部」（引文全形問號與原文半形問號之差不影響內容）"
+      },
+      {
+        "item": "claim:7",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "模板段落與長尾頁泛化 FAQ 可見；限度已列"
+      },
+      {
+        "item": "claim:8",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "三頁 don0911.3a1788.bet/?st=wg2030 rel 含 nofollow；/wordcup/ 有 st=wg2030idx"
+      },
+      {
+        "item": "claim:9",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "e73bace4 搜尋結果皆為彰源股票頁；212b161b Yahoo 頁無 2030.tw 連結、無『玩運彩』字串（原始HTML計數 0）；陰性樣本"
+      },
+      {
+        "item": "claim:10",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "同上 Yahoo 頁；推論只排除該頁"
+      },
+      {
+        "item": "claim:11",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:12",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      }
+    ],
+    "actions": [
+      {
+        "item": "action:1",
+        "scope": "ok"
+      },
+      {
+        "item": "action:2",
+        "scope": "ok"
+      },
+      {
+        "item": "action:3",
+        "scope": "ok"
+      },
+      {
+        "item": "action:4",
+        "scope": "ok"
+      },
+      {
+        "item": "action:5",
+        "scope": "ok"
+      },
+      {
+        "item": "action:6",
+        "scope": "ok"
+      }
+    ]
+  },
+  "2f358aae": {
+    "claims": [
+      {
+        "item": "claim:1",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3a娛樂城快照：title「3a娛樂城｜遊戲種類、優惠、出金全攻略」、H1「3a娛樂城 - 完整評測與玩家指南」、description「2026年3a娛樂城完整攻略…」；robots index, follow；canonical 自指；麵包屑「首頁 > 娛樂城推薦 > 3a娛樂城」；六個H2段（平台特色/遊戲/出金速度與安全性/註冊/優惠/客服）＋FAQ五題＋總結＋相關推薦；「2026年09月24日 更新」「2030編輯部」；「半小時到一小時內」「新台幣1000元」「SSL加密憑證…不用太擔心個資外洩的風險」「小額體驗」；A#33/34/35/52 href=https://don0911.3a1788.bet/?st=wg2030 rel=\"nofollow noopener\"；娛樂城快照：title「娛樂城評價｜台灣玩家首選平台」、H1「娛樂城 - 完整評測與玩家指南」、description「2026年娛樂城完整攻略…」（與3A頁同句型）；robots index, follow；canonical 自指；同樣六段＋FAQ；「2026年10月09日 更新」「2030編輯部」；正文泛論多家平台，含「洗碼量」「提領限制」「量力而為」；4個 don0911.3a1788.bet/?st=wg2030 nofollow 連結"
+      },
+      {
+        "item": "claim:2",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "首頁快照：title「2030玩運彩瘋世足｜MLB/NBA比分、中職賽程、世界盃預測分析」、H1「2030玩運彩瘋世足」、內文為MLB直播等賽事；導覽 <a> 文字「線上娛樂城推薦」href=https://2030.tw/wordcup/（共3處）；/wordcup/ A#39 錨文字『3a娛樂城 老實說…詳細 ›』、A#42『娛樂城 其實啊…詳細 ›』；3A頁麵包屑『娛樂城推薦』→/wordcup/"
+      },
+      {
+        "item": "claim:3",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/wordcup/快照：title「線上娛樂城推薦｜2026最新評價排名 - 2030玩運彩瘋世足」、文字「共 2502 篇評測」、分類連結 熱門娛樂城品牌/娛樂城評價與推薦/優惠與活動/遊戲與玩法/安全與出金/其他；列表首頁連到 /wordcup/3a娛樂城、/wordcup/娛樂城；『立即註冊』href=https://don0911.3a1788.bet/?st=wg2030idx rel=\"nofollow noopener\"；canonical=https://2030.tw/wordcup/"
+      },
+      {
+        "item": "claim:4",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "兩頁 H2 同為特色/遊戲/出金安全/註冊/優惠/客服＋FAQ＋總結；description 只差品牌詞；限度已列"
+      },
+      {
+        "item": "claim:5",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "兩頁 A#33 文字『🎰 立即註冊領取優惠』href=https://don0911.3a1788.bet/?st=wg2030；/wordcup/ A#31 ?st=wg2030idx rel=\"nofollow noopener\""
+      },
+      {
+        "item": "claim:6",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "多品牌目錄、同模板、共用帶參數 CTA 可見；限度已列"
+      },
+      {
+        "item": "claim:7",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3A頁『半小時到一小時』『新台幣1000元』、手機版與客服 FAQ；娛樂城頁『洗碼量』『提領限制』『量力而為』"
+      },
+      {
+        "item": "claim:8",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "兩頁『2030編輯部』＋更新日期、第一人稱體驗敘述；無測試紀錄或方法"
+      },
+      {
+        "item": "claim:9",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3aarena.com.tw 快照：title「3A娛樂城｜真人視訊…」；原始HTML無「2030」字串，無指向 2030.tw 的連結；gamebet.com.tw 快照：title「3A娛樂城 - 3A娛樂城為全台信譽最優良…」；原始HTML無「2030」字串，無指向 2030.tw 的連結；陰性樣本"
+      },
+      {
+        "item": "claim:10",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "同上兩頁無連結或提及；推論限於這兩頁"
+      },
+      {
+        "item": "claim:11",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:12",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      }
+    ],
+    "actions": [
+      {
+        "item": "action:1",
+        "scope": "ok"
+      },
+      {
+        "item": "action:2",
+        "scope": "ok"
+      },
+      {
+        "item": "action:3",
+        "scope": "ok"
+      },
+      {
+        "item": "action:4",
+        "scope": "ok"
+      },
+      {
+        "item": "action:5",
+        "scope": "ok"
+      }
+    ]
+  },
+  "20879e95": {
+    "claims": [
+      {
+        "item": "claim:1",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "首頁快照：title「2030玩運彩瘋世足｜MLB/NBA比分、中職賽程、世界盃預測分析」、H1「2030玩運彩瘋世足」、內文為MLB直播等賽事；導覽 <a> 文字「線上娛樂城推薦」href=https://2030.tw/wordcup/（共3處）"
+      },
+      {
+        "item": "claim:2",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/wordcup/快照：title「線上娛樂城推薦｜2026最新評價排名 - 2030玩運彩瘋世足」、文字「共 2502 篇評測」、分類連結 熱門娛樂城品牌/娛樂城評價與推薦/優惠與活動/遊戲與玩法/安全與出金/其他；列表首頁連到 /wordcup/3a娛樂城、/wordcup/娛樂城；『立即註冊』href=https://don0911.3a1788.bet/?st=wg2030idx rel=\"nofollow noopener\"；canonical=https://2030.tw/wordcup/"
+      },
+      {
+        "item": "claim:3",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3a娛樂城快照：title「3a娛樂城｜遊戲種類、優惠、出金全攻略」、H1「3a娛樂城 - 完整評測與玩家指南」、description「2026年3a娛樂城完整攻略…」；robots index, follow；canonical 自指；麵包屑「首頁 > 娛樂城推薦 > 3a娛樂城」；六個H2段（平台特色/遊戲/出金速度與安全性/註冊/優惠/客服）＋FAQ五題＋總結＋相關推薦；「2026年09月24日 更新」「2030編輯部」；「半小時到一小時內」「新台幣1000元」「SSL加密憑證…不用太擔心個資外洩的風險」「小額體驗」；A#33/34/35/52 href=https://don0911.3a1788.bet/?st=wg2030 rel=\"nofollow noopener\"；娛樂城快照：title「娛樂城評價｜台灣玩家首選平台」、H1「娛樂城 - 完整評測與玩家指南」、description「2026年娛樂城完整攻略…」（與3A頁同句型）；robots index, follow；canonical 自指；同樣六段＋FAQ；「2026年10月09日 更新」「2030編輯部」；正文泛論多家平台，含「洗碼量」「提領限制」「量力而為」；4個 don0911.3a1788.bet/?st=wg2030 nofollow 連結"
+      },
+      {
+        "item": "claim:4",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "兩頁同六段與同型 FAQ，正文不同；娛樂城頁沒有具名平台比較表；3A頁以第一人稱敘述出金；無交易紀錄或測試方法"
+      },
+      {
+        "item": "claim:5",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3A頁『半小時到一小時』、SSL/KYC、『「小額體驗」最重要』；娛樂城頁『洗碼量』『提領限制』『量力而為』"
+      },
+      {
+        "item": "claim:6",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3A與娛樂城頁各 4 個 don0911.3a1788.bet/?st=wg2030（A#33/34/35/52，rel=\"nofollow noopener\"）；/wordcup/ 有 ?st=wg2030idx"
+      },
+      {
+        "item": "claim:7",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "首頁→目錄→註冊出站結構可見；限度已列"
+      },
+      {
+        "item": "claim:8",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "MLB文章快照：H2『團隊實力戰績對照』『先發投手數據透視』含 14 個 table；文字『數據來源：Tank01 MLB API｜分析更新時間：2026/10/17』"
+      },
+      {
+        "item": "claim:9",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "gamebet.com.tw 快照：title「3A娛樂城 - 3A娛樂城為全台信譽最優良…」；原始HTML無「2030」字串，無指向 2030.tw 的連結；陰性樣本"
+      },
+      {
+        "item": "claim:10",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "搜尋快照：結果為 gamebet.com.tw 與兩個英文詐騙清單頁；gamebet.com.tw 快照：title「3A娛樂城 - 3A娛樂城為全台信譽最優良…」；原始HTML無「2030」字串，無指向 2030.tw 的連結"
+      },
+      {
+        "item": "claim:11",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:12",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      }
+    ],
+    "actions": [
+      {
+        "item": "action:1",
+        "scope": "ok"
+      },
+      {
+        "item": "action:2",
+        "scope": "ok"
+      },
+      {
+        "item": "action:3",
+        "scope": "ok"
+      },
+      {
+        "item": "action:4",
+        "scope": "ok"
+      },
+      {
+        "item": "action:5",
+        "scope": "ok"
+      },
+      {
+        "item": "action:6",
+        "scope": "ok"
+      }
+    ]
+  },
+  "5be76a5d": {
+    "claims": [
+      {
+        "item": "claim:1",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "casinobase 首頁快照：title 與 H1「CasinoBase｜台灣娛樂城推薦評比平台」；導覽 /reviews/ 娛樂城排行、/bonuses/ 優惠統整、/guides/ 熱門遊戲、/safety/ 安全警示、/terms/ 術語懶人包；canonical=https://casinobase.tw/；『查看評價』『立即註冊』等連到 hs168.vip/9eyamq、rg8888.org、999xc.net、qywin88.com、fa888.tw（rel=\"noopener\"）；自稱團隊參考 PTT/Dcard 與實際測試，無具名作者、無證據連結；六頁 canonical 皆自指，導覽一致"
+      },
+      {
+        "item": "claim:2",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "各頁 title/description/H1 對應排行、優惠、攻略、防詐、術語；限度已列"
+      },
+      {
+        "item": "claim:3",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "六頁原始HTML與可見文字皆無『3A』或『3a娛樂城』；sitemap.xml 快照：只有 https://casinobase.tw 一筆；搜尋快照：5筆結果為 casinobase 首頁、/reviews/、/bonuses/、/safety/、/guides/（查詢字串不在快照中，無法核對是否為 site 查詢，但結果一致）"
+      },
+      {
+        "item": "claim:4",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:5",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/reviews/ 快照：title「2026 台灣娛樂城評價排行榜｜Top10…」、H1「2026 台灣娛樂城評價排行榜」；CB-FIVE 五項權重文字皆為「權重 0 %」；有「我們如何測試與量化？」與「每月更新一次」；文字稱「點擊各家娛樂城評價頁」，但『查看評價』實際連 rg8888.org、hs168.vip/9eyamq 等站外網域（rel=\"noopener\"）；canonical 自指；有常見問題"
+      },
+      {
+        "item": "claim:6",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/bonuses/ 快照：卡片「任你搏…20 倍流水」「錢盈…流水 3 倍」，比較表「任你博…15x」「錢盈…10x」；有春卡片「活動到期日：-」，錢盈與金大發「官方公布截止日前」；FAQ 解釋流水計算、綁卡、限定遊戲、提款限制；canonical 自指；連到 hs168.vip 等（多為 rel=\"noopener\"，一個無 rel）"
+      },
+      {
+        "item": "claim:7",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/guides/ 快照：多次重複「Carve Your iGaming Way - CHINESE NEW YEAR MOREWAYS Leads the Way-Mechanism」與「2025/08/22」；文章卡片 href=https://www.google.com/；無站內獨立攻略 URL；canonical 自指；/terms/ 快照：分類標題（百家樂/老虎機/麻將/捕魚/體育/混淆對照）下無展開內容，只展開『娛樂城與平台相關術語』（體驗金、首存、返水、洗碼量、流水、信用版『存在債務與風險問題』、風控）；canonical 自指"
+      },
+      {
+        "item": "claim:8",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/safety/ 快照：詐騙名單表無原始證據連結（頁內只有導覽連結）；『合法 vs 詐騙』對照表把「提款 1–5 分鐘內到帳」「HTTPS 加密」列為合法特徵；FAQ 有「保留對話與帳號記錄截圖」「停止進一步儲值或提供個資」「165 反詐專線」；canonical 自指"
+      },
+      {
+        "item": "claim:9",
+        "kind": "observation",
+        "verdict": "unsupported",
+        "basis": "出站目的地部分成立（首頁、排行、優惠頁確有 hs168.vip 等外部網域連結）；但『提取中的rel列表為空』與快照不符：這些 <a> 在原始HTML中為 rel=\"noopener\"（例：首頁 <a href=\"https://hs168.vip/9eyamq\" target=\"_blank\" rel=\"noopener\">、排行頁 rg8888.org 同樣 rel=\"noopener\"），只有優惠頁一個連結無 rel。屬具體屬性值錯誤，依 rubric 即使『無 nofollow/sponsored』的方向成立仍算不支持"
+      },
+      {
+        "item": "claim:10",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "7287e757、14f64b6c、cacadc29 搜尋快照皆為「DuckDuckGo search failed: DDGSException: No results found.」；陰性樣本"
+      },
+      {
+        "item": "claim:11",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:12",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:13",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      }
+    ],
+    "actions": [
+      {
+        "item": "action:1",
+        "scope": "ok"
+      },
+      {
+        "item": "action:2",
+        "scope": "ok"
+      },
+      {
+        "item": "action:3",
+        "scope": "ok"
+      },
+      {
+        "item": "action:4",
+        "scope": "ok"
+      },
+      {
+        "item": "action:5",
+        "scope": "ok"
+      },
+      {
+        "item": "action:6",
+        "scope": "ok"
+      }
+    ]
+  },
+  "a213ab6c": {
+    "claims": [
+      {
+        "item": "claim:1",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "casinobase 首頁快照：title 與 H1「CasinoBase｜台灣娛樂城推薦評比平台」；導覽 /reviews/ 娛樂城排行、/bonuses/ 優惠統整、/guides/ 熱門遊戲、/safety/ 安全警示、/terms/ 術語懶人包；canonical=https://casinobase.tw/；『查看評價』『立即註冊』等連到 hs168.vip/9eyamq、rg8888.org、999xc.net、qywin88.com、fa888.tw（rel=\"noopener\"）；自稱團隊參考 PTT/Dcard 與實際測試，無具名作者、無證據連結；/reviews/ H1『2026 台灣娛樂城評價排行榜』；六頁 canonical 自指"
+      },
+      {
+        "item": "claim:2",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "首頁與 /reviews/ 都列綜合排行與『查看評價』，意圖重疊可見；已標明不能證明互搶或成效"
+      },
+      {
+        "item": "claim:3",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/reviews/ 快照：title「2026 台灣娛樂城評價排行榜｜Top10…」、H1「2026 台灣娛樂城評價排行榜」；CB-FIVE 五項權重文字皆為「權重 0 %」；有「我們如何測試與量化？」與「每月更新一次」；文字稱「點擊各家娛樂城評價頁」，但『查看評價』實際連 rg8888.org、hs168.vip/9eyamq 等站外網域（rel=\"noopener\"）；canonical 自指；有常見問題"
+      },
+      {
+        "item": "claim:4",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/bonuses/ 快照：卡片「任你搏…20 倍流水」「錢盈…流水 3 倍」，比較表「任你博…15x」「錢盈…10x」；有春卡片「活動到期日：-」，錢盈與金大發「官方公布截止日前」；FAQ 解釋流水計算、綁卡、限定遊戲、提款限制；canonical 自指；連到 hs168.vip 等（多為 rel=\"noopener\"，一個無 rel）"
+      },
+      {
+        "item": "claim:5",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/bonuses/ 快照：卡片「任你搏…20 倍流水」「錢盈…流水 3 倍」，比較表「任你博…15x」「錢盈…10x」；有春卡片「活動到期日：-」，錢盈與金大發「官方公布截止日前」；FAQ 解釋流水計算、綁卡、限定遊戲、提款限制；canonical 自指；連到 hs168.vip 等（多為 rel=\"noopener\"，一個無 rel）；/safety/ 快照：詐騙名單表無原始證據連結（頁內只有導覽連結）；『合法 vs 詐騙』對照表把「提款 1–5 分鐘內到帳」「HTTPS 加密」列為合法特徵；FAQ 有「保留對話與帳號記錄截圖」「停止進一步儲值或提供個資」「165 反詐專線」；canonical 自指；/terms/ 快照：分類標題（百家樂/老虎機/麻將/捕魚/體育/混淆對照）下無展開內容，只展開『娛樂城與平台相關術語』（體驗金、首存、返水、洗碼量、流水、信用版『存在債務與風險問題』、風控）；canonical 自指"
+      },
+      {
+        "item": "claim:6",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "robots.txt 快照：User-Agent: * / Allow: / / Sitemap: https://casinobase.tw/sitemap.xml；sitemap.xml 快照：只有 https://casinobase.tw 一筆；五個子頁快照皆可讀"
+      },
+      {
+        "item": "claim:7",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/guides/ 快照：多次重複「Carve Your iGaming Way - CHINESE NEW YEAR MOREWAYS Leads the Way-Mechanism」與「2025/08/22」；文章卡片 href=https://www.google.com/；無站內獨立攻略 URL；canonical 自指"
+      },
+      {
+        "item": "claim:8",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:9",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "a0fd980e、d746c625、19c122bc、a6c8f809 搜尋快照皆為「DuckDuckGo search failed: DDGSException: No results found.」；陰性樣本"
+      },
+      {
+        "item": "claim:10",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "首頁、排行頁連到 hs168.vip、rg8888.org 等外部網域；方向為出站，推論邊界正確"
+      },
+      {
+        "item": "claim:11",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:12",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      }
+    ],
+    "actions": [
+      {
+        "item": "action:1",
+        "scope": "ok"
+      },
+      {
+        "item": "action:2",
+        "scope": "ok"
+      },
+      {
+        "item": "action:3",
+        "scope": "ok"
+      },
+      {
+        "item": "action:4",
+        "scope": "ok"
+      },
+      {
+        "item": "action:5",
+        "scope": "ok"
+      },
+      {
+        "item": "action:6",
+        "scope": "ok"
+      },
+      {
+        "item": "action:7",
+        "scope": "ok"
+      }
+    ]
+  },
+  "1b1c99c0": {
+    "claims": [
+      {
+        "item": "claim:1",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "首頁快照：title「2030玩運彩瘋世足｜MLB/NBA比分、中職賽程、世界盃預測分析」、H1「2030玩運彩瘋世足」、內文為MLB直播等賽事；導覽 <a> 文字「線上娛樂城推薦」href=https://2030.tw/wordcup/（共3處）"
+      },
+      {
+        "item": "claim:2",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/wordcup/快照：title「線上娛樂城推薦｜2026最新評價排名 - 2030玩運彩瘋世足」、文字「共 2502 篇評測」、分類連結 熱門娛樂城品牌/娛樂城評價與推薦/優惠與活動/遊戲與玩法/安全與出金/其他；列表首頁連到 /wordcup/3a娛樂城、/wordcup/娛樂城；『立即註冊』href=https://don0911.3a1788.bet/?st=wg2030idx rel=\"nofollow noopener\"；canonical=https://2030.tw/wordcup/"
+      },
+      {
+        "item": "claim:3",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3a娛樂城快照：title「3a娛樂城｜遊戲種類、優惠、出金全攻略」、H1「3a娛樂城 - 完整評測與玩家指南」、description「2026年3a娛樂城完整攻略…」；robots index, follow；canonical 自指；麵包屑「首頁 > 娛樂城推薦 > 3a娛樂城」；六個H2段（平台特色/遊戲/出金速度與安全性/註冊/優惠/客服）＋FAQ五題＋總結＋相關推薦；「2026年09月24日 更新」「2030編輯部」；「半小時到一小時內」「新台幣1000元」「SSL加密憑證…不用太擔心個資外洩的風險」「小額體驗」；A#33/34/35/52 href=https://don0911.3a1788.bet/?st=wg2030 rel=\"nofollow noopener\"；娛樂城快照：title「娛樂城評價｜台灣玩家首選平台」、H1「娛樂城 - 完整評測與玩家指南」、description「2026年娛樂城完整攻略…」（與3A頁同句型）；robots index, follow；canonical 自指；同樣六段＋FAQ；「2026年10月09日 更新」「2030編輯部」；正文泛論多家平台，含「洗碼量」「提領限制」「量力而為」；4個 don0911.3a1788.bet/?st=wg2030 nofollow 連結"
+      },
+      {
+        "item": "claim:4",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "兩頁同六段＋FAQ 五題（手機版/最低入金/出金/安全/客服），正文不同；3A頁『半小時到一小時』『新台幣1000元』，無測試紀錄或條款來源"
+      },
+      {
+        "item": "claim:5",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "兩頁各 4 個 don0911.3a1788.bet/?st=wg2030，rel 含 nofollow；/wordcup/ 有 ?st=wg2030idx"
+      },
+      {
+        "item": "claim:6",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "首頁→目錄→泛詞與品牌頁→同一 3a1788.bet 目的地可見；限度已列"
+      },
+      {
+        "item": "claim:7",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "0cbf6949 Yahoo 彰源頁：無 2030.tw 連結、無『玩運彩』字串，2030.TW 只出現在股票路徑與名稱；陰性樣本"
+      },
+      {
+        "item": "claim:8",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "同上；推論限於該頁"
+      },
+      {
+        "item": "claim:9",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:10",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      }
+    ],
+    "actions": [
+      {
+        "item": "action:1",
+        "scope": "ok"
+      },
+      {
+        "item": "action:2",
+        "scope": "ok"
+      },
+      {
+        "item": "action:3",
+        "scope": "ok"
+      },
+      {
+        "item": "action:4",
+        "scope": "ok"
+      },
+      {
+        "item": "action:5",
+        "scope": "ok"
+      }
+    ]
+  },
+  "b6d2aa16": {
+    "claims": [
+      {
+        "item": "claim:1",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "casinobase 首頁快照：title 與 H1「CasinoBase｜台灣娛樂城推薦評比平台」；導覽 /reviews/ 娛樂城排行、/bonuses/ 優惠統整、/guides/ 熱門遊戲、/safety/ 安全警示、/terms/ 術語懶人包；canonical=https://casinobase.tw/；『查看評價』『立即註冊』等連到 hs168.vip/9eyamq、rg8888.org、999xc.net、qywin88.com、fa888.tw（rel=\"noopener\"）；自稱團隊參考 PTT/Dcard 與實際測試，無具名作者、無證據連結；/reviews/ 快照：title「2026 台灣娛樂城評價排行榜｜Top10…」、H1「2026 台灣娛樂城評價排行榜」；CB-FIVE 五項權重文字皆為「權重 0 %」；有「我們如何測試與量化？」與「每月更新一次」；文字稱「點擊各家娛樂城評價頁」，但『查看評價』實際連 rg8888.org、hs168.vip/9eyamq 等站外網域（rel=\"noopener\"）；canonical 自指；有常見問題"
+      },
+      {
+        "item": "claim:2",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "六頁共用導覽連向主題頁；限度已列"
+      },
+      {
+        "item": "claim:3",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "六頁原始HTML與可見文字皆無『3A』或『3a娛樂城』，也無對應連結"
+      },
+      {
+        "item": "claim:4",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:5",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/reviews/ 快照：title「2026 台灣娛樂城評價排行榜｜Top10…」、H1「2026 台灣娛樂城評價排行榜」；CB-FIVE 五項權重文字皆為「權重 0 %」；有「我們如何測試與量化？」與「每月更新一次」；文字稱「點擊各家娛樂城評價頁」，但『查看評價』實際連 rg8888.org、hs168.vip/9eyamq 等站外網域（rel=\"noopener\"）；canonical 自指；有常見問題"
+      },
+      {
+        "item": "claim:6",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/bonuses/ 快照：卡片「任你搏…20 倍流水」「錢盈…流水 3 倍」，比較表「任你博…15x」「錢盈…10x」；有春卡片「活動到期日：-」，錢盈與金大發「官方公布截止日前」；FAQ 解釋流水計算、綁卡、限定遊戲、提款限制；canonical 自指；連到 hs168.vip 等（多為 rel=\"noopener\"，一個無 rel）（卡片寫『任你搏』、表格寫『任你博』，與主張一致）"
+      },
+      {
+        "item": "claim:7",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/bonuses/ 快照：卡片「任你搏…20 倍流水」「錢盈…流水 3 倍」，比較表「任你博…15x」「錢盈…10x」；有春卡片「活動到期日：-」，錢盈與金大發「官方公布截止日前」；FAQ 解釋流水計算、綁卡、限定遊戲、提款限制；canonical 自指；連到 hs168.vip 等（多為 rel=\"noopener\"，一個無 rel）；/safety/ 快照：詐騙名單表無原始證據連結（頁內只有導覽連結）；『合法 vs 詐騙』對照表把「提款 1–5 分鐘內到帳」「HTTPS 加密」列為合法特徵；FAQ 有「保留對話與帳號記錄截圖」「停止進一步儲值或提供個資」「165 反詐專線」；canonical 自指；/terms/ 快照：分類標題（百家樂/老虎機/麻將/捕魚/體育/混淆對照）下無展開內容，只展開『娛樂城與平台相關術語』（體驗金、首存、返水、洗碼量、流水、信用版『存在債務與風險問題』、風控）；canonical 自指"
+      },
+      {
+        "item": "claim:8",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/guides/ 快照：多次重複「Carve Your iGaming Way - CHINESE NEW YEAR MOREWAYS Leads the Way-Mechanism」與「2025/08/22」；文章卡片 href=https://www.google.com/；無站內獨立攻略 URL；canonical 自指"
+      },
+      {
+        "item": "claim:9",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "首頁『CasinoBase 團隊參考 Line群、PTT、Dcard』『經過篩選與團隊實際測試』、排行頁 CB-FIVE 量化；兩頁無證據連結、無具名作者"
+      },
+      {
+        "item": "claim:10",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "49c4c53f、1b266fd7 搜尋快照皆為「DuckDuckGo search failed: DDGSException: No results found.」；陰性樣本"
+      },
+      {
+        "item": "claim:11",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:12",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:13",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "首頁、排行、優惠頁都連到 hs168.vip/9eyamq；限度已列"
+      }
+    ],
+    "actions": [
+      {
+        "item": "action:1",
+        "scope": "ok"
+      },
+      {
+        "item": "action:2",
+        "scope": "ok"
+      },
+      {
+        "item": "action:3",
+        "scope": "ok"
+      },
+      {
+        "item": "action:4",
+        "scope": "ok"
+      },
+      {
+        "item": "action:5",
+        "scope": "ok"
+      },
+      {
+        "item": "action:6",
+        "scope": "ok"
+      }
+    ]
+  },
+  "84fc353e": {
+    "claims": [
+      {
+        "item": "claim:1",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "首頁快照：title「2030玩運彩瘋世足｜MLB/NBA比分、中職賽程、世界盃預測分析」、H1「2030玩運彩瘋世足」、內文為MLB直播等賽事；導覽 <a> 文字「線上娛樂城推薦」href=https://2030.tw/wordcup/（共3處）；description 涵蓋中職、MLB、NBA、世足"
+      },
+      {
+        "item": "claim:2",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "/wordcup/快照：title「線上娛樂城推薦｜2026最新評價排名 - 2030玩運彩瘋世足」、文字「共 2502 篇評測」、分類連結 熱門娛樂城品牌/娛樂城評價與推薦/優惠與活動/遊戲與玩法/安全與出金/其他；列表首頁連到 /wordcup/3a娛樂城、/wordcup/娛樂城；『立即註冊』href=https://don0911.3a1788.bet/?st=wg2030idx rel=\"nofollow noopener\"；canonical=https://2030.tw/wordcup/"
+      },
+      {
+        "item": "claim:3",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3a娛樂城快照：title「3a娛樂城｜遊戲種類、優惠、出金全攻略」、H1「3a娛樂城 - 完整評測與玩家指南」、description「2026年3a娛樂城完整攻略…」；robots index, follow；canonical 自指；麵包屑「首頁 > 娛樂城推薦 > 3a娛樂城」；六個H2段（平台特色/遊戲/出金速度與安全性/註冊/優惠/客服）＋FAQ五題＋總結＋相關推薦；「2026年09月24日 更新」「2030編輯部」；「半小時到一小時內」「新台幣1000元」「SSL加密憑證…不用太擔心個資外洩的風險」「小額體驗」；A#33/34/35/52 href=https://don0911.3a1788.bet/?st=wg2030 rel=\"nofollow noopener\"；娛樂城快照：title「娛樂城評價｜台灣玩家首選平台」、H1「娛樂城 - 完整評測與玩家指南」、description「2026年娛樂城完整攻略…」（與3A頁同句型）；robots index, follow；canonical 自指；同樣六段＋FAQ；「2026年10月09日 更新」「2030編輯部」；正文泛論多家平台，含「洗碼量」「提領限制」「量力而為」；4個 don0911.3a1788.bet/?st=wg2030 nofollow 連結；富遊快照：title「富遊娛樂城評價｜台灣玩家首選平台」、H1「富遊娛樂城 - 完整評測與玩家指南」；canonical 自指、index, follow；同樣六段＋FAQ；「2026年10月13日 更新」「2030編輯部」；自稱「每一個環節都幫大家實測一遍」；出站僅 don0911.3a1788.bet/?st=wg2030（4個，nofollow）與頁首 wg1888 橫幅，無富遊專屬目的地；3a出金速度快照：title「3a娛樂城出金速度推薦｜安全出金平台評測」、H1「3a娛樂城出金速度 - 完整評測與玩家指南」；canonical 自指、index, follow；「15到30分鐘」並提「提領的金額大小、銀行作業時間或者尖峰時段」；FAQ「Q: 3a娛樂城出金速度有手機版可以玩嗎?」；仍含遊戲/註冊/優惠/客服段；供應商寫 DG、歐博、SA（3A主頁寫沙龍、歐博）；「2026年10月06日 更新」「2030編輯部」"
+      },
+      {
+        "item": "claim:4",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "四頁各 4 個 don0911.3a1788.bet/?st=wg2030（rel 含 nofollow）；/wordcup/ ?st=wg2030idx；富遊快照：title「富遊娛樂城評價｜台灣玩家首選平台」、H1「富遊娛樂城 - 完整評測與玩家指南」；canonical 自指、index, follow；同樣六段＋FAQ；「2026年10月13日 更新」「2030編輯部」；自稱「每一個環節都幫大家實測一遍」；出站僅 don0911.3a1788.bet/?st=wg2030（4個，nofollow）與頁首 wg1888 橫幅，無富遊專屬目的地"
+      },
+      {
+        "item": "claim:5",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "體育首頁→娛樂城目錄→品牌/長尾頁→3a1788.bet 註冊，可見；限度已列"
+      },
+      {
+        "item": "claim:6",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3A主頁『半小時到一小時』；出金速度頁『15到30分鐘』；兩頁無測試日期、金額或逐筆紀錄"
+      },
+      {
+        "item": "claim:7",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3a出金速度快照：title「3a娛樂城出金速度推薦｜安全出金平台評測」、H1「3a娛樂城出金速度 - 完整評測與玩家指南」；canonical 自指、index, follow；「15到30分鐘」並提「提領的金額大小、銀行作業時間或者尖峰時段」；FAQ「Q: 3a娛樂城出金速度有手機版可以玩嗎?」；仍含遊戲/註冊/優惠/客服段；供應商寫 DG、歐博、SA（3A主頁寫沙龍、歐博）；「2026年10月06日 更新」「2030編輯部」；富遊頁供應商寫歐博、沙龍、DG"
+      },
+      {
+        "item": "claim:8",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "長尾頁沿用品牌頁模板；/wordcup/ 為列表、娛樂城頁為文章，形式不同；限度已列"
+      },
+      {
+        "item": "claim:9",
+        "kind": "observation",
+        "verdict": "supported",
+        "basis": "3aarena.com.tw 快照：title「3A娛樂城｜真人視訊…」；原始HTML無「2030」字串，無指向 2030.tw 的連結；gamebet.com.tw 快照：title「3A娛樂城 - 3A娛樂城為全台信譽最優良…」；原始HTML無「2030」字串，無指向 2030.tw 的連結；陰性樣本"
+      },
+      {
+        "item": "claim:10",
+        "kind": "inference",
+        "verdict": "supported",
+        "basis": "9072e6a5 結果皆彰源股票頁；品牌搜尋快照：結果含 3aarena.com.tw、gamebet.com.tw、3aaa.com.tw 及兩個詐騙清單頁；兩個 3A 站外頁無 2030 字串"
+      },
+      {
+        "item": "claim:11",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      },
+      {
+        "item": "claim:12",
+        "kind": "unknown",
+        "verdict": "n/a (unknown)",
+        "basis": "未知項"
+      }
+    ],
+    "actions": [
+      {
+        "item": "action:1",
+        "scope": "ok"
+      },
+      {
+        "item": "action:2",
+        "scope": "ok"
+      },
+      {
+        "item": "action:3",
+        "scope": "ok"
+      },
+      {
+        "item": "action:4",
+        "scope": "ok"
+      },
+      {
+        "item": "action:5",
+        "scope": "ok"
+      },
+      {
+        "item": "action:6",
+        "scope": "ok"
+      }
+    ]
+  }
+}

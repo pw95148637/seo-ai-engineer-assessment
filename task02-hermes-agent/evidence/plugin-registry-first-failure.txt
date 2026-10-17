@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "<stdin>", line 8, in <module>
+AssertionError: {'tool_search', 'tool_describe', 'tool_call'}
+integration_exit=1

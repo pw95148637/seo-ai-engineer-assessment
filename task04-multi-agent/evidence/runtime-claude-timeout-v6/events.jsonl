@@ -1,0 +1,3 @@
+{"run_id": "b53302f0e5b04ce893d04519eef75035", "mode": "llm_runtime", "node": "call_error", "role": "planner", "attempt": 0, "iteration": 1, "type": "TimeoutError"}
+{"run_id": "b53302f0e5b04ce893d04519eef75035", "mode": "llm_runtime", "node": "call_error", "role": "planner", "attempt": 1, "iteration": 1, "type": "TimeoutError"}
+{"run_id": "b53302f0e5b04ce893d04519eef75035", "mode": "llm_runtime", "node": "finish", "status": "error", "iteration": 1, "errors": [{"role": "planner", "attempt": 0, "iteration": 1, "type": "TimeoutError"}, {"role": "planner", "attempt": 1, "iteration": 1, "type": "TimeoutError"}, {"type": "TimeoutError", "message": ""}]}

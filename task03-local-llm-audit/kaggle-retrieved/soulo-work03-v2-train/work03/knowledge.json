@@ -1,0 +1,10 @@
+[
+{"id":"G_META","url":"https://developers.google.com/search/docs/crawling-indexing/special-tags","checked":"2026-10-15","fact":"Google Search不使用meta keywords標記作為索引或排名依據。"},
+{"id":"G_HELP","url":"https://developers.google.com/search/docs/fundamentals/creating-helpful-content","checked":"2026-10-15","fact":"Google沒有偏好的固定文章字數，內容應有用、準確、可信。經驗敘述應可核對，不可將缺證據直接當已證偽。"},
+{"id":"G_SPAM","url":"https://developers.google.com/search/docs/essentials/spam-policies","checked":"2026-10-15","fact":"為操縱排名而不自然重複關鍵字屬keyword stuffing；沒有H1重複20次即可提升權威或保證排名的規則。"},
+{"id":"TW_873","url":"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=B0000001","checked":"2026-10-15","fact":"民法873條允許債權到期未受清償之抵押權人聲請法院拍賣抵押物並就價金受償，不代表每案立即法拍。"},
+{"id":"TW_874","url":"https://mojlaw.moj.gov.tw/LawContentExtent.aspx?LSID=FL001351&LawNo=874","checked":"2026-10-15","fact":"民法874條原則依抵押權成立次序分配價金，法律另有規定者除外。順位本身不證明具體市場利率。"},
+{"id":"TW_266","url":"https://mojlaw.moj.gov.tw/LawContentExtent.aspx?LSID=FL001424&LawNo=266","checked":"2026-10-15","fact":"刑法266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。"},
+{"id":"F_APR","url":"https://moneywise.fsc.gov.tw/tabf/main/tool2.html","checked":"2026-10-15","fact":"比較借貸負擔須兼顧利率、期間及相關費用，總費用年百分率不同於名目利率。本依據不能證明特定市場利率或保證授信。"},
+{"id":"M_PIP","url":"https://pip.moi.gov.tw/V3","checked":"2026-10-15","fact":"平台提供住宅交易、租金及負擔能力等統計。應明示指標與日期，住宅統計不能直接當個人二胎貸款報價。"}
+]

@@ -1,0 +1,95 @@
+{
+  "run_id": "1d20255abf0f4796af2f0defcd9212ed",
+  "host": "2030.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": {
+      "call": 10,
+      "evidence_id": "e47a5e9c6e944857adb8c2e24f63fb70",
+      "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    },
+    "3A娛樂城": {
+      "call": 9,
+      "evidence_id": "5e3872b20baa4348aa4b4045390a03f0",
+      "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    }
+  },
+  "both_target_pages_read": true,
+  "tool_calls": 15,
+  "calls_before_first_hit": 8,
+  "calls_until_both_hit": 10,
+  "searches": 5,
+  "failed_searches": 4,
+  "failed_search_kinds": {
+    "no_results": 3,
+    "error": 1
+  },
+  "failed_search_queries": [
+    "site:2030.tw \"娛樂城\" \"3A\"",
+    "\"2030.tw\" 娛樂城 -彰源 -股票 -stock -Froch",
+    "\"2030玩運彩\" -site:2030.tw",
+    "\"2030.tw/wordcup\""
+  ],
+  "http_requests": 10,
+  "http_requests_controller": 0,
+  "sitemap_reads": 0,
+  "refetched_verified_pages": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 3
+  },
+  "lessons_presented": 0,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 239874,
+    "prompt": 233030,
+    "completion": 6844,
+    "api_calls": 8,
+    "cache_read": 159104,
+    "cache_write": 0,
+    "uncached_prompt": 73926,
+    "cost": 80770
+  },
+  "hermes_tools": {
+    "research_status": 1,
+    "skill_view": 1,
+    "research_fetch": 7,
+    "research_search": 5,
+    "research_offpage": 1,
+    "research_finish": 1
+  },
+  "claims": 13,
+  "actions": 6,
+  "sections": {
+    "on_page": 9,
+    "off_page": 3,
+    "other": 1
+  },
+  "offpage": {
+    "claims": 3,
+    "observation": 1,
+    "inference": 1,
+    "unknown": 1,
+    "three_columns": true,
+    "known": 1,
+    "known_external": 1,
+    "known_link_verified": 0,
+    "pages_fetched": 1,
+    "pages_linking_to_target": 0
+  },
+  "offpage_policy_violations": [],
+  "state": "research_complete",
+  "transcript_calls": 9,
+  "review_cost": 7163,
+  "learned": true
+}

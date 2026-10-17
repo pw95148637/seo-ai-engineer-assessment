@@ -1,0 +1,247 @@
+{
+  "lessons": [
+    {
+      "id": "98d867029fed",
+      "kind": "discovery_path",
+      "key": "discovery|2030.tw|3a娛樂城",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "active",
+      "statement": "2030.tw 的「3A娛樂城」目標頁：https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E（讀到時 HTTP 200，title/H1 符合）。",
+      "data": {
+        "keyword": "3A娛樂城",
+        "target_url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+        "evidence_id": "b3543e98c3d5425b813ba2b4832c5b00",
+        "title": "3a娛樂城｜遊戲種類、優惠、出金全攻略 - 2030玩運彩瘋世足",
+        "h1": "2030玩運彩瘋世足 3a娛樂城 - 完整評測與玩家指南",
+        "source_url": "https://2030.tw/wordcup/",
+        "source_kind": "html",
+        "anchor": "3a娛樂城 老實說，現在市面上娛樂城品牌真的超多，每次滑臉書或IG，都會看到一堆廣告跳出來。相信大家跟我… 詳細 ›",
+        "sitemaps_checked": 0,
+        "sitemaps_listing_target": 0,
+        "epoch": 0
+      },
+      "updated": "2026-10-16T19:46:06.374959+00:00",
+      "expires": "2026-10-23T19:46:06.374942+00:00",
+      "history": [
+        {
+          "time": "2026-10-16T19:26:43.851556+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4eab193d244d46e7ad35dc4e17a52689",
+          "reason": "target page read"
+        },
+        {
+          "time": "2026-10-16T19:26:43.851594+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": "4eab193d244d46e7ad35dc4e17a52689",
+          "reason": "run 4eab193d244d46e7ad35dc4e17a52689 read 3A娛樂城 page: HTTP 200 and title/H1 match"
+        }
+      ]
+    },
+    {
+      "id": "dfb379fdb342",
+      "kind": "discovery_path",
+      "key": "discovery|2030.tw|娛樂城",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "active",
+      "statement": "2030.tw 的「娛樂城」目標頁：https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E（讀到時 HTTP 200，title/H1 符合）。",
+      "data": {
+        "keyword": "娛樂城",
+        "target_url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+        "evidence_id": "d148a4f4306f462987c058c8d36e0c0b",
+        "title": "娛樂城評價｜台灣玩家首選平台 - 2030玩運彩瘋世足",
+        "h1": "2030玩運彩瘋世足 娛樂城 - 完整評測與玩家指南",
+        "source_url": "https://2030.tw/wordcup/",
+        "source_kind": "html",
+        "anchor": "娛樂城 其實啊，最近真的不少玩家私訊小編問說，「哎，現在市面上一堆娛樂城，到底哪一家比較穩啊？」、「… 詳細 ›",
+        "sitemaps_checked": 0,
+        "sitemaps_listing_target": 0,
+        "epoch": 0
+      },
+      "updated": "2026-10-16T19:46:08.376142+00:00",
+      "expires": "2026-10-23T19:46:08.376111+00:00",
+      "history": [
+        {
+          "time": "2026-10-16T19:26:43.850891+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4eab193d244d46e7ad35dc4e17a52689",
+          "reason": "target page read"
+        },
+        {
+          "time": "2026-10-16T19:26:43.850974+00:00",
+          "old": "candidate",
+          "new": "active",
+          "actor": "controller",
+          "run": "4eab193d244d46e7ad35dc4e17a52689",
+          "reason": "run 4eab193d244d46e7ad35dc4e17a52689 read 娛樂城 page: HTTP 200 and title/H1 match"
+        }
+      ]
+    },
+    {
+      "id": "f00500da7609",
+      "kind": "failure_pattern",
+      "key": "failure|research_offpage|unsupported_content_type",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "candidate",
+      "statement": "遵守：只能讀文字、HTML、XML 或 JSON（1 個 run 中 research_offpage 共 2 次因此被控制器拒絕）。觀察站點：2030.tw。",
+      "data": {
+        "tool": "research_offpage",
+        "feature": "unsupported_content_type",
+        "fails": 2,
+        "alternative": [
+          0,
+          0
+        ],
+        "runs": [
+          "841f72b2768a4a97aeac0d63e3c90f28"
+        ],
+        "hosts": [
+          "2030.tw"
+        ]
+      },
+      "updated": "2026-10-16T19:34:10.426454+00:00",
+      "expires": "2026-10-23T19:34:10.426444+00:00",
+      "history": [
+        {
+          "time": "2026-10-16T19:34:10.426102+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "841f72b2768a4a97aeac0d63e3c90f28",
+          "reason": "first measured failure"
+        }
+      ]
+    },
+    {
+      "id": "dc86bf8b9498",
+      "kind": "failure_pattern",
+      "key": "failure|research_search|plain",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "revoked",
+      "statement": "不含 site: 的 research_search 在 1 個 run 共 1 次沒有結果：換詞組或縮短查詢，不要重送同一查詢。觀察站點：2030.tw。",
+      "data": {
+        "tool": "research_search",
+        "feature": "plain",
+        "fails": 2,
+        "alternative": [
+          0,
+          0
+        ],
+        "runs": [
+          "4eab193d244d46e7ad35dc4e17a52689"
+        ],
+        "hosts": [
+          "2030.tw"
+        ],
+        "epoch": 1
+      },
+      "updated": "2026-10-16T19:34:10.425686+00:00",
+      "expires": "2026-10-23T19:26:43.813451+00:00",
+      "history": [
+        {
+          "time": "2026-10-16T19:26:43.813207+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4eab193d244d46e7ad35dc4e17a52689",
+          "reason": "first measured failure"
+        },
+        {
+          "time": "2026-10-16T19:34:10.425725+00:00",
+          "old": "candidate",
+          "new": "revoked",
+          "actor": "controller",
+          "run": "841f72b2768a4a97aeac0d63e3c90f28",
+          "reason": "counterexample: 1 successful call(s) with feature plain in run 841f72b2768a4a97aeac0d63e3c90f28"
+        }
+      ]
+    },
+    {
+      "id": "e29ca3d21f8a",
+      "kind": "failure_pattern",
+      "key": "failure|research_search|site_operator",
+      "host": "2030.tw",
+      "scope": "host",
+      "status": "revoked",
+      "statement": "",
+      "data": {
+        "tool": "research_search",
+        "feature": "site_operator",
+        "fails": 7,
+        "alternative": [
+          1,
+          3
+        ],
+        "epoch": 3
+      },
+      "updated": "2026-10-16T19:48:33.903910+00:00",
+      "expires": null,
+      "history": [
+        {
+          "time": "2026-10-16T19:26:43.812528+00:00",
+          "old": null,
+          "new": "candidate",
+          "actor": "controller",
+          "run": "4eab193d244d46e7ad35dc4e17a52689",
+          "reason": "first measured failure"
+        },
+        {
+          "time": "2026-10-16T19:26:43.813097+00:00",
+          "old": "candidate",
+          "new": "revoked",
+          "actor": "controller",
+          "run": "4eab193d244d46e7ad35dc4e17a52689",
+          "reason": "counterexample: 1 successful call(s) with feature site_operator in run 4eab193d244d46e7ad35dc4e17a52689"
+        }
+      ]
+    },
+    {
+      "id": "38b7cba20063",
+      "kind": "human_feedback",
+      "key": "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1",
+      "host": "2030.tw",
+      "scope": "general",
+      "status": "active",
+      "statement": "人工審查（總控Claude（使用者授權代審））把 run 8cad8d54 的 claim:8 標為「證據不支持」：頁面只有2030編輯部團隊署名，不是具名作者，不能當作者資訊或專業背書。該項原文：「反證：3A頁有具體出金時段、最低入金、手機版與客服FAQ、作者及更新標示；娛樂城主詞頁提醒洗碼量和提領限制。因此不能稱其完全沒有實用資訊或風險提醒；有數字也不等於數字已驗證。」",
+      "data": {
+        "target": "claim:8",
+        "label": "unsupported",
+        "run": "8cad8d54a03c4f94a716e7653b5b3112"
+      },
+      "updated": "2026-10-16T19:30:45.367910+00:00",
+      "expires": null,
+      "history": [
+        {
+          "time": "2026-10-16T19:30:45.367910+00:00",
+          "old": null,
+          "new": "active",
+          "actor": "human:總控Claude（使用者授權代審）",
+          "run": null,
+          "reason": "v0.6 human review added unchanged; the native arm receives the same text in NF"
+        }
+      ]
+    }
+  ],
+  "feedback": [
+    {
+      "id": 1,
+      "time": "2026-10-16T19:30:45.367910+00:00",
+      "run": "8cad8d54a03c4f94a716e7653b5b3112",
+      "target": "claim:8",
+      "label": "unsupported",
+      "reason": "頁面只有2030編輯部團隊署名，不是具名作者，不能當作者資訊或專業背書",
+      "scope": "general",
+      "reviewer": "總控Claude（使用者授權代審）",
+      "lesson": "38b7cba20063"
+    }
+  ]
+}

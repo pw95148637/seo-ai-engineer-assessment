@@ -1,0 +1,33 @@
+{
+  "source": "https://docs.google.com/spreadsheets/d/198L8PDlajqKmSsz-ScUti7tYUnyTyUYBAa3nJWfyzCQ/edit",
+  "sheet": "Sheet1",
+  "source_sha256": "12504f2058a4305817d3991c01fe05b17feea1754869ab3617b3480e67e50065",
+  "seed": 42,
+  "algorithm": "Python random.Random(42).shuffle; first 12 train, remaining 8 holdout",
+  "train_ids": [
+    "20",
+    "6",
+    "15",
+    "5",
+    "10",
+    "14",
+    "16",
+    "19",
+    "7",
+    "13",
+    "18",
+    "11"
+  ],
+  "holdout_ids": [
+    "2",
+    "12",
+    "3",
+    "17",
+    "8",
+    "9",
+    "1",
+    "4"
+  ],
+  "status": "Preliminary data split; no training or inference performed",
+  "preflight_note": "Controller inspected all 20 snippets while verifying source availability. No labels, prompt tuning or model selection from holdout outcomes occurred."
+}

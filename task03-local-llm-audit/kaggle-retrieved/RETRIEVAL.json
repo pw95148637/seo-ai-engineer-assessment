@@ -1,0 +1,353 @@
+{
+ "retrieved_at_utc": "2026-10-16T02:37:21+00:00",
+ "command": "python -P -m kaggle kernels output pw95148637/soulo-work03-local-llm-lora-audit/<2|3> -p kaggle-retrieved/v<2|3>",
+ "kaggle_cli": "2.2.4",
+ "finding": "v2 and v3 outputs/consistency.json and training.json are semantically identical to the local outputs/ copies shipped in the migration ZIP (byte formatting differs). First-round adapter (adapter_model.safetensors, 15,354,512 bytes) recovered. Binaries are git-ignored; hashes below.",
+ "files": {
+  "kaggle-retrieved/v2/.virtual_documents/__notebook_source__.ipynb": {
+   "bytes": 36334,
+   "sha256": "e09365761b5bd1126c1f2ca9e65142da81cace3be5ab7f86126c9eeec08d857a"
+  },
+  "kaggle-retrieved/v2/soulo-work03-local-llm-lora-audit.log": {
+   "bytes": 813,
+   "sha256": "0926a46cb80b113b84f07f225b8321224893e3e6937f0aee2682da724e5301ae"
+  },
+  "kaggle-retrieved/v2/work03/data/split-manifest.json": {
+   "bytes": 798,
+   "sha256": "dee33fc4bd17c5dd204a307c21ff242dd99d1e44276265ccb792a653eb12f4fb"
+  },
+  "kaggle-retrieved/v2/work03/data/train12.csv": {
+   "bytes": 2188,
+   "sha256": "4193d94c59bd8b3d7bdde8583b40aef210d6f2a9825f582ca04094edfe1e0c2c"
+  },
+  "kaggle-retrieved/v2/work03/data/train_targets.jsonl": {
+   "bytes": 6241,
+   "sha256": "d70c4aeb371c9ea137dbf5efec0f207aca5c2018a1bf9cede36437b1995a1e61"
+  },
+  "kaggle-retrieved/v2/work03/evaluation_policy.json": {
+   "bytes": 1022,
+   "sha256": "2f593344788cb5f32a960c5ddd99f07329621ef1e63cc419b7ea65e879c5d287"
+  },
+  "kaggle-retrieved/v2/work03/knowledge.json": {
+   "bytes": 2048,
+   "sha256": "1fcbb5ed7a34f6e6278aa244beecf58d2cb8ff4836035d1fe7d607dfe2ba1616"
+  },
+  "kaggle-retrieved/v2/work03/outputs/adapter/adapter_config.json": {
+   "bytes": 1068,
+   "sha256": "252b051a9236022e370a28b230774dcccb519513d971a1fe45073060174cf215"
+  },
+  "kaggle-retrieved/v2/work03/outputs/adapter/adapter_model.safetensors": {
+   "bytes": 15354512,
+   "sha256": "bebc8c4ab4b9cfd88097ef5c511d7073eedf6a52a3e3b79acb354fd7264454ae"
+  },
+  "kaggle-retrieved/v2/work03/outputs/adapter/added_tokens.json": {
+   "bytes": 707,
+   "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+  },
+  "kaggle-retrieved/v2/work03/outputs/adapter/chat_template.jinja": {
+   "bytes": 4168,
+   "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+  },
+  "kaggle-retrieved/v2/work03/outputs/adapter/merges.txt": {
+   "bytes": 1671853,
+   "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+  },
+  "kaggle-retrieved/v2/work03/outputs/adapter/README.md": {
+   "bytes": 5180,
+   "sha256": "85e2b3a3fae33eab459538a9f1ce2d9ad6bd9fb7c6b97f9ee97e07923ad3e57a"
+  },
+  "kaggle-retrieved/v2/work03/outputs/adapter/special_tokens_map.json": {
+   "bytes": 496,
+   "sha256": "a36726f7fe394c1324021cac4a9ee3ad6c4f6285c0d98721f9b0b95888ec9905"
+  },
+  "kaggle-retrieved/v2/work03/outputs/adapter/tokenizer.json": {
+   "bytes": 11422654,
+   "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  "kaggle-retrieved/v2/work03/outputs/adapter/tokenizer_config.json": {
+   "bytes": 5401,
+   "sha256": "68f2cfe250d0fd2c445bcbeb49183726d6c4dfca493bd10599742410c2fc4a79"
+  },
+  "kaggle-retrieved/v2/work03/outputs/adapter/vocab.json": {
+   "bytes": 2776833,
+   "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "kaggle-retrieved/v2/work03/outputs/consistency.json": {
+   "bytes": 13256,
+   "sha256": "5238c9c87d2595b6e8032c58c5ec724054cf7e770af731ab0c289ad0fbc5b992"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/adapter/adapter_config.json": {
+   "bytes": 1068,
+   "sha256": "252b051a9236022e370a28b230774dcccb519513d971a1fe45073060174cf215"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/adapter/adapter_model.safetensors": {
+   "bytes": 15354512,
+   "sha256": "bebc8c4ab4b9cfd88097ef5c511d7073eedf6a52a3e3b79acb354fd7264454ae"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/adapter/added_tokens.json": {
+   "bytes": 707,
+   "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/adapter/chat_template.jinja": {
+   "bytes": 4168,
+   "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/adapter/merges.txt": {
+   "bytes": 1671853,
+   "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/adapter/README.md": {
+   "bytes": 5180,
+   "sha256": "85e2b3a3fae33eab459538a9f1ce2d9ad6bd9fb7c6b97f9ee97e07923ad3e57a"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/adapter/special_tokens_map.json": {
+   "bytes": 496,
+   "sha256": "a36726f7fe394c1324021cac4a9ee3ad6c4f6285c0d98721f9b0b95888ec9905"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/adapter/tokenizer.json": {
+   "bytes": 11422654,
+   "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/adapter/tokenizer_config.json": {
+   "bytes": 5401,
+   "sha256": "68f2cfe250d0fd2c445bcbeb49183726d6c4dfca493bd10599742410c2fc4a79"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/adapter/vocab.json": {
+   "bytes": 2776833,
+   "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/consistency.json": {
+   "bytes": 13256,
+   "sha256": "5238c9c87d2595b6e8032c58c5ec724054cf7e770af731ab0c289ad0fbc5b992"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/system_prompt.txt": {
+   "bytes": 1486,
+   "sha256": "731f70acc57c55ae76e41a17ad519974a44128e7bb5875282eb20926a41e445b"
+  },
+  "kaggle-retrieved/v2/work03/outputs/experiments/initial/training.json": {
+   "bytes": 2282,
+   "sha256": "b4203e3ce1d89241ba5a1a4332a86af896bce1fba995bc4479f944267e90ed8e"
+  },
+  "kaggle-retrieved/v2/work03/outputs/hardware.json": {
+   "bytes": 282,
+   "sha256": "f9835c74cd098521293d96874a1d6bfc78915ac05633d65940215e7b28dbe3a6"
+  },
+  "kaggle-retrieved/v2/work03/outputs/model.json": {
+   "bytes": 334,
+   "sha256": "f0a08ab3702997531d2d4e78b9185795bcc98ba4db63c206d9d289671a3df06d"
+  },
+  "kaggle-retrieved/v2/work03/outputs/requirements-resolved.txt": {
+   "bytes": 18055,
+   "sha256": "9ce52f9cd9712896f16908fa25f95cdd301063a0c5af0c66d65a36b2956cf4b3"
+  },
+  "kaggle-retrieved/v2/work03/outputs/smoke.json": {
+   "bytes": 269,
+   "sha256": "d760196875565d61a068b3b109b03378f5e8c6da0739c44a23b8256836db64d8"
+  },
+  "kaggle-retrieved/v2/work03/outputs/training.json": {
+   "bytes": 2282,
+   "sha256": "b4203e3ce1d89241ba5a1a4332a86af896bce1fba995bc4479f944267e90ed8e"
+  },
+  "kaggle-retrieved/v2/work03/run_config.json": {
+   "bytes": 325,
+   "sha256": "faae56541d5ab82488a61ce05f632ad272bc5ca4f2f10b61ec0e61faf522a50c"
+  },
+  "kaggle-retrieved/v2/work03/schema.json": {
+   "bytes": 704,
+   "sha256": "bab306101dde8cfa95fa5ee9ccb9db35cfbf676c3c76535426eb96e13aad44ed"
+  },
+  "kaggle-retrieved/v2/work03/scripts/audit_io.py": {
+   "bytes": 680,
+   "sha256": "15f2fad1172e42efd256c21721dfdd682099bf93fe8da1bd65184c0e59c1c001"
+  },
+  "kaggle-retrieved/v2/work03/scripts/test_workflow.py": {
+   "bytes": 1951,
+   "sha256": "749e1ecc7665b26e6a1306faaa1aa2f4173177124fab5c15c203a490fb72f5d0"
+  },
+  "kaggle-retrieved/v2/work03/scripts/workflow.py": {
+   "bytes": 12635,
+   "sha256": "2c6c6d5f9c0871524d1ba55fbb55d488e653aac615211bfdb63b21f898f31288"
+  },
+  "kaggle-retrieved/v2/work03/system_prompt.txt": {
+   "bytes": 2654,
+   "sha256": "f916f48988b435f29463b24c36b44abaa1f91adf427a460fca4c59db7978042a"
+  },
+  "kaggle-retrieved/v2/work03-trained-checkpoint.zip": {
+   "bytes": 18000872,
+   "sha256": "b57bd480bc020bd77c403fc5e83589e344aedb047490539ca3ea76e9037d3ddb"
+  },
+  "kaggle-retrieved/v3/.virtual_documents/__notebook_source__.ipynb": {
+   "bytes": 36334,
+   "sha256": "e09365761b5bd1126c1f2ca9e65142da81cace3be5ab7f86126c9eeec08d857a"
+  },
+  "kaggle-retrieved/v3/soulo-work03-local-llm-lora-audit.log": {
+   "bytes": 813,
+   "sha256": "0926a46cb80b113b84f07f225b8321224893e3e6937f0aee2682da724e5301ae"
+  },
+  "kaggle-retrieved/v3/work03/data/split-manifest.json": {
+   "bytes": 798,
+   "sha256": "dee33fc4bd17c5dd204a307c21ff242dd99d1e44276265ccb792a653eb12f4fb"
+  },
+  "kaggle-retrieved/v3/work03/data/train12.csv": {
+   "bytes": 2188,
+   "sha256": "4193d94c59bd8b3d7bdde8583b40aef210d6f2a9825f582ca04094edfe1e0c2c"
+  },
+  "kaggle-retrieved/v3/work03/data/train_targets.jsonl": {
+   "bytes": 6241,
+   "sha256": "d70c4aeb371c9ea137dbf5efec0f207aca5c2018a1bf9cede36437b1995a1e61"
+  },
+  "kaggle-retrieved/v3/work03/evaluation_policy.json": {
+   "bytes": 1022,
+   "sha256": "2f593344788cb5f32a960c5ddd99f07329621ef1e63cc419b7ea65e879c5d287"
+  },
+  "kaggle-retrieved/v3/work03/knowledge.json": {
+   "bytes": 2048,
+   "sha256": "1fcbb5ed7a34f6e6278aa244beecf58d2cb8ff4836035d1fe7d607dfe2ba1616"
+  },
+  "kaggle-retrieved/v3/work03/outputs/adapter/adapter_config.json": {
+   "bytes": 1068,
+   "sha256": "252b051a9236022e370a28b230774dcccb519513d971a1fe45073060174cf215"
+  },
+  "kaggle-retrieved/v3/work03/outputs/adapter/adapter_model.safetensors": {
+   "bytes": 15354512,
+   "sha256": "bebc8c4ab4b9cfd88097ef5c511d7073eedf6a52a3e3b79acb354fd7264454ae"
+  },
+  "kaggle-retrieved/v3/work03/outputs/adapter/added_tokens.json": {
+   "bytes": 707,
+   "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+  },
+  "kaggle-retrieved/v3/work03/outputs/adapter/chat_template.jinja": {
+   "bytes": 4168,
+   "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+  },
+  "kaggle-retrieved/v3/work03/outputs/adapter/merges.txt": {
+   "bytes": 1671853,
+   "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+  },
+  "kaggle-retrieved/v3/work03/outputs/adapter/README.md": {
+   "bytes": 5180,
+   "sha256": "85e2b3a3fae33eab459538a9f1ce2d9ad6bd9fb7c6b97f9ee97e07923ad3e57a"
+  },
+  "kaggle-retrieved/v3/work03/outputs/adapter/special_tokens_map.json": {
+   "bytes": 496,
+   "sha256": "a36726f7fe394c1324021cac4a9ee3ad6c4f6285c0d98721f9b0b95888ec9905"
+  },
+  "kaggle-retrieved/v3/work03/outputs/adapter/tokenizer.json": {
+   "bytes": 11422654,
+   "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  "kaggle-retrieved/v3/work03/outputs/adapter/tokenizer_config.json": {
+   "bytes": 5401,
+   "sha256": "68f2cfe250d0fd2c445bcbeb49183726d6c4dfca493bd10599742410c2fc4a79"
+  },
+  "kaggle-retrieved/v3/work03/outputs/adapter/vocab.json": {
+   "bytes": 2776833,
+   "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "kaggle-retrieved/v3/work03/outputs/consistency.json": {
+   "bytes": 13256,
+   "sha256": "5238c9c87d2595b6e8032c58c5ec724054cf7e770af731ab0c289ad0fbc5b992"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/adapter/adapter_config.json": {
+   "bytes": 1068,
+   "sha256": "252b051a9236022e370a28b230774dcccb519513d971a1fe45073060174cf215"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/adapter/adapter_model.safetensors": {
+   "bytes": 15354512,
+   "sha256": "bebc8c4ab4b9cfd88097ef5c511d7073eedf6a52a3e3b79acb354fd7264454ae"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/adapter/added_tokens.json": {
+   "bytes": 707,
+   "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/adapter/chat_template.jinja": {
+   "bytes": 4168,
+   "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/adapter/merges.txt": {
+   "bytes": 1671853,
+   "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/adapter/README.md": {
+   "bytes": 5180,
+   "sha256": "85e2b3a3fae33eab459538a9f1ce2d9ad6bd9fb7c6b97f9ee97e07923ad3e57a"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/adapter/special_tokens_map.json": {
+   "bytes": 496,
+   "sha256": "a36726f7fe394c1324021cac4a9ee3ad6c4f6285c0d98721f9b0b95888ec9905"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/adapter/tokenizer.json": {
+   "bytes": 11422654,
+   "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/adapter/tokenizer_config.json": {
+   "bytes": 5401,
+   "sha256": "68f2cfe250d0fd2c445bcbeb49183726d6c4dfca493bd10599742410c2fc4a79"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/adapter/vocab.json": {
+   "bytes": 2776833,
+   "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/consistency.json": {
+   "bytes": 13256,
+   "sha256": "5238c9c87d2595b6e8032c58c5ec724054cf7e770af731ab0c289ad0fbc5b992"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/system_prompt.txt": {
+   "bytes": 1486,
+   "sha256": "731f70acc57c55ae76e41a17ad519974a44128e7bb5875282eb20926a41e445b"
+  },
+  "kaggle-retrieved/v3/work03/outputs/experiments/initial/training.json": {
+   "bytes": 2282,
+   "sha256": "b4203e3ce1d89241ba5a1a4332a86af896bce1fba995bc4479f944267e90ed8e"
+  },
+  "kaggle-retrieved/v3/work03/outputs/hardware.json": {
+   "bytes": 282,
+   "sha256": "f9835c74cd098521293d96874a1d6bfc78915ac05633d65940215e7b28dbe3a6"
+  },
+  "kaggle-retrieved/v3/work03/outputs/model.json": {
+   "bytes": 334,
+   "sha256": "f0a08ab3702997531d2d4e78b9185795bcc98ba4db63c206d9d289671a3df06d"
+  },
+  "kaggle-retrieved/v3/work03/outputs/requirements-resolved.txt": {
+   "bytes": 18055,
+   "sha256": "9ce52f9cd9712896f16908fa25f95cdd301063a0c5af0c66d65a36b2956cf4b3"
+  },
+  "kaggle-retrieved/v3/work03/outputs/smoke.json": {
+   "bytes": 269,
+   "sha256": "d760196875565d61a068b3b109b03378f5e8c6da0739c44a23b8256836db64d8"
+  },
+  "kaggle-retrieved/v3/work03/outputs/training.json": {
+   "bytes": 2282,
+   "sha256": "b4203e3ce1d89241ba5a1a4332a86af896bce1fba995bc4479f944267e90ed8e"
+  },
+  "kaggle-retrieved/v3/work03/run_config.json": {
+   "bytes": 325,
+   "sha256": "faae56541d5ab82488a61ce05f632ad272bc5ca4f2f10b61ec0e61faf522a50c"
+  },
+  "kaggle-retrieved/v3/work03/schema.json": {
+   "bytes": 704,
+   "sha256": "bab306101dde8cfa95fa5ee9ccb9db35cfbf676c3c76535426eb96e13aad44ed"
+  },
+  "kaggle-retrieved/v3/work03/scripts/audit_io.py": {
+   "bytes": 680,
+   "sha256": "15f2fad1172e42efd256c21721dfdd682099bf93fe8da1bd65184c0e59c1c001"
+  },
+  "kaggle-retrieved/v3/work03/scripts/test_workflow.py": {
+   "bytes": 1951,
+   "sha256": "749e1ecc7665b26e6a1306faaa1aa2f4173177124fab5c15c203a490fb72f5d0"
+  },
+  "kaggle-retrieved/v3/work03/scripts/workflow.py": {
+   "bytes": 12635,
+   "sha256": "2c6c6d5f9c0871524d1ba55fbb55d488e653aac615211bfdb63b21f898f31288"
+  },
+  "kaggle-retrieved/v3/work03/system_prompt.txt": {
+   "bytes": 2654,
+   "sha256": "f916f48988b435f29463b24c36b44abaa1f91adf427a460fca4c59db7978042a"
+  },
+  "kaggle-retrieved/v3/work03-trained-checkpoint.zip": {
+   "bytes": 18000872,
+   "sha256": "b57bd480bc020bd77c403fc5e83589e344aedb047490539ca3ea76e9037d3ddb"
+  }
+ },
+ "correction": "kaggle CLI 2.2.4 parses the /<version> suffix but does not send it to the server, so both v2/ and v3/ are byte-identical copies of the latest notebook version (version 3) output. Version 3 output still contains the first-round results and adapter, so the authenticity conclusion stands; the directory names v2/v3 do not denote distinct Kaggle versions."
+}

@@ -1,0 +1,10 @@
+{
+  "run_id": "164fb2fa9f61483f86df6366917700f4",
+  "state": "smoke_complete",
+  "exit_code": 0,
+  "model_attempted": true,
+  "successful_api_calls": 2,
+  "report_submitted": false,
+  "hermes_learning": "learn",
+  "review_completed": true
+}

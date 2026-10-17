@@ -1,0 +1,197 @@
+{
+  "reviewer": "development assistant snapshot review; not independent SEO expert",
+  "run_id": "17a6529ac799477a84695baee47b076b",
+  "reviewed_claims": [
+    {
+      "claim_index": 1,
+      "verdict": "supported_with_stated_scope",
+      "note": "首頁metadata與註冊外連核對。",
+      "sources": [
+        {
+          "evidence_id": "e17f3626708a482f806fa4576d83d610",
+          "url": "https://2030.tw/",
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 2,
+      "verdict": "supported_with_stated_scope",
+      "note": "角球指南五項技巧、WG推薦核對，僅限抽樣正文。",
+      "sources": [
+        {
+          "evidence_id": "3d91da099f08499fa9640fc369b61e60",
+          "url": "https://2030.tw/world-cup-2026-predictions/%e8%b6%b3%e7%90%83%e8%a7%92%e7%90%83%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a%e5%9c%96%e8%a7%a3%e8%a7%92%e7%90%83%e8%a6%8f%e5%89%87%e8%88%87-5-%e5%a4%a7%e9%ab%98%e5%8b%9d%e7%8e%87%e9%81%8b/",
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 3,
+      "verdict": "supported_with_stated_scope",
+      "note": "日期/對戰URL與導流支持有條件推論，不證明成效。",
+      "sources": [
+        {
+          "evidence_id": "e17f3626708a482f806fa4576d83d610",
+          "url": "https://2030.tw/",
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "7a3c8747146a4b4e8203a7334625b88f",
+          "url": "https://2030.tw/post-sitemap1.xml",
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "3d91da099f08499fa9640fc369b61e60",
+          "url": "https://2030.tw/world-cup-2026-predictions/%e8%b6%b3%e7%90%83%e8%a7%92%e7%90%83%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a%e5%9c%96%e8%a7%a3%e8%a7%92%e7%90%83%e8%a6%8f%e5%89%87%e8%88%87-5-%e5%a4%a7%e9%ab%98%e5%8b%9d%e7%8e%87%e9%81%8b/",
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 4,
+      "verdict": "supported_with_stated_scope",
+      "note": "站內查詢頁及樣本MLB核對，不外推全站。",
+      "sources": [
+        {
+          "evidence_id": "d715407b0a0b48799557bfe6e0b0f6b4",
+          "url": "https://2030.tw/?s=3A",
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "c3391195acab437988fb117c81374992",
+          "url": "https://2030.tw/mlb/mlb-scores-20260926-tb-vs-phi/",
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "b4caf110538b43dab1460a5e0ba85e38",
+          "url": "https://2030.tw/?s=3A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 5,
+      "verdict": "appropriately_unknown",
+      "note": "未知範圍正確，但缺少baseline已找到的目標詞頁。",
+      "sources": [
+        {
+          "evidence_id": "b4caf110538b43dab1460a5e0ba85e38",
+          "url": "https://2030.tw/?s=3A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 6,
+      "verdict": "supported_with_stated_scope",
+      "note": "MLB標題、日期、URL與回放metadata錯配已核對。",
+      "sources": [
+        {
+          "evidence_id": "c3391195acab437988fb117c81374992",
+          "url": "https://2030.tw/mlb/mlb-scores-20260926-tb-vs-phi/",
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 7,
+      "verdict": "supported_with_stated_scope",
+      "note": "Poisson負數顯示、來源自述、風險提示及賽前占位已核對，未認證其資料。",
+      "sources": [
+        {
+          "evidence_id": "320f0d5c40f84d79be77a837a03818f8",
+          "url": "https://2030.tw/digi_taiwan/jordan-vs-argentina-wc-2026/",
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 8,
+      "verdict": "supported_with_stated_scope",
+      "note": "兩個舊slug目前內容與canonical核對，不推論網域歷史。",
+      "sources": [
+        {
+          "evidence_id": "7a25fc71fac04fc596e193d2ec90e4d8",
+          "url": "https://2030.tw/article/generative-ai-45-chang-shing-lee/",
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "bb3f9d08b7384779a8ccf0c7e8bd4e35",
+          "url": "https://2030.tw/article/sports-everywhere-49-tzyy-yuang-shiang/",
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 9,
+      "verdict": "supported_with_stated_scope",
+      "note": "robots、抽樣metadata與page sitemap路徑核對，沒有把未讀頁內容當事實。",
+      "sources": [
+        {
+          "evidence_id": "ea3568d7173547a8a189a8b3cce5667e",
+          "url": "https://2030.tw/robots.txt",
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "4c3b77047d1244f299320a79f8553faf",
+          "url": "https://2030.tw/page-sitemap.xml",
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "e17f3626708a482f806fa4576d83d610",
+          "url": "https://2030.tw/",
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "b4caf110538b43dab1460a5e0ba85e38",
+          "url": "https://2030.tw/?s=3A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 10,
+      "verdict": "supported_with_stated_scope",
+      "note": "有條件我方競爭方向，不保證ROI。",
+      "sources": [
+        {
+          "evidence_id": "c3391195acab437988fb117c81374992",
+          "url": "https://2030.tw/mlb/mlb-scores-20260926-tb-vs-phi/",
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "320f0d5c40f84d79be77a837a03818f8",
+          "url": "https://2030.tw/digi_taiwan/jordan-vs-argentina-wc-2026/",
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "3d91da099f08499fa9640fc369b61e60",
+          "url": "https://2030.tw/world-cup-2026-predictions/%e8%b6%b3%e7%90%83%e8%a7%92%e7%90%83%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a%e5%9c%96%e8%a7%a3%e8%a7%92%e7%90%83%e8%a6%8f%e5%89%87%e8%88%87-5-%e5%a4%a7%e9%ab%98%e5%8b%9d%e7%8e%87%e9%81%8b/",
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 11,
+      "verdict": "appropriately_unknown",
+      "note": "正確保留off-page未知，不把出站當backlinks。",
+      "sources": [
+        {
+          "evidence_id": "e17f3626708a482f806fa4576d83d610",
+          "url": "https://2030.tw/",
+          "sha256_matches": true
+        }
+      ]
+    }
+  ],
+  "unsupported_material_claims_found": 0,
+  "action_scope_defects_found": 0,
+  "coverage": {
+    "target_keyword_pages_directly_read": false,
+    "on_page": true,
+    "off_page_measured": false,
+    "off_page_unknown_disclosed": true
+  },
+  "note": "Correctly scoped conclusions do not compensate for missing keyword-page discovery; no improvement claim."
+}

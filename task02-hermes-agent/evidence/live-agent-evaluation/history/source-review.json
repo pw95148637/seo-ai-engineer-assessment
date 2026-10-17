@@ -1,0 +1,205 @@
+{
+  "reviewer": "development assistant snapshot review; not independent SEO expert",
+  "run_id": "c6fa5b7873b74c428b21d432421dc672",
+  "reviewed_claims": [
+    {
+      "claim_index": 1,
+      "verdict": "supported_with_stated_scope",
+      "note": "首頁metadata、娛樂城導覽及wg1888網址核對。",
+      "sources": [
+        {
+          "evidence_id": "21df033ec42d4bf59e8f012c20d45d7c",
+          "url": "https://2030.tw/",
+          "status": 200,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 2,
+      "verdict": "supported_with_stated_scope",
+      "note": "角球指南規則、五項觀察及WG推薦核對；未見統計只能限定已讀正文。",
+      "sources": [
+        {
+          "evidence_id": "be2422c316b24658abcbbc42b08f6891",
+          "url": "https://2030.tw/world-cup-2026-predictions/%e8%b6%b3%e7%90%83%e8%a7%92%e7%90%83%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a%e5%9c%96%e8%a7%a3%e8%a7%92%e7%90%83%e8%a6%8f%e5%89%87%e8%88%87-5-%e5%a4%a7%e9%ab%98%e5%8b%9d%e7%8e%87%e9%81%8b/",
+          "status": 200,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 3,
+      "verdict": "supported_with_stated_scope",
+      "note": "有條件內容導流推論，不當商業關係證明。",
+      "sources": [
+        {
+          "evidence_id": "21df033ec42d4bf59e8f012c20d45d7c",
+          "url": "https://2030.tw/",
+          "status": 200,
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "be2422c316b24658abcbbc42b08f6891",
+          "url": "https://2030.tw/world-cup-2026-predictions/%e8%b6%b3%e7%90%83%e8%a7%92%e7%90%83%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a%e5%9c%96%e8%a7%a3%e8%a7%92%e7%90%83%e8%a6%8f%e5%89%87%e8%88%87-5-%e5%a4%a7%e9%ab%98%e5%8b%9d%e7%8e%87%e9%81%8b/",
+          "status": 200,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 4,
+      "verdict": "supported_with_stated_scope",
+      "note": "MLB數據、Tank01自述及圖例description核對；最新僅限本輪首頁所選樣本。",
+      "sources": [
+        {
+          "evidence_id": "4354732e29164f12b15c5bc8221d8c74",
+          "url": "https://2030.tw/taiwanplus/mlb-live-20261016-tb-vs-cle/",
+          "status": 200,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 5,
+      "verdict": "supported_with_stated_scope",
+      "note": "站內搜尋noindex及MLB標題/回放錯配核對。",
+      "sources": [
+        {
+          "evidence_id": "7ec9f8fa9d014babbf83cd84f1d312a5",
+          "url": "https://2030.tw/?s=3A",
+          "status": 200,
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "48592708774d4278a3ca10291de46b98",
+          "url": "https://2030.tw/mlb/mlb-scores-20260926-tb-vs-phi/",
+          "status": 200,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 6,
+      "verdict": "supported_with_stated_scope",
+      "note": "範例頁內容、canonical、robots及sitemap核對。",
+      "sources": [
+        {
+          "evidence_id": "f4c585766d5f43c6b441e28df3dae1ce",
+          "url": "https://2030.tw/sample-page/",
+          "status": 200,
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "7256bfa079324bfa86dc05f31059cc71",
+          "url": "https://2030.tw/page-sitemap.xml",
+          "status": 200,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 7,
+      "verdict": "supported_with_stated_scope",
+      "note": "舊slug與資格賽正文核對，不外推歷史。",
+      "sources": [
+        {
+          "evidence_id": "b30bb3f402644c7ea218ecb681b93cec",
+          "url": "https://2030.tw/article/responsible-ai-008-audrey-tang/",
+          "status": 200,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 8,
+      "verdict": "supported_with_stated_scope",
+      "note": "公開索引資料核對，未作原頁、安全或排名認證。",
+      "sources": [
+        {
+          "evidence_id": "47f92cd0b749466090835970712023df",
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "78eba7d0070040e788d26b9f88e00fb9",
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 9,
+      "verdict": "supported_with_stated_scope",
+      "note": "有條件我方策略推論，不宣稱排名成效。",
+      "sources": [
+        {
+          "evidence_id": "47f92cd0b749466090835970712023df",
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "78eba7d0070040e788d26b9f88e00fb9",
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "be2422c316b24658abcbbc42b08f6891",
+          "url": "https://2030.tw/world-cup-2026-predictions/%e8%b6%b3%e7%90%83%e8%a7%92%e7%90%83%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a%e5%9c%96%e8%a7%a3%e8%a7%92%e7%90%83%e8%a6%8f%e5%89%87%e8%88%87-5-%e5%a4%a7%e9%ab%98%e5%8b%9d%e7%8e%87%e9%81%8b/",
+          "status": 200,
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "48592708774d4278a3ca10291de46b98",
+          "url": "https://2030.tw/mlb/mlb-scores-20260926-tb-vs-phi/",
+          "status": 200,
+          "sha256_matches": true
+        }
+      ]
+    },
+    {
+      "claim_index": 10,
+      "verdict": "appropriately_unknown",
+      "note": "適當保留抽樣限制，但較baseline缺少已可讀的兩個目標詞頁面。",
+      "sources": [
+        {
+          "evidence_id": "7ec9f8fa9d014babbf83cd84f1d312a5",
+          "url": "https://2030.tw/?s=3A",
+          "status": 200,
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "4b6365e3cd334e3b87a0df9077ba1cd0",
+          "url": "https://2030.tw/?s=%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "f5861b35190742b4830c7f9fd0c265ed",
+          "url": "https://2030.tw/post-sitemap1.xml",
+          "status": 200,
+          "sha256_matches": true
+        },
+        {
+          "evidence_id": "f938084e5c39496b911f92f04718281b",
+          "url": "https://2030.tw/post-sitemap2.xml",
+          "status": 200,
+          "sha256_matches": true
+        }
+      ]
+    }
+  ],
+  "unsupported_material_claims_found": 0,
+  "action_scope_defects_found": 0,
+  "coverage": {
+    "target_keyword_pages_directly_read": false,
+    "on_page": true,
+    "off_page_measured": false,
+    "off_page_unknown_disclosed": true
+  },
+  "note": "Lower keyword-page discovery coverage observed than baseline; one run cannot establish that history caused it."
+}

@@ -1,0 +1,263 @@
+{
+  "status": "FAIL",
+  "scope": "In-sample: train12 targets and ID14 were used for training/prompt design. Necessary, not sufficient; holdout untouched.",
+  "selfcheck_first_pass_valid": "12/12",
+  "selfcheck_final_valid": "12/12",
+  "consistency_valid": "3/3",
+  "hard_failures": [
+    {
+      "level": "hard",
+      "code": "RISK_DISCLOSURE_REMOVAL",
+      "detail": "避免使用「必須明白的法律後果」等可能被誤解為保證結果的語句。",
+      "where": "train ID20"
+    },
+    {
+      "level": "hard",
+      "code": "CLEAN_ITEM_FLAGGED",
+      "detail": "YMYL_RISK",
+      "where": "train ID20"
+    },
+    {
+      "level": "hard",
+      "code": "REQUIRED_CODE_MISSED",
+      "detail": "EXPERIENCE_UNVERIFIED",
+      "where": "train ID5"
+    },
+    {
+      "level": "hard",
+      "code": "SEVERE_SCORE_TOO_HIGH",
+      "detail": "55 > 29 (target 12)",
+      "where": "train ID14"
+    },
+    {
+      "level": "hard",
+      "code": "SEVERE_SCORE_TOO_HIGH",
+      "detail": "55 > 29 (target 15)",
+      "where": "train ID7"
+    },
+    {
+      "level": "hard",
+      "code": "SEVERE_SCORE_TOO_HIGH",
+      "detail": "55 > 29 (target 12)",
+      "where": "consistency ID14 T0.2"
+    },
+    {
+      "level": "hard",
+      "code": "SEVERE_SCORE_TOO_HIGH",
+      "detail": "55 > 29 (target 12)",
+      "where": "consistency ID14 T0.5"
+    },
+    {
+      "level": "hard",
+      "code": "SEVERE_SCORE_TOO_HIGH",
+      "detail": "55 > 29 (target 12)",
+      "where": "consistency ID14 T0.8"
+    }
+  ],
+  "soft_flags": [
+    {
+      "level": "soft",
+      "code": "SCORE_FAR_FROM_TARGET",
+      "detail": "85 vs 50",
+      "where": "train ID15"
+    },
+    {
+      "level": "soft",
+      "code": "OFF_TOPIC_SOURCE",
+      "detail": "UNSUPPORTED_CLAIM cites F_APR for Casino",
+      "where": "train ID5"
+    }
+  ],
+  "items": [
+    {
+      "ID": "20",
+      "Score": 85,
+      "target_score": 95,
+      "codes": [
+        "YMYL_RISK"
+      ],
+      "target_codes": [],
+      "flags": "hard:RISK_DISCLOSURE_REMOVAL;hard:CLEAN_ITEM_FLAGGED"
+    },
+    {
+      "ID": "6",
+      "Score": 85,
+      "target_score": 70,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": ""
+    },
+    {
+      "ID": "15",
+      "Score": 85,
+      "target_score": 50,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "YMYL_RISK"
+      ],
+      "flags": "soft:SCORE_FAR_FROM_TARGET"
+    },
+    {
+      "ID": "5",
+      "Score": 55,
+      "target_score": 62,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "EXPERIENCE_UNVERIFIED"
+      ],
+      "flags": "soft:OFF_TOPIC_SOURCE;hard:REQUIRED_CODE_MISSED"
+    },
+    {
+      "ID": "10",
+      "Score": 85,
+      "target_score": 74,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": ""
+    },
+    {
+      "ID": "14",
+      "Score": 55,
+      "target_score": 12,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "YMYL_RISK"
+      ],
+      "flags": "hard:SEVERE_SCORE_TOO_HIGH"
+    },
+    {
+      "ID": "16",
+      "Score": 25,
+      "target_score": 32,
+      "codes": [
+        "STUFFING",
+        "YMYL_RISK"
+      ],
+      "target_codes": [
+        "STUFFING"
+      ],
+      "flags": ""
+    },
+    {
+      "ID": "19",
+      "Score": 25,
+      "target_score": 28,
+      "codes": [
+        "SEO_FALSE",
+        "YMYL_RISK"
+      ],
+      "target_codes": [
+        "SEO_FALSE"
+      ],
+      "flags": ""
+    },
+    {
+      "ID": "7",
+      "Score": 55,
+      "target_score": 15,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "YMYL_RISK"
+      ],
+      "flags": "hard:SEVERE_SCORE_TOO_HIGH"
+    },
+    {
+      "ID": "13",
+      "Score": 55,
+      "target_score": 35,
+      "codes": [
+        "SEO_FALSE",
+        "STUFFING"
+      ],
+      "target_codes": [
+        "SEO_FALSE"
+      ],
+      "flags": ""
+    },
+    {
+      "ID": "18",
+      "Score": 85,
+      "target_score": 78,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": ""
+    },
+    {
+      "ID": "11",
+      "Score": 85,
+      "target_score": 84,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": ""
+    }
+  ],
+  "consistency_runs": [
+    {
+      "temperature": 0.2,
+      "Score": 55,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "hard:SEVERE_SCORE_TOO_HIGH"
+    },
+    {
+      "temperature": 0.5,
+      "Score": 55,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "hard:SEVERE_SCORE_TOO_HIGH"
+    },
+    {
+      "temperature": 0.8,
+      "Score": 55,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "hard:SEVERE_SCORE_TOO_HIGH"
+    }
+  ],
+  "manual_review": [
+    "explanation忠於所引知識卡，未誇大條文、未由片段推論整站",
+    "建議直接修正所指缺失且可執行，未新增無關要求，必要風險揭露仍保留",
+    "三溫度建議語意不互相矛盾",
+    "繁體中文自然、台灣法域正確",
+    "SEO_FALSE／UNSUPPORTED_CLAIM／YMYL_RISK判別合理；分數排序合理（14、7最低，20最高）",
+    "未把缺證據說成造假，未替作者捏造自述經驗"
+  ]
+}

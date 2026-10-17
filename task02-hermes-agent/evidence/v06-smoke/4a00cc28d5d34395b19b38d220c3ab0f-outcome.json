@@ -1,0 +1,8 @@
+{
+  "run_id": "4a00cc28d5d34395b19b38d220c3ab0f",
+  "state": "smoke_complete",
+  "exit_code": 0,
+  "model_attempted": true,
+  "successful_api_calls": 2,
+  "report_submitted": false
+}

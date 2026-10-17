@@ -1,0 +1,60 @@
+{
+  "run_id": "9f82e8c293f24c58a9364f7ef8bf4804",
+  "host": "2030.tw",
+  "mode": "baseline",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": {
+      "call": 8,
+      "evidence_id": "1581b0f3a64f4dbeb41163435229676d",
+      "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    },
+    "3A娛樂城": {
+      "call": 7,
+      "evidence_id": "9a099715dda84aa8ada7ff7e057a3579",
+      "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    }
+  },
+  "both_target_pages_read": true,
+  "tool_calls": 16,
+  "calls_before_first_hit": 6,
+  "calls_until_both_hit": 8,
+  "searches": 4,
+  "failed_searches": 4,
+  "failed_search_kinds": {
+    "no_results": 4,
+    "error": 0
+  },
+  "failed_search_queries": [
+    "site:2030.tw \"娛樂城\" \"3A\"",
+    "site:2030.tw \"3A娛樂城\"",
+    "site:2030.tw 娛樂城 推薦",
+    "2030.tw 娛樂城"
+  ],
+  "http_requests": 11,
+  "http_requests_controller": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 3
+  },
+  "lessons_presented": 0,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 306589,
+    "prompt": 299997,
+    "completion": 6592,
+    "api_calls": 8
+  },
+  "claims": 13,
+  "actions": 5,
+  "blind_id": "a9827eaa"
+}

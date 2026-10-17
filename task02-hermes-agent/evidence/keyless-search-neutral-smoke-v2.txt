@@ -1,0 +1,9 @@
+DDGS search timed out after 30s for query: 'IANA example domains documentation'
+{
+  "test": "neutral infrastructure smoke; not competitor research",
+  "package_available": true,
+  "result": {
+    "success": false,
+    "error": "DuckDuckGo search timed out after 30s — DuckDuckGo may be rate-limiting or slow. Try again later or switch to a different search provider."
+  }
+}

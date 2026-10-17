@@ -1,0 +1,42 @@
+=== 2026-10-16T19:21:11Z step C1
+{"step": "C1", "attempt": 1, "run_id": "59a2dd9f1102455f85ce8da52bb23afa", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T19:24:06Z step L1
+{"step": "L1", "attempt": 1, "run_id": "4eab193d244d46e7ad35dc4e17a52689", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T19:26:45Z step N1
+{"step": "N1", "attempt": 1, "run_id": "e428adfa7f1546ec91be27781dd2a2ea", "state": "research_complete", "settled": true, "learned": true, "isolation": []}
+=== 2026-10-16T19:30:45Z step LF
+=== 2026-10-16T19:30:45Z step NF
+{"step": "NF", "attempt": 1, "run_id": "22d3c84363f24382ab87d5b363ac33db", "state": "feedback_complete", "settled": true, "learned": true, "isolation": []}
+=== 2026-10-16T19:31:15Z step L2
+{"step": "L2", "attempt": 1, "run_id": "841f72b2768a4a97aeac0d63e3c90f28", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T19:34:12Z step N2
+{"step": "N2", "attempt": 1, "run_id": "1d20255abf0f4796af2f0defcd9212ed", "state": "research_complete", "settled": true, "learned": true, "isolation": []}
+=== 2026-10-16T19:37:46Z step C2
+{"step": "C2", "attempt": 1, "run_id": "39dc5f0eeec740c3bce617641343c041", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T19:39:52Z step N3
+{"step": "N3", "attempt": 1, "run_id": "b7fc7061cbc349c3b557f50e08635401", "state": "research_complete", "settled": true, "learned": true, "isolation": []}
+=== 2026-10-16T19:43:11Z step C3
+{"step": "C3", "attempt": 1, "run_id": "ab5fafed8b764a29a6861aa61022ef2c", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T19:45:58Z step L3
+{"step": "L3", "attempt": 1, "run_id": "dd2b2f8aa60346e89f56a75ddeb24267", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T19:48:36Z step N4
+{"step": "N4", "attempt": 1, "run_id": "59aa370311b44917a5c484e41dae1c91", "state": "research_complete", "settled": true, "learned": true, "isolation": []}
+=== 2026-10-16T19:52:07Z step L4
+{"step": "L4", "attempt": 1, "run_id": "08f13ba170fb4f7cb18c362153a6e994", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T19:55:20Z step C4
+{"step": "C4", "attempt": 1, "run_id": "b482709bbaca4f65b0b20465f42d1af8", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T19:58:17Z step C5
+{"step": "C5", "attempt": 1, "run_id": "1a5155a085c248e7aa9e2378d490c80d", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T20:00:48Z step L5
+{"step": "L5", "attempt": 1, "run_id": "d8594fca7f904132a15b9f868b38353a", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T20:03:30Z step N5
+{"step": "N5", "attempt": 1, "run_id": "8a348cc55915449388cd34e977bf51f4", "state": "research_complete", "settled": true, "learned": true, "isolation": []}
+=== 2026-10-16T20:06:57Z step NZ
+=== 2026-10-16T20:06:58Z step LZ
+=== 2026-10-16T20:07:01Z step HN
+{"step": "HN", "attempt": 1, "run_id": "5982df83462948d79e0295191f4a11b0", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T20:09:44Z step HC
+{"step": "HC", "attempt": 1, "run_id": "57c0bd73b42041b9be802b9154016f00", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+=== 2026-10-16T20:12:27Z step HL
+{"step": "HL", "attempt": 1, "run_id": "df105e3dbab14f9cb1cc8e895dd5fee1", "state": "research_complete", "settled": true, "learned": null, "isolation": []}
+ALL_STEPS_DONE 2026-10-16T20:15:22Z

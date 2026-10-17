@@ -1,0 +1,1 @@
+{"model_id":"Qwen/Qwen3-8B","model_revision":"b968826d9c46dd6066d109eabc6255188de91218","max_length":3072,"context_limit":4096,"max_new_tokens":768,"epochs":2,"learning_rate":0.0001,"seed":42,"status":"v2 train-only configuration. Revision pinned from the round-1 Kaggle preflight (outputs/model.json). No holdout-based changes."}

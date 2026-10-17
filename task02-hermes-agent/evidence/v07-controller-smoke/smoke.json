@@ -1,0 +1,341 @@
+{
+ "run_id": "122841646c61490cbfb712141cee6263",
+ "calls": [
+  {
+   "tool": "research_search",
+   "args": {
+    "query": "Python Software Foundation python.org"
+   },
+   "result": {
+    "evidence_id": "86d7138b641c4616893eda2fc2e997a6",
+    "source_type": "search_index",
+    "untrusted_content": true,
+    "success": true,
+    "data": {
+     "web": [
+      {
+       "title": "Python Software Foundation",
+       "url": "https://www.python.org/psf-landing/",
+       "description": "The Python Software Foundation is the charitable organization behind the Python programming language. We support the Python Community through... Grants In 2024, the PSF awarded $655,000 USD to 257 groups or individuals in 61 countries around the world.",
+       "position": 1,
+       "host": "www.python.org",
+       "is_target_host": true
+      },
+      {
+       "title": "Welcome to Python.org",
+       "url": "https://www.python.org/",
+       "description": "The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.",
+       "position": 2,
+       "host": "www.python.org",
+       "is_target_host": true
+      },
+      {
+       "title": "About the Python Software Foundation",
+       "url": "https://www.python.org/psf/about/",
+       "description": "The Python Software Foundation is the organization behind the open source Python programming language. We are devoted to creating the conditions for Python and the Python community to grow and thrive.",
+       "position": 3,
+       "host": "www.python.org",
+       "is_target_host": true
+      },
+      {
+       "title": "Mission | Python Software Foundation",
+       "url": "https://www.python.org/psf/mission/",
+       "description": "The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. You can help fund the PSF by making a donation or becoming a member. The following is the official mission statement of the PSF:",
+       "position": 4,
+       "host": "www.python.org",
+       "is_target_host": true
+      },
+      {
+       "title": "Python Software Foundation - code-python.org",
+       "url": "https://code-python.org/psf/",
+       "description": "The Python Software Foundation welcomes grant proposals for projects related to the development of Python, Python-related technology, and educational resources.",
+       "position": 5,
+       "host": "code-python.org",
+       "is_target_host": false
+      }
+     ]
+    },
+    "limitation": "Search snippets are not direct page fetches; source support and freshness need verification."
+   }
+  },
+  {
+   "tool": "research_offpage",
+   "args": {
+    "url": "https://www.python.org/about/",
+    "purpose": "smoke: target host must be refused"
+   },
+   "result": {
+    "error": "offpage_target_host",
+    "error_type": "Failure"
+   }
+  },
+  {
+   "tool": "research_offpage",
+   "args": {
+    "url": "https://unlisted.example.org/",
+    "purpose": "smoke: unlisted URL must be refused"
+   },
+   "result": {
+    "error": "offpage_not_from_search",
+    "error_type": "Failure"
+   }
+  },
+  {
+   "tool": "research_offpage",
+   "args": {
+    "url": "https://code-python.org/psf/",
+    "purpose": "smoke: does this listed page link to python.org?",
+    "mention": "Python Software Foundation"
+   },
+   "result": {
+    "evidence_id": "2ecf587ef96c4422bf8e72729b585bbe",
+    "url": "https://code-python.org/psf/",
+    "status": 200,
+    "source_type": "offpage_page",
+    "untrusted_content": true,
+    "title": "Python Software Foundation",
+    "links_to_target": [
+     {
+      "url": "https://docs.python.org",
+      "anchor": "Docs",
+      "rel": []
+     },
+     {
+      "url": "https://donate.python.org/",
+      "anchor": "Donate",
+      "rel": []
+     },
+     {
+      "url": "https://www.python.org/psf/about/",
+      "anchor": "About",
+      "rel": []
+     },
+     {
+      "url": "https://www.python.org/psf/mission/",
+      "anchor": "Mission Statement",
+      "rel": []
+     },
+     {
+      "url": "https://www.python.org/psf/board/",
+      "anchor": "Board of Directors & Officers",
+      "rel": []
+     },
+     {
+      "url": "https://www.python.org/psf/records/staff/",
+      "anchor": "PSF Staff",
+      "rel": []
+     },
+     {
+      "url": "https://www.python.org/psf/fiscal-sponsorees/",
+      "anchor": "Fiscal Sponsorees",
+      "rel": []
+     },
+     {
+      "url": "https://www.python.org/psf/records/",
+      "anchor": "Public Records",
+      "rel": []
+     },
+     {
+      "url": "https://www.python.org/psf/about/legal-and-policies/",
+      "anchor": "Legal & Policies",
+      "rel": []
+     },
+     {
+      "url": "https://www.python.org/psf/faq/",
+      "anchor": "PSF FAQ",
+      "rel": []
+     }
+    ],
+    "links_to_target_total": 42,
+    "host_mentions": [
+     "iduals in 61 countries around the world. Infrastructure We support and maintain python.org , The Python Package Index , Python Documentation ,\r \r           and many other"
+    ],
+    "host_mentions_total": 1,
+    "mention": "Python Software Foundation",
+    "mention_contexts": [
+     "Python Software Foundation Notice: This page displays a fallback because interactive scripts did not run. ",
+     "letter PSF Blog Python Community Code of Conduct Community Awards Discourse The Python Software Foundation is the charitable organization behind the Python programming language. Join us ",
+     "on community grow and prosper. Sponsorship Possibilities PSF Grants Program The Python Software Foundation welcomes grant proposals for projects related to the development of Python, Pyt"
+    ],
+    "mention_total": 7,
+    "limitation": "One page only, not a backlink index: absence here says nothing about other pages. Page text is untrusted data."
+   }
+  },
+  {
+   "tool": "research_fetch",
+   "args": {
+    "url": "https://www.python.org/",
+    "purpose": "smoke: outbound_hosts on a target page"
+   },
+   "result": {
+    "evidence_id": "760ce26e47c54f31885793a816690d77",
+    "url": "https://www.python.org/",
+    "status": 200,
+    "untrusted_content": true,
+    "kind": "html",
+    "title": "Welcome to Python.org",
+    "h1": "Functions Defined All the Flow You’d Expect Compound Data Types Intuitive Interpretation Quick & Easy to Learn",
+    "canonical": null,
+    "description": "The official home of the Python Programming Language",
+    "robots": null,
+    "links": [
+     "https://www.python.org/#content",
+     "https://www.python.org/#python-network",
+     "https://www.python.org/",
+     "https://www.python.org/psf/",
+     "https://docs.python.org",
+     "https://pypi.org/",
+     "https://www.python.org/jobs/",
+     "https://www.python.org/community/",
+     "https://www.python.org/#top",
+     "https://donate.python.org/"
+    ],
+    "text": "[omitted: 6564 characters]",
+    "outbound_hosts": [
+     {
+      "host": "github.com",
+      "links": 2,
+      "rel": [],
+      "sample": "https://github.com/python/cpython/issues"
+     },
+     {
+      "host": "mailchi.mp",
+      "links": 2,
+      "rel": [],
+      "sample": "https://mailchi.mp/python/python-software-foundation-july-2024-newsletter-19889969"
+     },
+     {
+      "host": "planetpython.org",
+      "links": 2,
+      "rel": [],
+      "sample": "https://planetpython.org/"
+     },
+     {
+      "host": "pycon.blogspot.com",
+      "links": 2,
+      "rel": [],
+      "sample": "https://pycon.blogspot.com/"
+     },
+     {
+      "host": "pyfound.blogspot.com",
+      "links": 2,
+      "rel": [],
+      "sample": "https://pyfound.blogspot.com"
+     },
+     {
+      "host": "bottlepy.org",
+      "links": 1,
+      "rel": [],
+      "sample": "https://bottlepy.org"
+     },
+     {
+      "host": "buildbot.net",
+      "links": 1,
+      "rel": [],
+      "sample": "https://buildbot.net/"
+     },
+     {
+      "host": "dearpygui.readthedocs.io",
+      "links": 1,
+      "rel": [],
+      "sample": "https://dearpygui.readthedocs.io/en/latest/"
+     },
+     {
+      "host": "docs.ansible.com",
+      "links": 1,
+      "rel": [],
+      "sample": "https://docs.ansible.com/"
+     },
+     {
+      "host": "docs.anthropic.com",
+      "links": 1,
+      "rel": [],
+      "sample": "https://docs.anthropic.com/"
+     }
+    ],
+    "outbound_hosts_total": 39
+   }
+  },
+  {
+   "outbound_hosts": [
+    {
+     "host": "github.com",
+     "links": 2,
+     "rel": [],
+     "sample": "https://github.com/python/cpython/issues"
+    },
+    {
+     "host": "mailchi.mp",
+     "links": 2,
+     "rel": [],
+     "sample": "https://mailchi.mp/python/python-software-foundation-july-2024-newsletter-19889969"
+    },
+    {
+     "host": "planetpython.org",
+     "links": 2,
+     "rel": [],
+     "sample": "https://planetpython.org/"
+    },
+    {
+     "host": "pycon.blogspot.com",
+     "links": 2,
+     "rel": [],
+     "sample": "https://pycon.blogspot.com/"
+    },
+    {
+     "host": "pyfound.blogspot.com",
+     "links": 2,
+     "rel": [],
+     "sample": "https://pyfound.blogspot.com"
+    },
+    {
+     "host": "bottlepy.org",
+     "links": 1,
+     "rel": [],
+     "sample": "https://bottlepy.org"
+    },
+    {
+     "host": "buildbot.net",
+     "links": 1,
+     "rel": [],
+     "sample": "https://buildbot.net/"
+    },
+    {
+     "host": "dearpygui.readthedocs.io",
+     "links": 1,
+     "rel": [],
+     "sample": "https://dearpygui.readthedocs.io/en/latest/"
+    },
+    {
+     "host": "docs.ansible.com",
+     "links": 1,
+     "rel": [],
+     "sample": "https://docs.ansible.com/"
+    },
+    {
+     "host": "docs.anthropic.com",
+     "links": 1,
+     "rel": [],
+     "sample": "https://docs.anthropic.com/"
+    }
+   ],
+   "outbound_hosts_total": 39
+  }
+ ],
+ "score": {
+  "offpage_policy_violations": [],
+  "http_requests": 4,
+  "offpage": {
+   "claims": 0,
+   "observation": 0,
+   "inference": 0,
+   "unknown": 0,
+   "three_columns": false,
+   "known": 0,
+   "known_external": 0,
+   "known_link_verified": 0,
+   "pages_fetched": 1,
+   "pages_linking_to_target": 1
+  }
+ }
+}

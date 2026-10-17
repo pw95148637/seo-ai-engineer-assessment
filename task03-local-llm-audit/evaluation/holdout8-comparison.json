@@ -1,0 +1,2435 @@
+{
+ "scope": "holdout8, frozen v3b (lock 8ab9b7ae…), adapter vs same-prompt no-adapter base, greedy decoding. Reference = independent AI labels written before reading any model output; not company gold, not human reviewed. n=8: descriptive only, no general accuracy claim.",
+ "inputs": {
+  "kaggle-retrieved/soulo-work03-v3-eval/work03/data/holdout8.csv": "818b491f19541c7703cc311afd498fe1169c223a1c03fb4902e275b46b7a9106",
+  "kaggle-retrieved/soulo-work03-v3-eval/work03/outputs/holdout.jsonl": "3ba15b6637299193ea2234836bbd9ce8478200af428acda950afd2ed4c112d2e",
+  "kaggle-retrieved/soulo-work03-v3-eval/work03/outputs/holdout_base.jsonl": "5509e8136d91f040b29658600aa44c8e5ce74bd0761d6e7ce406e3b395df87b4",
+  "evaluation/holdout8-reference.jsonl": "a6b8589c078f30767a7c8fb129e956f79b7560665cdbad2e907b6f0bd566a699",
+  "evaluation/holdout8-review.csv": "1df6a1700601e1a6d05cea261b4ecef2eff8c413a5abfce00c84594c22389287"
+ },
+ "contract_validity": {
+  "holdout": {
+   "adapter": {
+    "first_pass": "8/8",
+    "final": "8/8",
+    "repairs_needed": 0,
+    "prompt_count_rules_met": "7/8",
+    "prompt_count_violations": {
+     "8": [
+      "YMYL_RISK cites 3 cards > 2"
+     ]
+    },
+    "pretty_printed_raw": "8/8"
+   },
+   "base": {
+    "first_pass": "8/8",
+    "final": "8/8",
+    "repairs_needed": 0,
+    "prompt_count_rules_met": "6/8",
+    "prompt_count_violations": {
+     "2": [
+      "3 advice > 2"
+     ],
+     "8": [
+      "YMYL_RISK cites 3 cards > 2"
+     ]
+    },
+    "pretty_printed_raw": "8/8"
+   }
+  },
+  "train_rounds": {
+   "v1": {
+    "consistency_parsed": "3/3",
+    "consistency_current_contract": "0/3"
+   },
+   "v2": {
+    "own_contract_first": "12/12",
+    "own_contract_final": "12/12",
+    "current_contract_final": "0/12",
+    "consistency_valid": "3/3",
+    "consistency_current_contract": "0/3"
+   },
+   "v3b_adapter": {
+    "own_contract_first": "11/12",
+    "own_contract_final": "11/12",
+    "current_contract_final": "11/12",
+    "consistency_valid": "3/3",
+    "consistency_current_contract": "3/3"
+   },
+   "v3b_base": {
+    "own_contract_first": "12/12",
+    "own_contract_final": "12/12",
+    "current_contract_final": "12/12",
+    "consistency_valid": "3/3",
+    "consistency_current_contract": "3/3"
+   }
+  },
+  "note": "own_contract = the contract that round ran with (v1/v2 had no severity field); current_contract = re-checked against the frozen v3 contract. Holdout ran with the v3 contract. prompt_count_rules = limits written in the prompt but not enforced by the contract. Validity is format, not accuracy."
+ },
+ "summary": {
+  "adapter": {
+   "n": 8,
+   "code_set_exact_main": 4,
+   "required_codes_all_hit": 5,
+   "items_with_required_codes": 6,
+   "severity_match_main": 1,
+   "severity_match_main_or_alt": 4,
+   "severity_higher_than_main": 7,
+   "severity_lower_than_main": 0,
+   "score_in_main_range": 1,
+   "score_in_main_or_alt_range": 4,
+   "score_mae_vs_typical": 27.0,
+   "score_mean_signed_error_vs_typical": -27.0,
+   "mechanical_levels": {
+    "alternative_reading_match": [
+     "12",
+     "9",
+     "4"
+    ],
+    "clean_item_flagged": [
+     "17",
+     "8"
+    ],
+    "codes_hit_severity_or_score_off": [
+     "1"
+    ],
+    "main_reading_match": [
+     "2"
+    ],
+    "required_code_missed": [
+     "3"
+    ]
+   },
+   "code_precision_recall_strict": {
+    "YMYL_RISK": {
+     "support": 2,
+     "predicted_counted": 6,
+     "tp": 2,
+     "fp": 4,
+     "fn": 0,
+     "precision": 0.333,
+     "recall": 1.0
+    },
+    "EXPERIENCE_UNVERIFIED": {
+     "support": 1,
+     "predicted_counted": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    "STUFFING": {
+     "support": 1,
+     "predicted_counted": 0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 1,
+     "precision": null,
+     "recall": 0.0
+    },
+    "SEO_FALSE": {
+     "support": 2,
+     "predicted_counted": 2,
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    "UNSUPPORTED_CLAIM": {
+     "support": 0,
+     "predicted_counted": 0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": null,
+     "recall": null
+    },
+    "micro": {
+     "tp": 5,
+     "fp": 4,
+     "fn": 1,
+     "precision": 0.556,
+     "recall": 0.833
+    }
+   },
+   "code_precision_recall_alt_codes_ignored": {
+    "YMYL_RISK": {
+     "support": 2,
+     "predicted_counted": 5,
+     "tp": 2,
+     "fp": 3,
+     "fn": 0,
+     "precision": 0.4,
+     "recall": 1.0
+    },
+    "EXPERIENCE_UNVERIFIED": {
+     "support": 1,
+     "predicted_counted": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    "STUFFING": {
+     "support": 1,
+     "predicted_counted": 0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 1,
+     "precision": null,
+     "recall": 0.0
+    },
+    "SEO_FALSE": {
+     "support": 2,
+     "predicted_counted": 2,
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    "UNSUPPORTED_CLAIM": {
+     "support": 0,
+     "predicted_counted": 0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": null,
+     "recall": null
+    },
+    "micro": {
+     "tp": 5,
+     "fp": 3,
+     "fn": 1,
+     "precision": 0.625,
+     "recall": 0.833
+    }
+   }
+  },
+  "base": {
+   "n": 8,
+   "code_set_exact_main": 2,
+   "required_codes_all_hit": 5,
+   "items_with_required_codes": 6,
+   "severity_match_main": 2,
+   "severity_match_main_or_alt": 5,
+   "severity_higher_than_main": 6,
+   "severity_lower_than_main": 0,
+   "score_in_main_range": 1,
+   "score_in_main_or_alt_range": 4,
+   "score_mae_vs_typical": 21.25,
+   "score_mean_signed_error_vs_typical": -17.0,
+   "mechanical_levels": {
+    "alternative_reading_match": [
+     "12",
+     "9",
+     "4"
+    ],
+    "clean_item_flagged": [
+     "17",
+     "8"
+    ],
+    "codes_hit_severity_or_score_off": [
+     "2",
+     "1"
+    ],
+    "required_code_missed": [
+     "3"
+    ]
+   },
+   "code_precision_recall_strict": {
+    "YMYL_RISK": {
+     "support": 2,
+     "predicted_counted": 6,
+     "tp": 2,
+     "fp": 4,
+     "fn": 0,
+     "precision": 0.333,
+     "recall": 1.0
+    },
+    "EXPERIENCE_UNVERIFIED": {
+     "support": 1,
+     "predicted_counted": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    "STUFFING": {
+     "support": 1,
+     "predicted_counted": 0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 1,
+     "precision": null,
+     "recall": 0.0
+    },
+    "SEO_FALSE": {
+     "support": 2,
+     "predicted_counted": 3,
+     "tp": 2,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.667,
+     "recall": 1.0
+    },
+    "UNSUPPORTED_CLAIM": {
+     "support": 0,
+     "predicted_counted": 1,
+     "tp": 0,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": null
+    },
+    "micro": {
+     "tp": 5,
+     "fp": 6,
+     "fn": 1,
+     "precision": 0.455,
+     "recall": 0.833
+    }
+   },
+   "code_precision_recall_alt_codes_ignored": {
+    "YMYL_RISK": {
+     "support": 2,
+     "predicted_counted": 5,
+     "tp": 2,
+     "fp": 3,
+     "fn": 0,
+     "precision": 0.4,
+     "recall": 1.0
+    },
+    "EXPERIENCE_UNVERIFIED": {
+     "support": 1,
+     "predicted_counted": 1,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    "STUFFING": {
+     "support": 1,
+     "predicted_counted": 0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 1,
+     "precision": null,
+     "recall": 0.0
+    },
+    "SEO_FALSE": {
+     "support": 2,
+     "predicted_counted": 3,
+     "tp": 2,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.667,
+     "recall": 1.0
+    },
+    "UNSUPPORTED_CLAIM": {
+     "support": 0,
+     "predicted_counted": 0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": null,
+     "recall": null
+    },
+    "micro": {
+     "tp": 5,
+     "fp": 4,
+     "fn": 1,
+     "precision": 0.556,
+     "recall": 0.833
+    }
+   }
+  }
+ },
+ "verdicts": {
+  "adapter": {
+   "準確": [
+    "2",
+    "9",
+    "4"
+   ],
+   "部分準確": [
+    "12",
+    "1"
+   ],
+   "偏差": [
+    "3",
+    "17",
+    "8"
+   ]
+  },
+  "base": {
+   "準確": [
+    "9",
+    "4"
+   ],
+   "部分準確": [
+    "2",
+    "12",
+    "1"
+   ],
+   "偏差": [
+    "3",
+    "17",
+    "8"
+   ]
+  }
+ },
+ "review_scores": {
+  "adapter": {
+   "mean_source_support_0_2": 0.88,
+   "mean_advice_actionability_0_2": 1.25,
+   "advice_0": [
+    "3"
+   ],
+   "advice_2": [
+    "2",
+    "9",
+    "4"
+   ]
+  },
+  "base": {
+   "mean_source_support_0_2": 0.75,
+   "mean_advice_actionability_0_2": 1.0,
+   "advice_0": [
+    "3",
+    "17"
+   ],
+   "advice_2": [
+    "9",
+    "4"
+   ]
+  }
+ },
+ "review_note": "verdicts and 0–2 scores are an AI review written after reading the outputs (evaluation/holdout8-review.csv), not human gold",
+ "targeted_checks": {
+  "adapter": {
+   "seo_false_detected": {
+    "4": true,
+    "9": true
+   },
+   "fake_experience_id12": {
+    "experience_unverified": true,
+    "called_fake": false,
+    "also_ymyl": true,
+    "severity": "major",
+    "score": 45
+   },
+   "ymyl_on_clean_8_17": {
+    "8": true,
+    "17": true
+   },
+   "ymyl_on_items_without_ymyl_in_reference": [
+    "12",
+    "17",
+    "3",
+    "8"
+   ],
+   "items_without_ymyl_in_reference": [
+    "12",
+    "17",
+    "3",
+    "4",
+    "8",
+    "9"
+   ],
+   "stuffing_id3": false,
+   "guarantee_id2_critical": true
+  },
+  "base": {
+   "seo_false_detected": {
+    "4": true,
+    "9": true
+   },
+   "fake_experience_id12": {
+    "experience_unverified": true,
+    "called_fake": false,
+    "also_ymyl": true,
+    "severity": "major",
+    "score": 50
+   },
+   "ymyl_on_clean_8_17": {
+    "8": true,
+    "17": true
+   },
+   "ymyl_on_items_without_ymyl_in_reference": [
+    "12",
+    "17",
+    "3",
+    "8"
+   ],
+   "items_without_ymyl_in_reference": [
+    "12",
+    "17",
+    "3",
+    "4",
+    "8",
+    "9"
+   ],
+   "stuffing_id3": false,
+   "guarantee_id2_critical": true
+  }
+ },
+ "adapter_vs_base": {
+  "same_code_set": 6,
+  "same_severity": 7,
+  "same_score": 4,
+  "abs_score_diff_le_5": 6,
+  "differing_items": [
+   {
+    "ID": "2",
+    "adapter": [
+     0,
+     "critical",
+     [
+      "YMYL_RISK"
+     ]
+    ],
+    "base": [
+     25,
+     "critical",
+     [
+      "YMYL_RISK",
+      "SEO_FALSE"
+     ]
+    ]
+   },
+   {
+    "ID": "1",
+    "adapter": [
+     0,
+     "critical",
+     [
+      "YMYL_RISK"
+     ]
+    ],
+    "base": [
+     45,
+     "major",
+     [
+      "YMYL_RISK",
+      "UNSUPPORTED_CLAIM"
+     ]
+    ]
+   }
+  ],
+  "mean_explanation_similarity": 0.524,
+  "mean_advice_similarity": 0.394
+ },
+ "auto_flag_audit": [
+  {
+   "system": "adapter",
+   "ID": "12",
+   "flag": "hard:FALSE_EXPERIENCE",
+   "self_report_regex_on_article": false,
+   "reference_codes": [
+    "EXPERIENCE_UNVERIFIED"
+   ],
+   "reference_quote": "這是我實際註冊後最直觀的感受",
+   "checker_false_positive": true,
+   "cause": "SELF_REPORT regex (fixed on train12) lists 實測/心得/體驗… but not 註冊/感受, so 「我實際註冊後最直觀的感受」 is not recognised as a self-report"
+  },
+  {
+   "system": "base",
+   "ID": "12",
+   "flag": "hard:FALSE_EXPERIENCE",
+   "self_report_regex_on_article": false,
+   "reference_codes": [
+    "EXPERIENCE_UNVERIFIED"
+   ],
+   "reference_quote": "這是我實際註冊後最直觀的感受",
+   "checker_false_positive": true,
+   "cause": "SELF_REPORT regex (fixed on train12) lists 實測/心得/體驗… but not 註冊/感受, so 「我實際註冊後最直觀的感受」 is not recognised as a self-report"
+  }
+ ],
+ "risk_disclosure_checker_frozen_vs_eval": {
+  "advice_checked": 21,
+  "differences": [],
+  "flagged_by_eval": []
+ },
+ "chinese_usage": {
+  "mainland_terms_in_explanation_and_advice": {
+   "adapter": {
+    "total": 5,
+    "items": 2,
+    "terms": {
+     "質量": {
+      "taiwan": "品質",
+      "count": 2,
+      "ids": [
+       "9",
+       "4"
+      ]
+     },
+     "搜索": {
+      "taiwan": "搜尋",
+      "count": 1,
+      "ids": [
+       "9"
+      ]
+     },
+     "用戶": {
+      "taiwan": "使用者",
+      "count": 1,
+      "ids": [
+       "4"
+      ]
+     },
+     "鏈接": {
+      "taiwan": "連結",
+      "count": 1,
+      "ids": [
+       "4"
+      ]
+     }
+    }
+   },
+   "base": {
+    "total": 3,
+    "items": 1,
+    "terms": {
+     "搜索": {
+      "taiwan": "搜尋",
+      "count": 2,
+      "ids": [
+       "9"
+      ]
+     },
+     "用戶": {
+      "taiwan": "使用者",
+      "count": 1,
+      "ids": [
+       "9"
+      ]
+     }
+    }
+   }
+  },
+  "simplified_char_flags": {
+   "adapter": 0,
+   "base": 0
+  },
+  "non_tw_legal_term_flags": {
+   "adapter": 0,
+   "base": 0
+  }
+ },
+ "facts": {
+  "id3_keyword_occurrences": 5,
+  "id3_snippet_chars": 47
+ },
+ "training_rounds": {
+  "v1": {
+   "steps": 6,
+   "train_loss": 2.498,
+   "changed_adapter_tensors": 144,
+   "note": "Only the ID14 three-temperature run exists for v1 (no train12 self-check); flags recomputed with the current checker",
+   "consistency_code_jaccard": [
+    1,
+    1,
+    1
+   ],
+   "consistency_parsed": "3/3",
+   "consistency_current_contract": "0/3",
+   "consistency_id14_scores": [
+    59,
+    55,
+    55
+   ],
+   "id14_codes": [
+    [
+     "YMYL_RISK",
+     "UNSUPPORTED_CLAIM",
+     "EXPERIENCE_UNVERIFIED"
+    ],
+    [
+     "YMYL_RISK",
+     "UNSUPPORTED_CLAIM",
+     "EXPERIENCE_UNVERIFIED"
+    ],
+    [
+     "YMYL_RISK",
+     "UNSUPPORTED_CLAIM",
+     "EXPERIENCE_UNVERIFIED"
+    ]
+   ],
+   "max_sources_per_reason": 5,
+   "id14_flag_counts": {
+    "hard:SOURCE_DUMP": 2,
+    "hard:FALSE_EXPERIENCE": 3,
+    "soft:ADVICE_PADDING": 3,
+    "hard:SEVERE_SCORE_TOO_HIGH": 3,
+    "hard:CROSS_DOMAIN_LAW": 1,
+    "hard:RISK_DISCLOSURE_REMOVAL": 1,
+    "soft:OPINION_LABEL_AS_FIX": 1
+   }
+  },
+  "v2": {
+   "selfcheck_file": "train_selfcheck.jsonl",
+   "own_contract_first": "12/12",
+   "own_contract_final": "12/12",
+   "current_contract_final": "0/12",
+   "consistency_valid": "3/3",
+   "consistency_current_contract": "0/3",
+   "consistency_id14_scores": [
+    55,
+    55,
+    55
+   ],
+   "consistency_code_jaccard": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "consistency_advice": [
+    [
+     "修正「銀行不會隨便拍賣你的房子」的表述，應明確說明抵押物可能被法拍的法律程序。",
+     "刪除「房貸二胎沒風險」的主張，或補充具體的法律依據與風險說明。",
+     "避免使用「債務隨便還都可以」等語句，應強調貸款還款責任與潛在風險。"
+    ],
+    [
+     "修正「銀行不會隨便拍賣你的房子」的表述，應明確說明抵押物可能被法拍的法律風險，並引用民法第873條。",
+     "刪除「房貸二胎沒風險」的絕對化主張，改為「房貸二胎涉及財務風險，建議審慎評估自身還款能力」。",
+     "補充貸款條件、利率及還款方式等資訊，以符合F_APR及TW_874的法律與市場利率相關規定。"
+    ],
+    [
+     "修正風險揭露，說明抵押物可能被拍賣的法律程序與條件。",
+     "避免使用「沒風險」或「銀行不會隨便拍賣」等絕對化表述，改為說明貸款風險與法律程序。",
+     "引用具體法律條文或案例支持主張，以增強內容的可信度與準確性。"
+    ]
+   ],
+   "hard_excl_contract": [
+    "consistency ID14 T0.2:SEVERE_SCORE_TOO_HIGH",
+    "consistency ID14 T0.5:SEVERE_SCORE_TOO_HIGH",
+    "consistency ID14 T0.8:SEVERE_SCORE_TOO_HIGH",
+    "train ID14:SEVERE_SCORE_TOO_HIGH",
+    "train ID20:CLEAN_ITEM_FLAGGED",
+    "train ID20:RISK_DISCLOSURE_REMOVAL",
+    "train ID5:REQUIRED_CODE_MISSED",
+    "train ID7:SEVERE_SCORE_TOO_HIGH",
+    "train12:YMYL_OVERFLAG"
+   ],
+   "flag_counts": {
+    "hard:CONTRACT_INVALID": 15,
+    "hard:RISK_DISCLOSURE_REMOVAL": 1,
+    "hard:CLEAN_ITEM_FLAGGED": 1,
+    "hard:REQUIRED_CODE_MISSED": 1,
+    "hard:SEVERE_SCORE_TOO_HIGH": 5,
+    "hard:YMYL_OVERFLAG": 1,
+    "soft:ADVICE_PADDING": 15,
+    "soft:YMYL_NOT_IN_TARGET": 6,
+    "soft:SCORE_BEFORE_REASONS": 15,
+    "soft:SCORE_FAR_FROM_TARGET": 1,
+    "soft:OFF_TOPIC_SOURCE": 1,
+    "soft:YMYL_BORDERLINE": 2
+   },
+   "distinct_scores": [
+    25,
+    55,
+    85
+   ],
+   "score_mae_vs_targets": 16.6,
+   "score_mae_n": 12,
+   "id14_id7_scores": {
+    "14": 55,
+    "7": 55
+   },
+   "ymyl_on_clear": "6/7",
+   "mainland_terms": {
+    "total": 2,
+    "items": 1,
+    "terms": {
+     "搜索": {
+      "taiwan": "搜尋",
+      "count": 1,
+      "ids": [
+       "19"
+      ]
+     },
+     "用戶": {
+      "taiwan": "使用者",
+      "count": 1,
+      "ids": [
+       "19"
+      ]
+     }
+    }
+   },
+   "steps": 6,
+   "train_loss": 2.533,
+   "train_runtime_s": 197.0,
+   "changed_adapter_tensors": 144
+  },
+  "v3b_adapter": {
+   "selfcheck_file": "train_selfcheck.jsonl",
+   "own_contract_first": "11/12",
+   "own_contract_final": "11/12",
+   "current_contract_final": "11/12",
+   "consistency_valid": "3/3",
+   "consistency_current_contract": "3/3",
+   "consistency_id14_scores": [
+    0,
+    0,
+    0
+   ],
+   "consistency_code_jaccard": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "consistency_advice": [
+    [
+     "建議修改為：房貸二胎存在法律風險，銀行在特定條件下可能拍賣抵押物，請務必了解相關法律條文及貸款條款，並諮詢專業法律或財務顧問。"
+    ],
+    [
+     "修改文章中「房貸二胎沒風險」的表述，避免否認或淡化法律後果，並補充抵押物拍賣的法律風險，例如引用民法873條的內容，說明債權到期未受清償時抵押物可能被拍賣，以降低法律風險。"
+    ],
+    [
+     "建議補充房貸二胎的法律風險，例如抵押物拍賣的可能性與程序，並強調貸款需負擔的責任與潛在財務後果。"
+    ]
+   ],
+   "hard_excl_contract": [
+    "train ID20:CLEAN_ITEM_FLAGGED",
+    "train ID5:REQUIRED_CODE_MISSED",
+    "train ID7:INVALID_JSON",
+    "train12:YMYL_OVERFLAG"
+   ],
+   "flag_counts": {
+    "hard:CLEAN_ITEM_FLAGGED": 1,
+    "hard:REQUIRED_CODE_MISSED": 1,
+    "hard:INVALID_JSON": 1,
+    "hard:YMYL_OVERFLAG": 1,
+    "soft:YMYL_NOT_IN_TARGET": 5,
+    "soft:SEVERITY_DIFFERS": 8,
+    "soft:SCORE_FAR_FROM_TARGET": 7,
+    "soft:YMYL_BORDERLINE": 2,
+    "soft:CODE_MISSED": 1,
+    "soft:FIRST_PASS_INVALID": 1
+   },
+   "distinct_scores": [
+    0,
+    25,
+    35,
+    45,
+    50
+   ],
+   "score_mae_vs_targets": 31.9,
+   "score_mae_n": 11,
+   "id14_id7_scores": {
+    "14": 0,
+    "7": null
+   },
+   "ymyl_on_clear": "5/7",
+   "mainland_terms": {
+    "total": 2,
+    "items": 1,
+    "terms": {
+     "用戶": {
+      "taiwan": "使用者",
+      "count": 2,
+      "ids": [
+       "19"
+      ]
+     }
+    }
+   },
+   "steps": 9,
+   "train_loss": 2.296,
+   "train_runtime_s": 360.5,
+   "changed_adapter_tensors": 144
+  },
+  "v3b_base": {
+   "selfcheck_file": "train_selfcheck_base.jsonl",
+   "own_contract_first": "12/12",
+   "own_contract_final": "12/12",
+   "current_contract_final": "12/12",
+   "consistency_valid": "3/3",
+   "consistency_current_contract": "3/3",
+   "consistency_id14_scores": [
+    0,
+    0,
+    0
+   ],
+   "consistency_code_jaccard": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "consistency_advice": [
+    [
+     "建議修改為：房貸二胎存在法律風險，銀行在特定條件下可能拍賣抵押物，請務必了解相關法律條文及貸款條款，並諮詢專業法律或財務顧問。"
+    ],
+    [
+     "修改文章中「房貸二胎沒風險」的表述，避免否認或淡化法律後果，並補充抵押物拍賣的法律風險，例如引用民法873條的內容，說明債權到期未受清償時抵押物可能被拍賣，以降低法律風險。"
+    ],
+    [
+     "建議補充房貸二胎的法律風險，例如抵押物拍賣的可能性與程序，並強調貸款需負擔的責任與潛在財務後果。"
+    ]
+   ],
+   "hard_excl_contract": [
+    "train ID20:CLEAN_ITEM_FLAGGED",
+    "train ID20:RISK_DISCLOSURE_REMOVAL",
+    "train ID7:CROSS_DOMAIN_LAW",
+    "train12:YMYL_OVERFLAG"
+   ],
+   "flag_counts": {
+    "hard:RISK_DISCLOSURE_REMOVAL": 1,
+    "hard:CLEAN_ITEM_FLAGGED": 1,
+    "hard:CROSS_DOMAIN_LAW": 1,
+    "hard:YMYL_OVERFLAG": 1,
+    "soft:YMYL_NOT_IN_TARGET": 5,
+    "soft:SEVERITY_DIFFERS": 8,
+    "soft:SCORE_FAR_FROM_TARGET": 5,
+    "soft:YMYL_BORDERLINE": 2,
+    "soft:CODE_MISSED": 1,
+    "soft:MANY_SOURCES": 1,
+    "soft:ADVICE_PADDING": 1
+   },
+   "distinct_scores": [
+    0,
+    25,
+    35,
+    45,
+    50
+   ],
+   "score_mae_vs_targets": 25.5,
+   "score_mae_n": 12,
+   "id14_id7_scores": {
+    "14": 0,
+    "7": 25
+   },
+   "ymyl_on_clear": "5/7",
+   "mainland_terms": {
+    "total": 2,
+    "items": 2,
+    "terms": {
+     "用戶": {
+      "taiwan": "使用者",
+      "count": 2,
+      "ids": [
+       "19",
+       "13"
+      ]
+     }
+    }
+   },
+   "note": "Same v3 prompt without adapter; consistency fields belong to the adapter run"
+  },
+  "v3": {
+   "oom": true,
+   "tried_to_allocate": "1.11 GiB",
+   "outputs": [
+    "hardware.json",
+    "model.json",
+    "requirements-resolved.txt",
+    "smoke.json"
+   ]
+  }
+ },
+ "items": [
+  {
+   "ID": "2",
+   "Category": "Casino",
+   "Keyword": "娛樂城推薦",
+   "Article": "2026最強娛樂城推薦！這裡保證 100% 獲利，每天登入送一萬，穩賺不賠，是您發家致富的唯一選擇，快來加入。",
+   "ref_confidence": "高",
+   "adapter": {
+    "codes": [
+     "YMYL_RISK"
+    ],
+    "severity": "critical",
+    "score": 0,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "TW_266"
+     ]
+    ],
+    "ref_codes": [
+     "YMYL_RISK"
+    ],
+    "ref_acceptable": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "ref_severity": "critical",
+    "ref_range": [
+     0,
+     20
+    ],
+    "ref_typical": 8,
+    "alt_codes": [],
+    "alt_severity": null,
+    "alt_range": null,
+    "missed": [],
+    "unexpected_main": [],
+    "unexpected_incl_alt": [],
+    "severity_main": true,
+    "severity_main_or_alt": true,
+    "severity_direction": 0,
+    "score_in_main": true,
+    "score_in_main_or_alt": true,
+    "score_error_vs_typical": -8,
+    "score_distance_main": 0,
+    "score_distance_main_or_alt": 0,
+    "severity_score_match_ignoring_extra_codes": true,
+    "mechanical_level": "main_reading_match",
+    "ID": "2",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "這裡保證 100% 獲利，每天登入送一萬，穩賺不賠，是您發家致富的唯一選擇，快來加入。",
+      "explanation": "文章主動給出可能讓讀者在金錢上受損的說法，例如保證獲利、收益或核貸，且未交代法律風險。根據知識卡TW_266，刑法266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章的內容可能涉及違法活動，且未說明風險。",
+      "source_ids": [
+       "TW_266"
+      ],
+      "severity": "critical"
+     }
+    ],
+    "advice": [
+     "修改文章內容，避免做出保證獲利或收益的說法，並加入法律風險說明，例如提醒讀者此類活動可能涉及賭博或非法金融活動，並建議諮詢專業法律或金融顧問。"
+    ],
+    "verdict": "準確",
+    "review": {
+     "verdict": "準確",
+     "required_codes": "YMYL_RISK",
+     "missed_critical_risk": "否",
+     "false_positive": "無",
+     "source_support_0_2": "2",
+     "advice_actionability_0_2": "2",
+     "cause_tags": "保證獲利辨識正確",
+     "accurate_or_bias_explanation": "抓到「保證 100% 獲利」「穩賺不賠」的絕對收益承諾，判critical、0分，落在參考區間0–20，沒有把同一缺失拆成多個原因。理由引用TW_266（網路賭博可能觸犯刑法266條），適用。缺點是說明前半段照抄prompt的YMYL定義，連賭博文章不相干的「核貸」也抄進來，說明不夠貼近原文。",
+     "advice_note": "刪除保證獲利說法並補法律風險說明，方向正確、可直接執行；「諮詢專業法律或金融顧問」是泛用句。",
+     "source_urls": "https://mojlaw.moj.gov.tw/LawContentExtent.aspx?LSID=FL001424&LawNo=266"
+    }
+   },
+   "base": {
+    "codes": [
+     "YMYL_RISK",
+     "SEO_FALSE"
+    ],
+    "severity": "critical",
+    "score": 25,
+    "n_reasons": 2,
+    "n_advice": 3,
+    "sources": [
+     [
+      "TW_266"
+     ],
+     [
+      "G_SPAM"
+     ]
+    ],
+    "ref_codes": [
+     "YMYL_RISK"
+    ],
+    "ref_acceptable": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "ref_severity": "critical",
+    "ref_range": [
+     0,
+     20
+    ],
+    "ref_typical": 8,
+    "alt_codes": [],
+    "alt_severity": null,
+    "alt_range": null,
+    "missed": [],
+    "unexpected_main": [
+     "SEO_FALSE"
+    ],
+    "unexpected_incl_alt": [
+     "SEO_FALSE"
+    ],
+    "severity_main": true,
+    "severity_main_or_alt": true,
+    "severity_direction": 0,
+    "score_in_main": false,
+    "score_in_main_or_alt": false,
+    "score_error_vs_typical": 17,
+    "score_distance_main": 5,
+    "score_distance_main_or_alt": 5,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "codes_hit_severity_or_score_off",
+    "ID": "2",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [
+     "3 advice > 2"
+    ],
+    "auto_flags": [
+     "soft:ADVICE_PADDING"
+    ],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "這裡保證 100% 獲利，每天登入送一萬，穩賺不賠，是您發家致富的唯一選擇，快來加入。",
+      "explanation": "文章主動給出可能讓讀者在金錢上受損的說法，包含「保證 100% 獲利」、「穩賺不賠」等保證獲利的宣稱，且未交代任何法律風險，屬於YMYL_RISK。",
+      "source_ids": [
+       "TW_266"
+      ],
+      "severity": "critical"
+     },
+     {
+      "code": "SEO_FALSE",
+      "quote": "這裡保證 100% 獲利，每天登入送一萬，穩賺不賠，是您發家致富的唯一選擇，快來加入。",
+      "explanation": "文章主張「保證 100% 獲利」、「穩賺不賠」等錯誤的SEO或排名理論，屬於SEO_FALSE。",
+      "source_ids": [
+       "G_SPAM"
+      ],
+      "severity": "major"
+     }
+    ],
+    "advice": [
+     "刪除「保證 100% 獲利」、「穩賺不賠」等保證獲利的宣稱，並補充法律風險說明。",
+     "避免使用「發家致富的唯一選擇」等絕對化語句，改為中性描述，例如「提供娛樂城服務」。",
+     "若文章涉及賭博或金融服務，需明確標示法律風險，並引用相關法條（如刑法第266條）以強化可信度。"
+    ],
+    "verdict": "部分準確",
+    "review": {
+     "verdict": "部分準確",
+     "required_codes": "YMYL_RISK",
+     "missed_critical_risk": "否",
+     "false_positive": "SEO_FALSE major",
+     "source_support_0_2": "1",
+     "advice_actionability_0_2": "1",
+     "cause_tags": "代碼誤用;建議湊數",
+     "accurate_or_bias_explanation": "YMYL_RISK critical判對，但另把「保證 100% 獲利」標成SEO_FALSE（不是SEO理論，代碼誤用），分數25略高於參考區間0–20；給3項建議多於2個原因，其中「改為中性描述，例如『提供娛樂城服務』」仍在推廣賭博平台。這筆adapter較好。",
+     "advice_note": "",
+     "source_urls": ""
+    }
+   },
+   "adapter_vs_base": {
+    "same_codes": false,
+    "same_severity": true,
+    "score_diff": -25,
+    "explanation_similarity": 0.305,
+    "advice_similarity": 0.279
+   }
+  },
+  {
+   "ID": "12",
+   "Category": "Casino",
+   "Keyword": "娛樂城推薦",
+   "Article": "雖然這家娛樂城介面很華麗，但在 PTT 上的評價兩極，特別是客服回覆速度較慢，這是我實際註冊後最直觀的感受。",
+   "ref_confidence": "高",
+   "adapter": {
+    "codes": [
+     "YMYL_RISK",
+     "EXPERIENCE_UNVERIFIED"
+    ],
+    "severity": "major",
+    "score": 45,
+    "n_reasons": 2,
+    "n_advice": 2,
+    "sources": [
+     [
+      "TW_266"
+     ],
+     [
+      "G_HELP"
+     ]
+    ],
+    "ref_codes": [
+     "EXPERIENCE_UNVERIFIED"
+    ],
+    "ref_acceptable": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "ref_severity": "minor",
+    "ref_range": [
+     65,
+     80
+    ],
+    "ref_typical": 72,
+    "alt_codes": [
+     "YMYL_RISK"
+    ],
+    "alt_severity": "major",
+    "alt_range": [
+     45,
+     59
+    ],
+    "missed": [],
+    "unexpected_main": [
+     "YMYL_RISK"
+    ],
+    "unexpected_incl_alt": [],
+    "severity_main": false,
+    "severity_main_or_alt": true,
+    "severity_direction": 1,
+    "score_in_main": false,
+    "score_in_main_or_alt": true,
+    "score_error_vs_typical": -27,
+    "score_distance_main": 20,
+    "score_distance_main_or_alt": 0,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "alternative_reading_match",
+    "ID": "12",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [
+     "hard:FALSE_EXPERIENCE"
+    ],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "這家娛樂城介面很華麗，但在 PTT 上的評價兩極，特別是客服回覆速度較慢，這是我實際註冊後最直觀的感受。",
+      "explanation": "文章提及「娛樂城」，屬於高風險活動，且未說明此活動可能涉及違法賭博，也未提醒讀者注意法律風險。根據知識卡TW_266，網際網路賭博可能涉及刑法266條，需個案判斷是否合法，但文章未提供足夠資訊以降低風險。",
+      "source_ids": [
+       "TW_266"
+      ],
+      "severity": "major"
+     },
+     {
+      "code": "EXPERIENCE_UNVERIFIED",
+      "quote": "這是我實際註冊後最直觀的感受。",
+      "explanation": "文章以第一人稱自述親身經歷，但未提供日期、方法或紀錄等可核對細節，屬於自述經驗但缺乏證據支持。根據知識卡G_HELP，經驗敘述應可核對，不可將缺證據直接當已證偽。",
+      "source_ids": [
+       "G_HELP"
+      ],
+      "severity": "minor"
+     }
+    ],
+    "advice": [
+     "建議補充說明「娛樂城」可能涉及違法賭博的法律風險，並提醒讀者注意相關法律後果。",
+     "建議補充自述經驗的日期、方法或紀錄等細節，以提高可信度。"
+    ],
+    "verdict": "部分準確",
+    "review": {
+     "verdict": "部分準確",
+     "required_codes": "EXPERIENCE_UNVERIFIED",
+     "missed_critical_risk": "否",
+     "false_positive": "YMYL_RISK major",
+     "source_support_0_2": "1",
+     "advice_actionability_0_2": "1",
+     "cause_tags": "虛假經驗處理正確;YMYL依主題過度套用;檢查器誤報",
+     "accurate_or_bias_explanation": "EEAT判斷正確：把「這是我實際註冊後最直觀的感受」辨識為無法核對的自述經驗，標EXPERIENCE_UNVERIFIED、minor，並依G_HELP寫明缺證據不等於已證偽，沒有斷言作者造假。偏差在另標YMYL_RISK major，理由是「文章提及『娛樂城』，屬於高風險活動」，正是prompt明文排除的「只是談到高風險主題」。這個多標的原因把最高severity拉到major，分數45低於主判讀區間65–80；45雖落在參考的替代判讀45–59，但替代判讀成立的前提是「導流」，模型給的是主題理由。報表AutoFlags的hard:FALSE_EXPERIENCE是檢查器誤報：SELF_REPORT正規式只依train12設計，沒有涵蓋「註冊」「感受」。",
+     "advice_note": "第2項「補日期、方法或紀錄」可直接執行；第1項要求補賭博違法風險，對應的是不存在的缺失。沒有要求為「PTT 上的評價兩極」補來源（參考列為可選）。",
+     "source_urls": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+    }
+   },
+   "base": {
+    "codes": [
+     "YMYL_RISK",
+     "EXPERIENCE_UNVERIFIED"
+    ],
+    "severity": "major",
+    "score": 50,
+    "n_reasons": 2,
+    "n_advice": 2,
+    "sources": [
+     [
+      "TW_266"
+     ],
+     [
+      "G_HELP"
+     ]
+    ],
+    "ref_codes": [
+     "EXPERIENCE_UNVERIFIED"
+    ],
+    "ref_acceptable": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "ref_severity": "minor",
+    "ref_range": [
+     65,
+     80
+    ],
+    "ref_typical": 72,
+    "alt_codes": [
+     "YMYL_RISK"
+    ],
+    "alt_severity": "major",
+    "alt_range": [
+     45,
+     59
+    ],
+    "missed": [],
+    "unexpected_main": [
+     "YMYL_RISK"
+    ],
+    "unexpected_incl_alt": [],
+    "severity_main": false,
+    "severity_main_or_alt": true,
+    "severity_direction": 1,
+    "score_in_main": false,
+    "score_in_main_or_alt": true,
+    "score_error_vs_typical": -22,
+    "score_distance_main": 15,
+    "score_distance_main_or_alt": 0,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "alternative_reading_match",
+    "ID": "12",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [
+     "hard:FALSE_EXPERIENCE"
+    ],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "這家娛樂城介面很華麗，但在 PTT 上的評價兩極，特別是客服回覆速度較慢，這是我實際註冊後最直觀的感受。",
+      "explanation": "文章提及「娛樂城」，屬於可能涉及賭博或非法活動的高風險主題，且未明確說明該平台是否合法或是否涉及違法賭博活動，可能導致讀者誤判其合法性或風險，屬於YMYL_RISK。",
+      "source_ids": [
+       "TW_266"
+      ],
+      "severity": "major"
+     },
+     {
+      "code": "EXPERIENCE_UNVERIFIED",
+      "quote": "這是我實際註冊後最直觀的感受。",
+      "explanation": "文章以第一人稱自述親身經歷，但未提供註冊日期、方法或紀錄等可核對細節，屬於自述經驗未經驗證。",
+      "source_ids": [
+       "G_HELP"
+      ],
+      "severity": "minor"
+     }
+    ],
+    "advice": [
+     "建議明確說明該娛樂城是否合法，並提醒讀者注意賭博風險，避免誤導。",
+     "若提及個人經驗，請補充註冊日期、方法或紀錄等可核對細節，以提高可信度。"
+    ],
+    "verdict": "部分準確",
+    "review": {
+     "verdict": "部分準確",
+     "required_codes": "EXPERIENCE_UNVERIFIED",
+     "missed_critical_risk": "否",
+     "false_positive": "YMYL_RISK major",
+     "source_support_0_2": "1",
+     "advice_actionability_0_2": "1",
+     "cause_tags": "虛假經驗處理正確;YMYL依主題過度套用;檢查器誤報",
+     "accurate_or_bias_explanation": "與adapter代碼、等級相同，分數50；同樣把「娛樂城」主題當YMYL理由，EXPERIENCE_UNVERIFIED的處理正確、未稱造假。",
+     "advice_note": "",
+     "source_urls": ""
+    }
+   },
+   "adapter_vs_base": {
+    "same_codes": true,
+    "same_severity": true,
+    "score_diff": -5,
+    "explanation_similarity": 0.497,
+    "advice_similarity": 0.574
+   }
+  },
+  {
+   "ID": "3",
+   "Category": "Casino",
+   "Keyword": "娛樂城推薦",
+   "Article": "娛樂城推薦娛樂城推薦。想要最好的娛樂城推薦嗎？我們有最棒的娛樂城推薦服務，娛樂城推薦就在這裡。",
+   "ref_confidence": "高",
+   "adapter": {
+    "codes": [
+     "YMYL_RISK"
+    ],
+    "severity": "critical",
+    "score": 0,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "TW_266"
+     ]
+    ],
+    "ref_codes": [
+     "STUFFING"
+    ],
+    "ref_acceptable": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "ref_severity": "major",
+    "ref_range": [
+     30,
+     42
+    ],
+    "ref_typical": 33,
+    "alt_codes": [],
+    "alt_severity": null,
+    "alt_range": null,
+    "missed": [
+     "STUFFING"
+    ],
+    "unexpected_main": [
+     "YMYL_RISK"
+    ],
+    "unexpected_incl_alt": [
+     "YMYL_RISK"
+    ],
+    "severity_main": false,
+    "severity_main_or_alt": false,
+    "severity_direction": 1,
+    "score_in_main": false,
+    "score_in_main_or_alt": false,
+    "score_error_vs_typical": -33,
+    "score_distance_main": 30,
+    "score_distance_main_or_alt": 30,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "required_code_missed",
+    "ID": "3",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "娛樂城推薦娛樂城推薦。想要最好的娛樂城推薦嗎？我們有最棒的娛樂城推薦服務，娛樂城推薦就在這裡。",
+      "explanation": "文章主動推薦娛樂城，可能涉及網路賭博，而根據知識卡TW_266，刑法266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章可能引導讀者參與可能違法的活動卻未交代法律風險。",
+      "source_ids": [
+       "TW_266"
+      ],
+      "severity": "critical"
+     }
+    ],
+    "advice": [
+     "避免直接推薦娛樂城或任何可能涉及賭博的平台，除非有明確的合法認證與風險說明。"
+    ],
+    "verdict": "偏差",
+    "review": {
+     "verdict": "偏差",
+     "required_codes": "STUFFING",
+     "missed_critical_risk": "否（漏標STUFFING，非風險類缺失）",
+     "false_positive": "YMYL_RISK critical",
+     "source_support_0_2": "0",
+     "advice_actionability_0_2": "0",
+     "cause_tags": "漏標關鍵字堆疊;YMYL依主題過度套用;等級膨脹",
+     "accurate_or_bias_explanation": "47字中「娛樂城推薦」出現5次，開頭直接連寫兩次，是典型關鍵字堆疊；模型完全沒提重複，只判YMYL_RISK critical、0分，理由是「文章主動推薦娛樂城，可能涉及網路賭博」，說明後半段是TW_266卡片原文照抄。片段沒有保證、也沒有參與步驟，依prompt只是主題。train ID16（「房屋二胎」三連重複）的自檢中adapter與base都標得出STUFFING，可見這是base模型本來就有的能力，不是訓練學到的；換到賭博主題時，主題觸發的YMYL蓋過了重複這個表面特徵。",
+     "advice_note": "「避免直接推薦娛樂城……除非有明確的合法認證與風險說明」既沒處理堆疊，又暗示取得認證即可合法，和TW_266卡「完成認證不能直接證明合法」相反。應改為刪除重複的關鍵字、改寫成有資訊的句子。",
+     "source_urls": "https://developers.google.com/search/docs/essentials/spam-policies"
+    }
+   },
+   "base": {
+    "codes": [
+     "YMYL_RISK"
+    ],
+    "severity": "critical",
+    "score": 0,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "TW_266"
+     ]
+    ],
+    "ref_codes": [
+     "STUFFING"
+    ],
+    "ref_acceptable": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "ref_severity": "major",
+    "ref_range": [
+     30,
+     42
+    ],
+    "ref_typical": 33,
+    "alt_codes": [],
+    "alt_severity": null,
+    "alt_range": null,
+    "missed": [
+     "STUFFING"
+    ],
+    "unexpected_main": [
+     "YMYL_RISK"
+    ],
+    "unexpected_incl_alt": [
+     "YMYL_RISK"
+    ],
+    "severity_main": false,
+    "severity_main_or_alt": false,
+    "severity_direction": 1,
+    "score_in_main": false,
+    "score_in_main_or_alt": false,
+    "score_error_vs_typical": -33,
+    "score_distance_main": 30,
+    "score_distance_main_or_alt": 30,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "required_code_missed",
+    "ID": "3",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "娛樂城推薦娛樂城推薦。想要最好的娛樂城推薦嗎？我們有最棒的娛樂城推薦服務，娛樂城推薦就在這裡。",
+      "explanation": "文章內容涉及「娛樂城推薦」，根據知識卡TW_266，刑法第266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章可能引導讀者參與可能違法的活動，卻未交代法律風險。",
+      "source_ids": [
+       "TW_266"
+      ],
+      "severity": "critical"
+     }
+    ],
+    "advice": [
+     "避免直接推薦或強調「娛樂城」等可能涉及賭博的平台，除非有明確的合法認證與風險說明。建議改為提供合法的娛樂資訊或活動，並清楚標示法律風險。"
+    ],
+    "verdict": "偏差",
+    "review": {
+     "verdict": "偏差",
+     "required_codes": "STUFFING",
+     "missed_critical_risk": "否（漏標STUFFING，非風險類缺失）",
+     "false_positive": "YMYL_RISK critical",
+     "source_support_0_2": "0",
+     "advice_actionability_0_2": "0",
+     "cause_tags": "漏標關鍵字堆疊;YMYL依主題過度套用;等級膨脹",
+     "accurate_or_bias_explanation": "與adapter相同：漏標堆疊，判YMYL critical 0分，說明幾乎一樣。",
+     "advice_note": "",
+     "source_urls": ""
+    }
+   },
+   "adapter_vs_base": {
+    "same_codes": true,
+    "same_severity": true,
+    "score_diff": 0,
+    "explanation_similarity": 0.899,
+    "advice_similarity": 0.66
+   }
+  },
+  {
+   "ID": "17",
+   "Category": "Casino",
+   "Keyword": "娛樂城詐騙",
+   "Article": "最近出現一種偽裝成官方客服的詐騙手法，會要求玩家提供簡訊驗證碼。請記住，正規平台客服絕不會詢問您的驗證碼。",
+   "ref_confidence": "中",
+   "adapter": {
+    "codes": [
+     "YMYL_RISK"
+    ],
+    "severity": "major",
+    "score": 50,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "TW_266"
+     ]
+    ],
+    "ref_codes": [],
+    "ref_acceptable": [],
+    "ref_severity": "none",
+    "ref_range": [
+     85,
+     95
+    ],
+    "ref_typical": 90,
+    "alt_codes": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "alt_severity": "minor",
+    "alt_range": [
+     75,
+     84
+    ],
+    "missed": [],
+    "unexpected_main": [
+     "YMYL_RISK"
+    ],
+    "unexpected_incl_alt": [
+     "YMYL_RISK"
+    ],
+    "severity_main": false,
+    "severity_main_or_alt": false,
+    "severity_direction": 2,
+    "score_in_main": false,
+    "score_in_main_or_alt": false,
+    "score_error_vs_typical": -40,
+    "score_distance_main": 35,
+    "score_distance_main_or_alt": 25,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "clean_item_flagged",
+    "ID": "17",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "請記住，正規平台客服絕不會詢問您的驗證碼。",
+      "explanation": "該句話否定了詐騙行為的風險，可能讓讀者誤以為所有平台客服都不會詢問驗證碼，從而降低對詐騙的警覺，屬於YMYL_RISK。",
+      "source_ids": [
+       "TW_266"
+      ],
+      "severity": "major"
+     }
+    ],
+    "advice": [
+     "建議修改為：『請記住，正規平台客服絕不會詢問您的驗證碼，若遇到此類情況，請勿提供任何個人資料，並立即聯繫官方客服或向警方報案。』以強化風險警示，避免誤導讀者。"
+    ],
+    "verdict": "偏差",
+    "review": {
+     "verdict": "偏差",
+     "required_codes": "無",
+     "missed_critical_risk": "否",
+     "false_positive": "YMYL_RISK major",
+     "source_support_0_2": "0",
+     "advice_actionability_0_2": "1",
+     "cause_tags": "乾淨樣本誤標;語意反讀;來源不符",
+     "accurate_or_bias_explanation": "這是正確的反詐提醒，參考判無缺失（85–95）。模型把「請記住，正規平台客服絕不會詢問您的驗證碼」讀成「否定了詐騙行為的風險」，判YMYL_RISK major、50分；這句話是在提高警覺，模型把絕對否定句誤當成「否認風險」。引用的TW_266是賭博罪條文，與詐騙提醒無關。",
+     "advice_note": "建議在原句後補「勿提供任何個人資料，並立即聯繫官方客服或向警方報案」，補充本身實用，也沒有削弱警語；但它修的是不存在的缺失。",
+     "source_urls": ""
+    }
+   },
+   "base": {
+    "codes": [
+     "YMYL_RISK"
+    ],
+    "severity": "major",
+    "score": 50,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "TW_266"
+     ]
+    ],
+    "ref_codes": [],
+    "ref_acceptable": [],
+    "ref_severity": "none",
+    "ref_range": [
+     85,
+     95
+    ],
+    "ref_typical": 90,
+    "alt_codes": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "alt_severity": "minor",
+    "alt_range": [
+     75,
+     84
+    ],
+    "missed": [],
+    "unexpected_main": [
+     "YMYL_RISK"
+    ],
+    "unexpected_incl_alt": [
+     "YMYL_RISK"
+    ],
+    "severity_main": false,
+    "severity_main_or_alt": false,
+    "severity_direction": 2,
+    "score_in_main": false,
+    "score_in_main_or_alt": false,
+    "score_error_vs_typical": -40,
+    "score_distance_main": 35,
+    "score_distance_main_or_alt": 25,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "clean_item_flagged",
+    "ID": "17",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "請記住，正規平台客服絕不會詢問您的驗證碼。",
+      "explanation": "該句話否定了詐騙行為的風險，並暗示所有正規平台客服都不會詢問驗證碼，可能導致讀者低估詐騙風險，未充分說明可能的例外或風險。",
+      "source_ids": [
+       "TW_266"
+      ],
+      "severity": "major"
+     }
+    ],
+    "advice": [
+     "建議補充說明「正規平台客服在特定情況下可能需要驗證碼，例如帳號安全或交易確認，但絕不會隨意索取」，以避免誤導讀者低估詐騙風險。"
+    ],
+    "verdict": "偏差",
+    "review": {
+     "verdict": "偏差",
+     "required_codes": "無",
+     "missed_critical_risk": "否",
+     "false_positive": "YMYL_RISK major",
+     "source_support_0_2": "0",
+     "advice_actionability_0_2": "0",
+     "cause_tags": "乾淨樣本誤標;語意反讀;建議削弱警語",
+     "accurate_or_bias_explanation": "同樣誤標YMYL major 50分；建議改成「正規平台客服在特定情況下可能需要驗證碼」，這會削弱正確的資安原則，照做反而提高受騙風險。這筆adapter的建議明顯較好。",
+     "advice_note": "",
+     "source_urls": ""
+    }
+   },
+   "adapter_vs_base": {
+    "same_codes": true,
+    "same_severity": true,
+    "score_diff": 0,
+    "explanation_similarity": 0.562,
+    "advice_similarity": 0.31
+   }
+  },
+  {
+   "ID": "8",
+   "Category": "Mortgage",
+   "Keyword": "房屋二胎申請",
+   "Article": "申請房屋二胎需要準備身分證影本、土地建物所有權狀以及最近半年的房貸繳款紀錄，以利金融機構評估額度。",
+   "ref_confidence": "高",
+   "adapter": {
+    "codes": [
+     "YMYL_RISK"
+    ],
+    "severity": "major",
+    "score": 50,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "TW_873",
+      "TW_874",
+      "F_APR"
+     ]
+    ],
+    "ref_codes": [],
+    "ref_acceptable": [],
+    "ref_severity": "none",
+    "ref_range": [
+     85,
+     95
+    ],
+    "ref_typical": 90,
+    "alt_codes": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "alt_severity": "minor",
+    "alt_range": [
+     80,
+     84
+    ],
+    "missed": [],
+    "unexpected_main": [
+     "YMYL_RISK"
+    ],
+    "unexpected_incl_alt": [
+     "YMYL_RISK"
+    ],
+    "severity_main": false,
+    "severity_main_or_alt": false,
+    "severity_direction": 2,
+    "score_in_main": false,
+    "score_in_main_or_alt": false,
+    "score_error_vs_typical": -40,
+    "score_distance_main": 35,
+    "score_distance_main_or_alt": 30,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "clean_item_flagged",
+    "ID": "8",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [
+     "YMYL_RISK cites 3 cards > 2"
+    ],
+    "auto_flags": [
+     "soft:MANY_SOURCES"
+    ],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "申請房屋二胎需要準備身分證影本、土地建物所有權狀以及最近半年的房貸繳款紀錄，以利金融機構評估額度。",
+      "explanation": "文章提及房屋二胎的申請文件，但未說明此貸款可能涉及高風險，例如高利率、抵押物被法拍等法律後果，也未提醒讀者需審慎評估自身財務狀況，可能導致讀者做出錯誤的金融決策。",
+      "source_ids": [
+       "TW_873",
+       "TW_874",
+       "F_APR"
+      ],
+      "severity": "major"
+     }
+    ],
+    "advice": [
+     "建議補充說明房屋二胎的潛在風險，例如高利率、抵押物被法拍的可能性，以及需審慎評估自身財務狀況，以降低讀者做出錯誤金融決策的風險。"
+    ],
+    "verdict": "偏差",
+    "review": {
+     "verdict": "偏差",
+     "required_codes": "無",
+     "missed_critical_risk": "否",
+     "false_positive": "YMYL_RISK major",
+     "source_support_0_2": "0",
+     "advice_actionability_0_2": "1",
+     "cause_tags": "乾淨樣本誤標;YMYL依「沒寫風險」過度套用;來源堆疊",
+     "accurate_or_bias_explanation": "片段只列二胎申請文件（身分證影本、土地建物所有權狀、近半年房貸繳款紀錄），符合實務，參考判無缺失。模型以「未說明此貸款可能涉及高風險，例如高利率、抵押物被法拍」標YMYL_RISK major、50分，正是prompt排除的「沒有列出全部風險」。同時引用TW_873、TW_874、F_APR三張卡，超過prompt上限2張，三張都不支持「這句話會讓讀者受損」。",
+     "advice_note": "補充二胎風險對一篇完整文章是合理的編輯建議，但不是這段的缺失，不能作為扣分依據。",
+     "source_urls": ""
+    }
+   },
+   "base": {
+    "codes": [
+     "YMYL_RISK"
+    ],
+    "severity": "major",
+    "score": 55,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "TW_873",
+      "TW_874",
+      "F_APR"
+     ]
+    ],
+    "ref_codes": [],
+    "ref_acceptable": [],
+    "ref_severity": "none",
+    "ref_range": [
+     85,
+     95
+    ],
+    "ref_typical": 90,
+    "alt_codes": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "alt_severity": "minor",
+    "alt_range": [
+     80,
+     84
+    ],
+    "missed": [],
+    "unexpected_main": [
+     "YMYL_RISK"
+    ],
+    "unexpected_incl_alt": [
+     "YMYL_RISK"
+    ],
+    "severity_main": false,
+    "severity_main_or_alt": false,
+    "severity_direction": 2,
+    "score_in_main": false,
+    "score_in_main_or_alt": false,
+    "score_error_vs_typical": -35,
+    "score_distance_main": 30,
+    "score_distance_main_or_alt": 25,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "clean_item_flagged",
+    "ID": "8",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [
+     "YMYL_RISK cites 3 cards > 2"
+    ],
+    "auto_flags": [
+     "soft:MANY_SOURCES"
+    ],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "申請房屋二胎需要準備身分證影本、土地建物所有權狀以及最近半年的房貸繳款紀錄，以利金融機構評估額度。",
+      "explanation": "雖然文章未直接提供貸款建議或保證獲利，但涉及房屋二胎貸款，屬於高風險金融活動，且未提及任何法律風險或貸款條件，可能導致讀者誤以為此為安全或無風險的金融行為，未充分警示潛在風險。",
+      "source_ids": [
+       "TW_873",
+       "TW_874",
+       "F_APR"
+      ],
+      "severity": "major"
+     }
+    ],
+    "advice": [
+     "建議補充貸款風險說明，例如利率變動、違約後的法律後果，以及抵押物可能被法拍的風險，以符合YMYL內容的警示要求。"
+    ],
+    "verdict": "偏差",
+    "review": {
+     "verdict": "偏差",
+     "required_codes": "無",
+     "missed_critical_risk": "否",
+     "false_positive": "YMYL_RISK major",
+     "source_support_0_2": "0",
+     "advice_actionability_0_2": "1",
+     "cause_tags": "乾淨樣本誤標;YMYL依主題過度套用;來源堆疊",
+     "accurate_or_bias_explanation": "同adapter，55分；理由「屬於高風險金融活動」更直接是主題式判斷。",
+     "advice_note": "",
+     "source_urls": ""
+    }
+   },
+   "adapter_vs_base": {
+    "same_codes": true,
+    "same_severity": true,
+    "score_diff": -5,
+    "explanation_similarity": 0.331,
+    "advice_similarity": 0.383
+   }
+  },
+  {
+   "ID": "9",
+   "Category": "Mortgage",
+   "Keyword": "房屋二胎申請",
+   "Article": "在撰寫這篇文章時，我建議在 HTML 原始碼中將關鍵字字體顏色設為白色，隱藏在背景中，這樣可以騙過 Google 機器人。",
+   "ref_confidence": "高",
+   "adapter": {
+    "codes": [
+     "SEO_FALSE"
+    ],
+    "severity": "critical",
+    "score": 25,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "G_META",
+      "G_SPAM"
+     ]
+    ],
+    "ref_codes": [
+     "SEO_FALSE"
+    ],
+    "ref_acceptable": [],
+    "ref_severity": "major",
+    "ref_range": [
+     30,
+     45
+    ],
+    "ref_typical": 35,
+    "alt_codes": [
+     "SEO_FALSE"
+    ],
+    "alt_severity": "critical",
+    "alt_range": [
+     15,
+     29
+    ],
+    "missed": [],
+    "unexpected_main": [],
+    "unexpected_incl_alt": [],
+    "severity_main": false,
+    "severity_main_or_alt": true,
+    "severity_direction": 1,
+    "score_in_main": false,
+    "score_in_main_or_alt": true,
+    "score_error_vs_typical": -10,
+    "score_distance_main": 5,
+    "score_distance_main_or_alt": 0,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "alternative_reading_match",
+    "ID": "9",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "SEO_FALSE",
+      "quote": "在撰寫這篇文章時，我建議在 HTML 原始碼中將關鍵字字體顏色設為白色，隱藏在背景中，這樣可以騙過 Google 機器人。",
+      "explanation": "Google 不會使用隱藏文字或顏色來評估內容質量或排名，這種做法屬於 SEO 操縱行為，違反 Google 的爬蟲政策。",
+      "source_ids": [
+       "G_META",
+       "G_SPAM"
+      ],
+      "severity": "critical"
+     }
+    ],
+    "advice": [
+     "避免使用隱藏文字或顏色來操縱 Google 搜索排名，這種做法違反 Google 的爬蟲政策，且可能導致網站被標記為垃圾內容。"
+    ],
+    "verdict": "準確",
+    "review": {
+     "verdict": "準確",
+     "required_codes": "SEO_FALSE",
+     "missed_critical_risk": "否",
+     "false_positive": "無",
+     "source_support_0_2": "1",
+     "advice_actionability_0_2": "2",
+     "cause_tags": "錯誤SEO理論辨識正確;severity採替代判讀;來源引用不精確",
+     "accurate_or_bias_explanation": "抓到植入的錯誤理論：白字隱藏關鍵字「可以騙過 Google 機器人」，判SEO_FALSE，指出是排名操縱、違反Google政策；沒有把「我建議」誤當自述經驗，也沒有因房貸類別標YMYL。critical、25分，主判讀是major 30–45，落在參考的替代判讀critical 15–29。弱點：說明寫「Google 不會使用隱藏文字或顏色來評估內容質量或排名」，套用了G_META卡的句型，重點應是隱藏文字屬垃圾內容政策明列的違規、可能被降級或不出現在結果中；「爬蟲政策」用詞不對；G_META（meta keywords）與本句無關。",
+     "advice_note": "「避免使用隱藏文字……可能導致網站被標記為垃圾內容」可直接執行，後果也正確；可再具體寫成移除隱藏文字、把關鍵字放進可見的自然文句。",
+     "source_urls": "https://developers.google.com/search/docs/essentials/spam-policies#hidden-text-and-links"
+    }
+   },
+   "base": {
+    "codes": [
+     "SEO_FALSE"
+    ],
+    "severity": "critical",
+    "score": 25,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "G_META",
+      "G_SPAM"
+     ]
+    ],
+    "ref_codes": [
+     "SEO_FALSE"
+    ],
+    "ref_acceptable": [],
+    "ref_severity": "major",
+    "ref_range": [
+     30,
+     45
+    ],
+    "ref_typical": 35,
+    "alt_codes": [
+     "SEO_FALSE"
+    ],
+    "alt_severity": "critical",
+    "alt_range": [
+     15,
+     29
+    ],
+    "missed": [],
+    "unexpected_main": [],
+    "unexpected_incl_alt": [],
+    "severity_main": false,
+    "severity_main_or_alt": true,
+    "severity_direction": 1,
+    "score_in_main": false,
+    "score_in_main_or_alt": true,
+    "score_error_vs_typical": -10,
+    "score_distance_main": 5,
+    "score_distance_main_or_alt": 0,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "alternative_reading_match",
+    "ID": "9",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "SEO_FALSE",
+      "quote": "在撰寫這篇文章時，我建議在 HTML 原始碼中將關鍵字字體顏色設為白色，隱藏在背景中，這樣可以騙過 Google 機器人。",
+      "explanation": "此段主張透過隱藏文字來操縱 Google 搜索引擎的排名，與 Google 的 SEO 指南相違背。Google 明確表示不使用 meta keywords 標記作為索引或排名依據，且不接受任何形式的隱藏文字或操縱行為。",
+      "source_ids": [
+       "G_META",
+       "G_SPAM"
+      ],
+      "severity": "critical"
+     }
+    ],
+    "advice": [
+     "避免使用隱藏文字或任何形式的操縱行為來影響搜索引擎排名，應遵循 Google 的 SEO 指南，提供自然、有用且符合用戶需求的內容。"
+    ],
+    "verdict": "準確",
+    "review": {
+     "verdict": "準確",
+     "required_codes": "SEO_FALSE",
+     "missed_critical_risk": "否",
+     "false_positive": "無",
+     "source_support_0_2": "1",
+     "advice_actionability_0_2": "2",
+     "cause_tags": "錯誤SEO理論辨識正確;severity採替代判讀;來源引用不精確",
+     "accurate_or_bias_explanation": "同代碼、等級、分數；說明混入「Google 明確表示不使用 meta keywords 標記」，與隱藏文字無關，知識引用比adapter更混亂。",
+     "advice_note": "",
+     "source_urls": ""
+    }
+   },
+   "adapter_vs_base": {
+    "same_codes": true,
+    "same_severity": true,
+    "score_diff": 0,
+    "explanation_similarity": 0.234,
+    "advice_similarity": 0.465
+   }
+  },
+  {
+   "ID": "1",
+   "Category": "Casino",
+   "Keyword": "娛樂城推薦",
+   "Article": "挑選娛樂城時，首重資安與出金紀錄。建議觀察其是否有國際博弈執照，如菲律賓 PAGCOR，並從小額出金測試其速度。",
+   "ref_confidence": "中",
+   "adapter": {
+    "codes": [
+     "YMYL_RISK"
+    ],
+    "severity": "critical",
+    "score": 0,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "TW_266"
+     ]
+    ],
+    "ref_codes": [
+     "YMYL_RISK"
+    ],
+    "ref_acceptable": [],
+    "ref_severity": "major",
+    "ref_range": [
+     40,
+     59
+    ],
+    "ref_typical": 50,
+    "alt_codes": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "alt_severity": "minor",
+    "alt_range": [
+     65,
+     80
+    ],
+    "missed": [],
+    "unexpected_main": [],
+    "unexpected_incl_alt": [],
+    "severity_main": false,
+    "severity_main_or_alt": false,
+    "severity_direction": 1,
+    "score_in_main": false,
+    "score_in_main_or_alt": false,
+    "score_error_vs_typical": -50,
+    "score_distance_main": 40,
+    "score_distance_main_or_alt": 40,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "codes_hit_severity_or_score_off",
+    "ID": "1",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "建議觀察其是否有國際博弈執照，如菲律賓 PAGCOR，並從小額出金測試其速度。",
+      "explanation": "文章提及「娛樂城」，而根據知識卡 TW_266，刑法第266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章提及的「娛樂城」可能涉及賭博，而未明確說明其合法性或法律風險，可能導致讀者誤認為這些平台是合法的，從而可能涉及法律風險。",
+      "source_ids": [
+       "TW_266"
+      ],
+      "severity": "critical"
+     }
+    ],
+    "advice": [
+     "建議明確說明「娛樂城」的法律風險，並提醒讀者在參與前應確認其合法性，避免誤導讀者認為這些平台是安全或合法的。"
+    ],
+    "verdict": "部分準確",
+    "review": {
+     "verdict": "部分準確",
+     "required_codes": "YMYL_RISK",
+     "missed_critical_risk": "否",
+     "false_positive": "無",
+     "source_support_0_2": "1",
+     "advice_actionability_0_2": "1",
+     "cause_tags": "等級膨脹;YMYL理由偏主題;照抄卡片",
+     "accurate_or_bias_explanation": "代碼與引句都對（「建議觀察其是否有國際博弈執照，如菲律賓 PAGCOR，並從小額出金測試其速度」）。說明照抄TW_266卡片「平台自稱娛樂或完成認證不能直接證明合法」，再推到「可能導致讀者誤認為這些平台是合法的」，方向與參考相近，但沒有明說外國執照、也沒有提台灣，卡片與這句原文之間的關係沒有寫出來。理由從「文章提及『娛樂城』」出發，沒有點出「小額出金測試」必須先存款下注、屬實際參與；等級判critical、0分，而prompt自己把「引導參與可能違法的活動卻未交代風險」列為major，參考區間40–59。這是把YMYL_RISK當成critical的等級膨脹；同prompt無adapter在這筆判major 45，等級與分數都在參考區間。",
+     "advice_note": "「提醒讀者在參與前應確認其合法性」暗示在台灣有可確認為合法的網路賭博平台，與TW_266相左；較好的建議是刪除出金測試這類參與指引，並說明外國執照不代表在台灣合法。",
+     "source_urls": "https://mojlaw.moj.gov.tw/LawContentExtent.aspx?LSID=FL001424&LawNo=266"
+    }
+   },
+   "base": {
+    "codes": [
+     "YMYL_RISK",
+     "UNSUPPORTED_CLAIM"
+    ],
+    "severity": "major",
+    "score": 45,
+    "n_reasons": 2,
+    "n_advice": 2,
+    "sources": [
+     [
+      "TW_266"
+     ],
+     []
+    ],
+    "ref_codes": [
+     "YMYL_RISK"
+    ],
+    "ref_acceptable": [],
+    "ref_severity": "major",
+    "ref_range": [
+     40,
+     59
+    ],
+    "ref_typical": 50,
+    "alt_codes": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "alt_severity": "minor",
+    "alt_range": [
+     65,
+     80
+    ],
+    "missed": [],
+    "unexpected_main": [
+     "UNSUPPORTED_CLAIM"
+    ],
+    "unexpected_incl_alt": [],
+    "severity_main": true,
+    "severity_main_or_alt": true,
+    "severity_direction": 0,
+    "score_in_main": true,
+    "score_in_main_or_alt": true,
+    "score_error_vs_typical": -5,
+    "score_distance_main": 0,
+    "score_distance_main_or_alt": 0,
+    "severity_score_match_ignoring_extra_codes": true,
+    "mechanical_level": "codes_hit_severity_or_score_off",
+    "ID": "1",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "YMYL_RISK",
+      "quote": "建議觀察其是否有國際博弈執照，如菲律賓 PAGCOR，並從小額出金測試其速度。",
+      "explanation": "文章提及「娛樂城」及「國際博弈執照」，涉及網際網路賭博，而根據知識卡 TW_266，刑法第266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章可能引導讀者參與可能違法的活動，但未交代法律風險。",
+      "source_ids": [
+       "TW_266"
+      ],
+      "severity": "major"
+     },
+     {
+      "code": "UNSUPPORTED_CLAIM",
+      "quote": "建議觀察其是否有國際博弈執照，如菲律賓 PAGCOR，並從小額出金測試其速度。",
+      "explanation": "文章建議「觀察是否有國際博弈執照」，但未說明執照的法律效力或如何驗證，也未提及執照是否等同於合法賭博，因此此建議缺乏具體支持。",
+      "source_ids": [],
+      "severity": "minor"
+     }
+    ],
+    "advice": [
+     "建議補充說明「國際博弈執照」的法律效力及如何驗證，以避免讀者誤解執照即代表合法賭博。",
+     "建議避免直接建議參與可能違法的活動，如賭博，除非明確說明法律風險與限制。"
+    ],
+    "verdict": "部分準確",
+    "review": {
+     "verdict": "部分準確",
+     "required_codes": "YMYL_RISK",
+     "missed_critical_risk": "否",
+     "false_positive": "UNSUPPORTED_CLAIM minor（參考未列為可接受的附加代碼）",
+     "source_support_0_2": "1",
+     "advice_actionability_0_2": "1",
+     "cause_tags": "YMYL理由偏主題;多標;照抄卡片",
+     "accurate_or_bias_explanation": "YMYL_RISK major 45，等級與分數都落在參考主判讀40–59，結論「可能引導讀者參與可能違法的活動，但未交代法律風險」與參考一致。但理由同樣從「文章提及『娛樂城』及『國際博弈執照』」的主題出發並照抄TW_266卡片，沒有點出「小額出金測試」需先存款下注；另標的UNSUPPORTED_CLAIM不在參考可接受的附加代碼內（只對應替代判讀關注的執照效力）。依與adapter相同的標準判部分準確。建議「補充說明國際博弈執照的法律效力及如何驗證」仍暗示可驗證為合法。等級與分數這筆base比adapter好。",
+     "advice_note": "",
+     "source_urls": ""
+    }
+   },
+   "adapter_vs_base": {
+    "same_codes": false,
+    "same_severity": false,
+    "score_diff": -45,
+    "explanation_similarity": 0.588,
+    "advice_similarity": 0.18
+   }
+  },
+  {
+   "ID": "4",
+   "Category": "Casino",
+   "Keyword": "娛樂城出金",
+   "Article": "如果您在搜尋娛樂城出金，請務必填寫 Meta Keywords 標籤，這在 2026 年是決定 Google 排名的最核心因素。",
+   "ref_confidence": "高",
+   "adapter": {
+    "codes": [
+     "SEO_FALSE"
+    ],
+    "severity": "critical",
+    "score": 25,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "G_META"
+     ]
+    ],
+    "ref_codes": [
+     "SEO_FALSE"
+    ],
+    "ref_acceptable": [],
+    "ref_severity": "major",
+    "ref_range": [
+     30,
+     42
+    ],
+    "ref_typical": 33,
+    "alt_codes": [
+     "SEO_FALSE"
+    ],
+    "alt_severity": "critical",
+    "alt_range": [
+     20,
+     29
+    ],
+    "missed": [],
+    "unexpected_main": [],
+    "unexpected_incl_alt": [],
+    "severity_main": false,
+    "severity_main_or_alt": true,
+    "severity_direction": 1,
+    "score_in_main": false,
+    "score_in_main_or_alt": true,
+    "score_error_vs_typical": -8,
+    "score_distance_main": 5,
+    "score_distance_main_or_alt": 0,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "alternative_reading_match",
+    "ID": "4",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "SEO_FALSE",
+      "quote": "請務必填寫 Meta Keywords 標籤，這在 2026 年是決定 Google 排名的最核心因素。",
+      "explanation": "Google 不使用 meta keywords 標籤作為索引或排名依據，此主張與知識卡 G_META 的事實不符，屬於錯誤的 SEO 理論。",
+      "source_ids": [
+       "G_META"
+      ],
+      "severity": "critical"
+     }
+    ],
+    "advice": [
+     "修正「Meta Keywords 標籤是決定 Google 排名的最核心因素」的錯誤說法，並補充 Google 排名的正確因素，例如內容質量、用戶體驗、鏈接等。"
+    ],
+    "verdict": "準確",
+    "review": {
+     "verdict": "準確",
+     "required_codes": "SEO_FALSE",
+     "missed_critical_risk": "否",
+     "false_positive": "無",
+     "source_support_0_2": "2",
+     "advice_actionability_0_2": "2",
+     "cause_tags": "錯誤SEO理論辨識並修正;severity採替代判讀",
+     "accurate_or_bias_explanation": "抓到原題範例的植入錯誤「請務必填寫 Meta Keywords 標籤，這在 2026 年是決定 Google 排名的最核心因素」，判SEO_FALSE，並寫出正確知識「Google 不使用 meta keywords 標籤作為索引或排名依據」，引用G_META正確；沒有因娛樂城主題標YMYL。critical、25分落在參考替代判讀critical 20–29，主判讀是major 30–42。",
+     "advice_note": "要求修正錯誤說法並改寫正確的排名因素，可直接執行；「內容質量、用戶體驗、鏈接」是泛用清單，而且是中國大陸用語（台灣慣用品質、使用者體驗、連結）。",
+     "source_urls": "https://developers.google.com/search/docs/crawling-indexing/special-tags"
+    }
+   },
+   "base": {
+    "codes": [
+     "SEO_FALSE"
+    ],
+    "severity": "critical",
+    "score": 25,
+    "n_reasons": 1,
+    "n_advice": 1,
+    "sources": [
+     [
+      "G_META"
+     ]
+    ],
+    "ref_codes": [
+     "SEO_FALSE"
+    ],
+    "ref_acceptable": [],
+    "ref_severity": "major",
+    "ref_range": [
+     30,
+     42
+    ],
+    "ref_typical": 33,
+    "alt_codes": [
+     "SEO_FALSE"
+    ],
+    "alt_severity": "critical",
+    "alt_range": [
+     20,
+     29
+    ],
+    "missed": [],
+    "unexpected_main": [],
+    "unexpected_incl_alt": [],
+    "severity_main": false,
+    "severity_main_or_alt": true,
+    "severity_direction": 1,
+    "score_in_main": false,
+    "score_in_main_or_alt": true,
+    "score_error_vs_typical": -8,
+    "score_distance_main": 5,
+    "score_distance_main_or_alt": 0,
+    "severity_score_match_ignoring_extra_codes": false,
+    "mechanical_level": "alternative_reading_match",
+    "ID": "4",
+    "first_pass_valid": true,
+    "final_valid": true,
+    "attempts": 1,
+    "pretty_printed_raw": true,
+    "prompt_count_violations": [],
+    "auto_flags": [],
+    "calls_experience_fake": false,
+    "reasons": [
+     {
+      "code": "SEO_FALSE",
+      "quote": "請務必填寫 Meta Keywords 標籤，這在 2026 年是決定 Google 排名的最核心因素。",
+      "explanation": "Google 不使用 meta keywords 標籤作為排名依據，此為錯誤的 SEO 理論。",
+      "source_ids": [
+       "G_META"
+      ],
+      "severity": "critical"
+     }
+    ],
+    "advice": [
+     "修正錯誤的 SEO 說法，說明 Google 不使用 meta keywords 標籤作為排名依據，並建議改為提供有用、準確的內容以提升搜尋排名。"
+    ],
+    "verdict": "準確",
+    "review": {
+     "verdict": "準確",
+     "required_codes": "SEO_FALSE",
+     "missed_critical_risk": "否",
+     "false_positive": "無",
+     "source_support_0_2": "2",
+     "advice_actionability_0_2": "2",
+     "cause_tags": "錯誤SEO理論辨識並修正;severity採替代判讀",
+     "accurate_or_bias_explanation": "同代碼、等級、分數；建議「說明 Google 不使用 meta keywords 標籤作為排名依據」同樣可用。",
+     "advice_note": "",
+     "source_urls": ""
+    }
+   },
+   "adapter_vs_base": {
+    "same_codes": true,
+    "same_severity": true,
+    "score_diff": 0,
+    "explanation_similarity": 0.78,
+    "advice_similarity": 0.301
+   }
+  }
+ ]
+}

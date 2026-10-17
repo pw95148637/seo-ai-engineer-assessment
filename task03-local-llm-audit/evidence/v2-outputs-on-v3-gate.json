@@ -1,0 +1,618 @@
+{
+  "status": "FAIL",
+  "scope": "In-sample: train12 targets and ID14 were used for training/prompt design. Necessary, not sufficient; holdout untouched.",
+  "selfcheck_first_pass_valid": "12/12",
+  "selfcheck_final_valid": "12/12",
+  "consistency_valid": "3/3",
+  "hard_failures": [
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID20"
+    },
+    {
+      "level": "hard",
+      "code": "RISK_DISCLOSURE_REMOVAL",
+      "detail": "避免使用「必須明白的法律後果」等可能被誤解為保證結果的語句。",
+      "where": "train ID20"
+    },
+    {
+      "level": "hard",
+      "code": "CLEAN_ITEM_FLAGGED",
+      "detail": "YMYL_RISK",
+      "where": "train ID20"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID6"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID15"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID5"
+    },
+    {
+      "level": "hard",
+      "code": "REQUIRED_CODE_MISSED",
+      "detail": "EXPERIENCE_UNVERIFIED",
+      "where": "train ID5"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID10"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID14"
+    },
+    {
+      "level": "hard",
+      "code": "SEVERE_SCORE_TOO_HIGH",
+      "detail": "55 > 29 (target 12)",
+      "where": "train ID14"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID16"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID19"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID7"
+    },
+    {
+      "level": "hard",
+      "code": "SEVERE_SCORE_TOO_HIGH",
+      "detail": "55 > 29 (target 15)",
+      "where": "train ID7"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID13"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID18"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "train ID11"
+    },
+    {
+      "level": "hard",
+      "code": "YMYL_OVERFLAG",
+      "detail": "YMYL_RISK on 6/7 clearly non-YMYL items (max 1): IDs 20,6,16,19,18,11",
+      "where": "train12"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "consistency ID14 T0.2"
+    },
+    {
+      "level": "hard",
+      "code": "SEVERE_SCORE_TOO_HIGH",
+      "detail": "55 > 29 (target 12)",
+      "where": "consistency ID14 T0.2"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "consistency ID14 T0.5"
+    },
+    {
+      "level": "hard",
+      "code": "SEVERE_SCORE_TOO_HIGH",
+      "detail": "55 > 29 (target 12)",
+      "where": "consistency ID14 T0.5"
+    },
+    {
+      "level": "hard",
+      "code": "CONTRACT_INVALID",
+      "detail": "'severity' is a required property",
+      "where": "consistency ID14 T0.8"
+    },
+    {
+      "level": "hard",
+      "code": "SEVERE_SCORE_TOO_HIGH",
+      "detail": "55 > 29 (target 12)",
+      "where": "consistency ID14 T0.8"
+    }
+  ],
+  "soft_flags": [
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 1 reasons",
+      "where": "train ID20"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_NOT_IN_TARGET",
+      "detail": "民法第 873 條規定，抵押權人於債權已屆清償期而未受清償者，得聲請法院拍賣抵押物。",
+      "where": "train ID20"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID20"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "train ID6"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_NOT_IN_TARGET",
+      "detail": "若信用正常，銀行利率通常落在 2%-5%，遠低於民間代書。",
+      "where": "train ID6"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID6"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "train ID15"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_FAR_FROM_TARGET",
+      "detail": "85 vs 50",
+      "where": "train ID15"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID15"
+    },
+    {
+      "level": "soft",
+      "code": "OFF_TOPIC_SOURCE",
+      "detail": "UNSUPPORTED_CLAIM cites F_APR for Casino",
+      "where": "train ID5"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "train ID5"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_BORDERLINE",
+      "detail": "根據我在各家娛樂城實測三個月的心得",
+      "where": "train ID5"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID5"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "train ID10"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_BORDERLINE",
+      "detail": "真實的娛樂城純屬娛樂，不可能有預測後台的技術。",
+      "where": "train ID10"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID10"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "train ID14"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID14"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "train ID16"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_NOT_IN_TARGET",
+      "detail": "我們提供最好的房屋二胎服務。",
+      "where": "train ID16"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID16"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "train ID19"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_NOT_IN_TARGET",
+      "detail": "只要字數超過一萬字，不論內容品質，一定能排到第一頁。",
+      "where": "train ID19"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID19"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "train ID7"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID7"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "train ID13"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID13"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "train ID18"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_NOT_IN_TARGET",
+      "detail": "房屋二胎利率受央行升息政策影響",
+      "where": "train ID18"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID18"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "train ID11"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_NOT_IN_TARGET",
+      "detail": "若發生法拍，二胎債權人僅能領取一胎清償後的剩餘價值",
+      "where": "train ID11"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "train ID11"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "consistency ID14 T0.2"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "consistency ID14 T0.2"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "consistency ID14 T0.5"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "consistency ID14 T0.5"
+    },
+    {
+      "level": "soft",
+      "code": "ADVICE_PADDING",
+      "detail": "3 advice for 2 reasons",
+      "where": "consistency ID14 T0.8"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_BEFORE_REASONS",
+      "detail": "Score generated before the evidence",
+      "where": "consistency ID14 T0.8"
+    }
+  ],
+  "items": [
+    {
+      "ID": "20",
+      "Score": 85,
+      "target_score": 95,
+      "severity": null,
+      "target_severity": null,
+      "codes": [
+        "YMYL_RISK"
+      ],
+      "target_codes": [],
+      "flags": "hard:CONTRACT_INVALID;hard:RISK_DISCLOSURE_REMOVAL;soft:ADVICE_PADDING;hard:CLEAN_ITEM_FLAGGED;soft:YMYL_NOT_IN_TARGET;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "ID": "6",
+      "Score": 85,
+      "target_score": 70,
+      "severity": null,
+      "target_severity": "minor",
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;soft:YMYL_NOT_IN_TARGET;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "ID": "15",
+      "Score": 85,
+      "target_score": 50,
+      "severity": null,
+      "target_severity": "major",
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "YMYL_RISK"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;soft:SCORE_FAR_FROM_TARGET;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "ID": "5",
+      "Score": 55,
+      "target_score": 62,
+      "severity": null,
+      "target_severity": "minor",
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "EXPERIENCE_UNVERIFIED"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:OFF_TOPIC_SOURCE;soft:ADVICE_PADDING;hard:REQUIRED_CODE_MISSED;soft:YMYL_BORDERLINE;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "ID": "10",
+      "Score": 85,
+      "target_score": 74,
+      "severity": null,
+      "target_severity": "minor",
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;soft:YMYL_BORDERLINE;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "ID": "14",
+      "Score": 55,
+      "target_score": 12,
+      "severity": null,
+      "target_severity": "critical",
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "YMYL_RISK"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;hard:SEVERE_SCORE_TOO_HIGH;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "ID": "16",
+      "Score": 25,
+      "target_score": 32,
+      "severity": null,
+      "target_severity": "major",
+      "codes": [
+        "STUFFING",
+        "YMYL_RISK"
+      ],
+      "target_codes": [
+        "STUFFING"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;soft:YMYL_NOT_IN_TARGET;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "ID": "19",
+      "Score": 25,
+      "target_score": 28,
+      "severity": null,
+      "target_severity": "critical",
+      "codes": [
+        "SEO_FALSE",
+        "YMYL_RISK"
+      ],
+      "target_codes": [
+        "SEO_FALSE"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;soft:YMYL_NOT_IN_TARGET;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "ID": "7",
+      "Score": 55,
+      "target_score": 15,
+      "severity": null,
+      "target_severity": "critical",
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "YMYL_RISK"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;hard:SEVERE_SCORE_TOO_HIGH;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "ID": "13",
+      "Score": 55,
+      "target_score": 35,
+      "severity": null,
+      "target_severity": "major",
+      "codes": [
+        "SEO_FALSE",
+        "STUFFING"
+      ],
+      "target_codes": [
+        "SEO_FALSE"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "ID": "18",
+      "Score": 85,
+      "target_score": 78,
+      "severity": null,
+      "target_severity": "minor",
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;soft:YMYL_NOT_IN_TARGET;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "ID": "11",
+      "Score": 85,
+      "target_score": 84,
+      "severity": null,
+      "target_severity": "minor",
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;soft:YMYL_NOT_IN_TARGET;soft:SCORE_BEFORE_REASONS"
+    }
+  ],
+  "consistency_runs": [
+    {
+      "temperature": 0.2,
+      "Score": 55,
+      "severity": null,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;hard:SEVERE_SCORE_TOO_HIGH;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "temperature": 0.5,
+      "Score": 55,
+      "severity": null,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;hard:SEVERE_SCORE_TOO_HIGH;soft:SCORE_BEFORE_REASONS"
+    },
+    {
+      "temperature": 0.8,
+      "Score": 55,
+      "severity": null,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "hard:CONTRACT_INVALID;soft:ADVICE_PADDING;hard:SEVERE_SCORE_TOO_HIGH;soft:SCORE_BEFORE_REASONS"
+    }
+  ],
+  "manual_review": [
+    "explanation忠於所引知識卡，未誇大條文、未由片段推論整站",
+    "建議直接修正所指缺失且可執行，未新增無關要求，必要風險揭露仍保留",
+    "三溫度建議語意不互相矛盾",
+    "繁體中文自然、台灣法域正確",
+    "SEO_FALSE／UNSUPPORTED_CLAIM／YMYL_RISK判別合理，YMYL_RISK不因主題本身而標；severity合理、分數排序合理（14、7最低，20最高）",
+    "未把缺證據說成造假，未替作者捏造自述經驗"
+  ],
+  "regated": {
+    "bundle": "kaggle-retrieved/soulo-work03-v2-train/work03",
+    "note": "Real outputs from the bundle judged by the current local gate/contract/targets; the bundle itself is unchanged."
+  }
+}

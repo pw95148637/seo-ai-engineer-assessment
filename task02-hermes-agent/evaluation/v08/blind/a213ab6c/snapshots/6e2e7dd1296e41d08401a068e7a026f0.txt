@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://casinobase.tw
+Sitemap: https://casinobase.tw/sitemap.xml

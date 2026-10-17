@@ -1,0 +1,48 @@
+{
+  "started_utc": "2026-10-16T09:35:40.622294+00:00",
+  "cols": 120,
+  "rows": 28,
+  "interval": 0.25,
+  "tmux": "tmux 3.4",
+  "capture": "tmux capture-pane -p -e (visible screen, text and colours), stored when changed",
+  "panes": [
+    {
+      "name": "viewer",
+      "id": "%0",
+      "top": 1,
+      "left": 0,
+      "width": 120,
+      "height": 16,
+      "title": "檢視器：research.sqlite 控制器事件（即時）"
+    },
+    {
+      "name": "log",
+      "id": "%2",
+      "top": 18,
+      "left": 0,
+      "width": 120,
+      "height": 6,
+      "title": "Hermes agent.log（即時 tail，略去連線細節行）"
+    },
+    {
+      "name": "main",
+      "id": "%1",
+      "top": 25,
+      "left": 0,
+      "width": 120,
+      "height": 3,
+      "title": "執行命令"
+    }
+  ],
+  "commands": {
+    "viewer": "python3 /mnt/c/Users/user/Desktop/SEO/tasks/task02-hermes/scripts/demo_live_view.py events --task-root . --root evaluation/v07/runs/R4 --ledger-db evaluation/v06/runs/2030-series/research.sqlite --hermes-log .runtime/user/logs/agent.log --page-pause 9 --pace 1.2 --compare '上一版 空帳本首跑=evaluation/v06/scores/R1.json' --compare '上一版 無記憶對照=evaluation/v06/scores/B1.json' --compare '上一版 凍結帳本=evaluation/v06/scores/R3.json'",
+    "log": "python3 /mnt/c/Users/user/Desktop/SEO/tasks/task02-hermes/scripts/demo_live_view.py hermes-log --log .runtime/user/logs/agent.log",
+    "main": "python3 scripts/evaluate_v07.py --step R4",
+    "main_display": "python3 scripts/evaluate_v07.py --step R4"
+  },
+  "pre_seconds": 15.0,
+  "cwd": "/home/user/soulo/task02-hermes",
+  "host": "DESKTOP-6S19V9O",
+  "ended_utc": "2026-10-16T09:40:39.255930+00:00",
+  "duration": 298.007
+}

@@ -1,0 +1,44 @@
+{
+  "id": "company_samples",
+  "preregistered_at": "2026-10-16T09:26:00Z",
+  "purpose": "用公司資料表 Sheet1 的 10 筆娛樂城文章片段（不是我寫的草稿）測試 Auditor。預期判定依 policy.json 四條規則在執行前寫定，執行後不修改；結果不論與預期是否一致都照實記錄。",
+  "source": {
+    "sheet": "https://docs.google.com/spreadsheets/d/198L8PDlajqKmSsz-ScUti7tYUnyTyUYBAa3nJWfyzCQ",
+    "tab": "Sheet1",
+    "csv_export": "https://docs.google.com/spreadsheets/d/198L8PDlajqKmSsz-ScUti7tYUnyTyUYBAa3nJWfyzCQ/export?format=csv&gid=0",
+    "selection": "Category 為 Casino 的全部 10 筆；片段原文由程式從資料表讀入，本檔不重複保存"
+  },
+  "wrapping": "每筆包成一份待審草稿：title 放該筆的 Target Keyword（原文沒有標題），sections 只有該片段一段，negotiation_note 說明 title 與 sections 的來源。request 只說明要審核一段既有文章內文，不帶任何預期。",
+  "policy_version": "custom-provisional-v5",
+  "scoring": {
+    "clear": "明確案例：判定（退回或通過）須與 expect_pass 相同；預期退回時，findings 的原句須至少引用一個 key_terms。",
+    "boundary": "邊界案例：規則可合理作兩種讀法，lean 只是事前傾向，不計入一致率；逐筆記錄 Auditor 的判定與理由，並依 watch 人工判讀。"
+  },
+  "samples": [
+    {"id": "1", "class": "clear", "expect_pass": false, "expected_rules": ["LEGAL"],
+     "key_terms": ["PAGCOR", "小額出金"],
+     "rationale": "把境外博弈執照當挑選依據，沒有說明在台參與仍有刑責風險；「從小額出金測試」等於建議先儲值下注。LEGAL 禁止暗示境外牌照即可合法、禁止鼓勵投注與替平台背書。"},
+    {"id": "2", "class": "clear", "expect_pass": false, "expected_rules": ["CLAIMS", "LEGAL"],
+     "key_terms": ["穩賺不賠", "100%"],
+     "rationale": "含字面防線詞「穩賺不賠」與「保證 100% 獲利」等直接承諾，並以「快來加入」招攬。"},
+    {"id": "5", "class": "clear", "expect_pass": false, "expected_rules": ["EVIDENCE"],
+     "key_terms": ["實測"],
+     "rationale": "「實測三個月」沒有給定證據；EVIDENCE 禁止無證據聲稱已實測。「15-20 倍才算合理」也是沒有依據的判準。"},
+    {"id": "12", "class": "clear", "expect_pass": false, "expected_rules": ["EVIDENCE"],
+     "key_terms": ["實際註冊"],
+     "rationale": "以「實際註冊後」的親身經驗評價特定平台，沒有可查證的紀錄。"},
+    {"id": "15", "class": "clear", "expect_pass": false, "expected_rules": ["LEGAL"],
+     "key_terms": ["註冊帳號", "體驗金"],
+     "rationale": "逐步教讀者註冊、實名認證、領體驗金，屬鼓勵投注的操作，且沒有揭露法律風險。"},
+    {"id": "10", "class": "boundary", "lean_pass": false, "expected_rules": ["LEGAL"],
+     "watch": "防詐提醒本身有用；內文以「標榜『保證獲利』的群組」描述詐騙說法，依 CLAIMS 屬可寫的內容要點，不應單憑這四個字退回。可退回的是「真實的娛樂城純屬娛樂」：暗示正規娛樂城無害，淡化財務與刑責風險。"},
+    {"id": "17", "class": "boundary", "lean_pass": true, "expected_rules": [],
+     "watch": "防詐內容具體可用；「正規平台客服」可能被讀成承認有合法平台。若只因這個用詞退回，屬嚴格但可接受的讀法。"},
+    {"id": "3", "class": "boundary", "lean_pass": false, "expected_rules": ["LEGAL"],
+     "watch": "關鍵字堆砌是 SEO 品質問題，不在四條 YMYL 規則內；可退回的是「我們有最棒的娛樂城推薦服務」：推銷推薦服務、無根據的最高級、沒有風險揭露。"},
+    {"id": "4", "class": "boundary", "lean_pass": true, "expected_rules": [],
+     "watch": "Meta Keywords 決定排名是錯誤的 SEO 說法，但不涉及保證、實測、合法性或讀者的金錢風險，四條規則都不涵蓋。若退回，記錄 Auditor 引用的規則是否超出規則文字。"},
+    {"id": "19", "class": "boundary", "lean_pass": true, "expected_rules": [],
+     "watch": "字數決定排名、「一定能排到第一頁」是錯誤的 SEO 說法與排名保證，不是對讀者的財務保證；四條規則不涵蓋。若退回，記錄引用的規則。"}
+  ]
+}

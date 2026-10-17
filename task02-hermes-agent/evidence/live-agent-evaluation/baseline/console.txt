@@ -1,0 +1,1 @@
+{"run_id": "d19217ae0c174d1a8dee6b423a6986da", "state": "research_complete", "exit_code": 0, "model_attempted": true, "successful_api_calls": 11, "report_submitted": true}

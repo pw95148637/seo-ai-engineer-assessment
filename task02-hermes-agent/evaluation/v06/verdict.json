@@ -1,0 +1,24 @@
+{
+  "verdict": "not_proven",
+  "improvement": {
+    "I1": true,
+    "I2": true,
+    "I3": false,
+    "I4": false,
+    "I5": true,
+    "I6": true,
+    "I7": false
+  },
+  "failure": {
+    "F1": false,
+    "F2": false,
+    "F3": false
+  },
+  "defects": {
+    "R3": 0,
+    "B1": 0,
+    "HB": 0,
+    "HM": 0
+  },
+  "time": "2026-10-16T05:53:12.661045+00:00"
+}

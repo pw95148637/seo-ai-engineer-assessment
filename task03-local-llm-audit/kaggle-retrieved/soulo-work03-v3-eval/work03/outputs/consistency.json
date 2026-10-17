@@ -1,0 +1,109 @@
+{
+  "ID": "14",
+  "runs": [
+    {
+      "raw": "{\n  \"Reasons\": [\n    {\n      \"code\": \"YMYL_RISK\",\n      \"quote\": \"房貸二胎沒風險啦！反正房子在那裡，債務隨便還都可以，銀行不會隨便拍賣你的房子的，這點大可放心申請。\",\n      \"explanation\": \"原文主動給出可能讓讀者在法律上受損的說法，否認或淡化具體的財務或法律後果，並引導讀者實際參與可能違法的活動卻不交代法律風險。\",\n      \"source_ids\": [\"TW_873\"],\n      \"severity\": \"critical\"\n    }\n  ],\n  \"Score\": 0,\n  \"Actionable Advice\": [\n    \"建議修改為：房貸二胎存在法律風險，銀行在特定條件下可能拍賣抵押物，請務必了解相關法律條文及貸款條款，並諮詢專業法律或財務顧問。\"\n  ]\n}",
+      "seconds": 21.793613472999937,
+      "input_tokens": 1880,
+      "output_tokens": 203,
+      "eos_reached": true,
+      "temperature": 0.2,
+      "seed": 42,
+      "peak_gpu_bytes": 7608011264,
+      "parsed": {
+        "Reasons": [
+          {
+            "code": "YMYL_RISK",
+            "quote": "房貸二胎沒風險啦！反正房子在那裡，債務隨便還都可以，銀行不會隨便拍賣你的房子的，這點大可放心申請。",
+            "explanation": "原文主動給出可能讓讀者在法律上受損的說法，否認或淡化具體的財務或法律後果，並引導讀者實際參與可能違法的活動卻不交代法律風險。",
+            "source_ids": [
+              "TW_873"
+            ],
+            "severity": "critical"
+          }
+        ],
+        "Score": 0,
+        "Actionable Advice": [
+          "建議修改為：房貸二胎存在法律風險，銀行在特定條件下可能拍賣抵押物，請務必了解相關法律條文及貸款條款，並諮詢專業法律或財務顧問。"
+        ]
+      }
+    },
+    {
+      "raw": "{\n  \"Reasons\": [\n    {\n      \"code\": \"YMYL_RISK\",\n      \"quote\": \"房貸二胎沒風險啦！反正房子在那裡，債務隨便還都可以，銀行不會隨便拍賣你的房子的，這點大可放心申請。\",\n      \"explanation\": \"文章主動給出可能讓讀者在法律上受損的說法，否認或淡化具體的財務或法律後果，並引導讀者實際參與可能違法的活動卻不交代法律風險。根據知識卡TW_873，民法873條允許債權到期未受清償之抵押權人聲請法院拍賣抵押物並就價金受償，不代表每案立即法拍，但文章未提及此法律風險，且否認銀行會隨便拍賣房子，可能導致讀者誤解法律後果。\",\n      \"source_ids\": [\"TW_873\"],\n      \"severity\": \"critical\"\n    }\n  ],\n  \"Score\": 0,\n  \"Actionable Advice\": [\n    \"修改文章中「房貸二胎沒風險」的表述，避免否認或淡化法律後果，並補充抵押物拍賣的法律風險，例如引用民法873條的內容，說明債權到期未受清償時抵押物可能被拍賣，以降低法律風險。\"\n  ]\n}",
+      "seconds": 30.241218675000027,
+      "input_tokens": 1880,
+      "output_tokens": 301,
+      "eos_reached": true,
+      "temperature": 0.5,
+      "seed": 42,
+      "peak_gpu_bytes": 7608011264,
+      "parsed": {
+        "Reasons": [
+          {
+            "code": "YMYL_RISK",
+            "quote": "房貸二胎沒風險啦！反正房子在那裡，債務隨便還都可以，銀行不會隨便拍賣你的房子的，這點大可放心申請。",
+            "explanation": "文章主動給出可能讓讀者在法律上受損的說法，否認或淡化具體的財務或法律後果，並引導讀者實際參與可能違法的活動卻不交代法律風險。根據知識卡TW_873，民法873條允許債權到期未受清償之抵押權人聲請法院拍賣抵押物並就價金受償，不代表每案立即法拍，但文章未提及此法律風險，且否認銀行會隨便拍賣房子，可能導致讀者誤解法律後果。",
+            "source_ids": [
+              "TW_873"
+            ],
+            "severity": "critical"
+          }
+        ],
+        "Score": 0,
+        "Actionable Advice": [
+          "修改文章中「房貸二胎沒風險」的表述，避免否認或淡化法律後果，並補充抵押物拍賣的法律風險，例如引用民法873條的內容，說明債權到期未受清償時抵押物可能被拍賣，以降低法律風險。"
+        ]
+      }
+    },
+    {
+      "raw": "{\n  \"Reasons\": [\n    {\n      \"code\": \"YMYL_RISK\",\n      \"quote\": \"房貸二胎沒風險啦！反正房子在那裡，債務隨便還都可以，銀行不會隨便拍賣你的房子的，這點大可放心申請。\",\n      \"explanation\": \"文章主張房貸二胎無風險，且否認銀行可能拍賣抵押物的法律後果，可能導致讀者誤判貸款風險，做出不當財務決定。\",\n      \"source_ids\": [\"TW_873\"],\n      \"severity\": \"critical\"\n    }\n  ],\n  \"Score\": 0,\n  \"Actionable Advice\": [\n    \"建議補充房貸二胎的法律風險，例如抵押物拍賣的可能性與程序，並強調貸款需負擔的責任與潛在財務後果。\"\n  ]\n}",
+      "seconds": 19.33568499799992,
+      "input_tokens": 1880,
+      "output_tokens": 183,
+      "eos_reached": true,
+      "temperature": 0.8,
+      "seed": 42,
+      "peak_gpu_bytes": 7608011264,
+      "parsed": {
+        "Reasons": [
+          {
+            "code": "YMYL_RISK",
+            "quote": "房貸二胎沒風險啦！反正房子在那裡，債務隨便還都可以，銀行不會隨便拍賣你的房子的，這點大可放心申請。",
+            "explanation": "文章主張房貸二胎無風險，且否認銀行可能拍賣抵押物的法律後果，可能導致讀者誤判貸款風險，做出不當財務決定。",
+            "source_ids": [
+              "TW_873"
+            ],
+            "severity": "critical"
+          }
+        ],
+        "Score": 0,
+        "Actionable Advice": [
+          "建議補充房貸二胎的法律風險，例如抵押物拍賣的可能性與程序，並強調貸款需負擔的責任與潛在財務後果。"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "valid_n": 3,
+    "total": 3,
+    "score_range": 0,
+    "pairs": [
+      {
+        "temperature_a": 0.2,
+        "temperature_b": 0.5,
+        "code_jaccard": 1.0
+      },
+      {
+        "temperature_a": 0.2,
+        "temperature_b": 0.8,
+        "code_jaccard": 1.0
+      },
+      {
+        "temperature_a": 0.5,
+        "temperature_b": 0.8,
+        "code_jaccard": 1.0
+      }
+    ],
+    "advice_conflicts": "Requires semantic review; code agreement does not prove advice agreement"
+  }
+}

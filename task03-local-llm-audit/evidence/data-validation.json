@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "source_rows": 20,
+  "train_rows": 12,
+  "holdout_rows": 8,
+  "overlap": 0,
+  "seed": 42,
+  "split_reproduced": true,
+  "source_sha256": "12504f2058a4305817d3991c01fe05b17feea1754869ab3617b3480e67e50065",
+  "train_ids": [
+    "20",
+    "6",
+    "15",
+    "5",
+    "10",
+    "14",
+    "16",
+    "19",
+    "7",
+    "13",
+    "18",
+    "11"
+  ],
+  "holdout_ids": [
+    "2",
+    "12",
+    "3",
+    "17",
+    "8",
+    "9",
+    "1",
+    "4"
+  ]
+}

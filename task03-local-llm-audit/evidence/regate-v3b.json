@@ -1,0 +1,429 @@
+{
+  "status": "FAIL",
+  "scope": "In-sample: train12 targets and ID14 were used for training/prompt design. Necessary, not sufficient; holdout untouched.",
+  "selfcheck_first_pass_valid": "11/12",
+  "selfcheck_final_valid": "11/12",
+  "consistency_valid": "3/3",
+  "hard_failures": [
+    {
+      "level": "hard",
+      "code": "CLEAN_ITEM_FLAGGED",
+      "detail": "YMYL_RISK",
+      "where": "train ID20"
+    },
+    {
+      "level": "hard",
+      "code": "REQUIRED_CODE_MISSED",
+      "detail": "EXPERIENCE_UNVERIFIED",
+      "where": "train ID5"
+    },
+    {
+      "level": "hard",
+      "code": "INVALID_JSON",
+      "detail": "no valid JSON after allowed attempts",
+      "where": "train ID7"
+    },
+    {
+      "level": "hard",
+      "code": "YMYL_OVERFLAG",
+      "detail": "YMYL_RISK on 5/7 clearly non-YMYL items (max 1): IDs 20,6,16,18,11",
+      "where": "train12"
+    }
+  ],
+  "soft_flags": [
+    {
+      "level": "soft",
+      "code": "YMYL_NOT_IN_TARGET",
+      "detail": "這是申請二胎前必須明白的法律後果。",
+      "where": "train ID20"
+    },
+    {
+      "level": "soft",
+      "code": "SEVERITY_DIFFERS",
+      "detail": "major vs target none",
+      "where": "train ID20"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_FAR_FROM_TARGET",
+      "detail": "50 vs 95",
+      "where": "train ID20"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_NOT_IN_TARGET",
+      "detail": "銀行利率通常落在 2%-5%，遠低於民間代書。",
+      "where": "train ID6"
+    },
+    {
+      "level": "soft",
+      "code": "SEVERITY_DIFFERS",
+      "detail": "major vs target minor",
+      "where": "train ID6"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_FAR_FROM_TARGET",
+      "detail": "45 vs 70",
+      "where": "train ID6"
+    },
+    {
+      "level": "soft",
+      "code": "SEVERITY_DIFFERS",
+      "detail": "critical vs target major",
+      "where": "train ID15"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_FAR_FROM_TARGET",
+      "detail": "0 vs 50",
+      "where": "train ID15"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_BORDERLINE",
+      "detail": "根據我在各家娛樂城實測三個月的心得，首儲優惠雖然吸引人，但必須注意流水倍數限制，通常 15-20 倍才算合理。",
+      "where": "train ID5"
+    },
+    {
+      "level": "soft",
+      "code": "SEVERITY_DIFFERS",
+      "detail": "critical vs target minor",
+      "where": "train ID5"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_FAR_FROM_TARGET",
+      "detail": "0 vs 62",
+      "where": "train ID5"
+    },
+    {
+      "level": "soft",
+      "code": "CODE_MISSED",
+      "detail": "UNSUPPORTED_CLAIM",
+      "where": "train ID10"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_BORDERLINE",
+      "detail": "真實的娛樂城純屬娛樂，不可能有預測後台的技術。",
+      "where": "train ID10"
+    },
+    {
+      "level": "soft",
+      "code": "SEVERITY_DIFFERS",
+      "detail": "critical vs target minor",
+      "where": "train ID10"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_FAR_FROM_TARGET",
+      "detail": "0 vs 74",
+      "where": "train ID10"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_NOT_IN_TARGET",
+      "detail": "我們提供最好的房屋二胎服務。",
+      "where": "train ID16"
+    },
+    {
+      "level": "soft",
+      "code": "FIRST_PASS_INVALID",
+      "detail": "needed one JSON repair",
+      "where": "train ID7"
+    },
+    {
+      "level": "soft",
+      "code": "SEVERITY_DIFFERS",
+      "detail": "critical vs target major",
+      "where": "train ID13"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_NOT_IN_TARGET",
+      "detail": "建議參考內政部最新的不動產資訊平台數據，以獲取最客觀的市場行情。",
+      "where": "train ID18"
+    },
+    {
+      "level": "soft",
+      "code": "SEVERITY_DIFFERS",
+      "detail": "major vs target minor",
+      "where": "train ID18"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_FAR_FROM_TARGET",
+      "detail": "50 vs 78",
+      "where": "train ID18"
+    },
+    {
+      "level": "soft",
+      "code": "YMYL_NOT_IN_TARGET",
+      "detail": "二胎房貸的風險在於清償順位。若發生法拍，二胎債權人僅能領取一胎清償後的剩餘價值，因此利率通常較高。",
+      "where": "train ID11"
+    },
+    {
+      "level": "soft",
+      "code": "SEVERITY_DIFFERS",
+      "detail": "major vs target minor",
+      "where": "train ID11"
+    },
+    {
+      "level": "soft",
+      "code": "SCORE_FAR_FROM_TARGET",
+      "detail": "45 vs 84",
+      "where": "train ID11"
+    }
+  ],
+  "items": [
+    {
+      "ID": "20",
+      "Score": 50,
+      "target_score": 95,
+      "severity": "major",
+      "target_severity": null,
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [],
+      "flags": "hard:CLEAN_ITEM_FLAGGED;soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    },
+    {
+      "ID": "6",
+      "Score": 45,
+      "target_score": 70,
+      "severity": "major",
+      "target_severity": "minor",
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    },
+    {
+      "ID": "15",
+      "Score": 0,
+      "target_score": 50,
+      "severity": "critical",
+      "target_severity": "major",
+      "codes": [
+        "YMYL_RISK"
+      ],
+      "target_codes": [
+        "YMYL_RISK"
+      ],
+      "flags": "soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    },
+    {
+      "ID": "5",
+      "Score": 0,
+      "target_score": 62,
+      "severity": "critical",
+      "target_severity": "minor",
+      "codes": [
+        "YMYL_RISK"
+      ],
+      "target_codes": [
+        "EXPERIENCE_UNVERIFIED"
+      ],
+      "flags": "hard:REQUIRED_CODE_MISSED;soft:YMYL_BORDERLINE;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    },
+    {
+      "ID": "10",
+      "Score": 0,
+      "target_score": 74,
+      "severity": "critical",
+      "target_severity": "minor",
+      "codes": [
+        "YMYL_RISK"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "soft:CODE_MISSED;soft:YMYL_BORDERLINE;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    },
+    {
+      "ID": "14",
+      "Score": 0,
+      "target_score": 12,
+      "severity": "critical",
+      "target_severity": "critical",
+      "codes": [
+        "YMYL_RISK"
+      ],
+      "target_codes": [
+        "YMYL_RISK"
+      ],
+      "flags": ""
+    },
+    {
+      "ID": "16",
+      "Score": 35,
+      "target_score": 32,
+      "severity": "major",
+      "target_severity": "major",
+      "codes": [
+        "STUFFING",
+        "YMYL_RISK"
+      ],
+      "target_codes": [
+        "STUFFING"
+      ],
+      "flags": "soft:YMYL_NOT_IN_TARGET"
+    },
+    {
+      "ID": "19",
+      "Score": 25,
+      "target_score": 28,
+      "severity": "critical",
+      "target_severity": "critical",
+      "codes": [
+        "SEO_FALSE"
+      ],
+      "target_codes": [
+        "SEO_FALSE"
+      ],
+      "flags": ""
+    },
+    {
+      "ID": "7",
+      "Score": null,
+      "target_score": 15,
+      "severity": null,
+      "target_severity": "critical",
+      "codes": [],
+      "target_codes": [
+        "YMYL_RISK"
+      ],
+      "flags": "hard:INVALID_JSON;soft:FIRST_PASS_INVALID"
+    },
+    {
+      "ID": "13",
+      "Score": 25,
+      "target_score": 35,
+      "severity": "critical",
+      "target_severity": "major",
+      "codes": [
+        "SEO_FALSE"
+      ],
+      "target_codes": [
+        "SEO_FALSE"
+      ],
+      "flags": "soft:SEVERITY_DIFFERS"
+    },
+    {
+      "ID": "18",
+      "Score": 50,
+      "target_score": 78,
+      "severity": "major",
+      "target_severity": "minor",
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    },
+    {
+      "ID": "11",
+      "Score": 45,
+      "target_score": 84,
+      "severity": "major",
+      "target_severity": "minor",
+      "codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "target_codes": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "flags": "soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    }
+  ],
+  "consistency_runs": [
+    {
+      "temperature": 0.2,
+      "Score": 0,
+      "severity": "critical",
+      "codes": [
+        "YMYL_RISK"
+      ],
+      "flags": ""
+    },
+    {
+      "temperature": 0.5,
+      "Score": 0,
+      "severity": "critical",
+      "codes": [
+        "YMYL_RISK"
+      ],
+      "flags": ""
+    },
+    {
+      "temperature": 0.8,
+      "Score": 0,
+      "severity": "critical",
+      "codes": [
+        "YMYL_RISK"
+      ],
+      "flags": ""
+    }
+  ],
+  "manual_review": [
+    "explanation忠於所引知識卡，未誇大條文、未由片段推論整站",
+    "建議直接修正所指缺失且可執行，未新增無關要求，必要風險揭露仍保留",
+    "三溫度建議語意不互相矛盾",
+    "繁體中文自然、台灣法域正確",
+    "SEO_FALSE／UNSUPPORTED_CLAIM／YMYL_RISK判別合理，YMYL_RISK不因主題本身而標；severity合理、分數排序合理（14、7最低，20最高）",
+    "未把缺證據說成造假，未替作者捏造自述經驗"
+  ],
+  "regated": {
+    "bundle": "kaggle-retrieved/soulo-work03-v3b-train/work03",
+    "note": "Real outputs from the bundle judged by the current local gate/contract/targets; the bundle itself is unchanged.",
+    "summary": {
+      "selfcheck": "train_selfcheck.jsonl",
+      "hard_train12": {
+        "CLEAN_ITEM_FLAGGED": 1,
+        "REQUIRED_CODE_MISSED": 1,
+        "INVALID_JSON": 1,
+        "YMYL_OVERFLAG": 1
+      },
+      "hard_consistency": {},
+      "hard_total_excl_contract": 4,
+      "hard_codes_excl_contract": [
+        "CLEAN_ITEM_FLAGGED",
+        "INVALID_JSON",
+        "REQUIRED_CODE_MISSED",
+        "YMYL_OVERFLAG"
+      ],
+      "score_mae": 31.9,
+      "score_mae_n": 11,
+      "no_valid_output": [
+        "7"
+      ],
+      "severe_scores": {
+        "14": 0,
+        "7": null
+      },
+      "target_severe": {
+        "14": 12,
+        "7": 15
+      },
+      "consistency_id14_scores": [
+        0,
+        0,
+        0
+      ],
+      "ymyl_flagged": "9/12",
+      "ymyl_on_clear": "5/7",
+      "ymyl_on_target": "2/3"
+    }
+  }
+}

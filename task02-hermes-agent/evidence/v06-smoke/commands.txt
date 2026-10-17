@@ -1,0 +1,11 @@
+Environment: WSL2 Ubuntu 24.04, ~/soulo/task02-hermes, Hermes 311155fade43d1993ea968909a2ad36762345bbc, provider openai-codex (ChatGPT Plus OAuth)
+
+2026-10-16T04:50:04Z  bash scripts/run_research.sh --root runs/readiness-v06 --check-only
+  -> state ready, exit 0, run ff2ad7e2e8c640aca71a2e47b2310d80, model_attempted=false, 5 expected tools registered
+
+2026-10-16T04:50:10Z  bash scripts/run_research.sh --model gpt-6.1-sol --root runs/smoke-v06 --smoke-only
+  -> state smoke_complete, exit 0, run 4a00cc28d5d34395b19b38d220c3ab0f, 2 API calls, 6084 tokens (5962 prompt / 122 completion)
+  The model called research_status once and reported its real output (30 requests, 5 searches, no lessons).
+
+research.sqlite of the smoke root is not copied; the trace file holds its events.
+Account usage before and after: evidence/v06-usage/usage-log.jsonl (Session 21% -> 22%).

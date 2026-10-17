@@ -1,0 +1,24 @@
+{
+  "run_id": "b53302f0e5b04ce893d04519eef75035",
+  "mode": "llm_runtime",
+  "status": "error",
+  "scenario": "normal",
+  "checks": {
+    "mode_is_llm_runtime": true,
+    "has_both_roles": false,
+    "raw_outputs_match_state": false,
+    "run_ids_match": true,
+    "expected_terminal_status": false,
+    "final_output_contract": false,
+    "final_literal_guard_clear": false,
+    "raw_responses_saved": true,
+    "claude_cli_context_isolated": true
+  },
+  "max_request_context_tokens_per_call": [],
+  "limitations": [
+    "模式與原文比對仍不能單獨證明伺服器為真實模型，需核對provider、模型及帳號執行紀錄",
+    "吸引力與語意合規仍需獨立閱讀；本程式不測量CTR或認證法律/公司手冊合規"
+  ],
+  "negotiation": [],
+  "final": null
+}

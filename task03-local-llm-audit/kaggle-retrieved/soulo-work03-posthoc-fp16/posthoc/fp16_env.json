@@ -1,0 +1,29 @@
+{
+  "started_utc": "2026-10-16T17:07:09Z",
+  "weights": "float16, no adapter",
+  "model_id": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "parameters": 8190735360,
+  "footprint_bytes": 16381470976,
+  "devices": [
+    "0",
+    "1"
+  ],
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "peft": "0.20.0",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.14.0",
+    "datasets": "4.8.5"
+  },
+  "holdout_sha256": "818b491f19541c7703cc311afd498fe1169c223a1c03fb4902e275b46b7a9106",
+  "lock_sha256": "8ab9b7ae24fe5907965e6dc7b7e226bdcd7f74a845ccc2bfee995f2fc627d0cf",
+  "seconds_total": 298.3386615750005,
+  "peak_gpu1_bytes_all_items": 10735461888,
+  "note": "peak_gpu_bytes inside each record is device 0 only (frozen generate()); device 1 peak is above"
+}

@@ -1,0 +1,121 @@
+<!doctype html><meta charset="utf-8"><title>Work03 holdout8 audit</title><style>body{font-family:sans-serif;margin:16px}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px;vertical-align:top;font-size:14px}th{cursor:pointer;background:#f3f3f3}pre{white-space:pre-wrap}</style><h1>8筆獨立審核（凍結後一次執行）</h1><p>輸出契約（JSON schema、原文引句、來源ID、Score落在最高severity區間）首次有效 8/8，修正後 8/8。AutoFlags是讀holdout前固定的啟發式檢查（凍結後的checker修正記在freeze_decision.json），不是準確率；逐筆品質見manual_review.csv。</p><input id="q" placeholder="篩選（ID、代碼、旗標或任意文字）" style="width:100%;padding:6px;margin:8px 0"><table id="t"><thead><tr><th>ID</th><th>類別</th><th>Score</th><th>最高severity</th><th>代碼</th><th>Reasons</th><th>Actionable Advice</th><th>AutoFlags</th><th>JSON首次/最終</th><th>原文</th></tr></thead><tbody><tr><td>2</td><td>Casino</td><td data-v='0'>0</td><td>critical</td><td>YMYL_RISK</td><td><ul><li><b>YMYL_RISK</b> <i>critical</i>「這裡保證 100% 獲利，每天登入送一萬，穩賺不賠，是您發家致富的唯一選擇，快來加入。」文章主動給出可能讓讀者在金錢上受損的說法，例如保證獲利、收益或核貸，且未交代法律風險。根據知識卡TW_266，刑法266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章的內容可能涉及違法活動，且未說明風險。 <small>TW_266</small></li></ul></td><td><ul><li>修改文章內容，避免做出保證獲利或收益的說法，並加入法律風險說明，例如提醒讀者此類活動可能涉及賭博或非法金融活動，並建議諮詢專業法律或金融顧問。</li></ul></td><td></td><td>True/True</td><td><details><summary>文章與最後一次原始輸出</summary><p>2026最強娛樂城推薦！這裡保證 100% 獲利，每天登入送一萬，穩賺不賠，是您發家致富的唯一選擇，快來加入。</p><pre>{
+  &quot;Reasons&quot;: [
+    {
+      &quot;code&quot;: &quot;YMYL_RISK&quot;,
+      &quot;quote&quot;: &quot;這裡保證 100% 獲利，每天登入送一萬，穩賺不賠，是您發家致富的唯一選擇，快來加入。&quot;,
+      &quot;explanation&quot;: &quot;文章主動給出可能讓讀者在金錢上受損的說法，例如保證獲利、收益或核貸，且未交代法律風險。根據知識卡TW_266，刑法266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章的內容可能涉及違法活動，且未說明風險。&quot;,
+      &quot;source_ids&quot;: [&quot;TW_266&quot;],
+      &quot;severity&quot;: &quot;critical&quot;
+    }
+  ],
+  &quot;Score&quot;: 0,
+  &quot;Actionable Advice&quot;: [
+    &quot;修改文章內容，避免做出保證獲利或收益的說法，並加入法律風險說明，例如提醒讀者此類活動可能涉及賭博或非法金融活動，並建議諮詢專業法律或金融顧問。&quot;
+  ]
+}</pre></details></td></tr><tr><td>12</td><td>Casino</td><td data-v='45'>45</td><td>major</td><td>YMYL_RISK,EXPERIENCE_UNVERIFIED</td><td><ul><li><b>YMYL_RISK</b> <i>major</i>「這家娛樂城介面很華麗，但在 PTT 上的評價兩極，特別是客服回覆速度較慢，這是我實際註冊後最直觀的感受。」文章提及「娛樂城」，屬於高風險活動，且未說明此活動可能涉及違法賭博，也未提醒讀者注意法律風險。根據知識卡TW_266，網際網路賭博可能涉及刑法266條，需個案判斷是否合法，但文章未提供足夠資訊以降低風險。 <small>TW_266</small></li><li><b>EXPERIENCE_UNVERIFIED</b> <i>minor</i>「這是我實際註冊後最直觀的感受。」文章以第一人稱自述親身經歷，但未提供日期、方法或紀錄等可核對細節，屬於自述經驗但缺乏證據支持。根據知識卡G_HELP，經驗敘述應可核對，不可將缺證據直接當已證偽。 <small>G_HELP</small></li></ul></td><td><ul><li>建議補充說明「娛樂城」可能涉及違法賭博的法律風險，並提醒讀者注意相關法律後果。</li><li>建議補充自述經驗的日期、方法或紀錄等細節，以提高可信度。</li></ul></td><td>hard:FALSE_EXPERIENCE</td><td>True/True</td><td><details><summary>文章與最後一次原始輸出</summary><p>雖然這家娛樂城介面很華麗，但在 PTT 上的評價兩極，特別是客服回覆速度較慢，這是我實際註冊後最直觀的感受。</p><pre>{
+  &quot;Reasons&quot;: [
+    {
+      &quot;code&quot;: &quot;YMYL_RISK&quot;,
+      &quot;quote&quot;: &quot;這家娛樂城介面很華麗，但在 PTT 上的評價兩極，特別是客服回覆速度較慢，這是我實際註冊後最直觀的感受。&quot;,
+      &quot;explanation&quot;: &quot;文章提及「娛樂城」，屬於高風險活動，且未說明此活動可能涉及違法賭博，也未提醒讀者注意法律風險。根據知識卡TW_266，網際網路賭博可能涉及刑法266條，需個案判斷是否合法，但文章未提供足夠資訊以降低風險。&quot;,
+      &quot;source_ids&quot;: [&quot;TW_266&quot;],
+      &quot;severity&quot;: &quot;major&quot;
+    },
+    {
+      &quot;code&quot;: &quot;EXPERIENCE_UNVERIFIED&quot;,
+      &quot;quote&quot;: &quot;這是我實際註冊後最直觀的感受。&quot;,
+      &quot;explanation&quot;: &quot;文章以第一人稱自述親身經歷，但未提供日期、方法或紀錄等可核對細節，屬於自述經驗但缺乏證據支持。根據知識卡G_HELP，經驗敘述應可核對，不可將缺證據直接當已證偽。&quot;,
+      &quot;source_ids&quot;: [&quot;G_HELP&quot;],
+      &quot;severity&quot;: &quot;minor&quot;
+    }
+  ],
+  &quot;Score&quot;: 45,
+  &quot;Actionable Advice&quot;: [
+    &quot;建議補充說明「娛樂城」可能涉及違法賭博的法律風險，並提醒讀者注意相關法律後果。&quot;,
+    &quot;建議補充自述經驗的日期、方法或紀錄等細節，以提高可信度。&quot;
+  ]
+}</pre></details></td></tr><tr><td>3</td><td>Casino</td><td data-v='0'>0</td><td>critical</td><td>YMYL_RISK</td><td><ul><li><b>YMYL_RISK</b> <i>critical</i>「娛樂城推薦娛樂城推薦。想要最好的娛樂城推薦嗎？我們有最棒的娛樂城推薦服務，娛樂城推薦就在這裡。」文章主動推薦娛樂城，可能涉及網路賭博，而根據知識卡TW_266，刑法266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章可能引導讀者參與可能違法的活動卻未交代法律風險。 <small>TW_266</small></li></ul></td><td><ul><li>避免直接推薦娛樂城或任何可能涉及賭博的平台，除非有明確的合法認證與風險說明。</li></ul></td><td></td><td>True/True</td><td><details><summary>文章與最後一次原始輸出</summary><p>娛樂城推薦娛樂城推薦。想要最好的娛樂城推薦嗎？我們有最棒的娛樂城推薦服務，娛樂城推薦就在這裡。</p><pre>{
+  &quot;Reasons&quot;: [
+    {
+      &quot;code&quot;: &quot;YMYL_RISK&quot;,
+      &quot;quote&quot;: &quot;娛樂城推薦娛樂城推薦。想要最好的娛樂城推薦嗎？我們有最棒的娛樂城推薦服務，娛樂城推薦就在這裡。&quot;,
+      &quot;explanation&quot;: &quot;文章主動推薦娛樂城，可能涉及網路賭博，而根據知識卡TW_266，刑法266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章可能引導讀者參與可能違法的活動卻未交代法律風險。&quot;,
+      &quot;source_ids&quot;: [&quot;TW_266&quot;],
+      &quot;severity&quot;: &quot;critical&quot;
+    }
+  ],
+  &quot;Score&quot;: 0,
+  &quot;Actionable Advice&quot;: [
+    &quot;避免直接推薦娛樂城或任何可能涉及賭博的平台，除非有明確的合法認證與風險說明。&quot;
+  ]
+}</pre></details></td></tr><tr><td>17</td><td>Casino</td><td data-v='50'>50</td><td>major</td><td>YMYL_RISK</td><td><ul><li><b>YMYL_RISK</b> <i>major</i>「請記住，正規平台客服絕不會詢問您的驗證碼。」該句話否定了詐騙行為的風險，可能讓讀者誤以為所有平台客服都不會詢問驗證碼，從而降低對詐騙的警覺，屬於YMYL_RISK。 <small>TW_266</small></li></ul></td><td><ul><li>建議修改為：『請記住，正規平台客服絕不會詢問您的驗證碼，若遇到此類情況，請勿提供任何個人資料，並立即聯繫官方客服或向警方報案。』以強化風險警示，避免誤導讀者。</li></ul></td><td></td><td>True/True</td><td><details><summary>文章與最後一次原始輸出</summary><p>最近出現一種偽裝成官方客服的詐騙手法，會要求玩家提供簡訊驗證碼。請記住，正規平台客服絕不會詢問您的驗證碼。</p><pre>{
+  &quot;Reasons&quot;: [
+    {
+      &quot;code&quot;: &quot;YMYL_RISK&quot;,
+      &quot;quote&quot;: &quot;請記住，正規平台客服絕不會詢問您的驗證碼。&quot;,
+      &quot;explanation&quot;: &quot;該句話否定了詐騙行為的風險，可能讓讀者誤以為所有平台客服都不會詢問驗證碼，從而降低對詐騙的警覺，屬於YMYL_RISK。&quot;,
+      &quot;source_ids&quot;: [&quot;TW_266&quot;],
+      &quot;severity&quot;: &quot;major&quot;
+    }
+  ],
+  &quot;Score&quot;: 50,
+  &quot;Actionable Advice&quot;: [
+    &quot;建議修改為：『請記住，正規平台客服絕不會詢問您的驗證碼，若遇到此類情況，請勿提供任何個人資料，並立即聯繫官方客服或向警方報案。』以強化風險警示，避免誤導讀者。&quot;
+  ]
+}</pre></details></td></tr><tr><td>8</td><td>Mortgage</td><td data-v='50'>50</td><td>major</td><td>YMYL_RISK</td><td><ul><li><b>YMYL_RISK</b> <i>major</i>「申請房屋二胎需要準備身分證影本、土地建物所有權狀以及最近半年的房貸繳款紀錄，以利金融機構評估額度。」文章提及房屋二胎的申請文件，但未說明此貸款可能涉及高風險，例如高利率、抵押物被法拍等法律後果，也未提醒讀者需審慎評估自身財務狀況，可能導致讀者做出錯誤的金融決策。 <small>TW_873,TW_874,F_APR</small></li></ul></td><td><ul><li>建議補充說明房屋二胎的潛在風險，例如高利率、抵押物被法拍的可能性，以及需審慎評估自身財務狀況，以降低讀者做出錯誤金融決策的風險。</li></ul></td><td>soft:MANY_SOURCES</td><td>True/True</td><td><details><summary>文章與最後一次原始輸出</summary><p>申請房屋二胎需要準備身分證影本、土地建物所有權狀以及最近半年的房貸繳款紀錄，以利金融機構評估額度。</p><pre>{
+  &quot;Reasons&quot;: [
+    {
+      &quot;code&quot;: &quot;YMYL_RISK&quot;,
+      &quot;quote&quot;: &quot;申請房屋二胎需要準備身分證影本、土地建物所有權狀以及最近半年的房貸繳款紀錄，以利金融機構評估額度。&quot;,
+      &quot;explanation&quot;: &quot;文章提及房屋二胎的申請文件，但未說明此貸款可能涉及高風險，例如高利率、抵押物被法拍等法律後果，也未提醒讀者需審慎評估自身財務狀況，可能導致讀者做出錯誤的金融決策。&quot;,
+      &quot;source_ids&quot;: [&quot;TW_873&quot;, &quot;TW_874&quot;, &quot;F_APR&quot;],
+      &quot;severity&quot;: &quot;major&quot;
+    }
+  ],
+  &quot;Score&quot;: 50,
+  &quot;Actionable Advice&quot;: [
+    &quot;建議補充說明房屋二胎的潛在風險，例如高利率、抵押物被法拍的可能性，以及需審慎評估自身財務狀況，以降低讀者做出錯誤金融決策的風險。&quot;
+  ]
+}</pre></details></td></tr><tr><td>9</td><td>Mortgage</td><td data-v='25'>25</td><td>critical</td><td>SEO_FALSE</td><td><ul><li><b>SEO_FALSE</b> <i>critical</i>「在撰寫這篇文章時，我建議在 HTML 原始碼中將關鍵字字體顏色設為白色，隱藏在背景中，這樣可以騙過 Google 機器人。」Google 不會使用隱藏文字或顏色來評估內容質量或排名，這種做法屬於 SEO 操縱行為，違反 Google 的爬蟲政策。 <small>G_META,G_SPAM</small></li></ul></td><td><ul><li>避免使用隱藏文字或顏色來操縱 Google 搜索排名，這種做法違反 Google 的爬蟲政策，且可能導致網站被標記為垃圾內容。</li></ul></td><td></td><td>True/True</td><td><details><summary>文章與最後一次原始輸出</summary><p>在撰寫這篇文章時，我建議在 HTML 原始碼中將關鍵字字體顏色設為白色，隱藏在背景中，這樣可以騙過 Google 機器人。</p><pre>{
+  &quot;Reasons&quot;: [
+    {
+      &quot;code&quot;: &quot;SEO_FALSE&quot;,
+      &quot;quote&quot;: &quot;在撰寫這篇文章時，我建議在 HTML 原始碼中將關鍵字字體顏色設為白色，隱藏在背景中，這樣可以騙過 Google 機器人。&quot;,
+      &quot;explanation&quot;: &quot;Google 不會使用隱藏文字或顏色來評估內容質量或排名，這種做法屬於 SEO 操縱行為，違反 Google 的爬蟲政策。&quot;,
+      &quot;source_ids&quot;: [&quot;G_META&quot;, &quot;G_SPAM&quot;],
+      &quot;severity&quot;: &quot;critical&quot;
+    }
+  ],
+  &quot;Score&quot;: 25,
+  &quot;Actionable Advice&quot;: [
+    &quot;避免使用隱藏文字或顏色來操縱 Google 搜索排名，這種做法違反 Google 的爬蟲政策，且可能導致網站被標記為垃圾內容。&quot;
+  ]
+}</pre></details></td></tr><tr><td>1</td><td>Casino</td><td data-v='0'>0</td><td>critical</td><td>YMYL_RISK</td><td><ul><li><b>YMYL_RISK</b> <i>critical</i>「建議觀察其是否有國際博弈執照，如菲律賓 PAGCOR，並從小額出金測試其速度。」文章提及「娛樂城」，而根據知識卡 TW_266，刑法第266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章提及的「娛樂城」可能涉及賭博，而未明確說明其合法性或法律風險，可能導致讀者誤認為這些平台是合法的，從而可能涉及法律風險。 <small>TW_266</small></li></ul></td><td><ul><li>建議明確說明「娛樂城」的法律風險，並提醒讀者在參與前應確認其合法性，避免誤導讀者認為這些平台是安全或合法的。</li></ul></td><td></td><td>True/True</td><td><details><summary>文章與最後一次原始輸出</summary><p>挑選娛樂城時，首重資安與出金紀錄。建議觀察其是否有國際博弈執照，如菲律賓 PAGCOR，並從小額出金測試其速度。</p><pre>{
+  &quot;Reasons&quot;: [
+    {
+      &quot;code&quot;: &quot;YMYL_RISK&quot;,
+      &quot;quote&quot;: &quot;建議觀察其是否有國際博弈執照，如菲律賓 PAGCOR，並從小額出金測試其速度。&quot;,
+      &quot;explanation&quot;: &quot;文章提及「娛樂城」，而根據知識卡 TW_266，刑法第266條涵蓋以網際網路等方法賭博財物，並保留暫時娛樂之物例外；平台自稱娛樂或完成認證不能直接證明合法，需依個案判斷。因此，文章提及的「娛樂城」可能涉及賭博，而未明確說明其合法性或法律風險，可能導致讀者誤認為這些平台是合法的，從而可能涉及法律風險。&quot;,
+      &quot;source_ids&quot;: [&quot;TW_266&quot;],
+      &quot;severity&quot;: &quot;critical&quot;
+    }
+  ],
+  &quot;Score&quot;: 0,
+  &quot;Actionable Advice&quot;: [
+    &quot;建議明確說明「娛樂城」的法律風險，並提醒讀者在參與前應確認其合法性，避免誤導讀者認為這些平台是安全或合法的。&quot;
+  ]
+}</pre></details></td></tr><tr><td>4</td><td>Casino</td><td data-v='25'>25</td><td>critical</td><td>SEO_FALSE</td><td><ul><li><b>SEO_FALSE</b> <i>critical</i>「請務必填寫 Meta Keywords 標籤，這在 2026 年是決定 Google 排名的最核心因素。」Google 不使用 meta keywords 標籤作為索引或排名依據，此主張與知識卡 G_META 的事實不符，屬於錯誤的 SEO 理論。 <small>G_META</small></li></ul></td><td><ul><li>修正「Meta Keywords 標籤是決定 Google 排名的最核心因素」的錯誤說法，並補充 Google 排名的正確因素，例如內容質量、用戶體驗、鏈接等。</li></ul></td><td></td><td>True/True</td><td><details><summary>文章與最後一次原始輸出</summary><p>如果您在搜尋娛樂城出金，請務必填寫 Meta Keywords 標籤，這在 2026 年是決定 Google 排名的最核心因素。</p><pre>{
+  &quot;Reasons&quot;: [
+    {
+      &quot;code&quot;: &quot;SEO_FALSE&quot;,
+      &quot;quote&quot;: &quot;請務必填寫 Meta Keywords 標籤，這在 2026 年是決定 Google 排名的最核心因素。&quot;,
+      &quot;explanation&quot;: &quot;Google 不使用 meta keywords 標籤作為索引或排名依據，此主張與知識卡 G_META 的事實不符，屬於錯誤的 SEO 理論。&quot;,
+      &quot;source_ids&quot;: [&quot;G_META&quot;],
+      &quot;severity&quot;: &quot;critical&quot;
+    }
+  ],
+  &quot;Score&quot;: 25,
+  &quot;Actionable Advice&quot;: [
+    &quot;修正「Meta Keywords 標籤是決定 Google 排名的最核心因素」的錯誤說法，並補充 Google 排名的正確因素，例如內容質量、用戶體驗、鏈接等。&quot;
+  ]
+}</pre></details></td></tr></tbody></table><h2>同prompt無adapter對照（比較用，非凍結系統）</h2><p>相同prompt、greedy解碼與修正規則，不載入adapter。輸出契約首次有效 8/8，修正後 8/8。差異只說明LoRA在這8筆的增量，不是準確率。</p><table><thead><tr><th>ID</th><th>Category</th><th>adapter_score</th><th>base_score</th><th>adapter_severity</th><th>base_severity</th><th>adapter_codes</th><th>base_codes</th><th>adapter_flags</th><th>base_flags</th><th>adapter_valid</th><th>base_valid</th></tr></thead><tbody><tr><td>2</td><td>Casino</td><td>0</td><td>25</td><td>critical</td><td>critical</td><td>YMYL_RISK</td><td>YMYL_RISK,SEO_FALSE</td><td></td><td>soft:ADVICE_PADDING</td><td>True/True</td><td>True/True</td></tr><tr><td>12</td><td>Casino</td><td>45</td><td>50</td><td>major</td><td>major</td><td>YMYL_RISK,EXPERIENCE_UNVERIFIED</td><td>YMYL_RISK,EXPERIENCE_UNVERIFIED</td><td>hard:FALSE_EXPERIENCE</td><td>hard:FALSE_EXPERIENCE</td><td>True/True</td><td>True/True</td></tr><tr><td>3</td><td>Casino</td><td>0</td><td>0</td><td>critical</td><td>critical</td><td>YMYL_RISK</td><td>YMYL_RISK</td><td></td><td></td><td>True/True</td><td>True/True</td></tr><tr><td>17</td><td>Casino</td><td>50</td><td>50</td><td>major</td><td>major</td><td>YMYL_RISK</td><td>YMYL_RISK</td><td></td><td></td><td>True/True</td><td>True/True</td></tr><tr><td>8</td><td>Mortgage</td><td>50</td><td>55</td><td>major</td><td>major</td><td>YMYL_RISK</td><td>YMYL_RISK</td><td>soft:MANY_SOURCES</td><td>soft:MANY_SOURCES</td><td>True/True</td><td>True/True</td></tr><tr><td>9</td><td>Mortgage</td><td>25</td><td>25</td><td>critical</td><td>critical</td><td>SEO_FALSE</td><td>SEO_FALSE</td><td></td><td></td><td>True/True</td><td>True/True</td></tr><tr><td>1</td><td>Casino</td><td>0</td><td>45</td><td>critical</td><td>major</td><td>YMYL_RISK</td><td>YMYL_RISK,UNSUPPORTED_CLAIM</td><td></td><td></td><td>True/True</td><td>True/True</td></tr><tr><td>4</td><td>Casino</td><td>25</td><td>25</td><td>critical</td><td>critical</td><td>SEO_FALSE</td><td>SEO_FALSE</td><td></td><td></td><td>True/True</td><td>True/True</td></tr></tbody></table><script>const q=document.getElementById('q'),b=document.querySelector('#t tbody');q.oninput=()=>{for(const r of b.rows)r.style.display=r.textContent.toLowerCase().includes(q.value.toLowerCase())?'':'none'};document.querySelectorAll('#t th').forEach((h,i)=>{let asc=true;h.onclick=()=>{const rs=[...b.rows];rs.sort((x,y)=>{const a=x.cells[i].dataset.v??x.cells[i].textContent,c=y.cells[i].dataset.v??y.cells[i].textContent,n=parseFloat(a)-parseFloat(c);return (isNaN(n)?a.localeCompare(c):n)*(asc?1:-1)});asc=!asc;rs.forEach(r=>b.appendChild(r))}})</script>

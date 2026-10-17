@@ -1,0 +1,8 @@
+{
+  "model_called": false,
+  "test": "direct official registered tool, robots only",
+  "result": {
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "error_type": "gaierror"
+  }
+}

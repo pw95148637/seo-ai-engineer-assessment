@@ -1,0 +1,47 @@
+{
+  "seed": 20261017,
+  "labels": {
+    "A": {
+      "run": "runtime-claude-conflict-v7-1",
+      "which": "final",
+      "prompt_version": "v7",
+      "status": "approved_provisional"
+    },
+    "B": {
+      "run": "runtime-claude-conflict-v7-2",
+      "which": "final",
+      "prompt_version": "v7",
+      "status": "approved_provisional"
+    },
+    "C": {
+      "run": "runtime-claude-conflict-v7-3",
+      "which": "final",
+      "prompt_version": "v7",
+      "status": "approved_provisional"
+    },
+    "D": {
+      "run": "runtime-claude-conflict-v6",
+      "which": "final",
+      "prompt_version": "v6",
+      "status": "approved_provisional"
+    },
+    "E": {
+      "run": "runtime-claude-conflict-v6-run3",
+      "which": "final",
+      "prompt_version": "v6",
+      "status": "approved_provisional"
+    },
+    "F": {
+      "run": "runtime-claude-conflict-v6",
+      "which": "round1",
+      "prompt_version": "v6",
+      "status": "approved_provisional"
+    },
+    "G": {
+      "run": "runtime-claude-conflict-v6-repeat",
+      "which": "final",
+      "prompt_version": "v6",
+      "status": "approved_provisional"
+    }
+  }
+}

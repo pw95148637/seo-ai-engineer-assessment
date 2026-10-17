@@ -1,0 +1,38 @@
+13:32:09 turn_context conversation turn: session=20261016_133207_069654 platform=unknown history=0 msg='自主研究 https:
+//2030.tw 針對「娛樂城」「3A娛樂城」的 SEO 策略與值得優先採取的競爭行動。2030.tw是競爭者，沒有其私有Search ...'
+[34m13:32:13 conversation_loop API call #1: in=3274 out=15 total=3289 latency=3.3s[0m
+13:32:17 tool_executor tool research_status completed (4.41s, 2337 chars)
+[34m13:32:30 conversation_loop API call #2: in=4356 out=531 total=4887 latency=13.1s cache=3072/4356 (71%)[0m
+13:32:31 tool_executor tool research_fetch completed (0.45s, 12073 chars)
+13:32:32 tool_executor tool research_fetch completed (1.86s, 12158 chars)
+13:32:32 tool_executor tool research_fetch completed (-0.07s, 9744 chars)
+13:32:35 tool_executor tool research_fetch completed (2.20s, 11285 chars)
+[34m13:32:41 conversation_loop API call #3: in=33180 out=255 total=33435 latency=6.3s cache=4224/33180 (13%)[0m
+13:32:45 provider DDGS search '"2030.tw" "3a娛樂城"': 1 results (limit 5)
+13:32:45 tool_executor tool research_search completed (4.34s, 315 chars)
+[33m13:32:51 provider DDGS search error: DDGSException: No results found.[0m
+[33m13:32:51 tool_executor Tool research_search returned error (5.38s): {"evidence_id": "bbb5e295740848ab808d3a4307c1338c",[0m
+[33m"source_type": "search_index", "untrusted_content": true, "success": false, "error": "DuckDuckGo search failed: DDGSEx…[0m
+13:32:51 tool_executor tool research_fetch completed (0.28s, 370 chars)
+13:32:53 tool_executor tool research_fetch completed (2.04s, 9928 chars)
+[34m13:33:02 conversation_loop API call #4: in=39883 out=370 total=40253 latency=9.6s cache=33024/39883 (83%)[0m
+13:33:06 provider DDGS search '2030.tw 3A 娛樂城 評價': 5 results (limit 5)
+13:33:06 tool_executor tool research_search completed (3.07s, 1523 chars)
+13:33:09 provider DDGS search '娛樂城 2030 玩運彩': 5 results (limit 5)
+13:33:09 tool_executor tool research_search completed (3.75s, 1375 chars)
+13:33:10 tool_executor tool research_fetch completed (0.44s, 1534 chars)
+[34m13:33:18 conversation_loop API call #5: in=42543 out=282 total=42825 latency=8.1s cache=39680/42543 (93%)[0m
+13:33:19 tool_executor tool research_fetch completed (0.76s, 12519 chars)
+13:33:20 tool_executor tool research_fetch completed (1.74s, 12463 chars)
+13:33:22 tool_executor tool research_fetch completed (1.86s, 9993 chars)
+[34m13:33:27 conversation_loop API call #6: in=58971 out=210 total=59181 latency=5.2s cache=42368/58971 (72%)[0m
+13:33:27 tool_executor tool research_evidence completed (0.02s, 500 chars)
+13:33:27 tool_executor tool research_evidence completed (0.01s, 499 chars)
+13:33:28 tool_executor tool research_evidence completed (0.01s, 968 chars)
+13:33:28 tool_executor tool research_evidence completed (0.02s, 1569 chars)
+[34m13:34:24 conversation_loop API call #7: in=61061 out=2940 total=64001 latency=56.5s cache=58880/61061 (96%)[0m
+13:34:24 tool_executor tool research_finish completed (0.17s, 145 chars)
+[34m13:34:56 conversation_loop API call #8: in=64059 out=1682 total=65741 latency=31.4s cache=60928/64059 (95%)[0m
+13:34:56 trajectory Trajectory saved to trajectory_samples.jsonl
+[1;32m13:34:56 conversation_loop Turn ended: reason=text_response(finish_reason=stop) model=gpt-6.1-sol api_calls=8/16 budget[0m
+[1;32m=8/16 tool_turns=7 last_msg_role=assistant response_len=2300 session=20261016_133207_069654[0m

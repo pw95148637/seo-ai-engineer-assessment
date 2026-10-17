@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "mean_requests": 3.0,
+    "mean_precision": 1.0,
+    "mean_recall": 1.0
+  },
+  "history": {
+    "mean_requests": 3.0,
+    "mean_precision": 1.0,
+    "mean_recall": 1.0
+  },
+  "memory": {
+    "mean_requests": 2.6666666666666665,
+    "mean_precision": 0.8333333333333334,
+    "mean_recall": 0.8333333333333334
+  }
+}

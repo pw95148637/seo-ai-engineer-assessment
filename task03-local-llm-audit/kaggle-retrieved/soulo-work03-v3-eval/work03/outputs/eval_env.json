@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-10-16T04:58:56Z",
+  "lock_sha256": "8ab9b7ae24fe5907965e6dc7b7e226bdcd7f74a845ccc2bfee995f2fc627d0cf",
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "torch": "2.11.0+cu128",
+  "train_torch": "2.11.0+cu128",
+  "same_torch": true,
+  "gpu": "Tesla T4",
+  "versions": {
+    "transformers": "4.57.6",
+    "peft": "0.20.0",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.14.0",
+    "datasets": "4.8.5"
+  },
+  "holdout_sha256": "818b491f19541c7703cc311afd498fe1169c223a1c03fb4902e275b46b7a9106",
+  "train_gate_status": "FAIL"
+}

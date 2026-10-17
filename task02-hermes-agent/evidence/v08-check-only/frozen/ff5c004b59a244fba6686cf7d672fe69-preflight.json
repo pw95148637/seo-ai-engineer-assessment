@@ -1,0 +1,31 @@
+{
+  "provider": "openai-codex",
+  "logged_in": true,
+  "rate_limited": false,
+  "expected_tools": [
+    "research_evidence",
+    "research_fetch",
+    "research_finish",
+    "research_offpage",
+    "research_search",
+    "research_status",
+    "skill_view",
+    "skills_list"
+  ],
+  "actual_tools": [
+    "research_evidence",
+    "research_fetch",
+    "research_finish",
+    "research_offpage",
+    "research_search",
+    "research_status",
+    "skill_view",
+    "skills_list"
+  ],
+  "model_called": false,
+  "ready": true,
+  "blocker": "",
+  "hermes_learning": "frozen",
+  "hermes_home": "/home/user/soulo/task02-hermes/.runtime/user/profiles/chk-frozen",
+  "stores_in_home": true
+}

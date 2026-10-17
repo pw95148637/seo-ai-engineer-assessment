@@ -1,0 +1,56 @@
+{
+  "header": "第二題 Hermes SEO 競爭情報 Agent｜錄影管線演練",
+  "banner": "演練：重播 v0.6 R3（只測管線，非最終 Demo）",
+  "fps": 12,
+  "caption_seconds": 4.5,
+  "speed": {"base": 5, "idle_gap": 3, "idle_speed": 15, "lead": 0.6, "min_ff": 0.8},
+  "title_card": {
+    "seconds": 3.5,
+    "step": "演練",
+    "title": "重播 v0.6 R3：測試錄影與轉檔管線",
+    "sub": "畫面是 tmux 真實終端擷取；上方檢視器與中間 Hermes 日誌以原始時間重播 v0.6 R3 的已存資料。",
+    "req": "不呼叫模型、不跑新 run；此片只作測試，不是最終 Demo",
+    "note": "右上角標示播放倍率與實際經過時間"
+  },
+  "intro": {"label": "演練", "captions": ["錄影開始：三個窗格依序啟動。"]},
+  "segments": [
+    {
+      "marker": "[1/5]", "pane": "viewer", "label": "① Memory / Learning：開始前的帳本",
+      "card": {"step": "1 / 5", "title": "開始前，帳本裡有什麼", "req": "原題：Memory / Learning", "seconds": 2},
+      "speed": {"base": 2, "idle_speed": 2},
+      "captions": ["帳本只由控制器量測與人工審查寫入，模型沒有寫入路徑；每條 lesson 有範圍與效期。"]
+    },
+    {
+      "marker": "[2/5]", "pane": "viewer", "label": "② Agent 自主研究 × Tool Use",
+      "card": {"step": "2 / 5", "title": "Agent 自主研究與工具使用", "req": "原題：Agent 自主研究、Tool Use", "seconds": 2},
+      "captions": ["控制器先重抓帳本記載的目標頁，確認仍有效才交給模型。",
+                   "每次 research_fetch 都由模型寫出查證目的；結果、連結數與命中目標頁即時顯示。",
+                   "精確查詢沒有結果時，模型改用較寬查詢；搜尋摘要不當作原頁證據。"]
+    },
+    {
+      "marker": "[3/5]", "pane": "viewer", "label": "③ Evidence-based Decision",
+      "card": {"step": "3 / 5", "title": "依證據收斂與控制器核對", "req": "原題：Evidence-based Decision", "seconds": 2},
+      "captions": ["報告的每項觀察與推論都必須引用本輪證據；控制器核對 ID、雜湊與結構後才接受。"]
+    },
+    {
+      "marker": "模型在研究途中寫下的假設", "pane": "viewer", "label": "③ Evidence-based Decision",
+      "speed": {"base": 2, "idle_speed": 2},
+      "captions": ["模型先列待驗假設，讀到反證後收窄判斷；文字取自 run 結束後寫出的 hermes.json。"]
+    },
+    {
+      "marker": "[4/5]", "pane": "viewer", "label": "④ 最終競爭分析與行動建議",
+      "card": {"step": "4 / 5", "title": "最終競爭分析與行動建議", "req": "原題：最終競爭分析與行動建議", "seconds": 2},
+      "speed": {"base": 2.5, "idle_speed": 2.5},
+      "captions": ["分成站內（on-page）與站外（off-page）發現，並列出仍未知的項目。",
+                   "行動建議只針對我們自己的網站，標明成本與驗收方式。"]
+    },
+    {
+      "marker": "[5/5]", "pane": "viewer", "label": "⑤ Memory / Learning：學到什麼、如何證明",
+      "card": {"step": "5 / 5", "title": "學到什麼、如何證明", "req": "原題：Memory / Learning", "seconds": 2},
+      "speed": {"base": 2.5, "idle_speed": 2.5},
+      "captions": ["score_run 用同一計分程式比較各 run；R3 是凍結帳本的評估 run，帳本前後不變。"]
+    }
+  ],
+  "end_hold": 1.5,
+  "end_caption": "演練結束：此片只驗證管線，最終 Demo 錄 v0.7 R4 的真實執行。"
+}

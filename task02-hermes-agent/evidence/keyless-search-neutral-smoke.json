@@ -1,0 +1,8 @@
+{
+  "test": "neutral infrastructure query, not competitor research",
+  "package_available": false,
+  "result": {
+    "success": false,
+    "error": "ddgs package is not installed — run `pip install ddgs`"
+  }
+}

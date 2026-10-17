@@ -1,0 +1,391 @@
+{
+  "blind_id": "b9bfd995",
+  "claims": [
+    {
+      "item": "claim:1",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "positioning",
+      "text": "首頁 title 與 H1 以2030玩運彩瘋世足、MLB/NBA及世界盃為主，導覽錨文字「線上娛樂城推薦」連到 /wordcup/；不是首頁直接以3A娛樂城為主題。",
+      "sources": [
+        {
+          "evidence_id": "865f78253c9043cbb5af432e340cf9b8",
+          "url": "https://2030.tw/",
+          "status": 200,
+          "sha256": "fe6fa54c16cd99273eb476cfa9da93766886a90788b84d0f323d6e870baf6eba",
+          "method": "direct_http",
+          "snapshot": "snapshots/865f78253c9043cbb5af432e340cf9b8.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:2",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "architecture",
+      "text": "/wordcup/ 的title為線上娛樂城推薦｜2026最新評價排名，提供品牌、評價、優惠、玩法、安全與出金分類，並連到3a娛樂城及娛樂城專頁；頁面自稱2502篇評測，不是本輪核實的獨立優質文章數。",
+      "sources": [
+        {
+          "evidence_id": "39f38b25e81b44d4b4ada2871db8a4c3",
+          "url": "https://2030.tw/wordcup/",
+          "status": 200,
+          "sha256": "22bf180979c0583d6717f9f53122dc5512a45883aa3ee2cbd4b4db9dce08e7ce",
+          "method": "direct_http",
+          "snapshot": "snapshots/39f38b25e81b44d4b4ada2871db8a4c3.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:3",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "metadata-and-internal-links",
+      "text": "3a品牌頁與娛樂城泛詞頁皆在title、H1、description及URL使用對應關鍵詞，提供麵包屑、六類評測段落、可見FAQ及相關推薦內鏈；兩頁回應200、canonical指向各自URL，robots宣告index, follow。這不證明搜尋引擎已收錄或FAQ富結果資格。",
+      "sources": [
+        {
+          "evidence_id": "4fef17e18567472dbeeafdb05adb3fe4",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "method": "direct_http",
+          "snapshot": "snapshots/4fef17e18567472dbeeafdb05adb3fe4.txt"
+        },
+        {
+          "evidence_id": "2f717ec8c0fc4f73af7c328fd3123cbb",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "8fe3592514851597f397202afade2e7dc4f4e68ead1593f31a9aa49a459c02ea",
+          "method": "direct_http",
+          "snapshot": "snapshots/2f717ec8c0fc4f73af7c328fd3123cbb.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:4",
+      "kind": "inference",
+      "section": "on_page",
+      "topic": "strategy",
+      "text": "可觀察配置支持「體育／運彩入口—娛樂城目錄—泛詞、品牌與長尾內容—註冊導流」的策略推論；尚不能推導排名、流量或轉換成效。",
+      "sources": [
+        {
+          "evidence_id": "865f78253c9043cbb5af432e340cf9b8",
+          "url": "https://2030.tw/",
+          "status": 200,
+          "sha256": "fe6fa54c16cd99273eb476cfa9da93766886a90788b84d0f323d6e870baf6eba",
+          "method": "direct_http",
+          "snapshot": "snapshots/865f78253c9043cbb5af432e340cf9b8.txt"
+        },
+        {
+          "evidence_id": "39f38b25e81b44d4b4ada2871db8a4c3",
+          "url": "https://2030.tw/wordcup/",
+          "status": 200,
+          "sha256": "22bf180979c0583d6717f9f53122dc5512a45883aa3ee2cbd4b4db9dce08e7ce",
+          "method": "direct_http",
+          "snapshot": "snapshots/39f38b25e81b44d4b4ada2871db8a4c3.txt"
+        },
+        {
+          "evidence_id": "4fef17e18567472dbeeafdb05adb3fe4",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "method": "direct_http",
+          "snapshot": "snapshots/4fef17e18567472dbeeafdb05adb3fe4.txt"
+        },
+        {
+          "evidence_id": "7d904d56853f444c811dedd13a423d1a",
+          "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "709bc1cfb0b622e003530eeba6fb8fd1bd412022ad30eef0a8ff2e47e0de19ce",
+          "method": "direct_http",
+          "snapshot": "snapshots/7d904d56853f444c811dedd13a423d1a.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:5",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "review-transparency",
+      "text": "3a、娛樂城、富遊樣本頁使用相近的六類段落與FAQ結構，均以2030編輯部署名並聲稱個人體驗；本輪可見文字未提供可追溯交易樣本表、測試日期及可核對憑據，不能把聲稱實測當作已驗證的實測結果。",
+      "sources": [
+        {
+          "evidence_id": "4fef17e18567472dbeeafdb05adb3fe4",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "method": "direct_http",
+          "snapshot": "snapshots/4fef17e18567472dbeeafdb05adb3fe4.txt"
+        },
+        {
+          "evidence_id": "2f717ec8c0fc4f73af7c328fd3123cbb",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "8fe3592514851597f397202afade2e7dc4f4e68ead1593f31a9aa49a459c02ea",
+          "method": "direct_http",
+          "snapshot": "snapshots/2f717ec8c0fc4f73af7c328fd3123cbb.txt"
+        },
+        {
+          "evidence_id": "7d904d56853f444c811dedd13a423d1a",
+          "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "709bc1cfb0b622e003530eeba6fb8fd1bd412022ad30eef0a8ff2e47e0de19ce",
+          "method": "direct_http",
+          "snapshot": "snapshots/7d904d56853f444c811dedd13a423d1a.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:6",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "counterevidence",
+      "text": "3a主頁宣稱出金半小時到一小時，出金速度長尾頁宣稱15到30分鐘；長尾頁出現「3a娛樂城出金速度有手機版可以玩嗎？」等套詞。未取得足夠樣本條件以解釋不同口徑，亦不能據此認定造假。",
+      "sources": [
+        {
+          "evidence_id": "4fef17e18567472dbeeafdb05adb3fe4",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "method": "direct_http",
+          "snapshot": "snapshots/4fef17e18567472dbeeafdb05adb3fe4.txt"
+        },
+        {
+          "evidence_id": "d54f2ec71fb3488abfe12988bee97af9",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+          "status": 200,
+          "sha256": "611e171bb88f7ca987a8b46d93190da8dd6ddeaa85c24a1a2f599f2bc7a1e2c4",
+          "method": "direct_http",
+          "snapshot": "snapshots/d54f2ec71fb3488abfe12988bee97af9.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:7",
+      "kind": "inference",
+      "section": "on_page",
+      "topic": "content-opportunity",
+      "text": "模板化段落與長尾頁泛化問答顯示可評估意圖重疊、品牌辨識及可信度改善機會；未證實全站皆如此、AI生成、搜尋引擎處罰或實際關鍵字蠶食。",
+      "sources": [
+        {
+          "evidence_id": "4fef17e18567472dbeeafdb05adb3fe4",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "method": "direct_http",
+          "snapshot": "snapshots/4fef17e18567472dbeeafdb05adb3fe4.txt"
+        },
+        {
+          "evidence_id": "2f717ec8c0fc4f73af7c328fd3123cbb",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "8fe3592514851597f397202afade2e7dc4f4e68ead1593f31a9aa49a459c02ea",
+          "method": "direct_http",
+          "snapshot": "snapshots/2f717ec8c0fc4f73af7c328fd3123cbb.txt"
+        },
+        {
+          "evidence_id": "7d904d56853f444c811dedd13a423d1a",
+          "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "709bc1cfb0b622e003530eeba6fb8fd1bd412022ad30eef0a8ff2e47e0de19ce",
+          "method": "direct_http",
+          "snapshot": "snapshots/7d904d56853f444c811dedd13a423d1a.txt"
+        },
+        {
+          "evidence_id": "d54f2ec71fb3488abfe12988bee97af9",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+          "status": 200,
+          "sha256": "611e171bb88f7ca987a8b46d93190da8dd6ddeaa85c24a1a2f599f2bc7a1e2c4",
+          "method": "direct_http",
+          "snapshot": "snapshots/d54f2ec71fb3488abfe12988bee97af9.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:8",
+      "kind": "observation",
+      "section": "on_page",
+      "topic": "commercial-outbound",
+      "text": "3a、娛樂城及富遊頁皆有帶st=wg2030參數、指向don0911.3a1788.bet的註冊出站連結，擷取結果標示nofollow；目錄有st=wg2030idx。這些是出站導流證據，不是入站連結，亦未證明付費佣金或品牌所有權。",
+      "sources": [
+        {
+          "evidence_id": "39f38b25e81b44d4b4ada2871db8a4c3",
+          "url": "https://2030.tw/wordcup/",
+          "status": 200,
+          "sha256": "22bf180979c0583d6717f9f53122dc5512a45883aa3ee2cbd4b4db9dce08e7ce",
+          "method": "direct_http",
+          "snapshot": "snapshots/39f38b25e81b44d4b4ada2871db8a4c3.txt"
+        },
+        {
+          "evidence_id": "4fef17e18567472dbeeafdb05adb3fe4",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8",
+          "method": "direct_http",
+          "snapshot": "snapshots/4fef17e18567472dbeeafdb05adb3fe4.txt"
+        },
+        {
+          "evidence_id": "2f717ec8c0fc4f73af7c328fd3123cbb",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "8fe3592514851597f397202afade2e7dc4f4e68ead1593f31a9aa49a459c02ea",
+          "method": "direct_http",
+          "snapshot": "snapshots/2f717ec8c0fc4f73af7c328fd3123cbb.txt"
+        },
+        {
+          "evidence_id": "7d904d56853f444c811dedd13a423d1a",
+          "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "709bc1cfb0b622e003530eeba6fb8fd1bd412022ad30eef0a8ff2e47e0de19ce",
+          "method": "direct_http",
+          "snapshot": "snapshots/7d904d56853f444c811dedd13a423d1a.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:9",
+      "kind": "observation",
+      "section": "off_page",
+      "topic": "verified-false-positive",
+      "text": "網域搜尋曾回傳Yahoo彰源2030.TW股票結果；直接讀取其中一頁確認links_to_target為空，2030玩運彩提及為零，字串2030.TW出現在股票語境。此頁不是已確認的2030.tw入站來源。",
+      "sources": [
+        {
+          "evidence_id": "e73bace4aab84a64bd280348f4304e8a",
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256": "0436219ae0b9edc9e7ebc0bc28d5fccf32289be7c30a427ee09f94d8af73ddb9",
+          "method": "search_index",
+          "snapshot": "snapshots/e73bace4aab84a64bd280348f4304e8a.txt"
+        },
+        {
+          "evidence_id": "212b161b8fa64c29a2e32cd8ffb60cfd",
+          "url": "https://tw.stock.yahoo.com/quote/2030.TW",
+          "status": 200,
+          "sha256": "651869879c18ae47c0309fc0accaa8cb323b61211f0b47aafaec273f83be7441",
+          "method": "offpage_http",
+          "snapshot": "snapshots/212b161b8fa64c29a2e32cd8ffb60cfd.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:10",
+      "kind": "inference",
+      "section": "off_page",
+      "topic": "evidence-quality",
+      "text": "本例顯示僅以網域字串命中搜尋摘要會把股票代碼誤當站外品牌證據；該Yahoo頁不能支持競爭者具有財經媒體背書或相關外鏈的說法。",
+      "sources": [
+        {
+          "evidence_id": "212b161b8fa64c29a2e32cd8ffb60cfd",
+          "url": "https://tw.stock.yahoo.com/quote/2030.TW",
+          "status": 200,
+          "sha256": "651869879c18ae47c0309fc0accaa8cb323b61211f0b47aafaec273f83be7441",
+          "method": "offpage_http",
+          "snapshot": "snapshots/212b161b8fa64c29a2e32cd8ffb60cfd.txt"
+        }
+      ]
+    },
+    {
+      "item": "claim:11",
+      "kind": "unknown",
+      "section": "off_page",
+      "topic": "backlink-coverage",
+      "text": "本輪未確認有效的站外品牌提及或入站連結；競爭者完整backlinks、入站錨文字分布、付費合作、歷史連結延續及其排名影響均未知，不能宣稱沒有backlinks。",
+      "sources": []
+    },
+    {
+      "item": "claim:12",
+      "kind": "unknown",
+      "section": "other",
+      "topic": "performance-and-technical-limits",
+      "text": "競爭者兩個目標詞的實際SERP排名、搜尋量、曝光、點擊、流量、轉換及收益未知，沒有其私有Search Console或分析資料；本輪也未做速度、行動版、結構化資料及完整爬行驗證。",
+      "sources": []
+    }
+  ],
+  "actions": [
+    {
+      "item": "action:1",
+      "action": "P0｜只針對我們自己的網站：先盤點合法合規範圍、現有URL與已授權Search Console／分析資料，建立娛樂城泛詞、3A品牌、出金等意圖基線；未取得我方資料前不開大規模內容預算。",
+      "reason": "競爭者頁面配置不等於有效策略；我方網站未被提供，不能假設已有內容、流量或權限。以索引狀態、查詢對應URL、曝光及點擊作後續比較。"
+    },
+    {
+      "item": "action:2",
+      "action": "P1｜先試作一個有證據的3A品牌查核頁：標明非官方身份、作者與審核者、來源日期、營運實體與可核實條款；出金時間區分平台宣稱、第三方陳述與實際證據，無法核實就標未知；披露合作關係與風險。",
+      "reason": "競爭者3A主頁與出金長尾頁存在未解釋的時間口徑差異，透明度是可直接評估的差異化，不需要模仿其大量頁面。不得為造內容而誘導入金或提交敏感證件。"
+    },
+    {
+      "item": "action:3",
+      "action": "P1｜建立一個娛樂城選擇與風險比較主頁，連到品牌查核頁；比較方法、出金限制、費用、優惠流水、申訴與法規來源，未知欄位明示；用描述性內鏈與獨立title/H1，先不將相同答案拆成大量長尾頁。",
+      "reason": "競爭者有目錄與對應詞頁的基本架構，不宜只比篇數；以清楚搜尋意圖及可核實資訊與其模板化樣本區隔。"
+    },
+    {
+      "item": "action:4",
+      "action": "P2｜以公開可引用的條款比較表、更新紀錄與研究方法做站外引用資產，先少量向相關編輯或消費者資訊來源驗證需求；記錄實際來源URL、錨文字、rel、上下文與目標URL。",
+      "reason": "本輪沒有確認競爭者有效入站來源，無依據照抄其外鏈名單或購買外鏈。此為我方待測策略，不是已證實的競爭者做法；以實際相關引用與合格引薦而非網址數量評價。"
+    },
+    {
+      "item": "action:5",
+      "action": "P2｜在我方發佈前驗證200狀態、canonical、索引指令、行動版與內鏈；發佈後以固定觀察窗追蹤索引、目標查詢曝光／點擊及查詢對應頁變化，資料不足則延長觀察，不預設排名或流量增幅。",
+      "reason": "競爭者有基本metadata是反證，不能只靠補關鍵詞取勝；需要把可檢驗的內容假設與真實成效連接。"
+    },
+    {
+      "item": "action:6",
+      "action": "成本與品質分開：先把成本花在資料查核與一組核心頁；取得合規及搜尋需求訊號後才評估長尾擴充與外展。暫不做大量套版、無法驗證的出金保證、假冒官方、購買精確匹配錨文字或無關體育內容擴張。",
+      "reason": "目錄自稱2502篇不等於2502篇高品質或排名有效內容；樣本的具體差異化缺口比規模更有決策價值，排名投報仍未知。"
+    }
+  ],
+  "unknowns": [
+    "競爭者在「娛樂城」「3A娛樂城」的地區、裝置與時點排名及實際曝光、點擊、流量、轉換。",
+    "競爭者完整入站網域、錨文字、有效提及與外鏈品質；本輪唯一直接讀取的站外頁是股票同名假陽性，不能代表整體。",
+    "競爭者是否有付費導流合作、佣金、共同經營、網域轉手或歷史權重延續。",
+    "目錄宣稱文章總量與全站內容品質、參數頁處理、完整重複內容比例及實際關鍵字蠶食。",
+    "結構化資料、Core Web Vitals、JS呈現及行動裝置體驗未驗證。",
+    "我們自己網站的網址、內容現況、合法合規範圍、預算與可授權成效資料尚未提供。"
+  ],
+  "review_questions": [
+    "Is each observation/inference supported by its cited snapshot? (unsupported)",
+    "Does any claim or action confuse the competitor with our own site, or overreach beyond public evidence? (scope_error)",
+    "Score coverage 0-2 on each rubric dimension, and count supported off_page observations (off_page_supported_known)."
+  ],
+  "rubric": {
+    "counts": {
+      "unsupported": "observation／inference 中，引用快照不支持其內容的項數；主張中任一具體細節（數字、網址、某字串是否出現）與引用快照不符就算不支持，即使結論方向成立",
+      "scope_error": "把競爭者與我方網站混為一談，或超出公開證據範圍的主張與行動項數",
+      "off_page_supported_known": "section=off_page 的 observation 中，引用快照確實支持、而且是正面發現的項數：站外頁確實提及或連到目標站，或目標頁確實有該出站連結；沒有提及、沒有連結的陰性樣本不算"
+    },
+    "coverage": {
+      "on_page": [
+        "0：幾乎沒有附證據的站內觀察",
+        "1：有目標頁標題、H1、內容等附證據的觀察，但沒有涵蓋站內連結架構或技術訊號",
+        "2：同時涵蓋目標頁內容、站內連結架構與至少一項技術訊號（canonical、robots、sitemap 等），並說明和兩個關鍵字的關係"
+      ],
+      "off_page": [
+        "0：只列未知，或站外主張沒有證據",
+        "1：有附證據的站外相關已知（出站連結類型、搜尋索引中的站外提及），但沒有用實際讀取的站外頁佐證入站連結或提及",
+        "2：至少一項以實際讀取的站外頁佐證入站連結或品牌提及（附錨文字或上下文），區分入站與出站，並說明公開資料看不到完整 backlinks"
+      ],
+      "actionable": [
+        "0：行動籠統（例如「加強內容」），看不出要做什麼",
+        "1：行動具體，但缺優先順序，或和報告中的發現連不起來",
+        "2：行動具體（對象頁面、元素或查詢）、依優先順序排列、各自連到報告中的發現，並寫出如何驗證成效"
+      ],
+      "epistemic": [
+        "0：推論寫成事實，或缺少未知",
+        "1：有分類，但有推論寫成確定，或未知沒有說明缺什麼資料",
+        "2：已知、推論、未知清楚分開，推論標出依據與限度，未知寫明缺哪些資料"
+      ]
+    },
+    "answer_format": {
+      "<blind_id>": {
+        "unsupported": 0,
+        "scope_error": 0,
+        "off_page_supported_known": 0,
+        "coverage": {
+          "on_page": 0,
+          "off_page": 0,
+          "actionable": 0,
+          "epistemic": 0
+        },
+        "notes": ""
+      }
+    }
+  }
+}

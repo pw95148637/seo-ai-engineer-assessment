@@ -1,0 +1,2 @@
+{"output": "HERMES_TOOL_OK", "exit_code": 0, "error": null}
+PASS: actual Hermes terminal implementation executed. No LLM request was made.

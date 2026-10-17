@@ -1,0 +1,53 @@
+{
+  "run_id": "ee4d9ba1e4de4c2d81cb363a796ae7ea",
+  "host": "icasino.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": {
+      "call": 5,
+      "evidence_id": "c6a7ff3fa5cf451bb33c060fcdd83157",
+      "url": "https://icasino.tw/how-we-rate/",
+      "via": "research_fetch"
+    },
+    "3A娛樂城": null
+  },
+  "both_target_pages_read": false,
+  "tool_calls": 16,
+  "calls_before_first_hit": 4,
+  "calls_until_both_hit": null,
+  "searches": 5,
+  "failed_searches": 2,
+  "failed_search_kinds": {
+    "no_results": 2,
+    "error": 0
+  },
+  "failed_search_queries": [
+    "\"icasino.tw\" \"3A娛樂城\"",
+    "\"3A娛樂城\" 評價"
+  ],
+  "http_requests": 9,
+  "http_requests_controller": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 0
+  },
+  "lessons_presented": 2,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 223832,
+    "prompt": 217756,
+    "completion": 6076,
+    "api_calls": 7
+  },
+  "claims": 13,
+  "actions": 6,
+  "blind_id": "5a480368"
+}

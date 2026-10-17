@@ -1,0 +1,167 @@
+{
+  "claims": [
+    {
+      "text": "首頁 title 與 H1 均為「CasinoBase｜台灣娛樂城推薦評比平台」；/reviews/ 使用2026娛樂城評價排行榜標題、Top10、CB-FIVE與FAQ。兩頁canonical各指自身。這是頁面設定與內容觀察，不證明收錄或排名。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "45442294b5f843d6bf08417b99758f4a",
+        "9e12f0bbb0fb412daf589e5ef8741f9a"
+      ],
+      "topic": "keyword_mapping"
+    },
+    {
+      "text": "已讀首頁、排行、優惠、攻略、防詐、術語六頁，導覽連結共同連向這些主題頁，可推論目前可見架構以娛樂城泛詞及相關意圖為主題分工，不能據此認定SEO有效。",
+      "kind": "inference",
+      "section": "on_page",
+      "evidence_ids": [
+        "45442294b5f843d6bf08417b99758f4a",
+        "9e12f0bbb0fb412daf589e5ef8741f9a",
+        "5fb5ac422b21409d921bfa052aadf86d",
+        "e054ea7807b545d5970af40b2a37036c",
+        "a38fb8024edd4fe583aee580358eea6a",
+        "e2c7dec6b88e49c99b1ddb4e0c0b2bd8"
+      ],
+      "topic": "site_architecture"
+    },
+    {
+      "text": "六個已讀頁面的可讀內容與擷取連結未見3A娛樂城或其專頁；只限本次樣本，不宣稱全站不存在。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "45442294b5f843d6bf08417b99758f4a",
+        "9e12f0bbb0fb412daf589e5ef8741f9a",
+        "5fb5ac422b21409d921bfa052aadf86d",
+        "e054ea7807b545d5970af40b2a37036c",
+        "a38fb8024edd4fe583aee580358eea6a",
+        "e2c7dec6b88e49c99b1ddb4e0c0b2bd8"
+      ],
+      "topic": "3a_coverage"
+    },
+    {
+      "text": "無法確認3A娛樂城專頁存在與否、關鍵詞排名、曝光、點擊、流量或轉換；本站公開樣本不足以證明3A是低競爭或高價值機會。",
+      "kind": "unknown",
+      "section": "on_page",
+      "evidence_ids": [],
+      "topic": "3a_performance"
+    },
+    {
+      "text": "排行頁文字承諾可點擊詳細評價頁，但其「查看評價」錨文字實際連至rg8888.org、hs168.vip/9eyamq等站外URL，而非本站品牌評測內頁。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "9e12f0bbb0fb412daf589e5ef8741f9a"
+      ],
+      "topic": "link_destination"
+    },
+    {
+      "text": "優惠頁卡片寫任你搏20倍流水、錢盈3倍，比較表則寫任你博15倍、錢盈10倍；可能是活動或計算基礎不同，但可讀內容未清楚對應，屬未解釋差異，不是造假的證明。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "5fb5ac422b21409d921bfa052aadf86d"
+      ],
+      "topic": "content_consistency"
+    },
+    {
+      "text": "不能將全站描述為毫無實用內容：優惠頁解釋流水計算、指定遊戲與驗證限制，防詐頁建議保留紀錄、停止進一步儲值或提供個資，術語頁解釋首存、返水、風控等詞。這些並不獨立證實該站測試、評分或平台安全性。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "5fb5ac422b21409d921bfa052aadf86d",
+        "a38fb8024edd4fe583aee580358eea6a",
+        "e2c7dec6b88e49c99b1ddb4e0c0b2bd8"
+      ],
+      "topic": "counterevidence"
+    },
+    {
+      "text": "攻略頁反覆顯示相同英文老虎機文章名稱與2025/08/22日期，擷取到的站外連結為google.com，未得到可讀的獨立攻略文章URL；這限制了品牌或長尾文章品質比較，不能推定AI生成、搜尋懲罰或全站重複內容。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "e054ea7807b545d5970af40b2a37036c"
+      ],
+      "topic": "content_navigation"
+    },
+    {
+      "text": "首頁與排行頁宣稱團隊實測、參考PTT/Dcard、量化評分；本次擷取未提供可點擊的原始實測或社群證據連結，未見具名個人作者。團隊署名與自述不能視為獨立驗證的專業或安全背書。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "45442294b5f843d6bf08417b99758f4a",
+        "9e12f0bbb0fb412daf589e5ef8741f9a"
+      ],
+      "topic": "provenance"
+    },
+    {
+      "text": "網域與CasinoBase品牌的站外搜尋均未回傳可用候選頁，因此沒有可用research_offpage直接驗證的站外頁。這是本次搜尋可用性限制，不是沒有backlinks的證據。",
+      "kind": "observation",
+      "section": "off_page",
+      "evidence_ids": [
+        "49c4c53fb1b84010a7ba59b2bcdabee9",
+        "1b266fd7a5cb49989799ef4a3b758280"
+      ],
+      "topic": "access"
+    },
+    {
+      "text": "目前不足以提出有證據支持的競爭者站外建鏈策略推論；不能由站內引用PTT/Dcard或outbound_hosts推定社群導流、入站連結或第三方背書。",
+      "kind": "unknown",
+      "section": "off_page",
+      "evidence_ids": [],
+      "topic": "link_building_inference"
+    },
+    {
+      "text": "入站來源、目標URL、錨文字、rel、上下文、referring domains數量、權威度、付費合作及完整backlink輪廓均未確認。",
+      "kind": "unknown",
+      "section": "off_page",
+      "evidence_ids": [],
+      "topic": "backlink_profile"
+    },
+    {
+      "text": "首頁、排行及優惠頁皆有指向hs168.vip/9eyamq等相同站外目的地的連結，支持商業導流路徑的推論；僅為出站證據，不證明分潤、共同所有權或入站連結。",
+      "kind": "inference",
+      "section": "on_page",
+      "evidence_ids": [
+        "45442294b5f843d6bf08417b99758f4a",
+        "9e12f0bbb0fb412daf589e5ef8741f9a",
+        "5fb5ac422b21409d921bfa052aadf86d"
+      ],
+      "topic": "outbound_funnel"
+    }
+  ],
+  "actions": [
+    {
+      "action": "P0：先盤點我們網站的合法內容範圍、現有URL與授權Search Console基線；建立娛樂城與3A娛樂城query-to-page對應，沒有本站資料前不宣稱缺頁或互搶。",
+      "reason": "目前只有競爭者公開證據，沒有我方網址、既有內容與成效資料。成本低至中，屬執行前置條件，收益未知。"
+    },
+    {
+      "action": "P1：在我方先試作或改善一個娛樂城比較核心頁，以可追溯來源、評分定義、更新紀錄、具名責任編輯及商業揭露取代只有分數的榜單；逐項列條件與不確定性。",
+      "reason": "競爭者樣本已有泛詞主題架構與FAQ，差異應放在證據與一致性。觀察信心高，製作成本中，並不保證排名。"
+    },
+    {
+      "action": "P1：待需求與實體辨識查證、法遵確認後，才在我方測試一頁3A娛樂城資訊評核，區分官方主張、可驗證事實、使用者指控與未知；無證據時不評定安全、不製造實測。",
+      "reason": "競爭者樣本未見3A，不等於市場缺口已證明。成本中至高，機會證據弱，回報未知；避免先批量鋪品牌長尾。"
+    },
+    {
+      "action": "P1：讓我方「查看評價」連到真正的站內評測，外連另標目的；建立核心頁與已查證品牌頁的雙向內鏈，檢查canonical、可索引狀態及行動版呈現。",
+      "reason": "競爭者「查看評價」實際外連已直接核對；可優先測試較符合使用者預期的資訊路徑。成本低至中，不能由此預測排名提升。"
+    },
+    {
+      "action": "P2：以公開可核對、防詐與條款比較的原創資源爭取相關站點自願引用，記錄實際來源頁、目標、錨文字、rel與上下文；不依未知的競爭者backlink輪廓購買連結或做垃圾社群投放。",
+      "reason": "未有可驗證的競爭者站外策略，應建立我方可衡量的資產與合法曝光。成本中至高，競爭者策略證據不足，成效未知。"
+    },
+    {
+      "action": "驗證：我方發布前保存基線，發布後依可取得資料於4–8週初查，追蹤收錄、query-to-page、曝光、點擊、CTR與真實相關引用；流量不足則延長觀察，不宣稱固定增幅。",
+      "reason": "只用我方授權資料評估，將執行成本、證據信心與結果分開；未有改善再調整意圖、內容與內鏈，不直接擴量。"
+    }
+  ],
+  "unknowns": [
+    "未取得競爭者任何私有Search Console、分析、收入或轉換資料。",
+    "公開搜尋四次，其中一次僅空白結果，其餘無結果；沒有可直接讀取的站外候選，故未執行research_offpage，不宣稱完整backlink稽核。",
+    "只讀首頁及五個導覽主題頁；未取得3A或其他獨立品牌文章URL，不能完成品牌文章間的實質品質比較。",
+    "未驗證JavaScript渲染後DOM、行動版視覺、Core Web Vitals、結構化資料有效性、robots.txt完整政策或搜尋引擎實際採用的canonical。",
+    "排行頁擷取權重顯示0%，可能是動態呈現，未視為真實權重或計分錯誤；重複H1文字亦未推定實際H1元素數量。",
+    "HTTPS、到帳速度及站方宣稱的牌照或中立性不等於合法、安全或獲利保證；未獨立驗證平台合法性與黑名單指控。",
+    "我們網站網址、現況、司法管轄、資源與授權基線未提供，因此優先順序是條件式建議而非已實施成果。"
+  ]
+}

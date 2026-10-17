@@ -1,0 +1,19 @@
+{
+  "hermes_home": "/home/user/soulo/task02-hermes/.runtime/user/profiles/chk-frozen",
+  "hermes_learning": "frozen",
+  "valid_tool_names": [
+    "research_evidence",
+    "research_fetch",
+    "research_finish",
+    "research_offpage",
+    "research_search",
+    "research_status",
+    "skill_view",
+    "skills_list"
+  ],
+  "memory_loaded": true,
+  "system_prompt_sha256": "36fb0f107e2da83e8cb7406a19ef5d722c6fc4c7de6a937179d0f4eefa301327",
+  "memory_block": true,
+  "user_block": false,
+  "skills_index": true
+}

@@ -1,0 +1,238 @@
+{
+  "note": "Same prompt, greedy decoding and repair rule; base has no adapter. train12 is in-sample for the adapter, so this bounds what LoRA adds, not generalisation.",
+  "hard_counts": {
+    "adapter": {
+      "CLEAN_ITEM_FLAGGED": 1,
+      "REQUIRED_CODE_MISSED": 1,
+      "RISK_DISCLOSURE_REMOVAL": 1,
+      "INVALID_JSON": 1,
+      "YMYL_OVERFLAG": 1
+    },
+    "base": {
+      "RISK_DISCLOSURE_REMOVAL": 1,
+      "CLEAN_ITEM_FLAGGED": 1,
+      "CROSS_DOMAIN_LAW": 1,
+      "YMYL_OVERFLAG": 1
+    }
+  },
+  "first_pass_valid": {
+    "adapter": "11/12",
+    "base": "12/12"
+  },
+  "items": [
+    {
+      "ID": "20",
+      "target_score": 95,
+      "target_severity": null,
+      "adapter_score": 50,
+      "base_score": 50,
+      "adapter_severity": "major",
+      "base_severity": "major",
+      "adapter_codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "base_codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "adapter_flags": "hard:CLEAN_ITEM_FLAGGED;soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET",
+      "base_flags": "hard:RISK_DISCLOSURE_REMOVAL;hard:CLEAN_ITEM_FLAGGED;soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    },
+    {
+      "ID": "6",
+      "target_score": 70,
+      "target_severity": "minor",
+      "adapter_score": 45,
+      "base_score": 50,
+      "adapter_severity": "major",
+      "base_severity": "major",
+      "adapter_codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "base_codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "adapter_flags": "soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET",
+      "base_flags": "soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS"
+    },
+    {
+      "ID": "15",
+      "target_score": 50,
+      "target_severity": "major",
+      "adapter_score": 0,
+      "base_score": 0,
+      "adapter_severity": "critical",
+      "base_severity": "critical",
+      "adapter_codes": [
+        "YMYL_RISK"
+      ],
+      "base_codes": [
+        "YMYL_RISK"
+      ],
+      "adapter_flags": "soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET",
+      "base_flags": "soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    },
+    {
+      "ID": "5",
+      "target_score": 62,
+      "target_severity": "minor",
+      "adapter_score": 0,
+      "base_score": 50,
+      "adapter_severity": "critical",
+      "base_severity": "major",
+      "adapter_codes": [
+        "YMYL_RISK"
+      ],
+      "base_codes": [
+        "YMYL_RISK",
+        "EXPERIENCE_UNVERIFIED"
+      ],
+      "adapter_flags": "hard:REQUIRED_CODE_MISSED;soft:YMYL_BORDERLINE;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET",
+      "base_flags": "soft:YMYL_BORDERLINE;soft:SEVERITY_DIFFERS"
+    },
+    {
+      "ID": "10",
+      "target_score": 74,
+      "target_severity": "minor",
+      "adapter_score": 0,
+      "base_score": 0,
+      "adapter_severity": "critical",
+      "base_severity": "critical",
+      "adapter_codes": [
+        "YMYL_RISK"
+      ],
+      "base_codes": [
+        "YMYL_RISK"
+      ],
+      "adapter_flags": "soft:CODE_MISSED;soft:YMYL_BORDERLINE;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET",
+      "base_flags": "soft:CODE_MISSED;soft:YMYL_BORDERLINE;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    },
+    {
+      "ID": "14",
+      "target_score": 12,
+      "target_severity": "critical",
+      "adapter_score": 0,
+      "base_score": 0,
+      "adapter_severity": "critical",
+      "base_severity": "critical",
+      "adapter_codes": [
+        "YMYL_RISK"
+      ],
+      "base_codes": [
+        "YMYL_RISK"
+      ],
+      "adapter_flags": "hard:RISK_DISCLOSURE_REMOVAL",
+      "base_flags": ""
+    },
+    {
+      "ID": "16",
+      "target_score": 32,
+      "target_severity": "major",
+      "adapter_score": 35,
+      "base_score": 35,
+      "adapter_severity": "major",
+      "base_severity": "major",
+      "adapter_codes": [
+        "STUFFING",
+        "YMYL_RISK"
+      ],
+      "base_codes": [
+        "STUFFING",
+        "YMYL_RISK"
+      ],
+      "adapter_flags": "soft:YMYL_NOT_IN_TARGET",
+      "base_flags": "soft:YMYL_NOT_IN_TARGET"
+    },
+    {
+      "ID": "19",
+      "target_score": 28,
+      "target_severity": "critical",
+      "adapter_score": 25,
+      "base_score": 25,
+      "adapter_severity": "critical",
+      "base_severity": "critical",
+      "adapter_codes": [
+        "SEO_FALSE"
+      ],
+      "base_codes": [
+        "SEO_FALSE"
+      ],
+      "adapter_flags": "",
+      "base_flags": ""
+    },
+    {
+      "ID": "7",
+      "target_score": 15,
+      "target_severity": "critical",
+      "adapter_score": null,
+      "base_score": 25,
+      "adapter_severity": null,
+      "base_severity": "critical",
+      "adapter_codes": [],
+      "base_codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "adapter_flags": "hard:INVALID_JSON;soft:FIRST_PASS_INVALID",
+      "base_flags": "hard:CROSS_DOMAIN_LAW"
+    },
+    {
+      "ID": "13",
+      "target_score": 35,
+      "target_severity": "major",
+      "adapter_score": 25,
+      "base_score": 25,
+      "adapter_severity": "critical",
+      "base_severity": "critical",
+      "adapter_codes": [
+        "SEO_FALSE"
+      ],
+      "base_codes": [
+        "SEO_FALSE"
+      ],
+      "adapter_flags": "soft:SEVERITY_DIFFERS",
+      "base_flags": "soft:SEVERITY_DIFFERS"
+    },
+    {
+      "ID": "18",
+      "target_score": 78,
+      "target_severity": "minor",
+      "adapter_score": 50,
+      "base_score": 45,
+      "adapter_severity": "major",
+      "base_severity": "major",
+      "adapter_codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "base_codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "adapter_flags": "soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET",
+      "base_flags": "soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    },
+    {
+      "ID": "11",
+      "target_score": 84,
+      "target_severity": "minor",
+      "adapter_score": 45,
+      "base_score": 50,
+      "adapter_severity": "major",
+      "base_severity": "major",
+      "adapter_codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "base_codes": [
+        "YMYL_RISK",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "adapter_flags": "soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET",
+      "base_flags": "soft:MANY_SOURCES;soft:ADVICE_PADDING;soft:YMYL_NOT_IN_TARGET;soft:SEVERITY_DIFFERS;soft:SCORE_FAR_FROM_TARGET"
+    }
+  ]
+}

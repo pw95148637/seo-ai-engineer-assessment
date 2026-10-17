@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+# 本機執行的輸出不進版控；experiments/ 是第一輪與 v2 中止版的真實輸出，離線檢查與重算會讀取，所以保留。
+outputs/*
+!outputs/.gitkeep
+!outputs/experiments/

@@ -1,0 +1,8 @@
+{
+  "run_id": "03d7789e44cf43389dbc7df231fffb7c",
+  "state": "paused_by_operator",
+  "exit_code": 2,
+  "model_attempted": false,
+  "successful_api_calls": 0,
+  "report_submitted": false
+}

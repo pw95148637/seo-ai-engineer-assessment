@@ -1,0 +1,68 @@
+{
+  "conclusion": "未證明記憶淨改善；本次策略記憶組成本較高，且未找到目標詞頁。",
+  "kind": "actual_model_live_repeated_task_ablation",
+  "results": [
+    {
+      "mode": "baseline",
+      "completed": true,
+      "requests": 14,
+      "searches": 5,
+      "model_calls": 11,
+      "tokens": 438286,
+      "seconds": 407.83,
+      "target_keyword_pages_read": true,
+      "unsupported_material_claims_found": 0,
+      "action_scope_defects_found": 0,
+      "observations_after": 2,
+      "memory_mentioned_in_actual_fetch_purposes": []
+    },
+    {
+      "mode": "history",
+      "completed": true,
+      "requests": 14,
+      "searches": 5,
+      "model_calls": 8,
+      "tokens": 372990,
+      "seconds": 374.3,
+      "target_keyword_pages_read": false,
+      "unsupported_material_claims_found": 0,
+      "action_scope_defects_found": 0,
+      "observations_after": 2,
+      "memory_mentioned_in_actual_fetch_purposes": []
+    },
+    {
+      "mode": "memory",
+      "completed": true,
+      "requests": 19,
+      "searches": 3,
+      "model_calls": 13,
+      "tokens": 743896,
+      "seconds": 405.17,
+      "target_keyword_pages_read": false,
+      "unsupported_material_claims_found": 0,
+      "action_scope_defects_found": 0,
+      "observations_after": 2,
+      "memory_mentioned_in_actual_fetch_purposes": [
+        "僅把記憶提供的URL當發現線索，核對sitemap是否有效及目前內容類型，不以URL數量推論品質。",
+        "首頁反駁品牌入口假設，改查獨立頁面是否有娛樂城或3A專頁及目前URL，避免依過期記憶猜測。"
+      ]
+    }
+  ],
+  "common_direct_or_index_urls": 5,
+  "same_raw_hash_across_all_groups": 5,
+  "same_hash_urls": [
+    "https://2030.tw/",
+    "https://2030.tw/page-sitemap.xml",
+    "https://2030.tw/post-sitemap1.xml",
+    "https://2030.tw/robots.txt",
+    "https://2030.tw/sitemap_index.xml"
+  ],
+  "limitations": [
+    "Each group ran once; no statistical or causal claim.",
+    "Live search/source drift and model randomness remain.",
+    "Source review performed by development assistant, not independent blind evaluator.",
+    "Keyword-page discovery coverage is a retrospective task-specific check, not a pre-registered numeric SEO score.",
+    "Observed token totals include repeated prompt context and are not billed subscription cost."
+  ],
+  "engineering_decision": "Keep memory available explicitly for experiments; default runner to baseline until benefits are demonstrated on new cases."
+}

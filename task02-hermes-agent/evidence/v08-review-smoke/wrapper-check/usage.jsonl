@@ -1,0 +1,2 @@
+{"label": "before-review-smoke-2", "windows": [{"label": "Session", "used_percent": 0.0, "resets_at": "2026-10-16T21:51:09+00:00"}, {"label": "Weekly", "used_percent": 23.0, "resets_at": "2026-10-22T18:24:16+00:00"}]}
+{"label": "after-review-smoke-2", "windows": [{"label": "Session", "used_percent": 1.0, "resets_at": "2026-10-16T21:51:09+00:00"}, {"label": "Weekly", "used_percent": 23.0, "resets_at": "2026-10-22T18:24:16+00:00"}]}

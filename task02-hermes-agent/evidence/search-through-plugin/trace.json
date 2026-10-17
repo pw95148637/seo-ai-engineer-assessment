@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "run": "60a477e1b2654c538abf6c217ce9fb68",
+    "kind": "start",
+    "data": "{\"mode\": \"memory\", \"target\": \"https://2030.tw\", \"limits\": {\"requests\": 30, \"calls\": 40, \"bytes\": 2000000, \"seconds\": 900, \"timeout\": 20, \"interval\": 2, \"redirects\": 3}, \"learning\": true}"
+  },
+  {
+    "id": 2,
+    "run": "60a477e1b2654c538abf6c217ce9fb68",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"IANA example domains documentation\"}}"
+  },
+  {
+    "id": 3,
+    "run": "60a477e1b2654c538abf6c217ce9fb68",
+    "kind": "search_request",
+    "data": "{\"query\": \"IANA example domains documentation\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 1}"
+  },
+  {
+    "id": 4,
+    "run": "60a477e1b2654c538abf6c217ce9fb68",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"cc67ac0cbc91422c95bac56f8115026a\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-15T13:44:24.766536+00:00\", \"query\": \"IANA example domains documentation\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\"}"
+  }
+]

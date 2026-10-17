@@ -1,0 +1,23 @@
+{
+  "provider": "openai-codex",
+  "logged_in": true,
+  "rate_limited": false,
+  "expected_tools": [
+    "memory",
+    "skill_manage",
+    "skill_view",
+    "skills_list"
+  ],
+  "actual_tools": [
+    "memory",
+    "skill_manage",
+    "skill_view",
+    "skills_list"
+  ],
+  "model_called": false,
+  "ready": true,
+  "blocker": "",
+  "hermes_learning": "feedback",
+  "hermes_home": "/home/user/soulo/task02-hermes/.runtime/user/profiles/v08-n",
+  "stores_in_home": true
+}

@@ -1,0 +1,65 @@
+# Task03 offline checks for the v3 train-only stage
+date: 2026-10-16T03:40:12Z (UTC); host: Windows 11, Python 3.13.14; PYTHONUTF8=1
+Offline only: no GPU, no Kaggle run; holdout8 never printed or semantically read.
+
+$ python scripts/build_notebook.py
+Built train-stage notebook (canonical and kaggle/train); no model results embedded
+exit=0
+
+$ python scripts/workflow.py check-targets
+PASS: 12 train-only targets validated
+exit=0
+
+$ python scripts/test_workflow.py
+{"adapter": {}, "base": {"REQUIRED_CODE_MISSED": 1, "SEVERE_SCORE_TOO_HIGH": 1}}
+PASS: 12 targets; retry and denominator accounting; severity-band contract and retry; prompt bands match code; raw failure preservation; no overwrite; invalid consistency; completion-only loss mask; length rejection; gate heuristics; round-1 real outputs rejected for false experience, risk-removal advice, TW_266 mixing, score 55-59 and source dumping; v2 real outputs rejected for missing severity, YMYL over-flagging, missed experience, legal-consequence softening and ID14/7 at 55. Synthetic/train-only, no GPU/model results.
+exit=0
+
+$ python scripts/verify_notebook.py
+PASS: train notebook current (7 code cells); kaggle/train copy identical; no holdout text; metadata separation; train->eval seam and report rehearsed on synthetic rows; eval build gated by lock (eval notebook not built yet); all scripts parse; no model outputs
+exit=0
+
+$ python scripts/check_contract.py
+markdown REJECT JSONDecodeError
+out_of_range REJECT ValidationError
+boolean_score REJECT ValidationError
+extra_field REJECT ValidationError
+missing_advice REJECT ValidationError
+wrong_quote REJECT ValueError
+unknown_source REJECT ValueError
+duplicate_key REJECT ValueError
+missing_severity REJECT ValidationError
+unknown_severity REJECT ValidationError
+score_outside_band REJECT ValueError
+no_reason_low_score REJECT ValueError
+PASS: 1 valid, 12 invalid rejected. Synthetic checks, not model results.
+exit=0
+
+$ python scripts/regate.py kaggle-retrieved/soulo-work03-v2-train/work03 --out evidence/v2-outputs-on-v3-gate.json
+{"status": "FAIL", "hard_counts": {"CONTRACT_INVALID": 15, "RISK_DISCLOSURE_REMOVAL": 1, "CLEAN_ITEM_FLAGGED": 1, "REQUIRED_CODE_MISSED": 1, "SEVERE_SCORE_TOO_HIGH": 5, "YMYL_OVERFLAG": 1}, "selfcheck_final_valid": "12/12", "consistency_valid": "3/3"}
+HARD train ID20 RISK_DISCLOSURE_REMOVAL 避免使用「必須明白的法律後果」等可能被誤解為保證結果的語句。
+HARD train ID20 CLEAN_ITEM_FLAGGED YMYL_RISK
+HARD train ID5 REQUIRED_CODE_MISSED EXPERIENCE_UNVERIFIED
+HARD train ID14 SEVERE_SCORE_TOO_HIGH 55 > 29 (target 12)
+HARD train ID7 SEVERE_SCORE_TOO_HIGH 55 > 29 (target 15)
+HARD train12 YMYL_OVERFLAG YMYL_RISK on 6/7 clearly non-YMYL items (max 1): IDs 20,6,16,19,18,11
+HARD consistency ID14 T0.2 SEVERE_SCORE_TOO_HIGH 55 > 29 (target 12)
+HARD consistency ID14 T0.5 SEVERE_SCORE_TOO_HIGH 55 > 29 (target 12)
+HARD consistency ID14 T0.8 SEVERE_SCORE_TOO_HIGH 55 > 29 (target 12)
+exit=0
+
+$ PYTHONPATH=<tokenizers> python scripts/verify_round1_tokens.py kaggle-retrieved/soulo-work03-v2-train/work03/outputs/adapter/tokenizer.json
+{"round1_training_lengths_match": true, "round1_consistency_input_tokens_match": true, "current_prompt_tokens": [1870, 1895], "current_max_train_length": 2009, "current_target_tokens": [36, 122]}
+PASS: round-1 training lengths and consistency input tokens reproduce exactly
+exit=0
+
+sha256:
+9b5734efeb164372bfc162189ae4574e15c72caf4f1cd7ca9c644d61af1ce8b4 *system_prompt.txt
+f2b82ad9e013f7a1fb5eb0a3c95d6c019ec0566a223f20d75f7121405e8a7359 *schema.json
+622fa83a395477f8f6bbfdecb4af8847f29c2bd8fa28bc2de85c1287a93b57cc *data/train_targets.jsonl
+8133cec27167d79f92d12660e3efde7fe67172d0c85012e628f3c36fb11a2cbe *run_config.json
+2664b42a7df0eeb45ff83f75ccf3b9919ec084c24d4b2cebe4bb9410364f1095 *scripts/workflow.py
+7280d8f795583d1a5527d31eaa72f60a75a8ead16badfd2172c978422ef3d74f *scripts/audit_io.py
+961bc6d286557318c9b7c637d7eb7e7710a8794fe2a26f29d867d8553b7a03cd *scripts/selfcheck.py
+b73e59b20c5a2df28aac131eb58f65762c1bbec6b3b967d1f70097781e4d6e1e *scripts/test_workflow.py
+f85ce158343f4e52db9da877d9cb9676ab749e86c5f62633db47dcea47a3fb9b *kaggle/train/work03_train.ipynb

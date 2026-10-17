@@ -1,0 +1,23 @@
+# task02 v0.6 official Hermes plugin doctor in WSL2 Ubuntu 24.04
+date_utc: 2026-10-16T04:48:57Z
+hermes_commit: 311155fade43d1993ea968909a2ad36762345bbc
+plugin sha256 (__init__.py, plugin.yaml):
+de25773f60b57cb3eb5d90decbf058979b67e08bc67d397ecc46ff05888dc760  plugin/__init__.py
+c9fd36a4e2fe347937c9b342f8fd23333172ff9be527973e8b1c07278e606b58  plugin/plugin.yaml
+
+## python .runtime/pinned/hermes plugins doctor ./plugin
+Plugin Doctor: ~/soulo/task02-hermes/plugin
+  manifest: soulo-research 0.6.0 (standalone)
+  OK: runtime discovery, manifest parsing, import, and registration passed
+  registrations: 5 tool(s), 0 hook(s)
+exit: 0
+
+## python .runtime/pinned/hermes plugins list (only the soulo-research row kept; the full table lists ~90 bundled plugins)
+│ soulo-research       │ enabled     │ 0.6.0   │ Read-only research  │ user    │
+│                      │             │         │ with bounded        │         │
+│                      │             │         │ requests, evidence  │         │
+│                      │             │         │ and a               │         │
+│                      │             │         │ controller-owned    │         │
+│                      │             │         │ lessons ledger      │         │
+│                      │             │         │ provenance: manual  │         │
+exit: 0

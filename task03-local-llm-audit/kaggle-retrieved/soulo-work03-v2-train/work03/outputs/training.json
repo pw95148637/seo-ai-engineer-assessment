@@ -1,0 +1,107 @@
+{
+  "global_step": 6,
+  "changed_adapter_tensors": 144,
+  "metrics": {
+    "train_runtime": 196.9961,
+    "train_samples_per_second": 0.122,
+    "train_steps_per_second": 0.03,
+    "total_flos": 1745370883522560.0,
+    "train_loss": 2.533324718475342,
+    "epoch": 2.0
+  },
+  "logs": [
+    {
+      "loss": 2.7217,
+      "grad_norm": 2.618767261505127,
+      "learning_rate": 0.0001,
+      "epoch": 0.3333333333333333,
+      "step": 1
+    },
+    {
+      "loss": 2.4698,
+      "grad_norm": 2.384575366973877,
+      "learning_rate": 8.333333333333334e-05,
+      "epoch": 0.6666666666666666,
+      "step": 2
+    },
+    {
+      "loss": 2.759,
+      "grad_norm": 2.4561984539031982,
+      "learning_rate": 6.666666666666667e-05,
+      "epoch": 1.0,
+      "step": 3
+    },
+    {
+      "loss": 2.5205,
+      "grad_norm": 2.2680935859680176,
+      "learning_rate": 5e-05,
+      "epoch": 1.3333333333333333,
+      "step": 4
+    },
+    {
+      "loss": 2.2007,
+      "grad_norm": 2.1810264587402344,
+      "learning_rate": 3.3333333333333335e-05,
+      "epoch": 1.6666666666666665,
+      "step": 5
+    },
+    {
+      "loss": 2.5283,
+      "grad_norm": 2.485090732574463,
+      "learning_rate": 1.6666666666666667e-05,
+      "epoch": 2.0,
+      "step": 6
+    },
+    {
+      "train_runtime": 196.9961,
+      "train_samples_per_second": 0.122,
+      "train_steps_per_second": 0.03,
+      "total_flos": 1745370883522560.0,
+      "train_loss": 2.533324718475342,
+      "epoch": 2.0,
+      "step": 6
+    }
+  ],
+  "train_ids": [
+    "20",
+    "6",
+    "15",
+    "5",
+    "10",
+    "14",
+    "16",
+    "19",
+    "7",
+    "13",
+    "18",
+    "11"
+  ],
+  "lengths": [
+    1551,
+    1600,
+    1625,
+    1603,
+    1620,
+    1607,
+    1574,
+    1596,
+    1609,
+    1611,
+    1610,
+    1602
+  ],
+  "targets_sha256": "6598b86d21ad96d177e09793345a4954a2a1237b0c5c0b3891754e809d3c5784",
+  "prompt_sha256": "ce9490a512ecb9d3f27ddf4e3c19e4ce6cc597b1bcff70db5250512b09d4e69b",
+  "config": {
+    "model_id": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "max_length": 3072,
+    "context_limit": 4096,
+    "max_new_tokens": 768,
+    "epochs": 2,
+    "learning_rate": 0.0001,
+    "seed": 42,
+    "status": "v2 train-only configuration. Revision pinned from the round-1 Kaggle preflight (outputs/model.json). No holdout-based changes."
+  },
+  "claim": "Actual training, not proof of generalization"
+}

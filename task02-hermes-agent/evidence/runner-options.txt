@@ -1,0 +1,13 @@
+usage: run_research.py [-h] [--model MODEL] [--mode {baseline,history,memory}]
+                       --root ROOT [--allow-host ALLOW_HOST] [--smoke-only]
+                       [--check-only] [--no-learn]
+
+options:
+  -h, --help            show this help message and exit
+  --model MODEL
+  --mode {baseline,history,memory}
+  --root ROOT
+  --allow-host ALLOW_HOST
+  --smoke-only
+  --check-only
+  --no-learn            Freeze the seed memory during an evaluation run

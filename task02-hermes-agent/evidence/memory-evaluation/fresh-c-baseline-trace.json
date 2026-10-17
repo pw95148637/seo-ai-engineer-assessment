@@ -1,0 +1,86 @@
+[
+  {
+    "id": 21,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "start",
+    "data": "{\"mode\": \"baseline\", \"target\": \"https://research.example\", \"limits\": {\"requests\": 30, \"calls\": 40, \"bytes\": 2000000, \"seconds\": 900, \"timeout\": 20, \"interval\": 0, \"redirects\": 3}, \"learning\": false}"
+  },
+  {
+    "id": 22,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_status\", \"args\": {}}"
+  },
+  {
+    "id": 23,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://research.example/\", \"purpose\": \"discover article URLs using linked evidence\"}}"
+  },
+  {
+    "id": 24,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "request",
+    "data": "{\"url\": \"https://research.example/robots.txt\", \"number\": 1}"
+  },
+  {
+    "id": 25,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"8ea29036033a4143ba0946d8241d96a5\", \"url\": \"https://research.example/robots.txt\", \"status\": 200, \"sha256\": \"38ee13a89fd0de18fe5f1f192cb4179a600acc093eefb277f5a7f77660033e8f\", \"method\": \"direct_http\", \"time\": \"2026-10-15T13:45:13.417487+00:00\", \"headers\": {\"content-type\": \"text/plain\"}}"
+  },
+  {
+    "id": 26,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "request",
+    "data": "{\"url\": \"https://research.example/\", \"number\": 2}"
+  },
+  {
+    "id": 27,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"250f3be8479d485f916fa88575da0af3\", \"url\": \"https://research.example/\", \"status\": 200, \"sha256\": \"9337c7da427f117accd30079ef6cf91c27ad216fee8913820d20ae58c18072ed\", \"method\": \"direct_http\", \"time\": \"2026-10-15T13:45:13.417745+00:00\", \"headers\": {\"content-type\": \"text/html\"}}"
+  },
+  {
+    "id": 28,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"250f3be8479d485f916fa88575da0af3\", \"kind\": \"html\", \"links_count\": 1, \"purpose\": \"discover article URLs using linked evidence\"}"
+  },
+  {
+    "id": 29,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://research.example/menu\", \"purpose\": \"discover article URLs using linked evidence\"}}"
+  },
+  {
+    "id": 30,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "request",
+    "data": "{\"url\": \"https://research.example/menu\", \"number\": 3}"
+  },
+  {
+    "id": 31,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"999df551829449f8bbb34e55a7474094\", \"url\": \"https://research.example/menu\", \"status\": 200, \"sha256\": \"6d019096438dfea5ebbc58f3af91a3c9e3815e1eb7ac5beb20072111c8a4bcd5\", \"method\": \"direct_http\", \"time\": \"2026-10-15T13:45:13.418165+00:00\", \"headers\": {\"content-type\": \"text/html\"}}"
+  },
+  {
+    "id": 32,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"999df551829449f8bbb34e55a7474094\", \"kind\": \"html\", \"links_count\": 6, \"purpose\": \"discover article URLs using linked evidence\"}"
+  },
+  {
+    "id": 33,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_finish\", \"args\": {\"report\": {\"claims\": [], \"actions\": [], \"unknowns\": [\"Synthetic discovery only; no SEO conclusions\"]}}}"
+  },
+  {
+    "id": 34,
+    "run": "e010a7f1c53b482cb3f74df0f8143db1",
+    "kind": "report",
+    "data": "{\"claims\": [], \"actions\": [], \"unknowns\": [\"Synthetic discovery only; no SEO conclusions\"]}"
+  }
+]

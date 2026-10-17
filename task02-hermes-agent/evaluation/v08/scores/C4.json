@@ -1,0 +1,95 @@
+{
+  "run_id": "b482709bbaca4f65b0b20465f42d1af8",
+  "host": "2030.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": {
+      "call": 10,
+      "evidence_id": "fad1700ef65f4e87827008a314385c8d",
+      "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    },
+    "3A娛樂城": {
+      "call": 9,
+      "evidence_id": "07895d98177a4d368e996c0511b3a241",
+      "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+      "via": "research_fetch"
+    }
+  },
+  "both_target_pages_read": true,
+  "tool_calls": 15,
+  "calls_before_first_hit": 8,
+  "calls_until_both_hit": 10,
+  "searches": 5,
+  "failed_searches": 4,
+  "failed_search_kinds": {
+    "no_results": 4,
+    "error": 0
+  },
+  "failed_search_queries": [
+    "site:2030.tw 娛樂城 3A娛樂城",
+    "\"2030.tw\" 娛樂城 -彰源 -股票 -stock",
+    "\"2030玩運彩\" -site:2030.tw",
+    "\"https://2030.tw/\" -site:2030.tw -stock -彰源 -finance"
+  ],
+  "http_requests": 8,
+  "http_requests_controller": 0,
+  "sitemap_reads": 0,
+  "refetched_verified_pages": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 0
+  },
+  "lessons_presented": 0,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 192208,
+    "prompt": 186142,
+    "completion": 6066,
+    "api_calls": 7,
+    "cache_read": 131840,
+    "cache_write": 0,
+    "uncached_prompt": 54302,
+    "cost": 60368
+  },
+  "hermes_tools": {
+    "research_status": 1,
+    "research_fetch": 5,
+    "research_search": 5,
+    "research_offpage": 1,
+    "research_evidence": 2,
+    "research_finish": 1
+  },
+  "claims": 11,
+  "actions": 6,
+  "sections": {
+    "on_page": 7,
+    "off_page": 3,
+    "other": 1
+  },
+  "offpage": {
+    "claims": 3,
+    "observation": 1,
+    "inference": 1,
+    "unknown": 1,
+    "three_columns": true,
+    "known": 1,
+    "known_external": 1,
+    "known_link_verified": 0,
+    "pages_fetched": 1,
+    "pages_linking_to_target": 0
+  },
+  "offpage_policy_violations": [],
+  "state": "research_complete",
+  "transcript_calls": 8,
+  "review_cost": 0,
+  "learned": null
+}

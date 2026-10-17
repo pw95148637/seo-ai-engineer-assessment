@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "nvidia_smi": null,
+  "packages": {
+    "torch": false,
+    "transformers": false,
+    "peft": false,
+    "bitsandbytes": false,
+    "kaggle": false,
+    "jsonschema": true,
+    "nbformat": true
+  },
+  "model_execution": "NOT RUN",
+  "note": "Recreated workspace after reset; earlier browser observation is historical, not revalidated in this turn."
+}

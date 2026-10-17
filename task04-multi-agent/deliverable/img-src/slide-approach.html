@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;background:#fff}
+  body{width:1600px;height:1070px;position:relative;font-family:"Noto Sans TC";color:#1F2A30}
+  .col{position:absolute;top:0;width:770px}
+  .hd{height:90px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:700}
+  .box{box-sizing:border-box;margin-top:0;border-radius:16px;border:3px solid;padding:20px 30px;font-size:41px;line-height:1.4;min-height:250px;display:flex;align-items:center}
+  .arrow{height:62px;position:relative}
+  .arrow::after{content:"";position:absolute;left:50%;top:10px;margin-left:-18px;border-left:18px solid transparent;border-right:18px solid transparent;border-top:28px solid #8A969B}
+  .arrow::before{content:"";position:absolute;left:50%;top:0;margin-left:-3px;width:6px;height:14px;background:#8A969B}
+  .a .hd{background:#ECEFF0;color:#5F6B70}
+  .a .box{background:#F7F8F8;border-color:#C2CACD;color:#4A565C}
+  .a .res{background:#fff;border-style:dashed;border-color:#B3261E;color:#8C1D18;font-weight:700}
+  .b .hd{background:#0E8A6A;color:#fff}
+  .b .box{background:#E3F1EC;border-color:#0E8A6A}
+  .b .res{background:#0E8A6A;border-color:#0E8A6A;color:#fff;font-weight:700}
+  .b .pl{background:#FDF0E4;border-color:#C46A1F}
+  .arrow.g::after{border-top-color:#0E8A6A}
+  .arrow.g::before{background:#0E8A6A}
+</style></head>
+<body>
+<div class="col a" style="left:0">
+  <div class="hd">由程式直接改（早期版本，實跑過）</div>
+  <div class="arrow"></div>
+  <div class="box">第 2 輪由程式宣告<br>保證措辭「已撤銷」</div>
+  <div class="arrow"></div>
+  <div class="box">折衷方向也由程式指定，<br>不是兩個角色談出來的</div>
+  <div class="arrow"></div>
+  <div class="box res">最終大綱混入<br>「修訂說明，非文章內容」</div>
+</div>
+<div class="col b" style="left:830px">
+  <div class="hd">退件理由驅動（現行做法）</div>
+  <div class="arrow g"></div>
+  <div class="box">Auditor 退件：引用原句，<br>寫出讀者風險與改寫</div>
+  <div class="arrow g"></div>
+  <div class="box pl">Planner 看不到規則，<br>依理由自己取捨</div>
+  <div class="arrow g"></div>
+  <div class="box res">每處修改都追得到<br>一條退件理由</div>
+</div>
+</body></html>

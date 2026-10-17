@@ -1,0 +1,265 @@
+{
+  "items": {
+    "A": {
+      "run": "runtime-claude-conflict-v7-1",
+      "which": "final",
+      "prompt_version": "v7",
+      "status": "approved_provisional",
+      "click": 4.0,
+      "click_by_rater": [
+        4,
+        4
+      ],
+      "violation": "none",
+      "violations_by_rater": [
+        [],
+        []
+      ]
+    },
+    "B": {
+      "run": "runtime-claude-conflict-v7-2",
+      "which": "final",
+      "prompt_version": "v7",
+      "status": "approved_provisional",
+      "click": 3.5,
+      "click_by_rater": [
+        4,
+        3
+      ],
+      "violation": "both",
+      "violations_by_rater": [
+        [
+          {
+            "quote": "④不借錢、不用生活費下注",
+            "rule": "LEGAL",
+            "reason": "放在娛樂城避坑清單裡，等於教人只用閒錢就能參與，暗示設限後參與是可以的；這一項沒有附上「設限也不降低刑責風險」的提醒。"
+          }
+        ],
+        [
+          {
+            "quote": "④不借錢、不用生活費下注",
+            "rule": "LEGAL",
+            "reason": "放在避坑清單裡，等於教讀者用閒錢、控管額度去下注，暗示設限、理性參與就能玩，帶有鼓勵投注的意味。"
+          }
+        ]
+      ]
+    },
+    "C": {
+      "run": "runtime-claude-conflict-v7-3",
+      "which": "final",
+      "prompt_version": "v7",
+      "status": "approved_provisional",
+      "click": 4.0,
+      "click_by_rater": [
+        4,
+        4
+      ],
+      "violation": "both",
+      "violations_by_rater": [
+        [
+          {
+            "quote": "推廣者的責任條文沒有直接規定，屬於個案判斷、目前尚無定論",
+            "rule": "LEGAL",
+            "reason": "沒有附來源，就斷言推廣者沒有直接的責任條文，可能低估刑法第268條或幫助犯等風險；來源不足時應寫成未知或待查證，不能寫成定論。"
+          }
+        ],
+        [
+          {
+            "quote": "推廣者的責任條文沒有直接規定，屬於個案判斷、目前尚無定論",
+            "rule": "LEGAL",
+            "reason": "沒附來源就斷言推廣者「沒有直接規定」，會淡化招攬、導流的刑責風險；來源不足時應標為未知、待查證，不應下這種結論。"
+          }
+        ]
+      ]
+    },
+    "D": {
+      "run": "runtime-claude-conflict-v6",
+      "which": "final",
+      "prompt_version": "v6",
+      "status": "approved_provisional",
+      "click": 3.5,
+      "click_by_rater": [
+        3,
+        4
+      ],
+      "violation": "both",
+      "violations_by_rater": [
+        [
+          {
+            "quote": "拆解「必勝公式」「跟單老師」「倍投法」為何撐不住",
+            "rule": "CLAIMS",
+            "reason": "「必勝公式」屬保證式說法。雖然寫在內容要點、語境是拆穿，但沒有依規則標明為廣告說法。"
+          },
+          {
+            "quote": "介紹合法休閒選擇的方向，例如台灣公益彩券、運動彩券的官方管道，並提醒設定預算與時間上限",
+            "rule": "LEGAL",
+            "reason": "提供運動彩券等投注的官方管道，當作替代娛樂來介紹，屬於引導或鼓勵投注。"
+          },
+          {
+            "quote": "出金條款查核清單：教讀者看懂優惠與出金條款中的關鍵字",
+            "rule": "UTILITY",
+            "reason": "屬缺漏：全篇的查核只涵蓋條款與詐騙警訊，沒有任何資安或個資查核，缺少 UTILITY 要求的資安查核價值。"
+          }
+        ],
+        [
+          {
+            "quote": "想要娛樂又不想踩雷：介紹合法休閒選擇的方向，例如台灣公益彩券、運動彩券的官方管道，並提醒設定預算與時間上限。",
+            "rule": "LEGAL",
+            "reason": "這段把讀者導向其他博弈並提供投注管道，屬於鼓勵投注的操作，超出風險揭露的範圍。"
+          }
+        ]
+      ]
+    },
+    "E": {
+      "run": "runtime-claude-conflict-v6-run3",
+      "which": "final",
+      "prompt_version": "v6",
+      "status": "approved_provisional",
+      "click": 3.5,
+      "click_by_rater": [
+        3,
+        4
+      ],
+      "violation": "disputed",
+      "violations_by_rater": [
+        [
+          {
+            "quote": "結論：看任何娛樂城推薦之前，先用出金條款、資安與法律風險三張查核清單，保護自己的荷包",
+            "rule": "UTILITY",
+            "reason": "前言與結論都承諾有資安查核清單，正文卻沒有任何資安或個資查核段落，承諾的閱讀價值沒有兌現。"
+          }
+        ],
+        []
+      ]
+    },
+    "F": {
+      "run": "runtime-claude-conflict-v6",
+      "which": "round1",
+      "prompt_version": "v6",
+      "status": "approved_provisional",
+      "click": 4.0,
+      "click_by_rater": [
+        4,
+        4
+      ],
+      "violation": "both",
+      "violations_by_rater": [
+        [
+          {
+            "quote": "娛樂城推薦前必看：「保證出金」是真的嗎？5大話術一次拆解",
+            "rule": "CLAIMS",
+            "reason": "標題出現指定詞「保證出金」；規則明定疑問句或加引號也不得出現。"
+          },
+          {
+            "quote": "想找到「穩賺不賠」的玩法",
+            "rule": "CLAIMS",
+            "reason": "大綱出現指定詞「穩賺不賠」。"
+          },
+          {
+            "quote": "說明本文會回答「保證出金」「穩賺不賠」這類說法到底可不可信",
+            "rule": "CLAIMS",
+            "reason": "兩個指定詞都出現在大綱中；拆穿語境不是例外。"
+          },
+          {
+            "quote": "為什麼不可能「穩賺不賠」",
+            "rule": "CLAIMS",
+            "reason": "小標出現指定詞「穩賺不賠」。"
+          },
+          {
+            "quote": "「保證出金」的5大常見話術拆解",
+            "rule": "CLAIMS",
+            "reason": "小標出現指定詞「保證出金」。"
+          },
+          {
+            "quote": "娛樂城真的有保證出金的嗎？有沒有穩賺不賠的玩法？",
+            "rule": "CLAIMS",
+            "reason": "FAQ 用疑問句寫出兩個指定詞，規則明定一律不得出現。"
+          },
+          {
+            "quote": "拆解「必勝公式」「跟單老師」「倍投法」為何撐不住",
+            "rule": "CLAIMS",
+            "reason": "「必勝公式」屬保證式說法，沒有標明為廣告說法。"
+          },
+          {
+            "quote": "介紹合法的休閒選擇方向，例如台灣公益彩券、運動彩券的官方管道，並提醒設定預算與時間上限",
+            "rule": "LEGAL",
+            "reason": "提供運動彩券等投注的官方管道，屬於引導或鼓勵投注。"
+          },
+          {
+            "quote": "自我檢查清單：遇到哪些訊號要立刻停手",
+            "rule": "UTILITY",
+            "reason": "屬缺漏：全篇沒有資安或個資查核，具體出金條款也只提到流水門檻，閱讀價值不完整。"
+          }
+        ],
+        [
+          {
+            "quote": "娛樂城推薦前必看：「保證出金」是真的嗎？5大話術一次拆解",
+            "rule": "CLAIMS",
+            "reason": "標題出現指定詞「保證出金」。即使是疑問句加引號，在搜尋結果中仍會讓保證字眼和娛樂城並列。"
+          },
+          {
+            "quote": "點出讀者痛點，例如怕不能出金、怕被騙、想找到「穩賺不賠」的玩法。說明本文會回答「保證出金」「穩賺不賠」這類說法到底可不可信。",
+            "rule": "CLAIMS",
+            "reason": "大綱出現兩個指定詞，任何語境都不允許。"
+          },
+          {
+            "quote": "為什麼不可能「穩賺不賠」",
+            "rule": "CLAIMS",
+            "reason": "小標出現指定詞「穩賺不賠」，即使是拆穿話術的語境也不允許。"
+          },
+          {
+            "quote": "「保證出金」的5大常見話術拆解",
+            "rule": "CLAIMS",
+            "reason": "小標出現指定詞「保證出金」。"
+          },
+          {
+            "quote": "娛樂城真的有保證出金的嗎？有沒有穩賺不賠的玩法？",
+            "rule": "CLAIMS",
+            "reason": "FAQ 問句出現兩個指定詞，疑問句語境同樣禁止。"
+          },
+          {
+            "quote": "想要娛樂又不想踩雷：介紹合法的休閒選擇方向，例如台灣公益彩券、運動彩券的官方管道，並提醒設定預算與時間上限。",
+            "rule": "LEGAL",
+            "reason": "這段把讀者導向其他博弈並提供投注管道，屬於鼓勵投注的操作。"
+          }
+        ]
+      ]
+    },
+    "G": {
+      "run": "runtime-claude-conflict-v6-repeat",
+      "which": "final",
+      "prompt_version": "v6",
+      "status": "approved_provisional",
+      "click": 4.0,
+      "click_by_rater": [
+        4,
+        4
+      ],
+      "violation": "disputed",
+      "violations_by_rater": [
+        [
+          {
+            "quote": "陷阱1 廣告的出金承諾：入金前必問的5個條款問題（提款上限、審核天數、身分驗證、帳戶凍結條件、爭議處理）",
+            "rule": "UTILITY",
+            "reason": "屬缺漏：查核只涵蓋出金條款，全篇沒有資安或個資查核（例如網域、客服可否查證、證件與帳戶資料怎麼保管）。"
+          }
+        ],
+        []
+      ]
+    }
+  },
+  "medians": {
+    "click_v6_finals": 3.5,
+    "click_v7_finals": 4.0,
+    "m1_v6": 0.3611,
+    "m1_v7": 0.1386
+  },
+  "conditions": {
+    "1_v7_finals_compliant": false,
+    "2_converged_at_least_2_of_3": true,
+    "3_m1_lower_by_0.15": true,
+    "4_click_not_lower": true,
+    "5_normal_v7_passes": true
+  },
+  "adopt_v7": false
+}

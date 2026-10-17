@@ -1,0 +1,4 @@
+From https://github.com/NousResearch/hermes-agent
+ * branch              311155fade43d1993ea968909a2ad36762345bbc -> FETCH_HEAD
+fetch_exit=0
+HEAD is now at 311155fa refactor(profiles): build the seed routing view once; expand `enabled` too

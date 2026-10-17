@@ -1,0 +1,3005 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFS7J4E29D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TFS7J4E29D');
+  </script>
+  <base href="/presentations/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taiwan Casino Guide 台灣娛樂城指南 | 2026 安全合法娛樂城評比與玩家推薦</title>
+  <meta name="description" content="整理娛樂城活動、紅包領取方式、爆分榜、熱門遊戲、平台比較、新手攻略與資料來源政策，以公開資訊、更新日期與可查證來源為主要依據。">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://taiwancasinoguide.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="休閒娛樂城活動情報站">
+  <meta property="og:description" content="整理娛樂城活動、爆分榜、熱門遊戲、平台比較與新手攻略。">
+  <meta property="og:url" content="https://taiwancasinoguide.com/">
+  <style>
+    :root {
+      --bg: #081018;
+      --paper: #f7f4ea;
+      --ink: #17202b;
+      --muted: #647184;
+      --line: rgba(23,32,43,.14);
+      --panel: #ffffff;
+      --panel2: #edf3f1;
+      --green: #19876d;
+      --blue: #225a9a;
+      --gold: #c98f2f;
+      --red: #b84e4a;
+      --dark: #111827;
+      --shadow: 0 22px 60px rgba(8,16,24,.16);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 112px; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 0%, rgba(25,135,109,.16), transparent 30%),
+        radial-gradient(circle at 82% 12%, rgba(201,143,47,.16), transparent 26%),
+        linear-gradient(180deg, #fbfaf5 0%, #eef4f0 48%, #f8f6ef 100%);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.65;
+      letter-spacing: 0;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid #225a9a;
+      outline-offset: 3px;
+    }
+    .wrap { width: min(1220px, calc(100vw - 36px)); margin: 0 auto; }
+
+    .site-strip {
+      background: #111827;
+      color: #e8edf6;
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: .01em;
+    }
+
+    .site-strip .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 9px 0;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .site-strip span { color: #f3cc7a; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(251,250,245,.86);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(23,32,43,.08);
+    }
+
+    .topbar-inner {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 240px;
+    }
+
+    .mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 950;
+      background: linear-gradient(135deg, var(--green), #254f74);
+      box-shadow: 0 14px 30px rgba(25,135,109,.24);
+    }
+
+    .brand b { display: block; font-size: 16px; line-height: 1.2; }
+    .brand span { display: block; color: var(--muted); font-size: 12px; font-weight: 800; margin-top: 2px; }
+
+    .nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      padding: 8px 11px;
+      border-radius: 999px;
+      color: #2e3a49;
+      border: 1px solid rgba(23,32,43,.1);
+      background: rgba(255,255,255,.62);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) 390px;
+      gap: 24px;
+      padding: 34px 0 26px;
+      align-items: stretch;
+    }
+
+    .hero-main {
+      min-height: 430px;
+      border: 1px solid rgba(23,32,43,.1);
+      border-radius: 26px;
+      padding: 34px;
+      color: #fff;
+      overflow: hidden;
+      position: relative;
+      background: #111827;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-main::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(8,16,24,.94) 0%, rgba(8,16,24,.78) 46%, rgba(8,16,24,.42) 100%),
+        radial-gradient(circle at 16% 18%, rgba(25,135,109,.32), transparent 30%),
+        radial-gradient(circle at 78% 18%, rgba(201,143,47,.2), transparent 34%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-visual {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      filter: saturate(.9) contrast(1.04);
+    }
+
+    .eyebrow {
+      position: relative;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 12px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      color: #d8ffe9;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 2;
+      margin: 18px 0 14px;
+      max-width: 12ch;
+      font-size: clamp(42px, 6vw, 74px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .hero-main p {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      margin: 0;
+      color: rgba(255,255,255,.82);
+      font-size: 17px;
+    }
+
+    .hero-actions {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 10px 15px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.1);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .btn.primary {
+      background: linear-gradient(90deg, #f4c96c, #d89b3e);
+      border: none;
+      color: #17202b;
+    }
+
+    .btn.dark {
+      border: none;
+      background: #17202b;
+      color: #fff;
+      box-shadow: 0 14px 30px rgba(8,16,24,.16);
+    }
+
+    .hero-meta {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .meta-card {
+      border: 1px solid rgba(255,255,255,.13);
+      background: rgba(255,255,255,.08);
+      border-radius: 16px;
+      padding: 13px;
+    }
+
+    .meta-card b { display: block; color: #fff; font-size: 18px; line-height: 1.2; }
+    .meta-card span { display: block; color: rgba(255,255,255,.7); font-size: 12px; margin-top: 5px; }
+
+    .tool-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: end;
+      margin: 0 0 20px;
+      padding: 16px;
+      border: 1px solid rgba(23,32,43,.1);
+      border-radius: 22px;
+      background: rgba(255,255,255,.78);
+      box-shadow: 0 18px 50px rgba(8,16,24,.08);
+    }
+
+    .search-box label,
+    .filter-box label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .search-box input {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid rgba(23,32,43,.14);
+      border-radius: 14px;
+      background: #fff;
+      color: var(--ink);
+      padding: 10px 13px;
+      font: inherit;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .search-box input:focus {
+      border-color: rgba(25,135,109,.42);
+      box-shadow: 0 0 0 4px rgba(25,135,109,.08);
+    }
+
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-chip {
+      min-height: 38px;
+      border: 1px solid rgba(23,32,43,.12);
+      border-radius: 999px;
+      background: #fff;
+      color: #334155;
+      padding: 7px 11px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .filter-chip:hover,
+    .filter-chip.active {
+      border-color: rgba(25,135,109,.42);
+      background: #e8f3ef;
+      color: var(--green);
+    }
+
+    .result-note {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .sidebar-card {
+      background: var(--panel);
+      border: 1px solid rgba(23,32,43,.1);
+      border-radius: 24px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .sidebar-card h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+
+    .update-box {
+      display: grid;
+      gap: 10px;
+    }
+
+    .update-item {
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      gap: 10px;
+      padding: 11px;
+      border: 1px solid rgba(23,32,43,.08);
+      border-radius: 14px;
+      background: #fbfaf7;
+    }
+
+    .update-item .tag {
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: #e8f3ef;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 950;
+    }
+
+    .update-item b { display: block; font-size: 14px; line-height: 1.35; }
+    .update-item span { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
+
+    .section {
+      margin: 20px 0;
+      background: rgba(255,255,255,.72);
+      border: 1px solid rgba(23,32,43,.1);
+      border-radius: 24px;
+      box-shadow: 0 18px 50px rgba(8,16,24,.08);
+      overflow: hidden;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 22px 24px;
+      border-bottom: 1px solid rgba(23,32,43,.09);
+      background: rgba(255,255,255,.58);
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.15;
+    }
+
+    .section-head p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      max-width: 760px;
+      font-size: 14px;
+    }
+
+    .section-note {
+      flex: 0 0 auto;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(201,143,47,.3);
+      color: #8b5d18;
+      background: rgba(201,143,47,.1);
+      font-size: 12px;
+      font-weight: 950;
+      white-space: nowrap;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .content-card {
+      min-height: 170px;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 18px;
+      background: #fff;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    .thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #edf3f1;
+    }
+
+    .thumb img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .content-pad {
+      padding: 15px 16px 16px;
+    }
+
+    .content-card .k {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .content-card h3 {
+      margin: 9px 0 8px;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    .content-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .content-card[hidden],
+    .qa[hidden],
+    .platform-card[hidden] { display: none; }
+
+    .latest-content-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .latest-content-card {
+      display: grid;
+      grid-template-columns: 76px minmax(0, 1fr);
+      gap: 14px;
+      align-items: center;
+      min-height: 116px;
+      padding: 14px;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .latest-content-card[hidden] { display: none; }
+
+    .latest-content-brand {
+      display: grid;
+      place-items: center;
+      width: 76px;
+      height: 68px;
+      overflow: hidden;
+    }
+
+    .latest-content-brand img {
+      width: 72px;
+      height: 58px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .latest-content-brand img.game-thumbnail {
+      width: 76px;
+      height: 68px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .latest-content-mark {
+      display: grid;
+      place-items: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      color: #fff;
+      background: var(--dark);
+      font-size: 14px;
+      font-weight: 950;
+    }
+
+    .latest-content-copy {
+      display: grid;
+      gap: 7px;
+      min-width: 0;
+    }
+
+    .latest-content-top,
+    .latest-content-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .latest-content-kind {
+      display: inline-flex;
+      width: fit-content;
+      padding: 4px 8px;
+      border-radius: 999px;
+      color: var(--green);
+      background: #e8f3ef;
+      font-size: 11px;
+      font-weight: 950;
+    }
+
+    .latest-content-platform,
+    .latest-content-date {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .latest-content-card h3 {
+      display: -webkit-box;
+      overflow: hidden;
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.35;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    .latest-content-card p {
+      overflow: hidden;
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .latest-content-link {
+      flex: 0 0 auto;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 950;
+    }
+
+    .latest-content-empty {
+      grid-column: 1 / -1;
+      padding: 18px;
+      border: 1px dashed rgba(23,32,43,.18);
+      border-radius: 18px;
+      color: var(--muted);
+      background: rgba(255,255,255,.62);
+      font-size: 14px;
+      font-weight: 850;
+    }
+
+    .empty-state {
+      display: none;
+      margin: 0 18px 18px;
+      padding: 16px;
+      border: 1px dashed rgba(23,32,43,.2);
+      border-radius: 18px;
+      color: var(--muted);
+      background: rgba(255,255,255,.55);
+      font-size: 14px;
+      font-weight: 850;
+    }
+
+    .empty-state.show { display: block; }
+
+    .read-link {
+      display: inline-flex;
+      margin-top: 14px;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 950;
+    }
+
+    .activity-list {
+      display: grid;
+      gap: 12px;
+      padding: 0 18px 18px;
+    }
+
+    .activity-detail {
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 18px;
+      background: #fff;
+      overflow: hidden;
+      scroll-margin-top: 112px;
+    }
+
+    .activity-detail summary {
+      cursor: pointer;
+      list-style: none;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 15px 16px;
+    }
+
+    .activity-detail summary::-webkit-details-marker { display: none; }
+
+    .activity-title {
+      display: grid;
+      gap: 5px;
+    }
+
+    .activity-title b {
+      font-size: 16px;
+      line-height: 1.3;
+    }
+
+    .activity-title span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .activity-action {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 950;
+      white-space: nowrap;
+    }
+
+    .activity-detail[open] .activity-action { color: var(--green); }
+
+    .activity-body {
+      display: grid;
+      gap: 12px;
+      padding: 0 16px 16px;
+      border-top: 1px solid rgba(23,32,43,.08);
+    }
+
+    .activity-fields {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      padding-top: 14px;
+    }
+
+    .activity-field {
+      border: 1px solid rgba(23,32,43,.08);
+      border-radius: 14px;
+      background: #f8faf7;
+      padding: 10px;
+    }
+
+    .activity-field b {
+      display: block;
+      color: var(--dark);
+      font-size: 12px;
+      line-height: 1.3;
+      margin-bottom: 5px;
+    }
+
+    .activity-field span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .activity-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .play-guide-layout {
+      display: grid;
+      gap: 14px;
+      padding: 18px;
+    }
+
+    .guide-feature {
+      display: grid;
+      grid-template-columns: minmax(280px, .8fr) minmax(0, 1.2fr);
+      min-height: 260px;
+      background: #fff;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .guide-feature img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .guide-feature .article-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(22px, 4vw, 42px);
+    }
+
+    .play-guide-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .guide-card {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      min-width: 0;
+      background: #fff;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .guide-card img {
+      width: 100%;
+      aspect-ratio: 16 / 8;
+      display: block;
+      object-fit: cover;
+    }
+
+    .article-body { padding: 17px; }
+    .article-body .label {
+      display: inline-flex;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: #e8f3ef;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 950;
+      margin-bottom: 10px;
+    }
+
+    .article-body h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    .article-body p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .featured-game-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      padding: 18px;
+    }
+
+    .featured-game-card {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      min-height: 100%;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 20px;
+      box-shadow: 0 14px 36px rgba(8,16,24,.08);
+    }
+
+    .game-thumb {
+      display: block;
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #111827;
+      cursor: pointer;
+    }
+
+    .game-thumb img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform .22s ease;
+    }
+
+    .game-thumb img.featured-game-icon {
+      padding: 12px;
+      object-fit: contain;
+      background: #f7f5ef;
+    }
+
+    .game-thumb:hover img {
+      transform: scale(1.035);
+    }
+
+    .game-thumb .status-pill {
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      box-shadow: 0 10px 24px rgba(8,16,24,.16);
+    }
+
+    .game-body {
+      display: grid;
+      gap: 9px;
+      padding: 16px;
+    }
+
+    .game-body h3 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .game-body p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .game-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      color: #475467;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .side-stack {
+      display: grid;
+      gap: 16px;
+    }
+
+    .platform-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .jackpot-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .jackpot-card {
+      display: grid;
+      align-content: start;
+      grid-auto-rows: max-content;
+      gap: 12px;
+      padding: 16px;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 18px;
+      background: #fff;
+      min-height: 180px;
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .jackpot-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(8,16,24,.06);
+      border-color: rgba(201,143,47,.4);
+    }
+
+    .win-badge {
+      display: inline-block;
+      margin-right: 4px;
+      font-size: 14px;
+    }
+
+    .jackpot-card .amount {
+      color: var(--red);
+      font-size: 24px;
+      font-weight: 950;
+      line-height: 1.1;
+    }
+
+    .jackpot-card .meta {
+      display: grid;
+      gap: 5px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .jackpot-card .meta b {
+      color: var(--dark);
+      font-size: 15px;
+    }
+
+    .winner-list {
+      display: grid;
+      gap: 8px;
+      margin-top: 2px;
+    }
+
+    .jackpot-entry-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      padding: 8px 0;
+      border-top: 1px solid rgba(23,32,43,.08);
+      font-size: 13px;
+    }
+
+    .jackpot-entry-main {
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }
+
+    .jackpot-entry-title {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      min-width: 0;
+      color: var(--dark);
+      font-weight: 950;
+      line-height: 1.4;
+    }
+
+    .jackpot-entry-subtitle {
+      padding-left: 29px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+      white-space: normal;
+    }
+
+    .jackpot-entry-value {
+      color: var(--red);
+      font-weight: 950;
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    .data-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .data-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 4px 7px;
+      border-radius: 999px;
+      border: 1px solid rgba(34,90,154,.14);
+      background: rgba(34,90,154,.06);
+      color: #244e80;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .data-tag.pending {
+      border-color: rgba(201,143,47,.24);
+      background: rgba(201,143,47,.1);
+      color: #8b5d18;
+    }
+
+    .data-note {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .platform-card {
+      display: grid;
+      gap: 12px;
+      min-height: 190px;
+      padding: 15px;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .platform-card .mini-score {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .platform-card .mini-score strong {
+      color: var(--dark);
+      font-size: 20px;
+    }
+
+    .platform-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      width: fit-content;
+      min-height: 26px;
+      align-items: center;
+      align-self: flex-start;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #f5f7f4;
+      color: #334155;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .status-pill.target { background: #e8f3ef; color: var(--green); }
+    .status-pill.watch { background: rgba(201,143,47,.1); color: #8b5d18; }
+
+    /* Live Pulse Indicator Style */
+    .live-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 6px;
+      border-radius: 50%;
+      background: #10b981;
+      position: relative;
+    }
+    .live-dot::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #10b981;
+      animation: live-pulse 1.6s infinite ease-in-out;
+      opacity: 0.8;
+      left: 0;
+      top: 0;
+    }
+    @keyframes live-pulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(2.8);
+        opacity: 0;
+      }
+    }
+
+    .platform-name-link {
+      color: var(--green);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    .platform-name-link:hover { color: #105f4d; }
+
+    .platform-data-link {
+      display: inline-flex;
+      width: fit-content;
+      margin-top: 10px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .platform-data-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .platform-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .platform-logo {
+      flex: 0 0 auto;
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 950;
+      background: linear-gradient(135deg, #334155, #111827);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.18);
+    }
+
+    .platform-logo.gold { background: linear-gradient(135deg, #d49529, #8b5d18); }
+    .platform-logo.silver { background: linear-gradient(135deg, #6e7d91, #424d5d); }
+    .platform-logo.green { background: linear-gradient(135deg, var(--green), #24675a); }
+    .platform-logo.blue { background: linear-gradient(135deg, var(--blue), #17365f); }
+    .platform-logo.red { background: linear-gradient(135deg, var(--red), #7b2e30); }
+
+    .brand-logo {
+      flex: 0 0 auto;
+      width: 112px;
+      height: 72px;
+      border-radius: 0;
+      display: block;
+      object-fit: contain;
+      padding: 0;
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+
+    #platforms .brand-logo {
+      width: 132px;
+      height: 86px;
+      padding: 0;
+    }
+
+    .ranking-wrap { padding: 18px; }
+    .score-rules {
+      display: grid;
+      grid-template-columns: repeat(10, minmax(0, 1fr));
+      gap: 10px;
+      padding: 18px 18px 0;
+    }
+
+    .rule-card {
+      grid-column: span 2;
+      border: 1px solid rgba(23,32,43,.08);
+      border-radius: 16px;
+      background: #fff;
+      padding: 13px;
+    }
+
+    .rule-card b {
+      display: block;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .rule-card span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .ranking-disclaimer {
+      margin: 12px 18px 0;
+      padding: 13px 14px;
+      border: 1px solid rgba(201,143,47,.22);
+      border-radius: 16px;
+      background: rgba(201,143,47,.08);
+      color: #6f4b17;
+      font-size: 13px;
+      font-weight: 850;
+    }
+    .ranking-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 10px;
+    }
+
+    .ranking-table th {
+      text-align: left;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 0 12px 4px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .ranking-table td {
+      background: #fff;
+      border-top: 1px solid rgba(23,32,43,.08);
+      border-bottom: 1px solid rgba(23,32,43,.08);
+      padding: 14px 12px;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+
+    .ranking-table td:first-child {
+      border-left: 1px solid rgba(23,32,43,.08);
+      border-radius: 16px 0 0 16px;
+      width: 72px;
+    }
+
+    .ranking-table td:last-child {
+      border-right: 1px solid rgba(23,32,43,.08);
+      border-radius: 0 16px 16px 0;
+    }
+
+    .rank {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: #334155;
+      font-size: 18px;
+      font-weight: 950;
+    }
+
+    .rank.r1 { background: linear-gradient(135deg, #d49529, #8b5d18); }
+    .rank.r2 { background: linear-gradient(135deg, #6e7d91, #424d5d); }
+    .rank.r3 { background: linear-gradient(135deg, var(--green), #24675a); }
+
+    .platform b { display: block; font-size: 16px; line-height: 1.3; }
+    .platform span { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
+
+    .score {
+      font-size: 20px;
+      font-weight: 950;
+      color: var(--dark);
+    }
+
+    .score small {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 5px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(23,32,43,.08);
+      background: #f5f7f4;
+      color: #334155;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .chip.warn {
+      border-color: rgba(201,143,47,.26);
+      background: rgba(201,143,47,.1);
+      color: #8b5d18;
+    }
+
+    .spotlight {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      padding: 18px;
+    }
+
+    .feature {
+      background: #fff;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 20px;
+      padding: 18px;
+    }
+
+    .feature.visual {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .feature.visual img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16 / 8.2;
+      object-fit: cover;
+    }
+
+    .feature.visual .feature-inner {
+      padding: 18px;
+    }
+
+    .feature h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    .feature p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .feature-row {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 12px;
+      padding: 10px 0;
+      border-top: 1px solid rgba(23,32,43,.08);
+      font-size: 14px;
+    }
+
+    .feature-row b { color: var(--dark); }
+    .feature-row span { color: var(--muted); }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .section-cta {
+      display: flex;
+      justify-content: center;
+      padding: 0 18px 20px;
+    }
+
+    .qa {
+      background: #fff;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 18px;
+      padding: 16px;
+    }
+
+    .qa h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .qa p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .source {
+      background: #fff;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 16px;
+      padding: 14px;
+    }
+
+    .source b { display: block; margin-bottom: 6px; }
+    .source span { color: var(--muted); font-size: 13px; }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .guide-card {
+      min-height: 170px;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 18px;
+      background: #fff;
+      padding: 16px;
+    }
+
+    .guide-card .num {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--green), #254f74);
+      font-size: 13px;
+      font-weight: 950;
+    }
+
+    .guide-card b { display: block; font-size: 16px; margin-bottom: 7px; }
+    .guide-card span { display: block; color: var(--muted); font-size: 13px; }
+
+    .compare-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .compare-card {
+      min-height: 150px;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 18px;
+      background: #fff;
+      padding: 16px;
+    }
+
+    .compare-card b { display: block; font-size: 16px; margin-bottom: 7px; }
+    .compare-card p { margin: 0; color: var(--muted); font-size: 13px; }
+    .compare-card .label {
+      display: inline-flex;
+      margin-bottom: 10px;
+      border-radius: 999px;
+      padding: 4px 8px;
+      background: rgba(201,143,47,.1);
+      color: #8b5d18;
+      font-size: 11px;
+      font-weight: 950;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      padding: 18px;
+      border-top: 1px solid rgba(23,32,43,.08);
+    }
+
+    .timeline-item {
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 16px;
+      background: #fff;
+      padding: 14px;
+    }
+
+    .timeline-item b { display: block; margin-bottom: 5px; }
+    .timeline-item span { color: var(--muted); font-size: 13px; }
+
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      padding: 20px 0 42px;
+    }
+
+    @media (max-width: 980px) {
+      .topbar { position: static; }
+      .hero,
+      .spotlight,
+      .guide-feature { grid-template-columns: 1fr; }
+      .content-grid,
+      .latest-content-list,
+      .jackpot-grid,
+      .featured-game-grid,
+      .platform-grid,
+      .guide-grid,
+      .compare-list,
+      .activity-fields,
+      .timeline,
+      .source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .score-rules {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+      }
+      .score-rules .rule-card {
+        grid-column: span 2;
+      }
+      .score-rules .rule-card:nth-child(4),
+      .score-rules .rule-card:nth-child(5) {
+        grid-column: span 3;
+      }
+      .guide-feature { min-height: 0; }
+      .guide-feature img { max-height: 280px; }
+
+      /* Ranking table card layout for mobile / tablet */
+      .ranking-wrap {
+        overflow-x: visible !important;
+        padding: 0 !important;
+      }
+      .ranking-table {
+        display: block;
+        width: 100%;
+        border-spacing: 0;
+      }
+      .ranking-table thead {
+        display: none;
+      }
+      .ranking-table tbody {
+        display: block;
+        width: 100%;
+      }
+      .ranking-table tr {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        gap: 8px 12px;
+        background: #fff;
+        border: 1px solid rgba(23,32,43,.09);
+        border-radius: 20px;
+        padding: 16px;
+        margin-bottom: 16px;
+        box-shadow: 0 8px 24px rgba(8,16,24,.03);
+      }
+      .ranking-table td {
+        display: block;
+        padding: 0 !important;
+        border: none !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        width: auto !important;
+      }
+      /* Rank icon container */
+      .ranking-table td:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+      }
+      /* Platform brand details */
+      .ranking-table td:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: center;
+      }
+      /* Score (Rating) row */
+      .ranking-table td:nth-child(3) {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0 !important;
+        border-top: 1px solid rgba(23,32,43,.06) !important;
+      }
+      .ranking-table td:nth-child(3)::before {
+        content: "資料評分";
+        font-weight: 800;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      /* Chips / Tags row */
+      .ranking-table td:nth-child(4) {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0 !important;
+        border-top: 1px dashed rgba(23,32,43,.06) !important;
+      }
+      .ranking-table td:nth-child(4)::before {
+        content: "遊戲特色";
+        font-weight: 800;
+        color: var(--muted);
+        font-size: 13px;
+        margin-right: 12px;
+      }
+      /* Recent Jackpot row */
+      .ranking-table td:nth-child(5) {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 8px 0 !important;
+        border-top: 1px dashed rgba(23,32,43,.06) !important;
+        font-size: 13px;
+        text-align: right;
+      }
+      .ranking-table td:nth-child(5)::before {
+        content: "近期爆獎";
+        font-weight: 800;
+        color: var(--muted);
+        font-size: 13px;
+        margin-right: 12px;
+        flex-shrink: 0;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .wrap { width: min(100vw - 24px, 1220px); }
+      .topbar-inner { height: auto; padding: 14px 0; align-items: flex-start; flex-direction: column; }
+      .nav { justify-content: flex-start; }
+      .hero-main { padding: 24px; min-height: auto; }
+      .hero-meta,
+      .content-grid,
+      .latest-content-list,
+      .jackpot-grid,
+      .featured-game-grid,
+      .platform-grid,
+      .faq-grid,
+      .guide-grid,
+      .play-guide-grid,
+      .compare-list,
+      .activity-fields,
+      .score-rules,
+      .timeline,
+      .source-grid,
+      .activity-detail summary { grid-template-columns: 1fr; }
+      .score-rules .rule-card,
+      .score-rules .rule-card:nth-child(4),
+      .score-rules .rule-card:nth-child(5) {
+        grid-column: auto;
+      }
+      .tool-panel { grid-template-columns: 1fr; align-items: stretch; }
+      .result-note { white-space: normal; }
+      .section-head { align-items: flex-start; flex-direction: column; }
+      .feature-row { grid-template-columns: 1fr; gap: 4px; }
+      .latest-content-card {
+        grid-template-columns: 62px minmax(0, 1fr);
+        min-height: 106px;
+        padding: 12px;
+      }
+      .latest-content-brand {
+        width: 62px;
+        height: 58px;
+      }
+      .latest-content-brand img {
+        width: 60px;
+        height: 50px;
+      }
+      .latest-content-top,
+      .latest-content-bottom {
+        align-items: flex-start;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+
+    .activity-card {
+      background: #fff;
+      border: 1px solid rgba(23,32,43,.09);
+      border-radius: 18px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 4px 12px rgba(8,16,24,.04);
+      transition: all 0.2s ease-in-out;
+    }
+    .activity-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(8,16,24,.08);
+      border-color: var(--blue);
+    }
+    .activity-card:hover .read-link {
+      background: var(--blue);
+      color: #fff !important;
+    }
+
+    .activity-card.is-expired {
+      background: #f3f4f6;
+      border-color: rgba(23,32,43,.05);
+      opacity: 0.7;
+    }
+
+    .activity-logo {
+      width: 72px;
+      height: 46px;
+      border-radius: 0;
+      object-fit: contain;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .version-badge {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 60;
+      max-width: min(420px, calc(100vw - 32px));
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(17,24,39,.92);
+      color: #f8fafc;
+      border: 1px solid rgba(255,255,255,.16);
+      box-shadow: 0 12px 30px rgba(8,16,24,.24);
+      font-size: 12px;
+      font-weight: 850;
+    }
+  </style>
+</head>
+<body>
+  <div class="version-badge" id="frontend-version-badge">GEO 前台</div>
+  <div class="site-strip">
+    <div class="wrap">
+      <div><span>最後更新</span>：<span id="integrated-updated">2026-09-30</span>｜本週觀察 <span id="integrated-platform-count">8</span> 個公開來源、<span id="integrated-jackpot-count">4</span> 筆爆分資料</div>
+      <div>內容範圍：活動快訊、爆分榜、平台比較、新手攻略</div>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="/#">
+        <div class="mark">遊</div>
+        <div>
+          <b>休閒娛樂城活動情報站</b>
+          <span>活動整理、遊戲攻略、平台比較</span>
+        </div>
+      </a>
+      <nav class="nav" aria-label="頁面導覽">
+        <a href="/#events">活動快訊</a>
+        <a href="/#ranking">綜合排行榜</a>
+        <a href="/#jackpot">爆分榜</a>
+        <a href="/#featured">玩法指南</a>
+        <a href="/#platforms">平台一覽</a>
+        <a href="/#selection-guide">選站指南</a>
+        <a href="/#safety-check">安全提醒</a>
+        <a href="/qa">綜合問答</a>
+        <a href="/#sources">資料來源</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-main">
+        <span class="eyebrow">本週情報整理</span>
+        <h1>本週熱門娛樂城活動整理</h1>
+        <p>整理紅包活動、限時活動、新遊戲與平台比較，先看重點，再回官方入口確認條件。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="/#events">看活動整理</a>
+          <a class="btn" href="/#ranking">看綜合排行榜</a>
+          <a class="btn" href="/#jackpot">看爆分榜</a>
+          <a class="btn" href="/qa">綜合問答</a>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-card"><b><span id="observed-platform-count">8</span> 個觀察來源</b><span>公開活動與榜單來源</span></div>
+          <div class="meta-card"><b><span id="platform-page-count">7</span> 個資料頁</b><span>固定網址持續查證</span></div>
+          <div class="meta-card"><b><span id="ranked-platform-count">6</span> 個排行平台</b><span>依公開資料完整度評分</span></div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="assets/site-images/hero-activity-info.png" alt="" decoding="async" fetchpriority="high">
+        </div>
+      </div>
+
+      <aside class="sidebar-card">
+        <h2>今日更新看板</h2>
+        <div class="update-box">
+          <div class="update-item">
+            <div class="tag">活動</div>
+            <div><b>限時活動整理</b><span>領取方式與期限快速看。</span></div>
+          </div>
+          <div class="update-item">
+            <div class="tag">新手</div>
+            <div><b>註冊、登入、儲值入門</b><span>新手先看路徑。</span></div>
+          </div>
+          <div class="update-item">
+            <div class="tag">比較</div>
+            <div><b>綜合排行榜更新</b><span>排行與爆分一起看。</span></div>
+          </div>
+          <div class="update-item">
+            <div class="tag">提醒</div>
+            <div><b>活動資訊提醒</b><span>條件以官方公告為準。</span></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="tool-panel" aria-label="站內內容查找工具">
+      <div class="search-box">
+        <label for="siteSearch">快速搜尋</label>
+        <input id="siteSearch" type="search" placeholder="搜尋紅包活動、老虎機、新手、平台比較...">
+      </div>
+      <div class="filter-box">
+        <label>內容分類</label>
+        <div class="filter-row" id="filterRow">
+          <button class="filter-chip active" type="button" data-filter="all">全部</button>
+          <button class="filter-chip" type="button" data-filter="event">活動 / 紅包</button>
+          <button class="filter-chip" type="button" data-filter="guide">新手攻略</button>
+          <button class="filter-chip" type="button" data-filter="game">遊戲 / 老虎機</button>
+          <button class="filter-chip" type="button" data-filter="compare">平台比較</button>
+          <button class="filter-chip" type="button" data-filter="safety">客服 / 安全提醒</button>
+        </div>
+      </div>
+      <div class="result-note" id="resultNote">顯示全部內容</div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="section-head">
+        <div>
+          <h2>最新活動與熱門內容</h2>
+          <p>只收錄已確認的平台活動、新遊戲與近期熱門內容。</p>
+        </div>
+        <div class="section-note" id="latest-content-count">近期收錄 3 筆</div>
+      </div>
+      <div class="latest-content-list" id="latest-content-list" aria-live="polite">
+        <!-- GEO_LATEST_CONTENT_START -->
+<article class="latest-content-card searchable" data-server-rendered="true" data-topic="game compare" data-keywords="星運娛樂城 熱門遊戲 財神倍倍發 X4096 經典財神傳統吉祥主題，堆疊連消高達 4096 倍連線消除玩法。手機免下載安裝、開啟瀏覽器即可直接連線遊玩，體驗順暢穩定。 人氣首選推薦">
+  <div class="latest-content-brand"><img src="assets/game-icons/xinluck/財神倍倍發-X4096.png" alt="星運娛樂城 財神倍倍發 X4096 縮圖" loading="lazy" decoding="async"></div>
+  <div class="latest-content-copy">
+    <div class="latest-content-top"><span class="latest-content-kind">熱門遊戲</span><span class="latest-content-platform">星運娛樂城</span></div>
+    <h3>財神倍倍發 X4096</h3>
+    <p>經典財神傳統吉祥主題，堆疊連消高達 4096 倍連線消除玩法。手機免下載安裝、開啟瀏覽器即可直接連線遊玩，體驗順暢穩定。</p>
+    <div class="latest-content-bottom"><time class="latest-content-date" datetime="2026-09-21">更新 2026-09-21</time><a class="latest-content-link" href="https://play.xinluck.com/?utm_source=taiwancasinoguide&amp;utm_medium=referral&amp;utm_campaign=seo_geo_review" target="_blank" rel="noopener">查看內容</a></div>
+  </div>
+</article>
+<article class="latest-content-card searchable" data-server-rendered="true" data-topic="game compare" data-keywords="包你發 營運 豐收海皇榜！掃蕩深海上榜去！日拿百萬賺飽飽！ 公開消息頁確認 2026-09-30">
+  <div class="latest-content-brand"><img src="assets/brand-logos/processed/online808-logo.png" alt="包你發 豐收海皇榜！掃蕩深海上榜去！日拿百萬賺飽飽！ 縮圖" loading="lazy" decoding="async"></div>
+  <div class="latest-content-copy">
+    <div class="latest-content-top"><span class="latest-content-kind">營運</span><span class="latest-content-platform">包你發</span></div>
+    <h3>豐收海皇榜！掃蕩深海上榜去！日拿百萬賺飽飽！</h3>
+    <p>公開消息頁確認</p>
+    <div class="latest-content-bottom"><time class="latest-content-date" datetime="2026-09-30">更新 2026-09-30</time><a class="latest-content-link" href="https://online808.com/" target="_blank" rel="noopener">查看內容</a></div>
+  </div>
+</article>
+<article class="latest-content-card searchable" data-server-rendered="true" data-topic="game compare" data-keywords="星城online 新遊戲更新 版本更新內容－色骰 星城官方於 2026-08-26 發布色骰版本更新與遊戲說明。 2026-08-26 官方更新">
+  <div class="latest-content-brand"><img src="assets/brand-logos/processed/starcity-logo.png" alt="星城online 版本更新內容－色骰 縮圖" loading="lazy" decoding="async"></div>
+  <div class="latest-content-copy">
+    <div class="latest-content-top"><span class="latest-content-kind">新遊戲更新</span><span class="latest-content-platform">星城online</span></div>
+    <h3>版本更新內容－色骰</h3>
+    <p>星城官方於 2026-08-26 發布色骰版本更新與遊戲說明。</p>
+    <div class="latest-content-bottom"><time class="latest-content-date" datetime="2026-08-27">更新 2026-08-27</time><a class="latest-content-link" href="https://www.xin-stars.com/GameIntro/GAME_New/Type-1/2026082601" target="_blank" rel="noopener">查看內容</a></div>
+  </div>
+</article>
+<article class="latest-content-card searchable" data-server-rendered="true" data-topic="game compare" data-keywords="豪神娛樂城 新遊戲 電影正版聯名《一眉道人》機台上線 豪神官方公告收錄全新消除類機台，含十字靈符與倍數升級玩法。 2026-08-20 官方上線">
+  <div class="latest-content-brand"><img src="assets/brand-logos/processed/haoshen-logo.png" alt="豪神娛樂城 電影正版聯名《一眉道人》機台上線 縮圖" loading="lazy" decoding="async"></div>
+  <div class="latest-content-copy">
+    <div class="latest-content-top"><span class="latest-content-kind">新遊戲</span><span class="latest-content-platform">豪神娛樂城</span></div>
+    <h3>電影正版聯名《一眉道人》機台上線</h3>
+    <p>豪神官方公告收錄全新消除類機台，含十字靈符與倍數升級玩法。</p>
+    <div class="latest-content-bottom"><time class="latest-content-date" datetime="2026-08-27">更新 2026-08-27</time><a class="latest-content-link" href="https://hs-casino.com/" target="_blank" rel="noopener">查看內容</a></div>
+  </div>
+</article>
+<article class="latest-content-card searchable" data-server-rendered="true" data-topic="event" data-keywords="金爸爸娛樂城 儲值活動 7-ELEVEN MyCard 儲值活動 官方活動頁確認 7/8 - 7/21">
+  <div class="latest-content-brand"><img src="assets/brand-logos/processed/goldfather-logo.png" alt="金爸爸娛樂城 7-ELEVEN MyCard 儲值活動 縮圖" loading="lazy" decoding="async"></div>
+  <div class="latest-content-copy">
+    <div class="latest-content-top"><span class="latest-content-kind">儲值活動</span><span class="latest-content-platform">金爸爸娛樂城</span></div>
+    <h3>7-ELEVEN MyCard 儲值活動</h3>
+    <p>官方活動頁確認</p>
+    <div class="latest-content-bottom"><time class="latest-content-date" datetime="2026-08-14">更新 2026-08-14</time><a class="latest-content-link" href="https://kbb.tw/official/home.html" target="_blank" rel="noopener">查看內容</a></div>
+  </div>
+</article>
+<article class="latest-content-card searchable" data-server-rendered="true" data-topic="game compare" data-keywords="滿貫大亨 熱門遊戲 獵龍戰紀3 近期公開榜單收錄多筆高額爆分，適合查看近期遊戲熱度。 爆分榜收錄">
+  <div class="latest-content-brand"><img src="assets/game-icons/manguan/獵龍戰紀3_dragontycoon3.png" alt="滿貫大亨 獵龍戰紀3 縮圖" loading="lazy" decoding="async"></div>
+  <div class="latest-content-copy">
+    <div class="latest-content-top"><span class="latest-content-kind">熱門遊戲</span><span class="latest-content-platform">滿貫大亨</span></div>
+    <h3>獵龍戰紀3</h3>
+    <p>近期公開榜單收錄多筆高額爆分，適合查看近期遊戲熱度。</p>
+    <div class="latest-content-bottom"><time class="latest-content-date" datetime="2026-07-20">更新 2026-07-20</time><a class="latest-content-link" href="https://www.gametower.com.tw/Action/79_TMD/20240529MJX/page4C.aspx" target="_blank" rel="noopener">查看內容</a></div>
+  </div>
+</article>
+<!-- GEO_LATEST_CONTENT_END -->
+      </div>
+      <div class="empty-state" id="contentEmpty">目前沒有符合的首頁內容，請換個關鍵字或分類。</div>
+    </section>
+
+
+    <section class="section" id="ranking">
+      <div class="section-head">
+        <div>
+          <h2>綜合排行榜</h2>
+          <p>依公開資訊完整度、活動更新、遊戲資料與榜單可查性整理近期排名。</p>
+        </div>
+        <div class="section-note">每週觀察</div>
+      </div>
+      <div class="ranking-wrap">
+        <table class="ranking-table">
+          <thead>
+            <tr>
+              <th>排名</th>
+              <th>平台</th>
+              <th>資料分</th>
+              <th>遊戲特色</th>
+              <th>近期爆獎</th>
+            </tr>
+          </thead>
+          <tbody id="ranking-body">
+            <tr>
+              <td><div class="rank r1">1</div></td>
+              <td class="platform"><div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/starcity-logo.png" alt="星城online Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://ad.xin-stars.com/edm/Feature_Game" target="_blank" rel="noopener">星城online</a></b><span>官方入口</span></div></div></td>
+              <td><div class="score">92 <small>/100</small></div></td>
+              <td><div class="chips"><span class="chip">老虎機主題</span><span class="chip">經典機台</span></div></td>
+              <td>近期未收錄公開爆獎</td>
+            </tr>
+            <tr>
+              <td><div class="rank r2">2</div></td>
+              <td class="platform"><div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/richman-logo.png" alt="老子有錢 Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://www.08online.com/pc/home" target="_blank" rel="noopener">老子有錢</a></b><span>官方入口</span></div></div></td>
+              <td><div class="score">90 <small>/100</small></div></td>
+              <td><div class="chips"><span class="chip">老虎機</span><span class="chip">遊戲主題</span></div></td>
+              <td>近期未收錄公開爆獎</td>
+            </tr>
+            <tr>
+              <td><div class="rank r3">3</div></td>
+              <td class="platform"><div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/goldfather-logo.png" alt="金爸爸娛樂城 Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://kbb.tw/official/home.html" target="_blank" rel="noopener">金爸爸娛樂城</a></b><span>官方入口</span></div></div></td>
+              <td><div class="score">88 <small>/100</small></div></td>
+              <td><div class="chips"><span class="chip">電動 Slot</span><span class="chip">街機 Arcade</span><span class="chip">棋牌 Poker</span></div></td>
+              <td>近期未收錄公開爆獎</td>
+            </tr>
+            <tr>
+              <td><div class="rank">4</div></td>
+              <td class="platform"><div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/haoshen-logo.png" alt="豪神娛樂城 Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://hs-casino.com" target="_blank" rel="noopener">豪神娛樂城</a></b><span>官方入口</span></div></div></td>
+              <td><div class="score">81 <small>/100</small></div></td>
+              <td><div class="chips"><span class="chip">遊戲分類</span><span class="chip">活動遊戲</span><span class="chip">手機遊玩</span></div></td>
+              <td>近期未收錄公開爆獎</td>
+            </tr>
+            <tr>
+              <td><div class="rank">5</div></td>
+              <td class="platform"><div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/manguan-logo.png" alt="滿貫大亨 Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://www.gametower.com.tw/Games/tmd/index.aspx" target="_blank" rel="noopener">滿貫大亨</a></b><span>官方入口</span></div></div></td>
+              <td><div class="score">77 <small>/100</small></div></td>
+              <td><div class="chips"><span class="chip">魚機</span><span class="chip">老虎機</span><span class="chip">活動排行</span></div></td>
+              <td>和美弗洛安｜154,390,000</td>
+            </tr>
+            <tr>
+              <td><div class="rank">6</div></td>
+              <td class="platform"><div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/xinluck-logo.png" alt="星運娛樂城 Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://www.xinluck.com/?utm_source=taiwancasinoguide&amp;utm_medium=referral&amp;utm_campaign=seo_geo_review" target="_blank" rel="noopener">星運娛樂城</a></b><span>官方入口</span></div></div></td>
+              <td><div class="score">72 <small>/100</small></div></td>
+              <td><div class="chips"><span class="chip">老虎機主題</span><span class="chip">活動遊戲</span><span class="chip">新手遊玩</span></div></td>
+              <td>近期未收錄公開爆獎</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="score-rules" aria-label="評分規則">
+        <div class="rule-card"><b>活動更新 25%</b><span>活動條件、入口、更新日期是否清楚。</span></div>
+        <div class="rule-card"><b>平台資訊 20%</b><span>客服、分類、新手流程與官方入口完整度。</span></div>
+        <div class="rule-card"><b>遊戲資料 20%</b><span>遊戲分類、熱門機台與新遊戲資訊。</span></div>
+        <div class="rule-card"><b>榜單可查 20%</b><span>玩家、分數、遊戲名稱與日期是否可對照。</span></div>
+        <div class="rule-card"><b>更新可信度 15%</b><span>以公開來源與版本紀錄持續校正。</span></div>
+      </div>
+      <div class="ranking-disclaimer">資料分為公開內容完整度與資料可查性觀察，不代表平台實際優劣、獲利機率或保證收益；若平台公告、入口或榜單資料有重大異動，分數與排序會依最新公開資訊調整。</div>
+    </section>
+
+
+    <section class="section" id="jackpot">
+      <div class="section-head">
+        <div>
+          <h2>本週爆分榜</h2>
+          <p>依熱門遊戲分組，每款遊戲目標收錄 3～5 筆玩家名稱與爆獎金額；公開資料不足時先保留已驗證筆數。</p>
+        </div>
+        <div class="section-note">每週更新</div>
+      </div>
+      <div class="jackpot-grid" id="jackpot-grid">
+        <article class="jackpot-card searchable" data-topic="game compare" data-keywords="爆分榜 滿貫大亨 獵龍戰紀3 餘燼之刃 和美弗洛安 楊柳兒 西魏施皮特">
+          <span class="status-pill watch">遊戲大獎榜</span>
+          <div class="amount">滿貫大亨</div>
+          <div class="meta"><b>本週精選爆分</b><span>收錄 4 筆公開爆獎</span></div>
+          <div class="winner-list">
+            <div class="winner-row"><b><span class="win-badge">🥇</span> 獵龍戰紀3 ｜ 和美弗洛安</b><span>154,390,000</span></div>
+            <div class="winner-row"><b><span class="win-badge">🥈</span> 獵龍戰紀3 ｜ 楊柳兒</b><span>152,020,000</span></div>
+            <div class="winner-row"><b><span class="win-badge">🥉</span> 餘燼之刃 ｜ 西魏施皮特</b><span>144,551,000</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="empty-state" id="jackpotEmpty">目前沒有符合的爆分榜資料。</div>
+    </section>
+
+
+    <section class="section" id="featured-games">
+      <div class="section-head">
+        <div>
+          <h2>熱門 / 新上線遊戲</h2>
+          <p>整理近期可觀察的新遊戲、熱門機台與爆分話題，先看遊戲特色，再回官方入口確認活動條件。</p>
+        </div>
+        <div class="section-note">遊戲導覽</div>
+      </div>
+      <div class="featured-game-grid" id="featured-game-grid"></div>
+      <div style="text-align: center; margin: 0 0 20px;">
+        <button id="toggle-expired-btn" class="btn" style="color: var(--muted); border-color: rgba(23,32,43,.14); background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+          顯示歷史 / 已過期遊戲 (0)
+        </button>
+      </div>
+    </section>
+
+
+    <section class="section" id="featured">
+      <div class="section-head">
+        <div>
+          <h2>遊戲攻略與玩法指南</h2>
+          <p>整理不受短期活動影響的玩法知識、榜單判讀與新手檢查重點。</p>
+        </div>
+        <div class="section-note">長期指南</div>
+      </div>
+      <div class="play-guide-layout">
+        <article class="guide-feature searchable" data-topic="game guide beginner" data-keywords="新手攻略 遊戲玩法 老虎機 規則 選遊戲 試玩">
+          <img src="assets/site-images/new-slot-games.png" alt="遊戲玩法與新手入門指南主圖" loading="lazy" decoding="async">
+          <div class="article-body">
+            <span class="label">新手入門</span>
+            <h3>第一次接觸遊戲，先看懂玩法、規則與資訊來源</h3>
+            <p>從遊戲分類、操作方式到官方說明入口，建立一套不依賴短期活動的基本判斷順序。</p>
+          </div>
+        </article>
+        <div class="play-guide-grid">
+          <article class="guide-card searchable" data-topic="game guide ranking" data-keywords="倍率榜 贏分榜 彩金 積分榜 爆分榜 排行榜">
+            <img src="assets/site-images/jackpot-ranking.png" alt="遊戲榜單判讀指南縮圖" loading="lazy" decoding="async">
+            <div class="article-body">
+              <span class="label">榜單判讀</span>
+              <h3>倍率、贏分、彩金與積分榜有什麼不同？</h3>
+              <p>先確認榜單指標，再比較玩家、遊戲與公布日期。</p>
+            </div>
+          </article>
+          <article class="guide-card searchable" data-topic="game guide rules" data-keywords="遊戲規則 玩法說明 活動條件 適用遊戲 注意事項">
+            <img src="assets/site-images/redpacket-event.png" alt="遊戲規則與條件確認指南縮圖" loading="lazy" decoding="async">
+            <div class="article-body">
+              <span class="label">規則確認</span>
+              <h3>開始遊戲前，要先確認哪些玩法與條件？</h3>
+              <p>查看適用遊戲、計算方式、期限與官方最新說明。</p>
+            </div>
+          </article>
+          <article class="guide-card searchable" data-topic="guide safety" data-keywords="新手攻略 官方入口 客服 點數 帳號 安全提醒">
+            <img src="assets/site-images/newbie-guide.png" alt="新手檢查表縮圖" loading="lazy" decoding="async">
+            <div class="article-body">
+              <span class="label">新手檢查表</span>
+              <h3>開始遊玩前先確認 5 件事</h3>
+              <p>官方入口、客服、帳號、點數與最新公告。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="platforms">
+      <div class="section-head">
+        <div>
+          <h2>平台特色速查</h2>
+          <p>用玩家視角快速判斷每個平台適合先看什麼，不重複排行榜分數。</p>
+        </div>
+        <div class="section-note">玩家速查</div>
+      </div>
+      <div class="platform-grid">
+        <article class="platform-card searchable" data-topic="compare" data-keywords="星城online 競品 品牌知名度 老玩家 熟悉">
+          <div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/starcity-logo.png" alt="星城online Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://www.xin-stars.com/GameIntro/GAME_Unboxing/20260429164957506" target="_blank" rel="noopener">星城online</a></b><span>新遊戲與經典機台</span></div></div>
+          <p><b>適合：</b>想看新遊戲與熟悉老虎機主題的玩家。</p>
+          <p><b>看點：</b>攻殼機動隊 SAC_2045、新遊戲活動入口。</p>
+          <div class="data-list"><span class="data-tag">目前可查：新遊戲介紹</span><span class="data-tag">官方入口</span></div>
+          <span class="status-pill watch">新遊戲觀察</span>
+          <a class="platform-data-link" href="/platforms/starcity">查看平台資料</a>
+        </article>
+        <article class="platform-card searchable" data-topic="compare game" data-keywords="老子有錢 競品 爆分 金額 老虎機">
+          <div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/richman-logo.png" alt="老子有錢 Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://www.08online.com/pc/home" target="_blank" rel="noopener">老子有錢</a></b><span>遊戲入口與品牌記憶</span></div></div>
+          <p><b>適合：</b>想快速辨識品牌、看遊戲入口與主題機台的玩家。</p>
+          <p><b>看點：</b>平台名稱記憶點強，適合做娛樂城比較內容。</p>
+          <div class="data-list"><span class="data-tag">目前可查：首頁入口</span><span class="data-tag">遊戲分類</span></div>
+          <span class="status-pill watch">品牌辨識</span>
+          <a class="platform-data-link" href="/platforms/richman">查看平台資料</a>
+        </article>
+        <article class="platform-card searchable" data-topic="compare event" data-keywords="金爸爸娛樂城 競品 活動 紅包 促銷 抓漏宗師">
+          <div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/goldfather-logo.png" alt="金爸爸娛樂城 Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://kbb.tw/official/主題介紹/【金爸爸娛樂城】獨家神作-抓漏宗師-台味抓漏文化變成爆分神器.html" target="_blank" rel="noopener">金爸爸娛樂城</a></b><span>活動文章與主題機台</span></div></div>
+          <p><b>適合：</b>想看活動公告、主題文章與街機感遊戲的玩家。</p>
+          <p><b>看點：</b>抓漏宗師有獨立介紹頁，適合補強遊戲攻略內容。</p>
+          <div class="data-list"><span class="data-tag">目前可查：抓漏宗師</span><span class="data-tag">活動公告</span></div>
+          <span class="status-pill watch">主題文章</span>
+          <a class="platform-data-link" href="/platforms/goldfather">查看平台資料</a>
+        </article>
+        <article class="platform-card searchable" data-topic="compare game event safety" data-keywords="豪神娛樂城 競品 遊戲 活動 客服聯絡 手機掃描下載">
+          <div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/haoshen-logo.png" alt="豪神娛樂城 Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://hs-casino.com" target="_blank" rel="noopener">豪神娛樂城</a></b><span>手機入口與客服管道</span></div></div>
+          <p><b>適合：</b>想先確認手機入口、客服方式與遊戲分類的玩家。</p>
+          <p><b>看點：</b>入口、客服與分類資訊清楚，適合放入新手查詢內容。</p>
+          <div class="data-list"><span class="data-tag">目前可查：手機入口</span><span class="data-tag">客服管道</span></div>
+          <span class="status-pill watch">入口清楚</span>
+          <a class="platform-data-link" href="/platforms/haoshen">查看平台資料</a>
+        </article>
+        <article class="platform-card searchable" data-topic="compare event game" data-keywords="滿貫大亨 競品 爆分 活動 滿貫金庫">
+          <div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/manguan-logo.png" alt="滿貫大亨 Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://www.gametower.com.tw/Action/79_TMD/20240529MJX/page4C.aspx" target="_blank" rel="noopener">滿貫大亨</a></b><span>爆分榜與熱門遊戲</span></div></div>
+          <p><b>適合：</b>想看公開榜單、玩家名稱與爆分金額的玩家。</p>
+          <p><b>看點：</b>獵龍戰紀3、餘燼之刃等可和爆分榜搭配閱讀。</p>
+          <div class="data-list"><span class="data-tag">目前可查：爆分榜</span><span class="data-tag">獵龍戰紀3</span></div>
+          <span class="status-pill watch">榜單資料</span>
+          <a class="platform-data-link" href="/platforms/manguan">查看平台資料</a>
+        </article>
+        <article class="platform-card searchable" data-topic="compare xinluck event guide" data-keywords="星運娛樂城 星運 紅包碼 新手 活動 官方 LINE">
+          <div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/xinluck-logo.png" alt="星運娛樂城 Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://www.xinluck.com/?utm_source=taiwancasinoguide&amp;utm_medium=referral&amp;utm_campaign=seo_geo_review" target="_blank" rel="noopener">星運娛樂城</a></b><span>新手流程與 LINE 客服</span></div></div>
+          <p><b>適合：</b>想先確認官網入口、LINE 客服與新手流程的玩家。</p>
+          <p><b>看點：</b>後續可補主打遊戲、活動入口與紅包碼整理。</p>
+          <div class="data-list"><span class="data-tag">目前可查：官方入口</span><span class="data-tag">LINE OA</span></div>
+          <span class="status-pill target">待補主打</span>
+          <a class="platform-data-link" href="/platforms/xinluck">查看平台資料</a>
+        </article>
+        <article class="platform-card searchable" data-topic="compare game" data-keywords="包你發 鳳榜 倍率榜 遊戲玩法">
+          <div class="platform-line"><img class="brand-logo" src="assets/brand-logos/processed/online808-logo.png" alt="包你發 Logo" loading="lazy" decoding="async"><div><b><a class="platform-name-link" href="https://online808.com/" target="_blank" rel="noopener">包你發</a></b><span>鳳榜與遊戲玩法</span></div></div>
+          <p><b>適合：</b>想查看平台公開倍率榜與近期遊戲資料的玩家。</p>
+          <p><b>看點：</b>鳳榜可整理玩家名稱、單把倍率與榜單期間。</p>
+          <div class="data-list"><span class="data-tag">目前可查：鳳榜</span><span class="data-tag">遊戲資料</span></div>
+          <span class="status-pill watch">公開榜單</span>
+          <a class="platform-data-link" href="/platforms/online808">查看平台資料</a>
+        </article>
+      </div>
+      <div class="section-head" style="margin-top: 22px;">
+        <div>
+          <h2>平台詳情索引</h2>
+          <p>每個平台先整理可公開查證的入口、活動、遊戲與榜單資訊；後續可延伸成獨立內容頁。</p>
+        </div>
+        <div class="section-note">詳情索引</div>
+      </div>
+      <div class="compare-list">
+        <article class="compare-card searchable" id="detail-starcity" data-topic="compare game" data-keywords="星城online 詳情 新遊戲 熱門遊戲">
+          <span class="label">星城online</span>
+          <b>新遊戲與經典機台觀察</b>
+          <p>目前可整理官方入口、熱門遊戲、新遊戲資訊與活動入口。適合用於「娛樂城新遊戲」「老虎機主題」相關內容。</p>
+          <a class="platform-data-link" href="/platforms/starcity">進入星城online資料頁</a>
+        </article>
+        <article class="compare-card searchable" id="detail-richman" data-topic="compare game" data-keywords="老子有錢 詳情 遊戲分類 品牌">
+          <span class="label">老子有錢</span>
+          <b>遊戲分類與品牌記憶點整理</b>
+          <p>目前可整理首頁入口、遊戲分類與品牌識別資訊。若後續公開榜單欄位更穩定，可再補爆分資料。</p>
+          <a class="platform-data-link" href="/platforms/richman">進入老子有錢資料頁</a>
+        </article>
+        <article class="compare-card searchable" id="detail-goldfather" data-topic="compare event" data-keywords="金爸爸 詳情 活動 MyCard 精選遊戲 抓漏宗師">
+          <span class="label">金爸爸娛樂城</span>
+          <b>活動公告與精選遊戲文章 (包含熱門機台抓漏宗師)</b>
+          <p>目前可整理活動公告、通路活動、金爸爸熱門機台抓漏宗師與主題文章。適合補強活動快訊與平台內容完整度。</p>
+          <a class="platform-data-link" href="/platforms/goldfather">進入金爸爸資料頁</a>
+        </article>
+        <article class="compare-card searchable" id="detail-haoshen" data-topic="compare safety game" data-keywords="豪神 詳情 客服 手機入口 遊戲分類">
+          <span class="label">豪神娛樂城</span>
+          <b>手機入口、客服與遊戲分類</b>
+          <p>目前可整理官方入口、客服管道、手機遊玩入口與活動 / 遊戲分類，適合放入新手查詢內容。</p>
+          <a class="platform-data-link" href="/platforms/haoshen">進入豪神資料頁</a>
+        </article>
+        <article class="compare-card searchable" id="detail-manguan" data-topic="compare game" data-keywords="滿貫大亨 詳情 爆分榜 獵龍戰紀3 餘燼之刃">
+          <span class="label">滿貫大亨</span>
+          <b>爆分榜與熱門遊戲資料源</b>
+          <p>目前最適合作為爆分榜驗證來源，可整理玩家暱稱、分數、遊戲名稱與日期，支援榜單內容更新。</p>
+          <a class="platform-data-link" href="/platforms/manguan">進入滿貫大亨資料頁</a>
+        </article>
+        <article class="compare-card searchable" id="detail-xinluck" data-topic="compare xinluck guide event" data-keywords="星運娛樂城 詳情 新手 活動 LINE 客服">
+          <span class="label">星運娛樂城</span>
+          <b>新手入口、活動與客服資料</b>
+          <p>目前可整理官方入口、LINE OA、活動查詢方式、新手流程與客服管道。後續重點是補足活動與遊戲公開內容。</p>
+          <a class="platform-data-link" href="/platforms/xinluck">進入星運資料頁</a>
+        </article>
+        <article class="compare-card searchable" id="detail-online808" data-topic="compare game" data-keywords="包你發 詳情 鳳榜 倍率榜 遊戲">
+          <span class="label">包你發</span>
+          <b>鳳榜與公開倍率資料</b>
+          <p>目前可整理鳳榜玩家名稱、單把倍率、榜單期間與遊戲資料，適合作為倍率型公開榜單來源。</p>
+          <a class="platform-data-link" href="/platforms/online808">進入包你發資料頁</a>
+        </article>
+      </div>
+      <div class="empty-state" id="platformEmpty">目前沒有符合的平台卡片。</div>
+    </section>
+
+
+    <section class="section" id="selection-guide">
+      <div class="section-head">
+        <div>
+          <h2>如何比較娛樂城平台？</h2>
+          <p>選平台不只看金額，也要看點數、客服、活動條件與遊戲類型。</p>
+        </div>
+        <div class="section-note">選站指南</div>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-card searchable" data-topic="guide safety compare" data-keywords="儲值 點數 客服 活動條件 安全">
+          <div class="num">1</div>
+          <b>儲值與點數說明</b>
+          <span>看儲值方式、點數規則與活動條件。</span>
+        </article>
+        <article class="guide-card searchable" data-topic="guide compare" data-keywords="客服 LINE 官方 管道 回覆">
+          <div class="num">2</div>
+          <b>客服管道</b>
+          <span>確認官方 LINE、客服管道與回覆方式。</span>
+        </article>
+        <article class="guide-card searchable" data-topic="event guide compare" data-keywords="活動 紅包碼 任務門檻 活動條件 首儲">
+          <div class="num">3</div>
+          <b>活動透明度</b>
+          <span>期限、資格與任務門檻要清楚。</span>
+        </article>
+        <article class="guide-card searchable" data-topic="game guide compare" data-keywords="老虎機 百家樂 遊戲種類 RTP 玩法">
+          <div class="num">4</div>
+          <b>遊戲類型</b>
+          <span>看老虎機、真人、棋牌、捕魚等分類。</span>
+        </article>
+        <article class="guide-card searchable" data-topic="safety guide compare" data-keywords="評價 口碑 Dcard PTT 官方入口 查證">
+          <div class="num">5</div>
+          <b>公開口碑</b>
+          <span>交叉查看公告、討論與平台資訊。</span>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="section" id="activity-compare">
+      <div class="section-head">
+        <div>
+          <h2>活動與領取方式比較重點</h2>
+          <p>活動頁常用高額獎金吸引注意，但真正需要比較的是領取條件、期限、適用遊戲與官方確認方式。</p>
+        </div>
+        <div class="section-note">活動比較</div>
+      </div>
+      <div class="compare-list">
+        <article class="compare-card searchable" data-topic="event guide" data-keywords="紅包碼 活動碼 期限 失效">
+          <span class="label">紅包活動</span>
+          <b>先看期限與查詢方式</b>
+          <p>紅包活動應確認期限、使用方式與來源。若只看到截圖或轉傳文字，建議回官方公告核對。</p>
+        </article>
+        <article class="compare-card searchable" data-topic="event compare" data-keywords="首儲 二儲 任務門檻 活動條件 優惠">
+          <span class="label">首儲 / 二儲</span>
+          <b>比較任務門檻</b>
+          <p>金額高不一定比較好，也要看適用遊戲、任務條件與是否可疊加優惠。</p>
+        </article>
+        <article class="compare-card searchable" data-topic="event safety" data-keywords="活動 客服 官方 LINE 確認">
+          <span class="label">客服確認</span>
+          <b>保留官方確認管道</b>
+          <p>若活動條件看不懂，優先從官方入口或客服確認，不建議透過陌生連結填寫會員資料。</p>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="section" id="safety-check">
+      <div class="section-head">
+        <div>
+          <h2>新手安全提醒</h2>
+          <p>第一次看活動，先確認來源、官方入口、客服管道與更新日期。</p>
+        </div>
+        <div class="section-note">安全提醒</div>
+      </div>
+      <div class="compare-list">
+        <article class="compare-card searchable" data-topic="safety guide" data-keywords="官方入口 網址 LINE 客服 查證">
+          <span class="label">入口確認</span>
+          <b>優先確認官方入口</b>
+          <p>查看活動前，建議先確認官方網站、官方 LINE 或平台公告，避免使用來源不明的活動連結。</p>
+        </article>
+        <article class="compare-card searchable" data-topic="safety event" data-keywords="活動條件 紅包碼 更新日期 客服 官方公告">
+          <span class="label">活動條件</span>
+          <b>看清楚期限與規則</b>
+          <p>紅包活動、首儲、限時活動都應確認期限、領取條件、適用遊戲與客服說明。</p>
+        </article>
+        <article class="compare-card searchable" data-topic="safety compare" data-keywords="客服 儲值 活動公告 問題 查詢">
+          <span class="label">客服管道</span>
+          <b>遇到問題先看客服資訊</b>
+          <p>儲值、活動資格或登入問題，建議先查看客服管道、公告與常見問題，再進一步確認處理方式。</p>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="section" id="platform-notes">
+      <div class="section-head">
+        <div>
+          <h2>延伸閱讀</h2>
+          <p>整理平台活動、熱門遊戲與新手入口，想深入比較時可以往下看。</p>
+        </div>
+        <div class="section-note">更多內容</div>
+      </div>
+      <div class="spotlight">
+        <article class="feature visual">
+          <img src="assets/site-images/hot-ranking.png" alt="平台比較補充說明圖片" loading="lazy" decoding="async">
+          <div class="feature-inner">
+            <h3>滿貫大亨熱門遊戲整理</h3>
+            <p>整理爆分話題、活動排行與熱門遊戲資訊。</p>
+            <div class="feature-list">
+              <div class="feature-row"><b>爆分話題</b><span>玩家、金額、遊戲名稱。</span></div>
+              <div class="feature-row"><b>活動資訊</b><span>紅包活動、限時活動、活動條件。</span></div>
+              <div class="feature-row"><b>熱門類型</b><span>魚機、老虎機、活動排行。</span></div>
+            </div>
+          </div>
+        </article>
+        <article class="feature">
+          <h3>星運娛樂城新手整理</h3>
+          <p>整理活動資訊、紅包活動、新手流程與客服管道。</p>
+          <div class="feature-list">
+            <div class="feature-row"><b>紅包活動</b><span>活動、期限、查詢方式。</span></div>
+            <div class="feature-row"><b>新手流程</b><span>註冊、登入、遊戲大廳。</span></div>
+            <div class="feature-row"><b>客服管道</b><span>LINE OA、公告、常見問題。</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="section" id="faq">
+      <div class="section-head">
+        <div>
+          <h2>娛樂城綜合問答</h2>
+          <p>玩家常見問題集中整理，完整內容放在綜合問答頁。</p>
+        </div>
+        <div class="section-note">綜合問答</div>
+      </div>
+      <div class="faq-grid"></div>
+      <div class="section-cta">
+        <a class="btn dark" href="/qa">查看完整綜合問答</a>
+      </div>
+      <div class="empty-state" id="faqEmpty">目前沒有符合的綜合問答。</div>
+    </section>
+
+
+    <section class="section" id="sources">
+      <div class="section-head">
+        <div>
+          <h2>資料來源與更新說明</h2>
+          <p>本站整理公開可查的活動頁、官方公告、社群公開資訊與更新紀錄，並定期檢查活動期限、平台資料與內容正確性。</p>
+        </div>
+        <div class="section-note">公開資訊</div>
+      </div>
+      <div class="source-grid">
+        <div class="source"><b>公開來源</b><span>官方網站、公開活動頁、FB 粉專、LINE OA 公開資訊、搜尋結果快照。</span></div>
+        <div class="source"><b>本次觀察入口</b><span><a class="platform-name-link" href="https://ad.xin-stars.com/edm/Feature_Game" target="_blank" rel="noopener">星城online</a>、<a class="platform-name-link" href="https://www.08online.com/pc/home" target="_blank" rel="noopener">老子有錢</a>、<a class="platform-name-link" href="https://kbb.tw/official/home.html" target="_blank" rel="noopener">金爸爸娛樂城</a>、<a class="platform-name-link" href="https://hs-casino.com" target="_blank" rel="noopener">豪神娛樂城</a>、<a class="platform-name-link" href="https://www.gametower.com.tw/Games/tmd/index.aspx" target="_blank" rel="noopener">滿貫大亨</a>、<a class="platform-name-link" href="https://www.goodluck777.com/" target="_blank" rel="noopener">金好運</a>、<a class="platform-name-link" href="https://online808.com/" target="_blank" rel="noopener">包你發</a>。</span></div>
+        <div class="source"><b>更新頻率</b><span>活動資訊建議每週檢查；平台比較與攻略每月更新；重大改版即時修正。</span></div>
+        <div class="source"><b>資料邊界</b><span>只整理公開資訊，不處理會員資料、交易紀錄、個資與非公開內容。</span></div>
+      </div>
+      <div class="section-head" style="margin-top: 22px;">
+        <div>
+          <h2>編輯與收錄原則</h2>
+          <p>本頁以公開可查、可更新、可回到來源核對為原則，避免把單一截圖或未確認傳聞直接當成正式資訊。</p>
+        </div>
+        <div class="section-note">收錄政策</div>
+      </div>
+      <div class="compare-list">
+        <article class="compare-card searchable" data-topic="safety compare" data-keywords="收錄標準 官方入口 公開來源">
+          <span class="label">收錄標準</span>
+          <b>優先收錄可回查來源</b>
+          <p>官方網站、公開活動頁、官方社群、公開榜單與客服公開資訊優先；無法回查來源的內容不作為主要判斷依據。</p>
+        </article>
+        <article class="compare-card searchable" data-topic="event safety" data-keywords="更新規則 活動期限 版本紀錄">
+          <span class="label">更新規則</span>
+          <b>活動與榜單需要日期</b>
+          <p>活動、紅包、榜單與平台入口都應保留更新日期。若公開資訊異動，會依最新來源修正或移除舊內容。</p>
+        </article>
+        <article class="compare-card searchable" data-topic="safety guide" data-keywords="免責 提醒 非保證收益">
+          <span class="label">使用提醒</span>
+          <b>資訊整理不等於收益保證</b>
+          <p>排行榜、爆分榜與平台比較只作資訊整理，不代表保證中獎、固定收益或平台背書；實際條件以各平台公告為準。</p>
+        </article>
+      </div>
+      <div class="timeline" aria-label="內容更新節奏">
+        <div class="timeline-item"><b>每日</b><span>檢查是否有重大活動、活動期限或公告異動。</span></div>
+        <div class="timeline-item"><b>每週</b><span>整理活動快訊、熱門遊戲、新手問題與社群常見問法。</span></div>
+        <div class="timeline-item"><b>每月</b><span>檢查平台比較欄位、分數邏輯與競品名單是否需要調整。</span></div>
+        <div class="timeline-item"><b>內容修正</b><span>若活動條件、平台入口或更新日期異動，會依公開資訊調整內容。</span></div>
+      </div>
+    </section>
+
+    <footer>
+      本頁整理公開可查的娛樂城活動、紅包活動、爆分榜、平台比較與新手問題；實際活動條件請以各平台官方公告與客服回覆為準。
+    </footer>
+  </main>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "休閒娛樂城活動情報站",
+    "description": "整理娛樂城活動、紅包活動、新手攻略、熱門遊戲與平台比較。",
+    "inLanguage": "zh-Hant",
+    "dateModified": "2026-09-30",
+    "about": ["娛樂城活動", "紅包碼", "老虎機", "平台比較", "新手攻略", "娛樂城排名", "活動資訊查證", "新手安全提醒"]
+  }
+  </script>
+  <script type="application/ld+json" id="ranking-schema-json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "休閒娛樂城活動情報站綜合排行榜",
+    "description": "依公開資訊完整度、活動更新、遊戲資料、榜單可查性與更新可信度整理的平台資料分排行榜。",
+    "dateModified": "2026-09-30",
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "星城online",
+        "url": "/platforms/starcity"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "老子有錢",
+        "url": "/platforms/richman"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "金爸爸娛樂城",
+        "url": "/platforms/goldfather"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "豪神娛樂城",
+        "url": "/platforms/haoshen"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "滿貫大亨",
+        "url": "/platforms/manguan"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "星運娛樂城",
+        "url": "/platforms/xinluck"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "包你發",
+        "url": "/platforms/online808"
+      }
+    ]
+  }
+  </script>
+  <script src="assets/geo-integrated-demo.js"></script>
+  <script src="assets/geo-data-client.js"></script>
+  <script>
+    const integratedDemo = window.GeoIntegratedDemo;
+    const geoDataClient = window.GeoDataClient;
+    let currentFrontendData = integratedDemo.readDemoData();
+
+    function renderEnvironmentLabel(surface) {
+      const isLocal = ["127.0.0.1", "localhost"].includes(window.location.hostname);
+      const port = window.location.port;
+      const stage = isLocal && ["8768", "8770"].includes(port)
+        ? "測試版"
+        : "正式版";
+      return `GEO ${surface}${stage}${isLocal && port ? `｜port ${port}` : ""}`;
+    }
+
+    document.getElementById("frontend-version-badge").textContent =
+      renderEnvironmentLabel("前台");
+    const platformLogoMap = {
+      starcity: "assets/brand-logos/processed/starcity-logo.png",
+      richman: "assets/brand-logos/processed/richman-logo.png",
+      goldfather: "assets/brand-logos/processed/goldfather-logo.png",
+      haoshen: "assets/brand-logos/processed/haoshen-logo.png",
+      manguan: "assets/brand-logos/processed/manguan-logo.png",
+      xinluck: "assets/brand-logos/processed/xinluck-logo.png",
+      online808: "assets/brand-logos/processed/online808-logo.png"
+    };
+
+    const online808ImageMap = {
+      "20260608_111218_gisd3lyuxdxt0fdh82qc0zpgo4upm9ri.png": "assets/game-icons/08online/chicken-football.jpg",
+      "20260526_172633_my3rcacvbbhtt0792anuikkx510m9lzx.png": "assets/game-icons/08online/thor-2.jpg"
+    };
+
+    const featuredGameImageMap = {
+      "starcity:攻殼機動隊 SAC_2045": "assets/game-icons/starcity/攻殼機動隊 SAC_2045.png",
+      "manguan:獵龍戰紀3": "assets/game-icons/manguan/獵龍戰紀3_dragontycoon3.png",
+      "goldfather:抓漏宗師": "assets/game-icons/kbb/抓漏宗師_KBB_SLOT02_zh.png"
+    };
+
+    function approvedFeaturedGameImage(platformId, gameName) {
+      return featuredGameImageMap[`${platformId}:${gameName}`] || '';
+    }
+
+    function normalizeFrontendImagePath(value, platformId = '') {
+      const raw = String(value || '').trim();
+      if (!raw) return '';
+      if (/^(?:https?:|data:|blob:|\/api\/)/i.test(raw)) return raw;
+
+      const filename = raw.split('/').pop();
+      if (platformId === 'online808' && online808ImageMap[filename]) {
+        return online808ImageMap[filename];
+      }
+
+      if (platformId === 'online808' && !raw.includes('/')) return '';
+
+      return raw
+        .replace(/^\.\//, '')
+        .replace(/^presentations\//, '');
+    }
+
+    function relatedGameForContent(data, item) {
+      const title = String(item.title || '').replace(/[^\p{L}\p{N}]/gu, '');
+      if (!title || !item.platformId) return null;
+
+      return integratedDemo.visibleFeaturedGames(data).find(game => {
+        if (game.platformId !== item.platformId) return false;
+        const gameName = String(game.name || '').replace(/[^\p{L}\p{N}]/gu, '');
+        if (!gameName) return false;
+        if (title.includes(gameName) || gameName.includes(title)) return true;
+
+        let sharedPrefixLength = 0;
+        while (
+          sharedPrefixLength < title.length &&
+          sharedPrefixLength < gameName.length &&
+          title[sharedPrefixLength] === gameName[sharedPrefixLength]
+        ) {
+          sharedPrefixLength += 1;
+        }
+        return sharedPrefixLength >= 2;
+      }) || null;
+    }
+
+    function resolveLatestContentImage(data, item) {
+      const approvedImage = approvedFeaturedGameImage(item.platformId, item.title);
+      if (approvedImage) return { src: approvedImage, kind: 'game' };
+      const ownImage = normalizeFrontendImagePath(item.image, item.platformId);
+      if (ownImage) return { src: ownImage, kind: 'game' };
+
+      const relatedGame = relatedGameForContent(data, item);
+      const relatedImage = relatedGame
+        ? approvedFeaturedGameImage(relatedGame.platformId, relatedGame.name) || normalizeFrontendImagePath(relatedGame.image, relatedGame.platformId)
+        : '';
+      if (relatedImage) return { src: relatedImage, kind: 'game' };
+
+      return {
+        src: platformLogoMap[item.platformId] || platformLogoMap.xinluck,
+        kind: 'platform'
+      };
+    }
+
+    function enableImageFallbacks(container) {
+      container.querySelectorAll('img[data-fallback-src]').forEach(image => {
+        image.addEventListener('error', () => {
+          const fallback = image.dataset.fallbackSrc;
+          if (!fallback || image.src.endsWith(fallback)) return;
+          image.src = fallback;
+          image.classList.remove('game-thumbnail');
+        }, { once: true });
+      });
+    }
+
+    function escapeHtml(value) {
+      return String(value || '').replace(/[&<>"']/g, char => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+      })[char]);
+    }
+
+    function rankClass(rank) {
+      if (rank === 1) return 'rank r1';
+      if (rank === 2) return 'rank r2';
+      if (rank === 3) return 'rank r3';
+      return 'rank';
+    }
+
+    function renderIntegratedRanking(data) {
+      const rankingBody = document.getElementById('ranking-body');
+      if (!rankingBody) return;
+      rankingBody.innerHTML = integratedDemo.rankingRows(data).map(platform => {
+        const logo = platformLogoMap[platform.id] || 'assets/brand-logos/processed/xinluck-logo.png';
+        const chips = platform.tags.map(tag => `<span class="chip">${escapeHtml(tag)}</span>`).join('');
+        return `
+          <tr>
+            <td><div class="${rankClass(platform.rank)}">${platform.rank}</div></td>
+            <td class="platform">
+              <div class="platform-line">
+                <img class="brand-logo" src="${logo}" alt="${escapeHtml(platform.name)} Logo" loading="lazy" decoding="async">
+                <div>
+                  <b><a class="platform-name-link" href="${escapeHtml(integratedDemo.trackedReferralUrl(platform.url))}" target="_blank" rel="noopener">${escapeHtml(platform.name)}</a></b>
+                  <span>官方入口｜<a class="platform-data-link" href="/platforms/${escapeHtml(platform.id)}" style="display:inline;margin:0;">平台資料</a></span>
+                </div>
+              </div>
+            </td>
+            <td><div class="score">${platform.score} <small>/100</small></div></td>
+            <td><div class="chips">${chips}</div></td>
+            <td>${escapeHtml(platform.recentJackpot)}</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function renderLatestContent(data) {
+      const list = document.getElementById('latest-content-list');
+      const count = document.getElementById('latest-content-count');
+      if (!list) return;
+
+      const items = integratedDemo.latestContentItems(data, 4);
+      if (count) count.textContent = items.length ? `近期收錄 ${items.length} 筆` : '情報整理中';
+
+      if (!items.length) {
+        list.innerHTML = `
+          <div class="latest-content-empty">
+            本週情報整理中，可先查看 <a class="latest-content-link" href="/#ranking">綜合排行榜</a>。
+          </div>
+        `;
+        return;
+      }
+
+      list.innerHTML = items.map(item => {
+        const visual = resolveLatestContentImage(data, item);
+        const fallbackLogo = platformLogoMap[item.platformId] || platformLogoMap.xinluck;
+        const visualClass = visual.kind === 'game' ? 'game-thumbnail' : '';
+        const brand = `<img class="${visualClass}" src="${escapeHtml(visual.src)}" data-fallback-src="${escapeHtml(fallbackLogo)}" alt="${escapeHtml(item.platformName)} ${escapeHtml(item.title)} 縮圖" loading="lazy" decoding="async">`;
+        const date = item.dateLabel
+          ? `<time class="latest-content-date" datetime="${escapeHtml(item.dateLabel)}">更新 ${escapeHtml(item.dateLabel)}</time>`
+          : '<span class="latest-content-date">持續收錄</span>';
+        const keywords = [item.platformName, item.kind, item.title, item.summary, item.statusLabel].join(' ');
+        const topic = String(item.kind).includes('活動') ? 'event' : 'game compare';
+
+        return `
+          <article class="latest-content-card searchable" data-topic="${topic}" data-keywords="${escapeHtml(keywords)}">
+            <div class="latest-content-brand">${brand}</div>
+            <div class="latest-content-copy">
+              <div class="latest-content-top">
+                <span class="latest-content-kind">${escapeHtml(item.kind)}</span>
+                <span class="latest-content-platform">${escapeHtml(item.platformName)}</span>
+              </div>
+              <h3>${escapeHtml(item.title)}</h3>
+              <p>${escapeHtml(item.summary || item.statusLabel)}</p>
+              <div class="latest-content-bottom">
+                ${date}
+                <a class="latest-content-link" href="${escapeHtml(integratedDemo.trackedReferralUrl(item.url))}" target="_blank" rel="noopener">查看內容</a>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+      enableImageFallbacks(list);
+    }
+
+    function renderIntegratedJackpots(data) {
+      const jackpotGrid = document.getElementById('jackpot-grid');
+      if (!jackpotGrid) return;
+
+      const activeGroups = integratedDemo.jackpotGroups(data);
+      const displayGroups = activeGroups.slice(0, 8);
+      const compactBoardName = (item) => {
+        const raw = String(item.boardName || item.title || '').trim();
+        if (!raw) return '';
+        const afterColon = raw.includes('：') ? raw.split('：').pop().trim() : raw.includes(':') ? raw.split(':').pop().trim() : raw;
+        return afterColon.split('｜')[0].trim();
+      };
+      const compactEntryLabel = (entry, item) => {
+        const raw = String(entry.game_name || entry.gameName || entry.game || '').trim();
+        if (raw) return compactBoardName({ boardName: raw });
+        return compactBoardName(item);
+      };
+      const awardSummaryLabel = (items) => {
+        const first = items[0] || {};
+        const board = compactBoardName(first);
+        const metric = String(first.metricLabel || first.rankingMetric || '').trim();
+        if (board && !['公開榜單', '活動榜'].includes(board)) return board;
+        return metric || '公開榜單';
+      };
+      const rankBadge = (rank) => {
+        const numericRank = Number.parseInt(rank, 10);
+        if (numericRank === 1) return '🥇';
+        if (numericRank === 2) return '🥈';
+        if (numericRank === 3) return '🥉';
+        return `#${Number.isFinite(numericRank) ? numericRank : escapeHtml(rank || '')}`;
+      };
+      const rankingUpdateLabel = (group) => {
+        const updatedAt = integratedDemo.rankingUpdatedDate(group);
+        if (!updatedAt) return '<span>榜單更新日期待確認</span>';
+        return `<time datetime="${escapeHtml(updatedAt)}">榜單資料更新：${escapeHtml(updatedAt)}</time>`;
+      };
+
+      jackpotGrid.innerHTML = displayGroups.map(group => {
+        const awardItems = group.awardItems || [];
+        const awardItemsWithScores = awardItems
+          .filter(item => (item.rankingEntries || []).length > 0)
+          .slice(0, 2);
+
+        if (group.kind === 'platform-awards') {
+          if (!awardItemsWithScores.length) return '';
+          const awardEntryRows = awardItemsWithScores
+            .flatMap((item) => (item.rankingEntries || []).map((entry) => ({ entry, item })))
+            .slice(0, 5).map(({ entry, item }) => `
+              <div class="jackpot-entry-row">
+                <div class="jackpot-entry-main">
+                  <div class="jackpot-entry-title"><span class="win-badge">${rankBadge(entry.rank)}</span> ${escapeHtml(entry.player_name || entry.playerName || '')}</div>
+                  <div class="jackpot-entry-subtitle">${escapeHtml(compactEntryLabel(entry, item))}</div>
+                </div>
+                <div class="jackpot-entry-value">${escapeHtml(item.metricLabel || item.rankingMetric || '榜單數值')}：${escapeHtml(Number(entry.score || 0).toLocaleString('en-US'))}</div>
+              </div>
+            `).join('');
+
+          return `
+            <article class="jackpot-card searchable" data-topic="game compare" data-keywords="爆分榜 平台公開榜單 ${escapeHtml(group.platformName)}">
+              <span class="status-pill watch" style="display: inline-flex; align-items: center;"><span class="live-dot"></span>遊戲大獎榜</span>
+              <div class="amount">${escapeHtml(group.platformName)}</div>
+              <div class="meta"><b>${escapeHtml(awardSummaryLabel(awardItemsWithScores))}</b>${rankingUpdateLabel(group)}</div>
+              <div class="winner-list">${awardEntryRows}</div>
+            </article>
+          `;
+        }
+
+        const rowsList = group.items.slice(0, 5).map((item, i) => {
+          return `
+            <div class="jackpot-entry-row">
+              <div class="jackpot-entry-main">
+                <div class="jackpot-entry-title"><span class="win-badge">${rankBadge(i + 1)}</span> ${escapeHtml(item.player)}</div>
+                <div class="jackpot-entry-subtitle">${escapeHtml(item.game || '')}</div>
+              </div>
+              <div class="jackpot-entry-value">${escapeHtml(item.amount)}</div>
+            </div>
+          `;
+        });
+        const rows = rowsList.join('');
+
+        return `
+          <article class="jackpot-card searchable" data-topic="game compare" data-keywords="爆分榜 ${escapeHtml(group.platformName)}">
+            <span class="status-pill watch" style="display: inline-flex; align-items: center;"><span class="live-dot"></span>遊戲大獎榜</span>
+            <div class="amount">${escapeHtml(group.platformName)}</div>
+            <div class="meta"><b>爆獎資訊</b>${rankingUpdateLabel(group)}</div>
+            <div class="winner-list">${rows}</div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    let showExpiredGames = false;
+
+    function renderIntegratedFeaturedGames(data) {
+      const gameGrid = document.getElementById('featured-game-grid');
+      if (!gameGrid) return;
+      const games = integratedDemo.homepageFeaturedGames(data, 6);
+      const expiredCount = games.filter(g => g.expired).length;
+
+      const toggleBtn = document.getElementById('toggle-expired-btn');
+      if (toggleBtn) {
+        toggleBtn.style.display = expiredCount > 0 ? 'inline-flex' : 'none';
+        toggleBtn.textContent = showExpiredGames 
+          ? `隱藏歷史 / 已過期遊戲 (${expiredCount})`
+          : `顯示歷史 / 已過期遊戲 (${expiredCount})`;
+      }
+
+      gameGrid.innerHTML = games.length ? games.map(game => {
+        const platform = integratedDemo.platformName(data, game.platformId);
+        const approvedImage = approvedFeaturedGameImage(game.platformId, game.name);
+        const gameImage = approvedImage || normalizeFrontendImagePath(game.image, game.platformId);
+        const imageClass = 'featured-game-icon';
+        const keywords = [game.name, platform, game.type, game.status, game.highlight].join(' ');
+        const cardStyle = game.expired ? `style="display: ${showExpiredGames ? 'grid' : 'none'}; opacity: 0.7; background: #f3f4f6;"` : '';
+        const expiredClass = game.expired ? 'game-expired' : '';
+        const expiredTag = game.expired ? '<span class="status-pill off" style="background: #9ca3af; color: #fff; position: absolute; left: 12px; top: 12px; z-index: 2; box-shadow: 0 10px 24px rgba(8,16,24,.16);">已過期封存</span>' : '';
+        const statusPillHtml = game.expired ? expiredTag : `<span class="status-pill watch">${escapeHtml(game.status)}</span>`;
+
+        return `
+          <article class="featured-game-card searchable ${expiredClass}" data-topic="game event compare" data-keywords="${escapeHtml(keywords)}" ${cardStyle}>
+            <a class="game-thumb game-thumb-link" href="${escapeHtml(integratedDemo.trackedReferralUrl(game.url))}" target="_blank" rel="noopener" aria-label="查看 ${escapeHtml(platform)} ${escapeHtml(game.name)} 官方入口">
+              <img class="${imageClass}" src="${escapeHtml(gameImage)}" alt="${escapeHtml(platform)} ${escapeHtml(game.name)} 遊戲資訊圖" loading="lazy" decoding="async">
+              ${statusPillHtml}
+            </a>
+            <div class="game-body">
+              <div class="game-meta"><span>${escapeHtml(platform)}</span><span>${escapeHtml(game.type)}</span></div>
+              <h3>${escapeHtml(game.name)}</h3>
+              <p>${escapeHtml(game.highlight)}</p>
+            </div>
+          </article>
+        `;
+      }).join('') : `
+        <article class="featured-game-card searchable" data-topic="game event compare" data-keywords="熱門遊戲 新上線遊戲">
+          <div class="game-body">
+            <div class="game-meta"><span>遊戲導覽</span></div>
+            <h3>遊戲資料整理中</h3>
+            <p>目前尚未有可顯示的新遊戲或熱門機台資料。</p>
+          </div>
+        </article>
+      `;
+      enableImageFallbacks(gameGrid);
+    }
+
+    function renderIntegratedFaqs(data) {
+      const faqGrid = document.querySelector('#faq .faq-grid');
+      if (!faqGrid) return;
+      faqGrid.innerHTML = (data.faqs || []).map(faq => {
+        return `
+          <article class="qa searchable" data-topic="${escapeHtml(faq.topic)}" data-keywords="${escapeHtml(faq.keywords)}">
+            <h3><a href="/qa#${escapeHtml(faq.id)}">${escapeHtml(faq.question)}</a></h3>
+            <p>${escapeHtml(faq.summary)}<a class="read-link" href="/qa#${escapeHtml(faq.id)}" style="margin-top: 8px; display: inline-flex;">看詳細解答</a></p>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderRankingSchema(data) {
+      const schemaScript = document.getElementById('ranking-schema-json');
+      if (!schemaScript) return;
+      const rows = integratedDemo.rankingRows(data);
+      const modified = (
+        data.sectionUpdatedAt && data.sectionUpdatedAt.homepage
+      ) || data.updatedAt || new Date().toISOString().slice(0, 10);
+      const itemListElement = rows.map((platform, idx) => {
+        return {
+          "@type": "ListItem",
+          "position": idx + 1,
+          "item": {
+            "@type": "Thing",
+            "name": platform.name,
+            "url": `${window.location.origin}/platforms/${platform.id}`,
+            "description": `公開資料完整度 ${platform.score} / 100；此分數不代表平台品質或獲利機率。`
+          }
+        };
+      });
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "休閒娛樂城活動情報站綜合排行榜",
+        "description": "依公開資訊完整度、活動更新、遊戲資料、榜單可查性與更新可信度整理的平台資料分排行榜。",
+        "dateModified": modified,
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "itemListElement": itemListElement
+      };
+      schemaScript.textContent = JSON.stringify(schema, null, 2);
+    }
+
+    async function renderIntegratedData() {
+      if (!integratedDemo) return;
+      const data = await geoDataClient.loadFrontendData();
+      currentFrontendData = data;
+      const updated = document.getElementById('integrated-updated');
+      const platformCount = document.getElementById('integrated-platform-count');
+      const jackpotCount = document.getElementById('integrated-jackpot-count');
+      const publicSummary = data.publicSummary || {};
+      if (updated) updated.textContent = data.updatedAt;
+      if (platformCount) platformCount.textContent =
+        publicSummary.observedPlatformCount || data.platforms.length;
+      if (jackpotCount) jackpotCount.textContent = integratedDemo.visibleJackpots(data).length;
+      const observedCount = document.getElementById('observed-platform-count');
+      const platformPageCount = document.getElementById('platform-page-count');
+      const rankedPlatformCount = document.getElementById('ranked-platform-count');
+      if (observedCount) observedCount.textContent =
+        publicSummary.observedPlatformCount || data.platforms.length;
+      if (platformPageCount) platformPageCount.textContent =
+        publicSummary.platformPageCount || 7;
+      if (rankedPlatformCount) rankedPlatformCount.textContent =
+        publicSummary.rankedPlatformCount || integratedDemo.rankingRows(data).length;
+      renderLatestContent(data);
+      renderIntegratedRanking(data);
+      renderIntegratedJackpots(data);
+      renderIntegratedFeaturedGames(data);
+      renderIntegratedFaqs(data);
+      renderRankingSchema(data);
+    }
+
+    const searchInput = document.getElementById('siteSearch');
+    const filterButtons = [...document.querySelectorAll('.filter-chip')];
+    const resultNote = document.getElementById('resultNote');
+    let activeFilter = 'all';
+
+    function normalize(value) {
+      return String(value || '').trim().toLowerCase();
+    }
+
+    function itemText(item) {
+      return normalize([
+        item.textContent,
+        item.dataset.keywords,
+        item.dataset.topic
+      ].join(' '));
+    }
+
+    function matches(item, query) {
+      const topics = normalize(item.dataset.topic).split(/\s+/);
+      const byFilter = activeFilter === 'all' || topics.includes(activeFilter);
+      const bySearch = !query || itemText(item).includes(query);
+      return byFilter && bySearch;
+    }
+
+    function updateGroup(selector, emptyId, query) {
+      const items = [...document.querySelectorAll(selector)];
+      let visible = 0;
+      items.forEach(item => {
+        const ok = matches(item, query);
+        item.hidden = !ok;
+        if (ok) visible += 1;
+      });
+      const empty = document.getElementById(emptyId);
+      if (empty) empty.classList.toggle('show', visible === 0);
+      return visible;
+    }
+
+    function applyFilters() {
+      const query = normalize(searchInput.value);
+      const contentVisible = updateGroup('#events .searchable', 'contentEmpty', query);
+      const jackpotVisible = updateGroup('#jackpot .searchable', 'jackpotEmpty', query);
+      const gameVisible = updateGroup('#featured-games .searchable', null, query);
+      const platformVisible = updateGroup('#platforms .searchable', 'platformEmpty', query);
+      const faqVisible = updateGroup('#faq .searchable', 'faqEmpty', query);
+      const guideVisible = updateGroup('#selection-guide .searchable', null, query);
+      const activityVisible = updateGroup('#activity-compare .searchable', null, query);
+      const safetyVisible = updateGroup('#safety-check .searchable', null, query);
+      const total = contentVisible + jackpotVisible + gameVisible + platformVisible + faqVisible + guideVisible + activityVisible + safetyVisible;
+      const filterLabel = filterButtons.find(button => button.dataset.filter === activeFilter)?.textContent.trim() || '全部';
+      resultNote.textContent = query
+        ? `搜尋「${searchInput.value.trim()}」｜${filterLabel}｜顯示 ${total} 筆`
+        : `${filterLabel}｜顯示 ${total} 筆`;
+    }
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        activeFilter = button.dataset.filter || 'all';
+        filterButtons.forEach(item => item.classList.toggle('active', item === button));
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener('input', applyFilters);
+    searchInput.addEventListener('change', applyFilters);
+    searchInput.addEventListener('search', applyFilters);
+    searchInput.addEventListener('keyup', applyFilters);
+
+    document.querySelectorAll('a[href^="#activity-"]').forEach(link => {
+      link.addEventListener('click', event => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!(target instanceof HTMLDetailsElement)) return;
+        event.preventDefault();
+        target.open = true;
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', link.getAttribute('href'));
+      });
+    });
+
+    if (location.hash && location.hash.startsWith('#')) {
+      try {
+        const initialActivity = document.querySelector(location.hash);
+        if (initialActivity instanceof HTMLDetailsElement) {
+          initialActivity.open = true;
+        }
+      } catch (e) {
+        console.error('Invalid hash selector:', e);
+      }
+    }
+
+    const toggleBtn = document.getElementById('toggle-expired-btn');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        showExpiredGames = !showExpiredGames;
+        renderIntegratedFeaturedGames(currentFrontendData);
+      });
+    }
+
+    let frontendRefreshPromise = null;
+    function refreshFrontendData() {
+      if (frontendRefreshPromise) return frontendRefreshPromise;
+      frontendRefreshPromise = renderIntegratedData()
+        .then(applyFilters)
+        .finally(() => {
+          frontendRefreshPromise = null;
+        });
+      return frontendRefreshPromise;
+    }
+
+    refreshFrontendData();
+    window.addEventListener('storage', refreshFrontendData);
+    window.addEventListener('focus', refreshFrontendData);
+    window.addEventListener('pageshow', refreshFrontendData);
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') refreshFrontendData();
+    });
+
+    applyFilters();
+  </script>
+</body>
+</html>

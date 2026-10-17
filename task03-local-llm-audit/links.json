@@ -1,0 +1,15 @@
+{
+ "preflight": "https://www.kaggle.com/code/pw95148637/soulo-gpu-and-8b-environment-preflight",
+ "task_notebook": "https://www.kaggle.com/code/pw95148637/soulo-work03-local-llm-lora-audit",
+ "task_notebook_status": "Old notebook: round-1 LoRA and 3-temperature trial completed (version 2); v2 prompt run interrupted at 1/6 steps (version 3). No further pushes to this slug.",
+ "v2_train": "https://www.kaggle.com/code/pw95148637/soulo-work03-v2-train",
+ "v2_train_status": "Completed: 6 steps, train gate FAIL (8 hard); output in kaggle-retrieved/soulo-work03-v2-train",
+ "v3_train": "https://www.kaggle.com/code/pw95148637/soulo-work03-v3-train",
+ "v3_train_status": "Pushed: CUDA OOM at training step 0; output in kaggle-retrieved/soulo-work03-v3-train (preflight only)",
+ "v3b_train": "https://www.kaggle.com/code/pw95148637/soulo-work03-v3b-train",
+ "v3b_train_status": "Completed: 9 steps, train gate FAIL (6 hard in lock; 4 with corrected checker); FROZEN (lock 8ab9b7ae...). Do not push to this slug again.",
+ "v3_eval": "https://www.kaggle.com/code/pw95148637/soulo-work03-v3-eval",
+ "v3_eval_status": "Completed: frozen v3b adapter + same-prompt base on holdout8 (contract 8/8 first pass); output in kaggle-retrieved/soulo-work03-v3-eval; analysis in report/ and evaluation/. Do not push again.",
+ "posthoc_fp16": "https://www.kaggle.com/code/pw95148637/soulo-work03-posthoc-fp16",
+ "posthoc_fp16_status": "Completed after the freeze: fp16 base on the same 8 items and LoRA cross-entropy on the 12 training answers; output in kaggle-retrieved/soulo-work03-posthoc-fp16; plan and results in evaluation/posthoc-*. Not part of the audit system. Do not push again."
+}

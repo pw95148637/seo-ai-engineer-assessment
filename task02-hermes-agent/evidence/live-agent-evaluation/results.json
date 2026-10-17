@@ -1,0 +1,442 @@
+{
+  "plan": {
+    "kind": "actual_model_live_repeated_task_ablation",
+    "model": "gpt-6.1-sol",
+    "modes": [
+      "baseline",
+      "history",
+      "memory"
+    ],
+    "order": [
+      "baseline",
+      "history",
+      "memory"
+    ],
+    "repetitions_per_group": 1,
+    "independent_holdout": false,
+    "live_sources": true,
+    "learning": false,
+    "observations_before": 2,
+    "active_memory": [
+      [
+        "2030.tw",
+        "active",
+        "2026-10-22T18:18:29.867086+00:00",
+        "sitemap_first: URL discovery only, 2 completed observations, latest URL yield=1000"
+      ]
+    ],
+    "quality_metrics": [
+      "completed report",
+      "source support of material claims",
+      "unsupported claims",
+      "coverage of on-page/off-page/unknowns"
+    ],
+    "cost_metrics": [
+      "HTTP requests",
+      "search calls",
+      "model API calls",
+      "tokens",
+      "elapsed seconds"
+    ],
+    "success_rule": "Cost reduction only counts with comparable independently audited evidence quality; one run per group cannot establish statistical improvement.",
+    "limitations": [
+      "Same task repeated; no cross-site generalization claim",
+      "Live source and search drift possible",
+      "Semantic audit is not automated by ID/hash validation"
+    ]
+  },
+  "results": [
+    {
+      "run_id": "d19217ae0c174d1a8dee6b423a6986da",
+      "state": "research_complete",
+      "exit_code": 0,
+      "model_attempted": true,
+      "successful_api_calls": 11,
+      "report_submitted": true,
+      "usage": {
+        "model": "gpt-6.1-sol",
+        "provider": "openai-codex",
+        "session_prompt_tokens": 428950,
+        "session_completion_tokens": 9336,
+        "session_total_tokens": 438286,
+        "session_api_calls": 11,
+        "session_estimated_cost_usd": 0.0,
+        "session_cost_status": "included",
+        "note": "Estimate is not billed subscription cost; no paid API provider selected."
+      },
+      "requests": 14,
+      "searches": 5,
+      "tool_calls": 24,
+      "tool_errors": 1,
+      "claim_count": 12,
+      "current_sources": [
+        {
+          "url": "https://2030.tw/",
+          "status": 200,
+          "sha256": "800c380050093859727cdd7bb58581a691b9033822fc452b9f16d67c3414ec1d"
+        },
+        {
+          "url": "https://2030.tw/article/space-tech-003-industry/",
+          "status": 200,
+          "sha256": "ece39656115b08ffce1a27d976ae56a1f8237f984791306f89a16fe3afaec400"
+        },
+        {
+          "url": "https://2030.tw/page-sitemap.xml",
+          "status": 200,
+          "sha256": "3426ef9d9961c399262c19e6e17c7775fd7987918829c129d00617970dbbbe65"
+        },
+        {
+          "url": "https://2030.tw/post-sitemap1.xml",
+          "status": 200,
+          "sha256": "fb5e7fb970e98742b4cd542412345ae28a73353b34f91afa14125e6bed52e2ad"
+        },
+        {
+          "url": "https://2030.tw/robots.txt",
+          "status": 200,
+          "sha256": "c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a"
+        },
+        {
+          "url": "https://2030.tw/robots.txt",
+          "status": 200,
+          "sha256": "c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a"
+        },
+        {
+          "url": "https://2030.tw/sitemap_index.xml",
+          "status": 200,
+          "sha256": "c2b1cbd2d15813b603973f68aac53e5548a063e62ad7b6d0bf46de55f93b883e"
+        },
+        {
+          "url": "https://2030.tw/taiwanplus/mlb-live-20261016-tb-vs-cle/",
+          "status": 200,
+          "sha256": "8d88a4ddc88b6c64c72fff7aeed5cac52a335e5e9f009306adbbd9b1ab4f2995"
+        },
+        {
+          "url": "https://2030.tw/wordcup/",
+          "status": 200,
+          "sha256": "22bf180979c0583d6717f9f53122dc5512a45883aa3ee2cbd4b4db9dce08e7ce"
+        },
+        {
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "8fe3592514851597f397202afade2e7dc4f4e68ead1593f31a9aa49a459c02ea"
+        },
+        {
+          "url": "https://2030.tw/wordcup/%E5%AF%8C%E9%81%8A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "709bc1cfb0b622e003530eeba6fb8fd1bd412022ad30eef0a8ff2e47e0de19ce"
+        },
+        {
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "eab024f10faec76ce2221cd37ad42d61b673db97e60632c9175ba77b1677b7f8"
+        },
+        {
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E5%87%BA%E9%87%91%E9%80%9F%E5%BA%A6",
+          "status": 200,
+          "sha256": "611e171bb88f7ca987a8b46d93190da8dd6ddeaa85c24a1a2f599f2bc7a1e2c4"
+        },
+        {
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E%E6%8F%90%E6%AC%BE%E6%95%99%E5%AD%B8",
+          "status": 200,
+          "sha256": "be6d9b102af32e827580514baae037905d788d9d67a4fe5cc99c43abc4aed0c7"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 503,
+          "sha256": "5bd0413fea51a9a77dffc59257e4557ce68cf507ffbf81d76b2f2d4a72b993b0"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256": "bf4b31361250828eab1adcd4f052109e9f164dfc2c0cb7656aee5fa2782df12c"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 503,
+          "sha256": "5bd0413fea51a9a77dffc59257e4557ce68cf507ffbf81d76b2f2d4a72b993b0"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256": "41e8101494d823dcabe021fc216040ca187b2e9649ea26fe554f3c1f823f20f4"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256": "3ff5f39e617ca9df871bcaab22e866f760d58f465092b0a8dbc4c5d4fae8227a"
+        }
+      ],
+      "observations_after": 2,
+      "mode": "baseline",
+      "process_exit": 0,
+      "elapsed_seconds": 407.8260924709998
+    },
+    {
+      "run_id": "c6fa5b7873b74c428b21d432421dc672",
+      "state": "research_complete",
+      "exit_code": 0,
+      "model_attempted": true,
+      "successful_api_calls": 8,
+      "report_submitted": true,
+      "usage": {
+        "model": "gpt-6.1-sol",
+        "provider": "openai-codex",
+        "session_prompt_tokens": 364706,
+        "session_completion_tokens": 8284,
+        "session_total_tokens": 372990,
+        "session_api_calls": 8,
+        "session_estimated_cost_usd": 0.0,
+        "session_cost_status": "included",
+        "note": "Estimate is not billed subscription cost; no paid API provider selected."
+      },
+      "requests": 14,
+      "searches": 5,
+      "tool_calls": 22,
+      "tool_errors": 1,
+      "claim_count": 10,
+      "current_sources": [
+        {
+          "url": "https://2030.tw/",
+          "status": 200,
+          "sha256": "800c380050093859727cdd7bb58581a691b9033822fc452b9f16d67c3414ec1d"
+        },
+        {
+          "url": "https://2030.tw/?s=%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "157cf8ed0c66880c61e54b3fe5d088200daf57f19c31aa2d3854f7f66e2fbb68"
+        },
+        {
+          "url": "https://2030.tw/?s=3A",
+          "status": 200,
+          "sha256": "43696b78c850a3f118cdfade4fc55d84df77e1395d8bcf0068d3e7183b04bd77"
+        },
+        {
+          "url": "https://2030.tw/article/responsible-ai-008-audrey-tang/",
+          "status": 200,
+          "sha256": "ffcdde24b159bfff2043201ae845c6fbe894866ab593433d6375d44a8786773e"
+        },
+        {
+          "url": "https://2030.tw/category-sitemap.xml",
+          "status": 200,
+          "sha256": "73f29e73435aaf62eda33bd4a512f79aa4ca156e654f57cd94e44d4e07ea06b5"
+        },
+        {
+          "url": "https://2030.tw/mlb/mlb-scores-20260926-tb-vs-phi/",
+          "status": 200,
+          "sha256": "a3c36b985ec2513f6b9914288e9346062dd003924ae91294788f7a18d5c44e3b"
+        },
+        {
+          "url": "https://2030.tw/page-sitemap.xml",
+          "status": 200,
+          "sha256": "3426ef9d9961c399262c19e6e17c7775fd7987918829c129d00617970dbbbe65"
+        },
+        {
+          "url": "https://2030.tw/post-sitemap1.xml",
+          "status": 200,
+          "sha256": "fb5e7fb970e98742b4cd542412345ae28a73353b34f91afa14125e6bed52e2ad"
+        },
+        {
+          "url": "https://2030.tw/post-sitemap2.xml",
+          "status": 200,
+          "sha256": "4a56d2235653ff4d03b3cef26b1b89445dd03d34692269aae8157d4224d886ac"
+        },
+        {
+          "url": "https://2030.tw/robots.txt",
+          "status": 200,
+          "sha256": "c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a"
+        },
+        {
+          "url": "https://2030.tw/sample-page/",
+          "status": 200,
+          "sha256": "b30d1be9f37b0a4bc1be79685f99dd1e750a54ca02ac369b23c4592d86fe0bf6"
+        },
+        {
+          "url": "https://2030.tw/sitemap_index.xml",
+          "status": 200,
+          "sha256": "c2b1cbd2d15813b603973f68aac53e5548a063e62ad7b6d0bf46de55f93b883e"
+        },
+        {
+          "url": "https://2030.tw/taiwanplus/mlb-live-20261016-tb-vs-cle/",
+          "status": 200,
+          "sha256": "8d88a4ddc88b6c64c72fff7aeed5cac52a335e5e9f009306adbbd9b1ab4f2995"
+        },
+        {
+          "url": "https://2030.tw/world-cup-2026-predictions/%e8%b6%b3%e7%90%83%e8%a7%92%e7%90%83%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a%e5%9c%96%e8%a7%a3%e8%a7%92%e7%90%83%e8%a6%8f%e5%89%87%e8%88%87-5-%e5%a4%a7%e9%ab%98%e5%8b%9d%e7%8e%87%e9%81%8b/",
+          "status": 200,
+          "sha256": "97c291566757085c96bfd51e6eb197af647b2550427b5f2e2d71e2c71d45c7dd"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256": "1059e9928b5ef6761f9b17f44cb5c5a06e60096edcba292cf0ecf46c30557b67"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256": "395a51a98317646e8c34723be5677315038d075f76bb1ab08719ace3b0b291e3"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 503,
+          "sha256": "814c39841367474aaf364a2671401ddbccb430e8fed81529127e930291a11ee2"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 503,
+          "sha256": "814c39841367474aaf364a2671401ddbccb430e8fed81529127e930291a11ee2"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 200,
+          "sha256": "41e8101494d823dcabe021fc216040ca187b2e9649ea26fe554f3c1f823f20f4"
+        }
+      ],
+      "observations_after": 2,
+      "mode": "history",
+      "process_exit": 0,
+      "elapsed_seconds": 374.30497235400026
+    },
+    {
+      "run_id": "17a6529ac799477a84695baee47b076b",
+      "state": "research_complete",
+      "exit_code": 0,
+      "model_attempted": true,
+      "successful_api_calls": 13,
+      "report_submitted": true,
+      "usage": {
+        "model": "gpt-6.1-sol",
+        "provider": "openai-codex",
+        "session_prompt_tokens": 734317,
+        "session_completion_tokens": 9579,
+        "session_total_tokens": 743896,
+        "session_api_calls": 13,
+        "session_estimated_cost_usd": 0.0,
+        "session_cost_status": "included",
+        "note": "Estimate is not billed subscription cost; no paid API provider selected."
+      },
+      "requests": 19,
+      "searches": 3,
+      "tool_calls": 31,
+      "tool_errors": 1,
+      "claim_count": 11,
+      "current_sources": [
+        {
+          "url": "https://2030.tw/",
+          "status": 200,
+          "sha256": "800c380050093859727cdd7bb58581a691b9033822fc452b9f16d67c3414ec1d"
+        },
+        {
+          "url": "https://2030.tw/2kapb2a/",
+          "status": 200,
+          "sha256": "f35c6f5dfac5c8c8c539cf09959e3d5d4077a356070b97d8ded0a7cd97d43d52"
+        },
+        {
+          "url": "https://2030.tw/?s=%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "157cf8ed0c66880c61e54b3fe5d088200daf57f19c31aa2d3854f7f66e2fbb68"
+        },
+        {
+          "url": "https://2030.tw/?s=3A",
+          "status": 200,
+          "sha256": "43696b78c850a3f118cdfade4fc55d84df77e1395d8bcf0068d3e7183b04bd77"
+        },
+        {
+          "url": "https://2030.tw/?s=3A%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "287e7f16226fac9d74ce5cac73b4005e71b4d067c368a4c04e2b8e81f70177a5"
+        },
+        {
+          "url": "https://2030.tw/article/",
+          "status": 200,
+          "sha256": "a7c93d27a6bad954b1cc37a68d28c50b09f3cc7511bdf3a63b7987c830637be1"
+        },
+        {
+          "url": "https://2030.tw/article/generative-ai-45-chang-shing-lee/",
+          "status": 200,
+          "sha256": "a245601f4ee8c57004649943fd11d5486bb48d408e459c440d9e9014b35f8b94"
+        },
+        {
+          "url": "https://2030.tw/article/sports-everywhere-49-tzyy-yuang-shiang/",
+          "status": 200,
+          "sha256": "9001086702928fdd0bd3c4f8a0f5c11383c3fd997152bd4ed82667adf496b3b9"
+        },
+        {
+          "url": "https://2030.tw/category-sitemap.xml",
+          "status": 200,
+          "sha256": "73f29e73435aaf62eda33bd4a512f79aa4ca156e654f57cd94e44d4e07ea06b5"
+        },
+        {
+          "url": "https://2030.tw/digi_taiwan/jordan-vs-argentina-wc-2026/",
+          "status": 200,
+          "sha256": "7ea58577b1c9125c6aa9e2b9354148068b04155f70acdce86ef088a7f647d94e"
+        },
+        {
+          "url": "https://2030.tw/mlb/mlb-scores-20260926-tb-vs-phi/",
+          "status": 200,
+          "sha256": "a3c36b985ec2513f6b9914288e9346062dd003924ae91294788f7a18d5c44e3b"
+        },
+        {
+          "url": "https://2030.tw/page-sitemap.xml",
+          "status": 200,
+          "sha256": "3426ef9d9961c399262c19e6e17c7775fd7987918829c129d00617970dbbbe65"
+        },
+        {
+          "url": "https://2030.tw/page/8/?s=%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "status": 200,
+          "sha256": "6f3e17cc3b6a7c360d1c022740a26e53914ac0756dcece49f0ad14ac89df7b52"
+        },
+        {
+          "url": "https://2030.tw/post-sitemap1.xml",
+          "status": 200,
+          "sha256": "fb5e7fb970e98742b4cd542412345ae28a73353b34f91afa14125e6bed52e2ad"
+        },
+        {
+          "url": "https://2030.tw/post-sitemap2.xml",
+          "status": 200,
+          "sha256": "4a56d2235653ff4d03b3cef26b1b89445dd03d34692269aae8157d4224d886ac"
+        },
+        {
+          "url": "https://2030.tw/robots.txt",
+          "status": 200,
+          "sha256": "c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a"
+        },
+        {
+          "url": "https://2030.tw/robots.txt",
+          "status": 200,
+          "sha256": "c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a"
+        },
+        {
+          "url": "https://2030.tw/sitemap_index.xml",
+          "status": 200,
+          "sha256": "c2b1cbd2d15813b603973f68aac53e5548a063e62ad7b6d0bf46de55f93b883e"
+        },
+        {
+          "url": "https://2030.tw/world-cup-2026-predictions/%e8%b6%b3%e7%90%83%e8%a7%92%e7%90%83%e5%ae%8c%e5%85%a8%e6%8c%87%e5%8d%97%ef%bc%9a%e5%9c%96%e8%a7%a3%e8%a7%92%e7%90%83%e8%a6%8f%e5%89%87%e8%88%87-5-%e5%a4%a7%e9%ab%98%e5%8b%9d%e7%8e%87%e9%81%8b/",
+          "status": 200,
+          "sha256": "97c291566757085c96bfd51e6eb197af647b2550427b5f2e2d71e2c71d45c7dd"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 503,
+          "sha256": "5bd0413fea51a9a77dffc59257e4557ce68cf507ffbf81d76b2f2d4a72b993b0"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 503,
+          "sha256": "814c39841367474aaf364a2671401ddbccb430e8fed81529127e930291a11ee2"
+        },
+        {
+          "url": "search:ddgs",
+          "status": 503,
+          "sha256": "814c39841367474aaf364a2671401ddbccb430e8fed81529127e930291a11ee2"
+        }
+      ],
+      "observations_after": 2,
+      "mode": "memory",
+      "process_exit": 0,
+      "elapsed_seconds": 405.17125808599985
+    }
+  ],
+  "conclusion": "未證明記憶淨改善；本次策略記憶組成本較高，且未找到目標詞頁。",
+  "audit_file": "source-review.json"
+}

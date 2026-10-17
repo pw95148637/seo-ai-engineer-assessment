@@ -1,0 +1,22 @@
+{
+  "provider": "openai-codex",
+  "logged_in": false,
+  "rate_limited": false,
+  "expected_tools": [
+    "research_evidence",
+    "research_fetch",
+    "research_finish",
+    "research_search",
+    "research_status"
+  ],
+  "actual_tools": [
+    "research_evidence",
+    "research_fetch",
+    "research_finish",
+    "research_search",
+    "research_status"
+  ],
+  "model_called": false,
+  "ready": false,
+  "blocker": "oauth_required"
+}

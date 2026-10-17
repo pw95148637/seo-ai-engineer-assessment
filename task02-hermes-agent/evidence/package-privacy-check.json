@@ -1,0 +1,5 @@
+{
+  "credential_paths_found": [],
+  "credential_patterns_found_in_files": [],
+  "note": "Bounded pattern/path check, not proof of absence of all sensitive company or personal information; public sharing still requires review."
+}

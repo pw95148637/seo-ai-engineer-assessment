@@ -1,0 +1,22 @@
+[
+  {
+    "root": "evidence/autonomous-research",
+    "snapshots_including_seed": 36,
+    "mismatches": []
+  },
+  {
+    "root": "evidence/live-agent-evaluation/baseline",
+    "snapshots_including_seed": 55,
+    "mismatches": []
+  },
+  {
+    "root": "evidence/live-agent-evaluation/history",
+    "snapshots_including_seed": 55,
+    "mismatches": []
+  },
+  {
+    "root": "evidence/live-agent-evaluation/memory",
+    "snapshots_including_seed": 58,
+    "mismatches": []
+  }
+]

@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+
+	const gtm4wp_scrollerscript_debugmode         = true;
+	const gtm4wp_scrollerscript_callbacktime      = 100;
+	const gtm4wp_scrollerscript_readerlocation    = 150;
+	const gtm4wp_scrollerscript_contentelementid  = "content";
+	const gtm4wp_scrollerscript_scannertime       = 60;
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->  <link rel="stylesheet" id="swiper-css" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?ver=a557c62ad9ec6b3c3c170950d1316d50" media="all" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- This site is optimized with the Yoast SEO plugin v23.9 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>以2030年台灣形貌 發掘未來發展契機 - i創科技</title>
+	<link rel="canonical" href="https://itritech.itri.org.tw/blog/2030-future-development/" />
+	<meta property="og:locale" content="zh_TW" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="以2030年台灣形貌 發掘未來發展契機 - i創科技" />
+	<meta property="og:description" content="藉由未來的社會形貌和發展變遷，不只能推演出即將面臨的環境變化與生活需求，並可思考如何運用創新科技因應未來生活型態。 因此，對於未來世界形貌的推演和研判，就成為推動產業與科技持續邁進不可或缺的工作。工研院IEK Consulting透過「STEEP」（社會變遷、經濟發展、生態環境、產業科技、政經情勢）的分析和角度，從多項國際與國內的「線索」當中，試圖描繪2030年台灣的未來形貌，從中發掘值得關注的重要議題。" />
+	<meta property="og:url" content="https://itritech.itri.org.tw/blog/2030-future-development/" />
+	<meta property="og:site_name" content="i創科技" />
+	<meta property="article:published_time" content="2019-05-24T01:30:10+00:00" />
+	<meta property="article:modified_time" content="2023-09-25T01:39:09+00:00" />
+	<meta property="og:image" content="https://itritech.itri.org.tw/wp-content/uploads/47840101_l.jpg" />
+	<meta property="og:image:width" content="6961" />
+	<meta property="og:image:height" content="3100" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="張淮杞" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="作者:" />
+	<meta name="twitter:data1" content="張淮杞" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://itritech.itri.org.tw/blog/2030-future-development/","url":"https://itritech.itri.org.tw/blog/2030-future-development/","name":"以2030年台灣形貌 發掘未來發展契機 - i創科技","isPartOf":{"@id":"https://itritech.itri.org.tw/#website"},"primaryImageOfPage":{"@id":"https://itritech.itri.org.tw/blog/2030-future-development/#primaryimage"},"image":{"@id":"https://itritech.itri.org.tw/blog/2030-future-development/#primaryimage"},"thumbnailUrl":"https://itritech.itri.org.tw/wp-content/uploads/47840101_l.jpg","datePublished":"2019-05-24T01:30:10+00:00","dateModified":"2023-09-25T01:39:09+00:00","author":{"@id":"https://itritech.itri.org.tw/#/schema/person/7d21cc6bb0a0a8b5b76a8d4a6348108f"},"breadcrumb":{"@id":"https://itritech.itri.org.tw/blog/2030-future-development/#breadcrumb"},"inLanguage":"zh-TW","potentialAction":[{"@type":"ReadAction","target":["https://itritech.itri.org.tw/blog/2030-future-development/"]}]},{"@type":"ImageObject","inLanguage":"zh-TW","@id":"https://itritech.itri.org.tw/blog/2030-future-development/#primaryimage","url":"https://itritech.itri.org.tw/wp-content/uploads/47840101_l.jpg","contentUrl":"https://itritech.itri.org.tw/wp-content/uploads/47840101_l.jpg","width":6961,"height":3100,"caption":"未來世界形貌的推演和研判，是成為推動產業與科技持續邁進不可或缺的工作。"},{"@type":"BreadcrumbList","@id":"https://itritech.itri.org.tw/blog/2030-future-development/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://itritech.itri.org.tw/"},{"@type":"ListItem","position":2,"name":"以2030年台灣形貌 發掘未來發展契機"}]},{"@type":"WebSite","@id":"https://itritech.itri.org.tw/#website","url":"https://itritech.itri.org.tw/","name":"i創科技","description":"與您共創美好生活","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://itritech.itri.org.tw/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"zh-TW"},{"@type":"Person","@id":"https://itritech.itri.org.tw/#/schema/person/7d21cc6bb0a0a8b5b76a8d4a6348108f","name":"張淮杞","image":{"@type":"ImageObject","inLanguage":"zh-TW","@id":"https://itritech.itri.org.tw/#/schema/person/image/","url":"https://itritech.itri.org.tw/wp-content/uploads/2019-05-23_093613-150x150.jpg","contentUrl":"https://itritech.itri.org.tw/wp-content/uploads/2019-05-23_093613-150x150.jpg","caption":"張淮杞"},"description":"現職工研院產科國際所領域策略長。","url":"https://itritech.itri.org.tw/blog/author/huaichi/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//static.addtoany.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link href='https://fonts.googleapis.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="訂閱《i創科技》&raquo; 資訊提供" href="https://itritech.itri.org.tw/feed/" />
+<link rel="alternate" type="application/rss+xml" title="訂閱《i創科技》&raquo; 留言的資訊提供" href="https://itritech.itri.org.tw/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css' href='https://itritech.itri.org.tw/wp-includes/css/dist/block-library/style.min.css?ver=6.8.11' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--contrast: var(--contrast);--wp--preset--color--contrast-2: var(--contrast-2);--wp--preset--color--contrast-3: var(--contrast-3);--wp--preset--color--base: var(--base);--wp--preset--color--base-2: var(--base-2);--wp--preset--color--base-3: var(--base-3);--wp--preset--color--accent: var(--accent);--wp--preset--color--main-green: var(--main-green);--wp--preset--color--dark-grey: var(--dark-grey);--wp--preset--color--apple-green: var(--apple-green);--wp--preset--color--light-grey-bg: var(--light-grey-bg);--wp--preset--color--grey-heading: var(--grey-heading);--wp--preset--color--grey-bg: var(--grey-bg);--wp--preset--color--dark-grey-title: var(--dark-grey-title);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://itritech.itri.org.tw/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.7' media='all' />
+<style id='contact-form-7-inline-css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}.wpcf7 .wpcf7-recaptcha[data-align="center"] > div {margin: 0 auto;}.wpcf7 .wpcf7-recaptcha[data-align="right"] > div {margin: 0 0 0 auto;}
+</style>
+<link rel='stylesheet' id='wp-ulike-css' href='https://itritech.itri.org.tw/wp-content/plugins/wp-ulike/assets/css/wp-ulike.min.css?ver=4.7.6' media='all' />
+<link rel='stylesheet' id='ppress-frontend-css' href='https://itritech.itri.org.tw/wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css?ver=4.15.18' media='all' />
+<link rel='stylesheet' id='ppress-flatpickr-css' href='https://itritech.itri.org.tw/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css?ver=4.15.18' media='all' />
+<link rel='stylesheet' id='ppress-select2-css' href='https://itritech.itri.org.tw/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=6.8.11' media='all' />
+<link rel='stylesheet' id='generate-style-css' href='https://itritech.itri.org.tw/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.5.1' media='all' />
+<style id='generate-style-inline-css'>
+.is-right-sidebar{width:30%;}.is-left-sidebar{width:30%;}.site-content .content-area{width:100%;}@media (max-width: 768px){.main-navigation .menu-toggle,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav,.main-navigation:not(.slideout-navigation):not(.toggled) .main-nav > ul,.has-inline-mobile-toggle #site-navigation .inside-navigation > *:not(.navigation-search):not(.main-nav){display:none;}.nav-align-right .inside-navigation,.nav-align-center .inside-navigation{justify-content:space-between;}}
+.elementor-template-full-width .site-content{display:block;}
+.dynamic-author-image-rounded{border-radius:100%;}.dynamic-featured-image, .dynamic-author-image{vertical-align:middle;}.one-container.blog .dynamic-content-template:not(:last-child), .one-container.archive .dynamic-content-template:not(:last-child){padding-bottom:0px;}.dynamic-entry-excerpt > p:last-child{margin-bottom:0px;}
+</style>
+<link rel='stylesheet' id='generate-google-fonts-css' href='https://fonts.googleapis.com/css?family=Noto+Sans+TC%3Aregular%2C500%2C600%2C700%2C800&#038;display=auto&#038;ver=3.5.1' media='all' />
+<link rel='stylesheet' id='addtoany-css' href='https://itritech.itri.org.tw/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16' media='all' />
+<link rel='stylesheet' id='generatepress-dynamic-css' href='https://itritech.itri.org.tw/wp-content/uploads/generatepress/style.min.css?ver=1788933677' media='all' />
+<link rel='stylesheet' id='generate-child-css' href='https://itritech.itri.org.tw/wp-content/themes/generatepress_child/style.css?ver=1788933639' media='all' />
+<style id='generateblocks-inline-css'>
+.gb-container.gb-tabs__item:not(.gb-tabs__item-open){display:none;}.gb-container-35d21b4e{display:flex;align-items:center;justify-content:flex-start;background-image:url(https://itritech.itri.org.tw/wp-content/uploads/2023/10/1024-一起撩科技-底圖.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;}.gb-container-35d21b4e.gb-has-dynamic-bg{background-image:var(--background-url);}.gb-container-35d21b4e.gb-no-dynamic-bg{background-image:none;}.gb-container-a22f2f1c{width:100%;max-width:1365px;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;margin-right:auto;margin-left:auto;}.gb-container-bfb29d01{width:628px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-around;row-gap:1em;}.gb-container-575396cf{width:50%;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-around;row-gap:1em;}.gb-container-b26018b5{padding-top:110px;padding-bottom:110px;}.gb-container-30b21d41{max-width:1365px;overflow-x:hidden;overflow-y:hidden;margin-right:auto;margin-left:auto;}.gb-container-ff9b884d{padding-top:60px;padding-bottom:60px;}.gb-container-54482dba{width:auto;height:32px;display:flex;align-items:center;}.gb-container-0e86d4b9{display:flex;align-items:center;position:relative;}.gb-container-cae774d1{display:flex;align-items:center;position:relative;}.gb-container-bab50413{display:flex;align-items:center;position:relative;}.gb-container-62da52b7{display:flex;align-items:center;position:relative;}.gb-container-ec135034{display:flex;align-items:center;position:relative;}.gb-container-5c04acca{padding-top:90px;padding-bottom:20px;background-color:var(--main-green);}.gb-container-2b452fbe{display:flex;justify-content:space-around;margin-bottom:80px;}.gb-container-55f4372c{display:flex;flex-direction:column;align-items:center;}.gb-container-85681244{display:flex;align-items:center;justify-content:center;column-gap:10px;margin-top:10px;}.gb-container-6a1da3cd{display:flex;align-items:center;position:relative;}.gb-container-009d234c{display:flex;align-items:center;justify-content:center;column-gap:10px;}.gb-container-0e4eb56d{display:flex;justify-content:center;column-gap:1em;margin-top:3.5em;margin-right:auto;margin-left:auto;}.gb-container-00697155{display:flex;align-items:center;padding-right:1.3em;border-right:1px solid var(--grey-bg);}.gb-container-8f86a2e1{display:flex;justify-content:flex-start;column-gap:20px;padding-top:1.5em;padding-right:40px;padding-left:40px;margin-right:auto;margin-bottom:30px;margin-left:auto;border-top:1px solid var(--apple-green);}.gb-grid-wrapper > .gb-grid-column-209ed0d4{width:100%;}.gb-container-6078449e{display:flex;align-items:center;justify-content:flex-start;padding-right:40px;padding-left:40px;margin-bottom:30px;}.gb-container-3c1e0433{display:flex;flex-direction:row;align-items:center;justify-content:center;column-gap:35px;padding-right:40px;padding-bottom:2em;padding-left:40px;margin-top:1.5em;border-bottom:1px solid var(--apple-green);}.gb-container-0dc501b2{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;}.gb-container-c36272ff{padding-top:2.5em;margin-bottom:20px;}.gb-container-22139b0e{margin-bottom:110px;}.gb-container-8cbee354{overflow-x:visible;overflow-y:visible;padding-right:40px;padding-left:40px;}.gb-container-82e46b45{display:flex;flex-wrap:nowrap;align-items:center;justify-content:flex-start;}.gb-grid-wrapper > .gb-grid-column-82e46b45{width:49%;}.gb-container-4138dd74{border-top-left-radius:10px;border-bottom-left-radius:10px;}.gb-container-4138dd74 > .gb-inside-container{padding-top:40px;padding-bottom:40px;max-width:1365px;margin-left:auto;margin-right:auto;}.gb-grid-wrapper > .gb-grid-column-4138dd74 > .gb-container{justify-content:center;display:flex;flex-direction:column;height:100%;}.gb-container-18430adf{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;z-index:1;position:relative;text-align:center;padding:10px 25px 10px 30px;background-color:#ffffff;}.gb-container-456c47e1{padding-top:20px;}.gb-grid-wrapper > .gb-grid-column-456c47e1{width:2%;}.gb-container-d6f1e89c{display:flex;flex-wrap:nowrap;align-items:center;justify-content:flex-end;}.gb-grid-wrapper > .gb-grid-column-d6f1e89c{width:49%;}.gb-container-ce9878f4{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;z-index:1;position:relative;text-align:center;padding:10px 25px 10px 30px;background-color:#ffffff;}.gb-container-6c856070{border-top-right-radius:10px;border-bottom-right-radius:10px;}.gb-container-6c856070 > .gb-inside-container{padding-top:40px;padding-bottom:40px;max-width:1365px;margin-left:auto;margin-right:auto;}.gb-grid-wrapper > .gb-grid-column-6c856070 > .gb-container{justify-content:center;display:flex;flex-direction:column;height:100%;}.gb-image-8b92dfd9{vertical-align:middle;}.gb-image-8651a4ef{width:auto;height:27px;vertical-align:middle;}.gb-image-174698b7{width:auto;height:27px;vertical-align:middle;}.gb-image-fdae4382{width:auto;height:27px;vertical-align:middle;}.gb-image-bb9f7d51{width:auto;height:27px;vertical-align:middle;}.gb-image-693bc792{width:auto;height:27px;vertical-align:middle;}.gb-image-45b0ce01{width:auto;height:27px;vertical-align:middle;}.gb-image-ad9be9a2{width:auto;height:32px;vertical-align:middle;}.gb-image-6c02b05b{width:auto;height:32px;vertical-align:middle;}.gb-image-a73bd7c1{width:auto;height:27px;vertical-align:middle;}.gb-image-7ee459ab{width:auto;height:27px;vertical-align:middle;}.gb-image-fd399049{width:240px;vertical-align:middle;}.gb-image-9a8594a5{vertical-align:middle;}.gb-image-ea34dcaf{vertical-align:middle;}.gb-image-d430d0e4{width:89px;vertical-align:middle;}.gb-image-7287f25e{width:47px;vertical-align:middle;}.gb-image-2f653645{width:148px;vertical-align:middle;}.gb-headline-e8df175c{font-size:20px;}.gb-headline-527e468f{font-size:20px;color:var(--base-3);}.gb-headline-1ad45175{font-size:68px;line-height:1em;font-weight:700;color:var(--grey-bg);}.gb-headline-e81a44ce{font-size:60px;line-height:1em;font-weight:700;color:var(--grey-heading);}.gb-headline-be238556{font-size:35px;line-height:1em;letter-spacing:2px;font-weight:600;margin-top:20px;margin-bottom:20px;color:var(--grey-heading);}.gb-headline-53f20fe0{font-size:45px;line-height:1em;letter-spacing:2px;font-weight:700;margin-top:20px;margin-bottom:20px;color:var(--base-3);}.gb-headline-276741e5{width:33.3%;font-size:26px;line-height:1em;letter-spacing:2px;font-weight:600;text-align:left;margin-top:20px;margin-bottom:20px;}.gb-headline-276741e5 a{color:var(--grey-bg);}.gb-headline-276741e5 a:hover{color:var(--main-green);}.gb-headline-73675c08{font-size:20px;font-weight:500;color:#a2d3d5;}.gb-headline-73675c08 a{color:#a2d3d5;}.gb-headline-73675c08 a:hover{color:var(--dark-grey);}.gb-headline-1252d5ed{font-size:22px;font-weight:600;color:var(--dark-grey);}div.gb-headline-6be69cdb{font-size:20px;text-align:center;color:var(--base-3);}div.gb-headline-c82e4e02{font-size:20px;color:var(--base-3);}div.gb-headline-3730c212{color:var(--base-3);}div.gb-headline-d8816ef3{font-size:22px;font-weight:600;color:var(--dark-grey);}div.gb-headline-9d0b0a0e{display:flex;align-items:center;font-size:22px;font-weight:600;margin-bottom:5px;}div.gb-headline-9d0b0a0e a{color:var(--grey-heading);}div.gb-headline-9d0b0a0e a:hover{color:var(--main-green);}div.gb-headline-9d0b0a0e .gb-icon{line-height:0;color:var(--dark-grey);padding-right:10px;}div.gb-headline-9d0b0a0e .gb-icon svg{width:10px;height:10px;fill:currentColor;}div.gb-headline-29cc122a{font-size:22px;font-weight:600;margin-right:1em;color:var(--dark-grey);}div.gb-headline-7ab806e2{font-size:20px;font-weight:600;color:var(--dark-grey);}div.gb-headline-593a3fcf{font-size:20px;font-weight:600;color:var(--dark-grey);}div.gb-headline-89c8cbd2{text-align:center;}div.gb-headline-463f2ef7{font-size:22px;font-weight:600;text-align:left;color:#d0d0d0;}div.gb-headline-2acc62a4{font-size:22px;line-height:1.3em;font-weight:700;text-align:left;margin-bottom:0em;border-top-left-radius:10px;border-bottom-left-radius:10px;}div.gb-headline-2acc62a4 a{color:var(--grey-heading);}div.gb-headline-2acc62a4 a:hover{color:var(--main-green);}div.gb-headline-771ba502{font-size:22px;font-weight:600;text-align:right;color:#d0d0d0;}div.gb-headline-9d97a37f{font-size:22px;line-height:1.3em;font-weight:700;text-align:left;margin-bottom:0em;border-top-right-radius:10px;border-bottom-right-radius:10px;background-color:#ffffff;}div.gb-headline-9d97a37f a{color:var(--grey-heading);}div.gb-headline-9d97a37f a:hover{color:var(--main-green);}.gb-grid-wrapper-131fe7d4{display:flex;flex-wrap:wrap;row-gap:15px;}.gb-grid-wrapper-131fe7d4 > .gb-grid-column{box-sizing:border-box;}.gb-grid-wrapper-7bdd6853{display:flex;flex-wrap:wrap;}.gb-grid-wrapper-7bdd6853 > .gb-grid-column{box-sizing:border-box;}.gb-button-wrapper{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:flex-start;clear:both;}.gb-button-wrapper-ad40b681{justify-content:flex-end;}.gb-accordion__item:not(.gb-accordion__item-open) > .gb-button .gb-accordion__icon-open{display:none;}.gb-accordion__item.gb-accordion__item-open > .gb-button .gb-accordion__icon{display:none;}.gb-button-wrapper a.gb-button-a3aaad4c{display:inline-flex;align-items:center;justify-content:center;text-align:center;padding:5px;border-radius:100%;border:2px solid var(--grey-bg);color:var(--main-green);text-decoration:none;}.gb-button-wrapper a.gb-button-a3aaad4c:hover, .gb-button-wrapper a.gb-button-a3aaad4c:active, .gb-button-wrapper a.gb-button-a3aaad4c:focus{border-color:var(--base-3);background-color:var(--main-green);color:var(--base-3);}.gb-button-wrapper a.gb-button-a3aaad4c .gb-icon{line-height:0;}.gb-button-wrapper a.gb-button-a3aaad4c .gb-icon svg{width:1em;height:1em;fill:currentColor;}.gb-button-55cd2ceb{display:inline-flex;width:2px;min-height:5em;margin-bottom:-1em;background-color:var(--grey-bg);color:#ffffff;text-decoration:none;}.gb-button-55cd2ceb:hover, .gb-button-55cd2ceb:active, .gb-button-55cd2ceb:focus{color:#ffffff;}.gb-button-wrapper a.gb-button-139d60e4{display:inline-flex;align-items:center;justify-content:center;text-align:center;padding:5px;border-radius:100%;border:2px solid var(--grey-bg);color:var(--main-green);text-decoration:none;}.gb-button-wrapper a.gb-button-139d60e4:hover, .gb-button-wrapper a.gb-button-139d60e4:active, .gb-button-wrapper a.gb-button-139d60e4:focus{border-color:var(--base-3);background-color:var(--main-green);color:var(--base-3);}.gb-button-wrapper a.gb-button-139d60e4 .gb-icon{line-height:0;}.gb-button-wrapper a.gb-button-139d60e4 .gb-icon svg{width:1em;height:1em;fill:currentColor;}@media (max-width: 1024px) {.gb-container-a22f2f1c{justify-content:flex-start;padding-left:auto;}.gb-container-bfb29d01{width:100%;}.gb-grid-wrapper > .gb-grid-column-bfb29d01{width:100%;}.gb-container-575396cf{width:100%;}.gb-grid-wrapper > .gb-grid-column-575396cf{width:100%;}.gb-container-30b21d41{justify-content:center;}.gb-container-2b452fbe{flex-direction:column;align-items:center;row-gap:5em;}.gb-container-8f86a2e1{flex-direction:column;row-gap:1em;}.gb-container-3c1e0433{border-bottom-width:0px;}.gb-container-4138dd74{border-bottom-left-radius:0px;}.gb-container-18430adf{margin-right:0px;border-bottom-right-radius:0px;}.gb-container-ce9878f4{margin-right:0px;border-bottom-right-radius:0px;}.gb-container-6c856070{border-top-right-radius:0px;}.gb-headline-e8df175c{font-size:22px;}.gb-headline-527e468f{font-size:22px;}}@media (max-width: 1024px) and (min-width: 768px) {.gb-container-c36272ff{display:none !important;}.gb-container-22139b0e{display:none !important;}}@media (max-width: 767px) {.gb-container-35d21b4e{padding-top:15vw;padding-bottom:15vw;}.gb-container-a22f2f1c{justify-content:center;padding-left:auto;}.gb-container-b26018b5{padding-top:60px;padding-bottom:60px;}.gb-container-30b21d41{justify-content:center;}.gb-container-ff9b884d{padding-top:60px;padding-bottom:60px;}.gb-container-009d234c{flex-direction:column;row-gap:10px;}.gb-container-0e4eb56d{flex-direction:column;align-items:center;row-gap:1.5em;}.gb-container-00697155{border:0px;}.gb-container-8f86a2e1{padding-right:30px;padding-left:30px;}.gb-container-6078449e{padding-right:30px;padding-left:30px;}.gb-container-3c1e0433{padding-right:30px;padding-left:30px;}.gb-container-c36272ff{display:none !important;}.gb-container-22139b0e{display:none !important;}.gb-container-8cbee354{padding-right:30px;padding-left:30px;}.gb-container-4138dd74{border-top-left-radius:5px;border-bottom-left-radius:0px;}.gb-container-18430adf{padding:10px;margin-right:0px;border-top-right-radius:5px;border-bottom-right-radius:0px;}.gb-grid-wrapper > .gb-grid-column-456c47e1{width:100%;}.gb-container-d6f1e89c{justify-content:space-between;}.gb-container-ce9878f4{align-items:flex-start;padding:10px;margin-right:0px;border-top-right-radius:5px;border-bottom-right-radius:0px;}.gb-container-6c856070{border-top-right-radius:0px;border-bottom-right-radius:5px;}.gb-headline-e8df175c{font-size:20px;}.gb-headline-527e468f{font-size:20px;}div.gb-headline-6be69cdb{font-size:17px;line-height:2em;}div.gb-headline-2acc62a4{font-size:17px;margin-left:-3em;border-radius:5px;}div.gb-headline-9d97a37f{font-size:17px;margin-right:-3em;border-radius:5px;}.gb-button-wrapper a.gb-button-a3aaad4c .gb-icon svg{width:0.8em;height:0.8em;}.gb-button-55cd2ceb{display:none !important;}.gb-button-wrapper a.gb-button-139d60e4 .gb-icon svg{width:0.8em;height:0.8em;}}.gb-container .wp-block-image img{vertical-align:middle;}.gb-grid-wrapper .wp-block-image{margin-bottom:0;}.gb-highlight{background:none;}.gb-container-link{position:absolute;top:0;right:0;bottom:0;left:0;z-index:99;}
+</style>
+<link rel='stylesheet' id='generate-offside-css' href='https://itritech.itri.org.tw/wp-content/plugins/gp-premium/menu-plus/functions/css/offside.min.css?ver=2.4.1' media='all' />
+<style id='generate-offside-inline-css'>
+:root{--gp-slideout-width:265px;}.slideout-navigation, .slideout-navigation a{color:var(--main-green);}.slideout-navigation button.slideout-exit{color:var(--main-green);padding-left:20px;padding-right:20px;}.slide-opened nav.toggled .menu-toggle:before{display:none;}@media (max-width: 768px){.menu-bar-item.slideout-toggle{display:none;}}
+</style>
+<link rel='stylesheet' id='generate-navigation-branding-css' href='https://itritech.itri.org.tw/wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding-flex.min.css?ver=2.4.1' media='all' />
+<style id='generate-navigation-branding-inline-css'>
+@media (max-width: 768px){.site-header, #site-navigation, #sticky-navigation{display:none !important;opacity:0.0;}#mobile-header{display:block !important;width:100% !important;}#mobile-header .main-nav > ul{display:none;}#mobile-header.toggled .main-nav > ul, #mobile-header .menu-toggle, #mobile-header .mobile-bar-items{display:block;}#mobile-header .main-nav{-ms-flex:0 0 100%;flex:0 0 100%;-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4;}}.main-navigation.has-branding .inside-navigation.grid-container, .main-navigation.has-branding.grid-container .inside-navigation:not(.grid-container){padding:0px 40px 0px 40px;}.main-navigation.has-branding:not(.grid-container) .inside-navigation:not(.grid-container) .navigation-branding{margin-left:10px;}.navigation-branding img, .site-logo.mobile-header-logo img{height:48px;width:auto;}.navigation-branding .main-title{line-height:48px;}@media (max-width: 768px){.main-navigation.has-branding.nav-align-center .menu-bar-items, .main-navigation.has-sticky-branding.navigation-stick.nav-align-center .menu-bar-items{margin-left:auto;}.navigation-branding{margin-right:auto;margin-left:10px;}.navigation-branding .main-title, .mobile-header-navigation .site-logo{margin-left:10px;}.main-navigation.has-branding .inside-navigation.grid-container{padding:0px;}}
+</style>
+<script id="addtoany-core-js-before">
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_localize = {
+	Share: "分享",
+	Save: "儲存",
+	Subscribe: "訂閱",
+	Email: "電子郵件",
+	Bookmark: "書籤",
+	ShowAll: "顯示全部",
+	ShowLess: "顯示較少",
+	FindServices: "尋找服務",
+	FindAnyServiceToAddTo: "立即尋找想要新增的服務",
+	PoweredBy: "開發團隊:",
+	ShareViaEmail: "透過電子郵件分享",
+	SubscribeViaEmail: "透過電子郵件訂閱",
+	BookmarkInYourBrowser: "在瀏覽器中加入書籤",
+	BookmarkInstructions: "按下 Ctrl+D 或 \u2318+D 將這個頁面加入書籤",
+	AddToYourFavorites: "新增至 [我的最愛]",
+	SendFromWebOrProgram: "透過任何電子郵件地址或電子郵件程式傳送",
+	EmailProgram: "電子郵件程式",
+	More: "進一步了解...",
+	ThanksForSharing: "感謝分享！",
+	ThanksForFollowing: "感謝追蹤！"
+};
+
+a2a_config.callbacks.push({ready: function(){var d=document;function a(){var c,e=d.createElement("div");e.innerHTML="<div class=\"a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style\" style=\"margin-left:-45px;top:35px;background-color:transparent;\"><a class=\"a2a_button_facebook\"><\/a><a class=\"a2a_button_line\"><\/a><a class=\"a2a_button_x\"><\/a><a class=\"a2a_button_print\"><\/a><\/div>";c=d.querySelector("main, [role=\"main\"], article, .status-publish");if(c)c.appendChild(e.firstChild);a2a.init("page");}if("loading"!==d.readyState)a();else d.addEventListener("DOMContentLoaded",a,false);}});
+a2a_config.icon_color="#ffffff,#26a9a9";
+</script>
+<script defer src="https://static.addtoany.com/menu/page.js" id="addtoany-core-js"></script>
+<script src="https://itritech.itri.org.tw/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://itritech.itri.org.tw/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script defer src="https://itritech.itri.org.tw/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1" id="addtoany-jquery-js"></script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=4.15.18" id="ppress-flatpickr-js"></script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=4.15.18" id="ppress-select2-js"></script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/analytics-talk-content-tracking.js?ver=1.20.2" id="gtm4wp-scroll-tracking-js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://itritech.itri.org.tw/xmlrpc.php?rsd" />
+
+<link rel='shortlink' href='https://itritech.itri.org.tw/?p=8137' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://itritech.itri.org.tw/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fitritech.itri.org.tw%2Fblog%2F2030-future-development%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://itritech.itri.org.tw/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fitritech.itri.org.tw%2Fblog%2F2030-future-development%2F&#038;format=xml" />
+
+<!--BEGIN: TRACKING CODE MANAGER (v2.3.0) BY INTELLYWP.COM IN HEAD//-->
+<meta name="google-site-verification" content="adx4guP4uvUgYTyg_-5DU-VWhm1caQV-UiVz0qcoUlI" />
+<!--END: https://wordpress.org/plugins/tracking-code-manager IN HEAD//-->        
+<link rel="stylesheet" class="wpcb2-external-style" href="https://itritech.itri.org.tw/wp-content/plugins/yide_custom_functions/assets/css/whole_site/css_frontendpage_all.css?v=609d29429f21fe53"/>
+
+
+            <style wpcb-ids='51' class='wpcb2-inline-style'>
+
+        /* YIDE Print CSS */
+@media print {
+  /* #sidebar {
+    display: none;
+  }
+  #header {
+    height: 75px;
+  }
+  #content {
+    margin-left: 0;
+    float: none;
+    width: auto;
+  } */
+  .entry-content a {
+    font-weight: bold;
+    color: #000066;
+    text-decoration: underline;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote,
+  table,
+  pre,
+  ul,
+  ol,
+  dl,
+  img
+   {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  /* h3 {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img.right {
+    padding: 4px;
+    margin: 0 0 2px 7px;
+    display: inline;
+  }
+  img.left {
+    padding: 4px;
+    margin: 0 7px 2px 0;
+    display: inline;
+  }
+  .right {
+    float: right;
+  }
+  .left {
+    float: left;
+  } */
+  /* YIDE */
+  body {
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+    margin: 0;
+  }
+  .site-footer>div {
+      background-color: var(--main-green);
+  }
+  .rll-youtube-player img, img.lazyloaded {
+    display: block;
+  }
+  .yide-clapping-btn {
+    display: none;
+  }
+  .site-logo, .navigation-branding img, .site-logo.mobile-header-logo img {
+    display: block !important;
+  }
+}
+
+        </style>
+
+         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+          
+<link rel="stylesheet" class="wpcb2-external-style" href="https://itritech.itri.org.tw/wp-content/plugins/yide_custom_functions/assets/css/post_archive/archive_page_css.css?v=f69a7883936464b8"/>
+
+
+            
+<link rel="stylesheet" class="wpcb2-external-style" href="https://itritech.itri.org.tw/wp-content/plugins/yide_custom_functions/assets/css/post_single/podcast_css.css?v=8e9b7894609f3d52"/>
+
+
+            
+<link rel="stylesheet" class="wpcb2-external-style" href="https://itritech.itri.org.tw/wp-content/plugins/yide_custom_functions/assets/css/post_single/post_single_css.css?v=da6ad0140c88c031"/>
+
+
+            
+<link rel="stylesheet" class="wpcb2-external-style" href="https://itritech.itri.org.tw/wp-content/plugins/yide_custom_functions/assets/css/fb_fb_comments/fb_commets_css.css?v=792e86dd8daa81cf"/>
+
+
+            
+<link rel="stylesheet" class="wpcb2-external-style" href="https://itritech.itri.org.tw/wp-content/plugins/yide_custom_functions/assets/css/ulike/ulike_css.css?v=1353d88c5738c05d"/>
+
+
+            
+<link rel="stylesheet" class="wpcb2-external-style" href="https://itritech.itri.org.tw/wp-content/plugins/yide_custom_functions/assets/css/frontpage_menu/css__frontpage_menu.css?v=45d5e77cfd823538"/>
+
+
+            
+<link rel="stylesheet" class="wpcb2-external-style" href="https://itritech.itri.org.tw/wp-content/plugins/yide_custom_functions/assets/css/frontpage_trending_slider/trending_slider_shortcode_css.css?v=883850a88fe37688"/>
+
+
+            
+<link rel="stylesheet" class="wpcb2-external-style" href="https://itritech.itri.org.tw/wp-content/plugins/yide_custom_functions/assets/css/frontpage_itri_videos_slider/videos_css.css?v=f8da07dc4e3dbbe0"/>
+
+
+            
+<link rel="stylesheet" class="wpcb2-external-style" href="https://itritech.itri.org.tw/wp-content/plugins/yide_custom_functions/assets/css/frontpage_posts_slider/thumbnail_slider_shortcode_css.css?v=eb0a06030c83f6fc"/>
+
+
+            
+<link rel="stylesheet" class="wpcb2-external-style" href="https://itritech.itri.org.tw/wp-content/plugins/yide_custom_functions/assets/css/frontpage_podcast/podcast_css.css?v=8ed7237037be4775"/>
+
+
+    
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to manual -->
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+	var dataLayer_content = {"pageTitle":"以2030年台灣形貌 發掘未來發展契機 - i創科技","pagePostType":"post","pagePostType2":"single-post","pageCategory":["itri-spectrum"],"pageAttributes":["iek-consulting","%e4%ba%ba%e5%b7%a5%e6%99%ba%e6%85%a7","%e5%8d%80%e5%a1%8a%e9%8f%88","%e6%95%b8%e4%bd%8d%e6%95%99%e8%82%b2","%e7%89%a9%e8%81%af%e7%b6%b2"],"pagePostAuthorID":154,"pagePostAuthor":"張淮杞","pagePostDate":"2019-05-24","pagePostDateYear":2019,"pagePostDateMonth":5,"pagePostDateDay":24,"pagePostDateDayName":"星期五","pagePostDateHour":9,"pagePostDateMinute":30,"pagePostDateIso":"2019-05-24T09:30:10+08:00","pagePostDateUnix":1558690210,"browserName":"","browserVersion":"","browserEngineName":"","browserEngineVersion":"","osName":"","osVersion":"","deviceType":"","deviceManufacturer":"","deviceModel":"","postCountOnPage":1,"postCountTotal":1,"postID":8137,"postFormat":"standard"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P9KD63K');
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><meta name="generator" content="Elementor 3.25.9; features: e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-auto">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://itritech.itri.org.tw/wp-content/uploads/2023/09/itech-logo-i.png" sizes="32x32" />
+<link rel="icon" href="https://itritech.itri.org.tw/wp-content/uploads/2023/09/itech-logo-i.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://itritech.itri.org.tw/wp-content/uploads/2023/09/itech-logo-i.png" />
+<meta name="msapplication-TileImage" content="https://itritech.itri.org.tw/wp-content/uploads/2023/09/itech-logo-i.png" />
+		<style id="wp-custom-css">
+			#primary-menu>ul>li>a::after{
+	background:none;
+}		</style>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+
+<body class="wp-singular post-template-default single single-post postid-8137 single-format-standard wp-embed-responsive wp-theme-generatepress wp-child-theme-generatepress_child post-image-above-header post-image-aligned-center slideout-enabled slideout-mobile sticky-menu-fade mobile-header mobile-header-logo no-sidebar nav-below-header separate-containers header-aligned-center dropdown-hover elementor-default" itemtype="https://schema.org/Blog" itemscope>
+	
+<!-- GTM Container placement set to manual -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9KD63K" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><!-- FB SDK START by YIDE -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v9.0&appId=1002901141082433&autoLogAppEvents=1" nonce="tvfnV6sm"></script>
+<!-- FB SDK END by YIDE -->
+
+<!-- GTM Container placement set to manual -->
+<!-- Google Tag Manager (noscript) --><a class="screen-reader-text skip-link" href="#content" title="跳至主要內容">跳至主要內容</a>		<nav id="mobile-header" itemtype="https://schema.org/SiteNavigationElement" itemscope class="main-navigation mobile-header-navigation has-branding has-menu-bar-items">
+			<div class="inside-navigation grid-container grid-parent">
+				<div class="site-logo mobile-header-logo">
+						<a href="https://itritech.itri.org.tw/" title="i創科技" rel="home">
+							<img loading="lazy" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/tech-logo.png" alt="i創科技" class="is-logo-image" width="542" height="209" />
+						</a>
+					</div>					<button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+						<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="screen-reader-text">Menu</span>					</button>
+					<div id="mobile-menu" class="main-nav"><ul id="menu-%e4%b8%bb%e9%81%b8%e5%96%ae2023" class=" menu sf-menu"><li id="menu-item-15695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-15695"><a href="https://itritech.itri.org.tw/">首頁</a></li>
+<li id="menu-item-15636" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15636"><a href="#">創主題<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-15639" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-15639"><a href="https://itritech.itri.org.tw/blog/category/itri-spectrum/">i創趨勢通</a></li>
+	<li id="menu-item-15638" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15638"><a href="https://itritech.itri.org.tw/blog/category/itri-correspondent/">i創特派員</a></li>
+	<li id="menu-item-15637" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15637"><a href="https://itritech.itri.org.tw/blog/category/itri-perspectives/">i創專家講</a></li>
+</ul>
+</li>
+<li id="menu-item-15930" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15930"><a href="#">創影音<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-15932" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15932"><a href="https://itritech.itri.org.tw/blog/category/%e5%89%b5%e5%bd%b1%e9%9f%b3/%e4%b8%80%e8%b5%b7%e6%92%a9%e7%a7%91%e6%8a%80/">一起撩科技</a></li>
+	<li id="menu-item-15931" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15931"><a href="https://itritech.itri.org.tw/blog/category/%e5%89%b5%e5%bd%b1%e9%9f%b3/technology-programme/">科技哪裡趣</a></li>
+</ul>
+</li>
+<li id="menu-item-15641" class="yide_site_logo menu-item menu-item-type-custom menu-item-object-custom menu-item-15641"><a href="/">i創Logo</a></li>
+<li id="menu-item-15642" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15642"><a href="https://itritech.itri.org.tw/blog/category/%e8%aa%aa%e7%a7%91%e6%8a%80/">說科技</a></li>
+<li id="menu-item-15643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15643"><a href="https://itritech.itri.org.tw/contactus/">關於我們</a></li>
+</ul></div><div class="menu-bar-items">	<span class="menu-bar-item">
+		<a href="#" role="button" aria-label="Open search" data-gpmodal-trigger="gp-search"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path fill-rule="evenodd" clip-rule="evenodd" d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span></a>
+	</span>
+	</div><div class="gb-container gb-container-54482dba hide-on-mobile" id="yide_extra_menu">
+<div class="gb-container gb-container-0e86d4b9 yide-image-swap-wrapper"><a class="gb-container-link" href="https://www.facebook.com/itri.tw/" rel="noopener noreferrer" target="_blank"></a>
+
+<figure class="gb-block-image gb-block-image-8651a4ef"><img decoding="async" width="68" height="67" class="gb-image gb-image-8651a4ef icon-facebook gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-fb.png" alt="" title="header-fb"/></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-174698b7"><img decoding="async" width="68" height="68" class="gb-image gb-image-174698b7 icon-facebook-hover gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-fb-hover.png" alt="" title="header-fb-hover"/></figure>
+
+</div>
+
+<div class="gb-container gb-container-cae774d1 yide-image-swap-wrapper"><a class="gb-container-link" href="https://www.instagram.com/itri_tech/" rel="noopener noreferrer" target="_blank"></a>
+
+<figure class="gb-block-image gb-block-image-fdae4382"><img decoding="async" width="68" height="68" class="gb-image gb-image-fdae4382 icon-instagram gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-ig.png" alt="" title="header-ig"/></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-bb9f7d51"><img loading="lazy" loading="lazy" decoding="async" width="68" height="68" class="gb-image gb-image-bb9f7d51 icon-instagram-hover gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-ig-hover.png" alt="" title="header-ig-hover"/></figure>
+
+</div>
+
+<div class="gb-container gb-container-bab50413 yide-image-swap-wrapper"><a class="gb-container-link" href="https://www.youtube.com/user/Nextgenerationtrend" rel="noopener noreferrer" target="_blank"></a>
+
+<figure class="gb-block-image gb-block-image-693bc792"><img loading="lazy" loading="lazy" decoding="async" width="67" height="68" class="gb-image gb-image-693bc792 icon-instagram gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-yt.png" alt="" title="header-yt"/></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-45b0ce01"><img loading="lazy" loading="lazy" decoding="async" width="67" height="68" class="gb-image gb-image-45b0ce01 icon-instagram-hover gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-yt-hover.png" alt="" title="header-yt-hover"/></figure>
+
+</div>
+
+<div class="gb-container gb-container-62da52b7 yide-image-swap-wrapper"><a class="gb-container-link" href="#edmSubscription"></a>
+
+<figure class="gb-block-image gb-block-image-ad9be9a2"><img loading="lazy" loading="lazy" decoding="async" width="205" height="68" class="gb-image gb-image-ad9be9a2 icon-newsletter" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-mail.png" alt="" title="header-mail"/></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-6c02b05b"><img loading="lazy" loading="lazy" decoding="async" width="205" height="68" class="gb-image gb-image-6c02b05b icon-newsletter-hover" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-mail-hover.png" alt="" title="header-mail-hover"/></figure>
+
+</div>
+
+<div class="gb-container gb-container-ec135034 yide-image-swap-wrapper">
+
+<figure class="gb-block-image gb-block-image-a73bd7c1"><a href="#"><img loading="lazy" loading="lazy" decoding="async" width="67" height="67" class="gb-image gb-image-a73bd7c1 icon-search gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-search.png" alt="" title="header-search" data-gpmodal-trigger="gp-search"/></a></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-7ee459ab"><a href="#"><img loading="lazy" loading="lazy" decoding="async" width="68" height="68" class="gb-image gb-image-7ee459ab icon-search-hover gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-search-hover.png" alt="" title="header-search-hover" data-gpmodal-trigger="gp-search"/></a></figure>
+
+</div>
+</div>			</div><!-- .inside-navigation -->
+		</nav><!-- #site-navigation -->
+				<nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation" aria-label="Primary"  itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation grid-container">
+								<button class="menu-toggle" aria-controls="generate-slideout-menu" aria-expanded="false">
+					<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="screen-reader-text">選單</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-%e4%b8%bb%e9%81%b8%e5%96%ae2023-1" class=" menu sf-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-15695"><a href="https://itritech.itri.org.tw/">首頁</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15636"><a href="#">創主題<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-15639"><a href="https://itritech.itri.org.tw/blog/category/itri-spectrum/">i創趨勢通</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15638"><a href="https://itritech.itri.org.tw/blog/category/itri-correspondent/">i創特派員</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15637"><a href="https://itritech.itri.org.tw/blog/category/itri-perspectives/">i創專家講</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15930"><a href="#">創影音<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15932"><a href="https://itritech.itri.org.tw/blog/category/%e5%89%b5%e5%bd%b1%e9%9f%b3/%e4%b8%80%e8%b5%b7%e6%92%a9%e7%a7%91%e6%8a%80/">一起撩科技</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15931"><a href="https://itritech.itri.org.tw/blog/category/%e5%89%b5%e5%bd%b1%e9%9f%b3/technology-programme/">科技哪裡趣</a></li>
+</ul>
+</li>
+<li class="yide_site_logo menu-item menu-item-type-custom menu-item-object-custom menu-item-15641"><a href="/">i創Logo</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15642"><a href="https://itritech.itri.org.tw/blog/category/%e8%aa%aa%e7%a7%91%e6%8a%80/">說科技</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15643"><a href="https://itritech.itri.org.tw/contactus/">關於我們</a></li>
+</ul></div><div class="menu-bar-items">	<span class="menu-bar-item">
+		<a href="#" role="button" aria-label="Open search" data-gpmodal-trigger="gp-search"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path fill-rule="evenodd" clip-rule="evenodd" d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span></a>
+	</span>
+	</div><div class="gb-container gb-container-54482dba hide-on-mobile" id="yide_extra_menu">
+<div class="gb-container gb-container-0e86d4b9 yide-image-swap-wrapper"><a class="gb-container-link" href="https://www.facebook.com/itri.tw/" rel="noopener noreferrer" target="_blank"></a>
+
+<figure class="gb-block-image gb-block-image-8651a4ef"><img decoding="async" width="68" height="67" class="gb-image gb-image-8651a4ef icon-facebook gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-fb.png" alt="" title="header-fb"/></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-174698b7"><img decoding="async" width="68" height="68" class="gb-image gb-image-174698b7 icon-facebook-hover gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-fb-hover.png" alt="" title="header-fb-hover"/></figure>
+
+</div>
+
+<div class="gb-container gb-container-cae774d1 yide-image-swap-wrapper"><a class="gb-container-link" href="https://www.instagram.com/itri_tech/" rel="noopener noreferrer" target="_blank"></a>
+
+<figure class="gb-block-image gb-block-image-fdae4382"><img decoding="async" width="68" height="68" class="gb-image gb-image-fdae4382 icon-instagram gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-ig.png" alt="" title="header-ig"/></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-bb9f7d51"><img loading="lazy" loading="lazy" decoding="async" width="68" height="68" class="gb-image gb-image-bb9f7d51 icon-instagram-hover gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-ig-hover.png" alt="" title="header-ig-hover"/></figure>
+
+</div>
+
+<div class="gb-container gb-container-bab50413 yide-image-swap-wrapper"><a class="gb-container-link" href="https://www.youtube.com/user/Nextgenerationtrend" rel="noopener noreferrer" target="_blank"></a>
+
+<figure class="gb-block-image gb-block-image-693bc792"><img loading="lazy" loading="lazy" decoding="async" width="67" height="68" class="gb-image gb-image-693bc792 icon-instagram gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-yt.png" alt="" title="header-yt"/></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-45b0ce01"><img loading="lazy" loading="lazy" decoding="async" width="67" height="68" class="gb-image gb-image-45b0ce01 icon-instagram-hover gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-yt-hover.png" alt="" title="header-yt-hover"/></figure>
+
+</div>
+
+<div class="gb-container gb-container-62da52b7 yide-image-swap-wrapper"><a class="gb-container-link" href="#edmSubscription"></a>
+
+<figure class="gb-block-image gb-block-image-ad9be9a2"><img loading="lazy" loading="lazy" decoding="async" width="205" height="68" class="gb-image gb-image-ad9be9a2 icon-newsletter" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-mail.png" alt="" title="header-mail"/></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-6c02b05b"><img loading="lazy" loading="lazy" decoding="async" width="205" height="68" class="gb-image gb-image-6c02b05b icon-newsletter-hover" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-mail-hover.png" alt="" title="header-mail-hover"/></figure>
+
+</div>
+
+<div class="gb-container gb-container-ec135034 yide-image-swap-wrapper">
+
+<figure class="gb-block-image gb-block-image-a73bd7c1"><a href="#"><img loading="lazy" loading="lazy" decoding="async" width="67" height="67" class="gb-image gb-image-a73bd7c1 icon-search gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-search.png" alt="" title="header-search" data-gpmodal-trigger="gp-search"/></a></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-7ee459ab"><a href="#"><img loading="lazy" loading="lazy" decoding="async" width="68" height="68" class="gb-image gb-image-7ee459ab icon-search-hover gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/header-search-hover.png" alt="" title="header-search-hover" data-gpmodal-trigger="gp-search"/></a></figure>
+
+</div>
+</div>			</div>
+		</nav>
+		    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const textLogo = document.querySelector('#primary-menu .yide_site_logo');
+        const newLogo = ``;
+        textLogo.innerHTML = newLogo;
+    });
+    </script>
+    
+	<div class="site grid-container container hfeed" id="page">
+				<div class="site-content" id="content">
+			
+	<div class="content-area" id="primary">
+		<main class="site-main" id="main">
+			
+<article id="post-8137" class="post-8137 post type-post status-publish format-standard has-post-thumbnail hentry category-itri-spectrum tag-iek-consulting tag-28 tag-600 tag-1584 tag-164" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+					<header class="entry-header">
+				<h1 class="entry-title" itemprop="headline">以2030年台灣形貌 發掘未來發展契機</h1>		<div class="entry-meta">
+			<span class="posted-on"><time class="updated" datetime="2023-09-25T09:39:09+08:00" itemprop="dateModified">2023-09-25</time><time class="entry-date published" datetime="2019-05-24T09:30:10+08:00" itemprop="datePublished">2019-05-24</time></span> <span class="byline">&nbsp; <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="https://itritech.itri.org.tw/blog/author/huaichi/" title="檢視「張淮杞」的全部文章" rel="author" itemprop="url"><span class="author-name" itemprop="name">張淮杞</span></a></span></span> 		</div>
+					</header>
+			
+		<div class="entry-content" itemprop="text">
+			<p>藉由未來的社會形貌和發展變遷，不只能推演出即將面臨的環境變化與生活需求，並可思考如何運用創新科技因應未來生活型態。</p>
+<p>因此，對於未來世界形貌的推演和研判，就成為推動產業與科技持續邁進不可或缺的工作。工研院IEK Consulting透過「STEEP」（社會變遷、經濟發展、生態環境、產業科技、政經情勢）的分析和角度，從多項國際與國內的「線索」當中，試圖描繪2030年台灣的未來形貌，從中發掘值得關注的重要議題。</p>
+<figure id="attachment_8138" aria-describedby="caption-attachment-8138" style="width: 1014px" class="wp-caption aligncenter"><a href="https://itritech.itri.org.tw/?attachment_id=8138" rel="attachment wp-att-8138"><img loading="lazy" decoding="async" class="size-large wp-image-8138" src="https://itritech.itri.org.tw/wp-content/uploads/47840101_l-1024x456.jpg" alt="" width="1024" height="456" srcset="https://itritech.itri.org.tw/wp-content/uploads/47840101_l-1024x456.jpg 1024w, https://itritech.itri.org.tw/wp-content/uploads/47840101_l-300x134.jpg 300w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption id="caption-attachment-8138" class="wp-caption-text">未來世界形貌的推演和研判，是成為推動產業與科技持續邁進不可或缺的工作。</figcaption></figure>
+<p>人口數量與結構的變化就是影響未來形貌的首要因素。在資源運用方面，會受到全球人口增加、城市化等因素影響，例如未來數十年水資源的需求成長將是人口成長率的二倍。估計2030年全球平均每人可使用的水資源量將減少13％。</p>
+<p>人口高齡化與少子化也將帶來全面性衝擊。隨著未來人口增長，因高齡化與少子化帶來的效應也愈為明顯。以台灣來說，預估2022年前後人口就會呈現負成長，於2026年邁入超高齡社會，2036年高齡失智人口也將超過50萬人，因此健全的醫療照護與帶領民眾邁向健康樂活，成為必須妥善解決的問題。此外，少子化除了將直接導致進入高等教育的人數減少，更重要的是在教育模式上，還要能夠因應數位化的轉型，並朝問題導向發展、建立個性化學習環境，才能培養未來社會及產業所需要的人才。</p>
+<p>從經濟和產業觀點來看，預估2030年全球經濟雖仍有約2.5％成長率，中國大陸、印度等經濟體亦持續擴大，印尼、俄羅斯、巴西、墨西哥、土耳其等新興市場崛起，消費階級人口也不斷上升；但同時在高齡及少子化等人口結構的趨勢變化下，也將使得勞動力急遽減少。以台灣的勞動力為例，已在2013年的74.2％後逐年下降，預估在2030年，台灣的勞動人口占比僅約64％，屆時政府必須要提出擴大勞動供給，以及更有效的強化人才運用與專業技能等對策。</p>
+<p>此外，數位轉型將改變全球產業結構。隨著物聯網、人工智慧與區塊鏈等數位科技的創新和應用逐漸成熟，預料到2030年時，智慧化的科技將更加普及，將衝擊社會及產業甚深。產業不僅需要以數位化、自動化來提高效率、降低成本，更要藉此提升產品與服務的價值。因此，數位化轉型將成為不可避免的趨勢，以WEF世界經濟論壇推估，指出至2030年，全球數位轉型將產生120兆美元的價值。國際管理諮詢公司埃森哲（Accenture）也表示，至2030年全球數位經濟產值將達到28兆美元，占全球GDP的30％。</p>
+<p>在數位轉型的過程中，呼應了就業和教育的議題。像是在人工智慧的應用、或是人機協作的工作模式下，不只未來很多重覆性高的勞力工作將會被機器取代或消失，工作型態與價值也和過去有很大不同；甚至對台灣而言，從赴海外工作人數於2016年已超過72萬人，到2017年非典型工作人口已突破80萬人，都突顯出產業結構和就業環境的轉變，並反映出人才的技能與培育方式也必須要跟著轉型。</p>
+<figure id="attachment_8139" aria-describedby="caption-attachment-8139" style="width: 1014px" class="wp-caption aligncenter"><a href="https://itritech.itri.org.tw/?attachment_id=8139" rel="attachment wp-att-8139"><img loading="lazy" decoding="async" class="wp-image-8139 size-large" src="https://itritech.itri.org.tw/wp-content/uploads/54615117_l-1024x683.jpg" alt="" width="1024" height="683" srcset="https://itritech.itri.org.tw/wp-content/uploads/54615117_l-1024x683.jpg 1024w, https://itritech.itri.org.tw/wp-content/uploads/54615117_l-300x200.jpg 300w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption id="caption-attachment-8139" class="wp-caption-text">在數位轉型的過程中，也使得未來為提升教育服務效率，朝向數位教育。</figcaption></figure>
+<p>再者，全球經貿發展趨勢多變，對於以對外貿易為主要經濟活動的台灣，雖然進出口一直呈現出超狀況，資通電子等產品相當受到青睞，於東南亞等市場的開拓也有不錯成績；但以產品結構來看，仍多為「中間財」，系統或終端的產品的比例相對較低。加以當前的國際政經發展上，因政治而影響金融或經濟的情況愈來愈多，譬如美中貿易紛爭、英國脫歐等造成全球前景不明；還有反全球化、保守勢力逐漸抬頭等趨勢下，經濟中心也朝向「多核心」的分工型態，都將牽動著台灣的經濟發展方向。</p>
+<p>從未來形貌的描繪，可看出在人口變化、社會環境，或是產業發展、科技應用等面向中，台灣和全球都有許多關聯或相同趨勢；在不同議題之間，也多有串聯。例如，技術其及應用快速發展，人工智慧、區塊鏈、物聯網等在改變生活型態的同時，也使得產業正處於轉型與革新，對於未來科技人才的需求和養成，除了要考量人口結構及勞動市場的變動所造成的人才缺口外，對於需求端的新產業發展契機，更應預先儲備人才，以迎接新的市場商機。</p>
+<p>&nbsp;</p>
+<p>（本文經張淮杞同意授權轉載，刊登於工商時報－專家傳真《以2030年台灣形貌 發掘未來發展契機》）</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+		</div>
+
+		<div class="gb-container gb-container-0e4eb56d yide-article-end-cc">
+<div class="gb-container gb-container-00697155">
+
+<figure class="gb-block-image gb-block-image-7287f25e"><img decoding="async" class="gb-image gb-image-7287f25e" src="https://itritech.itri.org.tw/wp-content/uploads/2023/08/itech-logo-i.png" alt="" title="itech-logo-i"/></figure>
+
+</div>
+
+<div class="gb-container gb-container-e26ec855">
+
+<ul class="wp-block-list">
+<li>如需轉載、引用本篇文章，請先與我們連絡！</li>
+
+
+
+<li>每一個分享都是支持「工業技術研究院」持續創作的能量！感謝您！</li>
+
+
+
+<li>文章內容為作者個人觀點，不代表本站立場。</li>
+</ul>
+
+</div>
+</div>    <div class="yide-fb-comment">
+        <div id="yide-fb-comment-title"><span>發表意見</span><i id="yide-fb-arrow" class='bx bx-chevron-down'></i></div>
+    <div id="yide-fb-comment-widget" class="fb-comments yide-hide-fb-comment">
+        <div class="fb-comments" data-href="https://itritech.itri.org.tw/blog/2030-future-development/" data-width="100%" data-numposts="10" data-order-by="social" data-colorscheme="light"></div>
+        <!-- <img src="https://p217.p3.n0.cdn.getcloudapp.com/items/bLuZ4lEB/f72d252e-0143-4acc-bf40-5fb2a8a271a1.png?v=bfdf8a527b7b5b99aabf118a260ec417"> -->
+        </div>
+    </div>
+        <script>
+        const dropdownBtn = document.getElementById("yide-fb-comment-title");
+        const fbArrow = document.getElementById("yide-fb-arrow");
+        const fbComment = document.getElementById("yide-fb-comment-widget");
+        dropdownBtn.addEventListener('click', function () {
+            fbComment.classList.toggle("yide-show-fb-comment");
+            fbArrow.classList.toggle("yide-fb-arrow-up");
+        })
+    </script>
+    		<footer class="entry-meta" aria-label="Entry meta">
+			<span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" /></svg></span><span class="screen-reader-text">分類 </span><a href="https://itritech.itri.org.tw/blog/category/itri-spectrum/" rel="category tag">i創趨勢通</a></span> <span class="tags-links"><span class="gp-icon icon-tags"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M20 39.5c-8.836 0-16 7.163-16 16v176c0 4.243 1.686 8.313 4.687 11.314l224 224c6.248 6.248 16.378 6.248 22.626 0l176-176c6.244-6.244 6.25-16.364.013-22.615l-223.5-224A15.999 15.999 0 00196.5 39.5H20zm56 96c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24z"/><path d="M259.515 43.015c4.686-4.687 12.284-4.687 16.97 0l228 228c4.686 4.686 4.686 12.284 0 16.97l-180 180c-4.686 4.687-12.284 4.687-16.97 0-4.686-4.686-4.686-12.284 0-16.97L479.029 279.5 259.515 59.985c-4.686-4.686-4.686-12.284 0-16.97z" /></svg></span><span class="screen-reader-text">標籤 </span><a href="https://itritech.itri.org.tw/blog/tag/iek-consulting/" rel="tag">IEK Consulting</a>、<a href="https://itritech.itri.org.tw/blog/tag/%e4%ba%ba%e5%b7%a5%e6%99%ba%e6%85%a7/" rel="tag">人工智慧</a>、<a href="https://itritech.itri.org.tw/blog/tag/%e5%8d%80%e5%a1%8a%e9%8f%88/" rel="tag">區塊鏈</a>、<a href="https://itritech.itri.org.tw/blog/tag/%e6%95%b8%e4%bd%8d%e6%95%99%e8%82%b2/" rel="tag">數位教育</a>、<a href="https://itritech.itri.org.tw/blog/tag/%e7%89%a9%e8%81%af%e7%b6%b2/" rel="tag">物聯網</a></span> 		</footer>
+			</div>
+</article>
+<div class="gb-container gb-container-8f86a2e1" id="yide-related-post">
+
+<div class="gb-headline gb-headline-d8816ef3 gb-headline-text gb-headline-1252d5ed">延伸閱讀</div>
+
+
+
+<div class="gb-grid-wrapper gb-grid-wrapper-131fe7d4 gb-query-loop-wrapper">
+<div class="gb-grid-column gb-grid-column-209ed0d4 gb-query-loop-item post-20950 post type-post status-publish format-standard has-post-thumbnail hentry category-itri-spectrum tag-2891"><div class="gb-container gb-container-209ed0d4 yide-related-post-title">
+<div class="gb-headline gb-headline-9d0b0a0e yide-related-post-title-text"><span class="gb-icon"><svg aria-hidden="true" role="img" height="1em" width="1em" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg></span><span class="gb-headline-text"><a href="https://itritech.itri.org.tw/blog/itri-laureate_wei-ming-chen/">有「骨」氣、具溫情的骨腫瘤國際先驅</a></span></div>
+</div></div>
+
+<div class="gb-grid-column gb-grid-column-209ed0d4 gb-query-loop-item post-20947 post type-post status-publish format-standard has-post-thumbnail hentry category-itri-spectrum tag-2890"><div class="gb-container gb-container-209ed0d4 yide-related-post-title">
+<div class="gb-headline gb-headline-9d0b0a0e yide-related-post-title-text"><span class="gb-icon"><svg aria-hidden="true" role="img" height="1em" width="1em" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg></span><span class="gb-headline-text"><a href="https://itritech.itri.org.tw/blog/itri-laureate_realtek-alex/">以「真功夫」技術底氣　串起全球數位神經</a></span></div>
+</div></div>
+
+<div class="gb-grid-column gb-grid-column-209ed0d4 gb-query-loop-item post-20944 post type-post status-publish format-standard has-post-thumbnail hentry category-itri-spectrum tag-2889"><div class="gb-container gb-container-209ed0d4 yide-related-post-title">
+<div class="gb-headline gb-headline-9d0b0a0e yide-related-post-title-text"><span class="gb-icon"><svg aria-hidden="true" role="img" height="1em" width="1em" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg></span><span class="gb-headline-text"><a href="https://itritech.itri.org.tw/blog/itri-laureate_tsmc-chyn/">貫徹台積精神、建立產業標竿的關鍵推手</a></span></div>
+</div></div>
+</div>
+
+</div>
+
+<div class="gb-container gb-container-6078449e">
+
+<div class="gb-headline gb-headline-29cc122a gb-headline-text gb-headline-1252d5ed">關鍵標籤</div>
+
+
+<div class="yide-post-tags"><span class="yide-post-tag"><a href="https://itritech.itri.org.tw/blog/tag/iek-consulting/" rel="tag">IEK Consulting</a></span> <span class="yide-post-tag"><a href="https://itritech.itri.org.tw/blog/tag/%e4%ba%ba%e5%b7%a5%e6%99%ba%e6%85%a7/" rel="tag">人工智慧</a></span> <span class="yide-post-tag"><a href="https://itritech.itri.org.tw/blog/tag/%e5%8d%80%e5%a1%8a%e9%8f%88/" rel="tag">區塊鏈</a></span> <span class="yide-post-tag"><a href="https://itritech.itri.org.tw/blog/tag/%e6%95%b8%e4%bd%8d%e6%95%99%e8%82%b2/" rel="tag">數位教育</a></span> <span class="yide-post-tag"><a href="https://itritech.itri.org.tw/blog/tag/%e7%89%a9%e8%81%af%e7%b6%b2/" rel="tag">物聯網</a></span></div>
+
+</div>
+
+<div class="gb-container gb-container-3c1e0433 yide-cc-below-related-posts">
+
+<figure class="gb-block-image gb-block-image-2f653645"><img loading="lazy" decoding="async" width="186" height="67" class="gb-image gb-image-2f653645" src="https://itritech.itri.org.tw/wp-content/uploads/2023/09/footer-cc.png" alt="" title="footer-cc"/></figure>
+
+
+<div class="gb-container gb-container-0dc501b2">
+
+<div class="gb-headline gb-headline-7ab806e2 gb-headline-text">本著作由工研院製作，以創用CC姓名標示-非商業性</div>
+
+
+
+<div class="gb-headline gb-headline-593a3fcf gb-headline-text">禁止改作4.0國際授權條款釋出 。</div>
+
+</div>
+</div><div class="gb-container gb-container-c36272ff">
+<div class="gb-container gb-container-8c20f186 gb-container-30b21d41">
+
+<div class="gb-headline gb-headline-89c8cbd2 gb-headline-text gb-headline-1252d5ed">觀看更多</div>
+
+</div>
+</div>
+
+<div class="gb-container gb-container-22139b0e">
+<div class="gb-container gb-container-8cbee354 gb-container-30b21d41">
+<div class="gb-grid-wrapper gb-grid-wrapper-7bdd6853 yide-post-navigation">
+<div class="gb-grid-column gb-grid-column-82e46b45"><div class="gb-container gb-container-82e46b45">
+<div class="gb-container gb-container-4138dd74"><div class="gb-inside-container">
+<div class="gb-button-wrapper gb-button-wrapper-776ec4d6">
+
+<a class="gb-button gb-button-a3aaad4c" href="https://itritech.itri.org.tw/blog/southmarketing/"><span class="gb-icon"><svg aria-hidden="true" height="1em" width="1em" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg></span></a>
+
+</div>
+</div></div>
+
+<div class="gb-container gb-container-18430adf yide-post-navi-pre-container">
+
+<div class="gb-headline gb-headline-463f2ef7 gb-headline-text">PREVIOUS</div>
+
+
+
+<div class="gb-headline gb-headline-2acc62a4 gb-headline-text yide-post-navi-title yide-post-title-previous"><a href="https://itritech.itri.org.tw/blog/southmarketing/">台商經營南向交流 產業轉型創業機會多</a></div>
+
+</div>
+</div></div>
+
+<div class="gb-grid-column gb-grid-column-456c47e1"><div class="gb-container gb-container-456c47e1 yide-post-navigation-divider">
+
+<span class="gb-button gb-button-55cd2ceb gb-button-text"></span>
+
+
+
+<hr>
+
+</div></div>
+
+<div class="gb-grid-column gb-grid-column-d6f1e89c"><div class="gb-container gb-container-d6f1e89c">
+<div class="gb-container gb-container-ce9878f4 yide-post-navi-next-container">
+
+<div class="gb-headline gb-headline-771ba502 gb-headline-text">NEXT</div>
+
+
+
+<div class="gb-headline gb-headline-9d97a37f gb-headline-text yide-post-navi-title yide-post-title-next"><a href="https://itritech.itri.org.tw/blog/aisolveindustry/">AI有解?! 創群眾解題平台 將AI產業化</a></div>
+
+</div>
+
+<div class="gb-container gb-container-6c856070"><div class="gb-inside-container">
+<div class="gb-button-wrapper gb-button-wrapper-ad40b681">
+
+<a class="gb-button gb-button-139d60e4" href="https://itritech.itri.org.tw/blog/southmarketing/"><span class="gb-icon"><svg aria-hidden="true" height="1em" width="1em" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a>
+
+</div>
+</div></div>
+</div></div>
+</div>
+</div>
+</div>		<div class="wpulike wpulike-animated-heart yide-clapping-btn" ><div class="wp_ulike_general_class wp_ulike_is_not_liked"><button type="button"
+					aria-label="Like Button"
+					data-ulike-id="8137"
+					data-ulike-nonce="6d0bb1db1c"
+					data-ulike-type="post"
+					data-ulike-template="wpulike-animated-heart"
+					data-ulike-display-likers=""
+					data-ulike-likers-style="popover"
+					data-ulike-append="&lt;svg class=&quot;wpulike-svg-heart wpulike-svg-heart-pop one&quot; viewBox=&quot;0 0 32 29.6&quot;&gt;&lt;path d=&quot;M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z&quot;/&gt;&lt;/svg&gt;&lt;svg class=&quot;wpulike-svg-heart wpulike-svg-heart-pop two&quot; viewBox=&quot;0 0 32 29.6&quot;&gt;&lt;path d=&quot;M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z&quot;/&gt;&lt;/svg&gt;&lt;svg class=&quot;wpulike-svg-heart wpulike-svg-heart-pop three&quot; viewBox=&quot;0 0 32 29.6&quot;&gt;&lt;path d=&quot;M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z&quot;/&gt;&lt;/svg&gt;&lt;svg class=&quot;wpulike-svg-heart wpulike-svg-heart-pop four&quot; viewBox=&quot;0 0 32 29.6&quot;&gt;&lt;path d=&quot;M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z&quot;/&gt;&lt;/svg&gt;&lt;svg class=&quot;wpulike-svg-heart wpulike-svg-heart-pop five&quot; viewBox=&quot;0 0 32 29.6&quot;&gt;&lt;path d=&quot;M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z&quot;/&gt;&lt;/svg&gt;&lt;svg class=&quot;wpulike-svg-heart wpulike-svg-heart-pop six&quot; viewBox=&quot;0 0 32 29.6&quot;&gt;&lt;path d=&quot;M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z&quot;/&gt;&lt;/svg&gt;&lt;svg class=&quot;wpulike-svg-heart wpulike-svg-heart-pop seven&quot; viewBox=&quot;0 0 32 29.6&quot;&gt;&lt;path d=&quot;M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z&quot;/&gt;&lt;/svg&gt;&lt;svg class=&quot;wpulike-svg-heart wpulike-svg-heart-pop eight&quot; viewBox=&quot;0 0 32 29.6&quot;&gt;&lt;path d=&quot;M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z&quot;/&gt;&lt;/svg&gt;&lt;svg class=&quot;wpulike-svg-heart wpulike-svg-heart-pop nine&quot; viewBox=&quot;0 0 32 29.6&quot;&gt;&lt;path d=&quot;M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z&quot;/&gt;&lt;/svg&gt;"
+					class="wp_ulike_btn wp_ulike_put_image wp_post_btn_8137"><svg class="wpulike-svg-heart wpulike-svg-heart-icon" viewBox="0 -28 512.00002 512" xmlns="http://www.w3.org/2000/svg"><path
+						d="m471.382812 44.578125c-26.503906-28.746094-62.871093-44.578125-102.410156-44.578125-29.554687 0-56.621094 9.34375-80.449218 27.769531-12.023438 9.300781-22.917969 20.679688-32.523438 33.960938-9.601562-13.277344-20.5-24.660157-32.527344-33.960938-23.824218-18.425781-50.890625-27.769531-80.445312-27.769531-39.539063 0-75.910156 15.832031-102.414063 44.578125-26.1875 28.410156-40.613281 67.222656-40.613281 109.292969 0 43.300781 16.136719 82.9375 50.78125 124.742187 30.992188 37.394531 75.535156 75.355469 127.117188 119.3125 17.613281 15.011719 37.578124 32.027344 58.308593 50.152344 5.476563 4.796875 12.503907 7.4375 19.792969 7.4375 7.285156 0 14.316406-2.640625 19.785156-7.429687 20.730469-18.128907 40.707032-35.152344 58.328125-50.171876 51.574219-43.949218 96.117188-81.90625 127.109375-119.304687 34.644532-41.800781 50.777344-81.4375 50.777344-124.742187 0-42.066407-14.425781-80.878907-40.617188-109.289063zm0 0" /></svg></button><span class="count-box wp_ulike_counter_up" data-ulike-counter-value="0"></span>			</div></div>
+		<script>
+		const ulikeBtn = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M336 16V80c0 8.8-7.2 16-16 16s-16-7.2-16-16V16c0-8.8 7.2-16 16-16s16 7.2 16 16zm-98.7 7.1l32 48c4.9 7.4 2.9 17.3-4.4 22.2s-17.3 2.9-22.2-4.4l-32-48c-4.9-7.4-2.9-17.3 4.4-22.2s17.3-2.9 22.2 4.4zM135 119c9.4-9.4 24.6-9.4 33.9 0L292.7 242.7c10.1 10.1 27.3 2.9 27.3-11.3V192c0-17.7 14.3-32 32-32s32 14.3 32 32V345.6c0 57.1-30 110-78.9 139.4c-64 38.4-145.8 28.3-198.5-24.4L7 361c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l53 53c6.1 6.1 16 6.1 22.1 0s6.1-16 0-22.1L23 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l93 93c6.1 6.1 16 6.1 22.1 0s6.1-16 0-22.1L55 185c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l117 117c6.1 6.1 16 6.1 22.1 0s6.1-16 0-22.1l-93-93c-9.4-9.4-9.4-24.6 0-33.9zM433.1 484.9c-24.2 14.5-50.9 22.1-77.7 23.1c48.1-39.6 76.6-99 76.6-162.4l0-98.1c8.2-.1 16-6.4 16-16V192c0-17.7 14.3-32 32-32s32 14.3 32 32V345.6c0 57.1-30 110-78.9 139.4zM424.9 18.7c7.4 4.9 9.3 14.8 4.4 22.2l-32 48c-4.9 7.4-14.8 9.3-22.2 4.4s-9.3-14.8-4.4-22.2l32-48c4.9-7.4 14.8-9.3 22.2-4.4z"/></path></svg>'
+		const divElement = document.querySelector('.yide-clapping-btn.wpulike');
+		const buttonElement = divElement.querySelector('button');
+		buttonElement.innerHTML = ulikeBtn;
+		buttonElement.removeAttribute('data-ulike-append');
+	</script>
+			</main>
+	</div>
+
+	
+	</div>
+</div>
+
+
+<div class="site-footer">
+	<div class="gb-container gb-container-5c04acca gb-container-b26018b5">
+<div class="gb-container gb-container-2b452fbe gb-container-30b21d41" id="footer-section-1">
+<div class="gb-container gb-container-796b025b">
+
+<figure class="gb-block-image gb-block-image-fd399049"><img decoding="async" class="gb-image gb-image-fd399049" src="https://itritech.itri.org.tw/wp-content/uploads/2023/08/footer-logo.png" alt="" title="footer-logo"/></figure>
+
+</div>
+
+<div class="gb-container gb-container-7d7fe560">
+
+<div class="gb-headline gb-headline-6be69cdb gb-headline-text">在學術理論與終端應用，之間的知識空缺<br> 用最淺顯易懂的傳播方式，讓更多有志於<br> 創新創業的人能為這些知識找到更多應用</div>
+
+</div>
+
+<div class="gb-container gb-container-55f4372c">
+
+<div class="gb-headline gb-headline-c82e4e02 gb-headline-text" id="edmSubscription">歡迎追蹤與訂閱我們的最新內容</div>
+
+
+
+<div class="wpcf7 no-js" id="wpcf7-f515-o1" lang="zh-TW" dir="ltr" data-wpcf7-id="515">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/blog/2030-future-development/#wpcf7-f515-o1" method="post" class="wpcf7-form init" aria-label="聯絡表單" novalidate="novalidate" data-status="init">
+<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="515" /><input type="hidden" name="_wpcf7_version" value="6.1.7" /><input type="hidden" name="_wpcf7_locale" value="zh_TW" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f515-o1" /><input type="hidden" name="_wpcf7_container_post" value="0" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" /><input type="hidden" name="csrf_token" value="9f76d575bc" /><input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+</fieldset>
+<span class="wpcf7-form-control-wrap recaptcha" data-name="recaptcha"><span data-sitekey="6LekqZgsAAAAABgk19vPgx6P_Gr7ylfTdxU1Bzgq" data-align="center" class="wpcf7-form-control wpcf7-recaptcha g-recaptcha"></span>
+<noscript>
+	<div class="grecaptcha-noscript">
+		<iframe src="https://www.google.com/recaptcha/api/fallback?k=6LekqZgsAAAAABgk19vPgx6P_Gr7ylfTdxU1Bzgq" frameborder="0" scrolling="no" width="310" height="430">
+		</iframe>
+		<textarea name="g-recaptcha-response" rows="3" cols="40" placeholder="reCAPTCHA 的回應訊息">
+		</textarea>
+	</div>
+</noscript>
+</span>
+
+<div class="yide-edm-email"><span id="wpcf7-6ad280c71ad82-wrapper" class="wpcf7-form-control-wrap honeypot-499-wrap" style="display:none !important; visibility:hidden !important;"><label for="yide-edm-form" class="hp-message">請將這個欄位留空。</label><input id="yide-edm-form"  class="wpcf7-form-control wpcf7-text" type="text" name="honeypot-499" value="" size="40" tabindex="-1" autocomplete="new-password" /></span><span class="wpcf7-form-control-wrap" data-name="your-email"><input size="25" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="請輸入E-mail" value="" type="email" name="your-email" /></span><div class="yide-edm-submit"><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="立即訂閱" /></div></div><p style="display: none !important;" class="akismet-fields-container" data-prefix="_wpcf7_ak_"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="_wpcf7_ak_js" value="65"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+
+
+
+<div class="gb-container gb-container-85681244">
+<div class="gb-container gb-container-0e86d4b9 yide-image-swap-wrapper" id="facebook"><a class="gb-container-link" href="https://www.facebook.com/itri.tw/" rel="noopener noreferrer" target="_blank"></a>
+
+<figure class="gb-block-image gb-block-image-8651a4ef"><img decoding="async" class="gb-image gb-image-8651a4ef icon-facebook gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/08/footer-fb.png" alt="" title="footer-fb"/></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-174698b7"><img decoding="async" class="gb-image gb-image-174698b7 icon-facebook-hover gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/08/header-fb-hover.png" alt="" title="header-fb-hover."/></figure>
+
+</div>
+
+<div class="gb-container gb-container-cae774d1 yide-image-swap-wrapper" id="instagram"><a class="gb-container-link" href="https://www.instagram.com/itri_tech/" rel="noopener noreferrer" target="_blank"></a>
+
+<figure class="gb-block-image gb-block-image-fdae4382"><img decoding="async" class="gb-image gb-image-fdae4382 icon-instagram gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/08/footer-ig.png" alt="" title="footer-ig"/></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-bb9f7d51"><img decoding="async" class="gb-image gb-image-bb9f7d51 icon-instagram-hover gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/08/header-ig-hover.png" alt="" title="header-ig-hover"/></figure>
+
+</div>
+
+<div class="gb-container gb-container-6a1da3cd yide-image-swap-wrapper" id="youtube"><a class="gb-container-link" href="https://www.youtube.com/user/Nextgenerationtrend" rel="noopener noreferrer" target="_blank"></a>
+
+<figure class="gb-block-image gb-block-image-9a8594a5"><img decoding="async" class="gb-image gb-image-9a8594a5 icon-instagram gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/08/footer-yt.png" alt="" title="footer-yt"/></figure>
+
+
+
+<figure class="gb-block-image gb-block-image-ea34dcaf"><img decoding="async" class="gb-image gb-image-ea34dcaf icon-instagram-hover gb-image-8651a4ef" src="https://itritech.itri.org.tw/wp-content/uploads/2023/08/header-yt-hover.png" alt="" title="header-yt-hover"/></figure>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="gb-container gb-container-009d234c" id="footer-section-2">
+
+<div class="gb-headline gb-headline-3730c212 gb-headline-text">©ITRI. 工業技術研究院著作 l i創科技</div>
+
+
+
+<figure class="gb-block-image gb-block-image-d430d0e4"><img decoding="async" class="gb-image gb-image-d430d0e4" src="https://itritech.itri.org.tw/wp-content/uploads/2023/08/footer-cc.png" alt="" title="footer-cc"/></figure>
+
+</div>
+</div></div>
+
+		<nav id="generate-slideout-menu" class="main-navigation slideout-navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation grid-container grid-parent">
+				<div class="main-nav"><ul id="menu-%e4%b8%bb%e9%81%b8%e5%96%ae2023-2" class=" slideout-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-15695"><a href="https://itritech.itri.org.tw/">首頁</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15636"><a href="#">創主題<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-15639"><a href="https://itritech.itri.org.tw/blog/category/itri-spectrum/">i創趨勢通</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15638"><a href="https://itritech.itri.org.tw/blog/category/itri-correspondent/">i創特派員</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15637"><a href="https://itritech.itri.org.tw/blog/category/itri-perspectives/">i創專家講</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15930"><a href="#">創影音<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15932"><a href="https://itritech.itri.org.tw/blog/category/%e5%89%b5%e5%bd%b1%e9%9f%b3/%e4%b8%80%e8%b5%b7%e6%92%a9%e7%a7%91%e6%8a%80/">一起撩科技</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15931"><a href="https://itritech.itri.org.tw/blog/category/%e5%89%b5%e5%bd%b1%e9%9f%b3/technology-programme/">科技哪裡趣</a></li>
+</ul>
+</li>
+<li class="yide_site_logo menu-item menu-item-type-custom menu-item-object-custom menu-item-15641"><a href="/">i創Logo</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15642"><a href="https://itritech.itri.org.tw/blog/category/%e8%aa%aa%e7%a7%91%e6%8a%80/">說科技</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15643"><a href="https://itritech.itri.org.tw/contactus/">關於我們</a></li>
+</ul></div>			</div><!-- .inside-navigation -->
+		</nav><!-- #site-navigation -->
+
+					<div class="slideout-overlay">
+									<button class="slideout-exit has-svg-icon">
+						<span class="gp-icon pro-close">
+				<svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+					<path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+				</svg>
+			</span>						<span class="screen-reader-text">Close</span>
+					</button>
+							</div>
+			<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/generatepress_child\/*","\/wp-content\/themes\/generatepress\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+        <script type='text/javascript'>
+        function preloadImages(selector) {
+  const elements = document.querySelectorAll(selector);
+  elements.forEach(element => {
+    const img = element.querySelector('img');
+    if (img) {
+      const imgSrc = img.getAttribute('src');
+      const preloadImg = new Image();
+      preloadImg.src = imgSrc;
+    }
+  });
+}
+// Call the preloadImages function with your complex CSS selector
+preloadImages('.yide-image-swap-wrapper .gb-block-image:nth-of-type(2)');
+preloadImages('.yide-image-swap-wrapper img');
+preloadImages('img.lazyloaded');
+
+
+function preloadImageUrl(img_url) {
+  let img = new Image();
+  img.src = img_url;
+}
+preloadImageUrl("/wp-content/uploads/2023/09/video-slider-prev-hover-hq.png");
+
+        </script>
+
+    <script id="generate-a11y">!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("mousedown",function(){e.classList.add("using-mouse")}),e.addEventListener("keydown",function(){e.classList.remove("using-mouse")})}}();</script>	<div class="gp-modal gp-search-modal" id="gp-search">
+		<div class="gp-modal__overlay" tabindex="-1" data-gpmodal-close>
+			<div class="gp-modal__container">
+					<form role="search" method="get" class="search-modal-form" action="https://itritech.itri.org.tw/">
+		<label for="search-modal-input" class="screen-reader-text">搜尋:</label>
+		<div class="search-modal-fields">
+			<input id="search-modal-input" type="search" class="search-field" placeholder="搜尋..." value="" name="s" />
+			<button aria-label="搜尋"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path fill-rule="evenodd" clip-rule="evenodd" d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" /></svg></span></button>
+		</div>
+			</form>
+				</div>
+		</div>
+	</div>
+				<script type='text/javascript'>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script id="generate-offside-js-extra">
+var offSide = {"side":"left"};
+</script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/gp-premium/menu-plus/functions/js/offside.min.js?ver=2.4.1" id="generate-offside-js"></script>
+<script src="https://itritech.itri.org.tw/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="https://itritech.itri.org.tw/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.7" id="swv-js"></script>
+<script id="contact-form-7-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-12-02 18:51:57+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"zh_TW"},"This contact form is placed in the wrong place.":["\u9019\u4efd\u806f\u7d61\u8868\u55ae\u653e\u5728\u932f\u8aa4\u7684\u4f4d\u7f6e\u3002"],"Error:":["\u932f\u8aa4:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+</script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/itritech.itri.org.tw\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+</script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.7" id="contact-form-7-js"></script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/fitvids-for-wordpress/jquery.fitvids.js?ver=1.1" id="fitvids-js"></script>
+<script id="wp_ulike-js-extra">
+var wp_ulike_params = {"ajax_url":"https:\/\/itritech.itri.org.tw\/wp-admin\/admin-ajax.php","notifications":"0"};
+</script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/wp-ulike/assets/js/wp-ulike.min.js?ver=4.7.6" id="wp_ulike-js"></script>
+<script id="ppress-frontend-script-js-extra">
+var pp_ajax_form = {"ajaxurl":"https:\/\/itritech.itri.org.tw\/wp-admin\/admin-ajax.php","confirm_delete":"Are you sure?","deleting_text":"Deleting...","deleting_error":"An error occurred. Please try again.","nonce":"69d2aec9e7","disable_ajax_form":"false","is_checkout":"0","is_checkout_tax_enabled":"0","is_checkout_autoscroll_enabled":"true"};
+</script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=4.15.18" id="ppress-frontend-script-js"></script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-contact-form-7-tracker.js?ver=1.20.2" id="gtm4wp-contact-form-7-tracker-js"></script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-form-move-tracker.js?ver=1.20.2" id="gtm4wp-form-move-tracker-js"></script>
+<!--[if lte IE 11]>
+<script src="https://itritech.itri.org.tw/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.5.1" id="generate-classlist-js"></script>
+<![endif]-->
+<script id="generate-menu-js-extra">
+var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"\u958b\u555f\u5b50\u9078\u55ae","closeSubMenuLabel":"\u95dc\u9589\u5b50\u9078\u55ae"};
+</script>
+<script src="https://itritech.itri.org.tw/wp-content/themes/generatepress/assets/js/menu.min.js?ver=3.5.1" id="generate-menu-js"></script>
+<script src="https://itritech.itri.org.tw/wp-content/themes/generatepress/assets/dist/modal.js?ver=3.5.1" id="generate-modal-js"></script>
+<script src="https://itritech.itri.org.tw/wp-content/plugins/wpcf7-recaptcha/assets/js/wpcf7-recaptcha-controls.js?ver=1.2" id="wpcf7-recaptcha-controls-js"></script>
+<script id="google-recaptcha-js-extra">
+var wpcf7iqfix = {"recaptcha_empty":"\u8acb\u8b49\u660e\u4f60\u4e0d\u662f\u6a5f\u5668\u4eba\u3002","response_err":"wpcf7-recaptcha: \u7121\u6cd5\u9a57\u8b49 reCAPTCHA \u56de\u61c9\u3002"};
+</script>
+<script src="https://www.google.com/recaptcha/api.js?hl=zh_TW&amp;onload=recaptchaCallback&amp;render=explicit&amp;ver=2.0" id="google-recaptcha-js"></script>
+<script defer src="https://itritech.itri.org.tw/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1788933635" id="akismet-frontend-js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function () {
+			jQuery('body').fitVids();
+		});
+		</script>
+</body>
+</html>

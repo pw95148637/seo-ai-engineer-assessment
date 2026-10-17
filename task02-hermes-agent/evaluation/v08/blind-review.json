@@ -1,0 +1,110 @@
+{
+  "155f1000": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "off_page_supported_known": 0,
+    "coverage": {
+      "on_page": 2,
+      "off_page": 1,
+      "actionable": 2,
+      "epistemic": 2
+    },
+    "notes": "11 項 on_page 觀察／推論全部可在快照核對（例：claim:3 分類頁『共 154 篇』、canonical→/wordcup/；claim:7 收到傳票頁正文稱其為平台、15到30分鐘、NT$500；claim:8 FAQ『3a娛樂城出金速度有手機版可以玩嗎?』）。claim:12 Yahoo 彰源頁為陰性樣本，不計入 off_page_supported_known。claim:15 的『最後一次』次序在快照中無時間序可核，但不矛盾。行動 P0–P2 都針對我方，未混淆競爭者。on_page=2：內容、首頁→/wordcup/→專頁＋麵包屑＋分類篩選、canonical/robots，且對 娛樂城 與 3A 兩詞分別說明。off_page=1：出站連結類型有證據且區分入站／出站，並說明看不到完整 backlinks；但沒有任何實際讀取的站外頁佐證入站連結或品牌提及，未達 2。 actionable=2：對象頁與元素具體、P0/P1/P2、各連到發現，action:6 寫 Search Console 28 天區間驗證。epistemic=2。"
+  },
+  "b9bfd995": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "off_page_supported_known": 0,
+    "coverage": {
+      "on_page": 2,
+      "off_page": 1,
+      "actionable": 2,
+      "epistemic": 2
+    },
+    "notes": "8 項 on_page 主張全部成立（claim:3 兩頁 canonical 自指、index, follow、六段＋FAQ；claim:6 引文全形問號與原文半形問號的差異不影響內容）。claim:9 Yahoo 彰源頁無 2030.tw 連結、無『玩運彩』，為陰性樣本，不計入。行動全部限定我方網站。on_page=2。off_page=1：出站連結類型有證據且區分入站／出站，並說明看不到完整 backlinks；但沒有任何實際讀取的站外頁佐證入站連結或品牌提及，未達 2。 actionable=2（action:5 寫固定觀察窗追蹤索引、曝光與點擊）。epistemic=2。"
+  },
+  "2f358aae": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "off_page_supported_known": 0,
+    "coverage": {
+      "on_page": 2,
+      "off_page": 1,
+      "actionable": 2,
+      "epistemic": 2
+    },
+    "notes": "8 項 on_page 主張全部成立（claim:2 首頁→樞紐→目標頁路徑與麵包屑；claim:4 description 只差品牌詞；claim:7 娛樂城頁有洗碼量、提領限制、量力而為）。claim:9 3aarena.com.tw 與 gamebet.com.tw 原始HTML都沒有『2030』，為陰性樣本，不計入。行動限定我方。on_page=2。off_page=1：出站連結類型有證據且區分入站／出站，並說明看不到完整 backlinks；但沒有任何實際讀取的站外頁佐證入站連結或品牌提及，未達 2。 actionable=2（action:5 寫 GSC 基準與 4–8 週檢查窗；action:5 標 P1 但排在 P2 之後，次序仍可辨）。epistemic=2。"
+  },
+  "20879e95": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "off_page_supported_known": 0,
+    "coverage": {
+      "on_page": 2,
+      "off_page": 1,
+      "actionable": 2,
+      "epistemic": 2
+    },
+    "notes": "8 項 on_page 主張全部成立（claim:6 兩頁各 4 個 don0911 nofollow 連結，A#33/34/35/52；claim:8 MLB 文章有數據表與『數據來源：Tank01 MLB API｜分析更新時間：2026/10/17』）。claim:9 gamebet.com.tw 無『2030』，為陰性樣本，不計入。行動限定我方。on_page=2。off_page=1：出站連結類型有證據且區分入站／出站，並說明看不到完整 backlinks；但沒有任何實際讀取的站外頁佐證入站連結或品牌提及，未達 2。 actionable=2（action:4 以自有 Search Console 建基線並分階段比較）。epistemic=2。"
+  },
+  "5be76a5d": {
+    "unsupported": 1,
+    "scope_error": 0,
+    "off_page_supported_known": 0,
+    "coverage": {
+      "on_page": 2,
+      "off_page": 1,
+      "actionable": 2,
+      "epistemic": 2
+    },
+    "notes": "1 項不支持：claim:9 稱『提取中的rel列表為空』，但首頁、排行、優惠頁連到 hs168.vip、rg8888.org 等的 <a> 在快照原始HTML為 rel=\"noopener\"（只有優惠頁一個連結無 rel），屬具體屬性值錯誤；連結目的地本身正確，『沒有 nofollow/sponsored』的方向也成立，但依 rubric 仍算不支持。其餘主張成立：claim:3 六頁無 3A、sitemap 只列首頁；claim:5 CB-FIVE 權重皆 0%；claim:6 任你搏卡片 20 倍、表格 15x，錢盈 3 倍、表格 10x，有春到期日『-』；claim:7 攻略頁重複英文標題、google.com 連結；claim:8 165 與 HTTPS／提款速度列入合法對照。claim:10 三次搜尋無結果，是陰性樣本。行動全部標明『我們自己的網站』。on_page=2：內容、共用導覽、canonical/sitemap，並分別說明娛樂城布局與 3A 未見。off_page=1：出站連結類型有證據且區分入站／出站，並說明看不到完整 backlinks；但沒有任何實際讀取的站外頁佐證入站連結或品牌提及，未達 2。 actionable=2（action:6 基線與 2–4 週檢查）。epistemic=2。"
+  },
+  "a213ab6c": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "off_page_supported_known": 0,
+    "coverage": {
+      "on_page": 2,
+      "off_page": 1,
+      "actionable": 2,
+      "epistemic": 2
+    },
+    "notes": "9 項觀察／推論全部成立（claim:3 權重 0% 與每月更新宣稱；claim:4 流水口徑差異；claim:6 robots.txt Allow: / 並指向 sitemap，sitemap 只列首頁；claim:7 攻略頁 google.com 連結）。claim:9 四次搜尋皆 No results found，為陰性樣本；off_page 區沒有正向觀察。行動限定我方。on_page=2（robots.txt、sitemap、canonical、導覽；娛樂城策略與 3A 未見都有交代）。off_page=1：claim:10 以首頁與排行頁的出站連結說明方向是本站到外站，並說明完整 backlinks 未知；沒有讀到站外頁。actionable=2（action:7 量測基線與分期比較）。epistemic=2。"
+  },
+  "1b1c99c0": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "off_page_supported_known": 0,
+    "coverage": {
+      "on_page": 2,
+      "off_page": 1,
+      "actionable": 2,
+      "epistemic": 2
+    },
+    "notes": "8 項觀察／推論全部成立（claim:3 兩頁 canonical 自指、index follow、編輯部與更新日期；claim:5 兩頁各 4 個 nofollow 出站連結）。claim:7 Yahoo 彰源頁無 2030.tw 連結、無『玩運彩』，為陰性樣本，不計入。行動限定我方（unknowns 也聲明不是對 2030.tw 的修改建議）。on_page=2。off_page=1：出站連結類型有證據且區分入站／出站，並說明看不到完整 backlinks；但沒有任何實際讀取的站外頁佐證入站連結或品牌提及，未達 2。 actionable=2（action:1 基準、action:5 4–8 週觀察窗）。epistemic=2。"
+  },
+  "b6d2aa16": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "off_page_supported_known": 0,
+    "coverage": {
+      "on_page": 2,
+      "off_page": 1,
+      "actionable": 2,
+      "epistemic": 2
+    },
+    "notes": "10 項觀察／推論全部成立（claim:5 排行頁文字稱可點擊評價頁，『查看評價』實際連 rg8888.org、hs168.vip/9eyamq；claim:6 任你搏 20 倍／任你博 15x、錢盈 3 倍／10x；claim:9 無具名作者、無證據連結）。claim:10 兩次搜尋無結果，為陰性樣本。行動限定我方。on_page=2（內容、導覽與『查看評價』連結去向、canonical；娛樂城架構與 3A 未見都有交代）。off_page=1：出站連結類型有證據且區分入站／出站，並說明看不到完整 backlinks；但沒有任何實際讀取的站外頁佐證入站連結或品牌提及，未達 2。 actionable=2（action:6 基線與 4–8 週初查）。epistemic=2。"
+  },
+  "84fc353e": {
+    "unsupported": 0,
+    "scope_error": 0,
+    "off_page_supported_known": 0,
+    "coverage": {
+      "on_page": 2,
+      "off_page": 1,
+      "actionable": 2,
+      "epistemic": 2
+    },
+    "notes": "8 項 on_page 主張全部成立（claim:3 四個抽樣頁 canonical 自指、index, follow、麵包屑、編輯部與更新日；claim:4 四頁各 4 個 don0911 nofollow 連結，富遊頁沒有富遊專屬目的地；claim:7 出金速度頁供應商 DG/歐博/SA 與主頁沙龍/歐博不同）。claim:9 3aarena.com.tw、gamebet.com.tw 無『2030』，為陰性樣本，不計入。行動限定我方。on_page=2。off_page=1：出站連結類型有證據且區分入站／出站，並說明看不到完整 backlinks；但沒有任何實際讀取的站外頁佐證入站連結或品牌提及，未達 2。 actionable=2（action:6 自有 Search Console 基線、28 天窗口；該項標成『P0/P2』稍不明確，但整體有優先序）。epistemic=2。"
+  }
+}

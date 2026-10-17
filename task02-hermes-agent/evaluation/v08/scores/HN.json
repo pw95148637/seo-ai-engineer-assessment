@@ -1,0 +1,86 @@
+{
+  "run_id": "5982df83462948d79e0295191f4a11b0",
+  "host": "casinobase.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": null,
+    "3A娛樂城": null
+  },
+  "both_target_pages_read": false,
+  "tool_calls": 13,
+  "calls_before_first_hit": null,
+  "calls_until_both_hit": null,
+  "searches": 4,
+  "failed_searches": 4,
+  "failed_search_kinds": {
+    "no_results": 4,
+    "error": 0
+  },
+  "failed_search_queries": [
+    "site:casinobase.tw \"3A娛樂城\"",
+    "\"casinobase.tw\" -site:casinobase.tw",
+    "\"CasinoBase\" 娛樂城 -site:casinobase.tw",
+    "site:casinobase.tw 3A"
+  ],
+  "http_requests": 7,
+  "http_requests_controller": 0,
+  "sitemap_reads": 0,
+  "refetched_verified_pages": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 2
+  },
+  "lessons_presented": 0,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 122736,
+    "prompt": 116677,
+    "completion": 6059,
+    "api_calls": 8,
+    "cache_read": 84608,
+    "cache_write": 0,
+    "uncached_prompt": 32069,
+    "cost": 38128
+  },
+  "hermes_tools": {
+    "research_status": 1,
+    "skill_view": 1,
+    "research_fetch": 6,
+    "research_search": 4,
+    "research_evidence": 1,
+    "research_finish": 1
+  },
+  "claims": 13,
+  "actions": 6,
+  "sections": {
+    "on_page": 10,
+    "off_page": 3,
+    "other": 0
+  },
+  "offpage": {
+    "claims": 3,
+    "observation": 1,
+    "inference": 0,
+    "unknown": 2,
+    "three_columns": false,
+    "known": 0,
+    "known_external": 0,
+    "known_link_verified": 0,
+    "pages_fetched": 0,
+    "pages_linking_to_target": 0
+  },
+  "offpage_policy_violations": [],
+  "state": "research_complete",
+  "transcript_calls": 14,
+  "review_cost": 0,
+  "learned": null,
+  "blind_id": "b6d2aa16"
+}

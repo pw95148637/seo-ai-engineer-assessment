@@ -1,0 +1,1 @@
+{"success": false, "error": "DuckDuckGo search timed out after 30s — DuckDuckGo may be rate-limiting or slow. Try again later or switch to a different search provider."}

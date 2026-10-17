@@ -1,0 +1,893 @@
+{
+  "control_band": {
+    "pages": [
+      2,
+      2
+    ],
+    "calls": [
+      8,
+      9
+    ],
+    "cost": [
+      50956,
+      63792
+    ],
+    "cost_learning": [
+      50956,
+      63792
+    ]
+  },
+  "control_quality_width": 2,
+  "control_drift": {
+    "C1": {
+      "pages": 2,
+      "calls": 9,
+      "cost": 63792
+    },
+    "C5": {
+      "pages": 2,
+      "calls": 8,
+      "cost": 50960
+    },
+    "quality": "equal"
+  },
+  "native_learning_sessions": {
+    "learned": 6,
+    "sessions": 6,
+    "operating": true
+  },
+  "ledger_learning": {
+    "verdict": "improved",
+    "failure": {
+      "F1": false,
+      "F2": false,
+      "F3": false,
+      "F4": false,
+      "F5": false,
+      "F6": false,
+      "H1": false,
+      "H2": false,
+      "H3": false,
+      "H4": false
+    },
+    "dimensions": {
+      "self": {
+        "pages": "equal",
+        "calls": "better",
+        "cost": "equal",
+        "quality": "equal"
+      },
+      "control": {
+        "pages": "equal",
+        "calls": "better",
+        "cost": "equal",
+        "quality": "equal"
+      }
+    },
+    "holdout": "run"
+  },
+  "native_learning": {
+    "verdict": "regression",
+    "failure": {
+      "F1": false,
+      "F2": true,
+      "F3": false,
+      "F4": false,
+      "F5": false,
+      "F6": false,
+      "H1": false,
+      "H2": false,
+      "H3": false,
+      "H4": false
+    },
+    "dimensions": {
+      "self": {
+        "pages": "equal",
+        "calls": "equal",
+        "cost": "worse",
+        "quality": "equal"
+      },
+      "control": {
+        "pages": "equal",
+        "calls": "equal",
+        "cost": "worse",
+        "quality": "equal"
+      }
+    },
+    "holdout": "run",
+    "learned_sessions": {
+      "learned": 6,
+      "sessions": 6
+    }
+  },
+  "native_vs_ledger": {
+    "verdict": "ledger_better",
+    "dimensions": {
+      "pages": "equal",
+      "calls": "worse",
+      "cost": "worse",
+      "cost_learning": "worse",
+      "quality": "equal",
+      "holdout_harm": "equal",
+      "learned_contamination": "equal",
+      "learned_errors": "equal"
+    }
+  },
+  "learned": {
+    "native": {
+      "verdict": "clean",
+      "counts": {
+        "items": 19,
+        "classifiable": 19,
+        "errors": 0,
+        "error_share": 0.0,
+        "contamination": 0,
+        "from_web_text": 0,
+        "types": {
+          "environment_fact": 0,
+          "research_method": 17,
+          "site_finding": 0,
+          "review_standard": 1,
+          "other": 1
+        },
+        "correctness": {
+          "supported": 19,
+          "overgeneralized": 0,
+          "wrong": 0,
+          "unverifiable": 0
+        }
+      }
+    },
+    "ledger": {
+      "verdict": "clean",
+      "counts": {
+        "items": 3,
+        "classifiable": 3,
+        "errors": 0,
+        "error_share": 0.0,
+        "contamination": 0,
+        "from_web_text": 0,
+        "types": {
+          "environment_fact": 2,
+          "research_method": 0,
+          "site_finding": 0,
+          "review_standard": 1,
+          "other": 0
+        },
+        "correctness": {
+          "supported": 3,
+          "overgeneralized": 0,
+          "wrong": 0,
+          "unverifiable": 0
+        }
+      }
+    }
+  },
+  "formal": {
+    "formal_result": "v0.8",
+    "decided_utc": "2026-10-16T20:15:39.387075+00:00",
+    "round5_settled_utc": "2026-10-16T20:06:56.700368+00:00",
+    "round5_deadline": "2026-10-17T18:00:00+08:00",
+    "score_deadline": "2026-10-17T22:00:00+08:00"
+  },
+  "formal_result": "v0.8",
+  "holdout_state": "run",
+  "series": {
+    "control": [
+      {
+        "round": 1,
+        "pages": 2,
+        "calls": 9,
+        "cost": 63792,
+        "cost_learning": 63792,
+        "total": 204208,
+        "learned": null,
+        "defects": 0,
+        "coverage": 7,
+        "report": true
+      },
+      {
+        "round": 2,
+        "pages": 2,
+        "calls": 9,
+        "cost": 55721,
+        "cost_learning": 55721,
+        "total": 224681,
+        "learned": null,
+        "defects": null,
+        "coverage": null,
+        "report": true
+      },
+      {
+        "round": 3,
+        "pages": 2,
+        "calls": 8,
+        "cost": 50956,
+        "cost_learning": 50956,
+        "total": 179724,
+        "learned": null,
+        "defects": null,
+        "coverage": null,
+        "report": true
+      },
+      {
+        "round": 4,
+        "pages": 2,
+        "calls": 8,
+        "cost": 60368,
+        "cost_learning": 60368,
+        "total": 192208,
+        "learned": null,
+        "defects": null,
+        "coverage": null,
+        "report": true
+      },
+      {
+        "round": 5,
+        "pages": 2,
+        "calls": 8,
+        "cost": 50960,
+        "cost_learning": 50960,
+        "total": 139408,
+        "learned": null,
+        "defects": 0,
+        "coverage": 7,
+        "report": true
+      }
+    ],
+    "ledger": [
+      {
+        "round": 1,
+        "pages": 2,
+        "calls": 8,
+        "cost": 59227,
+        "cost_learning": 59227,
+        "total": 164315,
+        "learned": null,
+        "defects": 0,
+        "coverage": 7,
+        "report": true
+      },
+      {
+        "round": 2,
+        "pages": 2,
+        "calls": 1,
+        "cost": 54424,
+        "cost_learning": 54424,
+        "total": 252440,
+        "learned": null,
+        "defects": null,
+        "coverage": null,
+        "report": true
+      },
+      {
+        "round": 3,
+        "pages": 2,
+        "calls": 1,
+        "cost": 47150,
+        "cost_learning": 47150,
+        "total": 149294,
+        "learned": null,
+        "defects": null,
+        "coverage": null,
+        "report": true
+      },
+      {
+        "round": 4,
+        "pages": 2,
+        "calls": 1,
+        "cost": 44081,
+        "cost_learning": 44081,
+        "total": 209329,
+        "learned": null,
+        "defects": null,
+        "coverage": null,
+        "report": true
+      },
+      {
+        "round": 5,
+        "pages": 2,
+        "calls": 1,
+        "cost": 54368,
+        "cost_learning": 54368,
+        "total": 178528,
+        "learned": null,
+        "defects": 0,
+        "coverage": 7,
+        "report": true
+      }
+    ],
+    "native": [
+      {
+        "round": 1,
+        "pages": 2,
+        "calls": 7,
+        "cost": 63285,
+        "cost_learning": 71991,
+        "total": 244021,
+        "learned": true,
+        "defects": 0,
+        "coverage": 7,
+        "report": true
+      },
+      {
+        "round": 2,
+        "pages": 2,
+        "calls": 9,
+        "cost": 80770,
+        "cost_learning": 87933,
+        "total": 239874,
+        "learned": true,
+        "defects": null,
+        "coverage": null,
+        "report": true
+      },
+      {
+        "round": 3,
+        "pages": 2,
+        "calls": 8,
+        "cost": 73416,
+        "cost_learning": 80173,
+        "total": 242888,
+        "learned": true,
+        "defects": null,
+        "coverage": null,
+        "report": true
+      },
+      {
+        "round": 4,
+        "pages": 2,
+        "calls": 9,
+        "cost": 82225,
+        "cost_learning": 89268,
+        "total": 266545,
+        "learned": true,
+        "defects": null,
+        "coverage": null,
+        "report": true
+      },
+      {
+        "round": 5,
+        "pages": 2,
+        "calls": 9,
+        "cost": 82543,
+        "cost_learning": 89513,
+        "total": 267375,
+        "learned": true,
+        "defects": 0,
+        "coverage": 7,
+        "report": true
+      }
+    ]
+  },
+  "invalid_arms": [],
+  "encoding_errors": 0,
+  "abandoned": [],
+  "skipped": [],
+  "not_run": [],
+  "native_sessions": {
+    "sessions": [
+      {
+        "step": "N1",
+        "attempt": 1,
+        "state": "research_complete",
+        "settled": true,
+        "learned": true,
+        "review_completed": true,
+        "review_result": "skill",
+        "review_usage": {
+          "api_calls": 4,
+          "input": 6699,
+          "output": 2007,
+          "cache_read": 235136
+        }
+      },
+      {
+        "step": "NF",
+        "attempt": 1,
+        "state": "feedback_complete",
+        "settled": true,
+        "learned": true,
+        "review_completed": true,
+        "review_result": "skill",
+        "review_usage": {
+          "api_calls": 3,
+          "input": 12635,
+          "output": 263,
+          "cache_read": 13696
+        }
+      },
+      {
+        "step": "N2",
+        "attempt": 1,
+        "state": "research_complete",
+        "settled": true,
+        "learned": true,
+        "review_completed": true,
+        "review_result": "skill",
+        "review_usage": {
+          "api_calls": 3,
+          "input": 6429,
+          "output": 734,
+          "cache_read": 206848
+        }
+      },
+      {
+        "step": "N3",
+        "attempt": 1,
+        "state": "research_complete",
+        "settled": true,
+        "learned": true,
+        "review_completed": true,
+        "review_result": "skill",
+        "review_usage": {
+          "api_calls": 3,
+          "input": 6140,
+          "output": 617,
+          "cache_read": 207104
+        }
+      },
+      {
+        "step": "N4",
+        "attempt": 1,
+        "state": "research_complete",
+        "settled": true,
+        "learned": true,
+        "review_completed": true,
+        "review_result": "skill",
+        "review_usage": {
+          "api_calls": 3,
+          "input": 6484,
+          "output": 559,
+          "cache_read": 231552
+        }
+      },
+      {
+        "step": "N5",
+        "attempt": 1,
+        "state": "research_complete",
+        "settled": true,
+        "learned": true,
+        "review_completed": true,
+        "review_result": "skill",
+        "review_usage": {
+          "api_calls": 3,
+          "input": 6431,
+          "output": 539,
+          "cache_read": 232448
+        }
+      }
+    ],
+    "review_totals": {
+      "api_calls": 19,
+      "input": 44818,
+      "output": 4719,
+      "cache_read": 1126784
+    },
+    "review_cost": 49537,
+    "frozen": {
+      "frozen_digest": "96243e87181c0bb70300fdcd3e4844a5ac2c14a3e89bb59bbe3d45ef46a09f7a",
+      "files": 2,
+      "memory_entries": 0,
+      "skill_files": 1
+    }
+  },
+  "ledger_store": {
+    "active_lessons": 3
+  },
+  "metrics": {
+    "C1": {
+      "report": true,
+      "pages": 2,
+      "calls": 9,
+      "cost": 63792,
+      "cost_learning": 63792,
+      "total": 204208,
+      "target_pages": {
+        "娛樂城": {
+          "call": 11,
+          "evidence_id": "d79230fa4b8d442e8035bca004adc44d",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 10,
+          "evidence_id": "2fe1686831ac4cd98588815fc1cfa9d8",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "learned": null,
+      "defects": 0,
+      "coverage": 7
+    },
+    "L1": {
+      "report": true,
+      "pages": 2,
+      "calls": 8,
+      "cost": 59227,
+      "cost_learning": 59227,
+      "total": 164315,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "d148a4f4306f462987c058c8d36e0c0b",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "b3543e98c3d5425b813ba2b4832c5b00",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "learned": null,
+      "defects": 0,
+      "coverage": 7
+    },
+    "N1": {
+      "report": true,
+      "pages": 2,
+      "calls": 7,
+      "cost": 63285,
+      "cost_learning": 71991,
+      "total": 244021,
+      "target_pages": {
+        "娛樂城": {
+          "call": 9,
+          "evidence_id": "2f717ec8c0fc4f73af7c328fd3123cbb",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 8,
+          "evidence_id": "4fef17e18567472dbeeafdb05adb3fe4",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "learned": true,
+      "defects": 0,
+      "coverage": 7
+    },
+    "C2": {
+      "report": true,
+      "pages": 2,
+      "calls": 9,
+      "cost": 55721,
+      "cost_learning": 55721,
+      "total": 224681,
+      "target_pages": {
+        "娛樂城": {
+          "call": 11,
+          "evidence_id": "369b12b2383e4706ac4d31fb91ba7537",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 10,
+          "evidence_id": "e3d25a5dc5184682ae81a97d929c4b92",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "learned": null,
+      "defects": null,
+      "coverage": null
+    },
+    "L2": {
+      "report": true,
+      "pages": 2,
+      "calls": 1,
+      "cost": 54424,
+      "cost_learning": 54424,
+      "total": 252440,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "1ae5682b4734477d9f8522a086e28f1a",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "0c115ae575c3460394dfba061452a7dd",
+          "via": "research_evidence"
+        }
+      },
+      "learned": null,
+      "defects": null,
+      "coverage": null
+    },
+    "N2": {
+      "report": true,
+      "pages": 2,
+      "calls": 9,
+      "cost": 80770,
+      "cost_learning": 87933,
+      "total": 239874,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "e47a5e9c6e944857adb8c2e24f63fb70",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "5e3872b20baa4348aa4b4045390a03f0",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "learned": true,
+      "defects": null,
+      "coverage": null
+    },
+    "C3": {
+      "report": true,
+      "pages": 2,
+      "calls": 8,
+      "cost": 50956,
+      "cost_learning": 50956,
+      "total": 179724,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "3901c5afc7c742a194eb5b64b8262c55",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "57d6abb95d2f49eb9aa4c0aa7269b702",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "learned": null,
+      "defects": null,
+      "coverage": null
+    },
+    "L3": {
+      "report": true,
+      "pages": 2,
+      "calls": 1,
+      "cost": 47150,
+      "cost_learning": 47150,
+      "total": 149294,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "1a8c02b322ce408e881ade04b23fc64f",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "640fdf3235514b4e9cbc5b62fe70c949",
+          "via": "research_evidence"
+        }
+      },
+      "learned": null,
+      "defects": null,
+      "coverage": null
+    },
+    "N3": {
+      "report": true,
+      "pages": 2,
+      "calls": 8,
+      "cost": 73416,
+      "cost_learning": 80173,
+      "total": 242888,
+      "target_pages": {
+        "娛樂城": {
+          "call": 9,
+          "evidence_id": "69b7c45fb48241fa89c5e7c53e89782b",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 8,
+          "evidence_id": "d50fd1ee369041118d6090ac16ff2be4",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "learned": true,
+      "defects": null,
+      "coverage": null
+    },
+    "C4": {
+      "report": true,
+      "pages": 2,
+      "calls": 8,
+      "cost": 60368,
+      "cost_learning": 60368,
+      "total": 192208,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "fad1700ef65f4e87827008a314385c8d",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "07895d98177a4d368e996c0511b3a241",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "learned": null,
+      "defects": null,
+      "coverage": null
+    },
+    "L4": {
+      "report": true,
+      "pages": 2,
+      "calls": 1,
+      "cost": 44081,
+      "cost_learning": 44081,
+      "total": 209329,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "95037454f0c240ad9c8efb842a03f34b",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "15f34d9734e94cb6af3658c34fa5559a",
+          "via": "research_evidence"
+        }
+      },
+      "learned": null,
+      "defects": null,
+      "coverage": null
+    },
+    "N4": {
+      "report": true,
+      "pages": 2,
+      "calls": 9,
+      "cost": 82225,
+      "cost_learning": 89268,
+      "total": 266545,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "42c448140f6f41f2bcd38120c2c5ac97",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "4d6e692b9400424d9f977f0ae2318695",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "learned": true,
+      "defects": null,
+      "coverage": null
+    },
+    "C5": {
+      "report": true,
+      "pages": 2,
+      "calls": 8,
+      "cost": 50960,
+      "cost_learning": 50960,
+      "total": 139408,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "62598b3bc9fd401b87a6b901970b3940",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "ac40b44e28da44579f7bcd498bbb3ed5",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "learned": null,
+      "defects": 0,
+      "coverage": 7
+    },
+    "L5": {
+      "report": true,
+      "pages": 2,
+      "calls": 1,
+      "cost": 54368,
+      "cost_learning": 54368,
+      "total": 178528,
+      "target_pages": {
+        "娛樂城": {
+          "call": 3,
+          "evidence_id": "db55111bf3bc4f99a48f9b59e8a0ca7a",
+          "via": "research_evidence"
+        },
+        "3A娛樂城": {
+          "call": 2,
+          "evidence_id": "ad974c9841f4424ca0ab148f69e6c5e9",
+          "via": "research_evidence"
+        }
+      },
+      "learned": null,
+      "defects": 0,
+      "coverage": 7
+    },
+    "N5": {
+      "report": true,
+      "pages": 2,
+      "calls": 9,
+      "cost": 82543,
+      "cost_learning": 89513,
+      "total": 267375,
+      "target_pages": {
+        "娛樂城": {
+          "call": 10,
+          "evidence_id": "5cdda89b6fd64a1c9e1ac9dd6f822e5f",
+          "url": "https://2030.tw/wordcup/%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        },
+        "3A娛樂城": {
+          "call": 9,
+          "evidence_id": "944fe0adbe744cb3ad4f6ce0ad811f71",
+          "url": "https://2030.tw/wordcup/3a%E5%A8%9B%E6%A8%82%E5%9F%8E",
+          "via": "research_fetch"
+        }
+      },
+      "learned": true,
+      "defects": 0,
+      "coverage": 7
+    },
+    "HN": {
+      "report": true,
+      "pages": 0,
+      "calls": 14,
+      "cost": 38128,
+      "cost_learning": 38128,
+      "total": 122736,
+      "target_pages": {
+        "娛樂城": null,
+        "3A娛樂城": null
+      },
+      "learned": null,
+      "defects": 0,
+      "coverage": 7
+    },
+    "HC": {
+      "report": true,
+      "pages": 0,
+      "calls": 14,
+      "cost": 39052,
+      "cost_learning": 39052,
+      "total": 115724,
+      "target_pages": {
+        "娛樂城": null,
+        "3A娛樂城": null
+      },
+      "learned": null,
+      "defects": 1,
+      "coverage": 7
+    },
+    "HL": {
+      "report": true,
+      "pages": 0,
+      "calls": 16,
+      "cost": 36371,
+      "cost_learning": 36371,
+      "total": 133779,
+      "target_pages": {
+        "娛樂城": null,
+        "3A娛樂城": null
+      },
+      "learned": null,
+      "defects": 0,
+      "coverage": 7
+    }
+  },
+  "time": "2026-10-16T20:28:43.207556+00:00"
+}

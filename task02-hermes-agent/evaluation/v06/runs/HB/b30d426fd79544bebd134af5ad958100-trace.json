@@ -1,0 +1,440 @@
+[
+  {
+    "id": 1,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "start",
+    "data": "{\"mode\": \"baseline\", \"target\": \"https://icasino.tw\", \"keywords\": [\"娛樂城\", \"3A娛樂城\"], \"limits\": {\"requests\": 30, \"calls\": 40, \"bytes\": 2000000, \"seconds\": 900, \"timeout\": 20, \"interval\": 2, \"redirects\": 3}, \"learning\": false}"
+  },
+  {
+    "id": 2,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_status\", \"args\": {}}"
+  },
+  {
+    "id": 3,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "lessons_presented",
+    "data": "{\"time\": \"2026-10-16T05:36:03.248598+00:00\", \"lessons\": []}"
+  },
+  {
+    "id": 4,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://icasino.tw\", \"purpose\": \"驗證首頁是否以娛樂城泛詞及3A娛樂城品牌詞布局，辨認實際標題、內容、站內連結與可反駁內容導流假設的證據。\"}}"
+  },
+  {
+    "id": 5,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/robots.txt\", \"number\": 1, \"actor\": \"model\"}"
+  },
+  {
+    "id": 6,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"bc8197712afd48679748fd0ea26e9cd3\", \"url\": \"https://icasino.tw/robots.txt\", \"status\": 200, \"sha256\": \"3d7558faaf6d45580e37d50b2d3ea639aef0fb12364c7a299381184632e91599\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:36:11.998223+00:00\", \"headers\": {\"content-type\": \"text/plain; charset=utf-8\", \"last-modified\": \"Fri, 16 Oct 2026 05:35:34 GMT\"}}"
+  },
+  {
+    "id": 7,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/\", \"number\": 2, \"actor\": \"model\"}"
+  },
+  {
+    "id": 8,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"563c88dde8fd408a97e5ce887818e738\", \"url\": \"https://icasino.tw/\", \"status\": 200, \"sha256\": \"f0032e8212d7bfcb032886009bb1ceda8225e177f5a3fa4696f28f57419724d3\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:36:14.324904+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Fri, 16 Oct 2026 00:16:12 GMT\"}}"
+  },
+  {
+    "id": 9,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"563c88dde8fd408a97e5ce887818e738\", \"kind\": \"html\", \"links_count\": 145, \"purpose\": \"驗證首頁是否以娛樂城泛詞及3A娛樂城品牌詞布局，辨認實際標題、內容、站內連結與可反駁內容導流假設的證據。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 10,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"site:icasino.tw \\\"娛樂城\\\" \\\"3A\\\"\"}}"
+  },
+  {
+    "id": 11,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "search_request",
+    "data": "{\"query\": \"site:icasino.tw \\\"娛樂城\\\" \\\"3A\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 1}"
+  },
+  {
+    "id": 12,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"87b574b386c8465bbc017be756e3346c\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-16T05:36:19.369515+00:00\", \"query\": \"site:icasino.tw \\\"娛樂城\\\" \\\"3A\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 0, \"outcome\": \"no_results\"}"
+  },
+  {
+    "id": 13,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"3A娛樂城\\\"\"}}"
+  },
+  {
+    "id": 14,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"3A娛樂城\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 2}"
+  },
+  {
+    "id": 15,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"dc04862f27bd41ebb25b23b697faa007\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-16T05:36:21.838383+00:00\", \"query\": \"\\\"3A娛樂城\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 5, \"outcome\": \"ok\"}"
+  },
+  {
+    "id": 16,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://icasino.tw/taiwan-famous-casinos/\", \"purpose\": \"查驗首頁指向的幣商風險頁是否實際涵蓋3A娛樂城，確認品牌詞頁面角色與是否導向其他平台，而非假設存在3A專頁。\"}}"
+  },
+  {
+    "id": 17,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/taiwan-famous-casinos/\", \"number\": 3, \"actor\": \"model\"}"
+  },
+  {
+    "id": 18,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"f03ded9ddcf5402e8d1ef915a5009284\", \"url\": \"https://icasino.tw/taiwan-famous-casinos/\", \"status\": 200, \"sha256\": \"60f9aa105202f80655764bd5b16b8d79be6246cce8740cdbecb20f4ce0eddb6b\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:36:29.015472+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Thu, 15 Oct 2026 19:40:44 GMT\"}}"
+  },
+  {
+    "id": 19,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"f03ded9ddcf5402e8d1ef915a5009284\", \"kind\": \"html\", \"links_count\": 113, \"purpose\": \"查驗首頁指向的幣商風險頁是否實際涵蓋3A娛樂城，確認品牌詞頁面角色與是否導向其他平台，而非假設存在3A專頁。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 20,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://icasino.tw/how-we-rate/\", \"purpose\": \"查核首頁自稱實測與獨立評分的具體方法、證據和商業揭露，尋找可反駁『只有宣傳沒有方法』的材料。\"}}"
+  },
+  {
+    "id": 21,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/how-we-rate/\", \"number\": 4, \"actor\": \"model\"}"
+  },
+  {
+    "id": 22,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"7a35816c76634fb1bc5221a8e57ed63e\", \"url\": \"https://icasino.tw/how-we-rate/\", \"status\": 200, \"sha256\": \"349aaab6befbc88ba170bc31327d82f13607e54d8582a8cf75a81906c5c8eecd\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:36:31.521156+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Thu, 15 Oct 2026 20:35:52 GMT\"}}"
+  },
+  {
+    "id": 23,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"7a35816c76634fb1bc5221a8e57ed63e\", \"kind\": \"html\", \"links_count\": 100, \"purpose\": \"查核首頁自稱實測與獨立評分的具體方法、證據和商業揭露，尋找可反駁『只有宣傳沒有方法』的材料。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 24,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://icasino.tw/reviews/lybobet/\", \"purpose\": \"查核單篇評測的獨特實測證據及最低儲值150元是否與首頁50元一致，測試內容品質而非以頁數推斷。\"}}"
+  },
+  {
+    "id": 25,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/reviews/lybobet/\", \"number\": 5, \"actor\": \"model\"}"
+  },
+  {
+    "id": 26,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"a5c09c67cfad4da7828b0f26811a518a\", \"url\": \"https://icasino.tw/reviews/lybobet/\", \"status\": 200, \"sha256\": \"5c618eb6d382bcb2b859fad0cf4759fc8ed54d7ca07d81d97e4b522aac3289ae\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:36:33.724555+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Fri, 16 Oct 2026 03:38:55 GMT\"}}"
+  },
+  {
+    "id": 27,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"a5c09c67cfad4da7828b0f26811a518a\", \"kind\": \"html\", \"links_count\": 122, \"purpose\": \"查核單篇評測的獨特實測證據及最低儲值150元是否與首頁50元一致，測試內容品質而非以頁數推斷。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 28,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"site:icasino.tw 3A\"}}"
+  },
+  {
+    "id": 29,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "search_request",
+    "data": "{\"query\": \"site:icasino.tw 3A\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 3}"
+  },
+  {
+    "id": 30,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"79e1e8a8695b4c5ab3ee9985e8c58203\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-16T05:36:36.439561+00:00\", \"query\": \"site:icasino.tw 3A\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 5, \"outcome\": \"ok\"}"
+  },
+  {
+    "id": 31,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"娛樂城\"}}"
+  },
+  {
+    "id": 32,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "search_request",
+    "data": "{\"query\": \"娛樂城\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 4}"
+  },
+  {
+    "id": 33,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"010f408ae8384a3dacfd852335db1ff8\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-16T05:36:40.769430+00:00\", \"query\": \"娛樂城\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 5, \"outcome\": \"ok\"}"
+  },
+  {
+    "id": 34,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://icasino.tw/games/towerrush/\", \"purpose\": \"驗證索引中的3A娛樂城提及究竟是專門品牌評測、參考來源還是導流，找反例修正品牌詞策略假設。\"}}"
+  },
+  {
+    "id": 35,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/games/towerrush/\", \"number\": 6, \"actor\": \"model\"}"
+  },
+  {
+    "id": 36,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"04836ef339d04c99b152fa530dcea454\", \"url\": \"https://icasino.tw/games/towerrush/\", \"status\": 200, \"sha256\": \"06467fee6b23e82f83a8cd1c874ec86745fc24612681b59554fc4b9eb0ef3aeb\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:36:54.618408+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Fri, 16 Oct 2026 05:36:53 GMT\"}}"
+  },
+  {
+    "id": 37,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"04836ef339d04c99b152fa530dcea454\", \"kind\": \"html\", \"links_count\": 121, \"purpose\": \"驗證索引中的3A娛樂城提及究竟是專門品牌評測、參考來源還是導流，找反例修正品牌詞策略假設。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 38,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://icasino.tw/comparison/\", \"purpose\": \"驗證泛詞搜尋返回的比較頁是否與首頁功能重疊、是否區分不能兌現的娛樂用途及提供差異化決策資訊；不將索引位置視為固定排名。\"}}"
+  },
+  {
+    "id": 39,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/comparison/\", \"number\": 7, \"actor\": \"model\"}"
+  },
+  {
+    "id": 40,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"46d78be91ab24810a5a089c2d7a8e0fd\", \"url\": \"https://icasino.tw/comparison/\", \"status\": 200, \"sha256\": \"d8a04ed1db7564b2438ad9b674ac4719303d783d11426d0973ca5a7b71b16afd\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:36:55.135109+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Fri, 16 Oct 2026 04:05:36 GMT\"}}"
+  },
+  {
+    "id": 41,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"46d78be91ab24810a5a089c2d7a8e0fd\", \"kind\": \"html\", \"links_count\": 131, \"purpose\": \"驗證泛詞搜尋返回的比較頁是否與首頁功能重疊、是否區分不能兌現的娛樂用途及提供差異化決策資訊；不將索引位置視為固定排名。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 42,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://icasino.tw/line-casino-video-reviews/\", \"purpose\": \"查驗實測影片入口是否提供具體影像或紀錄索引，反駁或支持只有自述實測而無佐證的假設；不跨host抓取影片。\"}}"
+  },
+  {
+    "id": 43,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/line-casino-video-reviews/\", \"number\": 8, \"actor\": \"model\"}"
+  },
+  {
+    "id": 44,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"77f322a638b54354ac9db0479446fd76\", \"url\": \"https://icasino.tw/line-casino-video-reviews/\", \"status\": 200, \"sha256\": \"743618c2d9e13b7a2db1a497272147eab267c043900ab1ee07d427ce3a9fb43c\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:36:58.595969+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Fri, 16 Oct 2026 05:36:56 GMT\"}}"
+  },
+  {
+    "id": 45,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"77f322a638b54354ac9db0479446fd76\", \"kind\": \"html\", \"links_count\": 121, \"purpose\": \"查驗實測影片入口是否提供具體影像或紀錄索引，反駁或支持只有自述實測而無佐證的假設；不跨host抓取影片。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 46,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://icasino.tw/robots.txt\", \"purpose\": \"查核公開爬蟲規則與sitemap入口，評估可見抓取限制而非推斷Google實際收錄。\"}}"
+  },
+  {
+    "id": 47,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/robots.txt\", \"number\": 9, \"actor\": \"model\"}"
+  },
+  {
+    "id": 48,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"a0095ed1ced24138962983f3f3c18832\", \"url\": \"https://icasino.tw/robots.txt\", \"status\": 200, \"sha256\": \"3d7558faaf6d45580e37d50b2d3ea639aef0fb12364c7a299381184632e91599\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:36:59.225961+00:00\", \"headers\": {\"content-type\": \"text/plain; charset=utf-8\", \"last-modified\": \"Fri, 16 Oct 2026 05:35:34 GMT\"}}"
+  },
+  {
+    "id": 49,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"a0095ed1ced24138962983f3f3c18832\", \"kind\": \"text\", \"links_count\": 0, \"purpose\": \"查核公開爬蟲規則與sitemap入口，評估可見抓取限制而非推斷Google實際收錄。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 50,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"site:icasino.tw \\\"3A娛樂城\\\"\"}}"
+  },
+  {
+    "id": 51,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "search_request",
+    "data": "{\"query\": \"site:icasino.tw \\\"3A娛樂城\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 5}"
+  },
+  {
+    "id": 52,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"fde6b7744a814a7f993bb5d338d68cde\", \"status\": 503, \"method\": \"search_index\", \"time\": \"2026-10-16T05:37:02.817380+00:00\", \"query\": \"site:icasino.tw \\\"3A娛樂城\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 0, \"outcome\": \"no_results\"}"
+  },
+  {
+    "id": 53,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_evidence\", \"args\": {\"evidence_id\": \"04836ef339d04c99b152fa530dcea454\", \"query\": \"3A\"}}"
+  },
+  {
+    "id": 54,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"purpose\": \"從robots揭露的sitemap尋找可驗證的站內URL清單，檢驗是否漏掉3A品牌頁；清單存在不代表全部收錄或品質良好。\", \"url\": \"https://icasino.tw/sitemap_index.xml\"}}"
+  },
+  {
+    "id": 55,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/sitemap_index.xml\", \"number\": 10, \"actor\": \"model\"}"
+  },
+  {
+    "id": 56,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"90347222559244a69b9b0cd2e77a63da\", \"url\": \"https://icasino.tw/sitemap_index.xml\", \"status\": 200, \"sha256\": \"04bfa686f0892af26ee8760877b5418b841b4df82c5b22a0bfeeae847ba1540a\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:37:12.649976+00:00\", \"headers\": {\"content-type\": \"text/xml; charset=UTF-8\"}}"
+  },
+  {
+    "id": 57,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"90347222559244a69b9b0cd2e77a63da\", \"kind\": \"sitemap\", \"links_count\": 149, \"purpose\": \"從robots揭露的sitemap尋找可驗證的站內URL清單，檢驗是否漏掉3A品牌頁；清單存在不代表全部收錄或品質良好。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 58,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_evidence\", \"args\": {\"evidence_id\": \"a5c09c67cfad4da7828b0f26811a518a\", \"query\": \"Q6\"}}"
+  },
+  {
+    "id": 59,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_evidence\", \"args\": {\"evidence_id\": \"46d78be91ab24810a5a089c2d7a8e0fd\", \"query\": \"以下依綜合評分\"}}"
+  },
+  {
+    "id": 60,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"purpose\": \"抽查評測URL清單是否有3A品牌專頁，限定結論於此清單，不把未見等同全站不存在。\", \"url\": \"https://icasino.tw/reviews-sitemap.xml\"}}"
+  },
+  {
+    "id": 61,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/reviews-sitemap.xml\", \"number\": 11, \"actor\": \"model\"}"
+  },
+  {
+    "id": 62,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"80d8e5d1f4674ca29308bdd2b086f951\", \"url\": \"https://icasino.tw/reviews-sitemap.xml\", \"status\": 200, \"sha256\": \"e334b8add476fcb8716a275c7acd2e60e32980fe8a85969c125e8cf41f7e348c\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:37:20.953771+00:00\", \"headers\": {\"content-type\": \"text/xml; charset=UTF-8\"}}"
+  },
+  {
+    "id": 63,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"80d8e5d1f4674ca29308bdd2b086f951\", \"kind\": \"sitemap\", \"links_count\": 21, \"purpose\": \"抽查評測URL清單是否有3A品牌專頁，限定結論於此清單，不把未見等同全站不存在。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 64,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"purpose\": \"抽查固定頁URL清單中的3A或娛樂城主題入口，交叉檢驗首頁以外是否有品牌詞落地頁。\", \"url\": \"https://icasino.tw/page-sitemap.xml\"}}"
+  },
+  {
+    "id": 65,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/page-sitemap.xml\", \"number\": 12, \"actor\": \"model\"}"
+  },
+  {
+    "id": 66,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"f0beed804f274874bc8ffce2b5f57135\", \"url\": \"https://icasino.tw/page-sitemap.xml\", \"status\": 200, \"sha256\": \"98cb938c3119293b7b73cab0f023dff75c8cd7b2853c2d4c07e4e37588c79e7d\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:37:22.712305+00:00\", \"headers\": {\"content-type\": \"text/xml; charset=UTF-8\"}}"
+  },
+  {
+    "id": 67,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"f0beed804f274874bc8ffce2b5f57135\", \"kind\": \"sitemap\", \"links_count\": 17, \"purpose\": \"抽查固定頁URL清單中的3A或娛樂城主題入口，交叉檢驗首頁以外是否有品牌詞落地頁。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 68,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"purpose\": \"抽查文章URL清單是否另有3A相關文章，補強品牌覆蓋範圍的限制判斷。\", \"url\": \"https://icasino.tw/post-sitemap.xml\"}}"
+  },
+  {
+    "id": 69,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "request",
+    "data": "{\"url\": \"https://icasino.tw/post-sitemap.xml\", \"number\": 13, \"actor\": \"model\"}"
+  },
+  {
+    "id": 70,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"1bb7eee1c72346f39f5f1eeee721b769\", \"url\": \"https://icasino.tw/post-sitemap.xml\", \"status\": 200, \"sha256\": \"a72c228de449b0b56e4246ca3ffa0c39a82d768ffa45f93af64a11af4fd7e2cd\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T05:37:25.293656+00:00\", \"headers\": {\"content-type\": \"text/xml; charset=UTF-8\"}}"
+  },
+  {
+    "id": 71,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"1bb7eee1c72346f39f5f1eeee721b769\", \"kind\": \"sitemap\", \"links_count\": 23, \"purpose\": \"抽查文章URL清單是否另有3A相關文章，補強品牌覆蓋範圍的限制判斷。\", \"actor\": \"model\"}"
+  },
+  {
+    "id": 72,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_finish\", \"args\": {\"report\": {\"claims\": [{\"text\": \"首頁title與H1明確聚焦2026 LINE娛樂城推薦與評測，包含排行榜、評測入口、比較頁、遊戲指南與帶推廣參數的出站連結，並揭露可能獲得推廣佣金。\", \"kind\": \"observation\", \"evidence_ids\": [\"563c88dde8fd408a97e5ce887818e738\"], \"topic\": \"strategy\"}, {\"text\": \"公開頁面支持『LINE娛樂城推薦入口—多角度比較—個別品牌評測—註冊導流』的內容與商業架構推論；不支持此架構已帶來特定流量或轉換。\", \"kind\": \"inference\", \"evidence_ids\": [\"563c88dde8fd408a97e5ce887818e738\", \"46d78be91ab24810a5a089c2d7a8e0fd\", \"a5c09c67cfad4da7828b0f26811a518a\"], \"topic\": \"strategy\"}, {\"text\": \"泛詞『娛樂城』的本輪公開搜尋返回icasino.tw/comparison/；同批摘要同時有出金比較、直接遊戲平台及LINE平台。這只是單次索引線索，不能稱為Google台灣固定排名。\", \"kind\": \"observation\", \"evidence_ids\": [\"010f408ae8384a3dacfd852335db1ff8\"], \"topic\": \"search_intent\"}, {\"text\": \"3A娛樂城搜尋摘要出現多個以3A命名的網域及社群帳號；未直接抓取這些站外頁，不能認定哪個為官方或其安全性。\", \"kind\": \"observation\", \"evidence_ids\": [\"dc04862f27bd41ebb25b23b697faa007\"], \"topic\": \"brand\"}, {\"text\": \"Tower Rush原頁在參考來源的『中文資訊與玩家評測』段落列出『333 AAA 部落格 - 3A 娛樂城塔樓衝刺實測攻略』出站網址。此為來源引用，不是本站3A品牌評測或證實的合作關係。\", \"kind\": \"observation\", \"evidence_ids\": [\"04836ef339d04c99b152fa530dcea454\"], \"topic\": \"brand\"}, {\"text\": \"抽查的reviews、page與post三份sitemap網址清單未見可辨識的3A專頁；這些是URL清單而非所有頁面全文，且未遍查games等分區，不能斷言全站不存在3A內容。\", \"kind\": \"observation\", \"evidence_ids\": [\"80d8e5d1f4674ca29308bdd2b086f951\", \"f0beed804f274874bc8ffce2b5f57135\", \"1bb7eee1c72346f39f5f1eeee721b769\"], \"topic\": \"brand\"}, {\"text\": \"競爭者有評測方法頁，列五步流程與五項權重；來博評測列測試日期、截圖說明、客服等待與入帳時間，FAQ明說最低50元來自平台揭露，實際測150元且未完整測50元流程。因此50與150並非矛盾，也不宜稱其只有空泛宣傳；原始影像真實性和測量方法仍未獨立核驗。\", \"kind\": \"observation\", \"evidence_ids\": [\"7a35816c76634fb1bc5221a8e57ed63e\", \"a5c09c67cfad4da7828b0f26811a518a\"], \"topic\": \"quality_counterevidence\"}, {\"text\": \"影片合輯頁宣稱收錄不剪輯的Vimeo實測影片並採點擊載入，連往各評測；本輪僅讀文字與連結，未播放，不能證實影片內容、不剪輯或效能改善。\", \"kind\": \"observation\", \"evidence_ids\": [\"77f322a638b54354ac9db0479446fd76\"], \"topic\": \"quality_counterevidence\"}, {\"text\": \"比較頁明稱依綜合評分排序，首位河神、鈔有感在超吉爆之後；首頁稱綜合評等由高至低排列卻把鈔有感置首。比較頁FAQ亦要求最新名次以首頁為準，故可判為不同頁排序未一致，但不能證明操控或欺騙。\", \"kind\": \"observation\", \"evidence_ids\": [\"46d78be91ab24810a5a089c2d7a8e0fd\", \"563c88dde8fd408a97e5ce887818e738\"], \"topic\": \"quality\"}, {\"text\": \"對自家網站而言，可追溯的來源、測試邊界、統一比較資料及更新紀錄，比複製『權威／安全』形容詞更值得優先評估；此為基於競爭者證據形式及跨頁排序差異的競爭假設，非排名提升保證。\", \"kind\": \"inference\", \"evidence_ids\": [\"7a35816c76634fb1bc5221a8e57ed63e\", \"a5c09c67cfad4da7828b0f26811a518a\", \"46d78be91ab24810a5a089c2d7a8e0fd\", \"563c88dde8fd408a97e5ce887818e738\"], \"topic\": \"opportunity\"}, {\"text\": \"robots.txt公開限制wp-admin並允許admin-ajax，提供sitemap入口；已抽查HTML頁回傳200並有自指canonical與index設定。這只支持樣本的基礎可抓取條件，不能證明全站索引、CWV、結構化資料或不存在技術問題。\", \"kind\": \"observation\", \"evidence_ids\": [\"a0095ed1ced24138962983f3f3c18832\", \"90347222559244a69b9b0cd2e77a63da\", \"563c88dde8fd408a97e5ce887818e738\", \"46d78be91ab24810a5a089c2d7a8e0fd\"], \"topic\": \"technical\"}, {\"text\": \"sitemap索引有多個games分片，首頁也提供廣泛遊戲與知識連結，支持有遊戲長尾內容架構的推論；分片或連結多本身不能證明頁面品質、自然流量或SEO優勢。\", \"kind\": \"inference\", \"evidence_ids\": [\"90347222559244a69b9b0cd2e77a63da\", \"563c88dde8fd408a97e5ce887818e738\"], \"topic\": \"content_scope\"}, {\"text\": \"本輪精確site搜尋3A娛樂城回報無結果錯誤；不可用此失敗結果推斷競爭者沒有3A內容。\", \"kind\": \"observation\", \"evidence_ids\": [\"fde6b7744a814a7f993bb5d338d68cde\"], \"topic\": \"access\"}, {\"text\": \"競爭者流量、轉換、完整backlinks、連結權重、固定排名及自家網站現況均未知；出站參考連結不等於對方完整入站連結資料。\", \"kind\": \"unknown\", \"evidence_ids\": [], \"topic\": \"limitations\"}], \"actions\": [{\"action\": \"P0｜先對自家網站建立查詢—頁面基線與合規閘門：盤點娛樂城、LINE娛樂城、3A及延伸詞的既有頁面；如有授權，只使用自家GSC與分析資料評估曝光、點擊、落地頁和有效互動。成本低至中。\", \"reason\": \"尚無自家網站資料，不應先斷言缺頁或推薦新建頁。將不可換現娛樂與出金意圖分開；品牌身分與法律主張須獨立核實。驗收為頁面對應表、基線與可公開證據清單，不設定虛構流量目標。\"}, {\"action\": \"P1｜有足夠來源且符合自家定位時，先小規模建立或更新一個中立3A查核頁，標示非官方、來源日期、網域歧義、營運身分、條款與申訴證據；未核實項目明寫未知，不給安全或出金保證。成本中。\", \"reason\": \"目前icasino.tw對3A的已驗證線索只是遊戲文參考引用，不能宣稱其已佔據品牌詞；公開摘要中的多網域也使身分查核具差異化價值。驗收為每項核心主張可追溯、沒有冒充官方或未證實詐騙指控。\"}, {\"action\": \"P1｜自家娛樂城主題頁及比較頁採證據型比較：統一資料來源、測試與官方宣稱分欄、記錄裝置／時段／樣本及版本日期，榜單從單一資料來源生成；加入適用與不適用情境。成本中。\", \"reason\": \"競爭者已有方法與測試邊界揭露，普通排行榜不足以差異化；跨頁排序差異提供資料一致性的改善機會。驗收為各頁數值、排序及更新版本一致，可由原始紀錄追溯。\"}, {\"action\": \"P2｜以少量主題群試驗而非大量擴頁：主題總覽連至比較頁、個別查核頁和相關遊戲／風險解釋，錨文字描述真實內容；先審自家既有頁，避免同意圖重複新建。成本中，擴張成本高。\", \"reason\": \"競爭者有多層內容與內鏈架構，但沒有證據證明頁數是成效來源。發布前定義意圖，發布後用自家資料觀察查詢對應、收錄與有效互動；無新增價值則合併或停止。\"}, {\"action\": \"P2｜先驗自家技術基本盤，再投入影片與站外推廣：確認狀態碼、canonical、robots、sitemap、行動可用性；影像只為可驗證體驗服務。站外以有來源的原創研究尋求自然引用，不把競爭者出站網址當backlink清單。成本低至高分階段。\", \"reason\": \"競爭者樣本未顯示明確全站抓取障礙，無法以公開資料推定其技術弱點；影片頁只證明有內容設計，不證明排名收益。驗收依自家實測技術結果與可核對引用，而非連結數量。\"}], \"unknowns\": [\"自家網站網址、定位、現有內容、預算、授權GSC／分析資料均未提供；全部行動為評估建議，未修改任何網站。\", \"競爭者Google台灣穩定排名、搜尋量、自然流量、CTR、轉換與收入未知。\", \"未全面爬站；games及其他sitemap分區未遍查，不能斷言沒有3A專頁或其他提及。\", \"站外來源未直接抓取；3A官方身分、相關網域關係、完整backlinks與第三方口碑未知。\", \"影片未播放、截圖未逐張核驗、交易與客服紀錄未獨立驗真；競爭者自稱獨立及合法不能當已證實事實。\", \"未測CWV、JavaScript渲染、結構化資料、全站重複度或實際索引；不可宣稱技術全面正常、存在關鍵字內耗或內容由AI生成。\", \"已用完五次公開搜尋；包括一次空白結果與一次無結果錯誤，均未用作頁面不存在的證據。\"]}}}"
+  },
+  {
+    "id": 73,
+    "run": "b30d426fd79544bebd134af5ad958100",
+    "kind": "report",
+    "data": "{\"claims\": [{\"text\": \"首頁title與H1明確聚焦2026 LINE娛樂城推薦與評測，包含排行榜、評測入口、比較頁、遊戲指南與帶推廣參數的出站連結，並揭露可能獲得推廣佣金。\", \"kind\": \"observation\", \"evidence_ids\": [\"563c88dde8fd408a97e5ce887818e738\"], \"topic\": \"strategy\"}, {\"text\": \"公開頁面支持『LINE娛樂城推薦入口—多角度比較—個別品牌評測—註冊導流』的內容與商業架構推論；不支持此架構已帶來特定流量或轉換。\", \"kind\": \"inference\", \"evidence_ids\": [\"563c88dde8fd408a97e5ce887818e738\", \"46d78be91ab24810a5a089c2d7a8e0fd\", \"a5c09c67cfad4da7828b0f26811a518a\"], \"topic\": \"strategy\"}, {\"text\": \"泛詞『娛樂城』的本輪公開搜尋返回icasino.tw/comparison/；同批摘要同時有出金比較、直接遊戲平台及LINE平台。這只是單次索引線索，不能稱為Google台灣固定排名。\", \"kind\": \"observation\", \"evidence_ids\": [\"010f408ae8384a3dacfd852335db1ff8\"], \"topic\": \"search_intent\"}, {\"text\": \"3A娛樂城搜尋摘要出現多個以3A命名的網域及社群帳號；未直接抓取這些站外頁，不能認定哪個為官方或其安全性。\", \"kind\": \"observation\", \"evidence_ids\": [\"dc04862f27bd41ebb25b23b697faa007\"], \"topic\": \"brand\"}, {\"text\": \"Tower Rush原頁在參考來源的『中文資訊與玩家評測』段落列出『333 AAA 部落格 - 3A 娛樂城塔樓衝刺實測攻略』出站網址。此為來源引用，不是本站3A品牌評測或證實的合作關係。\", \"kind\": \"observation\", \"evidence_ids\": [\"04836ef339d04c99b152fa530dcea454\"], \"topic\": \"brand\"}, {\"text\": \"抽查的reviews、page與post三份sitemap網址清單未見可辨識的3A專頁；這些是URL清單而非所有頁面全文，且未遍查games等分區，不能斷言全站不存在3A內容。\", \"kind\": \"observation\", \"evidence_ids\": [\"80d8e5d1f4674ca29308bdd2b086f951\", \"f0beed804f274874bc8ffce2b5f57135\", \"1bb7eee1c72346f39f5f1eeee721b769\"], \"topic\": \"brand\"}, {\"text\": \"競爭者有評測方法頁，列五步流程與五項權重；來博評測列測試日期、截圖說明、客服等待與入帳時間，FAQ明說最低50元來自平台揭露，實際測150元且未完整測50元流程。因此50與150並非矛盾，也不宜稱其只有空泛宣傳；原始影像真實性和測量方法仍未獨立核驗。\", \"kind\": \"observation\", \"evidence_ids\": [\"7a35816c76634fb1bc5221a8e57ed63e\", \"a5c09c67cfad4da7828b0f26811a518a\"], \"topic\": \"quality_counterevidence\"}, {\"text\": \"影片合輯頁宣稱收錄不剪輯的Vimeo實測影片並採點擊載入，連往各評測；本輪僅讀文字與連結，未播放，不能證實影片內容、不剪輯或效能改善。\", \"kind\": \"observation\", \"evidence_ids\": [\"77f322a638b54354ac9db0479446fd76\"], \"topic\": \"quality_counterevidence\"}, {\"text\": \"比較頁明稱依綜合評分排序，首位河神、鈔有感在超吉爆之後；首頁稱綜合評等由高至低排列卻把鈔有感置首。比較頁FAQ亦要求最新名次以首頁為準，故可判為不同頁排序未一致，但不能證明操控或欺騙。\", \"kind\": \"observation\", \"evidence_ids\": [\"46d78be91ab24810a5a089c2d7a8e0fd\", \"563c88dde8fd408a97e5ce887818e738\"], \"topic\": \"quality\"}, {\"text\": \"對自家網站而言，可追溯的來源、測試邊界、統一比較資料及更新紀錄，比複製『權威／安全』形容詞更值得優先評估；此為基於競爭者證據形式及跨頁排序差異的競爭假設，非排名提升保證。\", \"kind\": \"inference\", \"evidence_ids\": [\"7a35816c76634fb1bc5221a8e57ed63e\", \"a5c09c67cfad4da7828b0f26811a518a\", \"46d78be91ab24810a5a089c2d7a8e0fd\", \"563c88dde8fd408a97e5ce887818e738\"], \"topic\": \"opportunity\"}, {\"text\": \"robots.txt公開限制wp-admin並允許admin-ajax，提供sitemap入口；已抽查HTML頁回傳200並有自指canonical與index設定。這只支持樣本的基礎可抓取條件，不能證明全站索引、CWV、結構化資料或不存在技術問題。\", \"kind\": \"observation\", \"evidence_ids\": [\"a0095ed1ced24138962983f3f3c18832\", \"90347222559244a69b9b0cd2e77a63da\", \"563c88dde8fd408a97e5ce887818e738\", \"46d78be91ab24810a5a089c2d7a8e0fd\"], \"topic\": \"technical\"}, {\"text\": \"sitemap索引有多個games分片，首頁也提供廣泛遊戲與知識連結，支持有遊戲長尾內容架構的推論；分片或連結多本身不能證明頁面品質、自然流量或SEO優勢。\", \"kind\": \"inference\", \"evidence_ids\": [\"90347222559244a69b9b0cd2e77a63da\", \"563c88dde8fd408a97e5ce887818e738\"], \"topic\": \"content_scope\"}, {\"text\": \"本輪精確site搜尋3A娛樂城回報無結果錯誤；不可用此失敗結果推斷競爭者沒有3A內容。\", \"kind\": \"observation\", \"evidence_ids\": [\"fde6b7744a814a7f993bb5d338d68cde\"], \"topic\": \"access\"}, {\"text\": \"競爭者流量、轉換、完整backlinks、連結權重、固定排名及自家網站現況均未知；出站參考連結不等於對方完整入站連結資料。\", \"kind\": \"unknown\", \"evidence_ids\": [], \"topic\": \"limitations\"}], \"actions\": [{\"action\": \"P0｜先對自家網站建立查詢—頁面基線與合規閘門：盤點娛樂城、LINE娛樂城、3A及延伸詞的既有頁面；如有授權，只使用自家GSC與分析資料評估曝光、點擊、落地頁和有效互動。成本低至中。\", \"reason\": \"尚無自家網站資料，不應先斷言缺頁或推薦新建頁。將不可換現娛樂與出金意圖分開；品牌身分與法律主張須獨立核實。驗收為頁面對應表、基線與可公開證據清單，不設定虛構流量目標。\"}, {\"action\": \"P1｜有足夠來源且符合自家定位時，先小規模建立或更新一個中立3A查核頁，標示非官方、來源日期、網域歧義、營運身分、條款與申訴證據；未核實項目明寫未知，不給安全或出金保證。成本中。\", \"reason\": \"目前icasino.tw對3A的已驗證線索只是遊戲文參考引用，不能宣稱其已佔據品牌詞；公開摘要中的多網域也使身分查核具差異化價值。驗收為每項核心主張可追溯、沒有冒充官方或未證實詐騙指控。\"}, {\"action\": \"P1｜自家娛樂城主題頁及比較頁採證據型比較：統一資料來源、測試與官方宣稱分欄、記錄裝置／時段／樣本及版本日期，榜單從單一資料來源生成；加入適用與不適用情境。成本中。\", \"reason\": \"競爭者已有方法與測試邊界揭露，普通排行榜不足以差異化；跨頁排序差異提供資料一致性的改善機會。驗收為各頁數值、排序及更新版本一致，可由原始紀錄追溯。\"}, {\"action\": \"P2｜以少量主題群試驗而非大量擴頁：主題總覽連至比較頁、個別查核頁和相關遊戲／風險解釋，錨文字描述真實內容；先審自家既有頁，避免同意圖重複新建。成本中，擴張成本高。\", \"reason\": \"競爭者有多層內容與內鏈架構，但沒有證據證明頁數是成效來源。發布前定義意圖，發布後用自家資料觀察查詢對應、收錄與有效互動；無新增價值則合併或停止。\"}, {\"action\": \"P2｜先驗自家技術基本盤，再投入影片與站外推廣：確認狀態碼、canonical、robots、sitemap、行動可用性；影像只為可驗證體驗服務。站外以有來源的原創研究尋求自然引用，不把競爭者出站網址當backlink清單。成本低至高分階段。\", \"reason\": \"競爭者樣本未顯示明確全站抓取障礙，無法以公開資料推定其技術弱點；影片頁只證明有內容設計，不證明排名收益。驗收依自家實測技術結果與可核對引用，而非連結數量。\"}], \"unknowns\": [\"自家網站網址、定位、現有內容、預算、授權GSC／分析資料均未提供；全部行動為評估建議，未修改任何網站。\", \"競爭者Google台灣穩定排名、搜尋量、自然流量、CTR、轉換與收入未知。\", \"未全面爬站；games及其他sitemap分區未遍查，不能斷言沒有3A專頁或其他提及。\", \"站外來源未直接抓取；3A官方身分、相關網域關係、完整backlinks與第三方口碑未知。\", \"影片未播放、截圖未逐張核驗、交易與客服紀錄未獨立驗真；競爭者自稱獨立及合法不能當已證實事實。\", \"未測CWV、JavaScript渲染、結構化資料、全站重複度或實際索引；不可宣稱技術全面正常、存在關鍵字內耗或內容由AI生成。\", \"已用完五次公開搜尋；包括一次空白結果與一次無結果錯誤，均未用作頁面不存在的證據。\"]}"
+  }
+]

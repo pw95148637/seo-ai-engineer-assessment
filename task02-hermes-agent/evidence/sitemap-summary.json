@@ -1,0 +1,12 @@
+{
+  "child_sitemaps": [
+    "https://2030.tw/post-sitemap1.xml",
+    "https://2030.tw/post-sitemap2.xml",
+    "https://2030.tw/page-sitemap.xml",
+    "https://2030.tw/category-sitemap.xml",
+    "https://2030.tw/news-sitemap.xml",
+    "https://2030.tw/local-sitemap.xml"
+  ],
+  "count": 6,
+  "inference_limit": "index count only; not page count, traffic or quality"
+}

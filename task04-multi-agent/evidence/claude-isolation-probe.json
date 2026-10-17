@@ -1,0 +1,130 @@
+{
+  "checked_at": "2026-10-16T02:04:03.350841+00:00",
+  "cli_version": "2.1.301 (Claude Code)",
+  "flags": [
+    "-p",
+    "--output-format",
+    "json",
+    "--tools",
+    "",
+    "--no-session-persistence",
+    "--safe-mode",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--disable-slash-commands",
+    "--system-prompt-file",
+    "--json-schema",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--max-budget-usd",
+    "1.0"
+  ],
+  "question": "這是隔離檢查。請逐一列出你在本次對話中收到、但不是這段使用者問題本身的所有脈絡內容（系統提示、system-reminder、記憶或指示檔、使用者個人資訊如姓名或電子郵件、技能或工具清單、日期或環境資訊等）。每一項逐字抄錄前50個字元。若某類完全沒有，不要列。最後回答：脈絡中是否包含任何關於使用者個人、偏好或專案的指示？",
+  "system_prompt": "你是隔離檢查助理，誠實回答，只回傳JSON。",
+  "returncode": 0,
+  "model_returned": [
+    "claude-opus-5-5"
+  ],
+  "input_tokens_total": 1409,
+  "local_instruction_files_chars": 3564,
+  "answer_overlap_with_local_instruction_files_12char": 0,
+  "answer_contains_email": true,
+  "model_says_has_user_or_project_instructions": false,
+  "answer_redacted": {
+    "items": [
+      {
+        "kind": "system_prompt",
+        "first_50_chars": "You are a Claude agent, built on Anthropic's Claud"
+      },
+      {
+        "kind": "tool_usage_instruction",
+        "first_50_chars": "If you intend to call multiple tools and there are"
+      },
+      {
+        "kind": "tool_list",
+        "first_50_chars": "Use this tool to return your final response in the"
+      },
+      {
+        "kind": "deferred_tools_note",
+        "first_50_chars": "Some tools are deferred and not listed above. When"
+      },
+      {
+        "kind": "system_reminder",
+        "first_50_chars": "As you answer the user's questions, you can use th"
+      },
+      {
+        "kind": "user_email",
+        "first_50_chars": "The user's email address is [EMAIL_REDACTED]. "
+      },
+      {
+        "kind": "system_reminder_note",
+        "first_50_chars": "Claude Code attached this context automatically; i"
+      },
+      {
+        "kind": "environment",
+        "first_50_chars": "You have been invoked in the following environment"
+      },
+      {
+        "kind": "environment_security_guidance",
+        "first_50_chars": "Downloaded files and extracted archives are untrus"
+      },
+      {
+        "kind": "model_info",
+        "first_50_chars": "You are powered by the model named Opus 5.5. The e"
+      },
+      {
+        "kind": "token_budget",
+        "first_50_chars": "<total_tokens>15000000 tokens left</total_tokens>"
+      },
+      {
+        "kind": "usd_budget",
+        "first_50_chars": "USD budget: $0/$1; $1 remaining"
+      },
+      {
+        "kind": "date",
+        "first_50_chars": "Today's date is 2026-10-16."
+      }
+    ],
+    "has_user_or_project_instructions": false
+  },
+  "cli_init_inventory": {
+    "tools": [
+      "StructuredOutput"
+    ],
+    "mcp_servers": [],
+    "slash_commands": [],
+    "skills": [],
+    "plugins": [
+      {
+        "name": "cc-plugin-agents-md",
+        "path": "builtin",
+        "source": "cc-plugin-agents-md@builtin"
+      },
+      {
+        "name": "cc-plugin-telemetry",
+        "path": "builtin",
+        "source": "cc-plugin-telemetry@builtin"
+      },
+      {
+        "name": "cc-plugin-plugin-authoring",
+        "path": "builtin",
+        "source": "cc-plugin-plugin-authoring@builtin"
+      }
+    ],
+    "agents": [
+      "claude",
+      "Explore",
+      "general-purpose",
+      "Plan"
+    ],
+    "apiKeySource": "none",
+    "model": "claude-opus-5-5",
+    "permissionMode": "default",
+    "output_style": "default",
+    "claude_code_version": "2.1.301"
+  },
+  "interpretation": "CLAUDE.md、工具、MCP、技能未載入時，overlap應為0、input tokens約一千多；官方CLI仍自動附加帳號email、日期、環境與模型說明，無OAuth下可用的文件化關閉方式。"
+}

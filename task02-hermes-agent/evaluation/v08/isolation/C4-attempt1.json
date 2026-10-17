@@ -1,0 +1,22 @@
+{
+  "before": {
+    "homes": {
+      "v08-c1-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-c2-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-c3-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-c4-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l1-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l2-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l3-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l4-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-n": "21eeaae15852d180a7b31dcc245e70c777703f80415a0e277eddb95c2a7b8cf2"
+    },
+    "root_learned": [],
+    "user_hermes": null
+  },
+  "own": "v08-c4-a1",
+  "expected": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "ledger_before": "2aa140dad51e3a79f9e5527a154c721f73b457ab8facf20a3efd12f9d126fd69",
+  "ledger_after": "2aa140dad51e3a79f9e5527a154c721f73b457ab8facf20a3efd12f9d126fd69",
+  "problems": []
+}

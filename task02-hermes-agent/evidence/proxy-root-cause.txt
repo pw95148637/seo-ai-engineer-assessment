@@ -1,0 +1,7 @@
+Local source inspection: installed DDGS 9.16.0, pinned by official Hermes uv.lock.
+DDGS.__init__: self._proxy = _expand_proxy_tb_alias(proxy) or os.environ.get("DDGS_PROXY")
+Official Hermes DDGS provider constructs DDGS(timeout=10), no explicit proxy argument.
+Environment HTTPS_PROXY present; proxy values are never printed or stored.
+Without mapping: neutral query timed out after 30 seconds.
+With DDGS_PROXY using configured HTTPS proxy: same official keyless backend succeeded; registered research_search also succeeded with 5 hits.
+No credential extraction, TLS bypass, paid fallback, or competitor analysis.

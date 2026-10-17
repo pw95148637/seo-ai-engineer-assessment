@@ -1,0 +1,25 @@
+v0.7 controller-only live smoke of research_search + research_offpage + outbound_hosts (no model call)
+Date: 2026-10-16 (UTC+8 afternoon), WSL2 Ubuntu-24.04, Hermes commit 311155fade43d1993ea968909a2ad36762345bbc (only its DDGS provider is used)
+Target: https://www.python.org, a neutral site, so no 2030.tw off-page result was seen before plan-v07 was registered.
+
+cd ~/soulo/task02-hermes && source scripts/hermes_env.sh
+python evidence/v07-controller-smoke/offpage_smoke.py runs/v07-offpage-smoke
+
+First attempt: research_fetch of https://www.python.org/ returned a gzip body although no compression was requested,
+so the HTML parser saw binary data (0 links, 0 outbound hosts). The controller now sends Accept-Encoding: identity and
+decodes gzip/deflate within the size cap (src/research_core.py decode_body; tests/test_offpage.py
+TransportDecodingTests). 2030.tw serves plain text, so v0.6 runs were not affected.
+
+Second attempt:
+- research_offpage on the target host -> offpage_target_host; on an unlisted URL -> offpage_not_from_search
+- en.wikipedia.org/wiki/Python_Software_Foundation (listed by the search) -> HTTP 200, 5 links to python.org, 3 host mentions
+- code-python.org/psf/ (listed) -> HTTP 200, 42 links to python.org
+- research_fetch https://www.python.org/ -> outbound_hosts github.com, mailchi.mp, planetpython.org, pycon.blogspot.com, ...
+- score_run offpage_policy_violations: [] ; HTTP requests 6 (robots.txt per origin included)
+
+Third attempt, after the independent code review fixes (exact-host provenance, peer-IP check after connect,
+truncated compressed bodies refused, off-site snapshots read only as excerpts). smoke.json is this run:
+- the search listed one off-site page this time (results drift): code-python.org/psf/ -> HTTP 200, 42 links to python.org
+- target host and unlisted URL refused as before; outbound_hosts on www.python.org listed; violations [] ; HTTP 4
+Same transport, controller only: https://2030.tw/ -> HTTP 200, html, 135 links, 3 outbound hosts (2 requests: robots.txt + homepage).
+Hermes check-only after the change: ready, six tools, model_called false.

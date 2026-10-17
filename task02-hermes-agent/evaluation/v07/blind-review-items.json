@@ -1,0 +1,273 @@
+{
+  "090d399d": [
+    {
+      "claim": "claim:1",
+      "verdict": "supported",
+      "reason": "首頁 title 為「2030玩運彩瘋世足｜MLB/NBA比分、中職賽程、世界盃預測分析」，H1 為「2030玩運彩瘋世足」，H2／H3 多為 MLB 直播、世界盃與運彩；錨文字「線上娛樂城推薦」在 3 處連到 https://2030.tw/wordcup/。"
+    },
+    {
+      "claim": "claim:2",
+      "verdict": "supported",
+      "reason": "/wordcup/ 的 title 為「線上娛樂城推薦｜2026最新評價排名 - 2030玩運彩瘋世足」；正文寫「共 2502 篇評測」，分類有熱門娛樂城品牌 (1182)、評價與推薦 (142)、優惠與活動 (116)、遊戲與玩法 (160)、安全與出金 (154)；第一頁卡片連到 /wordcup/3a娛樂城 與 /wordcup/娛樂城。"
+    },
+    {
+      "claim": "claim:3",
+      "verdict": "supported",
+      "reason": "三頁的 title／H1 都含對應關鍵字，canonical 指向自身，meta robots 為 index, follow；正文有「2026年09月24日 更新」等日期、「2030編輯部」署名、FAQ，以及相關推薦的 /wordcup/ 內鏈。附記：每頁有兩個 H1（站名＋頁標），且 meta 的 modified_time 全是 2026-07-12，與正文日期不同；兩點都不影響本主張。"
+    },
+    {
+      "claim": "claim:4",
+      "verdict": "supported",
+      "reason": "四頁 H2 結構相同（平台特色與優勢／遊戲種類／出金速度與安全性／註冊教學／優惠活動／客服支援／FAQ／總結）。長尾頁確實有 H2「3a娛樂城出金速度出金速度與安全性」與 FAQ「3a娛樂城出金速度有手機版可以玩嗎?」。推論有標出限度。"
+    },
+    {
+      "claim": "claim:5",
+      "verdict": "supported",
+      "reason": "3A 頁寫「半小時到一小時」，長尾頁寫「15到30分鐘」，兩頁都沒有逐筆測試紀錄；泛詞頁有「洗碼量跟提領限制」與「量力而為」，長尾頁有「提領的金額大小、銀行作業時間或者尖峰時段」的說明。"
+    },
+    {
+      "claim": "claim:6",
+      "verdict": "supported",
+      "reason": "四頁各有 4 個 rel=nofollow noopener 連結指向 https://don0911.3a1788.bet/?st=wg2030，錨文字含「🎰 立即註冊領取優惠」「🏆 立即註冊開始遊戲」，其中 1 個沒有文字；/wordcup/ 的「立即註冊」指向 ?st=wg2030idx。各頁另有一個 nofollow 連結指向 bc5730m.wg1888.com/?st=2030WG，報告沒提，屬遺漏，不算錯誤。"
+    },
+    {
+      "claim": "claim:7",
+      "verdict": "supported",
+      "reason": "富遊品牌頁的 CTA 同樣導向 3a1788.bet、同一個 st 參數，支持「不同品牌集中到同一註冊目的地」；佣金、所有權與最終品牌身分都已註明未知。"
+    },
+    {
+      "claim": "claim:8",
+      "verdict": "supported",
+      "section": "off_page",
+      "counted_off_page_known": true,
+      "reason": "搜尋快照的 5 筆結果全是彰源 2030.TW 股票頁；Yahoo 頁的 HTML 沒有指向 2030.tw 的連結，「玩運彩」出現 0 次，2030.TW 全部出現在股票上下文。這是有效的陰性樣本。"
+    },
+    {
+      "claim": "claim:9",
+      "verdict": "supported",
+      "reason": "由上述搜尋與 Yahoo 頁推得股票代碼歧義，有限度說明（不代表其他搜尋引擎也只有股票結果）。"
+    },
+    {
+      "claim": "claim:10",
+      "verdict": "not_scored_unknown",
+      "reason": "unknown 類；有寫明缺 referring domains、錨文字分布等資料，也提醒不能推成沒有 backlinks。"
+    },
+    {
+      "claim": "claim:11",
+      "verdict": "supported",
+      "reason": "3 個快照為 No results found，1 個為空白項；快照沒記錄查詢字串，「調整後」「site 查詢」無法核對，但與快照不矛盾。"
+    },
+    {
+      "claim": "action:1-5",
+      "verdict": "ok",
+      "reason": "每項都標明是我方網站，並寫出自站資料未知；沒有把競爭者與我方混為一談。action:3 用「補齊」略帶預設自站有缺漏，但未知段已聲明未診斷自站，不計 scope_error。"
+    }
+  ],
+  "8227d5ec": [
+    {
+      "claim": "claim:1",
+      "verdict": "supported",
+      "reason": "首頁 title 與 H1 均為「CasinoBase｜台灣娛樂城推薦評比平台」；/reviews/ 的 title 為「2026 台灣娛樂城評價排行榜｜…」，/bonuses/ 的 title 為「2026 娛樂城優惠活動總整理｜體驗金、免費序號、首存優惠一次看」；主導覽連到 /reviews/、/bonuses/、/guides/、/safety/、/terms/。"
+    },
+    {
+      "claim": "claim:2",
+      "verdict": "supported",
+      "reason": "在六頁的正文與連結中搜尋 3a／3A／AAA，結果為 0 筆；報告也有限定只代表樣本。"
+    },
+    {
+      "claim": "claim:3",
+      "verdict": "supported",
+      "reason": "/reviews/ 的 17 個「查看評價」全部連到外站（rg8888.org、hs168.vip/9eyamq、999xc.net、qywin88.com 等），頁面雖自稱「點擊各家娛樂城評價頁」，卻沒有站內評價頁連結。附記：這些出站連結的 rel 只有 noopener，沒有 nofollow 或 sponsored，報告沒提這個訊號。"
+    },
+    {
+      "claim": "claim:4",
+      "verdict": "supported",
+      "reason": "由 claim:1 與 claim:3 推得導流架構，並註明無法確認轉換。"
+    },
+    {
+      "claim": "claim:5",
+      "verdict": "supported",
+      "reason": "頁面有 CB-FIVE 說明、測試流程與「每月更新一次」；五項權重在 HTML 中都是「0%」，SVG 帶 transition，屬動畫計數器，報告有保留渲染的可能；頁面沒有 PTT／Dcard 來源連結。"
+    },
+    {
+      "claim": "claim:6",
+      "verdict": "supported",
+      "reason": "任你搏卡片寫「20 倍流水」，任你博比較區寫「15x」；錢盈卡片寫「流水 3 倍」，比較區寫「10x」。主張保留「可能是不同活動」。"
+    },
+    {
+      "claim": "claim:7",
+      "verdict": "supported",
+      "reason": "/guides/ 重複 7 次「Carve Your iGaming Way - CHINESE NEW YEAR MOREWAYS…」與 2025/08/22，6 個卡片連到 https://www.google.com/。"
+    },
+    {
+      "claim": "claim:8",
+      "verdict": "supported",
+      "reason": "/safety/ 有「保留對話與帳號記錄截圖」「停止進一步儲值或提供個資」「165 反詐專線」及流水／提領限制提醒；/terms/ 解釋流水，並寫「信用版…存在債務與風險問題」；/bonuses/ 有流水計算例。"
+    },
+    {
+      "claim": "claim:9",
+      "verdict": "supported",
+      "section": "off_page",
+      "counted_off_page_known": true,
+      "reason": "Blockonomi 頁沒有任何 casinobase 字串。casinobase.com 的快照只有一行 JS 轉址到 /lander，等於沒有取得頁面內容；「未抽取到」字面上正確，但這一半是空樣本，不是有內容的陰性證據。"
+    },
+    {
+      "claim": "claim:10",
+      "verdict": "supported",
+      "reason": "搜尋快照有 Blockonomi Base casino、casinobase.com 出售頁、GitHub rsg_casinobase、Base casinos 等同名或近似結果。"
+    },
+    {
+      "claim": "claim:11",
+      "verdict": "not_scored_unknown",
+      "reason": "unknown 類；有說明缺什麼資料，並避免推成零反鏈。"
+    },
+    {
+      "claim": "claim:12",
+      "verdict": "not_scored_unknown",
+      "reason": "unknown 類；列出排名、流量、渲染、結構化資料等缺口。"
+    },
+    {
+      "claim": "action:1-3,5",
+      "verdict": "ok",
+      "reason": "以我方網站為對象，3A 頁寫成條件式，並註明不能因樣本裡沒看到 3A 就大量產頁。"
+    },
+    {
+      "claim": "action:4",
+      "verdict": "ok_borderline",
+      "reason": "把競爭者的缺陷（查看評價直接出站、攻略卡片連 Google、佔位與重複卡片）直接寫成自站 P1 的「清理」項，沒有像其他報告那樣寫明不假定自站有同樣問題。由於動詞是「檢查」，未知段也已聲明不是自站診斷，不計 scope_error，但這是四份中最接近混淆競爭者與自站的一項。"
+    }
+  ],
+  "9633dd5a": [
+    {
+      "claim": "claim:1",
+      "verdict": "supported",
+      "reason": "兩頁 title、H1、description 都含對應關鍵字，canonical 指向自身，robots 為 index, follow。附記：兩頁 description 是同一模板（「2026年{詞}完整攻略，涵蓋百家樂、老虎機、體育投注…」），報告沒提。"
+    },
+    {
+      "claim": "claim:2",
+      "verdict": "supported",
+      "reason": "首頁以 MLB／NBA／世界盃／運彩定位，錨文字「線上娛樂城推薦」連到 /wordcup/；樞紐頁直接連到兩個目標頁，分類與「2502 篇」的自述都核對成立。"
+    },
+    {
+      "claim": "claim:3",
+      "verdict": "supported",
+      "reason": "兩頁章節與 FAQ 題型相同，都有相關推薦與熱門品牌的內鏈；推論有限度。"
+    },
+    {
+      "claim": "claim:4",
+      "verdict": "supported",
+      "reason": "兩頁的「🎰 立即註冊領取優惠」都指向 https://don0911.3a1788.bet/?st=wg2030；樞紐頁有 ?st=wg2030idx。"
+    },
+    {
+      "claim": "claim:5",
+      "verdict": "supported",
+      "reason": "泛詞頁與品牌頁導向同一目的地，屬合理的漏斗推論，並列出無法確認的部分。"
+    },
+    {
+      "claim": "claim:6",
+      "verdict": "supported",
+      "reason": "3A 頁寫「半小時到一小時」、「新台幣1000元」、「24小時」客服、「2030編輯部」、2026年09月24日更新；娛樂城頁標 2026年10月09日更新，並提醒洗碼量與提領限制。"
+    },
+    {
+      "claim": "claim:7",
+      "verdict": "supported",
+      "reason": "3A 頁寫「有SSL加密憑證，代表我們的個人資料跟交易紀錄都有被保護好」，FAQ 也以 SSL／KYC 作安全理由；兩頁都沒有可重現的實測方法。"
+    },
+    {
+      "claim": "claim:8",
+      "verdict": "partially_supported",
+      "section": "off_page",
+      "counted_off_page_known": true,
+      "reason": "成立的部分：頁面 200、blockquote 內有「2030玩運彩瘋[世足]」的引用、上下文是 MLB 直播與運彩、沒有任何 a href 指向 2030.tw。與快照矛盾的部分：「未出現2030.tw網域」。該 blockquote 帶 cite='https://2030.tw/b5g/'。cite 屬性不可點擊，一般也不算 backlink，所以「確認品牌提及、未確認入站連結」的結論不變；錯在描述事實，也漏掉這個指向競爭者具體頁面的歸屬 URL。另外，「世足」兩字被 MaxePro 自動內鏈到自家的 /fifa-world-cup-2026/。依判定規則計為支持；若改採任一細節錯誤即不計的嚴格規則，本項應改為 unsupported，unsupported 變 1，off_page_supported_known 變 0。"
+    },
+    {
+      "claim": "claim:9",
+      "verdict": "supported",
+      "reason": "提及的上下文確實是 MLB 直播與運彩，主張也沒有延伸到娛樂城目標頁或權重傳遞。"
+    },
+    {
+      "claim": "claim:10",
+      "verdict": "not_scored_unknown",
+      "reason": "unknown 類；寫明缺什麼，並避免推成沒有 backlinks。"
+    },
+    {
+      "claim": "claim:11",
+      "verdict": "not_scored_unknown",
+      "reason": "unknown 類。"
+    },
+    {
+      "claim": "action:1-6",
+      "verdict": "ok",
+      "reason": "都以「我方」為對象，未知段寫明沒有我方網址；action:3 的「我方品牌頁」指 action:2 試點的 3A 查證頁，沒有混淆。"
+    }
+  ],
+  "a600ecd2": [
+    {
+      "claim": "claim:1",
+      "verdict": "supported",
+      "reason": "首頁、/reviews/、/bonuses/ 的 title／H1 都核對成立，canonical 分別為 https://casinobase.tw/、/reviews/、/bonuses/；共同導覽連到排行、優惠、攻略、安全警示（防詐）與術語。"
+    },
+    {
+      "claim": "claim:2",
+      "verdict": "supported",
+      "reason": "五頁都沒有 3A 字串；sitemap.xml 只有一筆 loc，即 https://casinobase.tw。"
+    },
+    {
+      "claim": "claim:3",
+      "verdict": "unsupported",
+      "reason": "成立的部分：CB-FIVE 與每月更新的自述、權重 0%、查看評價都連到外站而沒有站內評測 URL、沒有 PTT／Dcard 來源連結。被快照反駁的部分：「首頁9.2分品牌列在9.4分品牌之前…呈現一致性的疑點」。首頁與排行頁的前三名是頒獎台版型：富遊卡片 alt='rank 2'、class 為 order-2 lg:order-1；有春卡片 alt='rank 1'、class 為 order-1 lg:order-2（手機排第一、桌機置中）。這與 FAQ「有春 9.4 分第一」一致。主張把純文字抽取的順序當成畫面順序，提出一個不存在的疑點。"
+    },
+    {
+      "claim": "claim:4",
+      "verdict": "supported",
+      "reason": "任你搏卡片寫 20 倍、比較區寫 15x；錢盈卡片寫 3 倍、比較區寫 10x；金大發卡片寫「首儲 2000 送 500」、比較區寫「首儲 1000 送 500」；到期日欄位有「-」與「官方公布截止日前」。"
+    },
+    {
+      "claim": "claim:5",
+      "verdict": "supported",
+      "reason": "/guides/ 的重複英文標題與 google.com 連結核對成立；/safety/ 除主導覽外沒有任何連結，黑名單指控沒有附來源。"
+    },
+    {
+      "claim": "claim:6",
+      "verdict": "supported",
+      "reason": "robots.txt 為「User-Agent: * / Allow: /」並列出 Sitemap；sitemap 只列首頁；/reviews/、/bonuses/ 回傳 200。結論有限度。"
+    },
+    {
+      "claim": "claim:7",
+      "verdict": "supported",
+      "reason": "由 claim:1、claim:4、claim:5 推得的策略判斷，並列出無法推定的部分。"
+    },
+    {
+      "claim": "claim:8",
+      "verdict": "supported",
+      "section": "off_page",
+      "counted_off_page_known": true,
+      "reason": "yuvayuva 與 taiwancasinoguide 兩頁的 HTML 都沒有 casinobase、casino base 或 casinobase.tw 的字串，是有效的陰性樣本。"
+    },
+    {
+      "claim": "claim:9",
+      "verdict": "supported",
+      "reason": "搜尋快照列的是泛娛樂城排行頁（hudsongroup、yuvayuva、taiwancasinoguide、kagikoukan、axus），並非 CasinoBase 品牌提及；推論有限度。"
+    },
+    {
+      "claim": "claim:10",
+      "verdict": "not_scored_unknown",
+      "reason": "unknown 類；明確區分出站連結與入站連結。"
+    },
+    {
+      "claim": "claim:11",
+      "verdict": "not_scored_unknown",
+      "reason": "unknown 類；UnicodeEncodeError 沒有快照可核對，但它被列為讀取限制，不是證據。"
+    },
+    {
+      "claim": "claim:12",
+      "verdict": "not_scored_unknown",
+      "reason": "unknown 類。"
+    },
+    {
+      "claim": "action:1-7",
+      "verdict": "ok",
+      "reason": "都以自有網站為對象；action:5 明寫「只作自站檢查項目，不假定自站也有問題」，3A 頁寫成條件式試點。"
+    }
+  ]
+}

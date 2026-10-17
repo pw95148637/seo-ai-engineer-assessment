@@ -1,0 +1,10 @@
+{
+  "raw": "內容審核需有明確的證據可供查核，以確保其準確性與公正性。",
+  "seconds": 2.9332267920000277,
+  "input_tokens": 32,
+  "output_tokens": 25,
+  "eos_reached": true,
+  "temperature": null,
+  "seed": 42,
+  "peak_gpu_bytes": 6094255616
+}

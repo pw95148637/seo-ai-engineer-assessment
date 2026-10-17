@@ -1,0 +1,33 @@
+%%{init: {"theme": "default", "themeVariables": {"fontFamily": "'Microsoft JhengHei', 'Noto Sans TC', 'PingFang TC', Arial, sans-serif", "fontSize": "15px"}, "flowchart": {"curve": "basis", "nodeSpacing": 45, "rankSpacing": 55}}}%%
+flowchart TD
+ S(["Start：建立 State<br/>iteration = 0<br/>max_iterations = 3"]) --> P
+
+ P["Planning<br/>SEO Content Planner<br/>讀 draft、audit、history<br/>產出 title、sections<br/>與 negotiation_note"]
+ P -->|"格式驗證通過"| A
+
+ A["Audit<br/>YMYL Compliance Auditor<br/>依 policy.json 審核<br/>產出 passed、findings<br/>與 note<br/>每項 finding 含原句、<br/>讀者風險、修訂建議、規則"]
+ A -->|"格式驗證通過"| G
+
+ G["字面防線（程式）<br/>Auditor 判通過，但標題<br/>或章節仍含兩個指定詞<br/>時改判退回"]
+ G --> D
+
+ D{"Decision<br/>條件判定"}
+ D -->|"通過"| O(["approved_provisional<br/>輸出最終大綱"])
+ D -->|"退回且未達 3 輪<br/>iteration + 1<br/>findings 存於<br/>State.audit 與 history"| P
+ D -->|"退回且已達 3 輪"| H(["human_review<br/>停止，不輸出大綱"])
+ D -.->|"僅 immutable 測試案例"| U(["unsatisfiable<br/>兩個硬限制不可兼容<br/>停止，不輸出大綱"])
+
+ P -.->|"錯誤"| X(["error<br/>停止，不輸出大綱"])
+ A -.->|"錯誤"| X
+ E["錯誤的定義<br/>逾時、暫時性 API 錯誤<br/>重試 1 次後仍失敗；<br/>格式錯誤、永久錯誤；<br/>整體逾時；呼叫達 12 次"] -.- X
+
+ classDef stop fill:#fdecea,stroke:#c0392b,color:#1a1a1a
+ classDef ok fill:#e8f5e9,stroke:#2e7d32,color:#1a1a1a
+ classDef role fill:#e8f0fe,stroke:#3367d6,color:#1a1a1a
+ classDef code fill:#fff8e1,stroke:#b7791f,color:#1a1a1a
+ classDef note fill:#f5f5f5,stroke:#9e9e9e,color:#333333,stroke-dasharray: 4 3
+ class O ok
+ class H,U,X stop
+ class P,A role
+ class G,D code
+ class E note

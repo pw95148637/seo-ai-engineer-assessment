@@ -1,0 +1,507 @@
+{
+  "scope": "Post-hoc analysis after the freeze, run as pre-registered in evaluation/posthoc-plan.md. n=8 test items: direction only. Nothing in the frozen system or its reported results changes.",
+  "plan_sha256": "db5d29720d73394010122d6d2523862ac15e3eef727c261bca0124b8925ae872",
+  "fp16_env": {
+    "started_utc": "2026-10-16T17:07:09Z",
+    "weights": "float16, no adapter",
+    "model_id": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "parameters": 8190735360,
+    "footprint_bytes": 16381470976,
+    "devices": [
+      "0",
+      "1"
+    ],
+    "gpus": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "versions": {
+      "torch": "2.11.0+cu128",
+      "transformers": "4.57.6",
+      "peft": "0.20.0",
+      "bitsandbytes": "0.50.2",
+      "accelerate": "1.14.0",
+      "datasets": "4.8.5"
+    },
+    "holdout_sha256": "818b491f19541c7703cc311afd498fe1169c223a1c03fb4902e275b46b7a9106",
+    "lock_sha256": "8ab9b7ae24fe5907965e6dc7b7e226bdcd7f74a845ccc2bfee995f2fc627d0cf",
+    "seconds_total": 298.3386615750005,
+    "peak_gpu1_bytes_all_items": 10735461888,
+    "note": "peak_gpu_bytes inside each record is device 0 only (frozen generate()); device 1 peak is above"
+  },
+  "systems": {
+    "fp16_no_adapter": {
+      "json_first_pass": 7,
+      "json_final": 8,
+      "invalid_ids": [],
+      "code_set_exact_main": 2,
+      "required_codes_all_hit": 4,
+      "items_with_required_codes": 6,
+      "ymyl_flagged_total": 5,
+      "ymyl_flagged_without_ymyl_in_main": [
+        "12",
+        "17",
+        "3"
+      ],
+      "items_without_ymyl_in_main": [
+        "12",
+        "3",
+        "17",
+        "8",
+        "9",
+        "4"
+      ],
+      "severity_match_main": 3,
+      "severity_higher_than_main": 5,
+      "score_in_main_range": 2,
+      "score_in_main_or_alt_range": 3,
+      "score_mae_vs_typical": 19.0,
+      "seo_false_on_4_9": {
+        "4": true,
+        "9": true
+      },
+      "stuffing_on_3": false,
+      "experience_on_12": false,
+      "items": [
+        {
+          "ID": "2",
+          "codes": [
+            "YMYL_RISK",
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        },
+        {
+          "ID": "12",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 59
+        },
+        {
+          "ID": "3",
+          "codes": [
+            "SEO_FALSE",
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 30
+        },
+        {
+          "ID": "17",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 59
+        },
+        {
+          "ID": "8",
+          "codes": [
+            "UNSUPPORTED_CLAIM"
+          ],
+          "severity": "minor",
+          "score": 75
+        },
+        {
+          "ID": "9",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 0
+        },
+        {
+          "ID": "1",
+          "codes": [
+            "YMYL_RISK",
+            "UNSUPPORTED_CLAIM"
+          ],
+          "severity": "major",
+          "score": 55
+        },
+        {
+          "ID": "4",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 0
+        }
+      ]
+    },
+    "base_4bit_no_adapter": {
+      "json_first_pass": 8,
+      "json_final": 8,
+      "invalid_ids": [],
+      "code_set_exact_main": 2,
+      "required_codes_all_hit": 5,
+      "items_with_required_codes": 6,
+      "ymyl_flagged_total": 6,
+      "ymyl_flagged_without_ymyl_in_main": [
+        "12",
+        "17",
+        "3",
+        "8"
+      ],
+      "items_without_ymyl_in_main": [
+        "12",
+        "3",
+        "17",
+        "8",
+        "9",
+        "4"
+      ],
+      "severity_match_main": 2,
+      "severity_higher_than_main": 6,
+      "score_in_main_range": 1,
+      "score_in_main_or_alt_range": 4,
+      "score_mae_vs_typical": 21.25,
+      "seo_false_on_4_9": {
+        "4": true,
+        "9": true
+      },
+      "stuffing_on_3": false,
+      "experience_on_12": true,
+      "items": [
+        {
+          "ID": "2",
+          "codes": [
+            "YMYL_RISK",
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        },
+        {
+          "ID": "12",
+          "codes": [
+            "YMYL_RISK",
+            "EXPERIENCE_UNVERIFIED"
+          ],
+          "severity": "major",
+          "score": 50
+        },
+        {
+          "ID": "3",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "critical",
+          "score": 0
+        },
+        {
+          "ID": "17",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 50
+        },
+        {
+          "ID": "8",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 55
+        },
+        {
+          "ID": "9",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        },
+        {
+          "ID": "1",
+          "codes": [
+            "YMYL_RISK",
+            "UNSUPPORTED_CLAIM"
+          ],
+          "severity": "major",
+          "score": 45
+        },
+        {
+          "ID": "4",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        }
+      ]
+    },
+    "frozen_4bit_adapter": {
+      "json_first_pass": 8,
+      "json_final": 8,
+      "invalid_ids": [],
+      "code_set_exact_main": 4,
+      "required_codes_all_hit": 5,
+      "items_with_required_codes": 6,
+      "ymyl_flagged_total": 6,
+      "ymyl_flagged_without_ymyl_in_main": [
+        "12",
+        "17",
+        "3",
+        "8"
+      ],
+      "items_without_ymyl_in_main": [
+        "12",
+        "3",
+        "17",
+        "8",
+        "9",
+        "4"
+      ],
+      "severity_match_main": 1,
+      "severity_higher_than_main": 7,
+      "score_in_main_range": 1,
+      "score_in_main_or_alt_range": 4,
+      "score_mae_vs_typical": 27.0,
+      "seo_false_on_4_9": {
+        "4": true,
+        "9": true
+      },
+      "stuffing_on_3": false,
+      "experience_on_12": true,
+      "items": [
+        {
+          "ID": "2",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "critical",
+          "score": 0
+        },
+        {
+          "ID": "12",
+          "codes": [
+            "YMYL_RISK",
+            "EXPERIENCE_UNVERIFIED"
+          ],
+          "severity": "major",
+          "score": 45
+        },
+        {
+          "ID": "3",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "critical",
+          "score": 0
+        },
+        {
+          "ID": "17",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 50
+        },
+        {
+          "ID": "8",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "major",
+          "score": 50
+        },
+        {
+          "ID": "9",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        },
+        {
+          "ID": "1",
+          "codes": [
+            "YMYL_RISK"
+          ],
+          "severity": "critical",
+          "score": 0
+        },
+        {
+          "ID": "4",
+          "codes": [
+            "SEO_FALSE"
+          ],
+          "severity": "critical",
+          "score": 25
+        }
+      ]
+    }
+  },
+  "fp16_vs_base_4bit": {
+    "compared": 8,
+    "same_code_set": 5,
+    "same_max_severity": 6,
+    "differing": [
+      {
+        "ID": "12",
+        "fp16": [
+          59,
+          "major",
+          [
+            "YMYL_RISK"
+          ]
+        ],
+        "base_4bit": [
+          50,
+          "major",
+          [
+            "YMYL_RISK",
+            "EXPERIENCE_UNVERIFIED"
+          ]
+        ]
+      },
+      {
+        "ID": "3",
+        "fp16": [
+          30,
+          "major",
+          [
+            "SEO_FALSE",
+            "YMYL_RISK"
+          ]
+        ],
+        "base_4bit": [
+          0,
+          "critical",
+          [
+            "YMYL_RISK"
+          ]
+        ]
+      },
+      {
+        "ID": "8",
+        "fp16": [
+          75,
+          "minor",
+          [
+            "UNSUPPORTED_CLAIM"
+          ]
+        ],
+        "base_4bit": [
+          55,
+          "major",
+          [
+            "YMYL_RISK"
+          ]
+        ]
+      }
+    ]
+  },
+  "reading_a": "YMYL over-flagging is not caused by 4-bit quantization; 16-bit does the same on these 8 items",
+  "train_target_loss": {
+    "answer_tokens": 1195,
+    "ce_base": 2.6275148655081395,
+    "ce_adapter": 2.0862523035025498,
+    "relative_reduction": 0.2059979066572908
+  },
+  "train_target_loss_items": [
+    {
+      "ID": "20",
+      "answer_tokens": 36,
+      "ce_adapter": 2.31729973687066,
+      "ce_base": 3.014073265923394,
+      "ce_sum_adapter": 83.42279052734375,
+      "ce_sum_base": 108.50663757324219
+    },
+    {
+      "ID": "6",
+      "answer_tokens": 101,
+      "ce_adapter": 1.7589582688737624,
+      "ce_base": 2.2978065415184097,
+      "ce_sum_adapter": 177.65478515625,
+      "ce_sum_base": 232.07846069335938
+    },
+    {
+      "ID": "15",
+      "answer_tokens": 122,
+      "ce_adapter": 1.5430022693071208,
+      "ce_base": 1.8975940141521517,
+      "ce_sum_adapter": 188.24627685546875,
+      "ce_sum_base": 231.5064697265625
+    },
+    {
+      "ID": "5",
+      "answer_tokens": 102,
+      "ce_adapter": 2.4842765658509496,
+      "ce_base": 3.045870313457414,
+      "ce_sum_adapter": 253.39620971679688,
+      "ce_sum_base": 310.67877197265625
+    },
+    {
+      "ID": "10",
+      "answer_tokens": 114,
+      "ce_adapter": 2.893850226151316,
+      "ce_base": 3.546275356359649,
+      "ce_sum_adapter": 329.89892578125,
+      "ce_sum_base": 404.275390625
+    },
+    {
+      "ID": "14",
+      "answer_tokens": 111,
+      "ce_adapter": 1.9486958271748311,
+      "ce_base": 2.3540657662056588,
+      "ce_sum_adapter": 216.30523681640625,
+      "ce_sum_base": 261.3013000488281
+    },
+    {
+      "ID": "16",
+      "answer_tokens": 88,
+      "ce_adapter": 2.2879324826327236,
+      "ce_base": 2.8722671161998403,
+      "ce_sum_adapter": 201.3380584716797,
+      "ce_sum_base": 252.75950622558594
+    },
+    {
+      "ID": "19",
+      "answer_tokens": 95,
+      "ce_adapter": 1.67523337916324,
+      "ce_base": 2.1516779849403784,
+      "ce_sum_adapter": 159.1471710205078,
+      "ce_sum_base": 204.40940856933594
+    },
+    {
+      "ID": "7",
+      "answer_tokens": 106,
+      "ce_adapter": 1.9918404345242482,
+      "ce_base": 2.561863161482901,
+      "ce_sum_adapter": 211.1350860595703,
+      "ce_sum_base": 271.5574951171875
+    },
+    {
+      "ID": "13",
+      "answer_tokens": 103,
+      "ce_adapter": 1.813268568909284,
+      "ce_base": 2.3253126422178396,
+      "ce_sum_adapter": 186.76666259765625,
+      "ce_sum_base": 239.5072021484375
+    },
+    {
+      "ID": "18",
+      "answer_tokens": 116,
+      "ce_adapter": 1.9380915411587418,
+      "ce_base": 2.5189798289331895,
+      "ce_sum_adapter": 224.81861877441406,
+      "ce_sum_base": 292.20166015625
+    },
+    {
+      "ID": "11",
+      "answer_tokens": 101,
+      "ce_adapter": 2.58358099909112,
+      "ce_base": 3.278197637879022,
+      "ce_sum_adapter": 260.9416809082031,
+      "ce_sum_base": 331.09796142578125
+    }
+  ],
+  "reading_b": "fine-tuning moved the model closer to the supervised answers, but this did not turn into different judgments on the test items"
+}

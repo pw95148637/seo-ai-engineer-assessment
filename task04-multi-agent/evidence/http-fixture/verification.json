@@ -1,0 +1,63 @@
+{
+  "run_id": "3d585a5968064487b82f3b45402044a3",
+  "mode": "offline_http_fixture",
+  "status": "approved_provisional",
+  "scenario": "forced_conflict",
+  "checks": {
+    "mode_is_llm_runtime": false,
+    "has_both_roles": true,
+    "raw_outputs_match_state": true,
+    "run_ids_match": true,
+    "expected_terminal_status": true,
+    "final_output_contract": true,
+    "final_literal_guard_clear": true,
+    "raw_responses_saved": true,
+    "initial_conflict_present": true,
+    "first_auditor_rejected": true,
+    "revision_occurred": true,
+    "feedback_carried_to_revision": true,
+    "draft_changed": true
+  },
+  "limitations": [
+    "模式與原文比對仍不能單獨證明伺服器為真實模型，需核對provider、模型及帳號執行紀錄",
+    "吸引力與語意合規仍需獨立閱讀；本程式不測量CTR或認證法律/公司手冊合規"
+  ],
+  "negotiation": [
+    {
+      "iteration": 1,
+      "planner_title": "娛樂城推薦：保證出金",
+      "planner_note": null,
+      "auditor_passed": false,
+      "auditor_note": null,
+      "findings": [
+        {
+          "quote": "保證出金",
+          "reason": "無證據的提款保證",
+          "revision": "改用出金條款查核，保留讀者問題與吸引力",
+          "rule": "CLAIMS"
+        }
+      ],
+      "controller_guard": []
+    },
+    {
+      "iteration": 2,
+      "planner_title": "娛樂城推薦怎麼看？先查出金條件、資安與風險的六個問題",
+      "planner_note": null,
+      "auditor_passed": true,
+      "auditor_note": null,
+      "findings": [],
+      "controller_guard": []
+    }
+  ],
+  "final": {
+    "title": "娛樂城推薦怎麼看？先查出金條件、資安與風險的六個問題",
+    "sections": [
+      "推薦前先說明：本文未完成平台實測，不提供獲利或提款保證",
+      "查核出金：身分驗證、費用、限額、處理時間與爭議管道",
+      "資安查核清單：個資處理與帳號保護；未查證項目標示未知",
+      "遊戲機率與資金損失：查明規則，不把短期結果當成長期勝率",
+      "平台比較表：條件、來源日期與缺漏；不製作未經驗證的排名",
+      "參與前確認所在地法律與年齡限制；設定預算及停止條件"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "time": "2026-10-16T05:35:35.784697+00:00",
+  "checks": [
+    {
+      "host": "casinobase.tw",
+      "error": "transport:TimeoutError",
+      "ok": false
+    },
+    {
+      "host": "icasino.tw",
+      "homepage_status": 200,
+      "ok": true
+    }
+  ],
+  "chosen": "icasino.tw"
+}

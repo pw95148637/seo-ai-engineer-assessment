@@ -1,0 +1,23 @@
+{
+  "lock_sha256": "8ab9b7ae24fe5907965e6dc7b7e226bdcd7f74a845ccc2bfee995f2fc627d0cf",
+  "gate_status": "FAIL",
+  "hard_failures": 6,
+  "accepted_failed_gate_reason": "依HANDOFF事前停損規則：v3仍FAIL即不再改prompt，凍結hard較少的版本。同一份修正後gate重判：v3b 4項hard（ID20 CLEAN_ITEM_FLAGGED、ID5 REQUIRED_CODE_MISSED、ID7 INVALID_JSON、YMYL_OVERFLAG 5/7），v2 9項（不計v2格式必然失敗的CONTRACT_INVALID）。鎖內6項含ID14兩筆RISK_DISCLOSURE_REMOVAL，屬看到v3b結果後才修的checker誤判；修正前v3b 6項也少於v2 9項，選擇不變。in-sample檢查，未以holdout選版本。",
+  "code_changes": {
+    "scripts/workflow.py": {
+      "frozen_sha256": "16cf373e138ebc4c957f8b24cf2093aead356e1932df01953377a469787eb49d",
+      "eval_sha256": "68b662127887617b03c34e26773ac670c04e0a3dc7ddee5bd3c3d196a6c8a32d"
+    },
+    "scripts/selfcheck.py": {
+      "frozen_sha256": "627bb2d208ea03ea7498ab51b558c51f64d90afa1b9a1a0e6973036e6f6cc80c",
+      "eval_sha256": "9eeee985ba786d6cbde40614e80fe3ae0e4fb62b0743f04c8895dcf5ddce6572"
+    },
+    "scripts/test_workflow.py": {
+      "frozen_sha256": "a714f6969561b12a1012758f97af1028442ce3e41884f0467976c6de4241b300",
+      "eval_sha256": "1fdc1bd10a7cb603959551da1deb6dc3931ad73a22d8c4c453f9a9ee7e72bbeb"
+    }
+  },
+  "accepted_code_change_reason": "凍結後只改量測與eval程式：selfcheck.py修正RISK_DISCLOSURE_REMOVAL漏看禁止詞後並列動詞（避免否認或淡化）的誤判，並列只限封閉的否認／刪除類動詞；workflow.py新增同prompt無adapter的holdout對照（evaluate-base）、比較報表與宣告式凍結核對；test_workflow.py新增測試。prompt、知識卡、設定、監督答案、契約audit_io.py與adapter未改；workflow.py除豁免的報表與eval串接外逐句AST與凍結版相同，eval串接以記錄式假模型演練。",
+  "lock_created_utc": "2026-10-16T04:13:27Z",
+  "eval_built_utc": "2026-10-16T04:44:40Z"
+}

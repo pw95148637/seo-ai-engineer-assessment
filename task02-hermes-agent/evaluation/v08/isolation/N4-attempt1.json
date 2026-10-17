@@ -1,0 +1,20 @@
+{
+  "before": {
+    "homes": {
+      "v08-c1-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-c2-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-c3-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l1-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l2-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-l3-a1": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "v08-n": "3810c8967cd5e50f524d25d472657249eac4965f9b15dc8e6b0b46adc36e146c"
+    },
+    "root_learned": [],
+    "user_hermes": null
+  },
+  "own": "v08-n",
+  "expected": null,
+  "ledger_before": "9dce7d5545f71ca3a8466b7c142389861fe3d66aaefdb7deba51d6d34879d118",
+  "ledger_after": "9dce7d5545f71ca3a8466b7c142389861fe3d66aaefdb7deba51d6d34879d118",
+  "problems": []
+}

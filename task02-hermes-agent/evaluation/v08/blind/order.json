@@ -1,0 +1,14 @@
+{
+  "order": [
+    "155f1000",
+    "b9bfd995",
+    "2f358aae",
+    "20879e95",
+    "5be76a5d",
+    "a213ab6c",
+    "1b1c99c0",
+    "b6d2aa16",
+    "84fc353e"
+  ],
+  "rule": "one reviewer reviews every packet in this order in one pass"
+}

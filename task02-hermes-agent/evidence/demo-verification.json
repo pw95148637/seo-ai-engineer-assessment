@@ -1,0 +1,20 @@
+{
+  "programs": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "format": {
+    "duration": "300.000000",
+    "size": "1045573"
+  },
+  "kind": "actual_execution_captioned_replay_not_live_screen_recording",
+  "audio": false,
+  "frame_count": 10,
+  "sha256": "f1fff0f9ca8cc1262c3397889d4195f693c6807addbc8a018916407f97773c5f",
+  "font_sha256": "864727d210d54f2537bbe23b3a839436c3992af72de9322af5270897246bd44f",
+  "visual_qa": "Frames 04 and 09 inspected; all frames passed script overflow check."
+}

@@ -1,0 +1,91 @@
+{
+  "run_id": "841f72b2768a4a97aeac0d63e3c90f28",
+  "host": "2030.tw",
+  "mode": "memory",
+  "run_status": "finished",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "target_pages": {
+    "娛樂城": {
+      "call": 3,
+      "evidence_id": "1ae5682b4734477d9f8522a086e28f1a",
+      "via": "research_evidence"
+    },
+    "3A娛樂城": {
+      "call": 2,
+      "evidence_id": "0c115ae575c3460394dfba061452a7dd",
+      "via": "research_evidence"
+    }
+  },
+  "both_target_pages_read": true,
+  "tool_calls": 18,
+  "calls_before_first_hit": 1,
+  "calls_until_both_hit": 3,
+  "searches": 5,
+  "failed_searches": 2,
+  "failed_search_kinds": {
+    "no_results": 2,
+    "error": 0
+  },
+  "failed_search_queries": [
+    "\"3A娛樂城\" \"2030\"",
+    "\"2030玩運彩\" -site:2030.tw"
+  ],
+  "http_requests": 13,
+  "http_requests_controller": 3,
+  "sitemap_reads": 0,
+  "refetched_verified_pages": 0,
+  "finish_attempts": 1,
+  "first_finish_rejected": false,
+  "finish_rejections": [],
+  "failed_source_citations": {
+    "rejected_attempts": 0,
+    "final_report": 0
+  },
+  "lessons_presented": 3,
+  "stale_lessons_presented": 0,
+  "tokens": {
+    "total": 252440,
+    "prompt": 246552,
+    "completion": 5888,
+    "api_calls": 8,
+    "cache_read": 198016,
+    "cache_write": 0,
+    "uncached_prompt": 48536,
+    "cost": 54424
+  },
+  "hermes_tools": {
+    "research_status": 1,
+    "research_evidence": 5,
+    "research_fetch": 2,
+    "research_search": 5,
+    "research_offpage": 4,
+    "research_finish": 1
+  },
+  "claims": 11,
+  "actions": 6,
+  "sections": {
+    "on_page": 7,
+    "off_page": 3,
+    "other": 1
+  },
+  "offpage": {
+    "claims": 3,
+    "observation": 1,
+    "inference": 1,
+    "unknown": 1,
+    "three_columns": true,
+    "known": 1,
+    "known_external": 1,
+    "known_link_verified": 0,
+    "pages_fetched": 4,
+    "pages_linking_to_target": 0
+  },
+  "offpage_policy_violations": [],
+  "state": "research_complete",
+  "transcript_calls": 1,
+  "review_cost": 0,
+  "learned": null
+}

@@ -1,0 +1,117 @@
+# Task03 offline checks: v3b freeze and eval build
+date: 2026-10-16T04:44:38Z (UTC); host: Windows 11, Python 3.13.14; PYTHONUTF8=1
+Offline only: no GPU, no Kaggle run; holdout8 hashed and compared mechanically, never printed or semantically read.
+
+$ python scripts/workflow.py check-targets
+PASS: 12 train-only targets validated
+exit=0
+
+$ python scripts/test_workflow.py
+{"adapter": {}, "base": {"REQUIRED_CODE_MISSED": 1, "SEVERE_SCORE_TOO_HIGH": 1}}
+PASS: 12 targets; retry and denominator accounting; severity-band contract and retry; prompt bands match code; raw failure preservation; no overwrite; invalid consistency; completion-only loss mask; length rejection; gate heuristics; round-1 real outputs rejected for false experience, risk-removal advice, TW_266 mixing, score 55-59 and source dumping; v2 real outputs rejected for missing severity, YMYL over-flagging, missed experience, legal-consequence softening and ID14/7 at 55; v3b real outputs keep 4 hard failures (ID20 flagged, ID5 experience missed, ID7 invalid, YMYL over-flagging) without the ID14 checker false positive. Synthetic/train-only, no GPU/model results.
+exit=0
+
+$ python scripts/check_contract.py
+markdown REJECT JSONDecodeError
+out_of_range REJECT ValidationError
+boolean_score REJECT ValidationError
+extra_field REJECT ValidationError
+missing_advice REJECT ValidationError
+wrong_quote REJECT ValueError
+unknown_source REJECT ValueError
+duplicate_key REJECT ValueError
+missing_severity REJECT ValidationError
+unknown_severity REJECT ValidationError
+score_outside_band REJECT ValueError
+no_reason_low_score REJECT ValueError
+PASS: 1 valid, 12 invalid rejected. Synthetic checks, not model results.
+exit=0
+
+$ python scripts/regate.py kaggle-retrieved/soulo-work03-v2-train/work03 --out evidence/regate-v2.json
+{"status": "FAIL", "selfcheck": "train_selfcheck.jsonl", "hard_train12": {"CONTRACT_INVALID": 12, "RISK_DISCLOSURE_REMOVAL": 1, "CLEAN_ITEM_FLAGGED": 1, "REQUIRED_CODE_MISSED": 1, "SEVERE_SCORE_TOO_HIGH": 2, "YMYL_OVERFLAG": 1}, "hard_consistency": {"CONTRACT_INVALID": 3, "SEVERE_SCORE_TOO_HIGH": 3}, "hard_total_excl_contract": 9, "hard_codes_excl_contract": ["CLEAN_ITEM_FLAGGED", "REQUIRED_CODE_MISSED", "RISK_DISCLOSURE_REMOVAL", "SEVERE_SCORE_TOO_HIGH", "YMYL_OVERFLAG"], "score_mae": 16.6, "score_mae_n": 12, "no_valid_output": [], "severe_scores": {"14": 55, "7": 55}, "target_severe": {"14": 12, "7": 15}, "consistency_id14_scores": [55, 55, 55], "ymyl_flagged": "11/12", "ymyl_on_clear": "6/7", "ymyl_on_target": "3/3"}
+HARD train ID20 RISK_DISCLOSURE_REMOVAL 避免使用「必須明白的法律後果」等可能被誤解為保證結果的語句。
+HARD train ID20 CLEAN_ITEM_FLAGGED YMYL_RISK
+HARD train ID5 REQUIRED_CODE_MISSED EXPERIENCE_UNVERIFIED
+HARD train ID14 SEVERE_SCORE_TOO_HIGH 55 > 29 (target 12)
+HARD train ID7 SEVERE_SCORE_TOO_HIGH 55 > 29 (target 15)
+HARD train12 YMYL_OVERFLAG YMYL_RISK on 6/7 clearly non-YMYL items (max 1): IDs 20,6,16,19,18,11
+HARD consistency ID14 T0.2 SEVERE_SCORE_TOO_HIGH 55 > 29 (target 12)
+HARD consistency ID14 T0.5 SEVERE_SCORE_TOO_HIGH 55 > 29 (target 12)
+HARD consistency ID14 T0.8 SEVERE_SCORE_TOO_HIGH 55 > 29 (target 12)
+exit=0
+
+$ python scripts/regate.py kaggle-retrieved/soulo-work03-v3b-train/work03 --out evidence/regate-v3b.json
+{"status": "FAIL", "selfcheck": "train_selfcheck.jsonl", "hard_train12": {"CLEAN_ITEM_FLAGGED": 1, "REQUIRED_CODE_MISSED": 1, "INVALID_JSON": 1, "YMYL_OVERFLAG": 1}, "hard_consistency": {}, "hard_total_excl_contract": 4, "hard_codes_excl_contract": ["CLEAN_ITEM_FLAGGED", "INVALID_JSON", "REQUIRED_CODE_MISSED", "YMYL_OVERFLAG"], "score_mae": 31.9, "score_mae_n": 11, "no_valid_output": ["7"], "severe_scores": {"14": 0, "7": null}, "target_severe": {"14": 12, "7": 15}, "consistency_id14_scores": [0, 0, 0], "ymyl_flagged": "9/12", "ymyl_on_clear": "5/7", "ymyl_on_target": "2/3"}
+HARD train ID20 CLEAN_ITEM_FLAGGED YMYL_RISK
+HARD train ID5 REQUIRED_CODE_MISSED EXPERIENCE_UNVERIFIED
+HARD train ID7 INVALID_JSON no valid JSON after allowed attempts
+HARD train12 YMYL_OVERFLAG YMYL_RISK on 5/7 clearly non-YMYL items (max 1): IDs 20,6,16,18,11
+exit=0
+
+$ python scripts/regate.py kaggle-retrieved/soulo-work03-v3b-train/work03 --selfcheck train_selfcheck_base.jsonl --out evidence/regate-v3b-base.json
+{"status": "FAIL", "selfcheck": "train_selfcheck_base.jsonl", "hard_train12": {"RISK_DISCLOSURE_REMOVAL": 1, "CLEAN_ITEM_FLAGGED": 1, "CROSS_DOMAIN_LAW": 1, "YMYL_OVERFLAG": 1}, "hard_consistency": {}, "hard_total_excl_contract": 4, "hard_codes_excl_contract": ["CLEAN_ITEM_FLAGGED", "CROSS_DOMAIN_LAW", "RISK_DISCLOSURE_REMOVAL", "YMYL_OVERFLAG"], "score_mae": 25.5, "score_mae_n": 12, "no_valid_output": [], "severe_scores": {"14": 0, "7": 25}, "target_severe": {"14": 12, "7": 15}, "consistency_id14_scores": [0, 0, 0], "ymyl_flagged": "10/12", "ymyl_on_clear": "5/7", "ymyl_on_target": "3/3", "note": "consistency.json is the adapter run; only hard_train12 describes this self-check"}
+HARD train ID20 RISK_DISCLOSURE_REMOVAL 避免使用「必須明白的法律後果」等可能導致讀者做出財務決策的表述，改為「了解此法律後果有助於做出財務規劃」等中性語句。
+HARD train ID20 CLEAN_ITEM_FLAGGED YMYL_RISK
+HARD train ID7 CROSS_DOMAIN_LAW YMYL_RISK cites TW_266 for Mortgage
+HARD train12 YMYL_OVERFLAG YMYL_RISK on 5/7 clearly non-YMYL items (max 1): IDs 20,6,16,18,11
+exit=0
+
+$ WORK03_ROOT=kaggle-retrieved/soulo-work03-v3b-train/work03 python scripts/workflow.py check-freeze
+PASS: 34 frozen files verified (0 declared post-freeze code changes: []); train gate FAIL
+exit=0
+
+$ python scripts/build_notebook.py --lock kaggle-retrieved/soulo-work03-v3b-train/work03/outputs/frozen.json --accept-failed-gate "<GATE_REASON>" --accept-code-change "<CODE_REASON>"
+GATE_REASON=依HANDOFF事前停損規則：v3仍FAIL即不再改prompt，凍結hard較少的版本。同一份修正後gate重判：v3b 4項hard（ID20 CLEAN_ITEM_FLAGGED、ID5 REQUIRED_CODE_MISSED、ID7 INVALID_JSON、YMYL_OVERFLAG 5/7），v2 9項（不計v2格式必然失敗的CONTRACT_INVALID）。鎖內6項含ID14兩筆RISK_DISCLOSURE_REMOVAL，屬看到v3b結果後才修的checker誤判；修正前v3b 6項也少於v2 9項，選擇不變。in-sample檢查，未以holdout選版本。
+CODE_REASON=凍結後只改量測與eval程式：selfcheck.py修正RISK_DISCLOSURE_REMOVAL漏看禁止詞後並列動詞（避免否認或淡化）的誤判，並列只限封閉的否認／刪除類動詞；workflow.py新增同prompt無adapter的holdout對照（evaluate-base）、比較報表與宣告式凍結核對；test_workflow.py新增測試。prompt、知識卡、設定、監督答案、契約audit_io.py與adapter未改；workflow.py除豁免的報表與eval串接外逐句AST與凍結版相同，eval串接以記錄式假模型演練。
+Built train-stage notebook (canonical and kaggle/train); no model results embedded
+Built kaggle/eval notebook for lock 8ab9b7ae24fe5907965e6dc7b7e226bdcd7f74a845ccc2bfee995f2fc627d0cf {'gate_status': 'FAIL', 'hard_failures': 6, 'accepted_failed_gate_reason': '依HANDOFF事前停損規則：v3仍FAIL即不再改prompt，凍結hard較少的版本。同一份修正後gate重判：v3b 4項hard（ID20 CLEAN_ITEM_FLAGGED、ID5 REQUIRED_CODE_MISSED、ID7 INVALID_JSON、YMYL_OVERFLAG 5/7），v2 9項（不計v2格式必然失敗的CONTRACT_INVALID）。鎖內6項含ID14兩筆RISK_DISCLOSURE_REMOVAL，屬看到v3b結果後才修的checker誤判；修正前v3b 6項也少於v2 9項，選擇不變。in-sample檢查，未以holdout選版本。', 'code_changes': {'scripts/workflow.py': {'frozen_sha256': '16cf373e138ebc4c957f8b24cf2093aead356e1932df01953377a469787eb49d', 'eval_sha256': '68b662127887617b03c34e26773ac670c04e0a3dc7ddee5bd3c3d196a6c8a32d'}, 'scripts/selfcheck.py': {'frozen_sha256': '627bb2d208ea03ea7498ab51b558c51f64d90afa1b9a1a0e6973036e6f6cc80c', 'eval_sha256': '9eeee985ba786d6cbde40614e80fe3ae0e4fb62b0743f04c8895dcf5ddce6572'}, 'scripts/test_workflow.py': {'frozen_sha256': 'a714f6969561b12a1012758f97af1028442ce3e41884f0467976c6de4241b300', 'eval_sha256': '1fdc1bd10a7cb603959551da1deb6dc3931ad73a22d8c4c453f9a9ee7e72bbeb'}}, 'accepted_code_change_reason': '凍結後只改量測與eval程式：selfcheck.py修正RISK_DISCLOSURE_REMOVAL漏看禁止詞後並列動詞（避免否認或淡化）的誤判，並列只限封閉的否認／刪除類動詞；workflow.py新增同prompt無adapter的holdout對照（evaluate-base）、比較報表與宣告式凍結核對；test_workflow.py新增測試。prompt、知識卡、設定、監督答案、契約audit_io.py與adapter未改；workflow.py除豁免的報表與eval串接外逐句AST與凍結版相同，eval串接以記錄式假模型演練。', 'lock_created_utc': '2026-10-16T04:13:27Z', 'eval_built_utc': '2026-10-16T04:44:40Z'}
+exit=0
+
+$ python scripts/verify_notebook.py
+PASS: train notebook current (7 code cells); kaggle/train copy identical; no holdout text; metadata separation; train->eval seam and report rehearsed on synthetic rows; eval build gated by lock (eval notebook present); all scripts parse; no model outputs
+exit=0
+
+sha256:
+8ab9b7ae24fe5907965e6dc7b7e226bdcd7f74a845ccc2bfee995f2fc627d0cf *kaggle-retrieved/soulo-work03-v3b-train/work03/outputs/frozen.json
+d6b4226dc1ab7537db6d2b931600cb5757276b2811b73a961b7229018191f154 *kaggle/eval/work03_eval.ipynb
+9490cbe29a9ef4eb7dd85b2b14d2c3d9bbcfa49bf60824d37cd49c3f3775990f *kaggle/eval/kernel-metadata.json
+818b491f19541c7703cc311afd498fe1169c223a1c03fb4902e275b46b7a9106 *data/holdout8.csv
+
+## Checker before/after on all real advice (one-off comparison)
+old checker = kaggle-retrieved/soulo-work03-v3b-train/work03/scripts/selfcheck.py (frozen); new = scripts/selfcheck.py
+sources: outputs/experiments/initial/consistency.json; v2-train and v3b-train train_selfcheck(.jsonl, _base.jsonl, all raw attempts) and consistency.json
+unique real advice strings: 96 (from 173 occurrences)
+verdict changed: 2
+  old=True new=False | 建議修改原文，避免否認或淡化法律風險，例如增加說明抵押物可能被拍賣的條件與程序，並提醒讀者應諮詢專業法律意見。 | soulo-work03-v3b-train train_selfcheck.jsonl ID14; soulo-work03-v3b-train train_selfcheck.jsonl ID14 raw0
+  old=True new=False | 修改文章中「房貸二胎沒風險」的表述，避免否認或淡化法律後果，並補充抵押物拍賣的法律風險，例如引用民法873條的內容，說明債權到期未受清償時抵押物可能被拍賣，以降低法律風險。 | soulo-work03-v3b-train consistency T0.5
+still flagged by fixed gate: 3
+  避免使用「風險」等字眼，除非有足夠的法律或金融專業資訊支持。 | v1 consistency T0.5
+  避免使用「必須明白的法律後果」等可能被誤解為保證結果的語句。 | soulo-work03-v2-train train_selfcheck.jsonl ID20; soulo-work03-v2-train train_selfcheck.jsonl ID20 raw0
+  避免使用「必須明白的法律後果」等可能導致讀者做出財務決策的表述，改為「了解此法律後果有助於做出財務規劃」等中性語句。 | soulo-work03-v3b-train train_selfcheck_base.jsonl ID20; soulo-work03-v3b-train train_selfcheck_base.jsonl ID20 raw0
+
+## Eval-seam rehearsal on the real v3b bundle (offline, no GPU, no holdout)
+payload, EXPECTED_LOCK_SHA256 and FREEZE_DECISION extracted from kaggle/eval/work03_eval.ipynb; bundle outputs copied as in the eval cell
+test_workflow (eval payload): 0 ency; completion-only loss mask; length rejection; gate heuristics; round-1 fixture absent in this payload; skipped. Synthetic/train-only, no GPU/model results. 
+check-freeze without decision (must fail): 1 AssertionError: Frozen file changed or missing: scripts/selfcheck.py
+check-freeze with embedded decision: 0 PASS: 34 frozen files verified (3 declared post-freeze code changes: ['scripts/selfcheck.py', 'scripts/test_workflow.py', 'scripts/workflow.py']); train gate FAIL 
+declared code changes: ['scripts/selfcheck.py', 'scripts/test_workflow.py', 'scripts/workflow.py']
+gate: FAIL 6
+
+## Mutation checks (scratch copy): each mutation must make a check fail; all did
+- PROHIBIT without coordinated verbs (pre-fix) -> test_workflow.py fails on the two real v3b sentences
+- PROHIBIT without the 分別/個別 lookbehind -> test_workflow.py fails ('建議分別刪除風險警示與免責聲明')
+- check_freeze without the POST_FREEZE_CODE allowlist -> verify_notebook.py fails (contract change passed check-freeze)
+- report() accepting a partial base file -> verify_notebook.py fails
+- POST_FREEZE_EXEMPT plus 'generate' -> verify_notebook.py fails (post-freeze guard)
+- holdout_run passing temperature=.7 to generate -> verify_notebook.py fails (eval glue rehearsal)
+- holdout_run calling load(adapter=not adapter) -> verify_notebook.py fails (eval glue rehearsal)
+
+## Independent review (stance-free agent, read-only, did not read holdout) and what was adopted
+- Confirmed the two ID14 flags were checker false positives.
+- First fix accepted any two characters as a coordinated verb and treated 別 in 分別/個別 as a prohibition: 7 real removals passed.
+  Adopted: coordination limited to a closed deny/remove verb set plus a lookbehind for 別 compounds; 8 such sentences added as must-block.
+- AST guard compared an allowlist of functions, so module-level wrappers or a swapped flag in holdout_run would pass.
+  Adopted: default-deny over every top-level statement (only report code and eval glue exempt; CLI choices normalised),
+  plus a recording-fake-model rehearsal of evaluate/evaluate_base (adapter flag order, generate(tok, model, msg) only).
+- "Pre-registered" wording for AutoFlags corrected to "fixed before holdout was read; post-freeze fix declared".
+- Reviewer found no crash path in the eval kernel and confirmed the base run uses the same prompt, decoding and repair rule.

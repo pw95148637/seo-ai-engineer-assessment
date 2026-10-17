@@ -1,0 +1,20 @@
+[
+  {
+    "id": "robots-body.txt",
+    "url": "https://2030.tw/robots.txt",
+    "method": "direct HTTP curl",
+    "status": 200,
+    "sha256": "c59d971fff8d33ed6ec0f38e639bd21a0b7768b89ced61d2df541bf08c768b9a",
+    "bytes": 111,
+    "recorded_at": "2026-10-15T06:24:44.452565+00:00"
+  },
+  {
+    "id": "sitemap.xml",
+    "url": "https://2030.tw/sitemap_index.xml",
+    "method": "direct HTTP curl",
+    "status": 200,
+    "sha256": "c2b1cbd2d15813b603973f68aac53e5548a063e62ad7b6d0bf46de55f93b883e",
+    "bytes": 976,
+    "recorded_at": "2026-10-15T06:24:44.452624+00:00"
+  }
+]

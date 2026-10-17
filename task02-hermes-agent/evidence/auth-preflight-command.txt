@@ -1,0 +1,2 @@
+{"run_id": "3871420e91cc4bbfbcc509f8f780b272", "state": "oauth_required", "exit_code": 2, "model_called": false, "report_submitted": false}
+process_exit=2

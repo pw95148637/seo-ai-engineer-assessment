@@ -1,0 +1,322 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="'Microsoft JhengHei','Noto Sans TC','PingFang TC',sans-serif" role="img" aria-label="娛樂城提示詞鏈（系統 v4）的資訊流向圖：關鍵字經 A 微意圖建模與主控選題；B 段補問作者後一次寫作到位；C 段三份平行審核（正確性、作者經驗、讀者視角）、作者確認、整合修正、全文獨立複審，再依結論定稿、小修後由 C4 驗差異，或退回修正；定稿與上一版定稿、兩組單一 prompt 一起盲評，再回饋改版。">
+<title>提示詞鏈資訊流向圖（系統 v4）</title>
+<defs>
+<marker id="ah-dark-L" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#24292F"/></marker>
+<marker id="ah-dark-S" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#24292F"/></marker>
+<marker id="ah-amber-L" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#BF8700"/></marker>
+<marker id="ah-amber-S" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#BF8700"/></marker>
+<marker id="ah-red-L" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#CF222E"/></marker>
+<marker id="ah-red-S" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#CF222E"/></marker>
+<marker id="ah-purple-L" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#8250DF"/></marker>
+<marker id="ah-purple-S" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#8250DF"/></marker>
+<marker id="ah-blue-L" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#0969DA"/></marker>
+<marker id="ah-blue-S" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#0969DA"/></marker>
+<marker id="ah-gray-L" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#8C959F"/></marker>
+<marker id="ah-gray-S" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L12,6 L0,11.2 L3,6 z" fill="#8C959F"/></marker>
+</defs>
+<rect x="0.0" y="0.0" width="1600.0" height="900.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0" />
+<text x="40.0" y="37.0" font-size="27" font-weight="bold" fill="#1F2328" text-anchor="start" >提示詞鏈資訊流向圖</text>
+<text x="40.0" y="61.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >第一手經驗只來自作者本人；C 依三種錯誤分頭審；寫的人不審自己，最後一步一定是檢查</text>
+<rect x="676.0" y="18.0" width="22.0" height="16.0" rx="4" fill="#fff" stroke="#57606A" stroke-width="1.4" />
+<text x="704.0" y="30.5" font-size="13" font-weight="normal" fill="#424A53" text-anchor="start" >新的 subagent（每步重開）</text>
+<path d="M899.0,18 L907.0,26 L899.0,34 L891.0,26 z" fill="#0969DA" stroke="#FFFFFF" stroke-width="2"/>
+<text x="914.0" y="30.5" font-size="13" font-weight="normal" fill="#424A53" text-anchor="start" >主控關卡（不過關退回該步重做）</text>
+<rect x="1131.0" y="16.5" width="40.0" height="19.0" rx="9.5" fill="#fff" stroke="#1A7F37" stroke-width="1.4" />
+<text x="1151.0" y="30.6" font-size="12" font-weight="bold" fill="#1A7F37" text-anchor="middle" >獨立</text>
+<text x="1177.0" y="30.5" font-size="13" font-weight="normal" fill="#424A53" text-anchor="start" >沒參與寫作的人審</text>
+<rect x="1303.0" y="18.0" width="22.0" height="16.0" rx="4" fill="#FFF8C5" stroke="#BF8700" stroke-width="1.4" />
+<text x="1331.0" y="30.5" font-size="13" font-weight="normal" fill="#424A53" text-anchor="start" >作者本人（真人）</text>
+<path d="M1459.0,17 L1466.68,17 L1471.48,21.8 L1471.48,33 L1459.0,33 z" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M1466.68,17 L1466.68,21.8 L1471.48,21.8" fill="none" stroke="#8C959F" stroke-width="1.2"/>
+<line x1="1461.24" y1="24.2" x2="1468.92" y2="24.2" stroke="#8C959F" stroke-width="1"/>
+<line x1="1461.24" y1="26.9" x2="1468.92" y2="26.9" stroke="#8C959F" stroke-width="1"/>
+<line x1="1461.24" y1="29.6" x2="1468.92" y2="29.6" stroke="#8C959F" stroke-width="1"/>
+<text x="1479.0" y="30.5" font-size="13" font-weight="normal" fill="#424A53" text-anchor="start" >共用資料</text>
+<rect x="676.0" y="45.5" width="32.0" height="17.0" rx="4" fill="#24292F" stroke="#24292F" stroke-width="1" />
+<text x="692.0" y="58.5" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >程式</text>
+<text x="714.0" y="58.5" font-size="13" font-weight="normal" fill="#424A53" text-anchor="start" >check_article.py：字數、揭露、AI 腔字詞與驚嘆號、引文逐字出自來源、數字沒少</text>
+<rect x="1210.0" y="45.5" width="32.0" height="17.0" rx="4" fill="#FFFFFF" stroke="#0969DA" stroke-width="1.2" />
+<text x="1226.0" y="58.5" font-size="11.5" font-weight="bold" fill="#0969DA" text-anchor="middle" >重算</text>
+<text x="1248.0" y="58.5" font-size="13" font-weight="normal" fill="#424A53" text-anchor="start" >主控重算、抽查</text>
+<path d="M1361.0,54.0 L1395.0,54.0" fill="none" stroke="#CF222E" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 4" marker-end="url(#ah-red-S)"/>
+<text x="1403.0" y="58.5" font-size="13" font-weight="normal" fill="#424A53" text-anchor="start" >退回／再修</text>
+<path d="M1490.0,54.0 L1524.0,54.0" fill="none" stroke="#8250DF" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 4" marker-end="url(#ah-purple-S)"/>
+<text x="1532.0" y="58.5" font-size="13" font-weight="normal" fill="#424A53" text-anchor="start" >回饋改版</text>
+<rect x="40.0" y="100.0" width="1548.0" height="500.0" rx="12" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.4" />
+<rect x="40.0" y="74.0" width="522.0" height="32.0" rx="8" fill="#334155" stroke="#334155" stroke-width="1" />
+<rect x="41.0" y="100.0" width="520.0" height="6.0" rx="0" fill="#334155" stroke="none" stroke-width="0" />
+<text x="54.0" y="92.5" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="start" >提示詞鏈（系統 v4）：主控（主對話）派工與把關，每一步交給新的 subagent</text>
+<line x1="517.0" y1="110" x2="517.0" y2="424" stroke="#D0D7DE" stroke-width="1.4" stroke-dasharray="2 5"/>
+<line x1="900" y1="110" x2="900" y2="424" stroke="#D0D7DE" stroke-width="1.4" stroke-dasharray="2 5"/>
+<circle cx="67" cy="123" r="13" fill="#334155"/>
+<text x="67.0" y="128.5" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >A</text>
+<text x="87.0" y="130.0" font-size="18" font-weight="bold" fill="#1F2328" text-anchor="start" >微意圖建模</text>
+<circle cx="555" cy="123" r="13" fill="#334155"/>
+<text x="555.0" y="128.5" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >B</text>
+<text x="575.0" y="130.0" font-size="18" font-weight="bold" fill="#1F2328" text-anchor="start" >玩家視角長文</text>
+<circle cx="945" cy="123" r="13" fill="#334155"/>
+<text x="945.0" y="128.5" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >C</text>
+<text x="965.0" y="130.0" font-size="18" font-weight="bold" fill="#1F2328" text-anchor="start" >E-E-A-T／YMYL 自我修正</text>
+<rect x="48.0" y="142.0" width="1532.0" height="86.0" rx="10" fill="#FFFBEA" stroke="#F0D98C" stroke-width="1.2" />
+<circle cx="72" cy="172" r="9" fill="#BF8700"/>
+<path d="M57,200 Q57,184 72,184 Q87,184 87,200 z" fill="#BF8700"/>
+<text x="96.0" y="172.0" font-size="19" font-weight="bold" fill="#9A6700" text-anchor="start" >作者本人</text>
+<text x="96.0" y="194.0" font-size="14" font-weight="normal" fill="#424A53" text-anchor="start" >第一手經驗只來自這裡</text>
+<text x="96.0" y="213.0" font-size="14" font-weight="normal" fill="#424A53" text-anchor="start" >鏈執行中只參與兩次</text>
+<rect x="526.0" y="151.0" width="134.0" height="68.0" rx="9" fill="#FFF8C5" stroke="#BF8700" stroke-width="1.6" />
+<text x="536.0" y="176.0" font-size="16" font-weight="bold" fill="#1F2328" text-anchor="start" >① 回答補問</text>
+<text x="536.0" y="198.0" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >原文照錄，不改寫</text>
+<rect x="968.0" y="151.0" width="342.0" height="68.0" rx="9" fill="#FFF8C5" stroke="#BF8700" stroke-width="1.6" />
+<text x="978.0" y="176.0" font-size="16" font-weight="bold" fill="#1F2328" text-anchor="start" >② 確認只有本人知道的事</text>
+<text x="978.0" y="198.0" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >例：某句是不是他的意思、能不能延伸</text>
+<rect x="708.0" y="151.0" width="204.0" height="68.0" rx="8" fill="#FFFFFF" stroke="#BF8700" stroke-width="1.4" />
+<path d="M719,162 L727.64,162 L733.04,167.4 L733.04,180 L719,180 z" fill="#FFFFFF" stroke="#BF8700" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M727.64,162 L727.64,167.4 L733.04,167.4" fill="none" stroke="#BF8700" stroke-width="1.2"/>
+<line x1="721.52" y1="170.1" x2="730.16" y2="170.1" stroke="#BF8700" stroke-width="1"/>
+<line x1="721.52" y1="173.2" x2="730.16" y2="173.2" stroke="#BF8700" stroke-width="1"/>
+<line x1="721.52" y1="176.2" x2="730.16" y2="176.2" stroke="#BF8700" stroke-width="1"/>
+<text x="744.0" y="177.0" font-size="16" font-weight="bold" fill="#1F2328" text-anchor="start" >作者經驗檔</text>
+<text x="719.0" y="195.0" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >作者原文＋第一人稱使用限制</text>
+<text x="719.0" y="212.5" font-size="12" font-weight="normal" fill="#6E7781" text-anchor="start" font-family="Consolas,'Courier New',monospace" >inputs/experience.md</text>
+<path d="M660.0,185.0 L708.0,185.0" fill="none" stroke="#24292F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-L)"/>
+<text x="684.0" y="177.0" font-size="12" font-weight="normal" fill="#1F2328" text-anchor="middle" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >回答原文</text>
+<path d="M968.0,185.0 L912.0,185.0" fill="none" stroke="#BF8700" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-amber-S)"/>
+<text x="940.0" y="177.0" font-size="12" font-weight="normal" fill="#9A6700" text-anchor="middle" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >附加原文</text>
+<rect x="54.0" y="312.0" width="72.0" height="68.0" rx="34" fill="#FFFFFF" stroke="#24292F" stroke-width="2" />
+<text x="90.0" y="339.0" font-size="13" font-weight="normal" fill="#6E7781" text-anchor="middle" >關鍵字</text>
+<text x="90.0" y="363.0" font-size="19" font-weight="bold" fill="#1F2328" text-anchor="middle" >娛樂城</text>
+<rect x="146.0" y="268.0" width="136.0" height="156.0" rx="10" fill="#FFFFFF" stroke="#57606A" stroke-width="1.6" />
+<rect x="156.0" y="257.5" width="21.0" height="21.0" rx="5" fill="#334155" stroke="#334155" stroke-width="1" />
+<text x="166.5" y="272.7" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >A</text>
+<text x="156.0" y="301.0" font-size="21" font-weight="bold" fill="#1F2328" text-anchor="start" >微意圖建模</text>
+<text x="156.0" y="328.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >至少 4 個微意圖</text>
+<text x="156.0" y="349.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >（本次 7 個）</text>
+<text x="156.0" y="370.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >各附真人提問</text>
+<text x="156.0" y="391.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >與官方證據</text>
+<text x="156.0" y="412.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >＋SEO 競爭邏輯</text>
+<rect x="326.0" y="268.0" width="166.0" height="156.0" rx="10" fill="#DDF4FF" stroke="#0969DA" stroke-width="2" />
+<rect x="336.0" y="257.5" width="38.0" height="21.0" rx="5" fill="#0969DA" stroke="#0969DA" stroke-width="1" />
+<text x="355.0" y="272.7" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >主控</text>
+<text x="336.0" y="301.0" font-size="21" font-weight="bold" fill="#1F2328" text-anchor="start" >選題</text>
+<text x="336.0" y="328.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >依 4 準則：</text>
+<text x="336.0" y="349.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >證據強度・讀者決定</text>
+<text x="336.0" y="370.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >競爭缺口・作者經驗</text>
+<text x="336.0" y="391.9" font-size="16" font-weight="bold" fill="#1F2328" text-anchor="start" >YMYL 風險無法控制</text>
+<text x="336.0" y="412.9" font-size="16" font-weight="bold" fill="#1F2328" text-anchor="start" >的直接排除</text>
+<rect x="542.0" y="268.0" width="134.0" height="156.0" rx="10" fill="#FFFFFF" stroke="#57606A" stroke-width="1.6" />
+<rect x="552.0" y="257.5" width="28.0" height="21.0" rx="5" fill="#334155" stroke="#334155" stroke-width="1" />
+<text x="566.0" y="272.7" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >B1</text>
+<text x="552.0" y="301.0" font-size="21" font-weight="bold" fill="#1F2328" text-anchor="start" >補問作者</text>
+<text x="552.0" y="328.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >作者經驗不夠時</text>
+<text x="552.0" y="349.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >只問這個題目</text>
+<text x="552.0" y="370.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >還缺的細節</text>
+<rect x="710.0" y="268.0" width="150.0" height="156.0" rx="10" fill="#FFFFFF" stroke="#57606A" stroke-width="1.6" />
+<rect x="720.0" y="257.5" width="28.0" height="21.0" rx="5" fill="#334155" stroke="#334155" stroke-width="1" />
+<text x="734.0" y="272.7" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >B2</text>
+<text x="720.0" y="301.0" font-size="21" font-weight="bold" fill="#1F2328" text-anchor="start" >寫作</text>
+<text x="720.0" y="328.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >一次寫到可送審</text>
+<text x="720.0" y="349.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >試玩情境與評論</text>
+<text x="720.0" y="370.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >含去 AI 腔</text>
+<text x="720.0" y="391.9" font-size="16" font-weight="bold" fill="#1F2328" text-anchor="start" >第一人稱只用</text>
+<text x="720.0" y="412.9" font-size="16" font-weight="bold" fill="#1F2328" text-anchor="start" >作者原文</text>
+<rect x="1202.0" y="268.0" width="150.0" height="156.0" rx="10" fill="#FFFFFF" stroke="#57606A" stroke-width="1.6" />
+<rect x="1212.0" y="257.5" width="29.0" height="21.0" rx="5" fill="#334155" stroke="#334155" stroke-width="1" />
+<text x="1226.5" y="272.7" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >C2</text>
+<text x="1212.0" y="301.0" font-size="21" font-weight="bold" fill="#1F2328" text-anchor="start" >整合修正</text>
+<text x="1212.0" y="328.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >一次整合三份審核</text>
+<text x="1212.0" y="349.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >衝突的取捨寫明</text>
+<text x="1212.0" y="370.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >同時顧口吻</text>
+<text x="1212.0" y="391.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >新來源逐字摘錄</text>
+<rect x="1418.0" y="268.0" width="158.0" height="156.0" rx="10" fill="#FFFFFF" stroke="#57606A" stroke-width="1.6" />
+<rect x="1428.0" y="257.5" width="29.0" height="21.0" rx="5" fill="#334155" stroke="#334155" stroke-width="1" />
+<text x="1442.5" y="272.7" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >C3</text>
+<text x="1428.0" y="301.0" font-size="21" font-weight="bold" fill="#1F2328" text-anchor="start" >全文獨立複審</text>
+<text x="1428.0" y="328.9" font-size="16" font-weight="bold" fill="#1F2328" text-anchor="start" >只審不改</text>
+<text x="1428.0" y="349.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >讀全文，特別看</text>
+<text x="1428.0" y="370.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >修改處與前後文</text>
+<text x="1428.0" y="391.9" font-size="16" font-weight="normal" fill="#424A53" text-anchor="start" >結論三選一</text>
+<rect x="1528.0" y="258.5" width="40.0" height="19.0" rx="9.5" fill="#FFFFFF" stroke="#1A7F37" stroke-width="1.4" />
+<text x="1548.0" y="272.6" font-size="12" font-weight="bold" fill="#1A7F37" text-anchor="middle" >獨立</text>
+<rect x="932.0" y="268.0" width="206.0" height="94.0" rx="10" fill="#FFFFFF" stroke="#57606A" stroke-width="1.6" />
+<rect x="942.0" y="257.5" width="29.0" height="21.0" rx="5" fill="#334155" stroke="#334155" stroke-width="1" />
+<text x="956.5" y="272.7" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >C1</text>
+<rect x="1090.0" y="258.5" width="40.0" height="19.0" rx="9.5" fill="#FFFFFF" stroke="#1A7F37" stroke-width="1.4" />
+<text x="1110.0" y="272.6" font-size="12" font-weight="bold" fill="#1A7F37" text-anchor="middle" >獨立</text>
+<text x="942.0" y="297.0" font-size="18" font-weight="bold" fill="#1F2328" text-anchor="start" >作者經驗審核</text>
+<text x="942.0" y="318.0" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >第一人稱逐句對作者原文</text>
+<text x="942.0" y="335.5" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >列出只有作者能確認的事</text>
+<text x="942.0" y="353.0" font-size="13.5" font-weight="bold" fill="#1F2328" text-anchor="start" >只讀：文章＋作者經驗檔</text>
+<rect x="932.0" y="380.0" width="206.0" height="94.0" rx="10" fill="#FFFFFF" stroke="#57606A" stroke-width="1.6" />
+<rect x="942.0" y="369.5" width="29.0" height="21.0" rx="5" fill="#334155" stroke="#334155" stroke-width="1" />
+<text x="956.5" y="384.7" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >C1</text>
+<rect x="1090.0" y="370.5" width="40.0" height="19.0" rx="9.5" fill="#FFFFFF" stroke="#1A7F37" stroke-width="1.4" />
+<text x="1110.0" y="384.6" font-size="12" font-weight="bold" fill="#1A7F37" text-anchor="middle" >獨立</text>
+<text x="942.0" y="409.0" font-size="18" font-weight="bold" fill="#1F2328" text-anchor="start" >正確性審核</text>
+<text x="942.0" y="430.0" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >事實、計算、法律、讀者安全</text>
+<text x="942.0" y="447.5" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >缺漏、競爭情報、權威性</text>
+<text x="942.0" y="465.0" font-size="13.5" font-weight="bold" fill="#1F2328" text-anchor="start" >讀來源，可上網查證</text>
+<rect x="932.0" y="492.0" width="206.0" height="94.0" rx="10" fill="#FFFFFF" stroke="#57606A" stroke-width="1.6" />
+<rect x="942.0" y="481.5" width="29.0" height="21.0" rx="5" fill="#334155" stroke="#334155" stroke-width="1" />
+<text x="956.5" y="496.7" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >C1</text>
+<rect x="1090.0" y="482.5" width="40.0" height="19.0" rx="9.5" fill="#FFFFFF" stroke="#1A7F37" stroke-width="1.4" />
+<text x="1110.0" y="496.6" font-size="12" font-weight="bold" fill="#1A7F37" text-anchor="middle" >獨立</text>
+<text x="942.0" y="521.0" font-size="18" font-weight="bold" fill="#1F2328" text-anchor="start" >讀者視角審核</text>
+<text x="942.0" y="542.0" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >口吻、結構、易不易懂</text>
+<text x="942.0" y="559.5" font-size="13.5" font-weight="bold" fill="#1F2328" text-anchor="start" >刻意不給來源：看到的</text>
+<text x="942.0" y="577.0" font-size="13.5" font-weight="bold" fill="#1F2328" text-anchor="start" >就是讀者看到的</text>
+<path d="M609.0,268.0 L609.0,219.0" fill="none" stroke="#24292F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-L)"/>
+<text x="617.0" y="248.5" font-size="12.5" font-weight="normal" fill="#1F2328" text-anchor="start" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >補問題目</text>
+<path d="M785.0,219.0 L785.0,268.0" fill="none" stroke="#24292F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-L)"/>
+<text x="793.0" y="248.5" font-size="12.5" font-weight="normal" fill="#1F2328" text-anchor="start" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >第一人稱只能出自這裡</text>
+<path d="M1035.0,268.0 L1035.0,219.0" fill="none" stroke="#BF8700" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-amber-S)"/>
+<text x="1043.0" y="248.5" font-size="12.5" font-weight="normal" fill="#9A6700" text-anchor="start" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >只有作者能確認的事</text>
+<path d="M1297.0,219.0 L1297.0,268.0" fill="none" stroke="#BF8700" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-amber-S)"/>
+<text x="1305.0" y="248.5" font-size="12.5" font-weight="normal" fill="#9A6700" text-anchor="start" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >確認結果</text>
+<path d="M126.0,346.0 L146.0,346.0" fill="none" stroke="#24292F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-L)"/>
+<path d="M282.0,346.0 L326.0,346.0" fill="none" stroke="#24292F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-L)"/>
+<path d="M304.0,337.0 L313.0,346.0 L304.0,355.0 L295.0,346.0 z" fill="#0969DA" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="288.0" y="359.5" width="32.0" height="17.0" rx="4" fill="#FFFFFF" stroke="#0969DA" stroke-width="1.2" />
+<text x="304.0" y="372.5" font-size="11.5" font-weight="bold" fill="#0969DA" text-anchor="middle" >抽查</text>
+<path d="M492.0,346.0 L542.0,346.0" fill="none" stroke="#24292F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-L)"/>
+<path d="M860.0,346.0 L914.0,346.0" fill="none" stroke="#24292F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M880.0,337.0 L889.0,346.0 L880.0,355.0 L871.0,346.0 z" fill="#0969DA" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="864.0" y="359.5" width="32.0" height="17.0" rx="4" fill="#24292F" stroke="#24292F" stroke-width="1" />
+<text x="880.0" y="372.5" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >程式</text>
+<rect x="864.0" y="379.5" width="32.0" height="17.0" rx="4" fill="#FFFFFF" stroke="#0969DA" stroke-width="1.2" />
+<text x="880.0" y="392.5" font-size="11.5" font-weight="bold" fill="#0969DA" text-anchor="middle" >重算</text>
+<line x1="914" y1="315.0" x2="914" y2="539.0" stroke="#24292F" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M914.0,315.0 L932.0,315.0" fill="none" stroke="#24292F" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-S)"/>
+<path d="M914.0,427.0 L932.0,427.0" fill="none" stroke="#24292F" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-S)"/>
+<path d="M914.0,539.0 L932.0,539.0" fill="none" stroke="#24292F" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-S)"/>
+<text x="914.0" y="561.0" font-size="12" font-weight="bold" fill="#424A53" text-anchor="middle" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >同時</text>
+<text x="914.0" y="576.0" font-size="12" font-weight="bold" fill="#424A53" text-anchor="middle" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >派出</text>
+<line x1="1138" y1="315.0" x2="1158" y2="315.0" stroke="#24292F" stroke-width="2.2"/>
+<line x1="1138" y1="427.0" x2="1158" y2="427.0" stroke="#24292F" stroke-width="2.2"/>
+<line x1="1138" y1="539.0" x2="1158" y2="539.0" stroke="#24292F" stroke-width="2.2"/>
+<line x1="1158" y1="315.0" x2="1158" y2="539.0" stroke="#24292F" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1158.0,346.0 L1202.0,346.0" fill="none" stroke="#24292F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-L)"/>
+<path d="M1180.0,337.0 L1189.0,346.0 L1180.0,355.0 L1171.0,346.0 z" fill="#0969DA" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1180.0" y="331.0" font-size="12" font-weight="normal" fill="#1F2328" text-anchor="middle" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >問題表</text>
+<path d="M1352.0,346.0 L1418.0,346.0" fill="none" stroke="#24292F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-L)"/>
+<path d="M1385.0,337.0 L1394.0,346.0 L1385.0,355.0 L1376.0,346.0 z" fill="#0969DA" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="1369.0" y="359.5" width="32.0" height="17.0" rx="4" fill="#24292F" stroke="#24292F" stroke-width="1" />
+<text x="1385.0" y="372.5" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >程式</text>
+<rect x="1369.0" y="379.5" width="32.0" height="17.0" rx="4" fill="#FFFFFF" stroke="#0969DA" stroke-width="1.2" />
+<text x="1385.0" y="392.5" font-size="11.5" font-weight="bold" fill="#0969DA" text-anchor="middle" >抽查</text>
+<path d="M1418.0,302.0 L1352.0,302.0" fill="none" stroke="#CF222E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5" marker-end="url(#ah-red-L)"/>
+<text x="1385.0" y="294.0" font-size="12" font-weight="bold" fill="#CF222E" text-anchor="middle" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >退回 C2</text>
+<text x="1385.0" y="320.0" font-size="12" font-weight="bold" fill="#CF222E" text-anchor="middle" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >最多 1 次</text>
+<text x="330.0" y="448.0" font-size="14" font-weight="bold" fill="#0969DA" text-anchor="start" >▸ 本次選定：帶單老師、預測程式、百家樂必勝法能不能信</text>
+<rect x="54.0" y="478.0" width="806.0" height="108.0" rx="10" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1.2" />
+<text x="68.0" y="511.0" font-size="17" font-weight="bold" fill="#1F2328" text-anchor="start" >共用的資料</text>
+<text x="68.0" y="536.0" font-size="14" font-weight="normal" fill="#424A53" text-anchor="start" >各步依需要讀取；</text>
+<text x="68.0" y="555.0" font-size="14" font-weight="normal" fill="#424A53" text-anchor="start" >盲評評審也拿來核對</text>
+<rect x="238.0" y="487.0" width="306.0" height="90.0" rx="8" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.4" />
+<path d="M249,498 L257.64000000000004,498 L263.04,503.4 L263.04,516 L249,516 z" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M257.64000000000004,498 L257.64000000000004,503.4 L263.04,503.4" fill="none" stroke="#8C959F" stroke-width="1.2"/>
+<line x1="251.52" y1="506.1" x2="260.16" y2="506.1" stroke="#8C959F" stroke-width="1"/>
+<line x1="251.52" y1="509.2" x2="260.16" y2="509.2" stroke="#8C959F" stroke-width="1"/>
+<line x1="251.52" y1="512.2" x2="260.16" y2="512.2" stroke="#8C959F" stroke-width="1"/>
+<text x="274.0" y="513.0" font-size="17" font-weight="bold" fill="#1F2328" text-anchor="start" >事先查證的來源</text>
+<text x="249.0" y="532.0" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >官方公告、法規、真人求助貼文，逐字摘錄</text>
+<text x="249.0" y="550.0" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >並標明查核程度；各步新開的來源也逐字存檔</text>
+<text x="249.0" y="568.5" font-size="12" font-weight="normal" fill="#6E7781" text-anchor="start" font-family="Consolas,'Courier New',monospace" >evidence-pack.md・sources-added.md</text>
+<rect x="556.0" y="487.0" width="295.0" height="90.0" rx="8" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.4" />
+<path d="M567,498 L575.64,498 L581.04,503.4 L581.04,516 L567,516 z" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M575.64,498 L575.64,503.4 L581.04,503.4" fill="none" stroke="#8C959F" stroke-width="1.2"/>
+<line x1="569.52" y1="506.1" x2="578.16" y2="506.1" stroke="#8C959F" stroke-width="1"/>
+<line x1="569.52" y1="509.2" x2="578.16" y2="509.2" stroke="#8C959F" stroke-width="1"/>
+<line x1="569.52" y1="512.2" x2="578.16" y2="512.2" stroke="#8C959F" stroke-width="1"/>
+<text x="592.0" y="513.0" font-size="17" font-weight="bold" fill="#1F2328" text-anchor="start" >寫作準則</text>
+<text x="567.0" y="532.0" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >什麼算 AI 腔、第三方案例怎麼寫</text>
+<text x="567.0" y="550.0" font-size="13.5" font-weight="normal" fill="#424A53" text-anchor="start" >寫作、審核、修正、盲評同一把尺</text>
+<text x="567.0" y="568.5" font-size="12" font-weight="normal" fill="#6E7781" text-anchor="start" font-family="Consolas,'Courier New',monospace" >style-guide.md</text>
+<rect x="1202.0" y="478.0" width="150.0" height="108.0" rx="10" fill="#FFFFFF" stroke="#57606A" stroke-width="1.6" stroke-dasharray="5 3" />
+<rect x="1212.0" y="467.5" width="29.0" height="21.0" rx="5" fill="#334155" stroke="#334155" stroke-width="1" />
+<text x="1226.5" y="482.7" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >C2</text>
+<text x="1212.0" y="511.0" font-size="21" font-weight="bold" fill="#1F2328" text-anchor="start" >小修</text>
+<text x="1212.0" y="537.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >只改 C3 列出的</text>
+<text x="1212.0" y="556.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >那幾句，其他</text>
+<text x="1212.0" y="575.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >一個字都不動</text>
+<rect x="1418.0" y="478.0" width="128.0" height="108.0" rx="10" fill="#FFFFFF" stroke="#57606A" stroke-width="1.6" />
+<rect x="1428.0" y="467.5" width="29.0" height="21.0" rx="5" fill="#334155" stroke="#334155" stroke-width="1" />
+<text x="1442.5" y="482.7" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >C4</text>
+<text x="1428.0" y="511.0" font-size="21" font-weight="bold" fill="#1F2328" text-anchor="start" >驗差異</text>
+<text x="1428.0" y="537.0" font-size="15" font-weight="bold" fill="#1F2328" text-anchor="start" >只審不改</text>
+<text x="1428.0" y="556.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >全 PASS 才定稿</text>
+<text x="1428.0" y="575.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >FAIL 再修一次</text>
+<rect x="1498.0" y="468.5" width="40.0" height="19.0" rx="9.5" fill="#FFFFFF" stroke="#1A7F37" stroke-width="1.4" />
+<text x="1518.0" y="482.6" font-size="12" font-weight="bold" fill="#1A7F37" text-anchor="middle" >獨立</text>
+<path d="M1352.0,532.0 L1418.0,532.0" fill="none" stroke="#24292F" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-S)"/>
+<path d="M1385.0,523.0 L1394.0,532.0 L1385.0,541.0 L1376.0,532.0 z" fill="#0969DA" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="1369.0" y="545.5" width="32.0" height="17.0" rx="4" fill="#24292F" stroke="#24292F" stroke-width="1" />
+<text x="1385.0" y="558.5" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >程式</text>
+<path d="M1440.0,424.0 L1440.0,450.0 L1277.0,450.0 L1277.0,478.0" fill="none" stroke="#24292F" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-S)"/>
+<text x="1364.5" y="443.0" font-size="12.5" font-weight="bold" fill="#1F2328" text-anchor="middle" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >小修：只差一兩句</text>
+<rect x="40.0" y="614.0" width="1548.0" height="274.0" rx="12" fill="#FBF8FF" stroke="#D8CCF5" stroke-width="1.4" />
+<text x="54.0" y="641.0" font-size="18" font-weight="bold" fill="#8250DF" text-anchor="start" >對照實驗與迭代：不預設鏈比較好</text>
+<text x="340.0" y="641.0" font-size="14" font-weight="normal" fill="#424A53" text-anchor="start" >同一題另由兩組單一 prompt 寫，連同上一版定稿，三位評審盲評並列缺陷</text>
+<rect x="1350.0" y="662.0" width="226.0" height="44.0" rx="8" fill="#FFFFFF" stroke="#24292F" stroke-width="2.2" />
+<text x="1360.0" y="681.0" font-size="14.5" font-weight="bold" fill="#1F2328" text-anchor="start" >鏈的定稿（本版）</text>
+<text x="1360.0" y="698.0" font-size="12" font-weight="normal" fill="#6E7781" text-anchor="start" >最後一步是 C3 或 C4 的檢查</text>
+<text x="1566.0" y="681.0" font-size="12" font-weight="normal" fill="#6E7781" text-anchor="end" font-family="Consolas,'Courier New',monospace" >final.md</text>
+<rect x="1350.0" y="712.0" width="226.0" height="44.0" rx="8" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.3" />
+<text x="1360.0" y="731.0" font-size="14.5" font-weight="bold" fill="#1F2328" text-anchor="start" >上一版系統的定稿</text>
+<text x="1360.0" y="748.0" font-size="12" font-weight="normal" fill="#6E7781" text-anchor="start" >有同一意圖時一起評</text>
+<rect x="1350.0" y="762.0" width="226.0" height="44.0" rx="8" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.3" />
+<text x="1360.0" y="781.0" font-size="14.5" font-weight="bold" fill="#1F2328" text-anchor="start" >對照組 2：同資料與準則</text>
+<text x="1360.0" y="798.0" font-size="12" font-weight="normal" fill="#6E7781" text-anchor="start" >單一 prompt，作者經驗定案後</text>
+<rect x="1350.0" y="812.0" width="226.0" height="44.0" rx="8" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.3" />
+<text x="1360.0" y="831.0" font-size="14.5" font-weight="bold" fill="#1F2328" text-anchor="start" >對照組 1：只給題目</text>
+<text x="1360.0" y="848.0" font-size="12" font-weight="normal" fill="#6E7781" text-anchor="start" >單一 prompt，選題後啟動</text>
+<path d="M1482.0,586.0 L1482.0,662.0" fill="none" stroke="#24292F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-L)"/>
+<text x="1474.0" y="630.0" font-size="12.5" font-weight="bold" fill="#1F2328" text-anchor="end" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >全部 PASS</text>
+<path d="M1560.0,424.0 L1560.0,662.0" fill="none" stroke="#24292F" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-dark-L)"/>
+<path d="M1560,442 L1569,451 L1560,460 L1551,451 z" fill="#0969DA" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1546.0" y="456.0" font-size="12.5" font-weight="bold" fill="#1F2328" text-anchor="end" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >可以定稿</text>
+<line x1="1350" y1="684.0" x2="1334" y2="684.0" stroke="#8250DF" stroke-width="2"/>
+<line x1="1350" y1="734.0" x2="1334" y2="734.0" stroke="#8250DF" stroke-width="2"/>
+<line x1="1350" y1="784.0" x2="1334" y2="784.0" stroke="#8250DF" stroke-width="2"/>
+<line x1="1350" y1="834.0" x2="1334" y2="834.0" stroke="#8250DF" stroke-width="2"/>
+<line x1="1334" y1="684.0" x2="1334" y2="834.0" stroke="#8250DF" stroke-width="2"/>
+<path d="M1334.0,759.0 L1278.0,759.0" fill="none" stroke="#8250DF" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-purple-L)"/>
+<text x="1306.0" y="749.0" font-size="12.5" font-weight="bold" fill="#8250DF" text-anchor="middle" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >同一題</text>
+<rect x="1050.0" y="684.0" width="228.0" height="150.0" rx="10" fill="#FFFFFF" stroke="#8250DF" stroke-width="1.6" />
+<text x="1062.0" y="713.0" font-size="18" font-weight="bold" fill="#1F2328" text-anchor="start" >三位評審盲評</text>
+<text x="1062.0" y="738.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >代號各自洗牌，</text>
+<text x="1062.0" y="758.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >不知道哪篇是鏈；</text>
+<text x="1062.0" y="778.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >逐篇列出具體缺陷</text>
+<text x="1062.0" y="798.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >腳本洗牌代號、彙整分數</text>
+<rect x="1230.0" y="674.5" width="40.0" height="19.0" rx="9.5" fill="#FFFFFF" stroke="#1A7F37" stroke-width="1.4" />
+<text x="1250.0" y="688.6" font-size="12" font-weight="bold" fill="#1A7F37" text-anchor="middle" >獨立</text>
+<rect x="722.0" y="684.0" width="284.0" height="150.0" rx="10" fill="#FFFFFF" stroke="#8250DF" stroke-width="1.6" />
+<text x="734.0" y="713.0" font-size="18" font-weight="bold" fill="#1F2328" text-anchor="start" >比較與成本</text>
+<text x="734.0" y="738.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >逐項分數、缺陷數、</text>
+<text x="734.0" y="758.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >依牌價換算的成本；</text>
+<text x="734.0" y="778.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >結果不利於鏈也照寫</text>
+<rect x="734.0" y="785.0" width="32.0" height="17.0" rx="4" fill="#24292F" stroke="#24292F" stroke-width="1" />
+<text x="750.0" y="798.0" font-size="11.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle" >程式</text>
+<text x="772.0" y="798.0" font-size="13" font-weight="normal" fill="#424A53" text-anchor="start" >機械指標並列</text>
+<text x="734.0" y="818.0" font-size="12" font-weight="normal" fill="#6E7781" text-anchor="start" font-family="Consolas,'Courier New',monospace" >comparison.md・cost.md</text>
+<rect x="394.0" y="684.0" width="284.0" height="150.0" rx="10" fill="#FFFFFF" stroke="#8250DF" stroke-width="1.6" />
+<text x="406.0" y="713.0" font-size="18" font-weight="bold" fill="#1F2328" text-anchor="start" >自評</text>
+<text x="406.0" y="738.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >最影響品質的 3 個問題，</text>
+<text x="406.0" y="758.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >追到哪個 prompt 或關卡，</text>
+<text x="406.0" y="778.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >提出具體改法</text>
+<text x="406.0" y="798.0" font-size="12" font-weight="normal" fill="#6E7781" text-anchor="start" font-family="Consolas,'Courier New',monospace" >run-summary.md</text>
+<rect x="60.0" y="684.0" width="290.0" height="150.0" rx="10" fill="#FFFFFF" stroke="#8250DF" stroke-width="1.6" />
+<text x="72.0" y="713.0" font-size="18" font-weight="bold" fill="#1F2328" text-anchor="start" >改版（v1 → v4）</text>
+<text x="72.0" y="738.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >作者與主控決定改什麼，</text>
+<text x="72.0" y="758.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >記下原因與依據；</text>
+<text x="72.0" y="778.0" font-size="15" font-weight="normal" fill="#424A53" text-anchor="start" >每次執行另存當時的系統快照</text>
+<text x="72.0" y="798.0" font-size="12" font-weight="normal" fill="#6E7781" text-anchor="start" font-family="Consolas,'Courier New',monospace" >SYSTEM_CHANGELOG.md・outputs/system/</text>
+<path d="M1050.0,759.0 L1006.0,759.0" fill="none" stroke="#8250DF" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-purple-L)"/>
+<path d="M722.0,759.0 L678.0,759.0" fill="none" stroke="#8250DF" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah-purple-L)"/>
+<path d="M394.0,759.0 L350.0,759.0" fill="none" stroke="#8250DF" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5" marker-end="url(#ah-purple-L)"/>
+<path d="M1218.0,684.0 L1218.0,586.0" fill="none" stroke="#CF222E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5" marker-end="url(#ah-red-L)"/>
+<path d="M1218,627 L1227,636 L1218,645 L1209,636 z" fill="#0969DA" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1204.0" y="652.0" font-size="12.5" font-weight="bold" fill="#CF222E" text-anchor="end" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >評審列的缺陷：主控回到</text>
+<text x="1204.0" y="669.0" font-size="12.5" font-weight="bold" fill="#CF222E" text-anchor="end" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" paint-order="stroke" >來源核對，成立的走小修</text>
+<path d="M60.0,759.0 L18.0,759.0 L18.0,87.0 L40.0,87.0" fill="none" stroke="#8250DF" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5" marker-end="url(#ah-purple-L)"/>
+<text x="29" y="456.5" font-size="14" font-weight="bold" fill="#8250DF" text-anchor="middle" transform="rotate(-90 29 456.5)">改版後回到整條鏈：prompt、關卡、準則、工具</text>
+</svg>

@@ -1,0 +1,126 @@
+{
+  "claims": [
+    {
+      "text": "首頁title與H1主打2030玩運彩、MLB/NBA與世界盃，導覽以「線上娛樂城推薦」連至/wordcup/；不是以娛樂城或3A娛樂城作首頁主標。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "2a2c74500d104db49277b1b05193e163"
+      ],
+      "topic": "positioning"
+    },
+    {
+      "text": "/wordcup/為娛樂城推薦集合頁，具有品牌、評價、優惠、玩法、安全出金等分類，並連至娛樂城與3a娛樂城獨立頁。頁面自稱2502篇評測，未逐篇驗證，不能等同索引量或品質。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "d94e4d0bd85b43158a814bb0b6974dbd"
+      ],
+      "topic": "architecture"
+    },
+    {
+      "text": "兩個核心頁均回傳200，具有各自title、自我canonical、允許index follow的meta robots、編輯部署名與更新日期；可見FAQ不等於已驗證FAQ結構化資料或搜尋富結果。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "b3543e98c3d5425b813ba2b4832c5b00",
+        "d148a4f4306f462987c058c8d36e0c0b"
+      ],
+      "topic": "technical"
+    },
+    {
+      "text": "兩頁同有特色、遊戲、出金安全、註冊、優惠、客服六大段落及手機版、入金、出金、安全、客服五類FAQ；文字並非完全相同。3A頁宣稱出金半小時到一小時、最低入金1000元，但所讀內容未見可核對的測試紀錄、條款來源或獨立佐證；這些數字不是本研究驗證的產品事實。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "b3543e98c3d5425b813ba2b4832c5b00",
+        "d148a4f4306f462987c058c8d36e0c0b"
+      ],
+      "topic": "content_quality"
+    },
+    {
+      "text": "兩頁皆有四個指向don0911.3a1788.bet/?st=wg2030的出站連結，擷取rel為nofollow；集合頁註冊出站含st=wg2030idx。這些是出站導流證據，不是2030.tw入站連結。",
+      "kind": "observation",
+      "section": "on_page",
+      "evidence_ids": [
+        "d94e4d0bd85b43158a814bb0b6974dbd",
+        "b3543e98c3d5425b813ba2b4832c5b00",
+        "d148a4f4306f462987c058c8d36e0c0b"
+      ],
+      "topic": "outbound_conversion"
+    },
+    {
+      "text": "公開頁面較支持以運彩資訊站導覽串接娛樂城集合頁，再用泛詞及品牌長尾頁覆蓋需求並集中導流至3A的策略推論；參數樣式可能用於歸因，但無法確認聯盟合約、收益或成效。",
+      "kind": "inference",
+      "section": "on_page",
+      "evidence_ids": [
+        "2a2c74500d104db49277b1b05193e163",
+        "d94e4d0bd85b43158a814bb0b6974dbd",
+        "b3543e98c3d5425b813ba2b4832c5b00",
+        "d148a4f4306f462987c058c8d36e0c0b"
+      ],
+      "topic": "strategy"
+    },
+    {
+      "text": "off-page已知：直接讀取搜尋候選Yahoo彰源(2030.TW)股票頁，links_to_target為空，2030玩運彩品牌提及為零；2030.TW出現於股票名稱上下文，沒有可記錄的目標站入站錨文字。",
+      "kind": "observation",
+      "section": "off_page",
+      "evidence_ids": [
+        "0cbf6949495b4aa7a7e74e8965558c53"
+      ],
+      "topic": "candidate_verification"
+    },
+    {
+      "text": "off-page推論：網域字串搜尋會受股票代碼同名污染，此Yahoo候選不能作為2030.tw網站的品牌背書或backlink證據；此排除只適用該頁，不外推全網。",
+      "kind": "inference",
+      "section": "off_page",
+      "evidence_ids": [
+        "0cbf6949495b4aa7a7e74e8965558c53"
+      ],
+      "topic": "search_disambiguation"
+    },
+    {
+      "text": "off-page未知：本輪未取得有效的目標站站外背書或入站連結證據；完整backlinks、referring domains、入站錨文字分布、付費置入、歷史網域權重及站外策略成效均未知。未取得不代表不存在。",
+      "kind": "unknown",
+      "section": "off_page",
+      "evidence_ids": [],
+      "topic": "backlink_profile"
+    },
+    {
+      "text": "競爭者兩詞實際排名、曝光、自然流量、轉換、Google選定canonical、全站索引、CWV及內容產製方式未知；未使用私有Search Console或分析資料，也未審核我方網站。",
+      "kind": "unknown",
+      "section": "other",
+      "evidence_ids": [],
+      "topic": "measurement_limits"
+    }
+  ],
+  "actions": [
+    {
+      "action": "P0：僅針對我方網站，先取得合法授權的Search Console／分析基準與公開SERP樣本，建立娛樂城、3A娛樂城及安全／出金長尾的查詢—落地頁對照；確認法規、年齡限制與品牌定位後再決定是否競逐。成本低至中。",
+      "reason": "競爭者有落地頁不代表有排名；我方網站與基準未提供，不能先斷言需要擴頁或改版。用我方曝光、CTR、有效索引及合規轉換衡量，不推估對手流量。"
+    },
+    {
+      "action": "P1：若符合我方定位，建立或改善一個娛樂城中立選擇指南及一個3A獨立評估頁；公開查核日期、資料來源、營運主體／牌照查核、條款限制、爭議與未知、編輯及商業關係。無合法可驗證實測就明示未實測。成本中至高。",
+      "reason": "核心競爭機會是可核查的證據與搜尋意圖差異，不是跟進對方自稱2502篇；不複製沒有來源的出金速度、安全保證或玩家經驗。"
+    },
+    {
+      "action": "P1：我方集合頁承接比較意圖，品牌頁承接品牌查核，安全與條款頁承接問題意圖；使用相關性內鏈及明確錨文字，檢查title、H1、canonical、索引與參數頁，FAQ以可見內容為準。成本中。",
+      "reason": "對手已有可走訪的集合頁與品牌頁結構，值得借鑑可發現性，但其共用架構與泛詞頁導往單一品牌不應直接照抄；是否互搶須由我方查詢—頁面資料驗證。"
+    },
+    {
+      "action": "P2：我方先發布可被引用的條款比較、風險辨識清單或有方法與日期的公開研究，再向相關且合規的媒體／組織爭取編輯引用；逐頁驗證目標URL、錨文字、上下文與rel，拒絕買連結及大量論壇洗版。成本中至高。",
+      "reason": "本輪沒有證據可供複製競爭者外鏈來源；以相關性、可信度和有效引用評估品質，不以網址數量或保證排名為指標。"
+    },
+    {
+      "action": "P2：建立我方實驗與競爭監測紀錄，追蹤核心頁內容及導流變化；我方上線後先驗收抓取／索引，再以4至8週為初步觀察窗比較查詢與頁面表現，必要時延長；不預設提升幅度。成本低至中。",
+      "reason": "把研究假設轉成可驗證實驗，分開記錄證據品質、實作成本與SEO結果；不把競爭者頁面聲稱的更新日期視為已證實的更新頻率。"
+    }
+  ],
+  "unknowns": [
+    "五次公開索引搜尋已用完；部分無結果，一組僅回空白項；不能據此證明目標詞沒有索引或排名。",
+    "站外直接驗證僅一個同名股票候選，不構成完整backlink調查；未有有效目標入站錨文字可報。",
+    "讀取四個目標頁，不代表全站內容品質；連結清單有截斷，未做全站爬取或歷史沿革驗證。",
+    "未測試頁速、行動呈現、結構化資料、Google索引狀態或參數頁canonical；meta index follow只是頁面宣告。",
+    "我方網域、商業模式、合法服務範圍、授權數據與工程資源未提供；所有競爭行動均供我方評估，並非對2030.tw的修改建議。"
+  ]
+}

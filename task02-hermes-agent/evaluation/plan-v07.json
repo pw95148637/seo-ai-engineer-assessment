@@ -1,0 +1,252 @@
+{
+  "plan_id": "task02-v07-offpage-and-lesson-guidance",
+  "created_utc": "2026-10-16T06:41:53.409302+00:00",
+  "status": "registered before any v0.7 model run",
+  "question": "With the same v0.7 code, does a run that starts from the v0.6 lessons ledger beat a run with an empty ledger on cost and speed without losing quality, and does v0.7 produce off-page findings that are backed by evidence?",
+  "changes": [
+    "research_offpage: reads at most 4 off-site pages per run, only URLs listed by this run's search results (same host exactly), robots.txt respected, same-host or www. redirects only, public IPs only (checked again on the connected socket); returns links to the target (URL, anchor, rel) and short mention contexts, not page text; research_evidence returns only query excerpts of off-site snapshots",
+    "HTTP: Accept-Encoding identity; gzip/deflate bodies are decoded within the size cap, truncated streams are refused",
+    "research_search results carry host and is_target_host; research_fetch returns outbound_hosts (outbound links, never backlinks)",
+    "report claims carry section on_page/off_page/other; research_finish requires at least one on_page and one off_page claim; report.md groups each section into known / inferred / unknown",
+    "lesson statements are rendered at presentation as actions; discovery paths give the controller's current-run evidence_id and drop past findings (sitemap counts, anchor text); human review shows as a standard to apply",
+    "prompt: lessons are procedures; a verified page is current-run evidence to read, not to re-fetch",
+    "scoring: sitemap_reads, refetched_verified_pages, sections, off-page known counts, off-page policy audit; blind review adds 0-2 coverage scores on four dimensions"
+  ],
+  "v06_reference": {
+    "plan": "evaluation/plan-v06.json",
+    "plan_sha256": "90f562aa9f4426926a24a179add2dd661b98f76c61a8e08d73338719cafbb849",
+    "verdict": "not_proven",
+    "note": "v0.6 scores use v0.6 code and are not compared with v0.7 runs"
+  },
+  "model": "gpt-6.1-sol",
+  "provider": "openai-codex",
+  "hermes_commit": "311155fade43d1993ea968909a2ad36762345bbc",
+  "keywords": [
+    "娛樂城",
+    "3A娛樂城"
+  ],
+  "primary_target": "https://2030.tw",
+  "ledger_source": {
+    "path": "evaluation/v06/runs/2030-series/research.sqlite",
+    "sha256": "94f45b3c645c49eeb11442d757fefcc2797f0eac4318b12078e9f51458581889",
+    "active_lessons": [
+      {
+        "id": "c5209a7fcd25",
+        "kind": "discovery_path",
+        "key": "discovery|2030.tw|3a娛樂城",
+        "status": "active",
+        "expires": "2026-10-23T05:27:45.038935+00:00"
+      },
+      {
+        "id": "ffec787a4d7d",
+        "kind": "discovery_path",
+        "key": "discovery|2030.tw|娛樂城",
+        "status": "active",
+        "expires": "2026-10-23T05:27:45.037056+00:00"
+      },
+      {
+        "id": "d2e93aa70fca",
+        "kind": "failure_pattern",
+        "key": "failure|research_search|site_operator",
+        "status": "active",
+        "expires": "2026-10-23T05:27:45.004170+00:00"
+      },
+      {
+        "id": "38b7cba20063",
+        "kind": "human_feedback",
+        "key": "feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1",
+        "status": "active",
+        "expires": null
+      }
+    ],
+    "usable_until": "2026-10-23T05:27:45.004170+00:00",
+    "note": "The ledger after v0.6 R3, unchanged since (R3 and HM were frozen). R4 must start before usable_until, or its discovery lessons will have expired and a new plan is needed."
+  },
+  "holdout": {
+    "rule": "The v0.6 registered holdout ranking (evaluation/plan-v06.json), without icasino.tw, which v0.6 HB and HM already researched. Rank 1 is the holdout; rank 2 is the fallback if preflight fails.",
+    "primary": "casinobase.tw",
+    "fallback": "goldbobet.com",
+    "excluded": [
+      "icasino.tw"
+    ],
+    "preflight": "Step HP2 fetches robots.txt and the homepage of the primary with the controller only; if robots.txt is not 200/404/410, robots disallows the homepage, or the homepage is not HTTP 200, the fallback is used. The choice goes to evaluation/v07/holdout-choice.json."
+  },
+  "order": [
+    "R4",
+    "B2",
+    "HP2",
+    "HB2",
+    "HM2"
+  ],
+  "required_steps": [
+    "R4",
+    "B2"
+  ],
+  "steps": {
+    "R4": {
+      "site": "primary",
+      "mode": "memory",
+      "learn": false,
+      "root": "evaluation/v07/runs/R4",
+      "ledger_from": "evaluation/v06/runs/2030-series",
+      "note": "v0.7 code; copy of the v0.6 ledger after R3 (hash-checked); frozen"
+    },
+    "B2": {
+      "site": "primary",
+      "mode": "memory",
+      "learn": false,
+      "root": "evaluation/v07/runs/B2",
+      "note": "v0.7 code; empty ledger; frozen; same prompt and tools as R4"
+    },
+    "HP2": {
+      "kind": "holdout_preflight",
+      "note": "controller-only check of robots.txt and homepage; no model"
+    },
+    "HB2": {
+      "site": "holdout",
+      "mode": "memory",
+      "learn": false,
+      "root": "evaluation/v07/runs/HB2",
+      "note": "optional; empty ledger"
+    },
+    "HM2": {
+      "site": "holdout",
+      "mode": "memory",
+      "learn": false,
+      "root": "evaluation/v07/runs/HM2",
+      "ledger_from": "evaluation/v06/runs/2030-series",
+      "note": "optional; copy of the v0.6 ledger; host-bound lessons do not apply to another host"
+    }
+  },
+  "metrics": {
+    "source": "src/scoring.py score_run",
+    "fields": [
+      "both_target_pages_read and calls_before_first_hit (as in v0.6; a run without a hit uses its tool_calls)",
+      "tokens.total from the Hermes session usage",
+      "sitemap_reads: model research_fetch calls that returned a sitemap plus successful research_evidence reads of sitemap snapshots",
+      "refetched_verified_pages: model research_fetch requests for a page the controller already fetched with HTTP 200 in the same run (robots.txt excluded)",
+      "offpage.known: off_page observations citing at least one HTTP 200 evidence of this run",
+      "offpage.known_external: off_page observations citing a search result snapshot with results or an off-site page read with HTTP 200",
+      "offpage.known_link_verified: off_page observations citing an off-site page whose stored HTML links to the target host",
+      "offpage.three_columns: the off_page section has at least one observation, inference and unknown",
+      "offpage_policy_violations: off-site requests to a host not listed by an earlier search result of the run, or a page request without an earlier robots.txt answer allowing it",
+      "stale_lessons_presented (as in v0.6)",
+      "blind review: unsupported, scope_error, off_page_supported_known and coverage 0-8 (four 0-2 scores)"
+    ]
+  },
+  "capability_criteria": {
+    "C1": "R4 and B2 each: offpage.known >= 2, offpage.known_external >= 1 and blind off_page_supported_known >= 2",
+    "C2": "R4 or B2: offpage.known_link_verified >= 1",
+    "C3": "R4 and B2 each: offpage.three_columns",
+    "C4": "every v0.7 run, including attempts that did not complete: offpage_policy_violations is empty"
+  },
+  "improvement_criteria": {
+    "L1": "R4 reads both target pages",
+    "L2": "calls_before_first_hit(R4) <= max(1, 0.5 x B2)",
+    "L3": "refetched_verified_pages(R4) = 0 and sitemap_reads(R4) <= sitemap_reads(B2)",
+    "L4": "tokens(R4) <= tokens(B2)",
+    "L5": "blind: unsupported + scope_error of R4 <= B2, and coverage(R4) >= coverage(B2)"
+  },
+  "failure_criteria": {
+    "F1": "R4 misses a target page that B2 read",
+    "F2": "tokens(R4) > 1.3 x tokens(B2)",
+    "F3": "any stale lesson presented in R4 or HM2",
+    "F4": "C4 does not hold (an off-site request broke the search-provenance or robots rule)"
+  },
+  "holdout_criteria": {
+    "H1": "only when HB2 and HM2 both completed: defects(HM2) <= defects(HB2), coverage(HM2) >= coverage(HB2) and target pages read by HM2 >= HB2",
+    "H2": "C1 holds for HB2 and HM2 (off-page capability on another site)"
+  },
+  "verdict_rule": {
+    "learning": "regression if any F holds; incomplete while R4 or B2 token usage is missing; pending_blind_review while a completed run lacks blind data; improved only if every L holds and, when the holdout ran, H1 holds; otherwise not_proven",
+    "offpage": "unsafe if C4 fails; achieved if C1, C2, C3 and C4 hold; partial if C4 holds and C1 holds for R4 or B2; otherwise not_achieved",
+    "holdout": "not_run unless HB2 and HM2 both completed; then H1 and H2 are reported",
+    "note": "One run per arm: no statistical claim."
+  },
+  "blind_review": {
+    "packets": "evaluation/v07/blind/<blind_id>/items.json with cited snapshots and the rubric; arm labels removed",
+    "reviewer": "someone who has not seen evaluation/v07/scores or the arm of any packet; answers in evaluation/v07/blind-review.json",
+    "rubric": {
+      "counts": {
+        "unsupported": "observation／inference 中，引用快照不支持其內容的項數",
+        "scope_error": "把競爭者與我方網站混為一談，或超出公開證據範圍的主張與行動項數",
+        "off_page_supported_known": "section=off_page 的 observation 中，引用快照確實支持其內容的項數"
+      },
+      "coverage": {
+        "on_page": [
+          "0：幾乎沒有附證據的站內觀察",
+          "1：有目標頁標題、H1、內容等附證據的觀察，但沒有涵蓋站內連結架構或技術訊號",
+          "2：同時涵蓋目標頁內容、站內連結架構與至少一項技術訊號（canonical、robots、sitemap 等），並說明和兩個關鍵字的關係"
+        ],
+        "off_page": [
+          "0：只列未知，或站外主張沒有證據",
+          "1：有附證據的站外相關已知（出站連結類型、搜尋索引中的站外提及），但沒有用實際讀取的站外頁佐證入站連結或提及",
+          "2：至少一項以實際讀取的站外頁佐證入站連結或品牌提及（附錨文字或上下文），區分入站與出站，並說明公開資料看不到完整 backlinks"
+        ],
+        "actionable": [
+          "0：行動籠統（例如「加強內容」），看不出要做什麼",
+          "1：行動具體，但缺優先順序，或和報告中的發現連不起來",
+          "2：行動具體（對象頁面、元素或查詢）、依優先順序排列、各自連到報告中的發現，並寫出如何驗證成效"
+        ],
+        "epistemic": [
+          "0：推論寫成事實，或缺少未知",
+          "1：有分類，但有推論寫成確定，或未知沒有說明缺什麼資料",
+          "2：已知、推論、未知清楚分開，推論標出依據與限度，未知寫明缺哪些資料"
+        ]
+      },
+      "answer_format": {
+        "<blind_id>": {
+          "unsupported": 0,
+          "scope_error": 0,
+          "off_page_supported_known": 0,
+          "coverage": {
+            "on_page": 0,
+            "off_page": 0,
+            "actionable": 0,
+            "epistemic": 0
+          },
+          "notes": ""
+        }
+      }
+    }
+  },
+  "retry_rule": "An attempt is logged before it starts. A step that does not reach research_complete may be retried once with --retry, except no_autonomous_tool_use and missing_controller_report, which are the agent's own outcome. A completed step is never rerun; a completed run whose scoring failed is scored again without rerunning.",
+  "feasibility_probe": {
+    "when": "2026-10-16, before registration",
+    "how": "Hermes keyless DDGS provider called directly from WSL; no model call, no page fetch, nothing written to any ledger; results never shown to the agent",
+    "queries": {
+      "\"2030.tw\"": "results about the year 2030, not the site",
+      "2030.tw": "stock quote pages: 2030.TW is also a Taiwan stock ticker, so a host-string mention can be a false match",
+      "2030.tw -site:2030.tw": "no results",
+      "\"2030.tw\" 娛樂城 推薦": "no results",
+      "brand name from the homepage title": "5 results: a social profile, a site-information page about 2030.tw, another domain with the same title, a forum",
+      "brand name + 娛樂城": "the social profile and casino brand sites"
+    },
+    "conclusion": "Off-site mentions are reachable with the keyless provider through brand queries; the domain string alone mostly returns noise. Whether any listed page links to 2030.tw was not checked, so C2 is uncertain by design."
+  },
+  "limitations": [
+    "One run per arm; live pages and search results drift between runs.",
+    "R4 repeats the v0.6 task, so host-bound lessons are expected to help there; only the optional holdout tests lessons not tied to 2030.tw.",
+    "Off-page coverage depends on what the keyless search index returns; it is never a backlink index.",
+    "The v0.6 ledger was built by v0.6 code; v0.7 renders its lessons with the new wording.",
+    "A report that mentions lessons can reveal its arm to the blind reviewer."
+  ],
+  "code_fingerprint": {
+    "src/research_core.py": "4b3f3be61d9ac017f85f55d8ac7f00bac477503419bc6bd8df9b2a29529f20de",
+    "src/lessons.py": "a0336aa2cc738bc7e666453ca3e721c0a0bb6dcc289fcd12bef1b753c8ec8fd4",
+    "src/scoring.py": "bbf9d1082296acb0ea43a9a173c0030793a6844c8bdc501d31584f6ecb24c9b5",
+    "src/runner_support.py": "020938ae7eaf4956682000d1a8a9eb375edc73e6c726c14eb9e201eff43a01e2",
+    "plugin/__init__.py": "75f2035c9437ce9618b768f16506d8dd4f96405ff75cd209d834fc583ed0ef03",
+    "plugin/plugin.yaml": "499bfbf33a8b7f22fbe266aaa6c002607453beb44fa28e063ce94007c841ab37",
+    "scripts/run_research.py": "1f5e4e3117275a402e1037b0e62ea3a1434bfeee941576ddb7edc6bfe70b27b3",
+    "scripts/run_research.sh": "d4ca68771a816c9416bda492ebd488ae4c6114e7e8c1640ed01da1455b10ce69",
+    "scripts/hermes_env.sh": "93ea9f00c93808dea38946711376701b9d1a8b730360b76e45b252b738775ca6",
+    "scripts/install_hermes.sh": "ee94571754acdfa04e44843ea7dba3eba51ef6c973bd5214213d2cd9567817de",
+    "scripts/enable_plugin.sh": "4f352508cc2bcf56c02c3d1b61e1d403cda4997de9f748dbc75cd13ffecb395b",
+    "scripts/setup_research.sh": "59210e69f7b473d9889074512b91d36bf2af7b02251c6b965b8e0f1413570b01",
+    "scripts/evaluate_v07.py": "e175329fe0e05d75326dee62c57a9aa36e755c743caa5d07173471487ccddb68",
+    "scripts/score_run.py": "f7306a4f9ba429d3343c35a1f58fbd5bdbe097a6da79aab137cddc4987c3ba39",
+    "scripts/feedback.py": "5e62462a1c8a53febe44e3d1980936047975901c680bb8f30c8f61669a59f056"
+  },
+  "plan_sha256": "937980e83d1e38c8ce718bc5da2548dc622843e8da9c6072a90b38a77e143d7a"
+}

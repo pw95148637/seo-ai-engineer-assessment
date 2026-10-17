@@ -1,0 +1,380 @@
+[
+  {
+    "id": 206,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "start",
+    "data": "{\"mode\": \"memory\", \"target\": \"https://casinobase.tw\", \"keywords\": [\"娛樂城\", \"3A娛樂城\"], \"limits\": {\"requests\": 30, \"calls\": 40, \"bytes\": 2000000, \"seconds\": 900, \"timeout\": 20, \"interval\": 2, \"redirects\": 3, \"offpage\": 4}, \"learning\": false, \"required_sections\": [\"on_page\", \"off_page\"]}"
+  },
+  {
+    "id": 207,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_status\", \"args\": {}}"
+  },
+  {
+    "id": 208,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "lessons_presented",
+    "data": "{\"time\": \"2026-10-16T09:50:16.781116+00:00\", \"lessons\": [{\"id\": \"d2e93aa70fca\", \"key\": \"failure|research_search|site_operator\", \"applies\": \"transfer_hint: observed only on 2030.tw; verify here\", \"expires\": \"2026-10-23T05:27:45.004170+00:00\", \"verification\": null}, {\"id\": \"38b7cba20063\", \"key\": \"feedback|8cad8d54a03c4f94a716e7653b5b3112|claim:8|unsupported|1\", \"applies\": \"general\", \"expires\": null, \"verification\": null}]}"
+  },
+  {
+    "id": 209,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://casinobase.tw\", \"purpose\": \"查證首頁是否以娛樂城為主題、如何連到3A內容，檢查可見標題、內鏈及商業導流；不預設排名或效果。\"}}"
+  },
+  {
+    "id": 210,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "request",
+    "data": "{\"url\": \"https://casinobase.tw/robots.txt\", \"number\": 1, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 211,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"5f3c92c8f55641c8b40b68f806f472d8\", \"url\": \"https://casinobase.tw/robots.txt\", \"status\": 200, \"sha256\": \"e9ff22c09dcd0fc0705f208f6dba37d0007d79945fddf43371a592b53262cbcb\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T09:50:28.101968+00:00\", \"headers\": {\"content-type\": \"text/plain\", \"last-modified\": \"Fri, 16 Oct 2026 09:50:28 GMT\"}}"
+  },
+  {
+    "id": 212,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "request",
+    "data": "{\"url\": \"https://casinobase.tw/\", \"number\": 2, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 213,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"42428bfff0a04d0d8fee53a727aeac6a\", \"url\": \"https://casinobase.tw/\", \"status\": 200, \"sha256\": \"7bb28e539379611a1f8409ae068c27f31afbf49e84437f1183f7abbb8a13b1c5\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T09:50:29.792525+00:00\", \"headers\": {\"content-type\": \"text/html; charset=utf-8\"}}"
+  },
+  {
+    "id": 214,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"42428bfff0a04d0d8fee53a727aeac6a\", \"kind\": \"html\", \"links_count\": 13, \"purpose\": \"查證首頁是否以娛樂城為主題、如何連到3A內容，檢查可見標題、內鏈及商業導流；不預設排名或效果。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 215,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"casinobase.tw\\\"\"}}"
+  },
+  {
+    "id": 216,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"casinobase.tw\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 1}"
+  },
+  {
+    "id": 217,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"fb5988b4d2f94e5987b69327027f14fd\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-16T09:50:35.706934+00:00\", \"query\": \"\\\"casinobase.tw\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 2, \"outcome\": \"ok\"}"
+  },
+  {
+    "id": 218,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"casinobase.tw\\\" \\\"3A\\\" \\\"娛樂城\\\"\"}}"
+  },
+  {
+    "id": 219,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"casinobase.tw\\\" \\\"3A\\\" \\\"娛樂城\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 2}"
+  },
+  {
+    "id": 220,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"1443d5b305e1403a9930eae9c6c71261\", \"status\": 503, \"method\": \"search_index\", \"time\": \"2026-10-16T09:50:39.826210+00:00\", \"query\": \"\\\"casinobase.tw\\\" \\\"3A\\\" \\\"娛樂城\\\"\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 0, \"outcome\": \"error\"}"
+  },
+  {
+    "id": 221,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://casinobase.tw/reviews/\", \"purpose\": \"查證排行榜是否存在3A專頁入口、評分方法與證據鏈，並找首頁商業導流假設的反例：可核驗方法、風險或負評。\"}}"
+  },
+  {
+    "id": 222,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "request",
+    "data": "{\"url\": \"https://casinobase.tw/reviews/\", \"number\": 3, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 223,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"0695ac14cdb2401c8c71fd69883163d0\", \"url\": \"https://casinobase.tw/reviews/\", \"status\": 200, \"sha256\": \"9b75c26301852a5bcfc8d8e5a3ec045523604084549760a3edb60d8b844deecd\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T09:50:47.740512+00:00\", \"headers\": {\"content-type\": \"text/html; charset=utf-8\"}}"
+  },
+  {
+    "id": 224,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"0695ac14cdb2401c8c71fd69883163d0\", \"kind\": \"html\", \"links_count\": 17, \"purpose\": \"查證排行榜是否存在3A專頁入口、評分方法與證據鏈，並找首頁商業導流假設的反例：可核驗方法、風險或負評。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 225,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://casinobase.tw/safety/\", \"purpose\": \"查證安全指南是否提供具體來源與求助資訊，避免將全站概括為只有優惠導流；檢查安全主題與品牌頁內鏈。\"}}"
+  },
+  {
+    "id": 226,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "request",
+    "data": "{\"url\": \"https://casinobase.tw/safety/\", \"number\": 4, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 227,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"1764dc89380c430a9784949bd869cf32\", \"url\": \"https://casinobase.tw/safety/\", \"status\": 200, \"sha256\": \"62ba518bdb4ad9ec463b5b839b12d2299c730e91e3d6bb6b97664ae3f455220c\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T09:50:50.251236+00:00\", \"headers\": {\"content-type\": \"text/html; charset=utf-8\"}}"
+  },
+  {
+    "id": 228,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"1764dc89380c430a9784949bd869cf32\", \"kind\": \"html\", \"links_count\": 7, \"purpose\": \"查證安全指南是否提供具體來源與求助資訊，避免將全站概括為只有優惠導流；檢查安全主題與品牌頁內鏈。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 229,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"CasinoBase\\\" -site:casinobase.tw\"}}"
+  },
+  {
+    "id": 230,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"CasinoBase\\\" -site:casinobase.tw\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 3}"
+  },
+  {
+    "id": 231,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"4e3b0051d0454cf3867a489ddf4b824e\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-16T09:50:54.885093+00:00\", \"query\": \"\\\"CasinoBase\\\" -site:casinobase.tw\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 5, \"outcome\": \"ok\"}"
+  },
+  {
+    "id": 232,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"casinobase 3A\"}}"
+  },
+  {
+    "id": 233,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "search_request",
+    "data": "{\"query\": \"casinobase 3A\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 4}"
+  },
+  {
+    "id": 234,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"3cb86788b0be485085033283193118eb\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-16T09:51:00.005997+00:00\", \"query\": \"casinobase 3A\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 5, \"outcome\": \"ok\"}"
+  },
+  {
+    "id": 235,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_search\", \"args\": {\"query\": \"\\\"casinobase.tw\\\" 評價 引用\"}}"
+  },
+  {
+    "id": 236,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "search_request",
+    "data": "{\"query\": \"\\\"casinobase.tw\\\" 評價 引用\", \"provider\": \"hermes_ddgs_keyless\", \"number\": 5}"
+  },
+  {
+    "id": 237,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "search_response",
+    "data": "{\"evidence_id\": \"a3f8ea98d4914c00929e6bcb34b5edaa\", \"status\": 200, \"method\": \"search_index\", \"time\": \"2026-10-16T09:51:23.432841+00:00\", \"query\": \"\\\"casinobase.tw\\\" 評價 引用\", \"provider\": \"hermes_ddgs_keyless\", \"limitation\": \"Search snippets are not direct page fetches; source support and freshness need verification.\", \"result_count\": 2, \"outcome\": \"ok\"}"
+  },
+  {
+    "id": 238,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://casinobase.tw/bonuses/\", \"purpose\": \"查證優惠頁是否實際涵蓋3A娛樂城或連至其專頁，並核對優惠條件、日期與導流目的地以修正品牌漏斗假設。\"}}"
+  },
+  {
+    "id": 239,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "request",
+    "data": "{\"url\": \"https://casinobase.tw/bonuses/\", \"number\": 5, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 240,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"68d22ccd0b64448db0fe560a861b7b05\", \"url\": \"https://casinobase.tw/bonuses/\", \"status\": 200, \"sha256\": \"b524753672503e39db7fd8c17c5ec1c712a6f2f0eb1cd0ba817b2e87bebe3b9a\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T09:51:27.894108+00:00\", \"headers\": {\"content-type\": \"text/html; charset=utf-8\"}}"
+  },
+  {
+    "id": 241,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"68d22ccd0b64448db0fe560a861b7b05\", \"kind\": \"html\", \"links_count\": 13, \"purpose\": \"查證優惠頁是否實際涵蓋3A娛樂城或連至其專頁，並核對優惠條件、日期與導流目的地以修正品牌漏斗假設。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 242,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://casinobase.tw/guides/\", \"purpose\": \"查證遊戲指南是否建立娛樂城主題內鏈及3A品牌入口，辨識內容廣度是否超過排行榜與商業導流。\"}}"
+  },
+  {
+    "id": 243,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "request",
+    "data": "{\"url\": \"https://casinobase.tw/guides/\", \"number\": 6, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 244,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"a1df4aba2a5d4d5aa27dad69048bc52a\", \"url\": \"https://casinobase.tw/guides/\", \"status\": 200, \"sha256\": \"1a572d93b01648cf59465d578bf5ff1062930d45ec49e6bf2005af392f2e9102\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T09:51:31.852184+00:00\", \"headers\": {\"content-type\": \"text/html; charset=utf-8\"}}"
+  },
+  {
+    "id": 245,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"a1df4aba2a5d4d5aa27dad69048bc52a\", \"kind\": \"html\", \"links_count\": 8, \"purpose\": \"查證遊戲指南是否建立娛樂城主題內鏈及3A品牌入口，辨識內容廣度是否超過排行榜與商業導流。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 246,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_fetch\", \"args\": {\"url\": \"https://casinobase.tw/terms/\", \"purpose\": \"查證術語頁是否涵蓋3A或連結品牌頁，以及是否提供流水、出金等資訊型內容作為純促銷假設的反例。\"}}"
+  },
+  {
+    "id": 247,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "request",
+    "data": "{\"url\": \"https://casinobase.tw/terms/\", \"number\": 7, \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 248,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"fb30b2c02d2f4858ad50d6396d9ef402\", \"url\": \"https://casinobase.tw/terms/\", \"status\": 200, \"sha256\": \"14735129579b1ac99e6f9414d187825f20b12c8dc1b0af6cb776b398558ede68\", \"actor\": \"model\", \"method\": \"direct_http\", \"time\": \"2026-10-16T09:51:33.111670+00:00\", \"headers\": {\"content-type\": \"text/html; charset=utf-8\"}}"
+  },
+  {
+    "id": 249,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"fb30b2c02d2f4858ad50d6396d9ef402\", \"kind\": \"html\", \"links_count\": 7, \"purpose\": \"查證術語頁是否涵蓋3A或連結品牌頁，以及是否提供流水、出金等資訊型內容作為純促銷假設的反例。\", \"actor\": \"model\", \"channel\": \"direct\"}"
+  },
+  {
+    "id": 250,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_offpage\", \"args\": {\"url\": \"https://www.casinobase.com/\", \"mention\": \"CasinoBase\", \"purpose\": \"核對品牌搜尋的同名.com結果是否真的提及或連回casinobase.tw，避免把不同網域的同名結果誤認為入站連結。\"}}"
+  },
+  {
+    "id": 251,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "request",
+    "data": "{\"url\": \"https://www.casinobase.com/robots.txt\", \"number\": 8, \"actor\": \"model\", \"channel\": \"offpage\"}"
+  },
+  {
+    "id": 252,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"c3285b0014344d4f86f138c72bbcdd29\", \"url\": \"https://www.casinobase.com/robots.txt\", \"status\": 200, \"sha256\": \"84f7242b69a0d079d88d20a768e20124979f0499d2b0e5b947cc4b32bc07dff9\", \"actor\": \"model\", \"method\": \"offpage_http\", \"time\": \"2026-10-16T09:51:33.812788+00:00\", \"headers\": {\"content-type\": \"text/plain\"}}"
+  },
+  {
+    "id": 253,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "request",
+    "data": "{\"url\": \"https://www.casinobase.com/\", \"number\": 9, \"actor\": \"model\", \"channel\": \"offpage\"}"
+  },
+  {
+    "id": 254,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"080d4d59adbd45509b7b2f6c13159799\", \"url\": \"https://www.casinobase.com/\", \"status\": 200, \"sha256\": \"6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023\", \"actor\": \"model\", \"method\": \"offpage_http\", \"time\": \"2026-10-16T09:51:35.780424+00:00\", \"headers\": {\"content-type\": \"text/html\"}}"
+  },
+  {
+    "id": 255,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"080d4d59adbd45509b7b2f6c13159799\", \"kind\": \"html\", \"links_count\": 0, \"purpose\": \"核對品牌搜尋的同名.com結果是否真的提及或連回casinobase.tw，避免把不同網域的同名結果誤認為入站連結。\", \"actor\": \"model\", \"channel\": \"offpage\"}"
+  },
+  {
+    "id": 256,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "offpage",
+    "data": "{\"evidence_id\": \"080d4d59adbd45509b7b2f6c13159799\", \"url\": \"https://www.casinobase.com/\", \"links_to_target\": 0, \"host_mentions\": 0}"
+  },
+  {
+    "id": 257,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_offpage\", \"args\": {\"url\": \"https://blockonomi.com/base-blockchain-casino/\", \"mention\": \"CasinoBase\", \"purpose\": \"核對品牌搜尋出現的Base casino文章是否有目標網域入站連結或品牌上下文，檢驗公開站外提及假設而非根據摘要認定。\"}}"
+  },
+  {
+    "id": 258,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "request",
+    "data": "{\"url\": \"https://blockonomi.com/robots.txt\", \"number\": 10, \"actor\": \"model\", \"channel\": \"offpage\"}"
+  },
+  {
+    "id": 259,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"fb54db5823ef4032b6fbebe0b6da0f96\", \"url\": \"https://blockonomi.com/robots.txt\", \"status\": 200, \"sha256\": \"931338b16e89dc1a10f109bfdddea386c342a2fc0b305bbef6a9703ae119a712\", \"actor\": \"model\", \"method\": \"offpage_http\", \"time\": \"2026-10-16T09:51:36.210137+00:00\", \"headers\": {\"content-type\": \"text/plain; charset=UTF-8\", \"last-modified\": \"Fri, 16 Oct 2026 09:51:36 GMT\"}}"
+  },
+  {
+    "id": 260,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "request",
+    "data": "{\"url\": \"https://blockonomi.com/base-blockchain-casino/\", \"number\": 11, \"actor\": \"model\", \"channel\": \"offpage\"}"
+  },
+  {
+    "id": 261,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "response",
+    "data": "{\"evidence_id\": \"7d725ae2c904456ab73693a77882c387\", \"url\": \"https://blockonomi.com/base-blockchain-casino/\", \"status\": 200, \"sha256\": \"46b1758b3f2dc14b496333426626d6ca06babfb8ec9d598e79518b0f863d0370\", \"actor\": \"model\", \"method\": \"offpage_http\", \"time\": \"2026-10-16T09:51:42.393136+00:00\", \"headers\": {\"content-type\": \"text/html; charset=UTF-8\", \"last-modified\": \"Fri, 16 Oct 2026 09:51:42 GMT\"}}"
+  },
+  {
+    "id": 262,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "extracted",
+    "data": "{\"evidence_id\": \"7d725ae2c904456ab73693a77882c387\", \"kind\": \"html\", \"links_count\": 206, \"purpose\": \"核對品牌搜尋出現的Base casino文章是否有目標網域入站連結或品牌上下文，檢驗公開站外提及假設而非根據摘要認定。\", \"actor\": \"model\", \"channel\": \"offpage\"}"
+  },
+  {
+    "id": 263,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "offpage",
+    "data": "{\"evidence_id\": \"7d725ae2c904456ab73693a77882c387\", \"url\": \"https://blockonomi.com/base-blockchain-casino/\", \"links_to_target\": 0, \"host_mentions\": 0}"
+  },
+  {
+    "id": 264,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_evidence\", \"args\": {\"evidence_id\": \"0695ac14cdb2401c8c71fd69883163d0\", \"query\": \"查看評價\"}}"
+  },
+  {
+    "id": 265,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_evidence\", \"args\": {\"evidence_id\": \"68d22ccd0b64448db0fe560a861b7b05\", \"query\": \"流水\"}}"
+  },
+  {
+    "id": 266,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_evidence\", \"args\": {\"evidence_id\": \"a1df4aba2a5d4d5aa27dad69048bc52a\", \"query\": \"Carve\"}}"
+  },
+  {
+    "id": 267,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "tool_call",
+    "data": "{\"name\": \"research_finish\", \"args\": {\"report\": {\"claims\": [{\"text\": \"首頁 title/H1 為「CasinoBase｜台灣娛樂城推薦評比平台」；排行榜與優惠頁 title/H1 分別涵蓋2026娛樂城評價、體驗金／免費序號／首存優惠，主導覽互連排行、優惠、攻略、安全、術語。這是直接可見的娛樂城主題與搜尋意圖配置，不代表取得排名。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"42428bfff0a04d0d8fee53a727aeac6a\", \"0695ac14cdb2401c8c71fd69883163d0\", \"68d22ccd0b64448db0fe560a861b7b05\"], \"topic\": \"keyword_architecture\"}, {\"text\": \"已讀六個主要導覽頁的文字與抽取連結未見3A娛樂城或其品牌專頁入口；不能由此斷言全站沒有3A頁、未收錄或未排名。原先娛樂城總覽連至3A品牌頁的假設未獲支持。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"42428bfff0a04d0d8fee53a727aeac6a\", \"0695ac14cdb2401c8c71fd69883163d0\", \"68d22ccd0b64448db0fe560a861b7b05\", \"1764dc89380c430a9784949bd869cf32\", \"a1df4aba2a5d4d5aa27dad69048bc52a\", \"fb30b2c02d2f4858ad50d6396d9ef402\"], \"topic\": \"3a_coverage\"}, {\"text\": \"排行榜的「查看評價」錨文字實際連到rg8888.org、hs168.vip/9eyamq等外站，而不是本站個別評測頁。這些是出站連結，不能當入站證據，也不足以確認佣金關係或最終跳轉目的地。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"0695ac14cdb2401c8c71fd69883163d0\"], \"topic\": \"outbound_conversion\"}, {\"text\": \"依關鍵詞分工、排行榜、優惠比較及外站查看評價連結，推論可見架構偏向「廣義娛樂城需求→比較／優惠→外站」導流；無法確認轉換成效。\", \"kind\": \"inference\", \"section\": \"on_page\", \"evidence_ids\": [\"42428bfff0a04d0d8fee53a727aeac6a\", \"0695ac14cdb2401c8c71fd69883163d0\", \"68d22ccd0b64448db0fe560a861b7b05\"], \"topic\": \"strategy\"}, {\"text\": \"排行榜有CB-FIVE方法描述、測試流程與每月更新自述，但本頁未展示可逐筆核驗的測試紀錄或具體PTT/Dcard引用連結；抽取的五項權重均為0%。0%也可能與未執行動畫／渲染有關，不能據此判定實際公式必定為零。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"0695ac14cdb2401c8c71fd69883163d0\"], \"topic\": \"evidence_quality\"}, {\"text\": \"優惠頁不同區塊對任你搏／任你博列20倍與15x流水、對錢盈列3倍與10x流水；可能是不同活動，但沒有足夠活動識別及版本資訊供本輪釐清。這是比較可追溯性的缺口，不等於已證明條款造假。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"68d22ccd0b64448db0fe560a861b7b05\"], \"topic\": \"offer_consistency\"}, {\"text\": \"攻略頁重複呈現同一英文文章標題及2025/08/22日期；對應抽取錨文字連到https://www.google.com/，不是站內攻略詳文。這支持可見內容入口品質存在問題，但未測試JavaScript互動。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"a1df4aba2a5d4d5aa27dad69048bc52a\"], \"topic\": \"content_navigation\"}, {\"text\": \"反證：安全頁提供流水／提領條件提醒、保留對話截圖、停止儲值及提供個資、165求助資訊；術語頁解釋流水與信用版風險，優惠頁亦解釋流水計算。因此不能說競爭者只有促銷或完全缺少實用內容。其黑名單與合法性聲稱未由本輪獨立核實。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"1764dc89380c430a9784949bd869cf32\", \"fb30b2c02d2f4858ad50d6396d9ef402\", \"68d22ccd0b64448db0fe560a861b7b05\"], \"topic\": \"counterevidence\"}, {\"text\": \"站外已知：直接讀取搜尋列出的casinobase.com首頁與Blockonomi Base blockchain casino文章，兩頁皆未抽取到連往casinobase.tw的連結、目標網域提及或CasinoBase品牌匹配；因此沒有可記錄的目標入站錨文字與上下文。只適用這兩頁。\", \"kind\": \"observation\", \"section\": \"off_page\", \"evidence_ids\": [\"080d4d59adbd45509b7b2f6c13159799\", \"7d725ae2c904456ab73693a77882c387\"], \"topic\": \"verified_external_pages\"}, {\"text\": \"站外推論：品牌搜尋有同名或語義近似結果，且上述兩個原頁核對未確認目標關聯，因此僅憑CasinoBase字串或搜尋結果不能把它們納入競爭者入站來源清單。\", \"kind\": \"inference\", \"section\": \"off_page\", \"evidence_ids\": [\"4e3b0051d0454cf3867a489ddf4b824e\", \"080d4d59adbd45509b7b2f6c13159799\", \"7d725ae2c904456ab73693a77882c387\"], \"topic\": \"entity_disambiguation\"}, {\"text\": \"站外未知：本輪未驗得目標入站連結，完整backlinks、referring domains、錨文字分布、付費／交換連結、社群導流與連結對排名的貢獻均未知；不能推成零反鏈或沒有off-page操作。\", \"kind\": \"unknown\", \"section\": \"off_page\", \"evidence_ids\": [], \"topic\": \"backlink_limits\"}, {\"text\": \"競爭者的兩詞實際排名、曝光、流量、CTR、轉換與私有Search Console資料未知；也未完成全站爬取、瀏覽器渲染、結構化資料、效能或索引涵蓋檢查。\", \"kind\": \"unknown\", \"section\": \"other\", \"evidence_ids\": [], \"topic\": \"measurement_limits\"}], \"actions\": [{\"action\": \"P0｜我們自己的網站：先建立娛樂城與3A娛樂城的頁面／搜尋意圖清單，檢查既有URL避免重複；取得自家授權Search Console基線，並以台灣地區固定條件抽樣兩詞SERP。成本低至中；先決定是否投入3A專頁，而非因競爭者抽樣未見3A就直接大量產頁。\", \"reason\": \"競爭者廣義娛樂城配置已驗得，但3A覆蓋及我們自己的內容、需求與排名未驗證；目前不能估流量或報酬。\"}, {\"action\": \"P1｜我們自己的網站：優先做一份可追溯比較內容，逐活動標示來源、查核日期、流水基數、遊戲限制、提款上限、失效日；方法頁公布評分權重、樣本與限制，附責任編輯及利益揭露。成本中；以來源覆蓋率、條款一致性及更新紀錄驗收。\", \"reason\": \"比單純增加年份、評分與FAQ更直接回應競爭者可重現證據及優惠版本識別缺口；不複製未核實的黑名單、出金或合法性聲稱。\"}, {\"action\": \"P1（條件式）｜若自家資料及SERP驗證支持3A需求，建立一個獨立3A娛樂城查核頁，區分官方聲稱與已驗證事實，整理公司／網域辨識、條款、風險與未確認事項；由娛樂城總覽及相關條款頁自然內鏈，不冒充官方，不把未知內容寫成推薦。成本中；用自家索引、品牌長尾曝光與讀者問題完成率觀察。\", \"reason\": \"本輪不能確認競爭者3A策略；這是待測的自家選項，不是已證明的競爭缺口或排名保證。\"}, {\"action\": \"P1｜我們自己的網站：檢查比較頁CTA與攻略卡片，資訊型錨文字應連真正的站內評測／詳文，另設明確標示的外站入口；清理佔位及重複卡片，商業連結按實際關係揭露及標記。成本低至中；逐一驗收錨文字與目的頁相符。\", \"reason\": \"競爭者查看評價直接出站、攻略卡片連Google的問題已查實；改善讀者預期不需假設其排名損失。\"}, {\"action\": \"P2｜我們自己的網站：先製作可引用的條款查核表、版本更新或防詐查證資源，再小量接觸主題相關編輯／機構；每一站外成果讀原頁記錄目標URL、錨文字、rel及上下文。成本中至高；先小額試驗，以相關性、編輯獨立性與可驗證引用驗收，不買量、不洗精準錨文字。\", \"reason\": \"未確認競爭者任何入站來源，不能照抄不存在的外鏈策略；站外預算應晚於內容證據品質，來源品質與數量分開評估。\"}], \"unknowns\": [\"未提供我們自己網站網址及授權資料，因此以上是供自家評估的優先序，不是已實施修改或個站診斷。\", \"五次搜尋額度已用完，其中一次網路失敗；不把失敗搜尋當成3A不存在的證據。\", \"已讀六個競爭者主要導覽頁與兩個站外頁，並非全站或完整反鏈索引；沒有流量估值或排名因果結論。\", \"未獨立驗證競爭者所列平台的合法性、黑名單指控、評分、出金速度、優惠有效性與合作關係。\"]}}}"
+  },
+  {
+    "id": 268,
+    "run": "5c36e4a1981c4a2aa5c6867e5c671a26",
+    "kind": "report",
+    "data": "{\"claims\": [{\"text\": \"首頁 title/H1 為「CasinoBase｜台灣娛樂城推薦評比平台」；排行榜與優惠頁 title/H1 分別涵蓋2026娛樂城評價、體驗金／免費序號／首存優惠，主導覽互連排行、優惠、攻略、安全、術語。這是直接可見的娛樂城主題與搜尋意圖配置，不代表取得排名。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"42428bfff0a04d0d8fee53a727aeac6a\", \"0695ac14cdb2401c8c71fd69883163d0\", \"68d22ccd0b64448db0fe560a861b7b05\"], \"topic\": \"keyword_architecture\"}, {\"text\": \"已讀六個主要導覽頁的文字與抽取連結未見3A娛樂城或其品牌專頁入口；不能由此斷言全站沒有3A頁、未收錄或未排名。原先娛樂城總覽連至3A品牌頁的假設未獲支持。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"42428bfff0a04d0d8fee53a727aeac6a\", \"0695ac14cdb2401c8c71fd69883163d0\", \"68d22ccd0b64448db0fe560a861b7b05\", \"1764dc89380c430a9784949bd869cf32\", \"a1df4aba2a5d4d5aa27dad69048bc52a\", \"fb30b2c02d2f4858ad50d6396d9ef402\"], \"topic\": \"3a_coverage\"}, {\"text\": \"排行榜的「查看評價」錨文字實際連到rg8888.org、hs168.vip/9eyamq等外站，而不是本站個別評測頁。這些是出站連結，不能當入站證據，也不足以確認佣金關係或最終跳轉目的地。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"0695ac14cdb2401c8c71fd69883163d0\"], \"topic\": \"outbound_conversion\"}, {\"text\": \"依關鍵詞分工、排行榜、優惠比較及外站查看評價連結，推論可見架構偏向「廣義娛樂城需求→比較／優惠→外站」導流；無法確認轉換成效。\", \"kind\": \"inference\", \"section\": \"on_page\", \"evidence_ids\": [\"42428bfff0a04d0d8fee53a727aeac6a\", \"0695ac14cdb2401c8c71fd69883163d0\", \"68d22ccd0b64448db0fe560a861b7b05\"], \"topic\": \"strategy\"}, {\"text\": \"排行榜有CB-FIVE方法描述、測試流程與每月更新自述，但本頁未展示可逐筆核驗的測試紀錄或具體PTT/Dcard引用連結；抽取的五項權重均為0%。0%也可能與未執行動畫／渲染有關，不能據此判定實際公式必定為零。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"0695ac14cdb2401c8c71fd69883163d0\"], \"topic\": \"evidence_quality\"}, {\"text\": \"優惠頁不同區塊對任你搏／任你博列20倍與15x流水、對錢盈列3倍與10x流水；可能是不同活動，但沒有足夠活動識別及版本資訊供本輪釐清。這是比較可追溯性的缺口，不等於已證明條款造假。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"68d22ccd0b64448db0fe560a861b7b05\"], \"topic\": \"offer_consistency\"}, {\"text\": \"攻略頁重複呈現同一英文文章標題及2025/08/22日期；對應抽取錨文字連到https://www.google.com/，不是站內攻略詳文。這支持可見內容入口品質存在問題，但未測試JavaScript互動。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"a1df4aba2a5d4d5aa27dad69048bc52a\"], \"topic\": \"content_navigation\"}, {\"text\": \"反證：安全頁提供流水／提領條件提醒、保留對話截圖、停止儲值及提供個資、165求助資訊；術語頁解釋流水與信用版風險，優惠頁亦解釋流水計算。因此不能說競爭者只有促銷或完全缺少實用內容。其黑名單與合法性聲稱未由本輪獨立核實。\", \"kind\": \"observation\", \"section\": \"on_page\", \"evidence_ids\": [\"1764dc89380c430a9784949bd869cf32\", \"fb30b2c02d2f4858ad50d6396d9ef402\", \"68d22ccd0b64448db0fe560a861b7b05\"], \"topic\": \"counterevidence\"}, {\"text\": \"站外已知：直接讀取搜尋列出的casinobase.com首頁與Blockonomi Base blockchain casino文章，兩頁皆未抽取到連往casinobase.tw的連結、目標網域提及或CasinoBase品牌匹配；因此沒有可記錄的目標入站錨文字與上下文。只適用這兩頁。\", \"kind\": \"observation\", \"section\": \"off_page\", \"evidence_ids\": [\"080d4d59adbd45509b7b2f6c13159799\", \"7d725ae2c904456ab73693a77882c387\"], \"topic\": \"verified_external_pages\"}, {\"text\": \"站外推論：品牌搜尋有同名或語義近似結果，且上述兩個原頁核對未確認目標關聯，因此僅憑CasinoBase字串或搜尋結果不能把它們納入競爭者入站來源清單。\", \"kind\": \"inference\", \"section\": \"off_page\", \"evidence_ids\": [\"4e3b0051d0454cf3867a489ddf4b824e\", \"080d4d59adbd45509b7b2f6c13159799\", \"7d725ae2c904456ab73693a77882c387\"], \"topic\": \"entity_disambiguation\"}, {\"text\": \"站外未知：本輪未驗得目標入站連結，完整backlinks、referring domains、錨文字分布、付費／交換連結、社群導流與連結對排名的貢獻均未知；不能推成零反鏈或沒有off-page操作。\", \"kind\": \"unknown\", \"section\": \"off_page\", \"evidence_ids\": [], \"topic\": \"backlink_limits\"}, {\"text\": \"競爭者的兩詞實際排名、曝光、流量、CTR、轉換與私有Search Console資料未知；也未完成全站爬取、瀏覽器渲染、結構化資料、效能或索引涵蓋檢查。\", \"kind\": \"unknown\", \"section\": \"other\", \"evidence_ids\": [], \"topic\": \"measurement_limits\"}], \"actions\": [{\"action\": \"P0｜我們自己的網站：先建立娛樂城與3A娛樂城的頁面／搜尋意圖清單，檢查既有URL避免重複；取得自家授權Search Console基線，並以台灣地區固定條件抽樣兩詞SERP。成本低至中；先決定是否投入3A專頁，而非因競爭者抽樣未見3A就直接大量產頁。\", \"reason\": \"競爭者廣義娛樂城配置已驗得，但3A覆蓋及我們自己的內容、需求與排名未驗證；目前不能估流量或報酬。\"}, {\"action\": \"P1｜我們自己的網站：優先做一份可追溯比較內容，逐活動標示來源、查核日期、流水基數、遊戲限制、提款上限、失效日；方法頁公布評分權重、樣本與限制，附責任編輯及利益揭露。成本中；以來源覆蓋率、條款一致性及更新紀錄驗收。\", \"reason\": \"比單純增加年份、評分與FAQ更直接回應競爭者可重現證據及優惠版本識別缺口；不複製未核實的黑名單、出金或合法性聲稱。\"}, {\"action\": \"P1（條件式）｜若自家資料及SERP驗證支持3A需求，建立一個獨立3A娛樂城查核頁，區分官方聲稱與已驗證事實，整理公司／網域辨識、條款、風險與未確認事項；由娛樂城總覽及相關條款頁自然內鏈，不冒充官方，不把未知內容寫成推薦。成本中；用自家索引、品牌長尾曝光與讀者問題完成率觀察。\", \"reason\": \"本輪不能確認競爭者3A策略；這是待測的自家選項，不是已證明的競爭缺口或排名保證。\"}, {\"action\": \"P1｜我們自己的網站：檢查比較頁CTA與攻略卡片，資訊型錨文字應連真正的站內評測／詳文，另設明確標示的外站入口；清理佔位及重複卡片，商業連結按實際關係揭露及標記。成本低至中；逐一驗收錨文字與目的頁相符。\", \"reason\": \"競爭者查看評價直接出站、攻略卡片連Google的問題已查實；改善讀者預期不需假設其排名損失。\"}, {\"action\": \"P2｜我們自己的網站：先製作可引用的條款查核表、版本更新或防詐查證資源，再小量接觸主題相關編輯／機構；每一站外成果讀原頁記錄目標URL、錨文字、rel及上下文。成本中至高；先小額試驗，以相關性、編輯獨立性與可驗證引用驗收，不買量、不洗精準錨文字。\", \"reason\": \"未確認競爭者任何入站來源，不能照抄不存在的外鏈策略；站外預算應晚於內容證據品質，來源品質與數量分開評估。\"}], \"unknowns\": [\"未提供我們自己網站網址及授權資料，因此以上是供自家評估的優先序，不是已實施修改或個站診斷。\", \"五次搜尋額度已用完，其中一次網路失敗；不把失敗搜尋當成3A不存在的證據。\", \"已讀六個競爭者主要導覽頁與兩個站外頁，並非全站或完整反鏈索引；沒有流量估值或排名因果結論。\", \"未獨立驗證競爭者所列平台的合法性、黑名單指控、評分、出金速度、優惠有效性與合作關係。\"]}"
+  }
+]

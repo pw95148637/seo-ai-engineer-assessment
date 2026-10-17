@@ -1,0 +1,20 @@
+{
+  "pre_review_manifest": {
+    "memories/MEMORY.md": "397f6acf436f0978ec0c1e3b87dc0b691c16b74448ee93d8f402f9d144f62c1a"
+  },
+  "after_review_manifest": {
+    "memories/MEMORY.md": "397f6acf436f0978ec0c1e3b87dc0b691c16b74448ee93d8f402f9d144f62c1a",
+    "skills/.curator_ledger.jsonl": "6c26bde887bc3c0a0af1fc9b8a157e27fd73627bea69ed091e61b951dc2ee915",
+    "skills/research-status-reporting/SKILL.md": "e94bbfad15bb413404223cd1214277f3d701eb7ec9bc2690abfefde27aee393c"
+  },
+  "review_only_files": [
+    "skills/.curator_ledger.jsonl",
+    "skills/research-status-reporting/SKILL.md"
+  ],
+  "changed_by_review": [],
+  "home_after_simulated_restore": {
+    "memories/MEMORY.md": "397f6acf436f0978ec0c1e3b87dc0b691c16b74448ee93d8f402f9d144f62c1a"
+  },
+  "restore_matches_pre_review": true,
+  "seed_entry_kept": true
+}
